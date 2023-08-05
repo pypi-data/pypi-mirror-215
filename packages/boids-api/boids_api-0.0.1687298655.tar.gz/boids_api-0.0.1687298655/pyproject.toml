@@ -1,0 +1,7 @@
+[tool.poetry]
+name = "boids_api"
+version = "0.0.1687298655"
+description = "API specification for the Boids application"
+authors = [ "Kerry Johnson <kerry.t.johnson@gmail.com>" ]
+readme = "README.md"
+repository = "https://github.com/kerrys-learning-lab/boids-api"

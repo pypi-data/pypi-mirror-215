@@ -1,0 +1,931 @@
+openapi: 3.0.3
+info:
+  description: RESTful API for the Boids application
+  title: boids_api
+  version: 0.1.0
+servers:
+- description: Development server
+  url: http://localhost:9090/api/v1
+paths:
+  /boid:
+    get:
+      description: Return the list of Boids
+      operationId: get_boid_list
+      parameters:
+      - description: Field name to sort by
+        explode: true
+        in: query
+        name: sort_field
+        required: false
+        schema:
+          default: _id
+          type: string
+        style: form
+      - description: Sort ascending vs descending
+        explode: true
+        in: query
+        name: sort_asc
+        required: false
+        schema:
+          default: true
+          type: boolean
+        style: form
+      - description: Pagination offset (0-based)
+        explode: true
+        in: query
+        name: page_offset
+        required: false
+        schema:
+          default: 0
+          minimum: 0
+          type: integer
+        style: form
+      - description: Pagination size
+        explode: true
+        in: query
+        name: page_size
+        required: false
+        schema:
+          default: 30
+          maximum: 50
+          minimum: 10
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BoidList'
+          description: Return a list of Boid objects
+      tags:
+      - Boids
+      x-openapi-router-controller: boids_api.controllers.boids_controller
+    post:
+      description: |
+        Create a Boid.  The 'id' and 'timestamp' fields must not be present. The newly created Boid is assigned an ID by the simulation.
+      operationId: post_boid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Boid'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Boid'
+          description: "The created Boids, with assigned ID"
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+          description: One or more Boid was not created.
+      tags:
+      - Boids
+      x-openapi-router-controller: boids_api.controllers.boids_controller
+  /boid/{id}:
+    delete:
+      operationId: delete_boid
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          minimum: 1
+          type: integer
+        style: simple
+      responses:
+        "204":
+          description: The specified Boid was deleted.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+          description: Not found - the specified Boid could not be found.
+      tags:
+      - Boids
+      x-openapi-router-controller: boids_api.controllers.boids_controller
+    get:
+      operationId: get_boid
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          minimum: 1
+          type: integer
+        style: simple
+      - explode: true
+        in: query
+        name: history
+        required: false
+        schema:
+          default: 0
+          maximum: 1000
+          minimum: 0
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Boid'
+          description: Return a specific Boid
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+          description: Bad request - the request parameters (e.g. history) are invalid.
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+          description: Not found - the specified Boid could not be found.
+      tags:
+      - Boids
+      x-openapi-router-controller: boids_api.controllers.boids_controller
+  /config:
+    get:
+      description: Get the current simulation configuration
+      operationId: get_simulation_config
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimulationConfigStatus'
+          description: The current simulation configuration
+      tags:
+      - Simulation configuration
+      x-openapi-router-controller: boids_api.controllers.simulation_configuration_controller
+    put:
+      description: Update the simulation configuration
+      operationId: put_simulation_config
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SimulationConfigUpdateRequest'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimulationConfigStatus'
+          description: |
+            The simulation configuration was successfully updated. The returned SimulationConfigStatus reflects the updates.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+          description: |
+            The simulation configuration was not successfully update.
+      tags:
+      - Simulation configuration
+      x-openapi-router-controller: boids_api.controllers.simulation_configuration_controller
+  /event:
+    get:
+      description: Retrieve system events in reverse time order (most recent first)
+      operationId: get_event
+      parameters:
+      - description: Field name to sort by
+        explode: true
+        in: query
+        name: sort_field
+        required: false
+        schema:
+          default: _id
+          type: string
+        style: form
+      - description: Sort ascending vs descending
+        explode: true
+        in: query
+        name: sort_asc
+        required: false
+        schema:
+          default: true
+          type: boolean
+        style: form
+      - description: Pagination offset (0-based)
+        explode: true
+        in: query
+        name: page_offset
+        required: false
+        schema:
+          default: 0
+          minimum: 0
+          type: integer
+        style: form
+      - description: Pagination size
+        explode: true
+        in: query
+        name: page_size
+        required: false
+        schema:
+          default: 30
+          maximum: 50
+          minimum: 10
+          type: integer
+        style: form
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/SystemEventList'
+                type: array
+          description: Return a list of Boid objects
+      x-openapi-router-controller: boids_api.controllers.default_controller
+  /kafka-topic/boids.boids:
+    get:
+      operationId: kafka_topic_boids_boids_get
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Boid'
+          description: Foo
+      tags:
+      - kafka
+      x-openapi-router-controller: boids_api.controllers.kafka_controller
+  /kafka-topic/boids.system-events:
+    get:
+      operationId: kafka_topic_boids_system_events_get
+      responses:
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SystemEvent'
+          description: Foo
+      tags:
+      - kafka
+      x-openapi-router-controller: boids_api.controllers.kafka_controller
+  /simulation:
+    get:
+      description: Get the current simulation status
+      operationId: get_simulation
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimulationControlStatus'
+          description: The status
+      tags:
+      - Simulation control
+      x-openapi-router-controller: boids_api.controllers.simulation_control_controller
+    put:
+      description: Modify the simulation state
+      operationId: put_simulation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SimulationControlUpdateRequest'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SimulationControlStatus'
+          description: The state has been updated as requested
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+          description: The state was not updated
+      tags:
+      - Simulation control
+      x-openapi-router-controller: boids_api.controllers.simulation_control_controller
+components:
+  parameters:
+    sort_field:
+      description: Field name to sort by
+      explode: true
+      in: query
+      name: sort_field
+      required: false
+      schema:
+        default: _id
+        type: string
+      style: form
+    sort_asc:
+      description: Sort ascending vs descending
+      explode: true
+      in: query
+      name: sort_asc
+      required: false
+      schema:
+        default: true
+        type: boolean
+      style: form
+    page_offset:
+      description: Pagination offset (0-based)
+      explode: true
+      in: query
+      name: page_offset
+      required: false
+      schema:
+        default: 0
+        minimum: 0
+        type: integer
+      style: form
+    page_size:
+      description: Pagination size
+      explode: true
+      in: query
+      name: page_size
+      required: false
+      schema:
+        default: 30
+        maximum: 50
+        minimum: 10
+        type: integer
+      style: form
+  schemas:
+    Pagination:
+      example:
+        sort_asc: true
+        sort_field: sort_field
+        pages_total: 7
+        page_offset: 5
+        page_size: 2
+      properties:
+        sort_field:
+          title: sort_field
+          type: string
+        sort_asc:
+          title: sort_asc
+          type: boolean
+        page_offset:
+          title: page_offset
+          type: integer
+        page_size:
+          title: page_size
+          type: integer
+        pages_total:
+          title: pages_total
+          type: integer
+      required:
+      - page_offset
+      - page_size
+      - sort_asc
+      - sort_field
+      title: Pagination
+      type: object
+    IntegerRange:
+      example:
+        min: 1
+        max: 5
+      properties:
+        min:
+          title: min
+          type: integer
+        max:
+          title: max
+          type: integer
+      required:
+      - max
+      - min
+      title: IntegerRange
+      type: object
+    SimulationControlStatus:
+      example:
+        rate: 0.8008282
+        next_states:
+        - null
+        - null
+        state: null
+      properties:
+        state:
+          $ref: '#/components/schemas/SimulationState'
+        rate:
+          format: float
+          title: rate
+          type: number
+        next_states:
+          items:
+            $ref: '#/components/schemas/SimulationState'
+          title: next_states
+          type: array
+      required:
+      - next_states
+      - rate
+      - state
+      title: SimulationControlStatus
+      type: object
+    SimulationState:
+      enum:
+      - PAUSED
+      - RESET
+      - RUNNING
+      - STEP
+      title: SimulationState
+      type: string
+    SimulationControlUpdateRequest:
+      example:
+        rate: 0.8008282
+        state: null
+      properties:
+        state:
+          $ref: '#/components/schemas/SimulationState'
+        rate:
+          format: float
+          title: rate
+          type: number
+      title: SimulationControlUpdateRequest
+      type: object
+    WorldConfig:
+      example:
+        width: 0
+        height: 6
+      properties:
+        width:
+          format: int64
+          title: width
+          type: integer
+        height:
+          format: int64
+          title: height
+          type: integer
+      required:
+      - height
+      - width
+      title: WorldConfig
+      type: object
+    WorldConfigStatus:
+      example:
+        current:
+          width: 0
+          height: 6
+        defaults:
+          width: 0
+          height: 6
+        limits:
+          width:
+            min: 1
+            max: 5
+          height:
+            min: 1
+            max: 5
+      properties:
+        current:
+          $ref: '#/components/schemas/WorldConfig'
+        defaults:
+          $ref: '#/components/schemas/WorldConfig'
+        limits:
+          $ref: '#/components/schemas/WorldConfigStatus_limits'
+      required:
+      - defaults
+      - limits
+      title: WorldConfigStatus
+      type: object
+    BoidsConfig:
+      example:
+        avoid_walls: true
+        speed_limits:
+          min: 1
+          max: 5
+        quantity: 5
+        view_angle: 253
+        normalize_velocity: true
+        view_range: 2
+      properties:
+        quantity:
+          format: int64
+          title: quantity
+          type: integer
+        avoid_walls:
+          default: true
+          title: avoid_walls
+          type: boolean
+        normalize_velocity:
+          default: true
+          title: normalize_velocity
+          type: boolean
+        view_range:
+          format: int64
+          title: view_range
+          type: integer
+        view_angle:
+          format: int64
+          maximum: 359
+          minimum: 0
+          title: view_angle
+          type: integer
+        speed_limits:
+          $ref: '#/components/schemas/IntegerRange'
+      required:
+      - avoid_walls
+      - quantity
+      - speed_limits
+      - view_angle
+      - view_range
+      title: BoidsConfig
+      type: object
+    BoidsConfigStatus:
+      example:
+        current:
+          avoid_walls: true
+          speed_limits:
+            min: 1
+            max: 5
+          quantity: 5
+          view_angle: 253
+          normalize_velocity: true
+          view_range: 2
+        defaults:
+          avoid_walls: true
+          speed_limits:
+            min: 1
+            max: 5
+          quantity: 5
+          view_angle: 253
+          normalize_velocity: true
+          view_range: 2
+        limits:
+          quantity:
+            min: 1
+            max: 5
+          view_angle:
+            min: 1
+            max: 5
+          view_range:
+            min: 1
+            max: 5
+          speed:
+            min: 1
+            max: 5
+      properties:
+        current:
+          $ref: '#/components/schemas/BoidsConfig'
+        defaults:
+          $ref: '#/components/schemas/BoidsConfig'
+        limits:
+          $ref: '#/components/schemas/BoidsConfigStatus_limits'
+      required:
+      - defaults
+      - limits
+      title: BoidsConfigStatus
+      type: object
+    SimulationConfigStatus:
+      example:
+        world_config:
+          current:
+            width: 0
+            height: 6
+          defaults:
+            width: 0
+            height: 6
+          limits:
+            width:
+              min: 1
+              max: 5
+            height:
+              min: 1
+              max: 5
+        boids_config:
+          current:
+            avoid_walls: true
+            speed_limits:
+              min: 1
+              max: 5
+            quantity: 5
+            view_angle: 253
+            normalize_velocity: true
+            view_range: 2
+          defaults:
+            avoid_walls: true
+            speed_limits:
+              min: 1
+              max: 5
+            quantity: 5
+            view_angle: 253
+            normalize_velocity: true
+            view_range: 2
+          limits:
+            quantity:
+              min: 1
+              max: 5
+            view_angle:
+              min: 1
+              max: 5
+            view_range:
+              min: 1
+              max: 5
+            speed:
+              min: 1
+              max: 5
+      properties:
+        world_config:
+          $ref: '#/components/schemas/WorldConfigStatus'
+        boids_config:
+          $ref: '#/components/schemas/BoidsConfigStatus'
+      required:
+      - boids_config
+      - world_config
+      title: SimulationConfigStatus
+      type: object
+    SimulationConfigUpdateRequest:
+      example:
+        world_config:
+          width: 0
+          height: 6
+        boids_config:
+          avoid_walls: true
+          speed_limits:
+            min: 1
+            max: 5
+          quantity: 5
+          view_angle: 253
+          normalize_velocity: true
+          view_range: 2
+      properties:
+        world_config:
+          $ref: '#/components/schemas/WorldConfig'
+        boids_config:
+          $ref: '#/components/schemas/BoidsConfig'
+      title: SimulationConfigUpdateRequest
+      type: object
+    CartesianTriple:
+      example:
+        x: 6.027456183070403
+        "y": 1.4658129805029452
+        z: 5.962133916683182
+      properties:
+        x:
+          format: double
+          title: x
+          type: number
+        "y":
+          format: double
+          title: "y"
+          type: number
+        z:
+          format: double
+          title: z
+          type: number
+      required:
+      - x
+      - "y"
+      title: CartesianTriple
+      type: object
+    SimulationTimestamp:
+      description: |
+        Identifies a unique point in time for a simulation (a tick-stamp?). At tick 0, no movement has been initiated.
+      example:
+        elapsed_time: elapsed_time
+        wall_clock: 2000-01-23T04:56:07.000+00:00
+        tick: 0
+      properties:
+        tick:
+          format: int64
+          title: tick
+          type: integer
+        elapsed_time:
+          pattern: "\\d{1,}:[0-5]\\d:[0-5]\\d\\.\\d{3}"
+          title: elapsed_time
+          type: string
+        wall_clock:
+          format: date-time
+          title: wall_clock
+          type: string
+      required:
+      - elapsed_time
+      - tick
+      title: SimulationTimestamp
+      type: object
+    Boid:
+      description: |
+        Describes a Boid at a particular simulation time.
+      example:
+        id: id
+        position:
+          x: 6.027456183070403
+          "y": 1.4658129805029452
+          z: 5.962133916683182
+        velocity:
+          x: 6.027456183070403
+          "y": 1.4658129805029452
+          z: 5.962133916683182
+        history:
+        - null
+        - null
+        timestamp:
+          elapsed_time: elapsed_time
+          wall_clock: 2000-01-23T04:56:07.000+00:00
+          tick: 0
+      properties:
+        id:
+          title: id
+          type: string
+        timestamp:
+          $ref: '#/components/schemas/SimulationTimestamp'
+        position:
+          $ref: '#/components/schemas/CartesianTriple'
+        velocity:
+          $ref: '#/components/schemas/CartesianTriple'
+        history:
+          items:
+            $ref: '#/components/schemas/Boid'
+          title: history
+          type: array
+      required:
+      - position
+      - velocity
+      title: Boid
+      type: object
+    BoidList:
+      description: "List of Boids, possibly paginated"
+      example:
+        pagination:
+          sort_asc: true
+          sort_field: sort_field
+          pages_total: 7
+          page_offset: 5
+          page_size: 2
+        values:
+        - id: id
+          position:
+            x: 6.027456183070403
+            "y": 1.4658129805029452
+            z: 5.962133916683182
+          velocity:
+            x: 6.027456183070403
+            "y": 1.4658129805029452
+            z: 5.962133916683182
+          history:
+          - null
+          - null
+          timestamp:
+            elapsed_time: elapsed_time
+            wall_clock: 2000-01-23T04:56:07.000+00:00
+            tick: 0
+        - id: id
+          position:
+            x: 6.027456183070403
+            "y": 1.4658129805029452
+            z: 5.962133916683182
+          velocity:
+            x: 6.027456183070403
+            "y": 1.4658129805029452
+            z: 5.962133916683182
+          history:
+          - null
+          - null
+          timestamp:
+            elapsed_time: elapsed_time
+            wall_clock: 2000-01-23T04:56:07.000+00:00
+            tick: 0
+      properties:
+        values:
+          items:
+            $ref: '#/components/schemas/Boid'
+          title: values
+          type: array
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      required:
+      - values
+      title: BoidList
+      type: object
+    SystemEventLevel:
+      enum:
+      - ERROR
+      - WARNING
+      - INFO
+      - STATUS
+      title: SystemEventLevel
+      type: string
+    SystemEvent:
+      example:
+        level: null
+        source: source
+        message: message
+        timestamp:
+          elapsed_time: elapsed_time
+          wall_clock: 2000-01-23T04:56:07.000+00:00
+          tick: 0
+      properties:
+        timestamp:
+          $ref: '#/components/schemas/SimulationTimestamp'
+        level:
+          $ref: '#/components/schemas/SystemEventLevel'
+        source:
+          title: source
+          type: string
+        message:
+          title: message
+          type: string
+      required:
+      - level
+      - message
+      - source
+      - timestamp
+      title: SystemEvent
+      type: object
+    SystemEventList:
+      description: "List of System Events, possibly paginated"
+      example:
+        pagination:
+          sort_asc: true
+          sort_field: sort_field
+          pages_total: 7
+          page_offset: 5
+          page_size: 2
+        values:
+        - level: null
+          source: source
+          message: message
+          timestamp:
+            elapsed_time: elapsed_time
+            wall_clock: 2000-01-23T04:56:07.000+00:00
+            tick: 0
+        - level: null
+          source: source
+          message: message
+          timestamp:
+            elapsed_time: elapsed_time
+            wall_clock: 2000-01-23T04:56:07.000+00:00
+            tick: 0
+      properties:
+        values:
+          items:
+            $ref: '#/components/schemas/SystemEvent'
+          title: values
+          type: array
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+      required:
+      - values
+      title: SystemEventList
+      type: object
+    ErrorModel:
+      properties:
+        message:
+          title: message
+          type: string
+        code:
+          maximum: 600
+          minimum: 100
+          title: code
+          type: integer
+      required:
+      - code
+      - message
+      title: ErrorModel
+      type: object
+    WorldConfigStatus_limits:
+      example:
+        width:
+          min: 1
+          max: 5
+        height:
+          min: 1
+          max: 5
+      properties:
+        width:
+          $ref: '#/components/schemas/IntegerRange'
+        height:
+          $ref: '#/components/schemas/IntegerRange'
+      title: WorldConfigStatus_limits
+      type: object
+    BoidsConfigStatus_limits:
+      example:
+        quantity:
+          min: 1
+          max: 5
+        view_angle:
+          min: 1
+          max: 5
+        view_range:
+          min: 1
+          max: 5
+        speed:
+          min: 1
+          max: 5
+      properties:
+        quantity:
+          $ref: '#/components/schemas/IntegerRange'
+        view_range:
+          $ref: '#/components/schemas/IntegerRange'
+        view_angle:
+          $ref: '#/components/schemas/IntegerRange'
+        speed:
+          $ref: '#/components/schemas/IntegerRange'
+      title: BoidsConfigStatus_limits
+      type: object
