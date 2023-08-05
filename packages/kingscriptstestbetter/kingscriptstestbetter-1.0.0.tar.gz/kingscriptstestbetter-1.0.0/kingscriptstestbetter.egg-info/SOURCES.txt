@@ -1,0 +1,7 @@
+README.md
+setup.py
+kingscriptstestbetter.egg-info/PKG-INFO
+kingscriptstestbetter.egg-info/SOURCES.txt
+kingscriptstestbetter.egg-info/dependency_links.txt
+kingscriptstestbetter.egg-info/requires.txt
+kingscriptstestbetter.egg-info/top_level.txt
