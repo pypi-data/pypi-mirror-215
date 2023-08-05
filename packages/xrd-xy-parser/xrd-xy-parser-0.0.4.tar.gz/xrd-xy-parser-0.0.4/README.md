@@ -1,0 +1,106 @@
+# xrd-xy-parser
+
+xrd-xy-parser is parser of xy file from X-ray diffraction.<br>
+Python ver >= 3.10
+
+
+## installation
+
+```sh
+pip install xrd-xy-parser
+```
+or
+```sh
+pip3 install xrd-xy-parser
+```
+ 
+## how to use
+```python
+from xrd_xy_parser import xy
+
+if __name__ == "__main__":
+
+    try:
+        header, body, footer = xy.readstr("examples/example.xy")
+        print("header:{}\n" "body:{}\n" "footer:{}\n".format(header, body, footer))
+        '''
+        header:
+        <301.15K> 
+        Wavelength = 1.54059 
+
+        body:
+        array([[30.  ,  1.  ],
+        [30.01,  1.  ],
+        [30.02,  3.  ],
+        ...,
+        [49.97,  3.  ],
+        [49.98,  1.  ],
+        [49.99,  0.  ]])
+
+        footer:
+        ""
+        '''
+    except xy.ParseError as e:
+        print(e)
+```
+getting 2θ,Intensity column
+```python
+    # 2θ column
+    print(body[:,0]) # array([30.  , 30.01, 30.02, ..., 49.97, 49.98, 49.99])
+
+    # Intensity column
+    print(body[:,1]) # array([1., 1., 3., ..., 3., 1., 0.])
+```
+or read2xy 
+```python
+    try:
+        xy = read2xy("examples/example.xy")
+        print(xy)
+        # x:array([30.  , 30.01, 30.02, ..., 49.97, 49.98,])
+        # y:array([1., 1., 3., ..., 3., 1., 0.])
+    except xy.ParseError as e:
+        print(e)
+    
+```
+## function
+
+### `xy.read(str)`
+### `xy.read(Pathlib.Path)`
+### `xy.read(TextIOBase)`
+read xy data from `str` ,`Path` or `TextIOBase`,return tuple (header, body, footer).
+
+
+### `xy.read2xy(str)`
+### `xy.read2xy(Pathlib.Path)`
+### `xy.read2xy(TextIOBase)`
+read xy data from `str` ,`Path` or `TextIOBase`,return xrdXY object.
+
+## class
+### `xrdXY`
+#### attribute
+* x: np.ndarray
+* y: np.ndarray
+
+
+## xy file structure
+
+xy file is not explicitly specified.<br>
+xy file consists from `header`,`body`,`footer` parts.<br>
+`header` includes some infomation,
+`body` is float list.
+`footer` is empty or consists from `\s` ,`\t` ,`\r\n`,`\n`.
+
+```xy
+<301.15K> \\header
+Wavelength = 1.54059 \\header
+26.78	11598.00 \\body
+26.8	10786.00
+26.82	5768.00
+26.84	1149.00
+26.86	255.00
+26.88	74.00
+26.9	52.00
+26.92	30.00
+26.94	19.00 \\body
+\\ footer
+```
