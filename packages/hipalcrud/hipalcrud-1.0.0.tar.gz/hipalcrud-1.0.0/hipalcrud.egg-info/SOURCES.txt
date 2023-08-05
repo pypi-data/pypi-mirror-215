@@ -1,0 +1,6 @@
+setup.py
+hipalcrud.egg-info/PKG-INFO
+hipalcrud.egg-info/SOURCES.txt
+hipalcrud.egg-info/dependency_links.txt
+hipalcrud.egg-info/requires.txt
+hipalcrud.egg-info/top_level.txt
