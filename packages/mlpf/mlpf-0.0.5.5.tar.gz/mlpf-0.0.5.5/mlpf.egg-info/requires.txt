@@ -1,0 +1,17 @@
+numpy
+pandapower
+PYPOWER
+scikit-learn
+scipy
+tqdm
+
+[torch]
+torch
+torchvision
+torchaudio
+torchmetrics
+torch_geometric
+torch_scatter
+torch_sparse
+torch_cluster
+torch_spline_conv
