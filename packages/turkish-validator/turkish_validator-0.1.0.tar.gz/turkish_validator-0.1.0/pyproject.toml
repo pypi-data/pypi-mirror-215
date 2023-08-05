@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "turkish-validator"
+version = "0.1.0"
+description = ""
+authors = ["Hasan Özdemir <hasanozdemir1@trakya.edu.tr>"]
+readme = "README.md"
+packages = [{include = "turkish_validator"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+black = "^23.1.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
