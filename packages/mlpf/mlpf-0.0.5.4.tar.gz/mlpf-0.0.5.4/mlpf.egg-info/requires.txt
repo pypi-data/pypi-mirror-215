@@ -1,0 +1,13 @@
+numpy
+pandapower
+PYPOWER
+scikit-learn
+scipy
+tqdm
+
+[torch]
+torch
+torchvision
+torchaudio
+torch_geometric
+torchmetrics
