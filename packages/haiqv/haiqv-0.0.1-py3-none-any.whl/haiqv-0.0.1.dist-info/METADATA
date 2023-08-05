@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: haiqv
+Version: 0.0.1
+Summary: HaiqvMLops SDK wrapped mlflow
+Home-page: UNKNOWN
+Author: haiqv
+Author-email: haiqv.ai@hanwha.com
+License: UNKNOWN
+Keywords: haiqv,mlflow,haiqvml
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: requests
+
+UNKNOWN
+
