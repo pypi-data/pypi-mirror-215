@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Zennin.egg-info/PKG-INFO
+Zennin.egg-info/SOURCES.txt
+Zennin.egg-info/dependency_links.txt
+Zennin.egg-info/entry_points.txt
+Zennin.egg-info/top_level.txt
+doc/zennin.1
+tests/test_quotebook.py
+zennin/__init__.py
+zennin/quotebook.py
+zennin/quotebook.txt
