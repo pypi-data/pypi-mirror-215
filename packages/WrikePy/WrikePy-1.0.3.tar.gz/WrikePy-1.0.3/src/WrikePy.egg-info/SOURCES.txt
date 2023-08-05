@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/WrikePy/__init__.py
+src/WrikePy/helpers.py
+src/WrikePy/wrikepy.py
+src/WrikePy.egg-info/PKG-INFO
+src/WrikePy.egg-info/SOURCES.txt
+src/WrikePy.egg-info/dependency_links.txt
+src/WrikePy.egg-info/top_level.txt
