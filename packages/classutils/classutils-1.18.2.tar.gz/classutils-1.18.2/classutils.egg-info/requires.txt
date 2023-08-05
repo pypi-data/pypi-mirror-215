@@ -1,0 +1,7 @@
+future>=0.16.0
+fdutil>=1.6.2
+timingsutil>=1.5.0
+requests>=2.7.0
+tableutil>=2.2.4
+
+[test]
