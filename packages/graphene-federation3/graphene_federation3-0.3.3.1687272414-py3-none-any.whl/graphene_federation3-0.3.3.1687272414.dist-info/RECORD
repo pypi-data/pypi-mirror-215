@@ -1,0 +1,15 @@
+graphene_federation3/__init__.py,sha256=vU1h3YDV7G9-e1oYyYHY7pTiQkaCNxjnE37EQy__1Bc,156
+graphene_federation3/entity.py,sha256=E9x0xnoItOWnA3FGiD4Mc3aTuEUsSX4xes65WF2Z9Pw,2288
+graphene_federation3/entity_query.py,sha256=CZZHn1GouPaqyUSkddsUyVb136OJgloJvPxf1Rz8ShU,5738
+graphene_federation3/extend.py,sha256=O545Ss-CwNLGev382XKcNP1Xq2yC4jbAYRc8z6P37Gk,2614
+graphene_federation3/graphene_types.py,sha256=tLnDhm6cCBc_0I3xVZ5eFAJbkDE7QL__31g1XeLAJBI,311
+graphene_federation3/graphql_compatibility.py,sha256=ibGFPJJqIKbs918BlYKAriRq_-swW_nlACHIEBfCigM,2465
+graphene_federation3/main.py,sha256=j4jvKyqguNidoiyAYhV_qJkdyO9OII39Rh8je14FYWk,825
+graphene_federation3/provides.py,sha256=pjcryQWqfLfB2uTNIjERQB9w2vF2Gvy3TahItvrA80g,1564
+graphene_federation3/service.py,sha256=hvXBzgKkEvJXuqVFcryszid2ss19w6OrIa5yDHzK_28,5200
+graphene_federation3/utils.py,sha256=GDl6t4C2xdJ6Q3oUNy3-lUWmrd7dq6LEngX_FOY6EdY,1557
+graphene_federation3-0.3.3.1687272414.dist-info/LICENSE.txt,sha256=gInhXG3Qx6Py2FgrxgHIA9WRhRB5u5g6up36Klbc3XA,1065
+graphene_federation3-0.3.3.1687272414.dist-info/METADATA,sha256=En6WS2ERq4Qag2DxTrCWFYYJFqk4L_DRwWXqEeCxNZ8,5228
+graphene_federation3-0.3.3.1687272414.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+graphene_federation3-0.3.3.1687272414.dist-info/top_level.txt,sha256=Dc0FKrWu743NwNESW-St03Cwe9iQceUC4nVHsPwS_cc,21
+graphene_federation3-0.3.3.1687272414.dist-info/RECORD,,
