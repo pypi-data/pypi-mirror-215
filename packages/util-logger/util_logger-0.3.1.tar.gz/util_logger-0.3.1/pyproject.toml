@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "util_logger"
+version = "0.3.1"
+description = "Wrapper package to the logging std module"
+authors = ["tomtenuta <tom@tenuta.io>"]
+readme = "README.md"
+packages = [{ include = "util_logger", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+termcolor = "^2.3.0"
+pytest = "^7.3.2"
+poetry-bumpversion = "^0.3.0"
+
+[tool.poetry.plugins."poetry.plugin.install"]
+poetry-bumpversion = "poetry_bumpversion.plugin:PoetryBumpVersionPlugin"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry_bumpversion.file."src/util_logger/__init__.py"]
