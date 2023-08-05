@@ -1,0 +1,57 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=63.2.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "pstl-tools"
+version = "0.1.2"
+description = "Python scripts for making working with UMICH NERS PSTL Lab Equipment much easier"
+readme = "README.md"
+authors = [{ name = "tyjoto", email = "tyjoto@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    'License :: OSI Approved :: Apache Software License',
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["pstl", "instruments", "tools","gpib","rs232","visa"]
+dependencies = [
+    "numpy",
+    "matplotlib>=3.5.2",
+    "pyvisa",
+    "pandas",
+    "scipy",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pip-tools","pyvisa-py","pyserial","alicat","psutil","zeroconf"]
+
+[project.urls]
+Homepage = "https://github.com/nerspstl/pstl-tools"
+
+[project.scripts]
+#ipe = "ipe.__main__:main"
+janus_langmuir_wall = "pstl.scripts.janus.probes.langmuir.wall.__main__:main"
+gui_langmuir = "pstl.scripts.test.test_gui_langmuir:main"
+
+[tool.bumpver]
+current_version = "0.1.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/pstl/__init__.py" = ["{version}"]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
