@@ -1,0 +1,2 @@
+[console_scripts]
+bulk-rename = bulk_rename:main
