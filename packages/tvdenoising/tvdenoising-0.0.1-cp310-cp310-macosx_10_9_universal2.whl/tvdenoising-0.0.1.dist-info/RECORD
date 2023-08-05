@@ -1,0 +1,7 @@
+tvdenoising-0.0.1.dist-info/RECORD,,
+tvdenoising-0.0.1.dist-info/WHEEL,sha256=IgnQe-3f5zUKNlfG9a78AmcEZfnjZ7r4JD-upganVCQ,115
+tvdenoising-0.0.1.dist-info/top_level.txt,sha256=sG-RNYd1OkOZNFnzaSToPycCb9EWqJL679B59iJQDdQ,12
+tvdenoising-0.0.1.dist-info/LICENSE.txt,sha256=Jc2E6QizzM4Z5Fomjt2zecmjBTzgrT156sqIDjYDMxQ,870
+tvdenoising-0.0.1.dist-info/METADATA,sha256=T3qHr-e5a9nOrxm6N3fAVzKxt7RAz-ovII_VDNTNukI,738
+tvdenoising/__init__.py,sha256=9XQBpaGWwNZa6boZPlHl0ex5YVoINeutnsEw8Yl0z14,191
+tvdenoising/_tv_1d.cpython-310-darwin.so,sha256=57ANHs6DkA2PnP8t2NfKtK01IKwG4v9er_u4mijcX4s,333625
