@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "yaml-presorted"
+version = "0.1.0"
+description = ""
+authors = ["Bohdan Sukhomlinov <shellshock1953@gmail.com>"]
+readme = "README.md"
+packages = [{include = "yaml_presorted"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ruamel-yaml = "^0.17.32"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+yaml-presorted = "yaml_presorted:sort.main"
