@@ -1,0 +1,10 @@
+gs_netsuite_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gs_netsuite_api/_version.py,sha256=dkoUg6qBffScfg1f0bu6Ue1aT6v6mwUw2w1KArRn_h4,160
+gs_netsuite_api/api.py,sha256=KGfw89XCkVk0JgrX3dS0EVaPohwTCTnA6U65SXpInCk,26185
+gs_netsuite_api/api.py.adoc,sha256=gIYW1EnvcBqEUnkheyrAlytHhy6w5KMiEaze3ucL980,60
+gs_netsuite_api/data_types.py,sha256=SLI3cXtGkkgnh2dzALmVPplGwp4JGszS9w5gssfkksw,4184
+gs_netsuite_api/ns_utils.py,sha256=xup89jEFAMdmxMxC_5jieGZyCS3y8b5TOR-OUsMULks,4296
+gs_netsuite_api-1.0.3.dist-info/METADATA,sha256=jr2ge5ZTKYIPLCxPIzxeErZ735JEUcrg45AAnOO1d3Q,302
+gs_netsuite_api-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gs_netsuite_api-1.0.3.dist-info/top_level.txt,sha256=mNrXBW9kBc3vn5oxnUKNz5yoaE8nVgkfF1EOZ6dr-7E,16
+gs_netsuite_api-1.0.3.dist-info/RECORD,,
