@@ -1,0 +1,104 @@
+import openai
+from main import reliableGPT
+import main
+
+# make openAI reliable and safe
+openai.ChatCompletion.create = reliableGPT(openai.ChatCompletion.create, account_email="krrish@berri.ai", account_token="TAbnxNT2Eq_tVluT_I_w4lmleFGbxyConmRC2QMI1rQ")
+
+
+
+# openai.api_key = "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"
+
+
+import concurrent.futures
+
+def test_multiple_calls():
+    model = "gpt-4"
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Who won the world series in 2020?"*400},
+        {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
+        {"role": "user", "content": "Where was it played?"}
+    ]
+    temperature = 0.7
+
+    error_count = 0
+    failure_count = 0  # Track the number of failures
+
+    def call_reliable_openai():
+        nonlocal error_count, failure_count
+        try:
+            print("Making OpenAI Call")
+            response = openai.ChatCompletion.create(model=model, messages=messages, temperature=temperature)
+            if response and "error" in response:
+                error_count += 1
+            if response == "Sorry, the OpenAI (GPT) failed":
+                failure_count += 1
+        except Exception as e:
+            print("Exception occurred:", e)
+            error_count += 1
+
+    # Create a ThreadPoolExecutor with a maximum of 10 threads
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        # Submit the callable to the executor for each call
+        future_calls = [executor.submit(call_reliable_openai) for _ in range(20)]
+
+        # Wait for all the futures to complete
+        concurrent.futures.wait(future_calls)
+
+    print(f"Error Count: {error_count}")
+    print(f"Fallback response count: {failure_count}")
+
+    if error_count == 0:
+        print("All calls executed successfully.")
+    else:
+        print("Some calls returned errors.")
+
+#test_multiple_calls()
+
+
+def test_single_call_bad_key():
+    openai.api_key = "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"
+    model = "gpt-4"
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Who won the Chess championship 2022"*100},
+    ]
+    temperature = 0.7
+
+    error_count = 0
+    failure_count = 0  # Track the number of failures
+
+    try:
+        print("Making OpenAI Call")
+        response = openai.ChatCompletion.create(model=model, messages=messages, temperature=temperature)
+        if response and "error" in response:
+            error_count += 1
+        if response == "Sorry, the OpenAI (GPT) failed":
+            failure_count += 1
+    except Exception as e:
+        print("Exception occurred:", e)
+        error_count += 1
+
+    print(f"Error Count: {error_count}")
+    print(f"Fallback response count: {failure_count}")
+
+    if error_count == 0:
+        print("All calls executed successfully.")
+    else:
+        print("Some calls returned errors.")
+
+#test_single_call_bad_key()
+
+def test_add_keys():
+    result = main.add_keys(account_email="ishaan1@berri.ai", keys=["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", "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"])
+    print(result)
+
+def test_delete_keys():
+    result = main.delete_keys(account_email="ishaan@berri.ai", account_token="OwfY1OFqy8fxR0zsJQPW_tcMPo8N7_vP8x3YW-dU9R8")
+    print(result)
+
+
+test_add_keys()
+test_delete_keys()
+
