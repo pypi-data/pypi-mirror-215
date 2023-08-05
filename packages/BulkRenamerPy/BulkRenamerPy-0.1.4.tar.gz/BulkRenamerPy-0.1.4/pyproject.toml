@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BulkRenamerPy"
+version = "0.1.4"
+authors = [{ name = "Bruno Anesio", email = "brunohanesio@gmail.com" }]
+description = "A simple tool to bulk rename files in a directory"
+keywords = ["bulk rename", "rename", "rename files"]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "click",
+  "markdown",
+  "mdurl",
+  "packaging",
+  "Pygments",
+  "rich",
+  "rich-click",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+bulk_rename = "bulk_rename:bulk_rename"
+
+[project.urls]
+"Homepage" = "https://github.com/brunoanesio/bulk-rename"
+"Bug Tracker" = "https://github.com/brunoanesio/bulk-rename/issues"

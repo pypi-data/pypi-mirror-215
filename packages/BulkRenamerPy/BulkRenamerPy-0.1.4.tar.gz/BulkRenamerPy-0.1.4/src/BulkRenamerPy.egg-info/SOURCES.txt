@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/__main__.py
+src/bulk_rename.py
+src/BulkRenamerPy.egg-info/PKG-INFO
+src/BulkRenamerPy.egg-info/SOURCES.txt
+src/BulkRenamerPy.egg-info/dependency_links.txt
+src/BulkRenamerPy.egg-info/entry_points.txt
+src/BulkRenamerPy.egg-info/requires.txt
+src/BulkRenamerPy.egg-info/top_level.txt
+tests/test_bulk_rename.py
