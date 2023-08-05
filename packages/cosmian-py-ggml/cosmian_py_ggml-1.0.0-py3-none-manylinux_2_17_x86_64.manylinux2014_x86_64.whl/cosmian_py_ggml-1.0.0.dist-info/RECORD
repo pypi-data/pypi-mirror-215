@@ -1,0 +1,8 @@
+cosmian_py_ggml-1.0.0.dist-info/METADATA,sha256=NzX1z2fnQFOjKZ1pcVxpw9b0AmApuAfxP-pMY0zSPzA,1689
+cosmian_py_ggml-1.0.0.dist-info/LICENSE,sha256=Z0wEwlIqJt-ulg5-OWzUBniisSSS6B_bRz_PWVktGMQ,1064
+cosmian_py_ggml-1.0.0.dist-info/RECORD,,
+cosmian_py_ggml-1.0.0.dist-info/WHEEL,sha256=Pakn5EYkUcLl97jUMw4FC8DAw0ZnXzfAMJoDBnx1DlE,165
+cosmian_py_ggml/falcon.py,sha256=oyI63S1YV-8koV1EiSlWocskG11x0-KrP8X4ldBIAik,5068
+cosmian_py_ggml/gpt_neox.py,sha256=Wh_RRZoALn9yizgOlRkoI_1-VAWapyHaNHMd4byT4T0,4989
+cosmian_py_ggml/libggml-bindings.so,sha256=y9XmvmrDC-QMxNhDHqa5M2sdaf3qGRe-ciInjrjnUjI,809592
+cosmian_py_ggml/__init__.py,sha256=7B9w0i3zrlJ0hsmBFMAkpyc0jKq2QAImQ8Be_Z_LteY,124
