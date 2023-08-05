@@ -1,0 +1,3 @@
+[console_scripts]
+eventyst=eventyst.__main__:main
+
