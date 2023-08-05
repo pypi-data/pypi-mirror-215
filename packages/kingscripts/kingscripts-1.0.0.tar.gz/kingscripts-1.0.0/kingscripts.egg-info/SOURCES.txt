@@ -1,0 +1,7 @@
+README.md
+setup.py
+kingscripts.egg-info/PKG-INFO
+kingscripts.egg-info/SOURCES.txt
+kingscripts.egg-info/dependency_links.txt
+kingscripts.egg-info/requires.txt
+kingscripts.egg-info/top_level.txt
