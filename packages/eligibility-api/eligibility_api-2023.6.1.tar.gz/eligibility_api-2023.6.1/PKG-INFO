@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: eligibility_api
+Version: 2023.6.1
+Summary: Data exchange to verify eligibility for transit benefits
+Home-page: https://github.com/cal-itp/eligibility-api
+License: 'Apache 2.0'
+Project-URL: Bug Tracker, https://github.com/cal-itp/eligibility-api/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Eligibility Verification API
+
+This package encapsulates the data exchange needed to verify one or more eligibility criteria for transit benefits.
+
+View the technical documentation online: <https://docs.calitp.org/eligibility-api>
+
+## License
+
+[Apache 2.0 License](./LICENSE)
