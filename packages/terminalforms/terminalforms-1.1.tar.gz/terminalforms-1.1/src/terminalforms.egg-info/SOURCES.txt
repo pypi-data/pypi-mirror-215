@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/terminalforms/__init__.py
+src/terminalforms/forms.py
+src/terminalforms.egg-info/PKG-INFO
+src/terminalforms.egg-info/SOURCES.txt
+src/terminalforms.egg-info/dependency_links.txt
+src/terminalforms.egg-info/requires.txt
+src/terminalforms.egg-info/top_level.txt
