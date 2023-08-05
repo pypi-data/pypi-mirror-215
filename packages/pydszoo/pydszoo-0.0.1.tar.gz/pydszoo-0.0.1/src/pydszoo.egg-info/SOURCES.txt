@@ -1,0 +1,16 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/pydszoo/__init__.py
+src/pydszoo/pde_utils.py
+src/pydszoo/utils.py
+src/pydszoo.egg-info/PKG-INFO
+src/pydszoo.egg-info/SOURCES.txt
+src/pydszoo.egg-info/dependency_links.txt
+src/pydszoo.egg-info/requires.txt
+src/pydszoo.egg-info/top_level.txt
+src/pydszoo/allen_cahn/__init__.py
+src/pydszoo/brusselator/__init__.py
+src/pydszoo/fun/__init__.py
+src/pydszoo/kardar_parisi_zhang/__init__.py
+src/pydszoo/lorenz/__init__.py
