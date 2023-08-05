@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: openoligo
+Version: 0.1.0
+Summary: An open-source platform for programmatically interacting with and managing Nucleic acid sequences synthesis processes.
+License: MIT
+Keywords: DNA,synthesis,Kilobaser,biology,genetics,open-source
+Author: Satyam Tiwary
+Author-email: satyam@technoculture.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# OpenOligo
