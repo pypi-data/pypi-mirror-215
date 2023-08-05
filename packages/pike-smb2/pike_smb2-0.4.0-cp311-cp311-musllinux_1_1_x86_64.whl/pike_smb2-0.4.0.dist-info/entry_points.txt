@@ -1,0 +1,2 @@
+[pytest11]
+pike = pike.pytest_support
