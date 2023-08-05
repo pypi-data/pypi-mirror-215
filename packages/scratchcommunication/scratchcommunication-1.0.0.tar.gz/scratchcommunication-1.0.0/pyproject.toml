@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scratchcommunication"
+version = "1.0.0"
+authors = [
+  { name="Simon Gilde", email="simon.c.gilde@gmail.com" },
+]
+description = "A python module for communicating with scratch projects"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/thecommcraft/scratchcommunication"
+"Bug Tracker" = "https://github.com/thecommcraft/scratchcommunication/issues"
