@@ -1,0 +1,8 @@
+pyfunctional
+more-itertools
+click
+unstructured
+unstructured-inference
+unstructured[local-inference]
+unstructured.PaddleOCR
+scidownl
