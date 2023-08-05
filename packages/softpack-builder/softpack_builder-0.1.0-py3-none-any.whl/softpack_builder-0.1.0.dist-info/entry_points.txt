@@ -1,0 +1,3 @@
+[console_scripts]
+softpack-builder=softpack_builder.main:main
+
