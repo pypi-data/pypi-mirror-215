@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+breadcord_genetics.egg-info/PKG-INFO
+breadcord_genetics.egg-info/SOURCES.txt
+breadcord_genetics.egg-info/dependency_links.txt
+breadcord_genetics.egg-info/requires.txt
+breadcord_genetics.egg-info/top_level.txt
+genetics/__init__.py
+genetics/__main__.py
