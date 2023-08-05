@@ -1,0 +1,15 @@
+.gitignore
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.py
+test_tvdenoising.py
+.github/workflows/build.yml
+ext/_tv_1d.cpp
+ext/prox_R.cpp
+src/tvdenoising/__init__.py
+src/tvdenoising.egg-info/PKG-INFO
+src/tvdenoising.egg-info/SOURCES.txt
+src/tvdenoising.egg-info/dependency_links.txt
+src/tvdenoising.egg-info/requires.txt
+src/tvdenoising.egg-info/top_level.txt
