@@ -1,0 +1,16 @@
+pandas
+matplotlib
+numpy
+scikit-learn
+requests
+transformers
+wikipedia
+openai[embeddings]
+openai
+networkx
+tkinterweb
+PyMySQL
+python-dateutil
+panda3d
+XlsxWriter
+pyperclip
