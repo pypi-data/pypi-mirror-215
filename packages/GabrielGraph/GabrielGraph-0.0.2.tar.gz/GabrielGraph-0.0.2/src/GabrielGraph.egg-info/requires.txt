@@ -1,0 +1,8 @@
+numpy
+scipy
+bumpver
+
+[testing]
+tox
+pytest
+pytest-cov
