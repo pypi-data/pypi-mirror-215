@@ -1,0 +1,12 @@
+solidago/__init__.py,sha256=E64SNBkdyAg6dmM5FlUjzn_eGenDuqtSSD_ZZ3n193A,118
+solidago/__version__.py,sha256=dq_pmiJLcq_X1PgABIKeA_fULHEwrVLC7YOby_1NryU,144
+solidago/comparisons_to_scores/__init__.py,sha256=nBM0maqLzqkaAb7AgAcGDB4fTAaaG0TTHIJXQ1Xc0L0,120
+solidago/comparisons_to_scores/base.py,sha256=3J1sbZi-KTcKgviHj9S45AAFvIYcCWpUk62raHletMg,1392
+solidago/comparisons_to_scores/continuous_bradley_terry.py,sha256=pI0LllEwu_y4abARE-f2CZKS26UuUo0r94b6oaVLtb8,5069
+solidago/comparisons_to_scores/hooke_individual_scores.py,sha256=AyAGHWbK4uy913FgX9t0jJYBML3K6ije3dBlJXdgfLw,2689
+solidago/resilient_primitives/__init__.py,sha256=4XfahqKDxYisgIUaf3sM5o2WDI7J6RocpbSOcw42gus,53
+solidago/resilient_primitives/_primitives.py,sha256=opoU1LuNLSxko2esjush0w2nEoVSW9BSdRxzHkbXxNU,3426
+solidago/solvers/optimize.py,sha256=Q5ZbMYxQF3pEd8LUjV8wQTxWGE-VkijUCDXGKSzfhpo,4554
+solidago-0.0.3.dist-info/METADATA,sha256=YqFQ-JKvT4JUVK-XOY1C7yqa2fOPohJ8pUY5IDBt86o,1632
+solidago-0.0.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+solidago-0.0.3.dist-info/RECORD,,
