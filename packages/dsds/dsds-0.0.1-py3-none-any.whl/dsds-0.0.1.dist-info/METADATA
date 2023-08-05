@@ -1,0 +1,168 @@
+Metadata-Version: 2.1
+Name: dsds
+Version: 0.0.1
+Summary: A feature screening, selection, EDA, pipeline building and management tool centered around Polars dataframes.
+Author-email: Tianren Qin <tq9695@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/abstractqqq/dsds
+Keywords: pipeline,EDA,feature-screening,feature-selection
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: polars (>=0.18.3)
+Requires-Dist: scipy (>=1.10.1)
+Requires-Dist: orjson (>=3.9.1)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: typing-extensions (>=4.0.1)
+Provides-Extra: all
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: xgboost ; extra == 'all'
+Provides-Extra: scikit-learn
+Requires-Dist: scikit-learn ; extra == 'scikit-learn'
+Provides-Extra: xgboost
+Requires-Dist: xgboost ; extra == 'xgboost'
+
+# Welcome to the Dark Side of Data Science (DSDS)
+
+This package is in pre-alpha stage.
+
+This library aims to be a lightweight altenative to Scikit-learn (Sklearn), especially in the data preparation stage, e.g. feature screening/selection, basic transformations (scale, impute, one-hot encode, target encode, etc.) Its goal is to replace sklearn's pipeline. (Everything except the models are rewritten. The current dataset builder does not have model steps yet.). Its focuses are on:
+
+1. Being more dataframe centric in design. Dataframe in, dataframe out, and try not to convert or copy to NumPy unless necessary, or provide low-memory options.
+
+2. Performance. Most algorithms are rewritten and are 3-5x faster on large datasets, 10x if you have more cores on your computer, than Scikit-learn's implementation.
+
+3. Simplicity and consistency. This library should not be everything. It should stick to the responsibilities outlined above. It shouldn't become a visualization library. It shouldn't overload users with millions of input  output options, most of which won't be used anyway and which really adds little but side effects to the program. It shouldn't be a package with models. (We might add some wrappers to Scipy for other EDA). This package helps you build and manage the pipeline, from feature selection to basic transformations, and provides you with a powerful builder to build your pipe!
+
+4. Provide more visibility into data pipelines without all the pomp of a web UI. Make data pipelines editable outside Python, which means you can finally copy and paste your pipelines and edit them in a text editor if you want!
+
+5. Be more developer friendly by introducing useful types and data structures in the backend.
+
+To this end, I believe the old "stack", Pandas + Sklearn + some NumPy, is inadequate, mostly because
+
+1. Their lack of parallelism
+2. Pandas's "object" types making things difficult and its slow performance.
+3. Lack of types enforcement, leading to infinitely many quality checks. Lack of types describing outputs.
+
+Dask and PySpark are distributed systems and so are their own universe. But on a single machine, Polars has proven to be more performant and less memory intensive than both of them.
+
+Most algorithms in Sklearn are available in Scipy, and Scipy relies more heavily on C and usually has multicore options. Therefore, when the algorithm is too complex to perfom in Polars, we can rely on Scipy. 
+
+So the proposed new "stack" is Polars + Scipy + some NumPy.
+
+Note, if you want everything to work, you may need to install sklearn because in some algorithms we need random forest's feature importances.
+
+# Existing Functionalities:
+
+## EDA Prescreen
+
+The point of feature prescreening is to reduce the number of feature to be analyzed by dropping obviously useless features. E.g in a dataset with 500+ features, it is impossible for a person to know what the features are. It will take very long time to run feature selection on all features. In this case we can quickly remove all features that are constant, all id column feautres, or all features that are too unique (which makes them like ids). If you are confident in removing columns with high null percentage, you may do that do.
+
+1. Data profiling for an overview of the statistics of the data.
+
+2. Infer/remove columns based on column data type, null pct, unique pct, variance, constant, or name of column.
+
+### todo()!
+
+1. Infer duplicate columns, string columns hiding as dates, distribution of data in column.
+
+2. Remove based on the above (less trivial) characteristics.
+
+## EDA Transformation
+
+1. Binary transforms, boolean transform, ordinal encoding, auto ordinal encoding, one-hot encoding, target encoding.
+
+2. Imputation and scaling.
+
+### todo()!
+
+1. More imputation and scaling startegies.
+
+2. More slightly advanced encoding techniques.
+
+## EDA Selection
+
+Feature selection done fast. May need more optimization.
+
+0. Methods based on entropy: mutual_info, naive_sample_ig
+    
+    Let X denote the test column/feature, and Y the target. We compute the conditional entropy H(Y|X), which represents the remaining randomness in the random variable Y, given the random variable X. For more details, see [here](https://en.wikipedia.org/wiki/Entropy_(information_theory)).
+
+    The mutual_info function is a speed-up version of sklearn's mutual_info_classif, but with some small precision issues right now. (Not sure if this is a bug or not. Most likely this is just a precision issue. Need some help.)
+
+    More details can be found in the docstring of the functions.
+
+1. Classic Anova One Way F-test.
+    
+    See [here](https://saylordotorg.github.io/text_introductory-statistics/s15-04-f-tests-in-one-way-anova.html).
+
+2. Basic MRMR Algorithm with many variations: mrmr, knock-out-mrmr.
+
+    See [here](https://towardsdatascience.com/mrmr-explained-exactly-how-you-wished-someone-explained-to-you-9cf4ed27458b)
+
+    Also see mrmr_examples.ipynb in the examples folder.
+
+## EDA Builder
+
+A builder that helps you with the data preparation part of the ML cycle. Its aim is to create blueprints, reusable formula for recreating the same pipeline and should be editable without code. It is essentially like Sklearn's pipeline, but less object dependent and easier to serialize and edit, and is much cleaner and follows "chain of thought".
+
+1. Build feature selections into builder, thus incorporating feature selection into the pipeline. This will enable "just try it" type of blind testing and screening
+
+2. Enable logging so that it actually writes to a log file??
+
+3. Might need some restructuring.
+
+## EDA Misc
+
+Miscallenous functions.
+
+## EDA Text (Halted.)
+
+## Dependencies
+
+Python 3.9, 3.11+ is recommended. We are forward looking.
+
+pip install polars orjson scipy numpy
+
+pip install dsds[all]
+
+Note: scikit-learn, and xgboost are needed for full functionalities. 
+
+
+
+## Why the name Darkside of Data Science DSDS?
+
+I choose DarkSide because data pipelines are like real life pipelines, buried under the ground. It is the most foundational work that is also the most under-appreciated component of any data science project. Feature selection is often considered a dark art, too. So the name DarkSide/dsds really makes sense to me.
