@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: logbt
+Version: 0.2.0
+Summary: 
+Author: SmsS4
+Author-email: smss.lite@gmail.com
+Requires-Python: >=3.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+Configuration for Loguru
+
+# Install
+
+```shell
+poetry add logbt
+```
+
+# Usage
+
+```python
+from logbt import config
+from logbt import logger
+
+config(level="DEBUG")
+
+
+def f():
+    logger.info("INSIDE function")
+
+
+logger.debug("YOU SHOULD NOT SEE THIS")
+logger.info("THIS IS INFO")
+logger.error("THIS IS NOT INFO")
+f()
+```
+
