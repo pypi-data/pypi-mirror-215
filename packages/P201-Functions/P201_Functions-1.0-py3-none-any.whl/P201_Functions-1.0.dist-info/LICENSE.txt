@@ -1,0 +1,5 @@
+This module is Open Source, and there are no restrictions on its use. I make
+no claims as to its accuracy or correctness or robutness, but I hope that you
+might find it useful.
+
+Created by Edward Brash

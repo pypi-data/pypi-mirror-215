@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: P201-Functions
+Version: 1.0
+Summary: Fitting and Weighted Average Functions for Physics 201/202
+Home-page: https://github.com/brash99/PhysicsLabs/blob/main/PHYS201L/JupyterNotebooks/P201_Functions.py
+Author: Edward Brash
+Author-email: edward.brash@cnu.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+# Functions for use in Physics 201/202 at Christopher Newport University
+
+## Required packages
+
+<p> Numpy, Matplotlib, Scipy, Sklearn </p>
+
+## Functions
+
+<p>This module contains the following functions:</p>
+
+<p>constant_fit_plot()</p>
+
+<p>constant_fit_plot_errors()</p>
+
+<p>linear_fit_plot()</p>
+<p>linear_fit_plot_errors()</p>
+
+<p>quadratic_fit_plot()</p>
+<p>quadratic_fit_plot_errors()</p>
+
+<p>exp_fit_plot()</p>
+<p>charging_fit_plot_errors()</p>
+
+<p>weighted_average()</p>
+<p>set_dark_mode()</p>
+
+<p>More information on each of these functions are included in their function-specific docstrings, for example:</p >
+
+<p> import P201_Functions as p201 </p>
+<p> print (p201.linear_fit_plot_errors.__doc__) </p>
+
+
