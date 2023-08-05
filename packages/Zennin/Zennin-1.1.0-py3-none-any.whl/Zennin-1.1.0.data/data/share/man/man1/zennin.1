@@ -1,0 +1,98 @@
+.TH ZENNIN 1 "JUN 2023" Linux "Zennin Manual"
+
+.SH NAME
+zennin \- Print quotes on your terminal.
+
+
+.SH SYNOPSIS
+\fBzennin\fR [\fIoptions\fR]...
+
+
+.SH DESCRIPTION
+\fBZennin\fR is a simple python program that prints random quotes on the
+terminal. It adds a touch of inspiration or amusement to your daily console
+experience.
+
+The quotes are obtained from a file named \fBQuote Book\fR, for more information
+about this file please check the \fBQuote Book\fR section in this manual
+
+
+.SH OPTIONS
+.TP
+\fB\-j\fR \fIPOSITION\fR, \fB\-\-justify\fR \fIPOSITION\fR
+Justification position. Accepted values are \fIleft\fR, \fIcenter\fR and
+\fIright\fR. If this option is ommited the default justification position is
+center
+.TP
+\fB\-f\fR \fIFILE\fR, \fB\-\-file\fR \fIFILE\fR
+Use a specific \fBQuote Book\fR in a location diferent than the default one.
+.TP
+\fB\-p\fR, \fB\-\-print\fR \fINUMBER\fR
+Print a specific quote from the \fBQuote Book\fR
+.TP
+\fB\-n\fR, \fB\-\-number\fR
+Prints the ammount of quotes in the \fBQuote Book\fR.
+
+
+.SH FILES
+.TP
+.I /usr/share/doc/zennin/quotebook.txt
+Default \fBQuote Book\fR file. If user config file doesn't exist, \fBzennin\fR will use this
+file.
+.TP
+.I $HOME/.config/zennin/quotebook.txt
+Per user \fBQuote Book\fR.
+
+
+.SH QUOTE BOOK
+The collection of quotes used by \fBzennin\fR is stored in a file known as the
+\fBQuote Book\fR. By default, the program looks for the \fBQuote Book\fR at
+\fI$HOME/.config/zennin/quotebook.txt\fR. If this file doesn't exist, \fBzennin\fR
+falls back to using a default quote book located at \fI/usr/share/doc/zennin/quotebook.txt\fR.
+
+Feel free to use the default \fBQuote Book\fR as a reference to create your own
+personalized collection. The syntax of the \fBQuote Book\fR is similar to python
+docstrings, with three single quotes (''') used as delimiters for the beginning
+and the end of each quote. 
+
+Here's an example of the sintaxis of the \fBQuote Book\fR.
+
+.IP
+\fI\&'''\n
+
+This is the first Quote.\n
+
+\&'''\n
+
+
+\&'''\n
+
+This is the second Quote
+
+You can have empty lines inside the quote
+
+\&'''\n
+
+
+.SH INTENDED USE
+To use it as intended just include one of the following lines in the
+configuration file of your shell (bashrc, zshrc, etc).
+
+.TP
+\fB\Text in the center of the terminal\fR
+zennin
+.TP
+\fB\Text to the for right\fR
+zennin --justify right
+.TP
+\fB\Text to the far left\fR
+zennin --justify left
+
+
+.SH BUGS
+If the terminal size is changed after printing a quote the text will not show
+properly.
+
+
+.SH AUTHOR
+Marcelo Galván <marcelo_galvan@protonmail.com>

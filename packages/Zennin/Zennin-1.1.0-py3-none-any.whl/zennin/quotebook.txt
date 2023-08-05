@@ -1,0 +1,129 @@
+'''
+“It' dangerous to go alone! Take this.”
+- The Legend of Zelda
+'''
+
+'''
+“Non mi snudare senza ragione, non mi impugnare senza valore.”
+- Giovanni de Medici
+'''
+
+'''
+“Sometimes that light at the end of the tunnel is a train.”
+- Charles Barkley
+'''
+
+'''
+“If there is a wrong way to do something, then someone will do it.”
+- Edward A. Murphy
+'''
+
+'''
+“If there's more than one way to do a job
+and one of those ways will end in disaster,
+then somebody will do it that way.”
+- Edward A. Murphy
+'''
+
+'''
+“I love mankind... It's people I can't stand!”
+- Charles M. Schulz
+'''
+
+'''
+“Everything we hear is an opinion, not a fact.
+Everything we see is a perspective, not the truth.”
+- Marcus Aurelius
+'''
+
+'''
+“Do not go gentle into that good night,
+Rage, rage against the dying of the light.”
+- Dylan Thomas
+'''
+
+'''
+“When you have eliminated the impossible,
+whatever remains, however improbable,
+must be the truth.”
+- Arthur Conan Doyle
+'''
+
+'''
+“Dare mighty things.”
+- Perceverance Rover
+'''
+
+'''
+“We are not now that strength which in old days
+Moved earth and heaven, that which we are, we are;
+One equal temper of heroic hearts,
+Made weak by time and fate, but strong in will.”
+- Alfred Tennyson
+'''
+
+'''
+“All that is gold does not glitter,
+Not all those who wander are lost;
+The old that is strong does not wither,
+Deep roots are not reached by the frost.
+
+From the ashes a fire shall be woken,
+A light from the shadows shall spring;
+Renewed shall be blade that was broken,
+The crownless again shall be king.”
+- J.R.R. Tolkien
+'''
+
+'''
+“I have a rendezvous with Death
+At some disputed barricade,
+
+It may be he shall take my hand
+And lead me into his dark land
+And close my eyes and quench my breath
+
+I have a rendezvous with Death
+
+And I to my pledged word am true,
+I shall not fail that rendezvous.”
+- Alan Seeger
+'''
+
+'''
+“The cry of the cicada
+Gives us no sign
+That presently it will die.“
+- Mastuo Basho
+'''
+
+'''
+“If more of us valued food and cheer and song above hoarded gold,
+It would be a merrier world.”
+- J.R.R. Tolkien
+'''
+
+'''
+“My armor is like tenfold shields, my teeth are swords, my claws spears,
+the shock of my tail a thunderbolt, my wings a hurricane, and my breath death!”
+- J.R.R. Tolkien
+'''
+
+'''
+“If you chase two rabbits, you will lose them both.”
+- Native American Proverb
+'''
+
+'''
+“When thy little heart doth wake,
+Then the dreadful night shall break.”
+- William Blake
+'''
+
+'''
+“Whoever fights monsters should see to it that in the process
+he does not become a monster.
+And if you gaze long enough into an abyss,
+The abyss will gaze back into you.”
+- Friedrich Nietzsche
+'''
