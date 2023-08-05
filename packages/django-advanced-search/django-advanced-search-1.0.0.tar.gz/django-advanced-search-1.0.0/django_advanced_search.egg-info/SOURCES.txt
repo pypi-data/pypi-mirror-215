@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_advanced_search/__init__.py
+django_advanced_search/mixins.py
+django_advanced_search/tokens.py
+django_advanced_search.egg-info/PKG-INFO
+django_advanced_search.egg-info/SOURCES.txt
+django_advanced_search.egg-info/dependency_links.txt
+django_advanced_search.egg-info/requires.txt
+django_advanced_search.egg-info/top_level.txt
