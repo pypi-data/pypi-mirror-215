@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scratchcommunication
+Version: 1.0.1
+Summary: A python module for communicating with scratch projects
+Project-URL: Homepage, https://github.com/thecommcraft/scratchcommunication
+Project-URL: Bug Tracker, https://github.com/thecommcraft/scratchcommunication/issues
+Author-email: Simon Gilde <simon.c.gilde@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# scratchcommunication
+A python module for communicating with scratch projects
