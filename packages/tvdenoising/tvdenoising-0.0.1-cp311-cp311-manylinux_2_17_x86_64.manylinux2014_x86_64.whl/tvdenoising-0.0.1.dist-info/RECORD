@@ -1,0 +1,7 @@
+tvdenoising/__init__.py,sha256=9XQBpaGWwNZa6boZPlHl0ex5YVoINeutnsEw8Yl0z14,191
+tvdenoising/_tv_1d.cpython-311-x86_64-linux-gnu.so,sha256=jIAj8Zlt899jX1dfya74Glz2a0yZTBz5tLIb7b8CLWo,243560
+tvdenoising-0.0.1.dist-info/METADATA,sha256=T3qHr-e5a9nOrxm6N3fAVzKxt7RAz-ovII_VDNTNukI,738
+tvdenoising-0.0.1.dist-info/LICENSE.txt,sha256=Jc2E6QizzM4Z5Fomjt2zecmjBTzgrT156sqIDjYDMxQ,870
+tvdenoising-0.0.1.dist-info/WHEEL,sha256=8KU227XctfdX2qUwyjQUO-ciQuZtmyPUCKmeGV6Byto,152
+tvdenoising-0.0.1.dist-info/top_level.txt,sha256=sG-RNYd1OkOZNFnzaSToPycCb9EWqJL679B59iJQDdQ,12
+tvdenoising-0.0.1.dist-info/RECORD,,
