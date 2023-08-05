@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using this metadata.
+type: software
+title: NiftyPAD - Novel Python Package for Quantitative Analysis of Dynamic PET Data
+license: Apache-2.0
+authors:
+- family-names: Jiao
+  given-names: Jieqing
+  email: jieqing.jiao@gmail.com
+  affiliation: University College London, King's College London
+- family-names: Heeman
+  given-names: Fiona
+  affiliation: Vrije Universiteit Amsterdam
+- family-names: Dixon
+  given-names: Rachael
+  affiliation: University of Edinburgh
+- family-names: Wimberley
+  given-names: Catriona
+  affiliation: University of Edinburgh
+- family-names: Alves
+  given-names: Isadora Lopes
+  affiliation: Vrije Universiteit Amsterdam
+- family-names: Gispert
+  given-names: Juan Domingo
+  affiliation: BarcelonaBeta Brain Research Centre
+- family-names: Lammertsma
+  given-names: Adriaan A.
+  affiliation: Vrije Universiteit Amsterdam
+- family-names: van Berckel
+  given-names: Bart N. M.
+  affiliation: Vrije Universiteit Amsterdam
+- family-names: da Costa-Luis
+  given-names: Casper O.
+  orcid: https://orcid.org/0000-0002-7211-1557
+  affiliation: University College London, King's College London
+- family-names: Markiewicz
+  given-names: Pawel
+  affiliation: University College London
+- family-names: Cash
+  given-names: David M.
+  affiliation: University College London
+- family-names: Cardoso
+  given-names: M Jorge
+  affiliation: King's College London
+- family-names: Ourselin
+  given-names: Sebastién
+  affiliation: King's College London
+- family-names: Yaqub
+  given-names: Maqsood
+  affiliation: Vrije Universiteit Amsterdam
+- family-names: Barkhof
+  given-names: Frederik
+  affiliation: University College London, Vrije Universiteit Amsterdam
+identifiers:
+- type: doi
+  value: 10.1007/s12021-022-09616-0
+  description: Neuroinform 21, 457-468 (2023)
+keywords: [PET, "Pharmacokinetic analysis", "Reference input-based modelling"]

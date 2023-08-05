@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: niftypad
+Version: 2.0.0
+Summary: Neuroimaging for the Prevention of Alzheimer's Disease
+Author-email: Jieqing Jiao <jieqing.jiao@gmail.com>
+Maintainer-email: Casper da Costa-Luis <imaging@cdcl.ml>
+License: Apache-2.0
+Project-URL: documentation, https://github.com/AMYPAD/NiftyPAD/#NiftyPAD
+Project-URL: repository, https://github.com/AMYPAD/NiftyPAD
+Project-URL: changelog, https://github.com/AMYPAD/NiftyPAD/releases
+Keywords: PET,Pharmacokinetic analysis,Reference input-based modelling
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+License-File: LICENSE
+
+NiftyPAD
+========
+
+Neuroimaging for the Prevention of Alzheimer's Disease.
+
+|DOI| |Licence|
+
+A novel Python package for quantitative analysis of dynamic PET data.
+
+.. image:: https://raw.githubusercontent.com/JJiao/NiftyPAD/master/images/Fig1.jpg
+
+.. |DOI| image:: https://img.shields.io/badge/doi-10.1007/s12021--022--09616--0-blue
+   :target: https://doi.org/10.1007/s12021-022-09616-0
+.. |Licence| image:: https://img.shields.io/pypi/l/niftypad.svg?label=licence
+   :target: https://github.com/AMYPAD/NiftyPAD/blob/master/LICENSE
