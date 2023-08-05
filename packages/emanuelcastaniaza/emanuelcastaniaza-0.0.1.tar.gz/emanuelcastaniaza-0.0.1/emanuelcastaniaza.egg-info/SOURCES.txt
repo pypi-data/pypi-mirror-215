@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+emanuelcastaniaza/__init__.py
+emanuelcastaniaza/lala.py
+emanuelcastaniaza/player.py
+emanuelcastaniaza.egg-info/PKG-INFO
+emanuelcastaniaza.egg-info/SOURCES.txt
+emanuelcastaniaza.egg-info/dependency_links.txt
+emanuelcastaniaza.egg-info/top_level.txt
