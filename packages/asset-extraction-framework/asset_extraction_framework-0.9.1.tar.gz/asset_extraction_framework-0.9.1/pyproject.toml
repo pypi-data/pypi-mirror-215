@@ -1,0 +1,27 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asset_extraction_framework"
+version = "0.9.1"
+description = "Extract multimedia assets from legacy software"
+readme = "README.md"
+authors = [{ name = "npjg" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["struct", "reverse-engineering", "self-document"]
+requires-python = ">=3.9"
+
+dependencies = [
+    "Pillow>=9.2.0",
+    "numpy>=1.23.0",
+    "jsons>=1.6.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/npjg/asset_extraction_framework"
