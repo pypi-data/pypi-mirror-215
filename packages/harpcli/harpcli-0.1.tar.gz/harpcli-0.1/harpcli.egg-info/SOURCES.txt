@@ -1,0 +1,9 @@
+main.py
+setup.py
+harpcli.egg-info/PKG-INFO
+harpcli.egg-info/SOURCES.txt
+harpcli.egg-info/dependency_links.txt
+harpcli.egg-info/entry_points.txt
+harpcli.egg-info/not-zip-safe
+harpcli.egg-info/requires.txt
+harpcli.egg-info/top_level.txt
