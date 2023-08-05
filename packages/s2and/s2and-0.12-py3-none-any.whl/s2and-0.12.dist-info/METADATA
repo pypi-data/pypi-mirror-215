@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: s2and
+Version: 0.12
+Home-page: https://github.com/allenai/S2AND
+License-File: LICENSE
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: text-unidecode (==1.3)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: hyperopt (==0.2.4)
+Requires-Dist: pandas (==1.1.2)
+Requires-Dist: lightgbm (==3.0.0)
+Requires-Dist: fastcluster (==1.1.26)
+Requires-Dist: pycld2 (==0.41)
+Requires-Dist: fasttext (==0.9.2)
+Requires-Dist: shap (==0.36.0)
+Requires-Dist: matplotlib (==3.3.2)
+Requires-Dist: seaborn (==0.11.0)
+Requires-Dist: tqdm (==4.49.0)
+Requires-Dist: strsimpy (==0.2.0)
+Requires-Dist: jellyfish (==0.8.2)
+
