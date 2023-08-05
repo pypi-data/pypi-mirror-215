@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: z-units
+Version: 0.1.1
+Summary: A simple unit converter for chemical engineering
+Author-Email: zenius <zenius@outlook.com>
+License: MIT
+Project-URL: Homepage, https://github.com/zxzenius/z-units
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# z-units
+
+A simple unit converter for chemical engineering
+
+## install
+
+```shell
+pip install z-units
+```
+
+## Usage
+
+```python
+from z_units import quantity as q
+# pick a quantity
+f = q.MolarFlow(3)
+# to base unit
+f.to_base()
+# convert
+f.to('kmol/s')
+# list available units
+print(f.units)
+# get value
+unit, value = f.unit, f.value
+# gauge pressure
+p = q.Pressure(5, 'bar').to('MPag')
+# change local atmospheric pressure (default: 101.325 kPa)
+from z_units import config
+config.set_local_atmospheric_pressure(50)
+q.Pressure(100, 'kPa').to('kPag')
+# change standard temperature (default: 20 degC)
+# affect standard cubic meter "Sm**3"
+config.set_standard_temperature(15)
+q.Substance(100, 'Nm3').to('Sm3')
+```
