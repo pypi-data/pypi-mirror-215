@@ -1,0 +1,21 @@
+{
+  "inbounds": {
+    "trojanIn": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "0.0.0.0",
+        "password": "123",
+        "port": 443
+      },
+      "route": "freedom",
+      "inStream": {
+        "jls": {
+          "password": "123",
+          "fallback": "apple.com",
+          "random": "456",
+          "enable": true
+        }
+      }
+    }
+  }
+}
