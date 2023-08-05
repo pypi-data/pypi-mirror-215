@@ -1,0 +1,11 @@
+wireless_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wireless_demo/controls.py,sha256=Z8BqFWo1-VfAslmIiz6WmrnCRQTNh3J0WQFJzV4uomc,14887
+wireless_demo/demo_sd_sdk.py,sha256=XE_-EnzVgrb96d6Wc-vuYbQFzNLQ_NitWMZvv5n_p7M,2576
+wireless_demo/demo_ui.css,sha256=tnvE_QqSGWNs2XdonV3m-_rB8Ghs3SNF7ICX2D9Iny0,2761
+wireless_demo/demo_ui.py,sha256=zABlfJI2rrAQiEVnLNLeH1bKXUHzL8X86jSLP0VtvYU,10088
+wireless_demo/main.py,sha256=Rhnl39hTwTJ5yfQVQLhV_8EnV9mT3h7jNFiDmezcKkM,2104
+sd_wireless_demo-0.2.0.dist-info/LICENSE,sha256=6T0vK0k60eXChoUAakP2-QgKWPGXcNOMTD-WNhG3gCw,1068
+sd_wireless_demo-0.2.0.dist-info/METADATA,sha256=Zr8qwkJIyP3uvhtTVtvERlIzF4iOUo3OqAbzNcC4SBc,3178
+sd_wireless_demo-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sd_wireless_demo-0.2.0.dist-info/entry_points.txt,sha256=ayFXhPvOS0rtVw3XW5_sTL6hoDtGbVvrfzpzUQXYzxY,56
+sd_wireless_demo-0.2.0.dist-info/RECORD,,
