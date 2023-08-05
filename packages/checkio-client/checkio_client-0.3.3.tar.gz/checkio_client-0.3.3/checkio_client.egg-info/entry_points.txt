@@ -1,0 +1,2 @@
+[console_scripts]
+checkio = checkio_client.runner:main
