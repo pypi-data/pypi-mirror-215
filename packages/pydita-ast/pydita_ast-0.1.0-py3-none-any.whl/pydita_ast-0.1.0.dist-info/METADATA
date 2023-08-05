@@ -1,0 +1,142 @@
+Metadata-Version: 2.1
+Name: pydita-ast
+Version: 0.1.0
+Summary: PyDita AST converter.
+Author-email: "ANSYS, Inc." <pyansys.core@ansys.com>
+Maintainer-email: PyAnsys developers <pyansys.maintainers@ansys.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: importlib-metadata >=4.0
+Requires-Dist: lxml==4.9.2
+Requires-Dist: py-asciimath==0.3.0
+Requires-Dist: pylatexenc==2.10
+Requires-Dist: tqdm>=4.64.1
+Requires-Dist: Sphinx==6.2.1 ; extra == "doc"
+Requires-Dist: ansys-sphinx-theme==0.9.9 ; extra == "doc"
+Requires-Dist: build>= 0.10.0 ; extra == "doc"
+Requires-Dist: flit>=3.8.0 ; extra == "doc"
+Requires-Dist: jupyter_sphinx==0.4.0 ; extra == "doc"
+Requires-Dist: numpy==1.25.0 ; extra == "doc"
+Requires-Dist: numpydoc==1.5.0 ; extra == "doc"
+Requires-Dist: pandas==2.0.2 ; extra == "doc"
+Requires-Dist: parse==1.19.1 ; extra == "doc"
+Requires-Dist: pypandoc==1.11 ; extra == "doc"
+Requires-Dist: pytest-sphinx==0.5.0 ; extra == "doc"
+Requires-Dist: sphinx-autobuild==2021.3.14 ; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints==1.23.0 ; extra == "doc"
+Requires-Dist: sphinx-copybutton==0.5.2 ; extra == "doc"
+Requires-Dist: sphinx-notfound-page==0.8.3 ; extra == "doc"
+Requires-Dist: sphinx-gallery==0.13.0 ; extra == "doc"
+Requires-Dist: sphinx-design==0.4.1 ; extra == "doc"
+Requires-Dist: numpy==1.25.0 ; extra == "tests"
+Requires-Dist: parse==1.19.1 ; extra == "tests"
+Requires-Dist: pytest==7.3.2 ; extra == "tests"
+Requires-Dist: pytest-cov==4.1.0 ; extra == "tests"
+Requires-Dist: pytest-rerunfailures==11.1.2 ; extra == "tests"
+Project-URL: Homepage, https://github.com/ansys/pydita-ast
+Project-URL: Source, https://github.com/ansys/pydita-ast/
+Project-URL: Tracker, https://github.com/ansys/pydita-ast/issues
+Provides-Extra: doc
+Provides-Extra: tests
+
+PyDita-AST
+==========
+
+A Python wrapper to convert XML documentation into RST files and the Sphinx documentation.
+
+|pyansys| |pypi| |GH-CI| |codecov| |MIT| |black|
+
+.. |pyansys| image:: https://img.shields.io/badge/Py-Ansys-ffc107.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABDklEQVQ4jWNgoDfg5mD8vE7q/3bpVyskbW0sMRUwofHD7Dh5OBkZGBgW7/3W2tZpa2tLQEOyOzeEsfumlK2tbVpaGj4N6jIs1lpsDAwMJ278sveMY2BgCA0NFRISwqkhyQ1q/Nyd3zg4OBgYGNjZ2ePi4rB5loGBhZnhxTLJ/9ulv26Q4uVk1NXV/f///////69du4Zdg78lx//t0v+3S88rFISInD59GqIH2esIJ8G9O2/XVwhjzpw5EAam1xkkBJn/bJX+v1365hxxuCAfH9+3b9/+////48cPuNehNsS7cDEzMTAwMMzb+Q2u4dOnT2vWrMHu9ZtzxP9vl/69RVpCkBlZ3N7enoDXBwEAAA+YYitOilMVAAAAAElFTkSuQmCC
+   :target: https://docs.pyansys.com/
+   :alt: PyAnsys
+
+.. |pypi| image:: https://img.shields.io/pypi/v/pydita-ast.svg?logo=python&logoColor=white
+   :target: https://pypi.org/project/pydita-ast/
+
+.. |codecov| image:: https://codecov.io/gh/ansys/pydita-ast/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/ansys/pydita-ast
+
+.. |GH-CI| image:: https://github.com/ansys/pydita-ast/actions/workflows/ci_cd.yml/badge.svg
+   :target: https://github.com/ansys/pydita-ast/actions/workflows/ci_cd.yml
+
+.. |MIT| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+   :target: https://opensource.org/licenses/MIT
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg?style=flat
+  :target: https://github.com/psf/black
+  :alt: black
+
+
+Overview
+--------
+
+The PyDita-AST project aims to automatically generate a Python library and a related 
+Sphinx documentation from an XML documentation.
+
+
+Documentation and issues
+------------------------
+
+On the `PyDita-AST Issues <https://github.com/ansys/pydita-ast/issues>`_ for this repository,
+you can create issues to submit questions, report bugs, and request new features. 
+To reach the PyAnsys support team, email `pyansys.core@ansys.com <pyansys.core@ansys.com>`_.
+
+
+Getting started
+---------------
+
+Install the ``pydita-ast`` package with:
+
+.. code:: bash
+
+    python -m pip install pydita-ast
+
+
+It is recommended to organize the XML documentation as follow:
+
+.. image:: ./doc/source/user_guide/images/diags/graphviz-diag_directory.png
+   :width: 450
+   :align: center
+
+
+Converting an XML-directory
+---------------------------
+
+Once the ``XML_directory`` is correctly organized, the converter can be run.
+
+.. code:: bash
+
+    python xml2rst.py -p XML_directory_path
+
+If some functions need to be customized, the path containing the python 
+files can be specified.
+
+.. code:: bash
+
+    python xml2rst.py -p XML_directory_path -f customized_function_directory_path
+
+
+A new package is then automatically generated. Its default name is ``package``.
+It is organized as follow:
+
+.. image:: ./doc/source/user_guide/images/diags/graphviz-diag_package.png
+   :width: 450
+   :align: center
+   
+Then, the Sphinx documentation can be generated from this package.
+The following code is to render the documentation as an HTML one from Windows:
+
+.. code:: bash
+
+    cd package
+    pip install -e .[doc,tests] # Using a virtual environment is recommended.
+    .\doc\make.bat html 
+   
+
