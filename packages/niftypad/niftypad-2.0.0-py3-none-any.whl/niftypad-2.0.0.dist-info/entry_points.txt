@@ -1,0 +1,2 @@
+[console_scripts]
+niftypad = niftypad.cli:main
