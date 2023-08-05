@@ -1,0 +1,10 @@
+{
+    "resources": {
+        "StackClients": {
+            "mainJarFile": "stack-clients.1.5.2.jar"
+        },
+        "JpsBaseLib": {
+            "mainJarFile": "jps-base-lib.jar"
+        }
+    }
+}
