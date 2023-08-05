@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: city-planner-project
+Version: 0.0.1
+Summary: A program helping predict and plan city vehicular flux
+Home-page: http://packages.python.org/city_planner_project
+Author: Ricardo Simao
+Author-email: ojogodascontasdevidro@gmail.com
+License: GNU
+Keywords: dynamicalsystems traffic planning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: License :: Free For Educational Use
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+
+City planner project
+####################
+
+This is a complex phenomena lab build to study and explore vehicular traffic and urban transport route planning on cities already having static infrastructure and in planing citis from the scratch taking into consideration information on population growth and economic issues.
+
+At first, this is a toy models package. Everything is somewhat simplistic.
+
+Installation
+************
+This 
+
+
+
