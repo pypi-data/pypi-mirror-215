@@ -1,0 +1,6 @@
+calitp_data_infra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calitp_data_infra/auth.py,sha256=DhfvELiQrmyk9UAhtpcuFv8i2Nk3IPARnuSodnYzKPo,1154
+calitp_data_infra/storage.py,sha256=JyrhAmSJcEvgvdMPyMaIbBHV7AXs1Gk0yH4kGu0iGlg,24488
+calitp_data_infra-2023.6.20.dist-info/METADATA,sha256=Fr91EihXMloavjO_t7hVXgDEmbRrDY5tFyrVW-4ykaY,763
+calitp_data_infra-2023.6.20.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+calitp_data_infra-2023.6.20.dist-info/RECORD,,
