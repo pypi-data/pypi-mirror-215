@@ -1,0 +1,2 @@
+[console_scripts]
+apidownload = apidownload.__main__:main
