@@ -1,0 +1,6 @@
+pyproject.toml
+src/selenium_kleinanzeigen/scrape.py
+src/selenium_kleinanzeigen.egg-info/PKG-INFO
+src/selenium_kleinanzeigen.egg-info/SOURCES.txt
+src/selenium_kleinanzeigen.egg-info/dependency_links.txt
+src/selenium_kleinanzeigen.egg-info/top_level.txt
