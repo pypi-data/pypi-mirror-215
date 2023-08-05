@@ -1,0 +1,3 @@
+[console_scripts]
+gui_langmuir = pstl.scripts.test.test_gui_langmuir:main
+janus_langmuir_wall = pstl.scripts.janus.probes.langmuir.wall.__main__:main
