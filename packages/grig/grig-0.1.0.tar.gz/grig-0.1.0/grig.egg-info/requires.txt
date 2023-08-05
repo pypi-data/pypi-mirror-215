@@ -1,0 +1,17 @@
+bottleneck
+cloudpickle
+joblib
+numba
+numpy
+psutil
+scikit-learn
+scipy
+
+[docs]
+imageio
+matplotlib
+sphinx
+
+[test]
+pytest
+pytest-cov

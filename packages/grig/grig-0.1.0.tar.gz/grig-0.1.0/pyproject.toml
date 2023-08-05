@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools",
+            "setuptools_scm",
+            "wheel"]
+
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "grig"
+version = "v0.1.0"
+authors = [
+    { name="SOFIA-USRA", email="mclarke@sofia.usra.edu" }, 
+]
+description = "N-Dimensional Resampler for Irregularly Gridded Data"
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://sofia-usra.github.io/grig"
