@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+image_converter/__init__.py
+image_converter/image_converter.py
+image_converters.egg-info/PKG-INFO
+image_converters.egg-info/SOURCES.txt
+image_converters.egg-info/dependency_links.txt
+image_converters.egg-info/requires.txt
+image_converters.egg-info/top_level.txt
