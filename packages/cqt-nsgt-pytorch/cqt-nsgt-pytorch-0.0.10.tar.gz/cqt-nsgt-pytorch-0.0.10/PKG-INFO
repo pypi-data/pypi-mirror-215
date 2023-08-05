@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cqt-nsgt-pytorch
+Version: 0.0.10
+Summary: Pytorch implementation of an invertible and differentiable Constant-Q Transform based Non-stationary Gabor Transform (NSGT) for audio processing.
+Home-page: https://github.com/eloimoliner/CQT_pytorch
+Author: Eloi Moliner
+Author-email: eloi.moliner@aalto.fi
+License: MIT
+Keywords: audio processing,constant-q transform,deep learning,pytorch,nsgt
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
