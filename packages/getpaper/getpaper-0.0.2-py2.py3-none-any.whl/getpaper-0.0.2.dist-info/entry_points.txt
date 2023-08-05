@@ -1,0 +1,3 @@
+[console_scripts]
+download_doi = getpaper.download:download_doi
+download_pubmed = getpaper.download:download_pubmed
