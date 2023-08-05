@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bondzai.davinsy-py
+Version: 0.0.2
+Summary: Bondzai Python API
+Home-page: UNKNOWN
+Author: Bondzai
+License: UNKNOWN
+Keywords: davinsy,bondzai
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE
+License-File: NOTICE
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: pyyaml (==6.0)
+
+Bondzai DavinSy Py
+=====================
+
+Description
+~~~~~~~~~~~
+
+Bondzai DavinSy Python API is 
+
+
