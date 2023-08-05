@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: finditcli
+Version: 0.1.1
+Summary: 
+Author: dgeison
+Author-email: dgeison.peixoto@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: black (>=23.3.0,<24.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: datetime (>=5.1,<6.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+**FindItCLI**
+
+O FindItCLI é um programa em Python que permite pesquisar e gerenciar arquivos em um diretório especificado. Ele oferece opções para buscar arquivos por nome, extensão ou data de modificação e fornece recursos adicionais, como salvar os resultados em um arquivo de relatório e copiar os arquivos encontrados para um diretório específico.
+
+## Instalação
+
+Para executar o FindItCLI, você precisa ter o Python instalado em seu sistema. Além disso, você precisa instalar as dependências do programa. Para fazer isso, siga as etapas abaixo:
+
+1. Clone o repositório do FindItCLI:
+
+```
+git clone https://github.com/seu-usuario/file-finder.git
+```
+
+2. Acesse o diretório do projeto:
+
+```
+cd file-finder
+```
+
+3. Crie um ambiente virtual (opcional):
+
+```
+python -m venv venv
+```
+
+4. Ative o ambiente virtual (opcional):
+
+- Windows:
+```
+venv\Scripts\activate
+```
+
+- Linux/Mac:
+```
+source venv/bin/activate
+```
+
+5. Instale as dependências:
+
+```
+pip install -r requirements.txt
+```
+
+## Uso
+
+Após concluir a instalação, você pode executar o programa usando o seguinte comando:
+
+```
+python file_finder.py [diretório] -k [chave] -v [valor] [-r] [-s] [-c [diretório_destino]]
+```
+
+Os argumentos entre colchetes são opcionais:
+
+- `[diretório]`: O diretório onde a pesquisa será realizada. Se não for especificado, o diretório atual será usado.
+- `-k [chave]`: A chave de pesquisa. Pode ser "name" para pesquisar por nome de arquivo, "ext" para pesquisar por extensão de arquivo ou qualquer outra string para pesquisar por data de modificação.
+- `-v [valor]`: O valor correspondente à chave de pesquisa. Para "name", é o nome do arquivo a ser pesquisado. Para "ext", é a extensão do arquivo a ser pesquisado. Para pesquisa por data de modificação, é a data no formato "dd/mm/yyyy".
+- `-r`: Define se a pesquisa deve ser recursiva, ou seja, se os subdiretórios devem ser pesquisados também.
+- `-s`: Define se o resultado da pesquisa deve ser salvo em um arquivo de relatório.
+- `-c [diretório_destino]`: Define o diretório para onde os arquivos encontrados devem ser copiados.
+
+Exemplos de uso:
+
+- Pesquisar todos os arquivos com a extensão ".txt" no diretório atual:
+
+```
+python file_finder.py -k ext -v txt
+```
+
+- Pesquisar todos os arquivos com o nome "document" no diretório "/path/to/directory" e subdiretórios:
+
+```
+python file_finder.py /path/to/directory -k name -v document -r
+```
+
+- Pesquisar todos os arquivos modificados em uma data específica (por exemplo, "01/01/2023") no diretório atual:
+
+```
+python file_finder.py -k custom_key -v 01/01/2023
+```
+
+- Pesquisar todos os arquivos com a extensão ".jpg" no diretório atual, salvar o resultado em um arquivo de relatório e copiar os arquivos encontrados para o diretório "/path/to/destination":
+
+```
+python file_finder.py -
