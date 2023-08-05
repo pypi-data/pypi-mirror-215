@@ -1,0 +1,6 @@
+setup.py
+kingscriptstest.egg-info/PKG-INFO
+kingscriptstest.egg-info/SOURCES.txt
+kingscriptstest.egg-info/dependency_links.txt
+kingscriptstest.egg-info/requires.txt
+kingscriptstest.egg-info/top_level.txt
