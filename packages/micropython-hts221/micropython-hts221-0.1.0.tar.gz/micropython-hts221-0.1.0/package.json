@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_hts221/__init__.py", "github:jposada202020/MicroPython_HTS221/micropython_hts221/__init__.py"],
+    ["micropython_hts221/i2c_helpers.py", "github:jposada202020/MicroPython_HTS221/micropython_hts221/i2c_helpers.py"],
+    ["micropython_hts221/hts221.py", "github:jposada202020/MicroPython_HTS221/micropython_hts221/hts221.py"]
+  ],
+  "version": "0.1"
+}

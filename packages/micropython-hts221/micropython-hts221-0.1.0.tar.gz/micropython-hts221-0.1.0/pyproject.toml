@@ -1,0 +1,46 @@
+# SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "micropython-hts221"
+description = "MicroPython Driver for the HTS221 Humidity Sensor"
+version = "0.1.0"
+readme = "README.rst"
+authors = [
+    {name = "JDM", email = "xxyx@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/MicroPython_HTS221"}
+keywords = [
+    "sensor",
+    "micropython",
+    "hts221",
+    "humidity",
+    "sensor",
+    "micropython",
+    "driver",
+    "hts221",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: Implementation :: MicroPython",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+packages = ["micropython_hts221"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
