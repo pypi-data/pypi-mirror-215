@@ -1,0 +1,26 @@
+---
+# reference: https://github.com/ofek/hatch-showcase/blob/master/.github/workflows/test.yml
+name: Lint
+
+on:
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  run:
+    name: Python
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install Hatch
+      run: pip install --upgrade hatch
+
+    - name: Lint
+      run: hatch run lint:all

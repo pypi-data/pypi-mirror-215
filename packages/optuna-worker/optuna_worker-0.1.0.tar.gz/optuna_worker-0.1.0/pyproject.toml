@@ -1,0 +1,121 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "optuna-worker"
+dynamic = ["version"]
+description = 'Optuna Worker'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "jooong", email = "joong937@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "click",
+  "loguru",
+  "optuna",
+  "pydantic",
+  "pyyaml",
+]
+
+[project.urls]
+Documentation = "https://github.com/jooong/optuna-worker#readme"
+Issues = "https://github.com/jooong/optuna-worker/issues"
+Source = "https://github.com/jooong/optuna-worker"
+
+[project.scripts]
+optuna-worker = "optuna_worker.cli:cli"
+
+[tool.hatch.version]
+path = "src/optuna_worker/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov-xml = [
+  "- coverage combine",
+  "coverage xml",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+cov-ci = [
+  "test-cov",
+  "cov-xml",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11"]
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "black==23.1.0",
+  "flake8==6.0.0",
+  "Flake8-pyproject==1.2.3",
+]
+[tool.hatch.envs.lint.scripts]
+typing = "flake8 {args:src/optuna_worker tests}"
+style = [
+  "black --check --diff {args:.}",
+]
+fmt = [
+  "black {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.black]
+target-version = ["py37"]
+line-length = 120
+skip-string-normalization = true
+
+[tool.flake8]
+ignore = ["E203"]
+exclude = [".git", "__pycache__", "build", "dist"]
+max-line-length = 120
+
+[tool.coverage.run]
+source_pkgs = ["optuna_worker", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/optuna_worker/__about__.py",
+]
+
+[tool.coverage.paths]
+optuna_worker = ["src/optuna_worker", "*/optuna-worker/src/optuna_worker"]
+tests = ["tests", "*/optuna-worker/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

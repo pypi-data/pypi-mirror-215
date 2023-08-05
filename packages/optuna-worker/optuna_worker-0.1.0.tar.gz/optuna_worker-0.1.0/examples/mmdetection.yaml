@@ -1,0 +1,38 @@
+# compatible to mmdet==3.0.0 https://github.com/open-mmlab/mmdetection/tree/v3.0.0
+command:
+  type: python
+  program: tools/train.py
+  extra_args:
+    - "configs/detr/detr_r50_8xb2-150e_coco.py"
+    - "--cfg-options"
+  args:
+    - key: "optim_wrapper.optimizer.lr"
+      method: suggest_float
+      kwargs:
+        name: learning_rate
+        low: 0.00001
+        high: 0.01
+    - key: "model.num_queries"
+      method: suggest_int
+      kwargs:
+        name: num_queries
+        low: 50
+        high: 150
+        step: 10
+metrics:
+  - name: mAP
+    direction: maximize
+    parser:
+      type: regex
+      pattern: "coco/bbox_mAP: ([\\d.]+)"
+
+study:
+  study_name: detr_r50_8xb2-150e_coco
+  load_if_exists: false
+  sampler:
+    class_name: CmaEsSampler
+  pruner:
+    class_name: HyperbandPruner
+
+optimize:
+  n_trials: 10
