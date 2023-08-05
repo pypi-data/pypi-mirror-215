@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/dsds/__init__.py
+src/dsds/builder.py
+src/dsds/eda_text.py
+src/dsds/fs.py
+src/dsds/prescreen.py
+src/dsds/sample.py
+src/dsds/split.py
+src/dsds/transform.py
+src/dsds/utils.py
+src/dsds.egg-info/PKG-INFO
+src/dsds.egg-info/SOURCES.txt
+src/dsds.egg-info/dependency_links.txt
+src/dsds.egg-info/requires.txt
+src/dsds.egg-info/top_level.txt

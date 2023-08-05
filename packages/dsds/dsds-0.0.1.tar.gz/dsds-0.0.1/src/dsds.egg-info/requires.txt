@@ -1,0 +1,16 @@
+polars>=0.18.3
+scipy>=1.10.1
+orjson>=3.9.1
+pandas
+numpy
+typing_extensions>=4.0.1
+
+[all]
+scikit-learn
+xgboost
+
+[scikit-learn]
+scikit-learn
+
+[xgboost]
+xgboost
