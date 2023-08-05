@@ -1,0 +1,11 @@
+fastapi_di/__init__.py,sha256=dQLj7pARXTM_w8I7AoN-QB-rn5x62b2EMxJxmFNlI0w,135
+fastapi_di/_client.py,sha256=RMYS1yVD-6zTU611ekjhPGhJ5yAiR2GBjBsx7DFWowk,194
+fastapi_di/_injector.py,sha256=Gf-4BQttFmJDMrxExwyt4xsnXwuSilG4kMmB4pXRziY,3214
+fastapi_di/_provide.py,sha256=juV8o_LzByAR5f3T9Rh5wk990WbS6EKd5PFO-4gphOQ,403
+fastapi_di/app.py,sha256=idQZuCbWchG8OZOahNp3j6ye-IMXFLnc8LkwgSecLqw,323
+fastapi_di/env_fields.py,sha256=Dh9a1wmaH83d65OYpXO8H4ck8OeCNUJNvJ2yeIITXRU,1263
+fastapi_di/testing.py,sha256=uMAHI_hTdFOIhSNprKI8tSjxE1LZCY2cc9rPdwaR9Wc,642
+fastapi_magic_di-0.0.1a0.dist-info/LICENSE,sha256=Tg7eMM8KOc77S-ow0leVyD9lCIoFomJgtjFWf4ncBPA,1071
+fastapi_magic_di-0.0.1a0.dist-info/METADATA,sha256=2tLbitB26RzBFbFtnekTHB0Y0c6WxlqcgqhB5BMaSoM,6662
+fastapi_magic_di-0.0.1a0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fastapi_magic_di-0.0.1a0.dist-info/RECORD,,
