@@ -1,0 +1,9 @@
+README.md
+setup.py
+OpenCV_Edge_Detection.egg-info/PKG-INFO
+OpenCV_Edge_Detection.egg-info/SOURCES.txt
+OpenCV_Edge_Detection.egg-info/dependency_links.txt
+OpenCV_Edge_Detection.egg-info/top_level.txt
+cv2_edge_detection/__init__.py
+cv2_edge_detection/cv2_edge_detection.py
+cv2_edge_detection/edge_detection.py

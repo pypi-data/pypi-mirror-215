@@ -1,0 +1,1 @@
+An edge detection module that uses the camera.
