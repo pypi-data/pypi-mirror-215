@@ -1,0 +1,2 @@
+[qiime2.plugins]
+q2_itsxpress = q2_itsxpress.plugin_setup:plugin

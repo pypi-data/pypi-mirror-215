@@ -1,0 +1,6 @@
+qiime2
+itsxpress>=1.8.1
+pandas
+
+[tests]
+pytest
