@@ -1,0 +1,3 @@
+[console_scripts]
+openoligo=openoligo:main
+
