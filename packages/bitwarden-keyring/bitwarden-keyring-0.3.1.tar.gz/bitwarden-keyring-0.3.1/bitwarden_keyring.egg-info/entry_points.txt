@@ -1,0 +1,2 @@
+[keyring.backends]
+bitwarden = bitwarden_keyring
