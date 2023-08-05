@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+drf_serializer_prefetch.egg-info/PKG-INFO
+drf_serializer_prefetch.egg-info/SOURCES.txt
+drf_serializer_prefetch.egg-info/dependency_links.txt
+drf_serializer_prefetch.egg-info/requires.txt
+drf_serializer_prefetch.egg-info/top_level.txt
+serializer_prefetch/__init__.py
+serializer_prefetch/base.py
+tests/__init__.py
