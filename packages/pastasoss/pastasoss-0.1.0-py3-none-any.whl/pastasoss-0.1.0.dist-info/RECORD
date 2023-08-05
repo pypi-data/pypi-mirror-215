@@ -1,0 +1,11 @@
+pastasoss/__init__.py,sha256=KnTRpAaBWfKNQIveXTfr_p8u28PGlDr-4XTmpxjqImY,49
+pastasoss/soss_traces.py,sha256=7eRK3vmpaN2lNcibv0VpxKuKSnIPk7qt48CMd3-f7zQ,5532
+pastasoss/data/jwst_niriss_gr700xd_order1_trace_refmodel.txt,sha256=glyfGu7DcMX3OaLgvDpYCsTAnm4B0WtVBt1ttGC5hlQ,38351
+pastasoss/data/jwst_niriss_gr700xd_order2_trace_refmodel.txt,sha256=LSxy16gT2ISF4ABzom_VC0E1LUkEshwN02DF4CNYmCA,15710
+pastasoss/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pastasoss/tests/test_pastasoss.py,sha256=k_f2xxpEvgD7I5SPM504VNMjDI6l2rX6Q4CzB1cct2M,258
+pastasoss-0.1.0.dist-info/LICENSE,sha256=9ymYW_6SmzaKrwn--x588rt_knC6VyKF87p_ftpd3zI,1561
+pastasoss-0.1.0.dist-info/METADATA,sha256=kklyXd1JrHlwsn9gwkRDFy1RCeLNJd32x5hoZcsSyXA,1298
+pastasoss-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pastasoss-0.1.0.dist-info/top_level.txt,sha256=xlGDNVkSADXDnr1_9I731-WG7_9cFvYucOieOmDom-E,10
+pastasoss-0.1.0.dist-info/RECORD,,
