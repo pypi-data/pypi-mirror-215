@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hipal-mixin-scrud
+Version: 1.0.1
+Summary: Libreria para crud basica.
+Home-page: http://git.hipal.com.co/libraries/ms-mixins/-/tree/feature/mixins
+Author: Hipal
+Author-email: desarrollo@hipal.com.co
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Requires-Dist: pydantic (==1.10.7)
+Requires-Dist: sqlalchemy (==2.0.15)
+Requires-Dist: fastapi (==0.95.0)
+
+UNKNOWN
+
+
