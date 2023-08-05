@@ -1,0 +1,10 @@
+oranda/__init__.py,sha256=Y4XsjVCDwdb8EIyOKA6Io8wHBSo7O0NqHGpvBgZZDVA,1694
+oranda/cli.py,sha256=NSrGLlq3zUXJ4y40hNZ5oZ5wW7-95vEmy_Y33hgQ0Ls,1290
+oranda/command/__init__.py,sha256=JTrP-se-rOopT_dcGdPM-gH4YKTI-Y25ZWZOiPptpAc,1102
+oranda/exception/__init__.py,sha256=JTrP-se-rOopT_dcGdPM-gH4YKTI-Y25ZWZOiPptpAc,1102
+oranda-0.1.0.dist-info/LICENSE.txt,sha256=P8Ew-ckUVun-IL6o-kmcumbcDl4aATZL6YL8olbmCPk,1074
+oranda-0.1.0.dist-info/METADATA,sha256=zjODFkHeGp8yQ8FzK765mo4IlkWeyIhWUjcf13kTd5A,1529
+oranda-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oranda-0.1.0.dist-info/entry_points.txt,sha256=J-yt6SdLEEtmRHvGUfTVXiI_QrmUjCtxlF7H7E8dzYA,43
+oranda-0.1.0.dist-info/top_level.txt,sha256=YCO9ig_OlDDJX1M4SZ-0YeAkps46oucTswJt2z1HJVc,7
+oranda-0.1.0.dist-info/RECORD,,

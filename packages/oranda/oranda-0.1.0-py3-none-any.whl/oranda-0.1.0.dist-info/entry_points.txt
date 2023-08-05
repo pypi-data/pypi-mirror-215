@@ -1,0 +1,2 @@
+[console_scripts]
+oranda = oranda.cli:main
