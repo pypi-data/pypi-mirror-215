@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xpra
+Version: 3.1.5
+Summary: multi-platform screen and application forwarding system
+Home-page: http://xpra.org/
+Author: Antoine Martin
+Author-email: antoine@xpra.org
+License: GPLv2+
+Download-URL: http://xpra.org/src/
+Platform: UNKNOWN
+License-File: COPYING
+
+Xpra is a multi platform persistent remote display server and client for forwarding applications and desktop screens. Also known as 'screen for X11'.
+
