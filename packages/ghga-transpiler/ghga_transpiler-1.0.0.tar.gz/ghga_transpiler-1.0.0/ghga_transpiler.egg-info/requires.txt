@@ -1,0 +1,10 @@
+typer==0.7.0
+ghga-service-commons[api]==0.2.0
+ghga-event-schemas==0.8.0
+hexkit[akafka,mongodb,s3]==0.9.2
+pylint-pydantic==0.1.8
+pydantic==1.10.6
+openpyxl==3.1.2
+defusedxml==0.7.1
+
+[all]
