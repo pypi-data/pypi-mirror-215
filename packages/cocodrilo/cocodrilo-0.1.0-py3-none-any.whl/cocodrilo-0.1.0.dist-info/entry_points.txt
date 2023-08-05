@@ -1,0 +1,3 @@
+[console_scripts]
+cocodrilo=cocodrilo.cli:main
+
