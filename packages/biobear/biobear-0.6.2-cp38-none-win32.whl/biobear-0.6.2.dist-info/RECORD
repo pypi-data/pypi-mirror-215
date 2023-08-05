@@ -1,0 +1,16 @@
+biobear-0.6.2.dist-info/METADATA,sha256=mloE8s9WxbTdINGSscP6-_Uf4w_s0V68-IDTEZCbn0I,1356
+biobear-0.6.2.dist-info/WHEEL,sha256=RvnjtNHWHCV_HQicgSp_ToYD5xNleKMOBJlFMN4Ara0,92
+biobear-0.6.2.dist-info/license_files/LICENSE,sha256=4c3FHmFs1eQyth8xjrc1fsuZzb48aTxp7Y79neQtnYM,1075
+biobear/bam_reader.py,sha256=yqj0vxDiSd99reGiyhxOgnuCEj5yZFpAPCe6eeQQ4MY,1416
+biobear/bcf_reader.py,sha256=eH9aVp5ecHxeMQlr4hcDPvsQPJA6KOfIVyl5wz0tsvE,1476
+biobear/compression.py,sha256=TlkO9MrBIiQ36A2tXZBgQ238UbjpWyum3zVs9iAQOJk,746
+biobear/fasta_reader.py,sha256=Qhh9QS8pAz3Yp5hjUjbybE1tRK8vlBoQYcVhdeJcv_E,967
+biobear/fastq_reader.py,sha256=49iqAzdy-xfzLJI_d14XovfTajM-_iaCR983uKnb4Go,964
+biobear/genbank_reader.py,sha256=TTkMUlo9wYPkI5p4iW_P55oiNDSB0HvW8NWJvGxILO0,819
+biobear/gff_reader.py,sha256=8Qg1-L-uFAISnSfuvinj4-ovTBe0hBtpUZPDAezeQwo,1439
+biobear/gtf_reader.py,sha256=ft5ntQO8W6IbS5zUYBhWPt3DCn97Wm7kdGuFsk2Anzs,1439
+biobear/reader.py,sha256=ocV70_d_yy36B3oLdkLT8Criq6qb2crFGNP3b5Rsd-c,971
+biobear/vcf_reader.py,sha256=1xmXyJtTdTNECwQwOVFmpLuvyvGB5MzcDo3fY4rV_SU,1476
+biobear/__init__.py,sha256=PEiwW6sLKJjsX8eAKiaolzggZdun2ohQ6XhxNZdvKto,737
+biobear/biobear.cp38-win32.pyd,sha256=fKyHF9OIuQuehvc0GCeGKXJa2tuiyM3MqlNdbwOhLDA,42499072
+biobear-0.6.2.dist-info/RECORD,,
