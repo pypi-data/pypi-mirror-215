@@ -1,0 +1,3 @@
+[console_scripts]
+aft = adaptfx.aft:main
+ast = adaptsim.ast:main
