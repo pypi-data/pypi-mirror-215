@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Lemmy.py"
+
+authors = [
+    {name = "retiolus", email = "retiolus@tuta.io"},
+]
+description = "Python wrapper for the Lemmy API"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["wrapper", "lemmy", "api"]
+license = {text = "BSD-3-Clause"}
+version = "0.0.2"
+dependencies = [
+    "requests",
+    'loguru; python_version>"3.10"',
+]
