@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tvdenoising
+Version: 0.0.1
+Summary: 1D total variation denoising
+Author: The tvdenoising authors
+License: zlib
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+Direct, linear time 1D total variation denoising
+================================================
+
+Install with ``pip install git+https://github.com/anntzer/tvdenoising``.
+The only available function is ``tvdenoising.tv_1d``.
+
+The original author of ``prox_R.cpp`` is Ryan Tibshirani; this package is
+published with his explicit permission.
