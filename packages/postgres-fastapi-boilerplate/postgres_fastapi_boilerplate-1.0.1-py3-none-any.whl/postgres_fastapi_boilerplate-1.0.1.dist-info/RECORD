@@ -1,0 +1,17 @@
+base_files/Dockerfile.txt,sha256=YUbfyB98WAQ2tCrOHp-_YbLvPQI4PrjlVDGsq3JJyMQ,300
+base_files/app.main.txt,sha256=Q7nrhlwPMO87nebCEQk-PDq7xF1psyOmXac6SHPvlp8,335
+base_files/app.run.txt,sha256=OgB-NPyxf927WHdajY4MOf7BwEPDOtj0bCgBHR-pYZE,214
+base_files/build-docker.txt,sha256=d_9eh1_CHX_SlI87SEu1nY9tD7ln4w5Sf8vNp6aj3PE,250
+base_files/env.txt,sha256=LBh-UATcVDFJqgb-3zcGlgaLQhLr2Mbz22nvrMWXHkc,86
+base_files/pkg.__init__.txt,sha256=J9O5WNvC9cNDaxecveSUvzLGOXOYO-pCHbiGopfYoIc,76
+base_files/pkg.config.txt,sha256=V5lKKgofacJ0ry5LHk5q4BrLbq2PXkn3i2f1SSuuC1Q,2543
+base_files/pkg.postgres.orm.txt,sha256=ny4tIwtxIVyQGHcyyZB5tRkmCFVi4sAN6PEonoCA2sA,848
+base_files/pkg.postgres.postgres_client.txt,sha256=xrH9xHxpLycigYkC4z2Eju8qWiaeIpKbTAEcjC_UfZs,4365
+base_files/requirements.txt,sha256=KQRD3TL7sYQVYHb0dlzNXvqTyxxO6zq9r_Yh0qtbSB4,415
+postgres_fastapi_boilerplate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres_fastapi_boilerplate/__main__.py,sha256=zC2OZwWFV6nCHd8V-NLq3zT0sGGOEOwbfnjknCe3U3I,3427
+postgres_fastapi_boilerplate-1.0.1.dist-info/LICENSE,sha256=vuBsVWOn62f4PtXFbUJ4f8hNzooC7fUaUq4YGEAnyxU,1030
+postgres_fastapi_boilerplate-1.0.1.dist-info/METADATA,sha256=eil1tCWJCaQMmWGDa9qPOlJPs5lRqFBHTLY29gcOKrY,1873
+postgres_fastapi_boilerplate-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+postgres_fastapi_boilerplate-1.0.1.dist-info/top_level.txt,sha256=xj1Wb1sMYtEuidQFj7pPzirjbRwZOhWVjBqlq8vjCEI,40
+postgres_fastapi_boilerplate-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,13 @@
+FROM python:3.11-slim
+WORKDIR /code
+
+# Reqs
+COPY requirements.txt /code/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
+
+# Src
+COPY app /code/app
+COPY src/<PKG_NAME> /code/<PKG_NAME>
+
+# Start API (-u streams stdout/stderr, default buffers them)
+CMD python -u -m app.run
