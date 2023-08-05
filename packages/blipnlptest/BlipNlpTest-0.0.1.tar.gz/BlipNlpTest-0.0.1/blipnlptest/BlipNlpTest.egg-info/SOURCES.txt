@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+blipnlptest/BlipNlpTest.egg-info/PKG-INFO
+blipnlptest/BlipNlpTest.egg-info/SOURCES.txt
+blipnlptest/BlipNlpTest.egg-info/dependency_links.txt
+blipnlptest/BlipNlpTest.egg-info/requires.txt
+blipnlptest/BlipNlpTest.egg-info/top_level.txt
