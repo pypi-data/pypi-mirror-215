@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netzip"
+version = "0.3.0"
+authors = [{ name = "Emil Melnikov", email = "emilmelnikov@gmail.com" }]
+description = "ZIP file reader optimized for network access"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.urls]
+"Homepage" = "https://github.com/emilmelnikov/netzip"
+"Bug Tracker" = "https://github.com/emilmelnikov/netzip/issues"
+"Source" = "https://github.com/emilmelnikov/netzip"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-rfEP --quiet"
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pyright]
+include = ["src"]
+ignore = ["noxfile.py", "tests"]
+pythonVersion = "3.8"
+typeCheckingMode = "strict"
