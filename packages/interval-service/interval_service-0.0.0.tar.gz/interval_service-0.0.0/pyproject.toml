@@ -1,0 +1,7 @@
+[project]
+name = "interval_service"
+authors = [
+    {name = "Simon Patton", email = "sjpatton@lbl.gov"},
+]
+version = "0.0.0"
+description = "Coming soon"

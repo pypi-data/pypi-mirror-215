@@ -1,0 +1,6 @@
+pyproject.toml
+interval_service/__init__.py
+interval_service.egg-info/PKG-INFO
+interval_service.egg-info/SOURCES.txt
+interval_service.egg-info/dependency_links.txt
+interval_service.egg-info/top_level.txt
