@@ -1,0 +1,6 @@
+README.md
+setup.py
+PlexLabExchange.egg-info/PKG-INFO
+PlexLabExchange.egg-info/SOURCES.txt
+PlexLabExchange.egg-info/dependency_links.txt
+PlexLabExchange.egg-info/top_level.txt
