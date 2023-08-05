@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: breadcord-genetics
+Version: 0.2.2
+Summary: A Breadcord source modifier
+Home-page: https://github.com/alf1e/Genetics
+Author: ItsMeAlfie0
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Genetics
