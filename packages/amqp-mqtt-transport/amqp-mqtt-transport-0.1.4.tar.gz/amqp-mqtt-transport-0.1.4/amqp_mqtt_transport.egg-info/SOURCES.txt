@@ -1,0 +1,12 @@
+.gitattributes
+.gitignore
+LICENSE
+Makefile
+README.md
+pyproject.toml
+setup.py
+amqp_mqtt_transport.egg-info/PKG-INFO
+amqp_mqtt_transport.egg-info/SOURCES.txt
+amqp_mqtt_transport.egg-info/dependency_links.txt
+amqp_mqtt_transport.egg-info/requires.txt
+amqp_mqtt_transport.egg-info/top_level.txt
