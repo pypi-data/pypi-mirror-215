@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+almavik.egg-info/PKG-INFO
+almavik.egg-info/SOURCES.txt
+almavik.egg-info/dependency_links.txt
+almavik.egg-info/requires.txt
+almavik.egg-info/top_level.txt
+exp1/__init__.py
+src/YPPRPO.py
+src/__init__.py
+src/detectorDrop.py
+src/widgets.py
