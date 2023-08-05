@@ -1,0 +1,13 @@
+numpy
+matplotlib>=3.5.2
+pyvisa
+pandas
+scipy
+
+[dev]
+pip-tools
+pyvisa-py
+pyserial
+alicat
+psutil
+zeroconf
