@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "social-media-card"
+version = "2.0.1"
+description = "Create clickable images for social media"
+authors = ["Shay Hill <shay_public@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "social_media_card"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Pillow = "^9.5.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.3"
+commitizen = "^3.3.0"
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "2.0.1"
+tag_format = "$version"
+version_files = [
+    "pyproject.toml:^version"
+]
+
+[tool.pyright]
+include = ["src"]
+exclude = ["**/__pycache__.py"]
+
+pythonVersion = "3.10"
+pythonPlatform = "Any"
+
+typeCheckingMode = "strict"
+reportShadowedImports = true
+reportCallInDefaultInitializer = true
+reportImplicitStringConcatenation = true
+# reportMissingSuperCall = true
+reportPropertyTypeMismatch = true
+reportUninitializedInstanceVariable = true
+reportUnnecessaryTypeIgnoreComment = true
+reportUnusedCallResult = true
+
+venvPath = "C:\\Users\\shaya\\AppData\\Local\\pypoetry\\Cache\\virtualenvs"
+venv = "C:\\Users\\shaya\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\social-media-card-LP8zMKYt-py3.11"
