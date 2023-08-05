@@ -1,0 +1,9 @@
+setup.py
+chatexampy.egg-info/PKG-INFO
+chatexampy.egg-info/SOURCES.txt
+chatexampy.egg-info/dependency_links.txt
+chatexampy.egg-info/top_level.txt
+src/__init__.py
+src/client.py
+src/launcher.py
+src/server.py
