@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: healthuniverse
+Version: 0.1.0
+Summary: 
+Author: Dan Caron
+Author-email: dan.caron@healthuniverse.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Python-SDK
+The Python SDK to manage apps deployed on Health Universe.
+
