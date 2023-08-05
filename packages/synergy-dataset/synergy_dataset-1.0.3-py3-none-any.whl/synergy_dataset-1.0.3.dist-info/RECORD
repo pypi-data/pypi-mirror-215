@@ -1,0 +1,10 @@
+synergy_dataset/__init__.py,sha256=y58iSqgRrzBCEu3QDuZEG8eQKMTzP60Qo4so0drpnSY,326
+synergy_dataset/__main__.py,sha256=sBpnH2OzB_bJnzhXxaO_CSIVXw7japbm7JqVINdw4W0,9900
+synergy_dataset/_version.py,sha256=dkoUg6qBffScfg1f0bu6Ue1aT6v6mwUw2w1KArRn_h4,160
+synergy_dataset/base.py,sha256=Tls0Qrn2tfbh3u5Jj-3BCwPzRYqXhv15NNeInCiIdmk,7900
+synergy_dataset-1.0.3.dist-info/LICENSE,sha256=4K784e9VGfBoi_Ba8SSHfkOj7nfEssqmmtqqZdJr0HU,1074
+synergy_dataset-1.0.3.dist-info/METADATA,sha256=h3rMdJWyf7IAvsfa4QaXLJPtdf_1GmJb7-7o-1GYqs0,1481
+synergy_dataset-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+synergy_dataset-1.0.3.dist-info/entry_points.txt,sha256=fRyY8Ck9jwFpHQnkVsp1mIzp0UtbxnbizatCMfQhqVQ,154
+synergy_dataset-1.0.3.dist-info/top_level.txt,sha256=CCWrujWcHhACk7z0uOz5k_nXB1Y1CtC4bW48UVrU2mQ,16
+synergy_dataset-1.0.3.dist-info/RECORD,,
