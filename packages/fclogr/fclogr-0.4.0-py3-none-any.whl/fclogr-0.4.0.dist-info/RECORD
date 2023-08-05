@@ -1,0 +1,13 @@
+fclogr/__init__.py,sha256=P_kvytP6db7soLzx6qbb0RCKAKdhIBJKIJaBkULiApo,163
+fclogr/__main__.py,sha256=PJMHf2Gj5-3GlryJnclJKQLXzK7aiS-EakE3W_P9RBk,209
+fclogr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fclogr/cli/__init__.py,sha256=dT-W0YxuwtJFtFXAmGgUTVqhf7OLKnfVQcKvuDhxu_E,2047
+fclogr/cli/base.py,sha256=-FwybLAuJDjkS3QqhEWDb_9GgO8oi8IRVwG0zFjGfMk,1323
+fclogr/cli/bump.py,sha256=W2g8qXieJpUyUMsvSt-zYBb6ZAjTRvKTtHjUT5wNiC4,6857
+fclogr/cli/dev_entries.py,sha256=Ry9gHZSej0tJd8-NJbPGg2fcUCfRkcERzGumodyFoMQ,9932
+fclogr/cli/sync.py,sha256=zhxQVIWSnDZd2bdeMPjlAei0c1JAcEKq--lSdlq1VLA,2256
+fclogr-0.4.0.dist-info/entry_points.txt,sha256=uku7HnDvjBSj-d3jVYw_tJeHeFK-IeJ9yyIfl2CzPzA,42
+fclogr-0.4.0.dist-info/LICENSE,sha256=qvE1Ry-BxbSg3Kk2flu16XUAMrW-vlRCs25MCkdDDfM,17337
+fclogr-0.4.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+fclogr-0.4.0.dist-info/METADATA,sha256=LmUAvvj0DhVbz-rvdsAeTqH87yakiaeWRmkOCJjnS34,9920
+fclogr-0.4.0.dist-info/RECORD,,
