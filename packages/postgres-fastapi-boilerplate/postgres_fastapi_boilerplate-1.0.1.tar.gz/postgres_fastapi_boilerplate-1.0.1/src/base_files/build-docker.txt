@@ -1,0 +1,10 @@
+CONTAINER_NAME=<PKG_NAME>
+TAG_NAME=dev
+IMAGE_NAME=$CONTAINER_NAME:$TAG_NAME
+
+#echo off
+#docker stop $CONTAINER_NAME || true
+#docker rm $CONTAINER_NAME || true
+#echo on
+pip freeze > requirements.txt
+docker image build -f Dockerfile -t "$IMAGE_NAME" .

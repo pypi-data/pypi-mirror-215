@@ -1,0 +1,12 @@
+import uvicorn
+from <PKG_NAME>.config import logging_config
+from app.main import app
+
+print(f"Running app on 0.0.0.0:80")
+
+uvicorn.run(
+    app=app,
+    host='0.0.0.0',
+    port=80,
+    log_config=logging_config
+)

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "postgres_fastapi_boilerplate"
+version = "1.0.1"
+description = "Basic boilerplate providing a postgres client and FastAPI app."
+readme = "readme.md"
+authors = [{ name = "Josh Minneti" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["postgres", "fastapi", "boilerplate"]
+dependencies = []
+requires-python = ">=3.10"

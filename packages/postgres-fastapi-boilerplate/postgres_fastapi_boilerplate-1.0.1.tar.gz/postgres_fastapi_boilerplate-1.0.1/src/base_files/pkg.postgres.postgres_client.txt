@@ -1,0 +1,120 @@
+from datetime import datetime, timezone
+from typing import List, Union
+
+from sqlalchemy import create_engine, Executable, Result, Row, select, delete, ColumnExpressionArgument
+from sqlalchemy.dialects.postgresql import insert
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.sql.elements import SQLCoreOperations
+
+import <PKG_NAME>.postgres.orm as orm
+from <PKG_NAME>.config import init_logger, Settings
+
+
+class PostgresClient:
+
+    ORM = orm
+
+    def __init__(self):
+        """
+        Init postgres client
+        """
+        # Init logging
+        self.logger = init_logger(__name__)
+
+        # Define engine
+        self.engine = create_engine(Settings().pg_dsn, echo=False)
+        with self.engine.connect() as con:
+            self.logger.info(f"Connected to {self.engine.url}")
+
+        # Create database tables if DNE
+        try:
+            self.logger.info(f"Creating database objects if they don't exist")
+            self.ORM.Base.metadata.create_all(self.engine, checkfirst=True)
+        except Exception as err:
+            self.logger.exception(err)
+            raise err
+
+        # Define a session-maker, which wraps sane session management: https://docs.sqlalchemy.org/en/20/orm/session_basics.html#using-a-sessionmaker
+        self.Session = sessionmaker(self.engine)
+
+    @staticmethod
+    def get_current_time() -> datetime:
+        return datetime.now(tz=timezone.utc)
+
+    def execute_write(self, statement: Executable) -> Result:
+        self.logger.debug(f"WRITE: {statement}")
+        with self.Session.begin() as session:
+            result = session.execute(statement)
+        return result
+
+    def execute_read(self, statement: Executable) -> Result:
+        self.logger.debug(f"READ: {statement}")
+        with self.Session.begin() as session:
+            result = session.execute(statement)
+        return result
+
+    def scalars_prebuffer_read(self, statement: Executable) -> Result:
+        """
+        Wrapper for session.scalars
+
+        > Cannot handle select statements with specific col-defs, this will just return the first column.
+        > Use execute_read instead.
+
+        :param statement:
+        :return:
+        """
+        self.logger.debug(f"SCALARS READ: {statement}")
+        with self.Session() as session:
+            result = session.scalars(statement, execution_options=dict(prebuffer_rows=True))
+        return result
+
+    def insert_objects(self, objs: List[ORM.Base]):
+        self.logger.debug(f"Inserting {len(objs)} objects")
+        with self.Session.begin() as session:
+            session.add_all(objs)
+        return None
+
+    def insert(self, table: ORM.Base, values: List[dict]):
+        return self.execute_write(
+            statement=insert(table).values(values)
+        )
+
+    def delete(self, table: ORM.Base, where: SQLCoreOperations[bool]):
+        return self.execute_write(
+            statement=delete(table).where(where)
+        )
+
+    def upsert_do_nothing(self, table: ORM.Base, values: List[dict]):
+        return self.execute_write(
+            statement=insert(table).values(values).on_conflict_do_nothing()
+        )
+
+    def upsert_do_update(self, table: ORM.Base, values: List[dict], index_elements: List[str], update_keys: List[str]):
+        """
+        See https://docs.sqlalchemy.org/en/13/dialects/postgresql.html#insert-on-conflict-upsert
+
+        :param table:
+        :param values: List[dict], data to insert
+        :param index_elements: List[str], columns composing a unique index in the table
+        :param update_keys: List[str], on conflict, update these columns
+        :return:
+        """
+        stmt = insert(table).values(values)
+        return self.execute_write(
+            statement=stmt.on_conflict_do_update(
+                index_elements=index_elements,
+                set_={k: stmt.excluded[k] for k in update_keys}
+            )
+        )
+
+    def get_first_result(self, table: ORM.Base, column: ORM.mapped_column, value: any) -> Union[Row, None]:
+        result = self.scalars_prebuffer_read(
+            statement=select(table).where(column == value)
+        ).first()
+        return result
+
+    def match_column(self, table: ORM.Base, column: ORM.mapped_column, values: List[any]) -> Result:
+        result = self.scalars_prebuffer_read(
+            statement=select(table).where(column.in_(values))
+        )
+        return result

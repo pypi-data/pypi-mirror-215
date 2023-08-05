@@ -1,0 +1,21 @@
+import uuid
+from datetime import datetime, timezone
+from sqlalchemy.orm import DeclarativeBase, mapped_column
+import sqlalchemy.dialects.postgresql as sa_postgres
+
+
+TIMESTAMPTZ = lambda nullable=False: mapped_column(sa_postgres.TIMESTAMP(timezone=True), nullable=nullable)
+AUTO_TIMESTAMPTZ = lambda: mapped_column(sa_postgres.TIMESTAMP(timezone=True), nullable=False, default=datetime.now(tz=timezone.utc))
+AUTO_UUID = lambda pk=False: mapped_column(sa_postgres.UUID(as_uuid=True), nullable=False, unique=True, default=uuid.uuid4, primary_key=pk)
+FK = lambda key, unique=False, pk=False: mapped_column(sa.ForeignKey(key), primary_key=pk, unique=unique)
+
+
+class Base(DeclarativeBase):
+    """
+    SQLAlchemy DeclarativeBase object.
+    By subclassing, we can holistically interact with them:
+
+    `Base.metadata.create_all(engine)`
+
+    """
+    pass
