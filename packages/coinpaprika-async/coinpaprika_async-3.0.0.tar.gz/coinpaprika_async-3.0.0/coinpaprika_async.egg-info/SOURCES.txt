@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+coinpaprika_async/__init__.py
+coinpaprika_async/_version__.py
+coinpaprika_async/coinpaprika_async_client.py
+coinpaprika_async.egg-info/PKG-INFO
+coinpaprika_async.egg-info/SOURCES.txt
+coinpaprika_async.egg-info/dependency_links.txt
+coinpaprika_async.egg-info/requires.txt
+coinpaprika_async.egg-info/top_level.txt
+tests/test_client.py
