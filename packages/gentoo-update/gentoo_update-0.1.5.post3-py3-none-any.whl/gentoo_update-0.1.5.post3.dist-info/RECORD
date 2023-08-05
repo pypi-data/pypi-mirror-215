@@ -1,0 +1,10 @@
+gentoo_update/__init__.py,sha256=2KkbBNQtfh4CidHAajPc4v2zJxjIfhfs-Qghe78xGdc,96
+gentoo_update/gentoo_update.py,sha256=e9yHa2VerBOF8zSyHYMxM-eAxfQqxIdJQJjU-hme_5E,3729
+gentoo_update/shell_runner.py,sha256=ak7FLjXz5EzhhOQJFMxkZj_sMKi8ZUXB4wXWUCZphKg,6291
+gentoo_update/scripts/updater.sh,sha256=TQO0betkePtQ8-k_QFvTdiom3DBUhq7tVCzgs2KQ7RQ,4792
+gentoo_update-0.1.5.post3.dist-info/LICENSE,sha256=dh6Beb5w0KMDhLFxSUMhKQaUol0qAAWNbGUFI9WNVgI,1071
+gentoo_update-0.1.5.post3.dist-info/METADATA,sha256=ZIo7K0lygrzSuK43vIrkG1cFIiJ6gnbiSv4ceR6-EA4,1860
+gentoo_update-0.1.5.post3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gentoo_update-0.1.5.post3.dist-info/entry_points.txt,sha256=8eLwlEuk7L9ivmR4Qj6abNXnYxCqx6O8K9yYNOeWRBs,67
+gentoo_update-0.1.5.post3.dist-info/top_level.txt,sha256=ICQYuzyxfW64ASCP0AfKFDEo1tQxOfk3oISnwphO-UU,14
+gentoo_update-0.1.5.post3.dist-info/RECORD,,
