@@ -1,0 +1,3 @@
+[console_scripts]
+annotest = annotest.__main__:main
+
