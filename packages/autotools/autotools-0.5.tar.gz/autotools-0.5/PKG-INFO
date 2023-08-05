@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: autotools
+Version: 0.5
+Summary: Just save your time
+Author: automatic, ebu sobak
+Author-email: 
+License: OpenSource
+
+Simple module for realisate simple tasks

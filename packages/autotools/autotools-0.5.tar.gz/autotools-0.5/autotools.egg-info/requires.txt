@@ -1,0 +1,7 @@
+openai
+SpeechRecognition
+playsound
+gtts
+requests
+Pillow
+numpy
