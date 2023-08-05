@@ -1,0 +1,10 @@
+inline_snapshot/__init__.py,sha256=kBUAP_7ey5QyZ_drL0IwY6HtRkp7HOsvXF8EFrxAYCQ,62
+inline_snapshot/_format.py,sha256=CseQfBBLgjsndJ9W0cx0cfHhFSBca0zgPXZa_OwK4_c,121
+inline_snapshot/_inline_snapshot.py,sha256=_OVZ9y9_DtfzmxWq5s9VlNmku0TLYZiL1B2PpOtHlYc,14391
+inline_snapshot/_rewrite_code.py,sha256=p05ydF04lJRS83LaV9JfFB5STVJwZM-2uyi7eNJ9Lro,5497
+inline_snapshot/pytest_plugin.py,sha256=fsZJP0v0EVxheOz4Jk8xVBiy1sYZSt0sqa_AW1T82Yw,5445
+inline_snapshot-0.2.0.dist-info/LICENSE,sha256=FH_kQdPe-T2SWbWWROFSjc-oxH55SlHK7_PGGVg76dM,1082
+inline_snapshot-0.2.0.dist-info/METADATA,sha256=8BigFE2AAIHkkr7PQFr_1Wb-ciK_h0Tnej79P_fnmyk,3395
+inline_snapshot-0.2.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+inline_snapshot-0.2.0.dist-info/entry_points.txt,sha256=AUXHs0c9hf5hlXP_Fotkix3SW3akUQyYxOw6zKxxVtU,58
+inline_snapshot-0.2.0.dist-info/RECORD,,
