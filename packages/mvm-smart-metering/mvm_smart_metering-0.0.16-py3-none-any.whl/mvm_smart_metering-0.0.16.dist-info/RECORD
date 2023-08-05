@@ -1,0 +1,5 @@
+mvm_smart_meter/__init__.py,sha256=xPnGodxP6ShYAj4nQf517aK9RiBpkzsZjIukYPgMXYs,78
+mvm_smart_meter/smart_meter.py,sha256=SCqKHN7zsd4n_6LbcJYoK5w_qW_L9a2irXhKllQzgZA,17191
+mvm_smart_metering-0.0.16.dist-info/METADATA,sha256=gHYKK_D6Vx9wPNNf0HJgv0Uo74lIezWte3bbRFB7lVg,871
+mvm_smart_metering-0.0.16.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mvm_smart_metering-0.0.16.dist-info/RECORD,,
