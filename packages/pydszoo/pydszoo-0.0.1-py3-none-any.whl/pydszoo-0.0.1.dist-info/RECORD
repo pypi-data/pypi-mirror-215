@@ -1,0 +1,13 @@
+pydszoo/__init__.py,sha256=eOugD3JFDPZ7zfp2wutwURAIPHZ6zk3ePhLcyL2HjGo,3188
+pydszoo/pde_utils.py,sha256=tXdG2flC6AfDv67ce0MrsjK9y9bW5aKiqs4phgGMGxU,4202
+pydszoo/utils.py,sha256=StviKwBrDkadPO56Z1L8SawRGNZaBRgHrsrLnr61PUc,5268
+pydszoo/allen_cahn/__init__.py,sha256=xPRUlD1Leo37u7OwJ4K-mniQlJSSgEyhSTwgZiohPGI,4795
+pydszoo/brusselator/__init__.py,sha256=zZr7goiTzCSnefclr6YXn-QvlNe6RwId8PX4Ucz78Tc,2772
+pydszoo/fun/__init__.py,sha256=BiZP7cL8DbqHvSulviwLPAU9bXoQTTflRYZDA4VsRIM,10647
+pydszoo/kardar_parisi_zhang/__init__.py,sha256=ef_5oEXp5P-_KRd25tU-xtcwiWvATnvppw1HpPwShuM,3979
+pydszoo/lorenz/__init__.py,sha256=70_h_3_Hz9DyKLVNXKoU_gqmU22mdVEuDVxx31S2i9I,2895
+pydszoo-0.0.1.dist-info/LICENSE,sha256=P94bbV62zOVzGTVBZVXv1KDPjPkgiv96LJc4A66gFME,1069
+pydszoo-0.0.1.dist-info/METADATA,sha256=wfpyPDCGOo8P5uNiU4kyfq2N3EuKo2nc6OhVVE8AwfA,806
+pydszoo-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pydszoo-0.0.1.dist-info/top_level.txt,sha256=fu_uppwfAmvLFnVCpS0_Jz2XmMhWWXaFBp30Az4EYQk,8
+pydszoo-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pydszoo
+Version: 0.0.1
+Summary: Python Dynamical Systems Zoo
+Home-page: http://github.com/fkemeth/PyDSZoo
+Author: Felix P. Kemeth
+Author-email: felix@kemeth.de
+License: MIT
+Project-URL: Bug Tracker, https://github.com/fkemeth/PyDSZoo/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pre-commit
+Requires-Dist: scipy
+
