@@ -1,0 +1,5 @@
+requests
+pandas
+
+[dev]
+twine>=3.2.0
