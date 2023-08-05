@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: autotools
+Version: 0.5
+Summary: Just save your time
+Author: automatic, ebu sobak
+Author-email: 
+License: OpenSource
+Requires-Dist: openai
+Requires-Dist: SpeechRecognition
+Requires-Dist: playsound
+Requires-Dist: gtts
+Requires-Dist: requests
+Requires-Dist: Pillow
+Requires-Dist: numpy
+
+Simple module for realisate simple tasks
