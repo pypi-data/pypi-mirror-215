@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: jhu-assembly-linter
+Version: 0.1.6
+Summary: A Linter for JHU's Assembly Classes
+Home-page: https://pypi.org/project/jhu-assembly-linter/
+License: MIT
+Keywords: jhu,assembly,linter
+Author: Paul Logston
+Author-email: pbulkle1@jh.edu
+Maintainer: Paul Logston
+Maintainer-email: pbulkle1@jh.edu
+Requires-Python: >=3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/LogstonGradSchool/JhuAssemblyStyleLinter
+Description-Content-Type: text/markdown
+
+# Assembly Style Linter
+
+This linter was designed with Prof. Charles Kann's Computer Organization
+(EN.605.204) course in mind. It performs a strict but non-exhaustive lint;
+meaning it will not catch all errors but will be noisy and exacting about those
+that it does.
+
+## Install
+
+```
+pip install jhu-assembly-linter
+```
+
+## Usage
+
+```
+$ jhu-assembly-linter ./path/to/file.s
+
+E:: Tab found. Only spaces allowed.
+18:     LDR x0, =helloWorld
+    ^
+E:: Instruction is not uppercase.
+19:     mov     w8, #64     /* write is syscall #64 */
+        ^
+E:: Non-functional whitespace found.
+20: 
+    ^^^^^
+E:: File name does not end with "Main" when it should.
+21: main:
+```
+
+To lint a whole directory:
+
+```
+find . -name "*.s" | xargs -I{} jhu-assembly-linter  {}
+```
+
+To add a pre-commit hook to you repo:
+```
+repos:
+-   repo: https://github.com/LogstonGradSchool/JhuAssemblyStyleLinter
+    rev: <latest version>
+    hooks:
+    -   id: jhu-assembly-linter
+```
+
+### Tests
+
+```
+tox
+```
+
+### Deployment
+
+```
+poetry build
+poetry publish
+```
+
