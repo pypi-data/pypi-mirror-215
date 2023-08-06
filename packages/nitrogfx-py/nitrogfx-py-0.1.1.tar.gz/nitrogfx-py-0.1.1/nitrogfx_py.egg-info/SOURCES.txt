@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+nitrogfx_py.egg-info/PKG-INFO
+nitrogfx_py.egg-info/SOURCES.txt
+nitrogfx_py.egg-info/dependency_links.txt
+nitrogfx_py.egg-info/requires.txt
+nitrogfx_py.egg-info/top_level.txt
