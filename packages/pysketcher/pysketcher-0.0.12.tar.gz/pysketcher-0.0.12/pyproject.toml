@@ -1,0 +1,138 @@
+[project]
+name = "pysketcher"
+description = "Geometric Sketching Utility for Python"
+readme = "README.rst"
+requires-python = ">=3.9,<3.12"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Richard Vodden", email = "richard@vodden.com" },
+    { name = "Hans Petter Langtangen" }
+]
+keywords = ['sketch','graphics','scientific','engineering','geometry']
+dependencies = [
+    "numpy~=1.25.0",
+    "matplotlib~=3.7.1",
+    "scipy~=1.10.1",
+    "celluloid~=0.2.0"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+build = [
+    "build",
+    "twine",
+    "nox"
+]
+tests = [
+    "hypothesis~=6.79.1",
+    "pytest~=7.3.2",
+    "coverage~=7.2.7",
+    "mypy>=0.991,<2.0",
+    "wheel~=0.38.4",
+    "pytest-cov~=4.0.0",
+    "pytest-timeout~=2.1.0",
+    "nox-poetry~=1.0.2",
+    "flake8-docstrings>=1.6,<1.8",
+    "six~=1.15.0",
+    "zipp>=3.11,<3.16",
+    "flake8-bugbear>=22.12.6,<23.7.0",
+    "typed-ast~=1.5.4",
+    "codecov~=2.1.10"
+]
+lint = [
+    "pylint>=2.15.9,<2.18.0",
+    "flake8>=5.0.4,<6.1.0",
+    "pydocstyle>=6.1.1,<6.4.0",
+    "black~=23.3.0",
+    "flake8-black~=0.3.6",
+    "flake8-import-order~=0.18.2",
+    "flake8-bandit~=4.1.1",
+    "darglint~=1.7.0",
+    "blackdoc~=0.3",
+]
+precommit = [
+    "pre-commit>=2.21,<3.4",
+    "commitizen>=2.39.1,<3.5.0",
+]
+documentation = [
+    "sphinx~=7.0.1",
+    "furo~=2023.5.20",
+    "sphinx-autodoc-typehints~=1.23.2",
+    "recommonmark~=0.7.1",
+]
+
+[project.urls]
+repository = "https://github.com/rvodden/pysketcher.git"
+homepage = "https://github.com/rvodden/pysketcher"
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=61.0.0",
+    "setuptools-scm",
+    "setuptools-git-versioning",
+    "nox",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pysketcher"]
+exclude = ["tests","figs","examples","docs"]
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "pysketcher"]
+python_files = "test_*.py"
+python_functions = "test_*"
+junit_duration_report = "call"
+junit_suite_name = "pysketcher"
+junit_family = "xunit1"
+addopts = "--doctest-modules"
+
+[tool.coverage.run]
+branch = true
+source = ["pysketcher/"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+known_third_party = "celery,django,environ,pyquery,pytz,redis,requests,rest_framework"
+
+[tool.mypy]
+# follow and type check all modules, including third-party ones
+follow_imports = "normal"
+# precede all errors with “note” messages explaining the context of the error
+show_error_context = true
+# This is the last resort solution, we should fine-tune it with
+# specific sections [mypy-<library_name>] for libraries that
+# have missing stubs or issues with imports
+# https://mypy.readthedocs.io/en/latest/running_mypy.html#missing-imports
+ignore_missing_imports = true
+# Check all defs, even untyped ones (with less precise semantics)
+check_untyped_defs = true
+# All functions/methods should have complete signatures
+# (this basically disallows gradual typing for all module-level definitions)
+disallow_incomplete_defs = true
+# all writes to cache should be discarded
+# (it's different from incremental mode)
+cache_dir = "/dev/null"
+# report an error whenever the code uses an unnecessary cast
+# that can safely be removed.
+warn_redundant_casts = true
+# warn about unused [mypy-<pattern>] config file sections.
+warn_unused_configs = true
+# find gaps and omissions in type stubs, including third-party ones
+warn_incomplete_stub = true
+# helps to find any `# type: ignore` annotations that we no longer need
+warn_unused_ignores = true
+# All arguments that allow None should be annotated as Optional[T]
+strict_optional = true
+# stop treating arguments with a None default value as having
+# an implicit Optional[T] type
+no_implicit_optional = true

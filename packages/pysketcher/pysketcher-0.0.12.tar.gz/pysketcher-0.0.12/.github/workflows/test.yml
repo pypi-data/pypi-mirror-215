@@ -1,0 +1,31 @@
+---
+name: Tests
+on: push
+jobs:
+    tests:
+        strategy:
+            fail-fast: false
+            matrix:
+                os-version:
+                    - "ubuntu-22.04"
+                python-version:
+                    - "3.9"
+                    - "3.10"
+                    - "3.11"
+                experimental:
+                    - false
+                include:
+                    - python-version: "3.11"
+                      os-version: "windows-2019"
+                      experimental: true
+        continue-on-error: ${{ matrix.experimental }}
+        runs-on: ${{ matrix.os-version }}
+        steps:
+            - uses: actions/checkout@v2
+            - uses: FedericoCarboni/setup-ffmpeg@v1
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: ${{ matrix.python-version }}
+                  architecture: x64
+            - run: pip install nox==2022.11.21
+            - run: nox -s tests-${{ matrix.python-version }} examples-${{ matrix.python-version }}
