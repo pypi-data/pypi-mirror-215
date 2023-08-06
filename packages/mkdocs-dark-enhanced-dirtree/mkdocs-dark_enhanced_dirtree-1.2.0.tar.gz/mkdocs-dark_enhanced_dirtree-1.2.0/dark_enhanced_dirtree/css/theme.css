@@ -1,0 +1,352 @@
+/* ------------------------------------------- */
+/* =============== GENERAL CSS =============== */
+/* ------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: rgb(0, 0, 0, 0);
+  color: whitesmoke;
+  font-family: "Consolas", "Courier New", "Lucida Console", "Menlo", "Monaco",
+    "Liberation Mono", "Ubuntu Mono", "DejaVu Sans Mono", "Roboto Mono",
+    "Noto Mono", "Inconsolata", "Source Code Pro", "SF Mono", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+html,
+body {
+  background-color: rgb(18, 18, 18);
+  padding: 10px;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    min-width: 450px;
+    margin-right: 10px;
+  }
+
+  .content {
+    /* do not remove these css */
+    margin: 0 auto;
+    /* if this min-width is black magic, read this: */
+    /* https://stackoverflow.com/questions/36230944/prevent-flex-items-from-overflowing-a-container */
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  color: #c79a47;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: #c700a9;
+}
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  color: #4cc8cc;
+}
+
+blockquote {
+  padding: 10px;
+  margin: 0px auto;
+  background-color: rgb(0, 41, 82);
+}
+
+blockquote p,
+blockquote strong em,
+blockquote p strong em {
+  color: rgb(242, 255, 103);
+}
+
+em {
+  font-style: italic;
+  color: rgb(194, 193, 255);
+}
+
+p {
+  margin: 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: rgba(136, 199, 255, 0.342) 1px solid;
+}
+
+a:hover {
+  background-color: #4cc8cc21;
+}
+
+a:before {
+  content: "\1f517";
+  text-align: center;
+  margin-right: 10px;
+}
+a.hidden {
+  border-bottom: 0;
+}
+
+a.hidden::before {
+  content: "";
+  text-align: center;
+  margin-right: 0px;
+}
+/* input[type="checkbox"] {
+  width: 45px;
+  height: 15px;
+  background: #555;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] + label {
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+input[type="checkbox"]:checked {
+}
+
+input[type="checkbox"]:checked + label {
+} */
+
+/* This styles the label text next to the checkbox */
+label {
+  margin-left: 5px;
+  margin-right: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* This styles the checkbox itself */
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  /* Hide the default checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Style the custom checkbox */
+  background-color: #fff;
+  border: 1px solid #ffcc00;
+  border-radius: 4px;
+  transition: all 0.1s ease-in-out;
+}
+
+/* This styles the custom checkbox when it is checked */
+input[type="checkbox"]:checked {
+  background-color: #2b2b2b;
+}
+
+/* This styles the checkmark inside the custom checkbox */
+input[type="checkbox"]::before {
+  opacity: 0; /* invisible icon inside the checkbox */
+  content: "\2713";
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+/* This styles the checkmark when the custom checkbox is checked */
+input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+button {
+  background-color: #4b6092; /*Set the background color*/
+  border: none; /*Remove borders*/
+  padding: 15px 32px; /*Set the padding*/
+  text-align: center; /*Center text*/
+  text-decoration: none; /*Remove underline*/
+  display: inline-block; /*Make it an inline-block element*/
+  font-size: 16px; /*Set font size*/
+  margin: 4px 2px; /*Add some margin*/
+  cursor: pointer; /*Change cursor on hover*/
+  border-radius: 10px; /*Add rounded corners*/
+  transition: background-color 0.1s ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #3e8e41; /*Change background color on hover*/
+}
+
+button:active {
+  background-color: #27632c;
+}
+
+/* ------------------------------------ */
+/* =============== CODE =============== */
+/* ------------------------------------ */
+pre {
+  background-color: rgba(255, 255, 255, 0.152);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+code {
+  color: #ca7676;
+  background-color: rgba(20, 20, 20, 0);
+}
+
+.vscode-light .hljs-comment,
+.vscode-light .hljs-quote,
+.vscode-light .hljs-number,
+.vscode-light .hljs-class,
+.vscode-light .hljs-variable {
+  background-color: rgba(0, 128, 0, 0);
+  color: rgb(0, 138, 0);
+}
+
+/* ----------------------------------- */
+/* =============== NAV =============== */
+/* ----------------------------------- */
+
+.children {
+  list-style: none;
+}
+
+.section {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-page {
+  cursor: pointer;
+  list-style: none;
+  padding: 8px;
+}
+
+.section span {
+  /* unclickable span */
+  pointer-events: none;
+}
+
+.section::before {
+  content: "+";
+}
+
+.section.collapsed::before {
+  content: "-";
+}
+
+/* hide the items */
+.section.collapsed + .children {
+  display: block;
+}
+
+/* hide the items */
+.section + .children {
+  display: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nav {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.sub-nav {
+  margin-left: 0px;
+  padding-left: 15px;
+}
+
+.nav-page.active {
+  background-color: #cc96ff47;
+}
+
+.nav-page:hover {
+  background-color: rgba(137, 43, 226, 0.371);
+}
+
+.nav-page a {
+  text-decoration: none;
+  pointer-events: none;
+  border-bottom: none;
+}
+
+/* ----------------------------------- */
+/* ============ MD TABLES ============ */
+/* ----------------------------------- */
+
+table {
+  border: #27632c 1px solid;
+  border-collapse: separate;
+  border-spacing: 15px 5px;
+  margin: 10px 0;
+}
+
+table thead tr th {
+  border-bottom: #5ab161e3 1px solid;
+}
+
+table tbody tr td:nth-child(n) {
+  background-color: rgba(127, 255, 212, 0.171);
+}
+
+table tbody tr td:nth-child(2n) {
+  background-color: rgba(127, 129, 255, 0.171);
+}
+/* ----------------------------------- */
+/* ============ MERMEID2 ============= */
+/* ----------------------------------- */
+
+g div {
+  color: black;
+}
+
+.edgePath .path {
+  stroke: rgb(170, 255, 255) !important;
+}
+
+.arrowheadPath {
+  fill: rgb(170, 255, 255) !important;
+}
+
+.mermaid line {
+  stroke: rgb(170, 255, 255) !important;
+}
+
+.mermaid .messageText {
+  fill: rgb(238, 238, 238) !important;
+  stroke: rgba(170, 255, 255, 0) !important;
+}
+
+.mermaid #arrowhead path {
+  fill: rgb(170, 255, 255) !important;
+  stroke: rgb(170, 255, 255) !important;
+}

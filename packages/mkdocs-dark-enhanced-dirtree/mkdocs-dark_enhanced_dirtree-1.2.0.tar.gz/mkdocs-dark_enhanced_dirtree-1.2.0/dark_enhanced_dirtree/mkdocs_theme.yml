@@ -1,0 +1,15 @@
+language: en
+
+# can be ltr (default) or rtl
+direction:
+
+features: []
+
+font:
+  text: Roboto
+  code: Roboto Mono
+
+icon:
+
+static_templates:
+  - 404.html
