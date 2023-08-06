@@ -1,0 +1,7 @@
+setup.py
+ogms.egg-info/PKG-INFO
+ogms.egg-info/SOURCES.txt
+ogms.egg-info/dependency_links.txt
+ogms.egg-info/requires.txt
+ogms.egg-info/top_level.txt
+ogms.egg-info/zip-safe
