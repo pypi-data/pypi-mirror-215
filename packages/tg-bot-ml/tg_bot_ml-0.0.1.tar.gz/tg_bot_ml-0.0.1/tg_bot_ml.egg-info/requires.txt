@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+pyTelegramBotAPI
+yaml
+opencv-python
