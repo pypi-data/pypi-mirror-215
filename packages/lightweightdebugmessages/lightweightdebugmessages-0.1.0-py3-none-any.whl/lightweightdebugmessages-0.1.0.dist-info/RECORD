@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=LOuOt20pSFmGJvj1C21DXS5iDrvD_y65ft6kaFdi2Is,732
+lightweightdebugmessages/LightweightDebugMessages.py,sha256=nKcBlcOikcP3G5IdHBr9pwAIrCDmsT_g_ufOIqHOciA,5591
+lightweightdebugmessages/__init__.py,sha256=kitHv3ID3C9CZeLaf79_bxmya2N0BkxY3hc0KtWxCJc,2461
+lightweightdebugmessages/unittests/__init__.py,sha256=t-cBpUVivDQaT9MUDogSYEQPi8UOP4KNZNSzHpYG1lE,158
+lightweightdebugmessages/unittests/common.py,sha256=AiDxx_82wYehoHK3IRMP7aRtYgOj9whOIpqF-RYMcHw,2163
+lightweightdebugmessages/unittests/test_LightweightDebugMessages.py,sha256=JHxrbhOL2RIcwbyoK5ooRXDOqfdzljggPRIOilndetc,5998
+lightweightdebugmessages/version.py,sha256=nnC6rjmwDhcCDrNwbkTnwb8RjsJCiV-bgBMzNenJdOw,2460
+lightweightdebugmessages-0.1.0.dist-info/LICENSE,sha256=VZAeUd-kWiFUc0RQfjqLq5ziTOAC758XnpKl7dWYlOQ,1732
+lightweightdebugmessages-0.1.0.dist-info/METADATA,sha256=nRQa8CAX_ZuqembA8p3VZVoXAIsvNyOQAh06fRwaNt8,2506
+lightweightdebugmessages-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+lightweightdebugmessages-0.1.0.dist-info/RECORD,,
