@@ -1,0 +1,10 @@
+mousse
+PyYAML
+typer
+Jinja2
+
+[dev]
+black
+
+[yaml]
+pyyaml
