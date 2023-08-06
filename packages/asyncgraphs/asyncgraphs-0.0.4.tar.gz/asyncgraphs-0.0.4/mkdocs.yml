@@ -1,0 +1,24 @@
+site_name: AsyncGraphs
+theme:
+  name: material
+
+repo_name: SamVermeulen42/asyncgraphs
+repo_url: https://github.com/SamVermeulen42/asyncgraphs
+
+nav:
+- Overview: index.md
+- Usage:
+  - usage/construction.md
+  - usage/execution.md
+- Components:
+  - components/graph.md
+  - components/source.md
+  - components/transform.md
+- changelog.md
+
+markdown_extensions:
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format
