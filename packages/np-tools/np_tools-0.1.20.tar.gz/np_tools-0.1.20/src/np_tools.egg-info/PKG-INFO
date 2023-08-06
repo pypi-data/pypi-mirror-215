@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: np-tools
+Version: 0.1.20
+Summary: General-purpose tools for common tasks encountered in Mindscope Neuropixels workflows.
+Author-email: bjhardcastle <ben.hardcastle@alleninstitute.org>
+License: MIT
+Project-URL: Source, https://github.com/AllenInstitute/np_tools
+Project-URL: Issues, https://github.com/AllenInstitute/np_tools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# np_tools
+
+### *For use on internal Allen Institute network*
+
+[![Python
+Versions](https://img.shields.io/pypi/pyversions/np_tools.svg)](https://pypi.python.org/pypi/np-tools/)
+
+General-purpose tools for common tasks encountered in Mindscope Neuropixels workflows.
