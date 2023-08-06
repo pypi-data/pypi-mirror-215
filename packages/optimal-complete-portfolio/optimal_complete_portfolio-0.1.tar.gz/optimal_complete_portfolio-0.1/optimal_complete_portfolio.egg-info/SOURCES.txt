@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+optimal_complete_portfolio.egg-info/PKG-INFO
+optimal_complete_portfolio.egg-info/SOURCES.txt
+optimal_complete_portfolio.egg-info/dependency_links.txt
+optimal_complete_portfolio.egg-info/requires.txt
+optimal_complete_portfolio.egg-info/top_level.txt
