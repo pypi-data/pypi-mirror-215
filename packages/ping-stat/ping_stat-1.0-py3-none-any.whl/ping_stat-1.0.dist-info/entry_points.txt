@@ -1,0 +1,3 @@
+[console_scripts]
+ping-stat=ping_stat.main:main
+
