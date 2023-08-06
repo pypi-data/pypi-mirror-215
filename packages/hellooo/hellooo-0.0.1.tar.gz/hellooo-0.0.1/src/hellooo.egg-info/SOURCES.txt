@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hellooo.egg-info/PKG-INFO
+src/hellooo.egg-info/SOURCES.txt
+src/hellooo.egg-info/dependency_links.txt
+src/hellooo.egg-info/top_level.txt
+src/mypackage/__init__.py
+src/mypackage/main.py
