@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+marchie/__init__.py
+marchie/end_behavior.py
+marchie/marchie.py
+marchie/structure.py
+marchie.egg-info/PKG-INFO
+marchie.egg-info/SOURCES.txt
+marchie.egg-info/dependency_links.txt
+marchie.egg-info/requires.txt
+marchie.egg-info/top_level.txt
+tests/test.py
