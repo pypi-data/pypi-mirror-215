@@ -1,0 +1,12 @@
+envconfig/__init__.py,sha256=doGjOXuL0q-gBF3Nn-kVHBaaZOrl4y8e1m2-joU2Quk,62
+envconfig/dotenv.py,sha256=6qQvTpSWs_g3OZkPKn6gHR1h-y9LgtQa94K-4-1IcVo,1669
+envconfig/parser.py,sha256=DE7kEO0XCEZByHByKfnz3ESFhWVH265FVihyQUoeoFQ,2391
+envconfig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envconfig/setting_types.py,sha256=YmQaf-1Vt9yPC3R9hJwLMDIoka-Zcg7sNdlwHQKJtY4,6672
+envconfig/settings.py,sha256=aiobi-UrmQRaryQ4RaZNnexOaBDxC7bSBmYSTccDEaQ,3713
+envconfig/utils.py,sha256=POdgjzACAzwE9e6egzCWTj4v5n73C-mpUUHZYITdlRk,3210
+django_envconfig-0.3.0.dist-info/LICENSE,sha256=KTsvtv8J5Z7mVutlsH-QCB912HuiCUeyDAwg70Q8Bd4,1054
+django_envconfig-0.3.0.dist-info/METADATA,sha256=0VsbbVzikUD9IDa4LEjqDTqKXfMHOPcGW_6nENIEnQc,6051
+django_envconfig-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_envconfig-0.3.0.dist-info/top_level.txt,sha256=0S82DvzIniOXYoDreaKzmp-Me1YKGf7qvmud_rcQnRE,10
+django_envconfig-0.3.0.dist-info/RECORD,,
