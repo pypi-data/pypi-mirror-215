@@ -1,0 +1,9 @@
+_pybind11_fast_crossing.cpython-36m-darwin.so,sha256=ut6v4BJcb6gLD7JVfNetj5j0B_K3lHw_tKeSqC4Ga5M,678176
+fast_crossing/__init__.py,sha256=JnUxnBpEEZetgVId_sTm_JcEOqJASXniOZqexb1pvTo,102
+fast_crossing/spatial.py,sha256=mkJqBmcJ0pQue9dCsIqOZhsg2rGHHCRQPClHqFWYnEA,3381
+fast_crossing/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_crossing-0.0.8.dist-info/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
+fast_crossing-0.0.8.dist-info/METADATA,sha256=Sz5ec28SNMJvjeityEO_e9dRm_Uj_XFfCRXuTTQrsig,7181
+fast_crossing-0.0.8.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+fast_crossing-0.0.8.dist-info/top_level.txt,sha256=z-z9SA1-2Gfy7W0tnsoXkob1Rwej_RSii221S8tgR4g,14
+fast_crossing-0.0.8.dist-info/RECORD,,
