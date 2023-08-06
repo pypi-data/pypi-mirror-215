@@ -1,0 +1,2 @@
+[console_scripts]
+edustaa = edustaa.cli:app

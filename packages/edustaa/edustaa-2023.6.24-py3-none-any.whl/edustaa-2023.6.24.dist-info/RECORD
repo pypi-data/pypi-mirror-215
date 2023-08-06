@@ -1,0 +1,16 @@
+edustaa/__init__.py,sha256=TIDnDUwfLRDnNprb_--Uh7f_V5sUaToahr7nUzxJK58,745
+edustaa/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/css.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/html.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/js.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/md.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/pdf.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa/troff.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edustaa-2023.6.24.dist-info/LICENSE,sha256=a9GBBsUGDvTGs1rmHMujUJiPhEY6vtKCdGlW6XmWoTw,1069
+edustaa-2023.6.24.dist-info/METADATA,sha256=5YwZy8b8sH_i3thqh-XTb5azW1F5Vi8dK_It3hFUCbM,3628
+edustaa-2023.6.24.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+edustaa-2023.6.24.dist-info/entry_points.txt,sha256=xa3jhncrLw0-tH6SSgOavNdewCu7OhgcNFcsoISQVp0,44
+edustaa-2023.6.24.dist-info/top_level.txt,sha256=3OjjGcKrQmIEAF7_8M9wyzKSFixLCt2j1hPjVQ4vf-0,8
+edustaa-2023.6.24.dist-info/RECORD,,
