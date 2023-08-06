@@ -1,0 +1,1 @@
+from decorators_cryptography.decorators_cryptography import decrypt, encrypt

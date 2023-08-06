@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "decorators-cryptography"
+version = "0.1.0"
+description = "Decorators for encrypting/decrypting passed arguments"
+authors = ["Kotorkovsciy <kotorkovsciy@gmail.com>"]
+readme = "README.md"
+packages = [{include = "decorators_cryptography"}]
+homepage = "https://github.com/kotorkovsciy/decorators-cryptography"
+repository = "https://github.com/kotorkovsciy/decorators-cryptography"
+
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cryptography = "^41.0.1"
+pre-commit = "^3.3.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
