@@ -1,0 +1,6 @@
+mpi_enabled=OFF
+openmp_enabled=OFF
+root_enabled=OFF
+cuda_enabled=OFF
+c_compiler=/Applications/Xcode_13.2.1.app/Contents/Developer/usr/bin/gcc
+cxx_compiler=/Applications/Xcode_13.2.1.app/Contents/Developer/usr/bin/g++
