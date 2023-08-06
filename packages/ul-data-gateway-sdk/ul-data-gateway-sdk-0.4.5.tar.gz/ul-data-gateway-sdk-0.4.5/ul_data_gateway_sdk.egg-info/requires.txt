@@ -1,0 +1,4 @@
+unipipeline==1.9.1
+asyncio-dgram==1.2.0
+asyncio==3.4.3
+timezonefinder==6.1.1
