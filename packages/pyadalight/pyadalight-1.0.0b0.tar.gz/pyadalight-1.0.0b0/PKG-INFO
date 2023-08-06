@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyadalight
+Version: 1.0.0b0
+Summary: Simple adalight (ambient light) software written in python.
+Home-page: https://github.com/pyAdaLight/pyadalight
+Author: RuslanUC
+License: MIT
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyAdalight
