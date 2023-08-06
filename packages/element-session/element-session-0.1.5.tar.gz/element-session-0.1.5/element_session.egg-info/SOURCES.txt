@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+element_session/__init__.py
+element_session/session_with_datetime.py
+element_session/session_with_id.py
+element_session/version.py
+element_session.egg-info/PKG-INFO
+element_session.egg-info/SOURCES.txt
+element_session.egg-info/dependency_links.txt
+element_session.egg-info/requires.txt
+element_session.egg-info/top_level.txt
+element_session/export/__init__.py
+element_session/export/nwb.py
