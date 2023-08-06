@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "openai-agent"
+version = "0.1.0"
+description = "Easy-to-use OpenAI Agent with support for the latest Function call feature."
+authors = ["-LAN- <laipz8200@outlook.com>"]
+readme = "README.md"
+packages = [{include = "openai_agent"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.8"
+pydantic = "^1.10.9"
+loguru = "^0.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
