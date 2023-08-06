@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyUbersolar
+Version: 0.1.3
+Summary: A library to communicate with UberSolar devices
+Home-page: https://github.com/RenierM26/pyUbersolar
+Author: Renier Moorcroft
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+API for accessing UberSolar UberSmart devices. Communication to/from the device via Bluetooth. Please view readme on github
