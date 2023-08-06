@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=65.5.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# explicitly specified to ignore folders like htmlcov that
+# would be auto-discovered as packages
+packages = [
+    "static_osm_indexer",
+    # explicit, to include assets too
+    "static_osm_indexer.static_assets"
+]
+# true by default, just to be explicit
+include-package-data = true
+
+[tool.setuptools.package-data]
+"static_osm_indexer.static_assets" = ["*"]
+
+[project]
+name = "static_osm_indexer"
+description = "Tool to process OSM files, mainly for static sites"
+authors = [
+    { name="Jacopo Farina", email="jacopo1.farina@gmail.com"},
+]
+maintainers = [
+    { name="Jacopo Farina", email="jacopo1.farina@gmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT License"}
+requires-python = ">=3.9"
+dependencies = [
+    'osmium>=3.4.0',
+    'click>=8.1.0',
+    'shapely==2.0b2',
+    'geopy==2.3.0'
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+version = "0.2.1"
+
+
+[project.urls]
+"Homepage" = "https://github.com/jacopofar/static-osm-indexer"
+"Bug Tracker" = "https://github.com/jacopofar/static-osm-indexer/issues"
+
+[project.scripts]
+soi_generate_mbtiles = "static_osm_indexer.generate_mbtiles:main"
+soi_list_named_locations = "static_osm_indexer.list_named_locations:main"
+soi_index_location_names = "static_osm_indexer.index_locations_names:main"
+soi_generate_full_map = "static_osm_indexer.generate_full_map:main"
+soi_extract_road_network = "static_osm_indexer.soi_extract_road_network:main"
+soi_road_network_to_geojson = "static_osm_indexer.soi_road_network_to_geojson:main"
+
+
+[project.optional-dependencies]
+testing = [
+    "coverage",
+    "pytest>=7.2.0",
+    "mypy>=0.990",
+    "pytest-cov>=4.0.0",
+    # for now linting is here too
+    "black",
+    "mypy"
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "shapely",
+    "shapely.wkb",
+    "geopy.distance"
+]
+ignore_missing_imports = true

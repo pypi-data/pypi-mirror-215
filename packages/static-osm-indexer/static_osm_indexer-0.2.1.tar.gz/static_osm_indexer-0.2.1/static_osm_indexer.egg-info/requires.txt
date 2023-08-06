@@ -1,0 +1,12 @@
+osmium>=3.4.0
+click>=8.1.0
+shapely==2.0b2
+geopy==2.3.0
+
+[testing]
+coverage
+pytest>=7.2.0
+mypy>=0.990
+pytest-cov>=4.0.0
+black
+mypy
