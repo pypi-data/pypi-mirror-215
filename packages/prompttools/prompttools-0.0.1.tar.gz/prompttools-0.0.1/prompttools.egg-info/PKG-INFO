@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: prompttools
+Version: 0.0.1
+Summary: Tools for LLM prompting
+Author-email: Hegel AI <team@hegel-ai.com>
+Project-URL: Homepage, https://github.com/hegelai/prompttools
+Project-URL: Bug Tracker, https://github.com/hegelai/prompttools
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# prompttools
