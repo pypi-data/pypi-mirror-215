@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: egsimage2text
+Version: 0.1
+Summary: Image to text convertion package
+Home-page: UNKNOWN
+Author: srinivasan_rd
+Author-email: srinivasan.r.d@egrovesys.com
+License: UNKNOWN
+Keywords: imagetotext,image to text,OCR,image to text convertion,egs ocr
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
+This is image to text convertion package from egs.
+
+
+Example:
+--------
+
+import egsimage2text
+
+text_data = egsimage2text.image_to_text("image_url.jpg")
+
+print("Text data:",text_data)
+
+version
+==============
+
+
+Image_OCR(0.1)(22/06/2023)
+-----------------------------
+
+   - First release of image to text convertion EGS
+
+
+
+
