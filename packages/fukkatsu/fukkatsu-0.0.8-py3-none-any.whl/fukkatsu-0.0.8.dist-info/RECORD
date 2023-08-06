@@ -1,0 +1,15 @@
+fukkatsu/__init__.py,sha256=WU_5vb_XY0pTpo1m22ZM_p1dyeULh1sSTtaHe-QKick,14328
+fukkatsu/memory/__init__.py,sha256=U0CklaU6ogQ6vB4xT-dRSIpISpfzoGWuWm4AutcZA8w,75
+fukkatsu/memory/manage.py,sha256=YT37H5ufS3a7_zyP6FTYp8tgq1omI-nWrLhtlQrVqEs,663
+fukkatsu/memory/short.py,sha256=eECe98Rvpcs4VDqlZ_joJutEq8wNbCrt8u3mwmCsxm4,23
+fukkatsu/observer/__init__.py,sha256=A7tHcx7HJHAwVxB-rn75-uPfuK0Ersc_B1WmvATbVQY,40
+fukkatsu/observer/tracker.py,sha256=tqgl8GdzXmSw8rDY3GVuM4Ph2PjJwvJ69n0Sm2sS1Ec,1064
+fukkatsu/utils/__init__.py,sha256=H-WIh1CRW7jtF_nSRrAEYL9HL_U901o9JztnU-RxI3w,110
+fukkatsu/utils/helper.py,sha256=OXOCj3YFrqDs0FT_CDj3X1A1MYrLSNSF-Q-MxYNs-tM,4948
+fukkatsu/utils/medic.py,sha256=Oei0U8cDXXw38xyuf3qOizTtVoyq7GkRwbzVIzADgZw,4300
+fukkatsu/utils/prompt.py,sha256=Tgl2nbxbrp4JcLJx8c53GN2FIOr0zR5bcNVaRZc_trk,3812
+fukkatsu-0.0.8.dist-info/LICENSE,sha256=hjbuWqSVMONZkg1iQoaD_ogjS3gEZMIIbZ5JcBbacrI,1089
+fukkatsu-0.0.8.dist-info/METADATA,sha256=M3HXQsmF9RRGr8ZtAS7-L64_EofvrUtb5rOpUdSmer0,33808
+fukkatsu-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fukkatsu-0.0.8.dist-info/top_level.txt,sha256=G_DFZU_OnGsLn16imIWfzFvtFeN9ZVZ5KXoBCt3m19o,9
+fukkatsu-0.0.8.dist-info/RECORD,,
