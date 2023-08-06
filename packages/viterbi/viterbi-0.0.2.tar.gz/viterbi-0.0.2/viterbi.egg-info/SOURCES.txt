@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+viterbi.cpp
+viterbi.h
+viterbi.py
+viterbi_python.cpp
+viterbi.egg-info/PKG-INFO
+viterbi.egg-info/SOURCES.txt
+viterbi.egg-info/dependency_links.txt
+viterbi.egg-info/top_level.txt
