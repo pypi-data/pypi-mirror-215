@@ -1,0 +1,12 @@
+.gitattributes
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/python-publish.yml
+src/flask_log_sku1/__init__.py
+src/flask_log_sku1.egg-info/PKG-INFO
+src/flask_log_sku1.egg-info/SOURCES.txt
+src/flask_log_sku1.egg-info/dependency_links.txt
+src/flask_log_sku1.egg-info/entry_points.txt
+src/flask_log_sku1.egg-info/top_level.txt
