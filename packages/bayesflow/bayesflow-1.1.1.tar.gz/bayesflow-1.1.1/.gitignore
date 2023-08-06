@@ -1,0 +1,33 @@
+__pycache__/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*/__pycache__/
+projects/
+*/bayesflow.egg-info
+docs/build/
+build
+
+# Notebooks
+docs/source/tutorial_notebooks/**
+
+# mypy
+.mypy_cache
+
+# pytest
+.coverage
+.pytest_cache
+
+# pycharm
+*.idea
+
+# vscode
+.vscode
+
+# vim
+*.swp
+
+# build
+*.egg-info
+
+# tox
+.tox
