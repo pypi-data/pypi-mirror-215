@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pygame_ecs
+Version: 0.1.0
+Summary: Pure Python, simple to use Entity Component System for pygame
+Project-URL: Homepage, https://github.com/Notenlish/pygame_ecs
+Project-URL: Bug Tracker, https://github.com/Notenlish/pygame_ecs/issues
+Author-email: Notenlish <71970100+Notenlish@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: ECS,component,ecs,entity,entity component system,pygame,pygame-ce,system
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pyg-ecs
+
+An simple ECS library built for pygame
+Not finished rn, in development
+
+# Architecture
+
+Entities are just stored as int's for their id's
+components are stored in as lists in a dictionary, keys are entity id's and values are component lists.
+
+# Notes
+
+You shouldn't use this for a game with a lot of entities and components, but it's fine for small games and testing.
+
+# todo:
+
+Update the `download_url` found in `setup.py`
+https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56
+
+# Credits
+
+I'd like to give credit to https://www.youtube.com/watch?v=71RSWVyOMEY and https://github.com/seanfisk/ecs
+they both have great code and helped me understand it better
