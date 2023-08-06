@@ -1,0 +1,11 @@
+spyx/__init__.py,sha256=UgSGTlYMKcdxndnTRt-DDTF6wFJrANZ5vGP02dqRgw0,188
+spyx/_version.py,sha256=v0zqRembIW__d7HVDd71J2eoXGtALnzdY8JdBVk-BPY,21
+spyx/activation.py,sha256=4WjKu7y8SSkaOaNYDSCO_K0DgONynVsIigP4VR4iLT8,8952
+spyx/data.py,sha256=VEAJucDJhk1V6_p5CR9qhhuY5puyHz_UuHTai_Ew_Bg,12319
+spyx/loss.py,sha256=gcVoQ5Nu3CWWAQ7H20DSrKOldkOJR6tP-7osF-6nXdw,2695
+spyx/nn.py,sha256=UJM_GpFO3jLcqw7C-qaF7Dp87Xe1pBHfRF_Q9GgPi9U,7303
+spyx-0.0.6.dist-info/LICENSE,sha256=XnDvQVsMN2t0lDayetouxBH6eQGhJGfBT6wFiUQXygs,1064
+spyx-0.0.6.dist-info/METADATA,sha256=Zo09axOMjGeOgXKvRtttifi7B5vNt6264OHhdS-gv5w,866
+spyx-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+spyx-0.0.6.dist-info/top_level.txt,sha256=4mdJrFY0uzrcSuk1n5tn97_niJpEOD-0PfKXWznfK3U,5
+spyx-0.0.6.dist-info/RECORD,,
