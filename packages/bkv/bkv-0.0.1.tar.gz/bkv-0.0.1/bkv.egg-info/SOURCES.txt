@@ -1,0 +1,10 @@
+README.md
+setup.py
+bkv/__init__.py
+bkv/file_store.py
+bkv/mem_store.py
+bkv/shell.py
+bkv.egg-info/PKG-INFO
+bkv.egg-info/SOURCES.txt
+bkv.egg-info/dependency_links.txt
+bkv.egg-info/top_level.txt
