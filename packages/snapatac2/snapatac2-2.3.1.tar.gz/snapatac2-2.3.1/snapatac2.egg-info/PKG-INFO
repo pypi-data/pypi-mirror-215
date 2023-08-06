@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: snapatac2
+Version: 2.3.1
+Summary: SnapATAC2: Single-cell epigenomics analysis pipeline
+Home-page: https://kzhang.org/SnapATAC2/
+Author: Kai Zhang
+Author-email: kai@kzhang.org
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+SnapATAC2
+=========
+
+Please read the [Documentation](https://kzhang.org/SnapATAC2/). 
