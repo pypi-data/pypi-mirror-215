@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: rotary-controller-python
+Version: 0.1.6
+Summary: Rotary Controller Python
+License: MIT
+Author: Stefano Bertelli
+Author-email: bartei81@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cachetools (>=5.3.0,<6.0.0)
+Requires-Dist: coverage (>=7.2.2,<8.0.0)
+Requires-Dist: kivy (>=2.2.0,<3.0.0)
+Requires-Dist: loguru (>=0.7.0,<0.8.0)
+Requires-Dist: minimalmodbus (>=2.0.1,<3.0.0)
+Requires-Dist: pydantic (>=1.10.6,<2.0.0)
+Requires-Dist: pytest (>=7.2.2,<8.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Description-Content-Type: text/markdown
+
+# Rotary Controller Python
+
+This project is a Kivy based user interface developed for the Raspberry PI for the control of rotary tables and
+similar devices on manual milling machines, tool grinders and similar equipment.
+
+This software is designed to operate with an RS485 connected control board which is responsible for the precise
+timing required to control stepper motors as well as the acquisition of high speed encoder signals.
+
+Links for the hardware and firmware needed to complete the project are provided below.
+
+This software is tested on Raspberry PI 4 and 3B and it is recommended to run it from the console using the 
+configuration and libraries suggested by the Kivy project maintainers.
+
+When running this kivy app from a desktop environment, a significant performance loss is evident.
+
+Prebuilt images will be provided eventually so that installation friction can be minimized.
+
+This is still currently under heavy development, further features and pluggable boards will eventually be provided
+to offer further functionality to the system.
+
+## Getting started
+
+This software can be executed from any Python compatible operating system, it has been successfully tested on
+Windows, Linux and OSX. The recommended way to setup your development environment is to use `pyenv` for the
+configuration of a suitable python version in your machine and for the creation of a dedicated virtual envionment.
+
+There are thousands of guides online for the method described above, so for now I'm not gonna write down specific
+instructions about it. 
+
+Once a compatible version of Python is installed with pyenv and a suitable virtual environment has been created, 
+it will be sufficient to install the requirements found in the requirements file.
+
+To run the application simply invoke from your favorite terminal `python ./main.py`
+
+When running the software from a raspberry pi a few preparatory steps shall be followed to ensure proper
+operation of the touchscreen, keyboard, etc. etc.
+
+Instructions will eventually be placed here for completeness to assist in the configuration of raspbian.
+
+#TODO: Put here instructions for raspbian
