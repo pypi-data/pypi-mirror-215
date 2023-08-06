@@ -1,0 +1,9 @@
+xk6_output_plugin_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xk6_output_plugin_py/output.proto,sha256=-H-uoll4jTjeCQbIC8UIIYszTrPzu80-E4QKC5XFLjE,4445
+xk6_output_plugin_py/output.py,sha256=45LryabkQ7uZL49dOFb9gqp77omRr8nZN8T4ho18Cks,4220
+xk6_output_plugin_py/output_pb2.py,sha256=QAwjnIS1PpBrK92nJxwMzO0kqfHKdbzFdP1leEb26OQ,5494
+xk6_output_plugin_py/output_pb2_grpc.py,sha256=2vrum8olXGXlO-bptPGdR2FQzuXeHntSBj9BgkFVyfc,9656
+xk6_output_plugin_py-0.1.0.dist-info/LICENSE,sha256=P2iD3_B0-KsVYohW-f2C4lfMHsoCWnq5lCCa5U7sQNQ,1069
+xk6_output_plugin_py-0.1.0.dist-info/METADATA,sha256=36XDuFzXtSn42iojdn-iG7K6HaF9dDEi8Rn_jVugq3g,9764
+xk6_output_plugin_py-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+xk6_output_plugin_py-0.1.0.dist-info/RECORD,,
