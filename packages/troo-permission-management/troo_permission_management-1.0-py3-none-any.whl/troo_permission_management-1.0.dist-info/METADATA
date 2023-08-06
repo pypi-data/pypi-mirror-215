@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: troo-permission-management
+Version: 1.0
+Summary: django roles and permissions management.
+Home-page: https://www.trootech.com/
+Author: Jaymeet Patel
+Author-email: jaymeet.patel@trootech.com
+Maintainer: JaymeetPatel
+Maintainer-email: jaymeet.patel@trootech.com
+License: MIT
+Keywords: django permissions management
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Quick Start
+===========
+
+=> Include the permissions_management URLconf in your project urls.py like this:
+    ``path("api/v1/", include('permissions_management.api.urls')),``
