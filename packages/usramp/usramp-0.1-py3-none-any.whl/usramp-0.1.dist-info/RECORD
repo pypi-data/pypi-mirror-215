@@ -1,0 +1,12 @@
+uptogithub/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+uptogithub/setup.py,sha256=3clSnSNe9fOJkqFNURjkrs65HQqTlrdNcrKBAjUauqo,1053
+uptogithub/x.usramp.py,sha256=Lg_EhZlsLHrHD8n96KBSaJfyYSGxme1bw0Wv5CYg_qI,2619
+uptogithub/usramp/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+uptogithub/usramp/usramplib.py,sha256=5TyqMl-T5bOD9lzSxnOIfGAl9dm52jh6bRV-eQn8wjQ,56421
+usramp/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+usramp/usramplib.py,sha256=5TyqMl-T5bOD9lzSxnOIfGAl9dm52jh6bRV-eQn8wjQ,56421
+usramp-0.1.data/scripts/x.usramp.py,sha256=TM9FaJxobVfIuiNYgeUc67h90CDcPFOG5Fr9_qRfE1k,2605
+usramp-0.1.dist-info/METADATA,sha256=xEAGcRrKj-wP1AONnHzHMrbvGECCkp0Ym1P_7_uKNYA,1424
+usramp-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+usramp-0.1.dist-info/top_level.txt,sha256=5uA9EJEWxw8dx4EA7QE5Gq55v91fghq8444WC-hNYDA,18
+usramp-0.1.dist-info/RECORD,,
