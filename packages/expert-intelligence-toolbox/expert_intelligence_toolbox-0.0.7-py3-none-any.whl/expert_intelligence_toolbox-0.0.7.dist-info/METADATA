@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: expert_intelligence_toolbox
+Version: 0.0.7
+Summary: This is (for now) a test.
+Project-URL: Homepage, https://github.com/Point-Topic/expert_intelligence_toolbox
+Project-URL: Bug Tracker, https://github.com/Point-Topic/expert_intelligence_toolbox/issues
+Author-email: Arnold Kuersteiner <arnold.kuersteiner@expert-intelligence.com>, Pham Minh Ky <ky.pham@expert-intelligence.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Expert Intelligence Toolbox
+
+Expert Intelligence is a company working with data, and with geographies. These are our tools.
+
+This is an experimental v0.1, which currently serves no function other than testing.
+
+You (Mac) may also need to install lxml to use this, which will need to be downloaded separately first.
+
+```
+xcode-select --install
+pip install lxml==4.9.2
+```
