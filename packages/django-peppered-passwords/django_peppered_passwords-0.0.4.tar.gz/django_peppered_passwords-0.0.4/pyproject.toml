@@ -1,0 +1,22 @@
+[project]
+name = "django_peppered_passwords"
+version = "0.0.4"
+authors = [
+  { name="Fatih Erikli", email="fatih.erikli.work@gmail.com" },
+]
+description = "Django hashed passwords with pepper"
+readme = "README.md"
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fatih-erikli/django-peppered-passwords"
+"Bug Tracker" = "https://github.com/fatih-erikli/django-peppered-passwords/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
