@@ -1,0 +1,2 @@
+from .regularized_least_squares_regression import RegularizedLeastSquares
+from .regularized_least_squares_regression import RegularizedLeastSquares as RLS
