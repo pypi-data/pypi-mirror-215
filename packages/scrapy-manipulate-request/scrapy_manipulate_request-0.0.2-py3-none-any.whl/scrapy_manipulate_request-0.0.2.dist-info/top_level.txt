@@ -1,0 +1,2 @@
+scrapy_manipulate_request
+tests
