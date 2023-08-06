@@ -1,0 +1,9 @@
+netCDF4~=1.6.3
+numpy~=1.24.2
+
+[dev]
+coverage~=5.5
+ipython~=8.0.1
+jsonschema~=4.17.3
+pylint>=2.5.0
+unittest-xml-reporting~=3.0.4
