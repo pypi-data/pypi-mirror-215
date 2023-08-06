@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chomp64
+Version: 2.1.2
+Summary: v2 BASIC Tokenizer
+Home-page: https://github.com/gvbarker/CHOMP
+Author: Giancarlo Barker
+Author-email: jonzomb80@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
