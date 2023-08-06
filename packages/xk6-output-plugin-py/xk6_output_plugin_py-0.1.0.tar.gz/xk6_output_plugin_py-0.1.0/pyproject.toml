@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "xk6-output-plugin-py"
+version = "0.1.0"
+description = "xk6-output-plugin Python API"
+authors = ["Ivan SZKIBA <szkiba@users.noreply.github.com>"]
+repository = "https://github.com/szkiba/xk6-output-plugin-py"
+readme = "README.md"
+packages = [{include = "xk6_output_plugin_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+grpcio = "^1.54.2"
+grpcio-health-checking = "^1.54.2"
+python-json-logger = "^2.0.7"
+
+
+[tool.poetry.group.dev.dependencies]
+grpcio-tools = "^1.54.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+init = "cp proto/output.proto xk6_output_plugin_py/"
+generate = "python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. xk6_output_plugin_py/output.proto"
