@@ -1,0 +1,9 @@
+ibpmodel/SW_OPER_IBP_CLI_2__00000000T000000_99999999T999999_0002.cdf,sha256=_dmsYgQqbpT5Pa8iLiKs_LeTOnlZN-J8WbCb4V2-fe4,1212651
+ibpmodel/__init__.py,sha256=hEAm3evU3y0wFAZM2KI4Mo3H7WpSc81RZ4pne1jE4gw,325
+ibpmodel/ibpcalc.py,sha256=sn4KIolMMriymbqkhbL-uBPdwr3LcW6JsijvNzoagEM,22300
+ibpmodel/ibpforward.py,sha256=k8yHLUAH7Ov3WPN0RCf6E29yiA7JUNxmWDt8pHzMJ28,10372
+ibpmodel-1.2.1.dist-info/LICENSE,sha256=NTnmSUt2pi4K8hfnNVDAVLd5-4INUB4alAmjHWZGl6U,1066
+ibpmodel-1.2.1.dist-info/METADATA,sha256=VXRAqxjhpLZsWi9WYdcHqHFsm7_oEIEIugIcNyLJ3S4,5564
+ibpmodel-1.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ibpmodel-1.2.1.dist-info/top_level.txt,sha256=w3sVBT4mMSbGPBPC7nKswzv6Fm6YKHWlBn-irZ75Clk,9
+ibpmodel-1.2.1.dist-info/RECORD,,
