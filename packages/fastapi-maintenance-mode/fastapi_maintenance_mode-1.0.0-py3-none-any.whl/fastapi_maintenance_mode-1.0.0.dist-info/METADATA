@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: fastapi-maintenance-mode
+Version: 1.0.0
+Summary: FastAPI middleware for enabling maintenance mode
+Home-page: https://github.com/iunary/fastapi-maintenance-mode
+Author: Yusuf
+Author-email: contact@yusuf.im
+License: MIT
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: httpx
+
+# FastAPI Maintenance Mode Middleware
+
+FastAPI Maintenance Mode Middleware is a Python package that provides middleware for enabling maintenance mode in FastAPI applications. When maintenance mode is enabled, all incoming requests will receive a 503 Service Unavailable response indicating that the service is temporarily unavailable due to maintenance.
+
+## Installation
+
+You can install the package using `pip`:
+
+```shell
+pip install fastapi-maintenance-mode
+```
+
+## Example
+
+```python
+from fastapi import FastAPI
+from fastapi_maintenance_mode import MaintenanceModeMiddleware
+
+app = FastAPI()
+app.add_middleware(MaintenanceModeMiddleware, is_maintenance_mode=True)
+
+
+@app.get("/")
+async def root():
+    return {"status": "Ok"}
+
+```
