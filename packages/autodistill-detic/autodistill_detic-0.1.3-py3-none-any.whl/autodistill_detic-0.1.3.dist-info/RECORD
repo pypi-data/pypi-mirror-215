@@ -1,0 +1,9 @@
+autodistill_detic/__init__.py,sha256=zsLsIg1nZWgCB9HVmT8kWorzLxsURWdPu__Dw1i5Uec,71
+autodistill_detic/detic_model.py,sha256=HjIrMds6xM5u-PFOpIGc_NjqgVwftVpZm9gEFOm80Hs,5035
+src/__init__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+src/hello.py,sha256=3RIrZo-5yaqvd23YFIfr_i2vJxOJXxKx2-7kSiDonbY,39
+autodistill_detic-0.1.3.dist-info/LICENSE.md,sha256=sc2X3vqj5pCDmx7BH5_3ykrFlBTG4Zgj2NxUwXI5n_c,1055
+autodistill_detic-0.1.3.dist-info/METADATA,sha256=hdEsvYZLQQfX81mgK3CK_TrswpvJHW7A7XrIOrdXeuM,2634
+autodistill_detic-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+autodistill_detic-0.1.3.dist-info/top_level.txt,sha256=ogufdXhqpZxftE1Q5p_FDt8ZZr_uxf3w2bCdh0oBqlw,22
+autodistill_detic-0.1.3.dist-info/RECORD,,
