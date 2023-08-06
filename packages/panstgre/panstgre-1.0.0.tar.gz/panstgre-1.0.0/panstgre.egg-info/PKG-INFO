@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: panstgre
+Version: 1.0.0
+Summary: Use pandas and psycopg2 to access postgreDB
+Home-page: 
+Author: Lin.Shao
+Author-email: shaolintcl@hotmail.com

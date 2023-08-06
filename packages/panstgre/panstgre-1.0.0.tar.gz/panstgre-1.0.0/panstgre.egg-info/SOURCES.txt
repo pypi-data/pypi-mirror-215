@@ -1,0 +1,8 @@
+setup.py
+panstgre/__init__.py
+panstgre/panstgre.py
+panstgre.egg-info/PKG-INFO
+panstgre.egg-info/SOURCES.txt
+panstgre.egg-info/dependency_links.txt
+panstgre.egg-info/requires.txt
+panstgre.egg-info/top_level.txt
