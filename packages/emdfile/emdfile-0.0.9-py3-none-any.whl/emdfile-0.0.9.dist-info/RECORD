@@ -1,0 +1,17 @@
+emdfile/__init__.py,sha256=HX9X3Hfqh0Idtr2kClpfVyJSRy1a9xv9xbCRH8T3U-Q,872
+emdfile/read.py,sha256=O6QTdIMkG8S8MIJr-3qNEsjHDWgIj8o9ALR78K6ddQo,10561
+emdfile/tqdmnd.py,sha256=GmciZ3lHXaAq45hvlzq866KP--Frdtuq1N1Gky5RDBY,2413
+emdfile/version.py,sha256=wWyOZtnKJiUHg_YB91pXmSzeCSruMO14g8pTdkehNdk,23
+emdfile/write.py,sha256=DvekgUZL3wKVb3-31LirGn-G7A3bQWEgZAqm7RyGlLw,31063
+emdfile/classes/__init__.py,sha256=Ys8lcOpUH51PzPbrhsyTlGokt77yW1rYOQwZL39K0rU,296
+emdfile/classes/array.py,sha256=HMHjbI8kQ876syKjKu2zbD7XBc-GIPnW72sgN9hYY5A,22633
+emdfile/classes/custom.py,sha256=ki_ypI67YvnlMik0h4QvNw0Isz4vqEPZh9RzNxvoL98,2715
+emdfile/classes/metadata.py,sha256=bYXfiARPvWKysqcGtc2B0VU3h3I7Jd0sYCoKDZiqe-Q,10379
+emdfile/classes/pointlist.py,sha256=-N-d-dizYBqNvoXYXSeJyEDpoJpJXkjmr_p7V0g0eOA,7132
+emdfile/classes/pointlistarray.py,sha256=cKYQZ-KMFebKiQesFm1EUb_DL1BfpFUAlzf64_F_WK0,6275
+emdfile/classes/tree.py,sha256=EmfdRjUjnpL3-XD458mhg4FL2fnd_juTiHwpxbpv5nE,23877
+emdfile/classes/utils.py,sha256=d9UNhuwjK7UPV6DhHzjvYhJ7liYkhvOtCSsh8XLrqgM,2240
+emdfile-0.0.9.dist-info/METADATA,sha256=eH-ZsNoFukPGgxasTHNAigmvVnwXr4Wbfz6vA2kI8m8,2221
+emdfile-0.0.9.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+emdfile-0.0.9.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+emdfile-0.0.9.dist-info/RECORD,,
