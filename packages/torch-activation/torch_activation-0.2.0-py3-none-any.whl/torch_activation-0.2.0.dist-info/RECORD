@@ -1,0 +1,12 @@
+torch_activation/__init__.py,sha256=0Do9SU2wTuE2sHbbKTvC0jC7_iffpzRRTurTMypEOGw,612
+torch_activation/curves.py,sha256=djzYYHNYl2qwNN7JndfsgOA_dJauHDDhOQPRlMy242U,3261
+torch_activation/glus.py,sha256=Mfk8W9F8GXq0SCWYGCKyLeCcoN4canSvRjlhUYsa8gs,3504
+torch_activation/lincomb.py,sha256=rzPBhi4xcem2jGW-WmdVCUsIVh4rlltAjqi3VC2tAKQ,2515
+torch_activation/piece_wise.py,sha256=xYfYTn6_EJh2fuxlIX94SPD1-6SDfwpSjfT4CldSHv0,2810
+torch_activation/relus.py,sha256=cLk5hZpLJD7pH7qPg9Z3EW5SzDYurJwOtmbF4UvM0Fw,6547
+torch_activation/trig.py,sha256=6Hmi40uJFU6m8tsq6TEhT0lLXuHRWHVNg4nkp8Rmvns,4154
+torch_activation/utils.py,sha256=GPxWFBFsyPi2YdqxYvepOW4UGmDyrvBCeDaSiA9MXWg,3001
+torch_activation-0.2.0.dist-info/LICENSE,sha256=vHvknUv0frTHRsewt2_jD2wIOdt6NSBOF1MJNnkTBm0,1086
+torch_activation-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+torch_activation-0.2.0.dist-info/METADATA,sha256=BhI1iMzChJrPAI6aywFF5Ebg7ryIoa8gtsBTkjVWE9s,2707
+torch_activation-0.2.0.dist-info/RECORD,,
