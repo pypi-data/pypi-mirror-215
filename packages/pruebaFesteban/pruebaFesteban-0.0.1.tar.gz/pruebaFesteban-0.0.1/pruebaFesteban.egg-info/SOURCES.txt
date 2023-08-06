@@ -1,0 +1,10 @@
+README.md
+setup.py
+pruebaFesteban/__init__.py
+pruebaFesteban/__main__.py
+pruebaFesteban/workshops.py
+pruebaFesteban.egg-info/PKG-INFO
+pruebaFesteban.egg-info/SOURCES.txt
+pruebaFesteban.egg-info/dependency_links.txt
+pruebaFesteban.egg-info/requires.txt
+pruebaFesteban.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pruebaFesteban
+Version: 0.0.1
+Summary:  This package uses and pokemon API to get details about pokemons
+Home-page: https://github.com/TheJuanFreelance/first_Pypi_package/
+Author: Juan Esteban
+Author-email: juanforfreelance@gmail.com
+License: MIT
+Description: ### CodigoFacilito
+        
+        Este paquete nos permite consumir el API de la plataforma.
+Keywords: prueba
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
