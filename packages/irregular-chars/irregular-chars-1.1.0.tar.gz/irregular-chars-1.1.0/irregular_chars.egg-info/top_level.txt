@@ -1,0 +1,2 @@
+irregular_chars
+tests
