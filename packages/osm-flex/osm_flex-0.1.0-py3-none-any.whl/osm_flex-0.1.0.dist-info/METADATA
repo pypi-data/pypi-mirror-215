@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: osm-flex
+Version: 0.1.0
+Summary: Python package for flexible data extraction from OpenStreetMap
+Maintainer-email: Elco Koks <elco.koks@vu.nl>
+License: GPL-3.0
+Project-URL: Repository, https://github.com/ElcoK/osm-flex
+Project-URL: Bug Tracker, https://github.com/ElcoK/osm-flex/issues
+Keywords: OpenStreetMap
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: cartopy
+Requires-Dist: geopandas
+Requires-Dist: gdal
+Requires-Dist: numpy
+Requires-Dist: shapely (>=2.0)
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Provides-Extra: docs
+Requires-Dist: jupyter ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+# osm-flex
+Python package for flexible data extraction from OpenStreetMap
+
+## Installation
+
+```
+conda create -n osm-flex cartopy geopandas
+conda activate osm-flex
+python -m pip install -e ./
+```
+
+## Running Tests
+
+Follow installation instructions. Then,
+```
+python -m pip install -e "./[tests]"
+pytest
+```
