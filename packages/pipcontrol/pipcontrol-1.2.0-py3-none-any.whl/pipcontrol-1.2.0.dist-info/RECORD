@@ -1,0 +1,7 @@
+pipcontrol/__init__.py,sha256=1v8nHiSnqol1BOKqejk7915vyCe4KHFHmI-G0h_BIaw,1123
+pipcontrol/pipcontrol.py,sha256=mR7QbTp6KgQmeVHH-AtyboakXsCE6KcmXGvW_bRbu9M,10454
+pipcontrol/test.py,sha256=OaVJxqTqMDyaQQ86Nh3y9jS62nvEjVEPSvp0MmdKadY,166
+pipcontrol-1.2.0.dist-info/METADATA,sha256=92G1PAoMXz5MpUGhnM0D1wtWT47YLiw1gu7jqI3o7ac,1799
+pipcontrol-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pipcontrol-1.2.0.dist-info/top_level.txt,sha256=aoLIRPjHZlnOQSVclxIqnHH2hdafh9iWx082-NUaPEQ,11
+pipcontrol-1.2.0.dist-info/RECORD,,
