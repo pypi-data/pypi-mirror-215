@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jsonrequest
+Version: 0.1.0
+Summary: Lightweight wrapper to make http(s) requests. POST, PATCH, and DELETE requests only support json content.
+Home-page: UNKNOWN
+Author: Justin Wong
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
