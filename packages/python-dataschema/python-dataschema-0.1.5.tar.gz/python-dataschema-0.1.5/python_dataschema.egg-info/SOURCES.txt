@@ -1,0 +1,12 @@
+README.md
+setup.py
+dataschema/__init__.py
+dataschema/_utils.py
+dataschema/base.py
+dataschema/common.py
+dataschema/specs.py
+dataschema/utils.py
+python_dataschema.egg-info/PKG-INFO
+python_dataschema.egg-info/SOURCES.txt
+python_dataschema.egg-info/dependency_links.txt
+python_dataschema.egg-info/top_level.txt
