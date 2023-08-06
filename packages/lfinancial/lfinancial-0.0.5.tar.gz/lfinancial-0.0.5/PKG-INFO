@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lfinancial
+Version: 0.0.5
+Summary: Generate financial test data
+Author: zaneliu
+Author-email: lzy291980138@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
