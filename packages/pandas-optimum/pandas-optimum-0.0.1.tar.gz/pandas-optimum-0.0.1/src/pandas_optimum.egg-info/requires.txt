@@ -1,0 +1,2 @@
+pandas==2.0.0
+pyArrow==12.0.1
