@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cmon-net"
+version = "0.1.0"
+description = "An CLI app to manage all network interfaces namespace independent"
+authors = ["Luís Eduardo <eduardovansilva@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "cmon_net"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyroute2 = "^0.7.9"
+textual = "^0.28.1"
+
+[tool.poetry.scripts]
+cmon-net = "cmon_net.cmon_net:app"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+textual = {extras = ["dev"], version = "^0.28.1"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
