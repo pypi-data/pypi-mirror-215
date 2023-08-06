@@ -1,0 +1,7 @@
+setup.py
+openweathersdk/OpenWeatherMap.py
+openweathersdk/__init__.py
+openweathersdk.egg-info/PKG-INFO
+openweathersdk.egg-info/SOURCES.txt
+openweathersdk.egg-info/dependency_links.txt
+openweathersdk.egg-info/top_level.txt
