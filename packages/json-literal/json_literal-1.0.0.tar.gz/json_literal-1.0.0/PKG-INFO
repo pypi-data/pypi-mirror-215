@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: json-literal
+Version: 1.0.0
+Summary: Definition of literal values for compatibility with JSON data.
+License: BSD-3-Clause
+Author: Yasutanium
+Author-email: yassun4dev@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+
