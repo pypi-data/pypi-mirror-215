@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sospice
+Version: 0.0.2
+Summary: Python data analysis tools for Solar Orbiter/SPICE
+Author-email: SPICE consortium <spice-github.ias@universite-paris-saclay.fr>
+Project-URL: Homepage, https://github.com/solo-spice/sospice/
+Project-URL: Bug Tracker, https://github.com/solo-spice/sospice/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: astropy (>=4.0)
+Requires-Dist: black (>=23.0)
+Requires-Dist: flake8 (>=6.0)
+Requires-Dist: matplotlib (>=3.7.0)
+Requires-Dist: numpy (>=1.24.0)
+Requires-Dist: numpydoc (>=1.4)
+Requires-Dist: pandas (>=2.0)
+Requires-Dist: parfive (>=2.0)
+Requires-Dist: pre-commit (>=3.0)
+Requires-Dist: pytest (>=7.0)
+Requires-Dist: pytest-cov (>=4.0)
+Requires-Dist: requests (>=2.30)
+Requires-Dist: scipy (>=1.10)
+Requires-Dist: setuptools (>=45)
+Requires-Dist: setuptools-scm[toml] (>=7.0)
+Requires-Dist: Sphinx (>=7.0)
+Requires-Dist: sunpy (>=4.0)
+
