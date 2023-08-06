@@ -1,0 +1,9 @@
+dfcsv2parquet/README.MD,sha256=JxU6TUriEj-g66tz787jId1k-GB3P5bSojtfJ_JP0Os,3654
+dfcsv2parquet/__init__.py,sha256=RXmUN6P0-3fQ3jjXuRWhOQ7zOjjXwp0jVri2sMCj-uY,6589
+dfcsv2parquet/requirements.txt,sha256=cUMHEc-Ciu0v-VDSCVosTEmZhmJ_GH4VR8E9hQI4QQM,67
+dfcsv2parquet/thirdparty.json,sha256=t4CyPdnbwm1WuK-nqx_HA5JPiZM2I3fG6UwL2VOm0Bs,117952
+dfcsv2parquet-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+dfcsv2parquet-0.10.dist-info/METADATA,sha256=UbXZ6GILOpHPwjeUOFiqNwW7PADpGCWSFVjOK-S_AOE,4446
+dfcsv2parquet-0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dfcsv2parquet-0.10.dist-info/top_level.txt,sha256=Poonhoknn4frsk1AMAXjjSb9C840Brpe4Q4AMvSRvPk,14
+dfcsv2parquet-0.10.dist-info/RECORD,,
