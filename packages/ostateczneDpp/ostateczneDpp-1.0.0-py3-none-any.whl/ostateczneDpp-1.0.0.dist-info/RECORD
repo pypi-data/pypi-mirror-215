@@ -1,0 +1,8 @@
+api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_client/api_request.py,sha256=WQghTwrFNPrfPb41lr3PLHeD_nLwGFJgEuHi-Gh8rkE,191
+data_processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_processing/data_utils.py,sha256=EpfiZgHX3Hhs6gRV1pfQ2V6VlFub5dl8YDzOtl79UQ4,1496
+ostateczneDpp-1.0.0.dist-info/METADATA,sha256=kcJFfj64smnTdEdp-85hcqQenp1ieoER5M0fcKLvfGs,132
+ostateczneDpp-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ostateczneDpp-1.0.0.dist-info/top_level.txt,sha256=0jQCZG7Nn6FC3Qcs4bNkLrAcQgzhlYhHoiCDnw2j1bg,27
+ostateczneDpp-1.0.0.dist-info/RECORD,,
