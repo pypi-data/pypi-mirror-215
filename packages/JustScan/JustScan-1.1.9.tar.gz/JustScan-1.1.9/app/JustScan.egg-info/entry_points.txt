@@ -1,0 +1,2 @@
+[console_scripts]
+itc_service run api = JustScan.api.itc_cli:main
