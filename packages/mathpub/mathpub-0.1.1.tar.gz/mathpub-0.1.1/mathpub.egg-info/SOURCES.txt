@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+mathpub/__init__.py
+mathpub/page.py
+mathpub/text_processing.py
+mathpub/utils.py
+mathpub.egg-info/PKG-INFO
+mathpub.egg-info/SOURCES.txt
+mathpub.egg-info/dependency_links.txt
+mathpub.egg-info/not-zip-safe
+mathpub.egg-info/top_level.txt
