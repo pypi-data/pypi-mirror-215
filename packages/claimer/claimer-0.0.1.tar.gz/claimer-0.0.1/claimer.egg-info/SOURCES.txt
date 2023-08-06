@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+claimer/__init__.py
+claimer/paragraph.py
+claimer/parser.py
+claimer.egg-info/PKG-INFO
+claimer.egg-info/SOURCES.txt
+claimer.egg-info/dependency_links.txt
+claimer.egg-info/requires.txt
+claimer.egg-info/top_level.txt
