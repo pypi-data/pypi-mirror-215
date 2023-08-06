@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: featurelayers
+Version: 1.1.7
+Summary: FeatureLayers Package
+Author: khengyun
+Author-email: khaangnguyeen@email.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tensorflow
+Requires-Dist: keras
+
+# FeatureLayers
+__version__ = "1.1.6"
