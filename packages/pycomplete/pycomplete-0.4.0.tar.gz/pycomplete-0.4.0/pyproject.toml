@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "pycomplete"
+description = "A Python library to generate static completion scripts for your CLI app"
+authors = [
+    { name = "Frost Ming", email = "mianghong@gmail.com" },
+]
+requires-python = ">=3.7"
+dependencies = []
+readme = "README.md"
+keywords = [
+    "cli",
+    "shell",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+]
+dynamic = []
+version = "0.4.0"
+
+[project.license]
+text = "BSD-3-Clause"
+
+[project.urls]
+Homepage = "https://github.com/frostming/pycomplete"
+
+[project.scripts]
+pycomplete = "pycomplete.__main__:main"
+
+[tool.pdm.version]
+source = "file"
+path = "pycomplete/__init__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7",
+    "click>=7",
+]
