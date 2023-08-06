@@ -1,0 +1,8 @@
+app_store_connect_api_client/__init__.py,sha256=qrnD1lt5MRFEOkGiZUbZdRH0tSiNO-UAA6IUosA_AT4,54
+app_store_connect_api_client/client.py,sha256=lnvvF0WpfiFwN4yYP92STaquL_ER0lvUTFvOxuff4jg,2109
+app_store_connect_api_client/resources/__init__.py,sha256=uQhJKDlnQK2ABKx3LW5-pe-XO8QdEPqs2rpQo8LR7qo,27
+app_store_connect_api_client/resources/base.py,sha256=5Ylepkt4P_W3GY2SLu9AX7hzrXNK8VkZuv6VhX9hUDQ,1623
+app_store_connect_api_client/utils.py,sha256=zQlNcrWZnGEsz_ihKX59UQoBAeYdk-O6ZYTi_3bZVUY,1110
+app_store_connect_api_client-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+app_store_connect_api_client-0.1.0.dist-info/METADATA,sha256=MCUYlNO_q8NoTQajqEwkbMFEkMdMXaJLq6EnBUew1fs,529
+app_store_connect_api_client-0.1.0.dist-info/RECORD,,
