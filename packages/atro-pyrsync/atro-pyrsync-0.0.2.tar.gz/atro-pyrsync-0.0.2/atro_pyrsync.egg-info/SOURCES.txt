@@ -1,0 +1,8 @@
+README.md
+setup.py
+atro_pyrsync.egg-info/PKG-INFO
+atro_pyrsync.egg-info/SOURCES.txt
+atro_pyrsync.egg-info/dependency_links.txt
+atro_pyrsync.egg-info/requires.txt
+atro_pyrsync.egg-info/top_level.txt
+pyrsync/__init__.py
