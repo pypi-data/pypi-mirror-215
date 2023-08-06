@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+NSMap/NSMapToolkit.py
+NSMap/__init__.py
+NSMap/modelSystems.py
+NSMap.egg-info/PKG-INFO
+NSMap.egg-info/SOURCES.txt
+NSMap.egg-info/dependency_links.txt
+NSMap.egg-info/requires.txt
+NSMap.egg-info/top_level.txt

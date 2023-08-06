@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: NSMap
+Version: 1.0
+Summary: Implementation of NS-Map
+Home-page: UNKNOWN
+Author: Kenneth Gee
+Author-email: kenflat2@gmail.com
+License: UNKNOWN
+Keywords: Ecology,Forecasting,EDM,Empirical Dynamical Modeling,Nonstationarity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+Implementation of NS-Map, a nonstationary extension of the ecological forecasting method S-Map.
+
