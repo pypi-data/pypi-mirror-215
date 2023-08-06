@@ -1,0 +1,5 @@
+[console_scripts]
+browser_tab = i3_sway_switch_window.main:cli_browser_tab
+emacs_buffers = i3_sway_switch_window.main:cli_emacs_buffers
+emacs_recentf = i3_sway_switch_window.main:cli_emacs_recentf
+wm_window_switch = i3_sway_switch_window.main:cli_wm_window_switch
