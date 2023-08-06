@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ssb-fagfunksjoner
+Version: 0.0.6
+Summary: Fellesfunksjoner for ssb i Python
+License: MIT
+Author: SSB-pythonistas
+Author-email: ssb-pythonistas@ssb.no
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: dapla-toolbelt (>=1.3.2,<2.0.0)
+Requires-Dist: ipykernel (>=6.15.3,<7.0.0)
+Description-Content-Type: text/markdown
+
+# New readme
+Publishing to Pypi failing with readme made in jupyterlab, trying out making it from scratch on github.com directly
+
