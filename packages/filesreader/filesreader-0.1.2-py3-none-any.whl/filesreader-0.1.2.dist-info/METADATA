@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: filesreader
+Version: 0.1.2
+Summary: A small project to read files
+Home-page: https://github.com/serlesen/filesreader
+License: Apache-2.0
+Author: Sergio lema
+Author-email: lema.sergio.85@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/serlesen/filesreader
+Description-Content-Type: text/markdown
+
+# Files Reader Project
+
+Small project to automatically read all the lines from a file without taking into account resources context and the new lines symbol.
+
+## Usage
+
+```
+reader = FileReader("path/of/the_file.txt")
+lines = reader.read_all_lines()
+```
+
+The resources context is already managed inside the constructor. An FileNotFoundError will be thrown if the file doesn't exist. The returned lines won't have the special characters `\n` or `\r`.
+
+
