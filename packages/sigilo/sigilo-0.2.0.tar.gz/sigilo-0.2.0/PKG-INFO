@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: sigilo
+Version: 0.2.0
+Project-URL: Source, https://github.com/ecarrara/sigilo
+Project-URL: Issues, https://github.com/ecarrara/sigilo/issues
+Author-email: Erle Carrara <carrara.erle@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Provides-Extra: cryptography
+Requires-Dist: cryptography; extra == 'cryptography'
+Provides-Extra: pymemcache
+Requires-Dist: pymemcache; extra == 'pymemcache'
+Provides-Extra: redis
+Requires-Dist: redis; extra == 'redis'
+Description-Content-Type: text/markdown
+
+# Sigilo 🤫
+
+[![Documentation](https://readthedocs.org/projects/sigilo/badge/)](https://sigilo.readthedocs.io/en/latest/)
+[![PyPI](https://img.shields.io/pypi/v/sigilo)](https://pypi.org/project/sigilo/)
+![GitHub](https://img.shields.io/github/license/ecarrara/sigilo)
+
+Sigilo provides a secure way to store and retrieve sensitive information like
+passwords, OAuth access tokens, credit card numbers, etc.
+
+For example, to store a secret on [redis](https://redis.io/) using
+sigilo.Sigilo:
+
+```python
+from sigilo import Sigilo
+from sigilo.stores.redis import RedisStore
+from sigilo.ciphers.fernet import FernetCipher
+
+# Put this somewhere safe!
+key = "Ds205mteCt42PaW35TQWtj5LgUB3A541EVf9wy8OyOI="
+cipher = FernetCipher(key)
+store = RedisStore("redis://localhost:6379/0")
+
+sigilo = Sigilo(store=store, cipher=cipher)
+sigilo.set("key1", b"secret value")
+```
+
+To retrieve the secret:
+
+```python
+sigilo.get("key1")
+# returns b"secret value"
+```
+
+## Installation
+
+Sigilo requires Python 3.8 or newer to run.
+
+```bash
+pip install sigilo[redis,cryptography]
+```
+
