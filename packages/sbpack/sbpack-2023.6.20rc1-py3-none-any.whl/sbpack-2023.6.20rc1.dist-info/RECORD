@@ -1,0 +1,17 @@
+sbpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbpack/lib.py,sha256=iLN5s31rS9Mg64teYZLk0Cicdjuyb6KdwCjL52r1nrQ,5781
+sbpack/pack.py,sha256=4vutKrWeas4NhtaLcHKIWfp-8pHMo3hkWR75oz6GTZw,13365
+sbpack/schemadef.py,sha256=9UVZNi5nUMJz5ZZM9j4z53X8Svizmc_eUTtl0mTapB8,7929
+sbpack/unpack.py,sha256=amyfuytRxvsz0-RARfP1Hm4tbpmMVCfLSaM8U3woh-o,3064
+sbpack/version.py,sha256=OwPQPMX4sRGU4qQqC9EXc0uItdURyTTo_Edsm1g7qAo,30
+sbpack/noncwl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbpack/noncwl/copy.py,sha256=oMAJrGJ6FiU4BF2pyqUOcdTam9Ft64vL8n-ywAKIne8,1591
+sbpack/noncwl/nextflow.py,sha256=ggLKOOYzrbJzfsu3ei4Olq28MvTXRzalywfHuNTrGwo,18891
+sbpack/noncwl/utils.py,sha256=jdjyFvJK_-82iNNhU7QRtWCYWqXwxwODt1VXret5EqY,5591
+sbpack/noncwl/wdl.py,sha256=-CqDLqbCiGOhnG5iEUJC2FMXZmorFggtGpeDtBpHWgU,10528
+sbpack-2023.6.20rc1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbpack-2023.6.20rc1.dist-info/METADATA,sha256=yXVkvN0myqHH5zBWhrOwRk6QXIGWoOV1JdtWnsvY2Ag,7479
+sbpack-2023.6.20rc1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sbpack-2023.6.20rc1.dist-info/entry_points.txt,sha256=FkTSv3CUlZDSBAYV9d12g1Xn5baiWk0-w1giWiP7QtU,214
+sbpack-2023.6.20rc1.dist-info/top_level.txt,sha256=jYfNbA_EM0kCUdebAs2xxFukxE1XlzB_BbAr4t25Jmg,7
+sbpack-2023.6.20rc1.dist-info/RECORD,,
