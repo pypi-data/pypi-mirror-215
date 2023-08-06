@@ -1,0 +1,16 @@
+quantstats/__init__.py,sha256=GsDc2a5MKsg4iAVI8sbFSY2l4tgcJEarnaUl0babsrY,5526
+quantstats/plots.py,sha256=w5KJZWEHRsuaORO3fMrgDaohslTXW_iPCkvRhPP-9pM,881
+quantstats/report.html,sha256=6MyrOYyEm2QX-AXT8m9re4hYd25wkC3EWUg1ha4EQTU,3903
+quantstats/reports.py,sha256=EckGqtH1Zd3Ww2aRXBuGNXbLbMEAsCPK6eWBT1O3a5A,54433
+quantstats/stats.py,sha256=ixbgchrwAAn4yYx704BrvdCY42A0Ls63HesPG46yNDQ,33176
+quantstats/utils.py,sha256=xvsWrMgANyvMxrhz26QTr5BLuyoZmuwQ0C8bS7_7JBE,13788
+quantstats/version.py,sha256=UpKsJLutbF-MxcofAKeQtyObv6GOjXmTOi07K8y2itc,19
+quantstats/_plotting/__init__.py,sha256=Qy8hlGe_DYevKJWicVw_rtCl7VSCgsdakxLUwDCKUQ4,718
+quantstats/_plotting/core.py,sha256=STiFmlxdiNLo_aLO9pSSIUuK_CWA7PA7iU1v_rMyv6Y,32866
+quantstats/_plotting/wrappers.py,sha256=cRHN8YHC-UFlCKxhNclE6MQwje460ltT46QgThyHkhU,26871
+QuantStats-0.0.61.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+QuantStats-0.0.61.dist-info/METADATA,sha256=sh5iiH8P-QdZjHRTSa-DHZdFsNDQ0OC5WPefFT9hDow,8927
+QuantStats-0.0.61.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+QuantStats-0.0.61.dist-info/entry_points.txt,sha256=xPp6vFitqG85D-kOcIEWjIZmvD2l53YiMbrwjZFpjZw,39
+QuantStats-0.0.61.dist-info/top_level.txt,sha256=Kdvet3XiJrr_1qZon4wLYAXF_VdfFhq1iQfv1bxbRbw,11
+QuantStats-0.0.61.dist-info/RECORD,,
