@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: micropython-wifi-communication
+Version: 0.0.6
+Summary: um substituto para em vez de uma comunicação RF utilizar wifi
+Home-page: UNKNOWN
+Author: issei momonge
+Author-email: mggyggf@gmail.com
+License: MIT License
+Keywords: socket communication via wifi
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# comu
+
+server
+
+init
+
+    from comu.ser import se
+    
+    s = se(net=True)
+    #se(net={'SSID':...,'PASSWORD':....})
+
+recv
+    
+    from time import sleep
+    
+    while True:
+        data = s.recv()
+        if data:
+            print(data)
+        sleep(1)
+
+send
+
+    from time import sleep
+    
+    x = 0
+
+    while True:
+        s.send(x)
+        x+=1
+        sleep(1)
+
+
+client
+
+    from comu.cli import ci
+    
+    c = ci(net=True)
+    #ci(net={'ssid':...,'password':....}) or ci()
+
+recv
+    
+    from time import sleep
+    
+    while True:
+        data = c.recv()
+        if data:
+            print(data)
+        sleep(1)
+
+send
+
+    from time import sleep
+    
+    x = 0
+
+    while True:
+        c.send(x)
+        x+=1
+        sleep(1)
+
