@@ -1,0 +1,12 @@
+agent_dingo/__init__.py,sha256=-x9W4Guoa5IPdVbi0rrSpt_tbER3JX6nuzLnk9qFKxw,118
+agent_dingo/agent.py,sha256=NK5CSTxUcVyZzqQkqqWa-So9AGpAnVOznuFUI341ztQ,7528
+agent_dingo/chat.py,sha256=7fYD81gfPbLpka1jsM03Ve4uDf93_jredizhRrpsq78,1069
+agent_dingo/context.py,sha256=Y5e4nrApXgF8QRVd7NnVr83FE9a0SqdbgeOAeQgEvGM,113
+agent_dingo/docgen.py,sha256=_PIrc53ZR4Eu8KprLC94N1a0wGcLFxRpjKQpTpcXBoE,2166
+agent_dingo/helpers.py,sha256=AXgWqEunwgYshWig8yjiRWE_g-pcNPIrH0SikkMddio,1472
+agent_dingo/parser.py,sha256=yP1R03njZvaiN_Y4Sip3OQ6qvdxUFc2d4sPmArxsNh8,1907
+agent_dingo-0.1.0rc1.dist-info/LICENSE,sha256=T3TnLYmtB1e_bOaJz6YGVitu84d0Es4h6mSpgyEPY_I,1071
+agent_dingo-0.1.0rc1.dist-info/METADATA,sha256=OIJFp1AGvP1SseAkUbdxpacJx53GvP4nBChcal8FVzg,9879
+agent_dingo-0.1.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+agent_dingo-0.1.0rc1.dist-info/top_level.txt,sha256=HH8zRETust2gD0EviZhu1DIlW8PUCCeKbUQQ5w5vVRM,12
+agent_dingo-0.1.0rc1.dist-info/RECORD,,
