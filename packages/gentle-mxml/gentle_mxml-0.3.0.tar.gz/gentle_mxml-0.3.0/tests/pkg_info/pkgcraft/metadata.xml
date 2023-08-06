@@ -1,0 +1,9 @@
+<pkgmetadata>
+	<upstream>
+		<maintainer>
+			<name>Tim Harder</name>
+			<email>radhermit@gmail.com</email>
+		</maintainer>
+		<remote-id type="github">pkgcraft/pkgcraft-python</remote-id>
+	</upstream>
+</pkgmetadata>
