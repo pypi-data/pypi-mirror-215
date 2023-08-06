@@ -1,0 +1,2000 @@
+{
+    "characters": [
+        {
+            "index": "RCX2",
+            "illustrations": {
+                "all": 106,
+                "r18": 8
+            }
+        },
+        {
+            "index": "RCX3",
+            "illustrations": {
+                "all": 37,
+                "r18": 1
+            }
+        },
+        {
+            "index": "A41",
+            "illustrations": {
+                "all": 469,
+                "r18": 51
+            }
+        },
+        {
+            "index": "A43",
+            "illustrations": {
+                "all": 255,
+                "r18": 26
+            }
+        },
+        {
+            "index": "A42",
+            "illustrations": {
+                "all": 100,
+                "r18": 9
+            }
+        },
+        {
+            "index": "A44",
+            "illustrations": {
+                "all": 496,
+                "r18": 64
+            }
+        },
+        {
+            "index": "R303",
+            "illustrations": {
+                "all": 92,
+                "r18": 2
+            }
+        },
+        {
+            "index": "PA11",
+            "illustrations": {
+                "all": 418,
+                "r18": 31
+            }
+        },
+        {
+            "index": "BS04",
+            "illustrations": {
+                "all": 243,
+                "r18": 11
+            }
+        },
+        {
+            "index": "LT05",
+            "illustrations": {
+                "all": 320,
+                "r18": 25
+            }
+        },
+        {
+            "index": "PA41",
+            "illustrations": {
+                "all": 746,
+                "r18": 60
+            }
+        },
+        {
+            "index": "PA45",
+            "illustrations": {
+                "all": 479,
+                "r18": 56
+            }
+        },
+        {
+            "index": "PA14",
+            "illustrations": {
+                "all": 304,
+                "r18": 23
+            }
+        },
+        {
+            "index": "PA12",
+            "illustrations": {
+                "all": 1086,
+                "r18": 98
+            }
+        },
+        {
+            "index": "PA44",
+            "illustrations": {
+                "all": 338,
+                "r18": 20
+            }
+        },
+        {
+            "index": "PA15",
+            "illustrations": {
+                "all": 372,
+                "r18": 39
+            }
+        },
+        {
+            "index": "PA13",
+            "illustrations": {
+                "all": 514,
+                "r18": 54
+            }
+        },
+        {
+            "index": "PA43",
+            "illustrations": {
+                "all": 1106,
+                "r18": 266
+            }
+        },
+        {
+            "index": "PA42",
+            "illustrations": {
+                "all": 207,
+                "r18": 17
+            }
+        },
+        {
+            "index": "PA61",
+            "illustrations": {
+                "all": 187,
+                "r18": 20
+            }
+        },
+        {
+            "index": "VC02",
+            "illustrations": {
+                "all": 288,
+                "r18": 20
+            }
+        },
+        {
+            "index": "SI01",
+            "illustrations": {
+                "all": 166,
+                "r18": 11
+            }
+        },
+        {
+            "index": "BS03",
+            "illustrations": {
+                "all": 1569,
+                "r18": 136
+            }
+        },
+        {
+            "index": "ST02",
+            "illustrations": {
+                "all": 364,
+                "r18": 30
+            }
+        },
+        {
+            "index": "LM10",
+            "illustrations": {
+                "all": 481,
+                "r18": 50
+            }
+        },
+        {
+            "index": "JC04",
+            "illustrations": {
+                "all": 504,
+                "r18": 33
+            }
+        },
+        {
+            "index": "SW02",
+            "illustrations": {
+                "all": 284,
+                "r18": 52
+            }
+        },
+        {
+            "index": "R105",
+            "illustrations": {
+                "all": 1060,
+                "r18": 114
+            }
+        },
+        {
+            "index": "R100",
+            "illustrations": {
+                "all": 656,
+                "r18": 151
+            }
+        },
+        {
+            "index": "HK01",
+            "illustrations": {
+                "all": 427,
+                "r18": 50
+            }
+        },
+        {
+            "index": "R123",
+            "illustrations": {
+                "all": 1416,
+                "r18": 116
+            }
+        },
+        {
+            "index": "IU04",
+            "illustrations": {
+                "all": 256,
+                "r18": 16
+            }
+        },
+        {
+            "index": "VC04",
+            "illustrations": {
+                "all": 495,
+                "r18": 49
+            }
+        },
+        {
+            "index": "KZ04",
+            "illustrations": {
+                "all": 1096,
+                "r18": 249
+            }
+        },
+        {
+            "index": "RB02",
+            "illustrations": {
+                "all": 509,
+                "r18": 63
+            }
+        },
+        {
+            "index": "R104",
+            "illustrations": {
+                "all": 192,
+                "r18": 12
+            }
+        },
+        {
+            "index": "IU07",
+            "illustrations": {
+                "all": 953,
+                "r18": 169
+            }
+        },
+        {
+            "index": "MN03",
+            "illustrations": {
+                "all": 582,
+                "r18": 72
+            }
+        },
+        {
+            "index": "JC03",
+            "illustrations": {
+                "all": 333,
+                "r18": 56
+            }
+        },
+        {
+            "index": "IU05",
+            "illustrations": {
+                "all": 415,
+                "r18": 33
+            }
+        },
+        {
+            "index": "USS3",
+            "illustrations": {
+                "all": 1277,
+                "r18": 65
+            }
+        },
+        {
+            "index": "AA04",
+            "illustrations": {
+                "all": 312,
+                "r18": 33
+            }
+        },
+        {
+            "index": "LN01",
+            "illustrations": {
+                "all": 177,
+                "r18": 8
+            }
+        },
+        {
+            "index": "LM11",
+            "illustrations": {
+                "all": 793,
+                "r18": 62
+            }
+        },
+        {
+            "index": "RL04",
+            "illustrations": {
+                "all": 1859,
+                "r18": 196
+            }
+        },
+        {
+            "index": "USS1",
+            "illustrations": {
+                "all": 1501,
+                "r18": 89
+            }
+        },
+        {
+            "index": "PL02",
+            "illustrations": {
+                "all": 11620,
+                "r18": 1142
+            }
+        },
+        {
+            "index": "BS01",
+            "illustrations": {
+                "all": 1055,
+                "r18": 168
+            }
+        },
+        {
+            "index": "GG03",
+            "illustrations": {
+                "all": 320,
+                "r18": 45
+            }
+        },
+        {
+            "index": "SR01",
+            "illustrations": {
+                "all": 7327,
+                "r18": 622
+            }
+        },
+        {
+            "index": "AA02",
+            "illustrations": {
+                "all": 2919,
+                "r18": 312
+            }
+        },
+        {
+            "index": "AA03",
+            "illustrations": {
+                "all": 2421,
+                "r18": 304
+            }
+        },
+        {
+            "index": "KZ03",
+            "illustrations": {
+                "all": 1887,
+                "r18": 251
+            }
+        },
+        {
+            "index": "ST03",
+            "illustrations": {
+                "all": 282,
+                "r18": 73
+            }
+        },
+        {
+            "index": "R001",
+            "illustrations": {
+                "all": 13979,
+                "r18": 1089
+            }
+        },
+        {
+            "index": "SK01",
+            "illustrations": {
+                "all": 901,
+                "r18": 174
+            }
+        },
+        {
+            "index": "RL05",
+            "illustrations": {
+                "all": 468,
+                "r18": 70
+            }
+        },
+        {
+            "index": "RL01",
+            "illustrations": {
+                "all": 1496,
+                "r18": 129
+            }
+        },
+        {
+            "index": "R106",
+            "illustrations": {
+                "all": 1228,
+                "r18": 139
+            }
+        },
+        {
+            "index": "FO02",
+            "illustrations": {
+                "all": 1436,
+                "r18": 237
+            }
+        },
+        {
+            "index": "SW01",
+            "illustrations": {
+                "all": 2233,
+                "r18": 194
+            }
+        },
+        {
+            "index": "BS02",
+            "illustrations": {
+                "all": 1522,
+                "r18": 200
+            }
+        },
+        {
+            "index": "PL04",
+            "illustrations": {
+                "all": 733,
+                "r18": 79
+            }
+        },
+        {
+            "index": "MN02",
+            "illustrations": {
+                "all": 222,
+                "r18": 13
+            }
+        },
+        {
+            "index": "SR03",
+            "illustrations": {
+                "all": 658,
+                "r18": 109
+            }
+        },
+        {
+            "index": "ST01",
+            "illustrations": {
+                "all": 505,
+                "r18": 32
+            }
+        },
+        {
+            "index": "JC06",
+            "illustrations": {
+                "all": 653,
+                "r18": 40
+            }
+        },
+        {
+            "index": "JC05",
+            "illustrations": {
+                "all": 2518,
+                "r18": 290
+            }
+        },
+        {
+            "index": "USS2",
+            "illustrations": {
+                "all": 1021,
+                "r18": 49
+            }
+        },
+        {
+            "index": "PL05",
+            "illustrations": {
+                "all": 1565,
+                "r18": 182
+            }
+        },
+        {
+            "index": "SG01",
+            "illustrations": {
+                "all": 822,
+                "r18": 102
+            }
+        },
+        {
+            "index": "YD01",
+            "illustrations": {
+                "all": 2237,
+                "r18": 355
+            }
+        },
+        {
+            "index": "PL03",
+            "illustrations": {
+                "all": 8163,
+                "r18": 720
+            }
+        },
+        {
+            "index": "GG01",
+            "illustrations": {
+                "all": 2660,
+                "r18": 374
+            }
+        },
+        {
+            "index": "RL03",
+            "illustrations": {
+                "all": 2240,
+                "r18": 112
+            }
+        },
+        {
+            "index": "LN02",
+            "illustrations": {
+                "all": 2583,
+                "r18": 241
+            }
+        },
+        {
+            "index": "SR02",
+            "illustrations": {
+                "all": 3310,
+                "r18": 360
+            }
+        },
+        {
+            "index": "FO01",
+            "illustrations": {
+                "all": 1521,
+                "r18": 258
+            }
+        },
+        {
+            "index": "FO03",
+            "illustrations": {
+                "all": 921,
+                "r18": 79
+            }
+        },
+        {
+            "index": "LM05",
+            "illustrations": {
+                "all": 3346,
+                "r18": 373
+            }
+        },
+        {
+            "index": "RL02",
+            "illustrations": {
+                "all": 2524,
+                "r18": 328
+            }
+        },
+        {
+            "index": "JC01",
+            "illustrations": {
+                "all": 2615,
+                "r18": 145
+            }
+        },
+        {
+            "index": "RB01",
+            "illustrations": {
+                "all": 468,
+                "r18": 74
+            }
+        },
+        {
+            "index": "PA63",
+            "illustrations": {
+                "all": 67,
+                "r18": 16
+            }
+        },
+        {
+            "index": "PA62",
+            "illustrations": {
+                "all": 167,
+                "r18": 17
+            }
+        },
+        {
+            "index": "US10",
+            "illustrations": {
+                "all": 199,
+                "r18": 22
+            }
+        },
+        {
+            "index": "VC03",
+            "illustrations": {
+                "all": 632,
+                "r18": 65
+            }
+        },
+        {
+            "index": "VC05",
+            "illustrations": {
+                "all": 973,
+                "r18": 113
+            }
+        },
+        {
+            "index": "AA01",
+            "illustrations": {
+                "all": 7503,
+                "r18": 857
+            }
+        },
+        {
+            "index": "PA65",
+            "illustrations": {
+                "all": 370,
+                "r18": 29
+            }
+        },
+        {
+            "index": "PA64",
+            "illustrations": {
+                "all": 245,
+                "r18": 35
+            }
+        },
+        {
+            "index": "R119",
+            "illustrations": {
+                "all": 239,
+                "r18": 23
+            }
+        },
+        {
+            "index": "LM08",
+            "illustrations": {
+                "all": 1315,
+                "r18": 134
+            }
+        },
+        {
+            "index": "LM04",
+            "illustrations": {
+                "all": 6503,
+                "r18": 892
+            }
+        },
+        {
+            "index": "R107",
+            "illustrations": {
+                "all": 1883,
+                "r18": 321
+            }
+        },
+        {
+            "index": "SS01",
+            "illustrations": {
+                "all": 503,
+                "r18": 46
+            }
+        },
+        {
+            "index": "R128",
+            "illustrations": {
+                "all": 369,
+                "r18": 24
+            }
+        },
+        {
+            "index": "SS02",
+            "illustrations": {
+                "all": 1960,
+                "r18": 331
+            }
+        },
+        {
+            "index": "R108",
+            "illustrations": {
+                "all": 1615,
+                "r18": 208
+            }
+        },
+        {
+            "index": "RR01",
+            "illustrations": {
+                "all": 870,
+                "r18": 101
+            }
+        },
+        {
+            "index": "AZ01",
+            "illustrations": {
+                "all": 623,
+                "r18": 31
+            }
+        },
+        {
+            "index": "R124",
+            "illustrations": {
+                "all": 140,
+                "r18": 24
+            }
+        },
+        {
+            "index": "R122",
+            "illustrations": {
+                "all": 739,
+                "r18": 177
+            }
+        },
+        {
+            "index": "R137",
+            "illustrations": {
+                "all": 987,
+                "r18": 108
+            }
+        },
+        {
+            "index": "LT01",
+            "illustrations": {
+                "all": 1021,
+                "r18": 81
+            }
+        },
+        {
+            "index": "RL06",
+            "illustrations": {
+                "all": 1375,
+                "r18": 152
+            }
+        },
+        {
+            "index": "R130",
+            "illustrations": {
+                "all": 602,
+                "r18": 53
+            }
+        },
+        {
+            "index": "R132",
+            "illustrations": {
+                "all": 76,
+                "r18": 4
+            }
+        },
+        {
+            "index": "VC01",
+            "illustrations": {
+                "all": 32,
+                "r18": 0
+            }
+        },
+        {
+            "index": "LM15",
+            "illustrations": {
+                "all": 369,
+                "r18": 110
+            }
+        },
+        {
+            "index": "LM12",
+            "illustrations": {
+                "all": 882,
+                "r18": 202
+            }
+        },
+        {
+            "index": "LT77",
+            "illustrations": {
+                "all": 4526,
+                "r18": 367
+            }
+        },
+        {
+            "index": "HT03",
+            "illustrations": {
+                "all": 873,
+                "r18": 116
+            }
+        },
+        {
+            "index": "SR27",
+            "illustrations": {
+                "all": 438,
+                "r18": 69
+            }
+        },
+        {
+            "index": "LT02",
+            "illustrations": {
+                "all": 418,
+                "r18": 40
+            }
+        },
+        {
+            "index": "R110",
+            "illustrations": {
+                "all": 273,
+                "r18": 44
+            }
+        },
+        {
+            "index": "RE41",
+            "illustrations": {
+                "all": 1938,
+                "r18": 370
+            }
+        },
+        {
+            "index": "LM16",
+            "illustrations": {
+                "all": 353,
+                "r18": 37
+            }
+        },
+        {
+            "index": "LM19",
+            "illustrations": {
+                "all": 782,
+                "r18": 141
+            }
+        },
+        {
+            "index": "LM20",
+            "illustrations": {
+                "all": 785,
+                "r18": 62
+            }
+        },
+        {
+            "index": "NM01",
+            "illustrations": {
+                "all": 3573,
+                "r18": 455
+            }
+        },
+        {
+            "index": "YD05",
+            "illustrations": {
+                "all": 379,
+                "r18": 50
+            }
+        },
+        {
+            "index": "R155",
+            "illustrations": {
+                "all": 2176,
+                "r18": 195
+            }
+        },
+        {
+            "index": "R160",
+            "illustrations": {
+                "all": 176,
+                "r18": 18
+            }
+        },
+        {
+            "index": "HK03",
+            "illustrations": {
+                "all": 1564,
+                "r18": 383
+            }
+        },
+        {
+            "index": "R138",
+            "illustrations": {
+                "all": 97,
+                "r18": 14
+            }
+        },
+        {
+            "index": "R158",
+            "illustrations": {
+                "all": 154,
+                "r18": 10
+            }
+        },
+        {
+            "index": "RV02",
+            "illustrations": {
+                "all": 1151,
+                "r18": 174
+            }
+        },
+        {
+            "index": "MN01",
+            "illustrations": {
+                "all": 56,
+                "r18": 8
+            }
+        },
+        {
+            "index": "R144",
+            "illustrations": {
+                "all": 256,
+                "r18": 13
+            }
+        },
+        {
+            "index": "R126",
+            "illustrations": {
+                "all": 698,
+                "r18": 213
+            }
+        },
+        {
+            "index": "R148",
+            "illustrations": {
+                "all": 958,
+                "r18": 192
+            }
+        },
+        {
+            "index": "R109",
+            "illustrations": {
+                "all": 816,
+                "r18": 21
+            }
+        },
+        {
+            "index": "RCX4",
+            "illustrations": {
+                "all": 17,
+                "r18": 0
+            }
+        },
+        {
+            "index": "R131",
+            "illustrations": {
+                "all": 527,
+                "r18": 32
+            }
+        },
+        {
+            "index": "R117",
+            "illustrations": {
+                "all": 937,
+                "r18": 141
+            }
+        },
+        {
+            "index": "B214",
+            "illustrations": {
+                "all": 8446,
+                "r18": 1302
+            }
+        },
+        {
+            "index": "RB05",
+            "illustrations": {
+                "all": 576,
+                "r18": 70
+            }
+        },
+        {
+            "index": "R129",
+            "illustrations": {
+                "all": 141,
+                "r18": 35
+            }
+        },
+        {
+            "index": "R157",
+            "illustrations": {
+                "all": 450,
+                "r18": 40
+            }
+        },
+        {
+            "index": "US11",
+            "illustrations": {
+                "all": 520,
+                "r18": 80
+            }
+        },
+        {
+            "index": "RB03",
+            "illustrations": {
+                "all": 454,
+                "r18": 51
+            }
+        },
+        {
+            "index": "USS4",
+            "illustrations": {
+                "all": 1241,
+                "r18": 162
+            }
+        },
+        {
+            "index": "R140",
+            "illustrations": {
+                "all": 256,
+                "r18": 32
+            }
+        },
+        {
+            "index": "R133",
+            "illustrations": {
+                "all": 281,
+                "r18": 37
+            }
+        },
+        {
+            "index": "RB04",
+            "illustrations": {
+                "all": 388,
+                "r18": 44
+            }
+        },
+        {
+            "index": "R172",
+            "illustrations": {
+                "all": 5285,
+                "r18": 1062
+            }
+        },
+        {
+            "index": "R162",
+            "illustrations": {
+                "all": 525,
+                "r18": 50
+            }
+        },
+        {
+            "index": "R147",
+            "illustrations": {
+                "all": 642,
+                "r18": 71
+            }
+        },
+        {
+            "index": "SR26",
+            "illustrations": {
+                "all": 301,
+                "r18": 27
+            }
+        },
+        {
+            "index": "LM14",
+            "illustrations": {
+                "all": 610,
+                "r18": 49
+            }
+        },
+        {
+            "index": "II04",
+            "illustrations": {
+                "all": 388,
+                "r18": 31
+            }
+        },
+        {
+            "index": "II01",
+            "illustrations": {
+                "all": 1389,
+                "r18": 123
+            }
+        },
+        {
+            "index": "R139",
+            "illustrations": {
+                "all": 101,
+                "r18": 23
+            }
+        },
+        {
+            "index": "SG05",
+            "illustrations": {
+                "all": 1450,
+                "r18": 172
+            }
+        },
+        {
+            "index": "SG06",
+            "illustrations": {
+                "all": 288,
+                "r18": 24
+            }
+        },
+        {
+            "index": "SG03",
+            "illustrations": {
+                "all": 1310,
+                "r18": 260
+            }
+        },
+        {
+            "index": "LT06",
+            "illustrations": {
+                "all": 349,
+                "r18": 19
+            }
+        },
+        {
+            "index": "VC08",
+            "illustrations": {
+                "all": 317,
+                "r18": 41
+            }
+        },
+        {
+            "index": "RB07",
+            "illustrations": {
+                "all": 323,
+                "r18": 38
+            }
+        },
+        {
+            "index": "R111",
+            "illustrations": {
+                "all": 5466,
+                "r18": 751
+            }
+        },
+        {
+            "index": "R146",
+            "illustrations": {
+                "all": 40,
+                "r18": 1
+            }
+        },
+        {
+            "index": "KZ07",
+            "illustrations": {
+                "all": 1049,
+                "r18": 328
+            }
+        },
+        {
+            "index": "SR28",
+            "illustrations": {
+                "all": 188,
+                "r18": 18
+            }
+        },
+        {
+            "index": "KZ09",
+            "illustrations": {
+                "all": 1063,
+                "r18": 188
+            }
+        },
+        {
+            "index": "R166",
+            "illustrations": {
+                "all": 117,
+                "r18": 21
+            }
+        },
+        {
+            "index": "R163",
+            "illustrations": {
+                "all": 938,
+                "r18": 120
+            }
+        },
+        {
+            "index": "R159",
+            "illustrations": {
+                "all": 5322,
+                "r18": 870
+            }
+        },
+        {
+            "index": "RE45",
+            "illustrations": {
+                "all": 2053,
+                "r18": 270
+            }
+        },
+        {
+            "index": "CB09",
+            "illustrations": {
+                "all": 412,
+                "r18": 49
+            }
+        },
+        {
+            "index": "CB08",
+            "illustrations": {
+                "all": 677,
+                "r18": 132
+            }
+        },
+        {
+            "index": "CB06",
+            "illustrations": {
+                "all": 233,
+                "r18": 32
+            }
+        },
+        {
+            "index": "CB05",
+            "illustrations": {
+                "all": 682,
+                "r18": 103
+            }
+        },
+        {
+            "index": "CB16",
+            "illustrations": {
+                "all": 407,
+                "r18": 82
+            }
+        },
+        {
+            "index": "VC12",
+            "illustrations": {
+                "all": 125,
+                "r18": 10
+            }
+        },
+        {
+            "index": "LT08",
+            "illustrations": {
+                "all": 535,
+                "r18": 98
+            }
+        },
+        {
+            "index": "SG08",
+            "illustrations": {
+                "all": 166,
+                "r18": 44
+            }
+        },
+        {
+            "index": "RF01",
+            "illustrations": {
+                "all": 56,
+                "r18": 9
+            }
+        },
+        {
+            "index": "YD11",
+            "illustrations": {
+                "all": 173,
+                "r18": 16
+            }
+        },
+        {
+            "index": "HK13",
+            "illustrations": {
+                "all": 1296,
+                "r18": 98
+            }
+        },
+        {
+            "index": "NM02",
+            "illustrations": {
+                "all": 2882,
+                "r18": 401
+            }
+        },
+        {
+            "index": "RS04",
+            "illustrations": {
+                "all": 29,
+                "r18": 0
+            }
+        },
+        {
+            "index": "RS02",
+            "illustrations": {
+                "all": 49,
+                "r18": 0
+            }
+        },
+        {
+            "index": "RS03",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "RS01",
+            "illustrations": {
+                "all": 132,
+                "r18": 13
+            }
+        },
+        {
+            "index": "R164",
+            "illustrations": {
+                "all": 269,
+                "r18": 36
+            }
+        },
+        {
+            "index": "VC11",
+            "illustrations": {
+                "all": 163,
+                "r18": 37
+            }
+        },
+        {
+            "index": "SG07",
+            "illustrations": {
+                "all": 316,
+                "r18": 18
+            }
+        },
+        {
+            "index": "HK04",
+            "illustrations": {
+                "all": 171,
+                "r18": 23
+            }
+        },
+        {
+            "index": "AA05",
+            "illustrations": {
+                "all": 909,
+                "r18": 157
+            }
+        },
+        {
+            "index": "B003",
+            "illustrations": {
+                "all": 5514,
+                "r18": 884
+            }
+        },
+        {
+            "index": "CR01",
+            "illustrations": {
+                "all": 1821,
+                "r18": 126
+            }
+        },
+        {
+            "index": "II05",
+            "illustrations": {
+                "all": 250,
+                "r18": 20
+            }
+        },
+        {
+            "index": "VC14",
+            "illustrations": {
+                "all": 53,
+                "r18": 7
+            }
+        },
+        {
+            "index": "HK05",
+            "illustrations": {
+                "all": 191,
+                "r18": 19
+            }
+        },
+        {
+            "index": "LN04",
+            "illustrations": {
+                "all": 672,
+                "r18": 125
+            }
+        },
+        {
+            "index": "MN04",
+            "illustrations": {
+                "all": 626,
+                "r18": 56
+            }
+        },
+        {
+            "index": "BV12",
+            "illustrations": {
+                "all": 343,
+                "r18": 29
+            }
+        },
+        {
+            "index": "BV13",
+            "illustrations": {
+                "all": 1173,
+                "r18": 181
+            }
+        },
+        {
+            "index": "HK07",
+            "illustrations": {
+                "all": 1227,
+                "r18": 133
+            }
+        },
+        {
+            "index": "R112",
+            "illustrations": {
+                "all": 71,
+                "r18": 7
+            }
+        },
+        {
+            "index": "CB11",
+            "illustrations": {
+                "all": 225,
+                "r18": 12
+            }
+        },
+        {
+            "index": "YD03",
+            "illustrations": {
+                "all": 237,
+                "r18": 25
+            }
+        },
+        {
+            "index": "VC10",
+            "illustrations": {
+                "all": 597,
+                "r18": 136
+            }
+        },
+        {
+            "index": "KZ12",
+            "illustrations": {
+                "all": 159,
+                "r18": 14
+            }
+        },
+        {
+            "index": "KZ13",
+            "illustrations": {
+                "all": 306,
+                "r18": 51
+            }
+        },
+        {
+            "index": "KZ15",
+            "illustrations": {
+                "all": 14,
+                "r18": 1
+            }
+        },
+        {
+            "index": "CB03",
+            "illustrations": {
+                "all": 56,
+                "r18": 3
+            }
+        },
+        {
+            "index": "RB06",
+            "illustrations": {
+                "all": 114,
+                "r18": 10
+            }
+        },
+        {
+            "index": "KZ14",
+            "illustrations": {
+                "all": 89,
+                "r18": 9
+            }
+        },
+        {
+            "index": "CB12",
+            "illustrations": {
+                "all": 109,
+                "r18": 1
+            }
+        },
+        {
+            "index": "KZ11",
+            "illustrations": {
+                "all": 609,
+                "r18": 57
+            }
+        },
+        {
+            "index": "KZ01",
+            "illustrations": {
+                "all": 96,
+                "r18": 6
+            }
+        },
+        {
+            "index": "JC00",
+            "illustrations": {
+                "all": 204,
+                "r18": 37
+            }
+        },
+        {
+            "index": "JC09",
+            "illustrations": {
+                "all": 598,
+                "r18": 95
+            }
+        },
+        {
+            "index": "JC02",
+            "illustrations": {
+                "all": 128,
+                "r18": 4
+            }
+        },
+        {
+            "index": "VC07",
+            "illustrations": {
+                "all": 127,
+                "r18": 3
+            }
+        },
+        {
+            "index": "YD09",
+            "illustrations": {
+                "all": 108,
+                "r18": 8
+            }
+        },
+        {
+            "index": "RF02",
+            "illustrations": {
+                "all": 45,
+                "r18": 2
+            }
+        },
+        {
+            "index": "RB12",
+            "illustrations": {
+                "all": 67,
+                "r18": 8
+            }
+        },
+        {
+            "index": "LM18",
+            "illustrations": {
+                "all": 925,
+                "r18": 152
+            }
+        },
+        {
+            "index": "NM03",
+            "illustrations": {
+                "all": 984,
+                "r18": 130
+            }
+        },
+        {
+            "index": "R121",
+            "illustrations": {
+                "all": 78,
+                "r18": 11
+            }
+        },
+        {
+            "index": "VC09",
+            "illustrations": {
+                "all": 1407,
+                "r18": 137
+            }
+        },
+        {
+            "index": "LT10",
+            "illustrations": {
+                "all": 148,
+                "r18": 7
+            }
+        },
+        {
+            "index": "HK09",
+            "illustrations": {
+                "all": 130,
+                "r18": 29
+            }
+        },
+        {
+            "index": "LT11",
+            "illustrations": {
+                "all": 841,
+                "r18": 141
+            }
+        },
+        {
+            "index": "R134",
+            "illustrations": {
+                "all": 29,
+                "r18": 6
+            }
+        },
+        {
+            "index": "VC19",
+            "illustrations": {
+                "all": 106,
+                "r18": 23
+            }
+        },
+        {
+            "index": "VC18",
+            "illustrations": {
+                "all": 114,
+                "r18": 21
+            }
+        },
+        {
+            "index": "VC16",
+            "illustrations": {
+                "all": 438,
+                "r18": 119
+            }
+        },
+        {
+            "index": "CB19",
+            "illustrations": {
+                "all": 45,
+                "r18": 5
+            }
+        },
+        {
+            "index": "II09",
+            "illustrations": {
+                "all": 283,
+                "r18": 22
+            }
+        },
+        {
+            "index": "II07",
+            "illustrations": {
+                "all": 1433,
+                "r18": 174
+            }
+        },
+        {
+            "index": "CR02",
+            "illustrations": {
+                "all": 398,
+                "r18": 36
+            }
+        },
+        {
+            "index": "MN07",
+            "illustrations": {
+                "all": 58,
+                "r18": 14
+            }
+        },
+        {
+            "index": "LN06",
+            "illustrations": {
+                "all": 28,
+                "r18": 1
+            }
+        },
+        {
+            "index": "RF03",
+            "illustrations": {
+                "all": 57,
+                "r18": 18
+            }
+        },
+        {
+            "index": "LN05",
+            "illustrations": {
+                "all": 221,
+                "r18": 8
+            }
+        },
+        {
+            "index": "RL08",
+            "illustrations": {
+                "all": 107,
+                "r18": 17
+            }
+        },
+        {
+            "index": "RF23",
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": "RL07",
+            "illustrations": {
+                "all": 395,
+                "r18": 75
+            }
+        },
+        {
+            "index": "SG09",
+            "illustrations": {
+                "all": 47,
+                "r18": 5
+            }
+        },
+        {
+            "index": "R143",
+            "illustrations": {
+                "all": 86,
+                "r18": 19
+            }
+        },
+        {
+            "index": "R145",
+            "illustrations": {
+                "all": 615,
+                "r18": 113
+            }
+        },
+        {
+            "index": "RF22",
+            "illustrations": {
+                "all": 206,
+                "r18": 2
+            }
+        },
+        {
+            "index": "KZ10",
+            "illustrations": {
+                "all": 26,
+                "r18": 4
+            }
+        },
+        {
+            "index": "KZ08",
+            "illustrations": {
+                "all": 428,
+                "r18": 19
+            }
+        },
+        {
+            "index": "R161",
+            "illustrations": {
+                "all": 45,
+                "r18": 0
+            }
+        },
+        {
+            "index": "II10",
+            "illustrations": {
+                "all": 114,
+                "r18": 21
+            }
+        },
+        {
+            "index": "SG11",
+            "illustrations": {
+                "all": 30,
+                "r18": 14
+            }
+        },
+        {
+            "index": "GG04",
+            "illustrations": {
+                "all": 37,
+                "r18": 6
+            }
+        },
+        {
+            "index": "R175",
+            "illustrations": {
+                "all": 25,
+                "r18": 6
+            }
+        },
+        {
+            "index": "VC17",
+            "illustrations": {
+                "all": 49,
+                "r18": 5
+            }
+        },
+        {
+            "index": "CB18",
+            "illustrations": {
+                "all": 4,
+                "r18": 2
+            }
+        },
+        {
+            "index": "SI03",
+            "illustrations": {
+                "all": 19,
+                "r18": 2
+            }
+        },
+        {
+            "index": "SR37",
+            "illustrations": {
+                "all": 53,
+                "r18": 12
+            }
+        },
+        {
+            "index": "SR36",
+            "illustrations": {
+                "all": 45,
+                "r18": 1
+            }
+        },
+        {
+            "index": "SR35",
+            "illustrations": {
+                "all": 404,
+                "r18": 88
+            }
+        },
+        {
+            "index": "PL07",
+            "illustrations": {
+                "all": 251,
+                "r18": 10
+            }
+        },
+        {
+            "index": "VC21",
+            "illustrations": {
+                "all": 7,
+                "r18": 0
+            }
+        },
+        {
+            "index": "DB03",
+            "illustrations": {
+                "all": 119,
+                "r18": 62
+            }
+        },
+        {
+            "index": "DB02",
+            "illustrations": {
+                "all": 38,
+                "r18": 5
+            }
+        },
+        {
+            "index": "YD15",
+            "illustrations": {
+                "all": 9,
+                "r18": 3
+            }
+        },
+        {
+            "index": "RB09",
+            "illustrations": {
+                "all": 18,
+                "r18": 5
+            }
+        },
+        {
+            "index": "LM21",
+            "illustrations": {
+                "all": 258,
+                "r18": 45
+            }
+        },
+        {
+            "index": "NM04",
+            "illustrations": {
+                "all": 129,
+                "r18": 21
+            }
+        },
+        {
+            "index": "YD17",
+            "illustrations": {
+                "all": 4,
+                "r18": 2
+            }
+        },
+        {
+            "index": "YD20",
+            "illustrations": {
+                "all": 51,
+                "r18": 24
+            }
+        },
+        {
+            "index": "MH01",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "MH03",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "MH02",
+            "illustrations": {
+                "all": 22,
+                "r18": 8
+            }
+        },
+        {
+            "index": "U007",
+            "illustrations": {
+                "all": 54,
+                "r18": 23
+            }
+        },
+        {
+            "index": "R171",
+            "illustrations": {
+                "all": 3,
+                "r18": 2
+            }
+        },
+        {
+            "index": "GG02",
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": "RB11",
+            "illustrations": {
+                "all": 22,
+                "r18": 1
+            }
+        },
+        {
+            "index": "B215",
+            "illustrations": {
+                "all": 168,
+                "r18": 36
+            }
+        },
+        {
+            "index": "CB22",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "RL10",
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": "CB88",
+            "illustrations": {
+                "all": 389,
+                "r18": 124
+            }
+        },
+        {
+            "index": "RL09",
+            "illustrations": {
+                "all": 358,
+                "r18": 59
+            }
+        },
+        {
+            "index": "RCX5",
+            "illustrations": {
+                "all": 2,
+                "r18": 1
+            }
+        },
+        {
+            "index": "LT13",
+            "illustrations": {
+                "all": 9,
+                "r18": 1
+            }
+        },
+        {
+            "index": "LT12",
+            "illustrations": {
+                "all": 15,
+                "r18": 8
+            }
+        },
+        {
+            "index": "LT40",
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        }
+    ],
+    "last_updated": 1687374452.7825692
+}

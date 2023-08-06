@@ -1,0 +1,5087 @@
+{
+    "names": [
+        {
+            "name": "airi",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ airi -kurimura_airi",
+                "excluded": [
+                    "kurimura_airi"
+                ],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "ajitani_hifumi",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ ajitani_hifumi ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "akane",
+            "count": 32,
+            "keyword": {
+                "text": "ブルーアーカイブ akane -murokasa_akane",
+                "excluded": [
+                    "murokasa_akane"
+                ],
+                "items": 32,
+                "matched": 29,
+                "polluted": 3,
+                "pollution": {
+                    "murokasaakane": 2,
+                    "akanemurokasa": 1
+                }
+            }
+        },
+        {
+            "name": "akari",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ akari -hakari_atsuko -wanibuchi_akari",
+                "excluded": [
+                    "hakari_atsuko",
+                    "wanibuchi_akari"
+                ],
+                "items": 6,
+                "matched": 3,
+                "polluted": 3,
+                "pollution": {
+                    "hakariatsuko": 1,
+                    "wanibuchiakari": 1,
+                    "秤アツコhakari": 1
+                }
+            }
+        },
+        {
+            "name": "ako",
+            "count": 54,
+            "keyword": {
+                "text": "ブルーアーカイブ ako -amau_ako -hanako -miyako -sakurako -tsukiyuki_miyako -urawa_hanako -utazumi_sakurako",
+                "excluded": [
+                    "amau_ako",
+                    "hanako",
+                    "miyako",
+                    "sakurako",
+                    "tsukiyuki_miyako",
+                    "urawa_hanako",
+                    "utazumi_sakurako"
+                ],
+                "items": 54,
+                "matched": 34,
+                "polluted": 20,
+                "pollution": {
+                    "amauako": 5,
+                    "akoamau": 3,
+                    "sunoharakokona": 3,
+                    "hakosbaelz": 2,
+                    "minakonoe": 2,
+                    "shirobako": 2,
+                    "blue_archive_ako": 1,
+                    "hyakkiyako": 1,
+                    "hyakkiyakou": 1
+                }
+            }
+        },
+        {
+            "name": "amau_ako",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ amau_ako ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "arisu",
+            "count": 32,
+            "keyword": {
+                "text": "ブルーアーカイブ arisu -tendou_arisu",
+                "excluded": [
+                    "tendou_arisu"
+                ],
+                "items": 32,
+                "matched": 29,
+                "polluted": 3,
+                "pollution": {
+                    "tendouarisu": 3
+                }
+            }
+        },
+        {
+            "name": "aru",
+            "count": 182,
+            "keyword": {
+                "text": "ブルーアーカイブ aru -haruka -haruna -igusa_haruka -koharu -kurodate_haruna -rikuhachima_aru -shimoe_koharu",
+                "excluded": [
+                    "haruka",
+                    "haruna",
+                    "igusa_haruka",
+                    "koharu",
+                    "kurodate_haruna",
+                    "rikuhachima_aru",
+                    "shimoe_koharu"
+                ],
+                "items": 60,
+                "matched": 38,
+                "polluted": 22,
+                "pollution": {
+                    "rikuhachimaaru": 9,
+                    "naruto": 5,
+                    "aru子": 2,
+                    "gyaru": 2,
+                    "bigsaru": 1,
+                    "deltarune": 1,
+                    "kuromaru": 1,
+                    "naruto1000users入り": 1
+                }
+            }
+        },
+        {
+            "name": "asuma_toki",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ asuma_toki ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "asuna",
+            "count": 308,
+            "keyword": {
+                "text": "ブルーアーカイブ asuna -ichinose_asuna",
+                "excluded": [
+                    "ichinose_asuna"
+                ],
+                "items": 60,
+                "matched": 45,
+                "polluted": 15,
+                "pollution": {
+                    "asuna_ichinose": 8,
+                    "asunaichinose": 5,
+                    "ichinoseasuna": 2
+                }
+            }
+        },
+        {
+            "name": "atsuko",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ atsuko -hakari_atsuko",
+                "excluded": [
+                    "hakari_atsuko"
+                ],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "ayane",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ ayane -okusora_ayane",
+                "excluded": [
+                    "okusora_ayane"
+                ],
+                "items": 9,
+                "matched": 7,
+                "polluted": 2,
+                "pollution": {
+                    "okusoraayane": 2
+                }
+            }
+        },
+        {
+            "name": "azusa",
+            "count": 67,
+            "keyword": {
+                "text": "ブルーアーカイブ azusa -kazusa -kyoyama_kazusa -shirasu_azusa",
+                "excluded": [
+                    "kazusa",
+                    "kyoyama_kazusa",
+                    "shirasu_azusa"
+                ],
+                "items": 60,
+                "matched": 53,
+                "polluted": 7,
+                "pollution": {
+                    "shirasuazusa": 6,
+                    "azusashirasu": 1
+                }
+            }
+        },
+        {
+            "name": "cherino",
+            "count": 23,
+            "keyword": {
+                "text": "ブルーアーカイブ cherino -renkawa_cherino",
+                "excluded": [
+                    "renkawa_cherino"
+                ],
+                "items": 23,
+                "matched": 22,
+                "polluted": 1,
+                "pollution": {
+                    "renkawacherino": 1
+                }
+            }
+        },
+        {
+            "name": "chihiro",
+            "count": 10,
+            "keyword": {
+                "text": "ブルーアーカイブ chihiro -kagami_chihiro",
+                "excluded": [
+                    "kagami_chihiro"
+                ],
+                "items": 10,
+                "matched": 8,
+                "polluted": 2,
+                "pollution": {
+                    "kagamichihiro": 2
+                }
+            }
+        },
+        {
+            "name": "chinatsu",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ chinatsu -hinomiya_chinatsu",
+                "excluded": [
+                    "hinomiya_chinatsu"
+                ],
+                "items": 8,
+                "matched": 4,
+                "polluted": 4,
+                "pollution": {
+                    "hinomiyachinatsu": 3,
+                    "hinomiachinatsu": 1
+                }
+            }
+        },
+        {
+            "name": "chise",
+            "count": 10,
+            "keyword": {
+                "text": "ブルーアーカイブ chise -waraku_chise",
+                "excluded": [
+                    "waraku_chise"
+                ],
+                "items": 10,
+                "matched": 6,
+                "polluted": 4,
+                "pollution": {
+                    "warakuchise": 3,
+                    "chisewaraku": 1
+                }
+            }
+        },
+        {
+            "name": "eimi",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ eimi -izumimoto_eimi",
+                "excluded": [
+                    "izumimoto_eimi"
+                ],
+                "items": 6,
+                "matched": 5,
+                "polluted": 1,
+                "pollution": {
+                    "izumimotoeimi": 1
+                }
+            }
+        },
+        {
+            "name": "fubuki",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ fubuki -nemugaki_fubuki",
+                "excluded": [
+                    "nemugaki_fubuki"
+                ],
+                "items": 6,
+                "matched": 4,
+                "polluted": 2,
+                "pollution": {
+                    "shirakamifubuki": 2
+                }
+            }
+        },
+        {
+            "name": "fuuka",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ fuuka -aikiyo_fuuka",
+                "excluded": [
+                    "aikiyo_fuuka"
+                ],
+                "items": 5,
+                "matched": 5,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "hanae",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ hanae -asagao_hanae",
+                "excluded": [
+                    "asagao_hanae"
+                ],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "hanako",
+            "count": 24,
+            "keyword": {
+                "text": "ブルーアーカイブ hanako -urawa_hanako",
+                "excluded": [
+                    "urawa_hanako"
+                ],
+                "items": 24,
+                "matched": 16,
+                "polluted": 8,
+                "pollution": {
+                    "urawahanako": 7,
+                    "uruwahanako": 1
+                }
+            }
+        },
+        {
+            "name": "hanaoka_yuzu",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ hanaoka_yuzu ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "hanekawa_hasumi",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ hanekawa_hasumi ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "hare",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ hare -omagari_hare",
+                "excluded": [
+                    "omagari_hare"
+                ],
+                "items": 8,
+                "matched": 5,
+                "polluted": 3,
+                "pollution": {
+                    "bluearchivehare": 1,
+                    "harem": 1,
+                    "lora_share": 1
+                }
+            }
+        },
+        {
+            "name": "haruka",
+            "count": 24,
+            "keyword": {
+                "text": "ブルーアーカイブ haruka -igusa_haruka",
+                "excluded": [
+                    "igusa_haruka"
+                ],
+                "items": 24,
+                "matched": 21,
+                "polluted": 3,
+                "pollution": {
+                    "igusaharuka": 3
+                }
+            }
+        },
+        {
+            "name": "haruna",
+            "count": 19,
+            "keyword": {
+                "text": "ブルーアーカイブ haruna -kurodate_haruna",
+                "excluded": [
+                    "kurodate_haruna"
+                ],
+                "items": 19,
+                "matched": 15,
+                "polluted": 4,
+                "pollution": {
+                    "kurodateharuna": 3,
+                    "kurotateharuna": 1
+                }
+            }
+        },
+        {
+            "name": "hasumi",
+            "count": 66,
+            "keyword": {
+                "text": "ブルーアーカイブ hasumi -hanekawa_hasumi",
+                "excluded": [
+                    "hanekawa_hasumi"
+                ],
+                "items": 60,
+                "matched": 56,
+                "polluted": 4,
+                "pollution": {
+                    "hanekawahasumi": 4
+                }
+            }
+        },
+        {
+            "name": "hatsune_miku",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ hatsune_miku -hatsune_hatsune_miku",
+                "excluded": [
+                    "hatsune_hatsune_miku"
+                ],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "hayase_yuuka",
+            "count": 27,
+            "keyword": {
+                "text": "ブルーアーカイブ hayase_yuuka ",
+                "excluded": [],
+                "items": 27,
+                "matched": 27,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "hibiki",
+            "count": 75,
+            "keyword": {
+                "text": "ブルーアーカイブ hibiki -nekozuka_hibiki",
+                "excluded": [
+                    "nekozuka_hibiki"
+                ],
+                "items": 60,
+                "matched": 53,
+                "polluted": 7,
+                "pollution": {
+                    "nekozukahibiki": 6,
+                    "nekodukahibiki": 1
+                }
+            }
+        },
+        {
+            "name": "hifumi",
+            "count": 89,
+            "keyword": {
+                "text": "ブルーアーカイブ hifumi -ajitani_hifumi",
+                "excluded": [
+                    "ajitani_hifumi"
+                ],
+                "items": 60,
+                "matched": 39,
+                "polluted": 21,
+                "pollution": {
+                    "hifumidaisuki": 15,
+                    "ajitanihifumi": 4,
+                    "hifumi_ajitani": 2
+                }
+            }
+        },
+        {
+            "name": "himari",
+            "count": 23,
+            "keyword": {
+                "text": "ブルーアーカイブ himari -akeboshi_himari",
+                "excluded": [
+                    "akeboshi_himari"
+                ],
+                "items": 23,
+                "matched": 12,
+                "polluted": 11,
+                "pollution": {
+                    "iochimari": 10,
+                    "bluearchivehimari": 1
+                }
+            }
+        },
+        {
+            "name": "hina",
+            "count": 224,
+            "keyword": {
+                "text": "ブルーアーカイブ hina -asahina_pina -chinatsu -hinata -hinomiya_chinatsu -sorasaki_hina -tsuchinaga_hiyori -wakaba_hinata",
+                "excluded": [
+                    "asahina_pina",
+                    "chinatsu",
+                    "hinata",
+                    "hinomiya_chinatsu",
+                    "sorasaki_hina",
+                    "tsuchinaga_hiyori",
+                    "wakaba_hinata"
+                ],
+                "items": 60,
+                "matched": 49,
+                "polluted": 11,
+                "pollution": {
+                    "sorasakihina": 8,
+                    "hinasorasaki": 2,
+                    "shirosakihina": 1
+                }
+            }
+        },
+        {
+            "name": "hinata",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ hinata -wakaba_hinata",
+                "excluded": [
+                    "wakaba_hinata"
+                ],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "wakabahinata": 1
+                }
+            }
+        },
+        {
+            "name": "hiyori",
+            "count": 10,
+            "keyword": {
+                "text": "ブルーアーカイブ hiyori -tsuchinaga_hiyori",
+                "excluded": [
+                    "tsuchinaga_hiyori"
+                ],
+                "items": 10,
+                "matched": 7,
+                "polluted": 3,
+                "pollution": {
+                    "tsuchinagahiyori": 3
+                }
+            }
+        },
+        {
+            "name": "hoshino",
+            "count": 123,
+            "keyword": {
+                "text": "ブルーアーカイブ hoshino -takanashi_hoshino",
+                "excluded": [
+                    "takanashi_hoshino"
+                ],
+                "items": 60,
+                "matched": 56,
+                "polluted": 4,
+                "pollution": {
+                    "takanashihoshino": 3,
+                    "moona_hoshinova": 1
+                }
+            }
+        },
+        {
+            "name": "ichinose_asuna",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ ichinose_asuna ",
+                "excluded": [],
+                "items": 7,
+                "matched": 7,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "iochi_mari",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ iochi_mari ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "iori",
+            "count": 42,
+            "keyword": {
+                "text": "ブルーアーカイブ iori -shiromi_iori",
+                "excluded": [
+                    "shiromi_iori"
+                ],
+                "items": 42,
+                "matched": 37,
+                "polluted": 5,
+                "pollution": {
+                    "shiromiiori": 5
+                }
+            }
+        },
+        {
+            "name": "iroha",
+            "count": 41,
+            "keyword": {
+                "text": "ブルーアーカイブ iroha -natsume_iroha",
+                "excluded": [
+                    "natsume_iroha"
+                ],
+                "items": 41,
+                "matched": 30,
+                "polluted": 11,
+                "pollution": {
+                    "natsumeiroha": 10,
+                    "bluearchiveiroha": 1
+                }
+            }
+        },
+        {
+            "name": "izumi",
+            "count": 15,
+            "keyword": {
+                "text": "ブルーアーカイブ izumi -izumimoto_eimi -shishido_izumi",
+                "excluded": [
+                    "izumimoto_eimi",
+                    "shishido_izumi"
+                ],
+                "items": 15,
+                "matched": 10,
+                "polluted": 5,
+                "pollution": {
+                    "shishidōizumi": 2,
+                    "izumimoto": 1,
+                    "izumimotoeimi": 1,
+                    "shishidou_izumi": 1
+                }
+            }
+        },
+        {
+            "name": "izuna",
+            "count": 37,
+            "keyword": {
+                "text": "ブルーアーカイブ izuna -kuda_izuna",
+                "excluded": [
+                    "kuda_izuna"
+                ],
+                "items": 37,
+                "matched": 32,
+                "polluted": 5,
+                "pollution": {
+                    "kudaizuna": 4,
+                    "kizunaai": 1
+                }
+            }
+        },
+        {
+            "name": "junko",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ junko -akashi_junko",
+                "excluded": [
+                    "akashi_junko"
+                ],
+                "items": 9,
+                "matched": 6,
+                "polluted": 3,
+                "pollution": {
+                    "akashijunko": 3
+                }
+            }
+        },
+        {
+            "name": "kaede",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ kaede -isami_kaede",
+                "excluded": [
+                    "isami_kaede"
+                ],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kaho",
+            "count": 15,
+            "keyword": {
+                "text": "ブルーアーカイブ kaho -kuwakami_kaho",
+                "excluded": [
+                    "kuwakami_kaho"
+                ],
+                "items": 15,
+                "matched": 10,
+                "polluted": 5,
+                "pollution": {
+                    "kuwakamikaho": 5
+                }
+            }
+        },
+        {
+            "name": "kakudate_karin",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ kakudate_karin ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kanna",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ kanna -ogata_kanna",
+                "excluded": [
+                    "ogata_kanna"
+                ],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "karin",
+            "count": 144,
+            "keyword": {
+                "text": "ブルーアーカイブ karin -kakudate_karin",
+                "excluded": [
+                    "kakudate_karin"
+                ],
+                "items": 60,
+                "matched": 55,
+                "polluted": 5,
+                "pollution": {
+                    "kakudatekarin": 4,
+                    "karinkakudate": 1
+                }
+            }
+        },
+        {
+            "name": "kasumizawa_miyu",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ kasumizawa_miyu ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kayoko",
+            "count": 50,
+            "keyword": {
+                "text": "ブルーアーカイブ kayoko -onikata_kayoko",
+                "excluded": [
+                    "onikata_kayoko"
+                ],
+                "items": 50,
+                "matched": 44,
+                "polluted": 6,
+                "pollution": {
+                    "onikatakayoko": 5,
+                    "kayokobluearchive": 1
+                }
+            }
+        },
+        {
+            "name": "kazusa",
+            "count": 67,
+            "keyword": {
+                "text": "ブルーアーカイブ kazusa -kyoyama_kazusa",
+                "excluded": [
+                    "kyoyama_kazusa"
+                ],
+                "items": 60,
+                "matched": 58,
+                "polluted": 2,
+                "pollution": {
+                    "kyouyama_kazusa": 1,
+                    "kyoyamakazusa": 1
+                }
+            }
+        },
+        {
+            "name": "kenzaki_tsurugi",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ kenzaki_tsurugi ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kirino",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ kirino -nakatsukasa_kirino",
+                "excluded": [
+                    "nakatsukasa_kirino"
+                ],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "koharu",
+            "count": 94,
+            "keyword": {
+                "text": "ブルーアーカイブ koharu -shimoe_koharu",
+                "excluded": [
+                    "shimoe_koharu"
+                ],
+                "items": 60,
+                "matched": 55,
+                "polluted": 5,
+                "pollution": {
+                    "shimoekoharu": 5
+                }
+            }
+        },
+        {
+            "name": "kokona",
+            "count": 24,
+            "keyword": {
+                "text": "ブルーアーカイブ kokona -sunohara_kokona",
+                "excluded": [
+                    "sunohara_kokona"
+                ],
+                "items": 24,
+                "matched": 22,
+                "polluted": 2,
+                "pollution": {
+                    "bluearchivekokona": 1,
+                    "sunoharakokona": 1
+                }
+            }
+        },
+        {
+            "name": "kosaka_wakamo",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ kosaka_wakamo ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kotori",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ kotori -toyomi_kotori",
+                "excluded": [
+                    "toyomi_kotori"
+                ],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "koyuki",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ koyuki -kurosaki_koyuki",
+                "excluded": [
+                    "kurosaki_koyuki"
+                ],
+                "items": 8,
+                "matched": 7,
+                "polluted": 1,
+                "pollution": {
+                    "koyukikurosaki": 1
+                }
+            }
+        },
+        {
+            "name": "kozeki_ui",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ kozeki_ui ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kuda_izuna",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ kuda_izuna ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "kuromi_serika",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ kuromi_serika ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "maki",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ maki -konuri_maki -ushimaki_juri",
+                "excluded": [
+                    "konuri_maki",
+                    "ushimaki_juri"
+                ],
+                "items": 9,
+                "matched": 5,
+                "polluted": 4,
+                "pollution": {
+                    "makima": 2,
+                    "konurimaki": 1,
+                    "nemaki": 1
+                }
+            }
+        },
+        {
+            "name": "mari",
+            "count": 39,
+            "keyword": {
+                "text": "ブルーアーカイブ mari -akeboshi_himari -himari -ikekura_marina -iochi_mari -marina",
+                "excluded": [
+                    "akeboshi_himari",
+                    "himari",
+                    "ikekura_marina",
+                    "iochi_mari",
+                    "marina"
+                ],
+                "items": 39,
+                "matched": 32,
+                "polluted": 7,
+                "pollution": {
+                    "supermario": 2,
+                    "kitagawamarin": 1,
+                    "maria": 1,
+                    "mario_madness": 1,
+                    "marisa": 1,
+                    "伊落マリーmari": 1
+                }
+            }
+        },
+        {
+            "name": "marina",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ marina -ikekura_marina",
+                "excluded": [
+                    "ikekura_marina"
+                ],
+                "items": 7,
+                "matched": 7,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "mashiro",
+            "count": 14,
+            "keyword": {
+                "text": "ブルーアーカイブ mashiro -shizuyama_mashiro",
+                "excluded": [
+                    "shizuyama_mashiro"
+                ],
+                "items": 14,
+                "matched": 11,
+                "polluted": 3,
+                "pollution": {
+                    "mashirobluearchive": 1,
+                    "mashiroshizuyama": 1,
+                    "shizuyamamashiro": 1
+                }
+            }
+        },
+        {
+            "name": "megu",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ megu -shimokura_megu",
+                "excluded": [
+                    "shimokura_megu"
+                ],
+                "items": 4,
+                "matched": 1,
+                "polluted": 3,
+                "pollution": {
+                    "shimokuramegu": 2,
+                    "下倉メグshimokuramegu": 1
+                }
+            }
+        },
+        {
+            "name": "michiru",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ michiru -chidori_michiru",
+                "excluded": [
+                    "chidori_michiru"
+                ],
+                "items": 5,
+                "matched": 4,
+                "polluted": 1,
+                "pollution": {
+                    "chidorimichiru": 1
+                }
+            }
+        },
+        {
+            "name": "midori",
+            "count": 16,
+            "keyword": {
+                "text": "ブルーアーカイブ midori -saiba_midori",
+                "excluded": [
+                    "saiba_midori"
+                ],
+                "items": 16,
+                "matched": 14,
+                "polluted": 2,
+                "pollution": {
+                    "midorisaiba": 1,
+                    "saibamidori": 1
+                }
+            }
+        },
+        {
+            "name": "mika",
+            "count": 169,
+            "keyword": {
+                "text": "ブルーアーカイブ mika -mikamo_neru -misono_mika",
+                "excluded": [
+                    "mikamo_neru",
+                    "misono_mika"
+                ],
+                "items": 60,
+                "matched": 52,
+                "polluted": 8,
+                "pollution": {
+                    "misonomika": 5,
+                    "mikamoneru": 2,
+                    "kuwakamikaho": 1
+                }
+            }
+        },
+        {
+            "name": "mimori",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ mimori -mizuha_mimori",
+                "excluded": [
+                    "mizuha_mimori"
+                ],
+                "items": 6,
+                "matched": 6,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "mina",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ mina -konoe_mina",
+                "excluded": [
+                    "konoe_mina"
+                ],
+                "items": 8,
+                "matched": 1,
+                "polluted": 7,
+                "pollution": {
+                    "domination": 2,
+                    "minakonoe": 2,
+                    "konoemina": 1,
+                    "seminar": 1,
+                    "terminalmontage": 1
+                }
+            }
+        },
+        {
+            "name": "mine",
+            "count": 28,
+            "keyword": {
+                "text": "ブルーアーカイブ mine -aomori_mine",
+                "excluded": [
+                    "aomori_mine"
+                ],
+                "items": 28,
+                "matched": 2,
+                "polluted": 26,
+                "pollution": {
+                    "minecraft": 25,
+                    "theeminenceinshadow": 1
+                }
+            }
+        },
+        {
+            "name": "minori",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ minori -yasumori_minori",
+                "excluded": [
+                    "yasumori_minori"
+                ],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "misaki",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ misaki -imashino_misaki",
+                "excluded": [
+                    "imashino_misaki"
+                ],
+                "items": 7,
+                "matched": 4,
+                "polluted": 3,
+                "pollution": {
+                    "imashinomisaki": 2,
+                    "misakiinoshima": 1
+                }
+            }
+        },
+        {
+            "name": "misono_mika",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ misono_mika ",
+                "excluded": [],
+                "items": 5,
+                "matched": 5,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "miyako",
+            "count": 11,
+            "keyword": {
+                "text": "ブルーアーカイブ miyako -tsukiyuki_miyako",
+                "excluded": [
+                    "tsukiyuki_miyako"
+                ],
+                "items": 11,
+                "matched": 9,
+                "polluted": 2,
+                "pollution": {
+                    "tsukiyukimiyako": 2
+                }
+            }
+        },
+        {
+            "name": "miyu",
+            "count": 64,
+            "keyword": {
+                "text": "ブルーアーカイブ miyu -kasumizawa_miyu",
+                "excluded": [
+                    "kasumizawa_miyu"
+                ],
+                "items": 60,
+                "matched": 52,
+                "polluted": 8,
+                "pollution": {
+                    "kasumizawamiyu": 7,
+                    "miyukasumizawa": 1
+                }
+            }
+        },
+        {
+            "name": "mizuha_mimori",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ mizuha_mimori ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "moe",
+            "count": 23,
+            "keyword": {
+                "text": "ブルーアーカイブ moe -kazekura_moe -sashiro_tomoe -shimoe_koharu -tomoe",
+                "excluded": [
+                    "kazekura_moe",
+                    "sashiro_tomoe",
+                    "shimoe_koharu",
+                    "tomoe"
+                ],
+                "items": 23,
+                "matched": 5,
+                "polluted": 18,
+                "pollution": {
+                    "shimoekoharu": 14,
+                    "kazekuramoe": 2,
+                    "shimoe": 2
+                }
+            }
+        },
+        {
+            "name": "momoi",
+            "count": 26,
+            "keyword": {
+                "text": "ブルーアーカイブ momoi -saiba_momoi",
+                "excluded": [
+                    "saiba_momoi"
+                ],
+                "items": 26,
+                "matched": 24,
+                "polluted": 2,
+                "pollution": {
+                    "saibamomoi": 2
+                }
+            }
+        },
+        {
+            "name": "murokasa_akane",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ murokasa_akane ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "mutsuki",
+            "count": 50,
+            "keyword": {
+                "text": "ブルーアーカイブ mutsuki -asagi_mutsuki",
+                "excluded": [
+                    "asagi_mutsuki"
+                ],
+                "items": 50,
+                "matched": 44,
+                "polluted": 6,
+                "pollution": {
+                    "asagimutsuki": 6
+                }
+            }
+        },
+        {
+            "name": "nagisa",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ nagisa -kirifuji_nagisa",
+                "excluded": [
+                    "kirifuji_nagisa"
+                ],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "natsu",
+            "count": 18,
+            "keyword": {
+                "text": "ブルーアーカイブ natsu -chinatsu -hinomiya_chinatsu -natsume_iroha -yutori_natsu",
+                "excluded": [
+                    "chinatsu",
+                    "hinomiya_chinatsu",
+                    "natsume_iroha",
+                    "yutori_natsu"
+                ],
+                "items": 18,
+                "matched": 5,
+                "polluted": 13,
+                "pollution": {
+                    "natsumeiroha": 12,
+                    "natsume": 1
+                }
+            }
+        },
+        {
+            "name": "natsume_iroha",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ natsume_iroha ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "neru",
+            "count": 140,
+            "keyword": {
+                "text": "ブルーアーカイブ neru -mikamo_neru",
+                "excluded": [
+                    "mikamo_neru"
+                ],
+                "items": 60,
+                "matched": 56,
+                "polluted": 4,
+                "pollution": {
+                    "mikamoneru": 4
+                }
+            }
+        },
+        {
+            "name": "noa",
+            "count": 28,
+            "keyword": {
+                "text": "ブルーアーカイブ noa -ushio_noa",
+                "excluded": [
+                    "ushio_noa"
+                ],
+                "items": 28,
+                "matched": 17,
+                "polluted": 11,
+                "pollution": {
+                    "ushionoa": 9,
+                    "dailynoa": 1,
+                    "noai": 1
+                }
+            }
+        },
+        {
+            "name": "nonomi",
+            "count": 27,
+            "keyword": {
+                "text": "ブルーアーカイブ nonomi -izayoi_nonomi",
+                "excluded": [
+                    "izayoi_nonomi"
+                ],
+                "items": 27,
+                "matched": 23,
+                "polluted": 4,
+                "pollution": {
+                    "izayoinonomi": 4
+                }
+            }
+        },
+        {
+            "name": "onikata_kayoko",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ onikata_kayoko ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "pina",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ pina -asahina_pina",
+                "excluded": [
+                    "asahina_pina"
+                ],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "reisa",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ reisa -uzawa_reisa",
+                "excluded": [
+                    "uzawa_reisa"
+                ],
+                "items": 6,
+                "matched": 3,
+                "polluted": 3,
+                "pollution": {
+                    "uzawareisa": 3
+                }
+            }
+        },
+        {
+            "name": "rikuhachima_aru",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ rikuhachima_aru ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "rumi",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ rumi -akeshiro_rumi",
+                "excluded": [
+                    "akeshiro_rumi"
+                ],
+                "items": 3,
+                "matched": 0,
+                "polluted": 3,
+                "pollution": {
+                    "akeshirorumi": 1,
+                    "kigurumi": 1,
+                    "kurumi": 1
+                }
+            }
+        },
+        {
+            "name": "saki",
+            "count": 399,
+            "keyword": {
+                "text": "ブルーアーカイブ saki -imashino_misaki -kurosaki_koyuki -misaki -sorai_saki -sorasaki_hina",
+                "excluded": [
+                    "imashino_misaki",
+                    "kurosaki_koyuki",
+                    "misaki",
+                    "sorai_saki",
+                    "sorasaki_hina"
+                ],
+                "items": 60,
+                "matched": 2,
+                "polluted": 58,
+                "pollution": {
+                    "kisaki": 52,
+                    "sorasakihina": 4,
+                    "soraisaki": 1,
+                    "sorasaki": 1
+                }
+            }
+        },
+        {
+            "name": "sakurako",
+            "count": 14,
+            "keyword": {
+                "text": "ブルーアーカイブ sakurako -utazumi_sakurako",
+                "excluded": [
+                    "utazumi_sakurako"
+                ],
+                "items": 14,
+                "matched": 11,
+                "polluted": 3,
+                "pollution": {
+                    "utazumisakurako": 3
+                }
+            }
+        },
+        {
+            "name": "saori",
+            "count": 58,
+            "keyword": {
+                "text": "ブルーアーカイブ saori -jomae_saori",
+                "excluded": [
+                    "jomae_saori"
+                ],
+                "items": 58,
+                "matched": 47,
+                "polluted": 11,
+                "pollution": {
+                    "joumaesaori": 8,
+                    "saorijoumae": 2,
+                    "jomaesaori": 1
+                }
+            }
+        },
+        {
+            "name": "sashiro_tomoe",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ sashiro_tomoe ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "saya",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ saya -yakushi_saya",
+                "excluded": [
+                    "yakushi_saya"
+                ],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "sena",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ sena -himuro_sena",
+                "excluded": [
+                    "himuro_sena"
+                ],
+                "items": 3,
+                "matched": 2,
+                "polluted": 1,
+                "pollution": {
+                    "himurosena": 1
+                }
+            }
+        },
+        {
+            "name": "serika",
+            "count": 33,
+            "keyword": {
+                "text": "ブルーアーカイブ serika -kuromi_serika",
+                "excluded": [
+                    "kuromi_serika"
+                ],
+                "items": 33,
+                "matched": 28,
+                "polluted": 5,
+                "pollution": {
+                    "kuromiserika": 5
+                }
+            }
+        },
+        {
+            "name": "shigure",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ shigure -mayoi_shigure",
+                "excluded": [
+                    "mayoi_shigure"
+                ],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "shiroko",
+            "count": 264,
+            "keyword": {
+                "text": "ブルーアーカイブ shiroko -sunaokami_shiroko",
+                "excluded": [
+                    "sunaokami_shiroko"
+                ],
+                "items": 60,
+                "matched": 55,
+                "polluted": 5,
+                "pollution": {
+                    "sunaookamishiroko": 3,
+                    "sunaookami_shiroko": 1,
+                    "テラーshirokotera": 1
+                }
+            }
+        },
+        {
+            "name": "shizuko",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ shizuko -kawawa_shizuko",
+                "excluded": [
+                    "kawawa_shizuko"
+                ],
+                "items": 8,
+                "matched": 4,
+                "polluted": 4,
+                "pollution": {
+                    "kawawashizuko": 4
+                }
+            }
+        },
+        {
+            "name": "shun",
+            "count": 34,
+            "keyword": {
+                "text": "ブルーアーカイブ shun -sunohara_shun",
+                "excluded": [
+                    "sunohara_shun"
+                ],
+                "items": 34,
+                "matched": 30,
+                "polluted": 4,
+                "pollution": {
+                    "sunoharashun": 4
+                }
+            }
+        },
+        {
+            "name": "sorasaki_hina",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ sorasaki_hina ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "sumire",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ sumire -otohana_sumire",
+                "excluded": [
+                    "otohana_sumire"
+                ],
+                "items": 5,
+                "matched": 5,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "sunaokami_shiroko",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ sunaokami_shiroko ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "sunohara_shun",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ sunohara_shun ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "suzumi",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ suzumi -morizuki_suzumi",
+                "excluded": [
+                    "morizuki_suzumi"
+                ],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "tendou_arisu",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ tendou_arisu ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "toki",
+            "count": 172,
+            "keyword": {
+                "text": "ブルーアーカイブ toki -asuma_toki",
+                "excluded": [
+                    "asuma_toki"
+                ],
+                "items": 60,
+                "matched": 45,
+                "polluted": 15,
+                "pollution": {
+                    "asumatoki": 14,
+                    "tokigatari": 1
+                }
+            }
+        },
+        {
+            "name": "tomoe",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ tomoe -sashiro_tomoe",
+                "excluded": [
+                    "sashiro_tomoe"
+                ],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "sashirotomoe": 1
+                }
+            }
+        },
+        {
+            "name": "tsubaki",
+            "count": 28,
+            "keyword": {
+                "text": "ブルーアーカイブ tsubaki -kasuga_tsubaki",
+                "excluded": [
+                    "kasuga_tsubaki"
+                ],
+                "items": 28,
+                "matched": 24,
+                "polluted": 4,
+                "pollution": {
+                    "kasugatsubaki": 2,
+                    "kasukatsubaki": 2
+                }
+            }
+        },
+        {
+            "name": "tsukuyo",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ tsukuyo -ono_tsukuyo",
+                "excluded": [
+                    "ono_tsukuyo"
+                ],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "tsurugi",
+            "count": 44,
+            "keyword": {
+                "text": "ブルーアーカイブ tsurugi -kenzaki_tsurugi",
+                "excluded": [
+                    "kenzaki_tsurugi"
+                ],
+                "items": 44,
+                "matched": 38,
+                "polluted": 6,
+                "pollution": {
+                    "kensaki_tsurugi": 3,
+                    "bluearchivetsurugi": 1,
+                    "kensakitsurugi": 1,
+                    "kenzakitsurugi": 1
+                }
+            }
+        },
+        {
+            "name": "ui",
+            "count": 288,
+            "keyword": {
+                "text": "ブルーアーカイブ ui -kozeki_ui",
+                "excluded": [
+                    "kozeki_ui"
+                ],
+                "items": 60,
+                "matched": 2,
+                "polluted": 58,
+                "pollution": {
+                    "swimsuit": 31,
+                    "skinsuit": 7,
+                    "bunnysuit": 5,
+                    "bodysuit": 2,
+                    "kozekiui": 2,
+                    "pinkbunnyjuice": 2,
+                    "sailorsuit": 2,
+                    "grisswimsuit": 1,
+                    "guiltygearstrive": 1,
+                    "louis": 1,
+                    "maishiranui": 1,
+                    "reversebunnysuit": 1,
+                    "ruinedorgasm": 1,
+                    "squirting": 1
+                }
+            }
+        },
+        {
+            "name": "urawa_hanako",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ urawa_hanako ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "ushimaki_juri",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ ushimaki_juri ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "utaha",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ utaha -shiraishi_utaha",
+                "excluded": [
+                    "shiraishi_utaha"
+                ],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "shiroishiutaha": 1
+                }
+            }
+        },
+        {
+            "name": "wakamo",
+            "count": 27,
+            "keyword": {
+                "text": "ブルーアーカイブ wakamo -kosaka_wakamo",
+                "excluded": [
+                    "kosaka_wakamo"
+                ],
+                "items": 27,
+                "matched": 23,
+                "polluted": 4,
+                "pollution": {
+                    "kosakawakamo": 4
+                }
+            }
+        },
+        {
+            "name": "waraku_chise",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ waraku_chise ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "yoshimi",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ yoshimi -ibaraki_yoshimi",
+                "excluded": [
+                    "ibaraki_yoshimi"
+                ],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "yuuka",
+            "count": 199,
+            "keyword": {
+                "text": "ブルーアーカイブ yuuka -hayase_yuuka",
+                "excluded": [
+                    "hayase_yuuka"
+                ],
+                "items": 60,
+                "matched": 53,
+                "polluted": 7,
+                "pollution": {
+                    "hayaseyuuka": 6,
+                    "yuuka_hayase": 1
+                }
+            }
+        },
+        {
+            "name": "yuzu",
+            "count": 44,
+            "keyword": {
+                "text": "ブルーアーカイブ yuzu -hanaoka_yuzu",
+                "excluded": [
+                    "hanaoka_yuzu"
+                ],
+                "items": 44,
+                "matched": 19,
+                "polluted": 25,
+                "pollution": {
+                    "yuzutalk": 16,
+                    "yuzu_hanaoka": 5,
+                    "hanaokayuzu": 3,
+                    "yuzusoft": 1
+                }
+            }
+        },
+        {
+            "name": "あさがおハナエ",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ あさがおハナエ ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "かわわシズコ",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ かわわシズコ ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "くろみセリカ",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ くろみセリカ ",
+                "excluded": [],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "黒見くろみセリカ": 1
+                }
+            }
+        },
+        {
+            "name": "けんざきツルギ",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ けんざきツルギ ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "しずやまマシロ",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ しずやまマシロ ",
+                "excluded": [],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "静山しずやまマシロ": 1
+                }
+            }
+        },
+        {
+            "name": "すのはらココナ",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ すのはらココナ ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "たかなしホシノ",
+            "count": 20,
+            "keyword": {
+                "text": "ブルーアーカイブ たかなしホシノ ",
+                "excluded": [],
+                "items": 20,
+                "matched": 15,
+                "polluted": 5,
+                "pollution": {
+                    "小鳥遊たかなしホシノ": 5
+                }
+            }
+        },
+        {
+            "name": "ねこづかヒビキ",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ ねこづかヒビキ ",
+                "excluded": [],
+                "items": 5,
+                "matched": 5,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "一之瀬アスナ",
+            "count": 13257,
+            "keyword": {
+                "text": "ブルーアーカイブ 一之瀬アスナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "一之瀬明日奈",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 一之瀬明日奈 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "下倉メグ",
+            "count": 387,
+            "keyword": {
+                "text": "ブルーアーカイブ 下倉メグ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "下江コハル",
+            "count": 5070,
+            "keyword": {
+                "text": "ブルーアーカイブ 下江コハル ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "下江小春",
+            "count": 40,
+            "keyword": {
+                "text": "ブルーアーカイブ 下江小春 ",
+                "excluded": [],
+                "items": 40,
+                "matched": 40,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "中務キリノ",
+            "count": 287,
+            "keyword": {
+                "text": "ブルーアーカイブ 中務キリノ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "乃爱",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 乃爱 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "久田イズナ",
+            "count": 3014,
+            "keyword": {
+                "text": "ブルーアーカイブ 久田イズナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "久田泉奈",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 久田泉奈 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "乙花スミレ",
+            "count": 221,
+            "keyword": {
+                "text": "ブルーアーカイブ 乙花スミレ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "亚子",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ 亚子 ",
+                "excluded": [],
+                "items": 5,
+                "matched": 2,
+                "polluted": 3,
+                "pollution": {
+                    "天雨亚子": 3
+                }
+            }
+        },
+        {
+            "name": "亚津子",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 亚津子 ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "伊原木ヨシミ",
+            "count": 815,
+            "keyword": {
+                "text": "ブルーアーカイブ 伊原木ヨシミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "伊吕波",
+            "count": 23,
+            "keyword": {
+                "text": "ブルーアーカイブ 伊吕波 -枣伊吕波",
+                "excluded": [
+                    "枣伊吕波"
+                ],
+                "items": 23,
+                "matched": 23,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "伊织",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 伊织 -银镜伊织",
+                "excluded": [
+                    "银镜伊织"
+                ],
+                "items": 4,
+                "matched": 2,
+                "polluted": 2,
+                "pollution": {
+                    "伊织佐仓": 1,
+                    "銀鏡伊织": 1
+                }
+            }
+        },
+        {
+            "name": "伊草ハルカ",
+            "count": 1857,
+            "keyword": {
+                "text": "ブルーアーカイブ 伊草ハルカ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "伊落マリー",
+            "count": 4426,
+            "keyword": {
+                "text": "ブルーアーカイブ 伊落マリー ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "优香",
+            "count": 53,
+            "keyword": {
+                "text": "ブルーアーカイブ 优香 ",
+                "excluded": [],
+                "items": 53,
+                "matched": 18,
+                "polluted": 35,
+                "pollution": {
+                    "早濑优香": 31,
+                    "早瀬优香": 3,
+                    "运动服优香": 1
+                }
+            }
+        },
+        {
+            "name": "佐城トモエ",
+            "count": 79,
+            "keyword": {
+                "text": "ブルーアーカイブ 佐城トモエ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "佳代子",
+            "count": 10,
+            "keyword": {
+                "text": "ブルーアーカイブ 佳代子 ",
+                "excluded": [],
+                "items": 10,
+                "matched": 4,
+                "polluted": 6,
+                "pollution": {
+                    "鬼方佳代子": 6
+                }
+            }
+        },
+        {
+            "name": "円堂シミコ",
+            "count": 67,
+            "keyword": {
+                "text": "ブルーアーカイブ 円堂シミコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "初音ミク",
+            "count": 239,
+            "keyword": {
+                "text": "ブルーアーカイブ 初音ミク ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "剑先ツルギ",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 剑先ツルギ ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "剑崎鹤城",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 剑崎鹤城 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "剣先ツルギ",
+            "count": 1140,
+            "keyword": {
+                "text": "ブルーアーカイブ 剣先ツルギ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "勇美カエデ",
+            "count": 539,
+            "keyword": {
+                "text": "ブルーアーカイブ 勇美カエデ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "十六夜ノノミ",
+            "count": 2824,
+            "keyword": {
+                "text": "ブルーアーカイブ 十六夜ノノミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "千世",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ 千世 ",
+                "excluded": [],
+                "items": 7,
+                "matched": 6,
+                "polluted": 1,
+                "pollution": {
+                    "和乐千世": 1
+                }
+            }
+        },
+        {
+            "name": "千夏",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 千夏 -火宫千夏",
+                "excluded": [
+                    "火宫千夏"
+                ],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "千纱",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 千纱 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "杏山千纱": 1
+                }
+            }
+        },
+        {
+            "name": "千鳥ミチル",
+            "count": 548,
+            "keyword": {
+                "text": "ブルーアーカイブ 千鳥ミチル ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "千鸟满",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 千鸟满 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "南",
+            "count": 31,
+            "keyword": {
+                "text": "ブルーアーカイブ 南 -近衛南",
+                "excluded": [
+                    "近衛南"
+                ],
+                "items": 31,
+                "matched": 0,
+                "polluted": 31,
+                "pollution": {
+                    "南半球": 13,
+                    "南ことり": 3,
+                    "南極条約違反": 3,
+                    "南夢芽": 2,
+                    "南方ひづる": 2,
+                    "松浦果南": 2,
+                    "越南": 2,
+                    "南国": 1,
+                    "南小陽": 1,
+                    "南条光": 1,
+                    "南無": 1
+                }
+            }
+        },
+        {
+            "name": "古関ウイ",
+            "count": 2561,
+            "keyword": {
+                "text": "ブルーアーカイブ 古関ウイ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "各務チヒロ",
+            "count": 679,
+            "keyword": {
+                "text": "ブルーアーカイブ 各務チヒロ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "合歓垣フブキ",
+            "count": 666,
+            "keyword": {
+                "text": "ブルーアーカイブ 合歓垣フブキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "吹雪",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ 吹雪 ",
+                "excluded": [],
+                "items": 6,
+                "matched": 2,
+                "polluted": 4,
+                "pollution": {
+                    "桜吹雪": 2,
+                    "吹雪士郎": 1,
+                    "紙吹雪": 1
+                }
+            }
+        },
+        {
+            "name": "和楽チセ",
+            "count": 967,
+            "keyword": {
+                "text": "ブルーアーカイブ 和楽チセ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "和泉元エイミ",
+            "count": 863,
+            "keyword": {
+                "text": "ブルーアーカイブ 和泉元エイミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "和纱",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ 和纱 ",
+                "excluded": [],
+                "items": 7,
+                "matched": 3,
+                "polluted": 4,
+                "pollution": {
+                    "杏山和纱": 4
+                }
+            }
+        },
+        {
+            "name": "咲",
+            "count": 391,
+            "keyword": {
+                "text": "ブルーアーカイブ 咲 -咲希 -空井咲 -美咲",
+                "excluded": [
+                    "咲希",
+                    "空井咲",
+                    "美咲"
+                ],
+                "items": 60,
+                "matched": 0,
+                "polluted": 60,
+                "pollution": {
+                    "妃咲": 55,
+                    "紫咲シオン": 2,
+                    "七咲逢": 1,
+                    "十六夜咲夜": 1,
+                    "虹ヶ咲学園スクールアイドル同好会": 1
+                }
+            }
+        },
+        {
+            "name": "咲希",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 咲希 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "天馬咲希": 1
+                }
+            }
+        },
+        {
+            "name": "响",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ 响 ",
+                "excluded": [],
+                "items": 8,
+                "matched": 8,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "堇",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 堇 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "乙花堇": 1
+                }
+            }
+        },
+        {
+            "name": "夏",
+            "count": 293,
+            "keyword": {
+                "text": "ブルーアーカイブ 夏 -千夏 -火宫千夏",
+                "excluded": [
+                    "千夏",
+                    "火宫千夏"
+                ],
+                "items": 60,
+                "matched": 20,
+                "polluted": 40,
+                "pollution": {
+                    "夏吉ゆうこ": 21,
+                    "乾夏寧": 4,
+                    "伊地知虹夏": 4,
+                    "夏服": 3,
+                    "夏祭り": 2,
+                    "夏空": 2,
+                    "真夏の夜の淫夢": 2,
+                    "夏休み": 1,
+                    "夏空のウィッシュリスト": 1
+                }
+            }
+        },
+        {
+            "name": "大野ツクヨ",
+            "count": 511,
+            "keyword": {
+                "text": "ブルーアーカイブ 大野ツクヨ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "大野月咏",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 大野月咏 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "天童アリス",
+            "count": 7972,
+            "keyword": {
+                "text": "ブルーアーカイブ 天童アリス ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "天童爱丽丝",
+            "count": 29,
+            "keyword": {
+                "text": "ブルーアーカイブ 天童爱丽丝 ",
+                "excluded": [],
+                "items": 29,
+                "matched": 29,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "天見ノドカ",
+            "count": 352,
+            "keyword": {
+                "text": "ブルーアーカイブ 天見ノドカ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "天雨アコ",
+            "count": 3269,
+            "keyword": {
+                "text": "ブルーアーカイブ 天雨アコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "奥空アヤネ",
+            "count": 723,
+            "keyword": {
+                "text": "ブルーアーカイブ 奥空アヤネ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "好美",
+            "count": 108,
+            "keyword": {
+                "text": "ブルーアーカイブ 好美 ",
+                "excluded": [],
+                "items": 60,
+                "matched": 0,
+                "polluted": 60,
+                "pollution": {
+                    "小原好美": 60
+                }
+            }
+        },
+        {
+            "name": "妮露",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 妮露 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "季",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ 季 ",
+                "excluded": [],
+                "items": 6,
+                "matched": 0,
+                "polluted": 6,
+                "pollution": {
+                    "四季": 2,
+                    "四季映姫": 2,
+                    "大和亜季": 1,
+                    "氷見亜季": 1
+                }
+            }
+        },
+        {
+            "name": "宇沢レイサ",
+            "count": 1304,
+            "keyword": {
+                "text": "ブルーアーカイブ 宇沢レイサ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "守月スズミ",
+            "count": 212,
+            "keyword": {
+                "text": "ブルーアーカイブ 守月スズミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "安守ミノリ",
+            "count": 142,
+            "keyword": {
+                "text": "ブルーアーカイブ 安守ミノリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "室笠アカネ",
+            "count": 1401,
+            "keyword": {
+                "text": "ブルーアーカイブ 室笠アカネ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "宫子",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ 宫子 ",
+                "excluded": [],
+                "items": 6,
+                "matched": 0,
+                "polluted": 6,
+                "pollution": {
+                    "月雪宫子": 6
+                }
+            }
+        },
+        {
+            "name": "小塗マキ",
+            "count": 514,
+            "keyword": {
+                "text": "ブルーアーカイブ 小塗マキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "小春",
+            "count": 36,
+            "keyword": {
+                "text": "ブルーアーカイブ 小春 -下江小春",
+                "excluded": [
+                    "下江小春"
+                ],
+                "items": 36,
+                "matched": 35,
+                "polluted": 1,
+                "pollution": {
+                    "小春六花": 1
+                }
+            }
+        },
+        {
+            "name": "小玉",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 小玉 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "音濑小玉": 1
+                }
+            }
+        },
+        {
+            "name": "小鈎ハレ",
+            "count": 724,
+            "keyword": {
+                "text": "ブルーアーカイブ 小鈎ハレ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "小雪",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ 小雪 ",
+                "excluded": [],
+                "items": 5,
+                "matched": 1,
+                "polluted": 4,
+                "pollution": {
+                    "黑崎小雪": 3,
+                    "小雪のハイボール": 1
+                }
+            }
+        },
+        {
+            "name": "小鳥遊ホシノ",
+            "count": 6922,
+            "keyword": {
+                "text": "ブルーアーカイブ 小鳥遊ホシノ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "尼禄",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 尼禄 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 2,
+                "polluted": 2,
+                "pollution": {
+                    "美甘尼禄": 2
+                }
+            }
+        },
+        {
+            "name": "尾刃カンナ",
+            "count": 1325,
+            "keyword": {
+                "text": "ブルーアーカイブ 尾刃カンナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "巴",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ 巴 ",
+                "excluded": [],
+                "items": 5,
+                "matched": 0,
+                "polluted": 5,
+                "pollution": {
+                    "尾巴": 2,
+                    "三つ巴": 1,
+                    "巴マミ": 1,
+                    "巴御前": 1
+                }
+            }
+        },
+        {
+            "name": "康娜",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 康娜 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "尾刃康娜": 1
+                }
+            }
+        },
+        {
+            "name": "弥香",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ 弥香 ",
+                "excluded": [],
+                "items": 9,
+                "matched": 0,
+                "polluted": 9,
+                "pollution": {
+                    "圣园弥香": 8,
+                    "聖園弥香": 1
+                }
+            }
+        },
+        {
+            "name": "弦生",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 弦生 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "心奈",
+            "count": 34,
+            "keyword": {
+                "text": "ブルーアーカイブ 心奈 ",
+                "excluded": [],
+                "items": 34,
+                "matched": 27,
+                "polluted": 7,
+                "pollution": {
+                    "春原心奈": 7
+                }
+            }
+        },
+        {
+            "name": "忧",
+            "count": 11,
+            "keyword": {
+                "text": "ブルーアーカイブ 忧 ",
+                "excluded": [],
+                "items": 11,
+                "matched": 2,
+                "polluted": 9,
+                "pollution": {
+                    "古关忧": 7,
+                    "谷关忧": 2
+                }
+            }
+        },
+        {
+            "name": "惠",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 惠 -智惠",
+                "excluded": [
+                    "智惠"
+                ],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "下仓惠": 1
+                }
+            }
+        },
+        {
+            "name": "愛清フウカ",
+            "count": 1140,
+            "keyword": {
+                "text": "ブルーアーカイブ 愛清フウカ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "慧",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 慧 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "萌慧": 1
+                }
+            }
+        },
+        {
+            "name": "戒野ミサキ",
+            "count": 536,
+            "keyword": {
+                "text": "ブルーアーカイブ 戒野ミサキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "才羽ミドリ",
+            "count": 3208,
+            "keyword": {
+                "text": "ブルーアーカイブ 才羽ミドリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "才羽モモイ",
+            "count": 3245,
+            "keyword": {
+                "text": "ブルーアーカイブ 才羽モモイ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "才羽桃井",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 才羽桃井 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "日向",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ 日向 -若叶日向",
+                "excluded": [
+                    "若叶日向"
+                ],
+                "items": 9,
+                "matched": 0,
+                "polluted": 9,
+                "pollution": {
+                    "小日向美穂": 2,
+                    "日向ハナビ": 2,
+                    "日向ヒナタ": 2,
+                    "小日向理瀬": 1,
+                    "小日向陽愛": 1,
+                    "日向縁": 1
+                }
+            }
+        },
+        {
+            "name": "日和",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ 日和 -槌永日和",
+                "excluded": [
+                    "槌永日和"
+                ],
+                "items": 7,
+                "matched": 2,
+                "polluted": 5,
+                "pollution": {
+                    "ギャグマンガ日和": 2,
+                    "ギャグ漫画日和": 2,
+                    "ギャグマンガ日和パロ": 1
+                }
+            }
+        },
+        {
+            "name": "日奈",
+            "count": 10,
+            "keyword": {
+                "text": "ブルーアーカイブ 日奈 -一之瀬明日奈 -明日奈 -空崎日奈",
+                "excluded": [
+                    "一之瀬明日奈",
+                    "明日奈",
+                    "空崎日奈"
+                ],
+                "items": 10,
+                "matched": 10,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "日富美",
+            "count": 24,
+            "keyword": {
+                "text": "ブルーアーカイブ 日富美 ",
+                "excluded": [],
+                "items": 24,
+                "matched": 20,
+                "polluted": 4,
+                "pollution": {
+                    "阿慈谷日富美": 4
+                }
+            }
+        },
+        {
+            "name": "日鞠",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ 日鞠 ",
+                "excluded": [],
+                "items": 6,
+                "matched": 3,
+                "polluted": 3,
+                "pollution": {
+                    "明星日鞠": 3
+                }
+            }
+        },
+        {
+            "name": "早濑ユウカ",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ 早濑ユウカ ",
+                "excluded": [],
+                "items": 8,
+                "matched": 8,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "早瀬ユウカ",
+            "count": 10425,
+            "keyword": {
+                "text": "ブルーアーカイブ 早瀬ユウカ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "旬",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 旬 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "时",
+            "count": 27,
+            "keyword": {
+                "text": "ブルーアーカイブ 时 -时雨",
+                "excluded": [
+                    "时雨"
+                ],
+                "items": 27,
+                "matched": 8,
+                "polluted": 19,
+                "pollution": {
+                    "飞鸟马时": 16,
+                    "野人时代": 1,
+                    "飛鳥馬トキ时": 1,
+                    "飞马鸟时": 1
+                }
+            }
+        },
+        {
+            "name": "时雨",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 时雨 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "间宵时雨": 1
+                }
+            }
+        },
+        {
+            "name": "明日奈",
+            "count": 74,
+            "keyword": {
+                "text": "ブルーアーカイブ 明日奈 -一之瀬明日奈",
+                "excluded": [
+                    "一之瀬明日奈"
+                ],
+                "items": 60,
+                "matched": 28,
+                "polluted": 32,
+                "pollution": {
+                    "一之濑明日奈": 30,
+                    "一之瀨明日奈": 1,
+                    "結城明日奈": 1
+                }
+            }
+        },
+        {
+            "name": "明星ヒマリ",
+            "count": 998,
+            "keyword": {
+                "text": "ブルーアーカイブ 明星ヒマリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "明里",
+            "count": 39,
+            "keyword": {
+                "text": "ブルーアーカイブ 明里 ",
+                "excluded": [],
+                "items": 39,
+                "matched": 0,
+                "polluted": 39,
+                "pollution": {
+                    "鬼頭明里": 39
+                }
+            }
+        },
+        {
+            "name": "星野",
+            "count": 44,
+            "keyword": {
+                "text": "ブルーアーカイブ 星野 ",
+                "excluded": [],
+                "items": 44,
+                "matched": 20,
+                "polluted": 24,
+                "pollution": {
+                    "小鸟游星野": 14,
+                    "星野アイ": 4,
+                    "小鳥遊星野": 3,
+                    "小鳥游星野": 1,
+                    "小鸟星野游": 1,
+                    "星野ルビー": 1
+                }
+            }
+        },
+        {
+            "name": "春原ココナ",
+            "count": 1764,
+            "keyword": {
+                "text": "ブルーアーカイブ 春原ココナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "春原シュン",
+            "count": 2145,
+            "keyword": {
+                "text": "ブルーアーカイブ 春原シュン ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "春原瞬",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 春原瞬 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "春日ツバキ",
+            "count": 1686,
+            "keyword": {
+                "text": "ブルーアーカイブ 春日ツバキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "晴",
+            "count": 380,
+            "keyword": {
+                "text": "ブルーアーカイブ 晴 -晴奈",
+                "excluded": [
+                    "晴奈"
+                ],
+                "items": 60,
+                "matched": 0,
+                "polluted": 60,
+                "pollution": {
+                    "晴れ着": 46,
+                    "素晴らしすぎる": 6,
+                    "この素晴らしい世界に祝福を": 4,
+                    "刻晴": 2,
+                    "結城晴": 2
+                }
+            }
+        },
+        {
+            "name": "月夜",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ 月夜 ",
+                "excluded": [],
+                "items": 6,
+                "matched": 3,
+                "polluted": 3,
+                "pollution": {
+                    "因幡月夜": 1,
+                    "大野月夜": 1,
+                    "月夜花": 1
+                }
+            }
+        },
+        {
+            "name": "月雪ミヤコ",
+            "count": 1057,
+            "keyword": {
+                "text": "ブルーアーカイブ 月雪ミヤコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "朝比奈フィーナ",
+            "count": 80,
+            "keyword": {
+                "text": "ブルーアーカイブ 朝比奈フィーナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "朝顔ハナエ",
+            "count": 613,
+            "keyword": {
+                "text": "ブルーアーカイブ 朝顔ハナエ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "未花",
+            "count": 66,
+            "keyword": {
+                "text": "ブルーアーカイブ 未花 ",
+                "excluded": [],
+                "items": 60,
+                "matched": 9,
+                "polluted": 51,
+                "pollution": {
+                    "圣园未花": 47,
+                    "聖園未花": 4
+                }
+            }
+        },
+        {
+            "name": "朱城ルミ",
+            "count": 365,
+            "keyword": {
+                "text": "ブルーアーカイブ 朱城ルミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "朱音",
+            "count": 27,
+            "keyword": {
+                "text": "ブルーアーカイブ 朱音 ",
+                "excluded": [],
+                "items": 27,
+                "matched": 4,
+                "polluted": 23,
+                "pollution": {
+                    "友永朱音": 21,
+                    "室笠朱音": 2
+                }
+            }
+        },
+        {
+            "name": "杏山カズサ",
+            "count": 2657,
+            "keyword": {
+                "text": "ブルーアーカイブ 杏山カズサ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "枣伊吕波",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 枣伊吕波 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 4,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "枫",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 枫 -勇美枫 -枫香",
+                "excluded": [
+                    "勇美枫",
+                    "枫香"
+                ],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "山枫樱乡": 1
+                }
+            }
+        },
+        {
+            "name": "枫香",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 枫香 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 3,
+                "polluted": 1,
+                "pollution": {
+                    "爱清枫香": 1
+                }
+            }
+        },
+        {
+            "name": "柚子",
+            "count": 11,
+            "keyword": {
+                "text": "ブルーアーカイブ 柚子 ",
+                "excluded": [],
+                "items": 11,
+                "matched": 6,
+                "polluted": 5,
+                "pollution": {
+                    "花冈柚子": 3,
+                    "小山柚子": 1,
+                    "花岗柚子": 1
+                }
+            }
+        },
+        {
+            "name": "柚鳥ナツ",
+            "count": 1538,
+            "keyword": {
+                "text": "ブルーアーカイブ 柚鳥ナツ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "栗村アイリ",
+            "count": 386,
+            "keyword": {
+                "text": "ブルーアーカイブ 栗村アイリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "桃井",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 桃井 -才羽桃井",
+                "excluded": [
+                    "才羽桃井"
+                ],
+                "items": 4,
+                "matched": 1,
+                "polluted": 3,
+                "pollution": {
+                    "桃井愛莉": 3
+                }
+            }
+        },
+        {
+            "name": "桐藤ナギサ",
+            "count": 955,
+            "keyword": {
+                "text": "ブルーアーカイブ 桐藤ナギサ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "桑上カホ",
+            "count": 943,
+            "keyword": {
+                "text": "ブルーアーカイブ 桑上カホ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "梓",
+            "count": 26,
+            "keyword": {
+                "text": "ブルーアーカイブ 梓 -白洲梓",
+                "excluded": [
+                    "白洲梓"
+                ],
+                "items": 26,
+                "matched": 15,
+                "polluted": 11,
+                "pollution": {
+                    "中野梓": 6,
+                    "白州梓": 4,
+                    "泳装梓": 1
+                }
+            }
+        },
+        {
+            "name": "棗イロハ",
+            "count": 2380,
+            "keyword": {
+                "text": "ブルーアーカイブ 棗イロハ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "椿",
+            "count": 28,
+            "keyword": {
+                "text": "ブルーアーカイブ 椿 ",
+                "excluded": [],
+                "items": 28,
+                "matched": 20,
+                "polluted": 8,
+                "pollution": {
+                    "春日椿": 4,
+                    "椿三十郎": 1,
+                    "相原椿": 1,
+                    "藍原椿": 1,
+                    "音夢椿": 1
+                }
+            }
+        },
+        {
+            "name": "槌永ヒヨリ",
+            "count": 644,
+            "keyword": {
+                "text": "ブルーアーカイブ 槌永ヒヨリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "槌永日和",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 槌永日和 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "歌住サクラコ",
+            "count": 933,
+            "keyword": {
+                "text": "ブルーアーカイブ 歌住サクラコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "水羽ミモリ",
+            "count": 262,
+            "keyword": {
+                "text": "ブルーアーカイブ 水羽ミモリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "氷室セナ",
+            "count": 367,
+            "keyword": {
+                "text": "ブルーアーカイブ 氷室セナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "池倉マリナ",
+            "count": 389,
+            "keyword": {
+                "text": "ブルーアーカイブ 池倉マリナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "沙耶",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 沙耶 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "沙耶の唄": 1
+                }
+            }
+        },
+        {
+            "name": "河和シズコ",
+            "count": 445,
+            "keyword": {
+                "text": "ブルーアーカイブ 河和シズコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "泉",
+            "count": 491,
+            "keyword": {
+                "text": "ブルーアーカイブ 泉 -久田泉奈 -和泉元エイミ -和泉元艾米 -泉奈 -狮子堂泉",
+                "excluded": [
+                    "久田泉奈",
+                    "和泉元エイミ",
+                    "和泉元艾米",
+                    "泉奈",
+                    "狮子堂泉"
+                ],
+                "items": 60,
+                "matched": 0,
+                "polluted": 60,
+                "pollution": {
+                    "温泉": 54,
+                    "秋泉モミジ": 4,
+                    "温泉開発部": 2
+                }
+            }
+        },
+        {
+            "name": "泉奈",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ 泉奈 -久田泉奈",
+                "excluded": [
+                    "久田泉奈"
+                ],
+                "items": 5,
+                "matched": 5,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "浅黄ムツキ",
+            "count": 3903,
+            "keyword": {
+                "text": "ブルーアーカイブ 浅黄ムツキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "浦和ハナコ",
+            "count": 1892,
+            "keyword": {
+                "text": "ブルーアーカイブ 浦和ハナコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "渚",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 渚 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "叶渚": 1
+                }
+            }
+        },
+        {
+            "name": "火宮チナツ",
+            "count": 631,
+            "keyword": {
+                "text": "ブルーアーカイブ 火宮チナツ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "爱丽丝",
+            "count": 16,
+            "keyword": {
+                "text": "ブルーアーカイブ 爱丽丝 -天童爱丽丝",
+                "excluded": [
+                    "天童爱丽丝"
+                ],
+                "items": 16,
+                "matched": 16,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "爱莉",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 爱莉 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "爱莉希雅": 1
+                }
+            }
+        },
+        {
+            "name": "牛牧ジュリ",
+            "count": 192,
+            "keyword": {
+                "text": "ブルーアーカイブ 牛牧ジュリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "狐坂ワカモ",
+            "count": 1454,
+            "keyword": {
+                "text": "ブルーアーカイブ 狐坂ワカモ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "狮子堂泉",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 狮子堂泉 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "猫塚ヒビキ",
+            "count": 2655,
+            "keyword": {
+                "text": "ブルーアーカイブ 猫塚ヒビキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "獅子堂イズミ",
+            "count": 611,
+            "keyword": {
+                "text": "ブルーアーカイブ 獅子堂イズミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "玛丽",
+            "count": 19,
+            "keyword": {
+                "text": "ブルーアーカイブ 玛丽 -玛丽娜",
+                "excluded": [
+                    "玛丽娜"
+                ],
+                "items": 19,
+                "matched": 14,
+                "polluted": 5,
+                "pollution": {
+                    "伊落玛丽": 3,
+                    "依落玛丽": 1,
+                    "玛丽安": 1
+                }
+            }
+        },
+        {
+            "name": "玛莉",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 玛莉 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "玲纱",
+            "count": 6,
+            "keyword": {
+                "text": "ブルーアーカイブ 玲纱 ",
+                "excluded": [],
+                "items": 6,
+                "matched": 3,
+                "polluted": 3,
+                "pollution": {
+                    "宇泽玲纱": 3
+                }
+            }
+        },
+        {
+            "name": "瑠美",
+            "count": 52,
+            "keyword": {
+                "text": "ブルーアーカイブ 瑠美 -朱城瑠美",
+                "excluded": [
+                    "朱城瑠美"
+                ],
+                "items": 52,
+                "matched": 0,
+                "polluted": 52,
+                "pollution": {
+                    "大久保瑠美": 52
+                }
+            }
+        },
+        {
+            "name": "生塩ノア",
+            "count": 2581,
+            "keyword": {
+                "text": "ブルーアーカイブ 生塩ノア ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "白子",
+            "count": 98,
+            "keyword": {
+                "text": "ブルーアーカイブ 白子 ",
+                "excluded": [],
+                "items": 60,
+                "matched": 20,
+                "polluted": 40,
+                "pollution": {
+                    "砂狼白子": 38,
+                    "白子駅": 1,
+                    "黑白子": 1
+                }
+            }
+        },
+        {
+            "name": "白洲アズサ",
+            "count": 2978,
+            "keyword": {
+                "text": "ブルーアーカイブ 白洲アズサ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "白洲梓",
+            "count": 38,
+            "keyword": {
+                "text": "ブルーアーカイブ 白洲梓 ",
+                "excluded": [],
+                "items": 38,
+                "matched": 38,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "白石ウタハ",
+            "count": 278,
+            "keyword": {
+                "text": "ブルーアーカイブ 白石ウタハ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "真白",
+            "count": 7,
+            "keyword": {
+                "text": "ブルーアーカイブ 真白 ",
+                "excluded": [],
+                "items": 7,
+                "matched": 5,
+                "polluted": 2,
+                "pollution": {
+                    "大代真白": 1,
+                    "真白零": 1
+                }
+            }
+        },
+        {
+            "name": "真纪",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 真纪 ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "睦月",
+            "count": 26,
+            "keyword": {
+                "text": "ブルーアーカイブ 睦月 ",
+                "excluded": [],
+                "items": 26,
+                "matched": 21,
+                "polluted": 5,
+                "pollution": {
+                    "浅黄睦月": 3,
+                    "ムツキ睦月": 1,
+                    "睦月顔": 1
+                }
+            }
+        },
+        {
+            "name": "瞬",
+            "count": 8,
+            "keyword": {
+                "text": "ブルーアーカイブ 瞬 -春原瞬",
+                "excluded": [
+                    "春原瞬"
+                ],
+                "items": 8,
+                "matched": 3,
+                "polluted": 5,
+                "pollution": {
+                    "瞬獄殺": 3,
+                    "目が逢う瞬間": 1,
+                    "瞬き": 1
+                }
+            }
+        },
+        {
+            "name": "知世",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 知世 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "砂狼シロコ",
+            "count": 8909,
+            "keyword": {
+                "text": "ブルーアーカイブ 砂狼シロコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "秤アツコ",
+            "count": 1098,
+            "keyword": {
+                "text": "ブルーアーカイブ 秤アツコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "空井サキ",
+            "count": 872,
+            "keyword": {
+                "text": "ブルーアーカイブ 空井サキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "空崎ヒナ",
+            "count": 6714,
+            "keyword": {
+                "text": "ブルーアーカイブ 空崎ヒナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "空崎日奈",
+            "count": 31,
+            "keyword": {
+                "text": "ブルーアーカイブ 空崎日奈 ",
+                "excluded": [],
+                "items": 31,
+                "matched": 31,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "纯子",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 纯子 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "赤司纯子": 1
+                }
+            }
+        },
+        {
+            "name": "纱织",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 纱织 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "锭前纱织": 1
+                }
+            }
+        },
+        {
+            "name": "绫音",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 绫音 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "奥空绫音": 1
+                }
+            }
+        },
+        {
+            "name": "绿",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ 绿 ",
+                "excluded": [],
+                "items": 5,
+                "matched": 1,
+                "polluted": 4,
+                "pollution": {
+                    "小绿": 2,
+                    "才羽绿": 2
+                }
+            }
+        },
+        {
+            "name": "美优",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 美优 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "美咲",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 美咲 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 0,
+                "polluted": 2,
+                "pollution": {
+                    "戒野美咲": 1,
+                    "玉泉美咲": 1
+                }
+            }
+        },
+        {
+            "name": "美游",
+            "count": 109,
+            "keyword": {
+                "text": "ブルーアーカイブ 美游 -霞泽美游",
+                "excluded": [
+                    "霞泽美游"
+                ],
+                "items": 60,
+                "matched": 22,
+                "polluted": 38,
+                "pollution": {
+                    "霞沢美游": 37,
+                    "朔月美游": 1
+                }
+            }
+        },
+        {
+            "name": "美甘ネル",
+            "count": 3183,
+            "keyword": {
+                "text": "ブルーアーカイブ 美甘ネル ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "羽川ハスミ",
+            "count": 3936,
+            "keyword": {
+                "text": "ブルーアーカイブ 羽川ハスミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "聖園ミカ",
+            "count": 6199,
+            "keyword": {
+                "text": "ブルーアーカイブ 聖園ミカ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "艾米",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 艾米 -和泉元艾米",
+                "excluded": [
+                    "和泉元艾米"
+                ],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "花凛",
+            "count": 11,
+            "keyword": {
+                "text": "ブルーアーカイブ 花凛 ",
+                "excluded": [],
+                "items": 11,
+                "matched": 9,
+                "polluted": 2,
+                "pollution": {
+                    "角楯花凛": 2
+                }
+            }
+        },
+        {
+            "name": "花子",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 花子 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "トイレの花子さん": 1
+                }
+            }
+        },
+        {
+            "name": "花岡ユズ",
+            "count": 2410,
+            "keyword": {
+                "text": "ブルーアーカイブ 花岡ユズ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "芹奈",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 芹奈 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "芹娜",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 芹娜 ",
+                "excluded": [],
+                "items": 3,
+                "matched": 2,
+                "polluted": 1,
+                "pollution": {
+                    "鹫见芹娜": 1
+                }
+            }
+        },
+        {
+            "name": "芹香",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 芹香 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 1,
+                "polluted": 3,
+                "pollution": {
+                    "黑见芹香": 3
+                }
+            }
+        },
+        {
+            "name": "若葉ヒナタ",
+            "count": 591,
+            "keyword": {
+                "text": "ブルーアーカイブ 若葉ヒナタ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "若藻",
+            "count": 10,
+            "keyword": {
+                "text": "ブルーアーカイブ 若藻 ",
+                "excluded": [],
+                "items": 10,
+                "matched": 6,
+                "polluted": 4,
+                "pollution": {
+                    "狐坂若藻": 3,
+                    "若藻泳装": 1
+                }
+            }
+        },
+        {
+            "name": "英美",
+            "count": 13,
+            "keyword": {
+                "text": "ブルーアーカイブ 英美 ",
+                "excluded": [],
+                "items": 13,
+                "matched": 0,
+                "polluted": 13,
+                "pollution": {
+                    "加藤英美里": 13
+                }
+            }
+        },
+        {
+            "name": "茜香",
+            "count": 4,
+            "keyword": {
+                "text": "ブルーアーカイブ 茜香 ",
+                "excluded": [],
+                "items": 4,
+                "matched": 0,
+                "polluted": 4,
+                "pollution": {
+                    "黑見茜香": 2,
+                    "黑见茜香": 2
+                }
+            }
+        },
+        {
+            "name": "莲实",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 莲实 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "莲见",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ 莲见 ",
+                "excluded": [],
+                "items": 9,
+                "matched": 5,
+                "polluted": 4,
+                "pollution": {
+                    "羽川莲见": 4
+                }
+            }
+        },
+        {
+            "name": "菫",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 菫 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 0,
+                "polluted": 1,
+                "pollution": {
+                    "雲菫": 1
+                }
+            }
+        },
+        {
+            "name": "萌",
+            "count": 109,
+            "keyword": {
+                "text": "ブルーアーカイブ 萌 -萌绘",
+                "excluded": [
+                    "萌绘"
+                ],
+                "items": 60,
+                "matched": 0,
+                "polluted": 60,
+                "pollution": {
+                    "萌系": 16,
+                    "豊田萌絵": 12,
+                    "萌え袖": 9,
+                    "萌えアニメ": 5,
+                    "萌え萌えキューン": 5,
+                    "萌田薫子": 5,
+                    "ギャップ萌え": 3,
+                    "萌え": 2,
+                    "板绘萌新成长记录": 1,
+                    "萌えるゴミ": 1,
+                    "萌え萌えキュン": 1
+                }
+            }
+        },
+        {
+            "name": "萌绘",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 萌绘 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 0,
+                "polluted": 2,
+                "pollution": {
+                    "风仓萌绘": 2
+                }
+            }
+        },
+        {
+            "name": "蒼森ミネ",
+            "count": 267,
+            "keyword": {
+                "text": "ブルーアーカイブ 蒼森ミネ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "薬子サヤ",
+            "count": 292,
+            "keyword": {
+                "text": "ブルーアーカイブ 薬子サヤ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "角楯カリン",
+            "count": 6158,
+            "keyword": {
+                "text": "ブルーアーカイブ 角楯カリン ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "诺亚",
+            "count": 9,
+            "keyword": {
+                "text": "ブルーアーカイブ 诺亚 ",
+                "excluded": [],
+                "items": 9,
+                "matched": 2,
+                "polluted": 7,
+                "pollution": {
+                    "生盐诺亚": 6,
+                    "生塩诺亚": 1
+                }
+            }
+        },
+        {
+            "name": "豊見コトリ",
+            "count": 365,
+            "keyword": {
+                "text": "ブルーアーカイブ 豊見コトリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "赤司ジュンコ",
+            "count": 1120,
+            "keyword": {
+                "text": "ブルーアーカイブ 赤司ジュンコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "近衛ミナ",
+            "count": 267,
+            "keyword": {
+                "text": "ブルーアーカイブ 近衛ミナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "近衛南",
+            "count": 1,
+            "keyword": {
+                "text": "ブルーアーカイブ 近衛南 ",
+                "excluded": [],
+                "items": 1,
+                "matched": 1,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "連河チェリノ",
+            "count": 542,
+            "keyword": {
+                "text": "ブルーアーカイブ 連河チェリノ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "遥香",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 遥香 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "伊草遥香": 1
+                }
+            }
+        },
+        {
+            "name": "都子",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 都子 ",
+                "excluded": [],
+                "items": 3,
+                "matched": 0,
+                "polluted": 3,
+                "pollution": {
+                    "北条沙都子": 2,
+                    "月雪都子": 1
+                }
+            }
+        },
+        {
+            "name": "野乃美",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 野乃美 ",
+                "excluded": [],
+                "items": 3,
+                "matched": 3,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "野宫",
+            "count": 5,
+            "keyword": {
+                "text": "ブルーアーカイブ 野宫 -十六夜野宫",
+                "excluded": [
+                    "十六夜野宫"
+                ],
+                "items": 5,
+                "matched": 5,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "銀鏡イオリ",
+            "count": 2647,
+            "keyword": {
+                "text": "ブルーアーカイブ 銀鏡イオリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "錠前サオリ",
+            "count": 2428,
+            "keyword": {
+                "text": "ブルーアーカイブ 錠前サオリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "银镜伊织",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 银镜伊织 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "間宵シグレ",
+            "count": 497,
+            "keyword": {
+                "text": "ブルーアーカイブ 間宵シグレ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "阳奈",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 阳奈 ",
+                "excluded": [],
+                "items": 3,
+                "matched": 1,
+                "polluted": 2,
+                "pollution": {
+                    "空崎阳奈": 2
+                }
+            }
+        },
+        {
+            "name": "阿慈谷ヒフミ",
+            "count": 4016,
+            "keyword": {
+                "text": "ブルーアーカイブ 阿慈谷ヒフミ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "阿露",
+            "count": 16,
+            "keyword": {
+                "text": "ブルーアーカイブ 阿露 ",
+                "excluded": [],
+                "items": 16,
+                "matched": 16,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "陸八魔アル",
+            "count": 6111,
+            "keyword": {
+                "text": "ブルーアーカイブ 陸八魔アル ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "霞沢ミユ",
+            "count": 3033,
+            "keyword": {
+                "text": "ブルーアーカイブ 霞沢ミユ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "霞泽美游",
+            "count": 48,
+            "keyword": {
+                "text": "ブルーアーカイブ 霞泽美游 ",
+                "excluded": [],
+                "items": 48,
+                "matched": 48,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "静子",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 静子 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 1,
+                "polluted": 1,
+                "pollution": {
+                    "河和静子": 1
+                }
+            }
+        },
+        {
+            "name": "静山マシロ",
+            "count": 821,
+            "keyword": {
+                "text": "ブルーアーカイブ 静山マシロ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "音瀬コタマ",
+            "count": 268,
+            "keyword": {
+                "text": "ブルーアーカイブ 音瀬コタマ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "風倉モエ",
+            "count": 750,
+            "keyword": {
+                "text": "ブルーアーカイブ 風倉モエ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "飛鳥馬トキ",
+            "count": 7541,
+            "keyword": {
+                "text": "ブルーアーカイブ 飛鳥馬トキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "鬼形カヨコ",
+            "count": 14,
+            "keyword": {
+                "text": "ブルーアーカイブ 鬼形カヨコ ",
+                "excluded": [],
+                "items": 14,
+                "matched": 14,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "鬼方カヨコ",
+            "count": 3814,
+            "keyword": {
+                "text": "ブルーアーカイブ 鬼方カヨコ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "鰐渕アカリ",
+            "count": 389,
+            "keyword": {
+                "text": "ブルーアーカイブ 鰐渕アカリ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "鷲見セリナ",
+            "count": 1061,
+            "keyword": {
+                "text": "ブルーアーカイブ 鷲見セリナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "鹤城",
+            "count": 3,
+            "keyword": {
+                "text": "ブルーアーカイブ 鹤城 -剑崎鹤城",
+                "excluded": [
+                    "剑崎鹤城"
+                ],
+                "items": 3,
+                "matched": 2,
+                "polluted": 1,
+                "pollution": {
+                    "剑先鹤城": 1
+                }
+            }
+        },
+        {
+            "name": "麻白",
+            "count": 2,
+            "keyword": {
+                "text": "ブルーアーカイブ 麻白 ",
+                "excluded": [],
+                "items": 2,
+                "matched": 2,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "黒崎コユキ",
+            "count": 943,
+            "keyword": {
+                "text": "ブルーアーカイブ 黒崎コユキ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "黒舘ハルナ",
+            "count": 1310,
+            "keyword": {
+                "text": "ブルーアーカイブ 黒舘ハルナ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        },
+        {
+            "name": "黒見セリカ",
+            "count": 1756,
+            "keyword": {
+                "text": "ブルーアーカイブ 黒見セリカ ",
+                "excluded": [],
+                "items": 60,
+                "matched": 60,
+                "polluted": 0,
+                "pollution": {}
+            }
+        }
+    ],
+    "last_updated": 1687109059.8626912
+}

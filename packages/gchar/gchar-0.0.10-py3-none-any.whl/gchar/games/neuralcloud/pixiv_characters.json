@@ -1,0 +1,481 @@
+{
+    "characters": [
+        {
+            "index": 1003,
+            "illustrations": {
+                "all": 15,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1001,
+            "illustrations": {
+                "all": 62,
+                "r18": 5
+            }
+        },
+        {
+            "index": 1002,
+            "illustrations": {
+                "all": 10,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1004,
+            "illustrations": {
+                "all": 7,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1005,
+            "illustrations": {
+                "all": 37,
+                "r18": 2
+            }
+        },
+        {
+            "index": 1006,
+            "illustrations": {
+                "all": 12,
+                "r18": 2
+            }
+        },
+        {
+            "index": 1008,
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1009,
+            "illustrations": {
+                "all": 10,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1010,
+            "illustrations": {
+                "all": 18,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1013,
+            "illustrations": {
+                "all": 25,
+                "r18": 5
+            }
+        },
+        {
+            "index": 1016,
+            "illustrations": {
+                "all": 31,
+                "r18": 5
+            }
+        },
+        {
+            "index": 1021,
+            "illustrations": {
+                "all": 7,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1035,
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1036,
+            "illustrations": {
+                "all": 11,
+                "r18": 2
+            }
+        },
+        {
+            "index": 1037,
+            "illustrations": {
+                "all": 40,
+                "r18": 8
+            }
+        },
+        {
+            "index": 1007,
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1012,
+            "illustrations": {
+                "all": 5,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1017,
+            "illustrations": {
+                "all": 4,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1020,
+            "illustrations": {
+                "all": 14,
+                "r18": 4
+            }
+        },
+        {
+            "index": 1023,
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1027,
+            "illustrations": {
+                "all": 6,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1031,
+            "illustrations": {
+                "all": 20,
+                "r18": 6
+            }
+        },
+        {
+            "index": 1034,
+            "illustrations": {
+                "all": 4,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1038,
+            "illustrations": {
+                "all": 31,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1039,
+            "illustrations": {
+                "all": 34,
+                "r18": 7
+            }
+        },
+        {
+            "index": 1018,
+            "illustrations": {
+                "all": 160,
+                "r18": 24
+            }
+        },
+        {
+            "index": 1019,
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1024,
+            "illustrations": {
+                "all": 7,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1025,
+            "illustrations": {
+                "all": 13,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1028,
+            "illustrations": {
+                "all": 24,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1011,
+            "illustrations": {
+                "all": 19,
+                "r18": 5
+            }
+        },
+        {
+            "index": 1014,
+            "illustrations": {
+                "all": 26,
+                "r18": 3
+            }
+        },
+        {
+            "index": 1015,
+            "illustrations": {
+                "all": 17,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1022,
+            "illustrations": {
+                "all": 30,
+                "r18": 2
+            }
+        },
+        {
+            "index": 1026,
+            "illustrations": {
+                "all": 56,
+                "r18": 4
+            }
+        },
+        {
+            "index": 1029,
+            "illustrations": {
+                "all": 19,
+                "r18": 5
+            }
+        },
+        {
+            "index": 1030,
+            "illustrations": {
+                "all": 3,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1032,
+            "illustrations": {
+                "all": 2,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1033,
+            "illustrations": {
+                "all": 6,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1040,
+            "illustrations": {
+                "all": 8,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1041,
+            "illustrations": {
+                "all": 48,
+                "r18": 12
+            }
+        },
+        {
+            "index": 1042,
+            "illustrations": {
+                "all": 31,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1043,
+            "illustrations": {
+                "all": 13,
+                "r18": 3
+            }
+        },
+        {
+            "index": 1044,
+            "illustrations": {
+                "all": 63,
+                "r18": 10
+            }
+        },
+        {
+            "index": 1045,
+            "illustrations": {
+                "all": 11,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1047,
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1046,
+            "illustrations": {
+                "all": 46,
+                "r18": 5
+            }
+        },
+        {
+            "index": 1048,
+            "illustrations": {
+                "all": 12,
+                "r18": 1
+            }
+        },
+        {
+            "index": 1049,
+            "illustrations": {
+                "all": 13,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1052,
+            "illustrations": {
+                "all": 12,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1051,
+            "illustrations": {
+                "all": 4,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1050,
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1053,
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1054,
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1055,
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1056,
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1057,
+            "illustrations": {
+                "all": 10,
+                "r18": 2
+            }
+        },
+        {
+            "index": 1058,
+            "illustrations": {
+                "all": 58,
+                "r18": 6
+            }
+        },
+        {
+            "index": 1059,
+            "illustrations": {
+                "all": 6,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1060,
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1061,
+            "illustrations": {
+                "all": 4,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1062,
+            "illustrations": {
+                "all": 18,
+                "r18": 7
+            }
+        },
+        {
+            "index": 1063,
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1064,
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1065,
+            "illustrations": {
+                "all": 15,
+                "r18": 3
+            }
+        },
+        {
+            "index": 1066,
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1067,
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": 1068,
+            "illustrations": {
+                "all": 5,
+                "r18": 2
+            }
+        }
+    ],
+    "last_updated": 1687113135.2120392
+}
