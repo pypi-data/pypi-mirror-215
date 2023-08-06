@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+AdaptoLogit/__init__.py
+AdaptoLogit/adaptive_logistic.py
+AdaptoLogit/weight_estimation.py
+AdaptoLogit.egg-info/PKG-INFO
+AdaptoLogit.egg-info/SOURCES.txt
+AdaptoLogit.egg-info/dependency_links.txt
+AdaptoLogit.egg-info/requires.txt
+AdaptoLogit.egg-info/top_level.txt
+AdaptoLogit.egg-info/zip-safe
