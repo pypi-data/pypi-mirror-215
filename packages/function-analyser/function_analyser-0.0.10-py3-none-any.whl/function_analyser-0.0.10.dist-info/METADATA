@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: function-analyser
+Version: 0.0.10
+Summary: Identify long functions to refactor with this function analyser
+Author-email: Nicholas Hemley <nicholas.oliver.hemley@gmail.com>
+Maintainer-email: Nicholas Hemley <nicholas.oliver.hemley@gmail.com>
+License: Copyright 2023, Nicholas Hemley
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Keywords: analysis,static,refactoring,code,smells
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# function-analyser
+
+TL;DR;
+```commandline
+pip install function-analyser
+
+```
+There is much debate about the ideal length of a function or method.
+
+E.g.
+```
+The first rule of functions is that they should be small.
+The second rule of functions is that they should be smaller than that.
+Functions should not be 100 lines long.
+Functions should hardly ever be 20 lines long.
+```
+Robert (Bob) Martin, Clean Code: A Handbook of Agile Software Craftsmanship (2008)
+as cited in https://softwareengineering.stackexchange.com/questions/133404/what-is-the-ideal-length-of-a-method-for-you
+
+Common sense, therefore, offers one solution.
+
+However, I have taken a different approach in running
+analysis on many codebases and using this to calibrate
+a functional analysis tool to run on your *own* codebase.
+
+The results are encapsulated in this useful function analysis
+tool.
