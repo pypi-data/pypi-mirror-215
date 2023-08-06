@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ai-embedder
+Version: 1.0
+Summary: This script takes .ai files and save them with linked files embedded.
+Author: mdobosz
+Author-email: doboszsite@gmail.com
+License-File: LICENSE
+Requires-Dist: altgraph (==0.17.3)
+Requires-Dist: pefile (==2023.2.7)
+Requires-Dist: pywin32 (==306)
+Requires-Dist: pywin32-ctypes (==0.2.1)
+
+This script takes .ai files and save them with linked files embedded.
