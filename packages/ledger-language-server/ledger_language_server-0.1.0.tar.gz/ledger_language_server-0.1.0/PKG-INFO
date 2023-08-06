@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ledger-language-server
+Version: 0.1.0
+Summary: A language server for Ledger
+Author: Sam Pringle
+Author-email: pringle@hey.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# ledger-language-server
+
+A language server for `.ledger` files written in Python
+
