@@ -1,0 +1,7 @@
+setup.py
+easy_kmer/__init__.py
+easy_kmer/kmer.py
+easy_kmer.egg-info/PKG-INFO
+easy_kmer.egg-info/SOURCES.txt
+easy_kmer.egg-info/dependency_links.txt
+easy_kmer.egg-info/top_level.txt
