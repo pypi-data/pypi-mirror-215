@@ -1,0 +1,11 @@
+README.md
+setup.py
+adversarial_test/__init__.py
+adversarial_test/adversarial_model.py
+adversarial_test.egg-info/PKG-INFO
+adversarial_test.egg-info/SOURCES.txt
+adversarial_test.egg-info/dependency_links.txt
+adversarial_test.egg-info/requires.txt
+adversarial_test.egg-info/top_level.txt
+tests/__init__.py
+tests/test_adversarial_test.py
