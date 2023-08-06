@@ -1,0 +1,3 @@
+[console_scripts]
+phuego=phuego.main:main
+
