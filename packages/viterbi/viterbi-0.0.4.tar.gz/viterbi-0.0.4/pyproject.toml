@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+[project]
+version = "0.0.4"
+name = "viterbi"
+authors = [
+    {name = "Yachen Mao", email = "maoyachen55@gmail.com"},
+    {name = "Min Xu", email = "xukmin@gmail.com"},
+]
+description = "A Convolutional Encoder and Viterbi Decoder in Python/C++."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["viterbi"]
+license = {file = "LICENSE"}
+dependencies = []
+classifiers = [
+    'Programming Language :: C++',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    "Programming Language :: Python :: 3 :: Only",
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+]
+
+[project.urls]
+Source = "https://github.com/clysto/viterbi"
+
+[tool.setuptools]
+py-modules = ["viterbi"]
+include-package-data = true
