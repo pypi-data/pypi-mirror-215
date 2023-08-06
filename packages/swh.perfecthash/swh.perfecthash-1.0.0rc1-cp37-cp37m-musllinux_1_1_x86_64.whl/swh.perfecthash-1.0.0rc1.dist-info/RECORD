@@ -1,0 +1,13 @@
+swh.perfecthash.libs/libcmph-7d3450a0.so.0.0.0,sha256=N2f53Hkc0bxEFvlyaKCRgS8ht8fWcAYkmTlvSfAmKx8,564505
+swh.perfecthash-1.0.0rc1.dist-info/RECORD,,
+swh.perfecthash-1.0.0rc1.dist-info/AUTHORS,sha256=mlEi3UA90jMX6bVUsCsHJ6dvp5LV0bjYT-cRTps5yfg,112
+swh.perfecthash-1.0.0rc1.dist-info/top_level.txt,sha256=8XlamXOHbQHPR7Tn7kZa8F4ufiLuK-BL_bZje5MY9hw,4
+swh.perfecthash-1.0.0rc1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+swh.perfecthash-1.0.0rc1.dist-info/METADATA,sha256=Ml7iwMj9Uf3xGUJgtoY4FxgXchVBqilTfGh0CRjOJ78,1162
+swh.perfecthash-1.0.0rc1.dist-info/WHEEL,sha256=galfBCQ0GDMbCaHulmF4PsxHLO17SP3Nxg1_z6dzR_Y,112
+swh/__init__.py,sha256=qEFeq3yuf3lQKVseALmL8aPM8fpCS54B_5pry00M3hk,76
+swh/perfecthash/_hash_cffi.abi3.so,sha256=84q8ti9XH0E30tEGtVsoxjT3kUif1fsSugS_iHn5xfA,99857
+swh/perfecthash/__init__.py,sha256=51NcevdRzRpnacZKR-kFIyV1ogDNbkdF42tpJXYvf-I,3583
+swh/perfecthash/build.py,sha256=LIilH6RvnzXK-yRn_CY9Oi_hapMewZHpleFZUKVhaks,1751
+swh/perfecthash/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swh/perfecthash/tests/test_hash.py,sha256=YCWJ-A48ID4C6jfmLZCeHCKm273cXbr00nhOahPiG_g,4654
