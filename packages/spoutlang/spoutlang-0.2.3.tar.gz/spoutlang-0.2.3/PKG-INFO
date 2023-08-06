@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: spoutlang
+Version: 0.2.3
+Summary: An interpreted programming language aimed at demistifying bit manipulation.
+Home-page: https://github.com/TasfiqulTapu/spout
+Author: Tasfiqul Tapu
+Author-email: iamtasfiqultapu@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
