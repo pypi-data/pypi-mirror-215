@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: EDA-recordk
+Version: 1.0.1
+Summary: this package is for EDA
+Author: KKR
+Author-email: alfmalfm11@yonsei.ac.kr
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scipy
+
+UNKNOWN
+
