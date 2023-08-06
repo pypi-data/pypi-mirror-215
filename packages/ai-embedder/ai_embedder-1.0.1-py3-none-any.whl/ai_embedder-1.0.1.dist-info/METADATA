@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ai-embedder
+Version: 1.0.1
+Summary: This script takes .ai files and save them with linked files embedded.
+Author: mdobosz
+Author-email: doboszsite@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: altgraph (==0.17.3)
+Requires-Dist: pefile (==2023.2.7)
+Requires-Dist: pywin32 (==306)
+Requires-Dist: pywin32-ctypes (==0.2.1)
+
+# AI Link Embedder #
+## Introduction ##
+This abomination of a code was created to solve my fiancé issue with migrating Adobe Illustrator files to different machine. It comes with absolutely no guarantee, but it seems to work. Good luck.
+## Requirements ##
+Running this script requires:
+- Windows OS (macOS is not supported for now)
+- Adobe Illustrator installed
+## Run ##
+Usage:
+```
+usage: AI Link Embedder [-h] [-r] [-o] [-d DEST] [-p PREFIX] [-s SUFFIX]
+                        dictionary
+
+This script takes .ai files and save them with linked files embedded
+
+positional arguments:
+  dictionary            Directory with input .ai files
+
+options:
+  -h, --help            show this help message and exit
+  -r, --recursive       Scan for .ai files recursively
+  -o, --override        Override resulting .ai is it exists
+  -d DEST, --dest DEST  Directory where resulting .ai files will be saved to
+  -p PREFIX, --prefix PREFIX
+  -s SUFFIX, --suffix SUFFIX
+```
+Example:
+```
+python -m ai_embedder
+```
