@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README
+setup.py
+shelixir/__init__.py
+shelixir/__main__.py
+shelixir/source.py
+shelixir.egg-info/PKG-INFO
+shelixir.egg-info/SOURCES.txt
+shelixir.egg-info/dependency_links.txt
+shelixir.egg-info/entry_points.txt
+shelixir.egg-info/not-zip-safe
+shelixir.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shelixir
+Version: 3.1
+Summary: Experimental phasing with SHELX C/D/E
+Home-page: https://github.com/kolenpe1/shelixir
+Author: Petr Kolenko
+Author-email: kolenpe1@cvut.cz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+License-File: LICENSE
+
+Automated experimental phasing with SHELX C/D/E
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+shelixir = shelixir.source:main
+
