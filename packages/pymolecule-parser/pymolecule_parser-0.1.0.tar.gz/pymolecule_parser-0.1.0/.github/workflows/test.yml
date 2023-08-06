@@ -1,0 +1,14 @@
+name: pymolecule-parser_test
+
+on:
+  push:
+    paths:
+      - "reference.**.out"
+      - "**.py"
+      - "pymolecule-parser"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+jobs:
+  test:
+    uses: ./.github/workflows/reusable_test.yml
