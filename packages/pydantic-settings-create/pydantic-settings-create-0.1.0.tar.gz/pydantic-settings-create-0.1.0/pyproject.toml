@@ -1,0 +1,54 @@
+
+[project]
+authors = [
+  {name = "m9810223", email = "m9810223@gmail.com"},
+]
+dependencies = [
+  "pydantic>=2.0b1",
+  "pydantic-settings>=2.0b1",
+]
+description = "Create Pydantic Settings"
+license = {text = "MIT"}
+name = "pydantic-settings-create"
+readme = "README.md"
+requires-python = ">=3.7"
+version = "0.1.0"
+
+[project.urls]
+Homepage = "https://github.com/m9810223/pydantic-settings-create"
+Source = "https://github.com/m9810223/pydantic-settings-create"
+
+[tool.semantic_release]
+# https://python-semantic-release.readthedocs.io/en/latest/configuration.html
+build_command = "pip install pdm && pdm build"
+version_toml = "pyproject.toml:project.version"
+
+[tool.pdm.dev-dependencies]
+dev = [
+  "pytest>=7.4.0",
+  "python-semantic-release>=7.34.6",
+]
+
+[tool.pdm.scripts]
+release = "semantic-release"
+test = "pytest"
+
+[tool.pytest.ini_options]
+addopts = "--exitfirst --failed-first -r fEsxXp --disable-warnings --showlocals --tb=short"
+
+[tool.ruff]
+extend-select = [
+  "W", # pycodestyle Warning
+  "I", # isort
+  "N", # pep8-naming
+  "S", # flake8-bandit
+]
+ignore = [
+  "E501", # line-too-long
+  "S101", # Use of `assert` detected
+]
+
+[tool.ruff.isort]
+# https://beta.ruff.rs/docs/settings/#isort
+force-single-line = true
+lines-after-imports = 2

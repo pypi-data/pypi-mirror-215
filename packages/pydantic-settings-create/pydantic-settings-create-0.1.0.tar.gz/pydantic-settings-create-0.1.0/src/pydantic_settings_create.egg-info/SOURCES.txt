@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/pydantic_settings_create.egg-info/PKG-INFO
+src/pydantic_settings_create.egg-info/SOURCES.txt
+src/pydantic_settings_create.egg-info/dependency_links.txt
+src/pydantic_settings_create.egg-info/requires.txt
+src/pydantic_settings_create.egg-info/top_level.txt
+tests/test_main.py
