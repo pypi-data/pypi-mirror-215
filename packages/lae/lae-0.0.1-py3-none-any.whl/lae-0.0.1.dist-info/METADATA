@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lae
+Version: 0.0.1
+Summary: lae
+Home-page: https://github.com/errory230/lae
+Author: ['Sanyeon Lee', 'Hanjin Kim', 'Sungjoo Han']
+License: MIT
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+
+Github:https://github.com/errory230/lae
