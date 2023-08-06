@@ -1,0 +1,15 @@
+iterum/__about__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+iterum/__init__.py,sha256=UmLFox-Wot_6cYKudycv8IWVmmy00oSqi-GnAs0UTEU,1600
+iterum/_diterum.py,sha256=lhaF-1-0ywGlBIaQEMWlnUROvDXSdszUkIk1Xb7euAs,11280
+iterum/_helpers.py,sha256=a0rPaCT5EAZQEZdgifm4L3RB9wRAI9dpKDCP5dWDhUo,456
+iterum/_iterum.py,sha256=SdZEHCWwXve_Zkyy2Xi1UWPvATT86qtTbDnimrYy0aw,62207
+iterum/_notset.py,sha256=CMAphsGKJWNKThWxYtO2D8UYuIzb10fHcYXLJ9B2HRY,467
+iterum/_option.py,sha256=roP6jTfAj1ox-21cXBAAyDbh-29AJ-1mMZ7_YojyM5w,38208
+iterum/_ordering.py,sha256=lixssCUXZW19N5EmJBQR-DudtIlu0McK1UkK_jVeE10,1592
+iterum/_singleton.py,sha256=XH2qkYDcxcRMjmAA_sT_xxxteiFpvbWg9KKlmT06gho,412
+iterum/_type_helpers.py,sha256=6Sperk7ilpps_LE40gLKuqFcXGWEuWpgrlADtDnYIok,948
+iterum/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iterum-0.1.0.dist-info/METADATA,sha256=To8JqqNogsoaEUjhj18CdBuiHOPVEsQ-caBOf9rENZg,2406
+iterum-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+iterum-0.1.0.dist-info/licenses/LICENSE.txt,sha256=siDBosJoBOI6LGsaIJtxeLz5JkBe9yo04wIlMu94DsM,1095
+iterum-0.1.0.dist-info/RECORD,,
