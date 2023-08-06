@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pandas_optimum/__init__.py
+src/pandas_optimum/pandas_optimum.py
+src/pandas_optimum.egg-info/PKG-INFO
+src/pandas_optimum.egg-info/SOURCES.txt
+src/pandas_optimum.egg-info/dependency_links.txt
+src/pandas_optimum.egg-info/requires.txt
+src/pandas_optimum.egg-info/top_level.txt
