@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: multyverse
+Version: 0.0.0
+Summary: multyverse
+Project-URL: Homepage, https://github.com/davidbrochart/multiverse
+Author-email: David Brochart <david.brochart@gmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# multiverse
