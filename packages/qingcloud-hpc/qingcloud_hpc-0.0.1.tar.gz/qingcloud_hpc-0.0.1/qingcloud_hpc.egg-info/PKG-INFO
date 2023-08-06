@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qingcloud-hpc
+Version: 0.0.1
+Summary: Qingcloud hpc sdk
+Author: Qingcloud.HPC
+Author-email: siriusliang@yunify.com
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=2.7
+
+This repository allows you to access QingCloud HPC and control your resources from your applications.
+
+This SDK is licensed under Apache Licence, Version 2.0.
