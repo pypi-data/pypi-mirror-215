@@ -1,0 +1,9 @@
+numpy
+scipy
+multipledispatch
+
+[plot]
+matplotlib
+
+[sympy]
+sympy
