@@ -1,0 +1,13 @@
+meshwell/__init__.py,sha256=reCC9BcKtFxax0lzndlOqls2S4DwXgSVbRq6yFa1gCA,137
+meshwell/config.py,sha256=6CnVd-KLxbxYcALn7u8-xdSTZpRYbcYyPBUSWQMtex8,465
+meshwell/labeledentity.py,sha256=8mRibPGUd8UQR9YZHFvrhuf6sUIjOjzhPkudZ-DdzAA,1315
+meshwell/model.py,sha256=qAcwV15bW0-BUCAty0A8D-AA1X_7B9zELbq2K1w4nRE,10669
+meshwell/polysurface.py,sha256=6K0lmhx1oekpgYXA2t-2KUa3gdBR78IDe1aSZEnNvMA,2435
+meshwell/prism.py,sha256=BLmcQh8glLTfna5WPSkYvKBtQpMlDDujtvS6mwKtATo,5973
+meshwell/refinement.py,sha256=009-IHkeYfQ3Lsa9F4KPj8bHQRizxYVQ4L0s31fL_2o,715
+meshwell/tag.py,sha256=gtUjOW1XFOaZnQZRYf_Iz4QU1PAk0iCioNwlhDT0LdI,2220
+meshwell/validation.py,sha256=Il8tuG-2phs2uoyrshboGrP6LZ6iKKmixqKKetqSAgM,527
+meshwell-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+meshwell-0.0.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+meshwell-0.0.2.dist-info/METADATA,sha256=X6mJTb5UWxLAoaKV7awYdEMmF-Wgrcw6uZt39amQmJY,4323
+meshwell-0.0.2.dist-info/RECORD,,
