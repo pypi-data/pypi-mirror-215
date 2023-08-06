@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bye_wiki/__init__.py
+bye_wiki/cli.py
+bye_wiki.egg-info/PKG-INFO
+bye_wiki.egg-info/SOURCES.txt
+bye_wiki.egg-info/dependency_links.txt
+bye_wiki.egg-info/entry_points.txt
+bye_wiki.egg-info/not-zip-safe
+bye_wiki.egg-info/top_level.txt
