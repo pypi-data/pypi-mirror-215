@@ -1,0 +1,2 @@
+[console_scripts]
+lmt = lmt.cli:lmt
