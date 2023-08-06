@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: confapi
+Version: 0.1
+Home-page: https://github.com/illini-motorsports/confapi
+Author: cmmeyer1800
+Author-email: collinmmeyer@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CONFAPI

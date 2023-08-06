@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+confapi.egg-info/PKG-INFO
+confapi.egg-info/SOURCES.txt
+confapi.egg-info/dependency_links.txt
+confapi.egg-info/requires.txt
+confapi.egg-info/top_level.txt
+confclient/__init__.py
+confclient/confexcept.py
+confclient/restclient.py
+confclient/rpcclient.py
+tests/test_rpc_client.py
