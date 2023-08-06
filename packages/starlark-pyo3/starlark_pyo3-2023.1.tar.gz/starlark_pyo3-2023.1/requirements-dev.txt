@@ -1,0 +1,8 @@
+maturin
+pytest
+
+sphinx
+sphinx-copybutton
+furo
+
+tomli
