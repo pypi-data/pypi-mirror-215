@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: minifit
+Version: 1.0.2
+Summary: MiniFit is a python package that can be used for fitting data.
+Home-page: https://gitlab.com/mike3.14/minifit
+Author: Michał Kopczyński
+Author-email: michal.kopczynski3.14@gmail.com
+Project-URL: repository, https://gitlab.com/mike3.14/minifit
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+
+# MiniFit
+
+Copyright (C) 2023-- Michał Kopczyński
+
+MiniFit is a python package that uses scipy.optimize.curve_fit() to find optimal parameters of a chosen model function that best resembles the data. Popt found will minimize model_function(xdata, *popt) - ydata.
+
+Documentation:
+https://minifit.readthedocs.io/en/latest/index.html
