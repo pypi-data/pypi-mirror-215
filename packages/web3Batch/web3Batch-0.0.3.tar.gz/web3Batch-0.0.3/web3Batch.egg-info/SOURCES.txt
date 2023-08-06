@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+web3Batch/__init__.py
+web3Batch/types.py
+web3Batch/web3Batch.py
+web3Batch.egg-info/PKG-INFO
+web3Batch.egg-info/SOURCES.txt
+web3Batch.egg-info/dependency_links.txt
+web3Batch.egg-info/requires.txt
+web3Batch.egg-info/top_level.txt
