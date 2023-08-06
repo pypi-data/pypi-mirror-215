@@ -1,0 +1,8 @@
+xia_service_cloudflare/__init__.py,sha256=VBS7BKKB-WgxpNZ3-VFQyhNto1zxfMv_L4tyXm_cRlY,294
+xia_service_cloudflare/engine.cp310-win_amd64.pyd,sha256=VjHKpA_zVJrq2svExcjKjC3KT4H60m8pNbktMuZm7vM,340992
+xia_service_cloudflare/service.cp310-win_amd64.pyd,sha256=wI9uhZth1mDLd8vY7lcFaP5E431kjRGqOV0nV9razcw,252928
+xia_service_cloudflare-0.0.3.dist-info/LICENSE.txt,sha256=FU8wWPH4eLlGEUQT4o0vgpnW66Olgbnc_Oe1tvF5lek,151
+xia_service_cloudflare-0.0.3.dist-info/METADATA,sha256=LtFqOpjT51tI0IPVlwfvmGFmKIzj2jlgqLuceoK-WkA,674
+xia_service_cloudflare-0.0.3.dist-info/WHEEL,sha256=kolUYyAuE6ut8zey19a5dD-9OJXpdVbQiTZkpOLR1WY,100
+xia_service_cloudflare-0.0.3.dist-info/top_level.txt,sha256=MFS9cmitDr8e_hFma0-hfOG0KSm_f_B0DAwzJzmhtTQ,23
+xia_service_cloudflare-0.0.3.dist-info/RECORD,,
