@@ -1,0 +1,4 @@
+openai
+termcolor
+klotty
+posthog
