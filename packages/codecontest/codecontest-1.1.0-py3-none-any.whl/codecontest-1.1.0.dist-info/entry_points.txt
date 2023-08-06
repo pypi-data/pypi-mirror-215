@@ -1,0 +1,8 @@
+[console_scripts]
+ccclean = codecontest.ccclean:ccclean
+cfparse = codecontest.cfparser:main
+cppast = codecontest.cppast:main
+cppcmp = codecontest.cppcompare:cpp_compare
+cppinline = codecontest.cppinline:main
+cpprun = codecontest.cpprun:main
+pyinstall = codecontest.pyinstall:main

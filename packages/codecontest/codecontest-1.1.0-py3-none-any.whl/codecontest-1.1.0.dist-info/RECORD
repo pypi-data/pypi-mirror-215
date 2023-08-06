@@ -1,0 +1,14 @@
+codecontest/__init__.py,sha256=iJaIy69v2Zl2frJBo_xBscowJ9A5-X_enQyDTJIO5-g,1407
+codecontest/ccclean.py,sha256=-uqTl5pp9Q0nAh78vzMLM39XtWp4eKZVVrVynA8JpZ8,527
+codecontest/cfparser.py,sha256=1PlHoZqfxuxM9MGohJflNxQY1iCR5rZwU7aiZDQldtU,2494
+codecontest/cppast.py,sha256=2773laXtoNXCHWsBRW13yPgkrG3unx1IqADGHpY6eUQ,2622
+codecontest/cppcompare.py,sha256=oEatp7tkBNONQrko0RHUGLIfuQgz2lSEEBDYaky8Yto,4319
+codecontest/cppinline.py,sha256=V2Z46kPuAn4Txmk5UFgSydRldMXs6i7sLf6nqMq2BUk,6630
+codecontest/cpprun.py,sha256=jvF1MxWcUCrwnPMtn_Poo5EGUvFFXc5lSeLubq54mOM,1867
+codecontest/pyinstall.py,sha256=6hkJb0wrLpppcnYBdTzP9C2lPlvIkxWGPmMddl-Xiec,144
+codecontest/codeforces/pybind11.cpp,sha256=LJ4LqLTW1FmQ3aNMlVwoXWIPxQG4IAfGA0AouRQcQP0,964
+codecontest-1.1.0.dist-info/METADATA,sha256=WbnqXbKrTPVnPGBYcW8m88zBf49Ho43MvIuPw3dMvlA,1096
+codecontest-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+codecontest-1.1.0.dist-info/entry_points.txt,sha256=uHinsgKUmrO0Q9gQndNrwXZUgci3b-3wKD-rM0pguQM,280
+codecontest-1.1.0.dist-info/top_level.txt,sha256=0VYx5miYLXVM9Ppu5WZvnVkKolfvJ8PxcLn6AVqU8Oc,12
+codecontest-1.1.0.dist-info/RECORD,,
