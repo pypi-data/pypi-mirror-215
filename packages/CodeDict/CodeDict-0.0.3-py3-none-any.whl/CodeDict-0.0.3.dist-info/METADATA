@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: CodeDict
+Version: 0.0.3
+Summary: Code book for cracker
+Home-page: http://github.com/miaobuao/CodeDict
+Author: miaobuao
+Author-email: miaobuao@outlook.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: meo (>=0.0.8)
+
+# CodeDict
+
+Made for brute-forcing
+
+## Usage
+
+
+```python
+from codedict import Codes
+```
+
+**Traversing the dictionary**
+
+```python
+for psw in Codes.top1000():
+    ...
+```
+
+**Dictionary concatenation**
+
+```python
+top1000 = Codes.top1000()
+wpa = Codes.wpa()
+for psw in top1000 + wpa:
+    ...
+```
