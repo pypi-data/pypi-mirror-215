@@ -1,0 +1,7 @@
+LICENCE.txt
+README.txt
+setup.py
+anushabasiccalculator.egg-info/PKG-INFO
+anushabasiccalculator.egg-info/SOURCES.txt
+anushabasiccalculator.egg-info/dependency_links.txt
+anushabasiccalculator.egg-info/top_level.txt
