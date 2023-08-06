@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dszoro/__init__.py
+src/dszoro/codes.py
+src/dszoro.egg-info/PKG-INFO
+src/dszoro.egg-info/SOURCES.txt
+src/dszoro.egg-info/dependency_links.txt
+src/dszoro.egg-info/top_level.txt
