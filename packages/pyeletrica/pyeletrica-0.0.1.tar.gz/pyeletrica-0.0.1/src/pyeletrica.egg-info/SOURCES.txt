@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyeletrica/__init__.py
+src/pyeletrica/__main__.py
+src/pyeletrica.egg-info/PKG-INFO
+src/pyeletrica.egg-info/SOURCES.txt
+src/pyeletrica.egg-info/dependency_links.txt
+src/pyeletrica.egg-info/entry_points.txt
+src/pyeletrica.egg-info/requires.txt
+src/pyeletrica.egg-info/top_level.txt
