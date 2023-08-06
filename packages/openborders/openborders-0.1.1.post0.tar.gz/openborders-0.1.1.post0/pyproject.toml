@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "openborders"
+version = "0.1.1-post0"
+description = ""
+authors = ["arnos-stuff <mail@arnov.dev>"]
+readme = "README.md"
+homepage = "https://arnos-stuff.github.io/open-borders-index"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.2"
+wbdata = "^0.3.0"
+typer-tinydb = "^0.1.4"
+numpy = "^1.25.0"
+openpyxl = "^3.1.2"
+plotly = {version = "^5.15.0", optional = true}
+shiny = {version = "^0.3.3", optional = true}
+ipywidgets = {version = "^8.0.6", optional = true}
+shinywidgets = {version = "^0.2.1", optional = true}
+shinyswatch = {version = "^0.2.4", optional = true}
+mkdocs-coverage = "^0.2.7"
+
+[tool.poetry.extras]
+draw = ['plotly', 'shiny', 'ipywidgets', 'shinywidgets', 'shinyswatch']
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.14.0"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.16"
+mike = "^1.1.2"
+typer-cli = "^0.0.13"
+mkgendocs = "^0.9.2"
+
+[tool.poetry.scripts]
+opbd = "openborders.cli:app"
+openborders = "openborders.cli:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
