@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: codebleu
+Version: 0.0.1
+Summary: Pip compatible `CodeBLEU` implementation
+Author-email: Konstantin Chernyshev <kdchernyshev@gmail.com>
+License: MIT License
+Project-URL: homepage, https://github.com/k4black/fastapi-jwt
+Project-URL: documentation, https://k4black.github.io/fastapi-jwt/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# CodeBLEU
+Unofficial pip compatible CodeBLEU metric 
