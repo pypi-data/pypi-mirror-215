@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: kingpin-tgp
+Version: 1.0.0
+Summary: Treed Gaussian Process
+Home-page: https://github.com/andrewfowlie/kingpin
+Author: Andrew Fowlie
+Author-email: Andrew Fowlie <andrew.fowlie@xjtlu.edu.cn>
+License: MIT License
+        
+        Copyright (c) 2023 Andrew Fowlie
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Bug Tracker, https://github.com/andrewfowlie/kingpin/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kingpin 🎳
+
+_👀 Treed Gaussian process algorithm_
+
+[![Build](https://github.com/andrewfowlie/kingpin/actions/workflows/python-app.yml/badge.svg)](https://github.com/andrewfowlie/kingpin/actions/workflows/python-app.yml)
+[![Docs](https://readthedocs.org/projects/kingpin-docs/badge/?version=latest)](https://kingpin-docs.readthedocs.io/en/latest/)
+[![codecov](https://codecov.io/gh/andrewfowlie/kingpin/branch/main/graph/badge.svg)](https://codecov.io/gh/andrewfowlie/kingpin)
+
+
+## Install 💥
+
+```bash
+pip install kingpin-tgp
+```
+
+## Demo
+
+```bash
+kingpin example/motorcyle.txt
+```
+
+## Features
+
+- **Flexible** allowing you to build GP models using any GP library you like 📦
+- **Treed** GPs to handle non-stationary data 🌟

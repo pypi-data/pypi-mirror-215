@@ -1,0 +1,10 @@
+arviz
+binarytree
+celerite2
+click
+ezcurses
+joblib
+matplotlib
+numpy
+scipy
+tqdm
