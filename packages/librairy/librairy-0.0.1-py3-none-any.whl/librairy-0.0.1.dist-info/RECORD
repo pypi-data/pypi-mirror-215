@@ -1,0 +1,12 @@
+librairy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librairy/bookshelf.py,sha256=O6hXCuOSoKO2zwTVw1WtmSy_W5ozE-b9P2Kn-vHcgjE,2461
+librairy/config.py,sha256=DkBzFsh06KM5xwScJGvUda_WGxrDGLcXk7S1TV4ripo,778
+librairy/curator.py,sha256=QxpLHykbI9T1rPWpDvWkVojqqx3rNTssH-bfwAiCWS8,323
+librairy/collector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librairy/collector/repository.py,sha256=RDkaMDMDJHHNNViCsMNxIjcBsYlvpTTi0nRc88CRN6E,1083
+librairy/collector/semscholar.py,sha256=mN1a_TvnaliOWSxC13MrHnl06wJHl-jqx5Ap1MoQiyA,3331
+librairy-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+librairy-0.0.1.dist-info/METADATA,sha256=KWb7E4e9uKwhxiS0hJnuTRZf-hLIr-Ytc9l9q6pT7RQ,10986
+librairy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+librairy-0.0.1.dist-info/top_level.txt,sha256=y19I-JxoiKkXc3D6w4vpp9iijcI_D-hVpHGvF3LqYJU,9
+librairy-0.0.1.dist-info/RECORD,,
