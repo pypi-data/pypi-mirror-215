@@ -1,0 +1,181 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block content %}
+<div class="breadcrumb-holder">
+    <div class="container-fluid">
+        <ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="{% url 'train-hr-dash' %}">PAINEL TREINAMENTO & BOLSO ESTUDO</a></li>
+            <li class="breadcrumb-item active">{{ legend|upper }}</li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid"><br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow-lg border-info rounded">
+                <div class="card-header border-primary">
+                    <center>
+                        <h2>{{ legend|upper }}
+                            <i class="fa fa-arrow-right"></i>
+                            <a href="{% url 'train-hr-plan-summary' %}" class="btn btn-sm btn-info mb-2"> Sumario Geral <i class="fa fa-list-ol"></i></a>
+                            <a href="{% url 'train-raw-data' %}" class="btn btn-sm btn-success mb-2"> Raw Data <i class="fa fa-list"></i></a>
+                        </h2>
+                    </center>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 text-center d-flex justify-content-center">
+                            <form method="GET" action="{% url 'train-hr-plan-list' %}" class="form-inline">
+                                <div class="form-group">
+                                    <label for="start_date">Start Date:</label>
+                                    <input type="date" class="form-control m-1" required id="start_date" name="start_date" value="{{ start_date }}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="end_date">End Date:</label>
+                                    <input type="date" required class="form-control m-1" id="end_date" name="end_date" value="{{ end_date }}">
+                                </div>
+                                <button type="submit" class="btn btn-primary m-1">Filter <i class="fa fa-eye"></i></button>
+                                {% if start_date and end_date %}                
+                                    <a href="{% url 'train-hr-plan-list' %}" class="btn btn-danger m-1">Reset <i class="fa fa-close"></i></a>
+                                {% endif %}
+                            </form>
+                        </div>
+                    </div>
+                    {% if page == 'trainning' %}
+                        <div class="row mt-2">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                
+                                <span>
+                                    {% if start_date != None %}  
+                                    Lista Treinamento husi                              
+                                        <strong>{{start_date|date:"d-M-Y"}}</strong>
+                                    {% endif %}
+                                    {% if end_date != None %}
+                                    To'o 
+                                        <strong>{{end_date|date:"d-M-Y"}}</strong>
+                                    {% endif %}
+                                </span>
+                            </div>
+                        </div>
+                    {% endif %}
+                    <table class="table table-sm table-striped table-bordered" id="example"  cellspacing="0">
+
+                        <thead>
+                            <tr>
+                                <th class="text-center">Nu.</th>
+                                <th>Materia</th>
+                                <th>Fatin Treinamento</th>
+                                <th class="text-center">Tipu Treinamento</th>
+                                <th class="text-center">Data Hahu</th>
+                                <th class="text-center">Data Remate</th>
+                                <th class="text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for obj in objects %}
+                            <tr>
+                                <td align="center">{{ forloop.counter }}</td>
+                                <td><a href="{% url 'train-hr-plan-detail' obj.hashed %}">{{ obj.subject }}</a></td>
+                                <td>{{ obj.place }}</td>
+                                <td align="center">{{ obj.type }}</td>
+                                <td align="center">{{ obj.start_date|date:"d/M/Y" }}</td>
+                                <td align="center">{{ obj.end_date|date:"d/M/Y" }}</td>
+                                <td align="center">{% if obj.is_approve == True %}
+                                    <span class="badge bg-success text-white p-1">Aprovadu <i class="fa-solid fa-check-double"></i></span>
+                                    {% else %}
+                                    <span class="badge bg-danger text-white p-1">Seidauk Hetan Aprovasaun <i class="fa fa-refresh"></i></span>{% endif %}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div> <!--end card-body-->
+            </div> <!--end card-->
+        </div> <!--end col-->
+    </div> <!--end row-->
+</div>
+{% endblock %}
+{% block scripts %}
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.1/xlsx.full.min.js"></script>
+
+<link href="{% static 'main/vendor/datatables/css/searchBuilder.dataTables.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/datatables/css/searchBuilder.bootstrap4.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/vendor/datatables/css/buttons.dataTables.min.css' %}" rel="stylesheet">
+<style type="text/css">
+    .dtsb-searchBuilder{
+        background: #b9c7e6 !important;
+        padding: 5px
+    }
+    .dt-button, .dtsb-add {
+        background: white !important;
+    }
+    .dt-buttons .dt-button {
+        text-align: center !important;
+    }
+    .dt-print-view h1 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+</style>
+<script src="{% static 'main/vendor/datatables/js/dataTables.searchBuilder.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/searchBuilder.bootstrap4.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/jszip.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/pdfmake.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/vfs_fonts.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/buttons.html5.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/buttons.print.min.js' %}"></script>
+<script src="{% static 'main/vendor/datatables/js/buttons.colVis.min.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready( function () {
+        var table = $('#example').removeAttr('width').DataTable( {
+
+			"scrollCollapse": true,
+			"paging":false,
+			deferRender: true,
+			searchBuilder: true,
+			dom: 'Bfrtip',
+            buttons:[
+                {
+                    extend: 'excelHtml5',
+                    text: 'Export to Excel',
+                    exportData: {
+                        custom: function(data) {
+                            exportDataTablesToExcel('#example', 'DataTables_Excel', '{{path}}');
+                        }
+                    }
+                },
+                // {
+                //     extend: 'print',
+                //     exportOptions: { columns: ':visible' },
+                //     title: '{{legend}}',
+                //     messageTop: '',
+                //     customize: function ( win ) {
+                //         $(win.document.body)
+                //             // .css( 'font-size', '10pt' )
+                //             // .prepend(
+                //             //     '<center><img src="{{path}}" style="width:50%;" /></center><hr/>\
+                //             //     '
+                //             // );
+ 
+                //         $(win.document.body).find( 'table' )
+                //             .addClass( 'compact' )
+                //             .css( 'font-size', 'inherit' );
+                    
+                //     },
+                // },
+                'colvis',
+            ],
+            
+        });
+		table.searchBuilder.container().prependTo(table.table().container());
+			table.buttons().container().appendTo( '#example_wrapper .col-md-6:eq(0)' );
+    } );
+
+
+
+</script>
+{% endblock %}
