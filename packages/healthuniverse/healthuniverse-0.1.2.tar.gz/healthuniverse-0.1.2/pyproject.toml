@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "healthuniverse"
+version = "0.1.2"
+description = ""
+authors = ["Dan Caron <dan.caron@healthuniverse.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
