@@ -1,0 +1,10 @@
+pyproject.toml
+hellomcb/__init__.py
+hellomcb/somehello.py
+hellomcb.egg-info/PKG-INFO
+hellomcb.egg-info/SOURCES.txt
+hellomcb.egg-info/dependency_links.txt
+hellomcb.egg-info/entry_points.txt
+hellomcb.egg-info/top_level.txt
+hellomcb/somehelloaux/__init__.py
+hellomcb/somehelloaux/auxilliary.py

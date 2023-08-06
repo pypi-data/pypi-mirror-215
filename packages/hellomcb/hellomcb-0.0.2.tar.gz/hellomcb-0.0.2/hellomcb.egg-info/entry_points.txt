@@ -1,0 +1,2 @@
+[console_scripts]
+doothehello = hellomcb.somehello:doo_hello
