@@ -1,0 +1,21 @@
+from .preprocessing import preprocess_text
+import pandas as pd
+
+
+def autocomplete(text):
+    # if text is empty or contains only spaces, return an empty list
+    try:
+
+        if text == '':
+            return {'words': []}
+        words = preprocess_text(text)
+        # with autocomplete.app_context():
+        data = pd.read_csv('/Auto_Complete/Auto_Complete/testless_autocomplete/src/ngram.csv')
+        
+        print("HIIIII")
+
+        data.set_index('ngram', inplace=True)        
+        return {'words': data.loc[words[-1]]['next_word']} 
+    except:
+        return {'words': []} 
+
