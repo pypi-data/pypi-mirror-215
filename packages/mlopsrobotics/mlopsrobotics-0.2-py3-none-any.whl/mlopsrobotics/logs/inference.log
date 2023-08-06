@@ -1,0 +1,34 @@
+2023-06-15 15:02:26.941 | INFO     | __main__:<module>:98 - Welcome at the inference script, default settings are chosen
+2023-06-15 15:02:26.942 | SETTINGS | __main__:<module>:111 - ---- Chosen Setting ----
+2023-06-15 15:02:26.942 | SETTINGS | __main__:<module>:112 - - MODE: local
+2023-06-15 15:02:26.943 | SETTINGS | __main__:<module>:113 - - YOLO Model Path: ./data/Yolo_weights/best.pt
+2023-06-15 15:02:26.943 | SETTINGS | __main__:<module>:114 - - Image Path:  ./data/test_images/5-c.png
+2023-06-15 15:02:26.943 | SETTINGS | __main__:<module>:115 - - Localization Model Path: ./data/object_loc_weights/weights_Localization_XY_YAW.pt
+2023-06-15 15:02:26.943 | INFO     | __main__:inferenceF:41 - Inference on YOLO computer vision model...
+2023-06-19 22:25:13.371 | SETTINGS | __main__:train_locF:66 - ---- Chosen Setting ----
+2023-06-19 22:25:13.373 | SETTINGS | __main__:train_locF:67 - - Data Path: data/object_loc_datasets
+2023-06-19 22:25:13.373 | SETTINGS | __main__:train_locF:68 - - Batch Size:  64
+2023-06-19 22:25:13.373 | SETTINGS | __main__:train_locF:69 - - Epoch: 1
+2023-06-19 22:25:13.373 | SETTINGS | __main__:train_locF:70 - - Save path: weights_Localization_XY_YAW.pt
+2023-06-19 22:25:13.373 | INFO     | __main__:train_locF:72 - Initializing localisation model...
+2023-06-19 22:25:13.616 | INFO     | __main__:train_locF:75 - Loading and Process data...
+2023-06-19 22:25:50.795 | SETTINGS | __main__:train_locF:66 - ---- Chosen Setting ----
+2023-06-19 22:25:50.795 | SETTINGS | __main__:train_locF:67 - - Data Path: .data/object_loc_datasets
+2023-06-19 22:25:50.795 | SETTINGS | __main__:train_locF:68 - - Batch Size:  64
+2023-06-19 22:25:50.795 | SETTINGS | __main__:train_locF:69 - - Epoch: 1
+2023-06-19 22:25:50.796 | SETTINGS | __main__:train_locF:70 - - Save path: .weights_Localization_XY_YAW.pt
+2023-06-19 22:25:50.796 | INFO     | __main__:train_locF:72 - Initializing localisation model...
+2023-06-19 22:25:51.033 | INFO     | __main__:train_locF:75 - Loading and Process data...
+2023-06-19 22:27:07.432 | SETTINGS | __main__:train_locF:66 - ---- Chosen Setting ----
+2023-06-19 22:27:07.432 | SETTINGS | __main__:train_locF:67 - - Data Path: ..data/object_loc_datasets
+2023-06-19 22:27:07.432 | SETTINGS | __main__:train_locF:68 - - Batch Size:  64
+2023-06-19 22:27:07.432 | SETTINGS | __main__:train_locF:69 - - Epoch: 1
+2023-06-19 22:27:07.433 | SETTINGS | __main__:train_locF:70 - - Save path: ..weights_Localization_XY_YAW.pt
+2023-06-19 22:27:07.433 | INFO     | __main__:train_locF:72 - Initializing localisation model...
+2023-06-19 22:27:07.688 | INFO     | __main__:train_locF:75 - Loading and Process data...
+2023-06-20 12:03:25.428 | INFO     | __main__:<module>:170 - Welcome at the Evaluation Localisation model script
+2023-06-20 12:03:25.430 | INFO     | __main__:<module>:190 - ---- Chosen Setting ----
+2023-06-20 12:03:25.430 | INFO     | __main__:<module>:191 - - Mode: local
+2023-06-20 12:03:25.430 | INFO     | __main__:<module>:192 - - Data Path: data/object_loc_datasets
+2023-06-20 12:03:25.430 | INFO     | __main__:<module>:193 - - Location of saved loc weights:  weights_Localization_XY_YAW.pt
+2023-06-20 12:03:27.558 | INFO     | __main__:loc_evaluation:100 - Initializing localisation model...
