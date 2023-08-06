@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_ags02ma/__init__.py", "github:jposada202020/MicroPython_AGS02MA/micropython_ags02ma/__init__.py"],
+    ["micropython_ags02ma/ags02ma.py", "github:jposada202020/MicroPython_AGS02MA/micropython_ags02ma/ags02ma.py"]
+  ],
+  "version": "0.1"
+}
