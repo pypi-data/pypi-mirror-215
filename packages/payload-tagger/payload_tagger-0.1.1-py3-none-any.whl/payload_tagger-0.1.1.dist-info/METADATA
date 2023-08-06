@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: payload_tagger
+Version: 0.1.1
+Project-URL: Documentation, https://github.com/Tomperez98/payload-tagger#readme
+Project-URL: Issues, https://github.com/Tomperez98/payload-tagger/issues
+Project-URL: Source, https://github.com/Tomperez98/payload-tagger
+License-File: LICENSE
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: result
+Provides-Extra: dev
+Requires-Dist: pyrgo; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Payload Tagger
