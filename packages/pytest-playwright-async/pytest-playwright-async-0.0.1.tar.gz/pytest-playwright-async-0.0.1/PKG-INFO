@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pytest-playwright-async
+Version: 0.0.1
+Author-email: m9810223 <m9810223@gmail.com>
+License: MIT
+Requires-Python: >=3.8
