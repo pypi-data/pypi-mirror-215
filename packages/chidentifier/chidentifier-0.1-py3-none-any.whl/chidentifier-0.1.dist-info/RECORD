@@ -1,0 +1,12 @@
+chidentifier/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+chidentifier/chidentifierlib.py,sha256=CoMaLvUISMI5VAYZeQ4BNVjllIKpklPMHZ4R4l_PXq4,20380
+chidentifier-0.1.data/scripts/x.chidentifier.py,sha256=WW2ZTnuj6BJp-PtnKe_dH8R1wuu7_smCECjoEItRtRk,3527
+uptogithub/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+uptogithub/setup.py,sha256=GoKRpqwpHJsoIMrRfcfSkrAGx2LakjtEjVKjGAMypto,1071
+uptogithub/x.chidentifier.py,sha256=YycYyQGFvzMGyNs2dHpCF-5Kerx2I5W49j3DyyPefn4,3541
+uptogithub/chidentifier/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+uptogithub/chidentifier/chidentifierlib.py,sha256=CoMaLvUISMI5VAYZeQ4BNVjllIKpklPMHZ4R4l_PXq4,20380
+chidentifier-0.1.dist-info/METADATA,sha256=-4zQMcbMzMpDdl-vNtlM8m2064jIhURUbia_kSM2yAA,1861
+chidentifier-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+chidentifier-0.1.dist-info/top_level.txt,sha256=ZeGnAaQheAwmDfXvD8KXCwWeCOPC63M0XRRdjMgmpPE,24
+chidentifier-0.1.dist-info/RECORD,,
