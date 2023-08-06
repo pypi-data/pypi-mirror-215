@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: miejskiapi
+Version: 0.0.1
+Summary: Miejski.pl API Wrapper, but brute forcing from the website.
+Author-email: PanSageYT <pansage@hugedick.fyi>
+Project-URL: Homepage, https://github.com/PanSageYT/miejskiapi
+Project-URL: Bug Tracker, https://github.com/PanSageYT/miejskiapi/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
