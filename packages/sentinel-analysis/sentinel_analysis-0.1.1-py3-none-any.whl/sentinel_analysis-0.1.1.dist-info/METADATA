@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sentinel-analysis
+Version: 0.1.1
+Summary: This tools allows for a user, by means of specified flags, to process a parquet file containing traffic dumps in search for a set of traffic patterns
+Author: David Araújo
+Author-email: david2araujo5@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+

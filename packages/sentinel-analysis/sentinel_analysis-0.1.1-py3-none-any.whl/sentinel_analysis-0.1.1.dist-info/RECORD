@@ -1,0 +1,9 @@
+sentinel_analysis/GeoIP_DBs/GeoIP.dat,sha256=_VKphDzOhxsWMGcWy01Qj3hOlAIRrU4y9JmlSQM-mlE,2426645
+sentinel_analysis/GeoIP_DBs/GeoIPASNum.dat,sha256=UQgFLMa-1LkErWc28iuA6U9gDNcAh-iBCsqlCQ85HH4,6025934
+sentinel_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentinel_analysis/__main__.py,sha256=-SIIcn7oo02VqxKId_dRLeeesYGqL9p8Ir_NvvGKCl0,7219
+sentinel_analysis/alert.py,sha256=FABsjPqZjuXi7SAcLs-w_WgbtttdCJ1Vb9wDtqRKTmo,3670
+sentinel_analysis/report.py,sha256=BE88eMYvH_0AK05uThTeIDPzeUreWkkdAt0kqEB_WPg,478
+sentinel_analysis-0.1.1.dist-info/METADATA,sha256=SRdhrBZqnh2-CuKC3699eL8J2PCGNh2pgHQhdrlIFtc,450
+sentinel_analysis-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sentinel_analysis-0.1.1.dist-info/RECORD,,
