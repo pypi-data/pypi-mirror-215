@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+configonaut/__init__.py
+configonaut/configonaut.py
+configonaut.egg-info/PKG-INFO
+configonaut.egg-info/SOURCES.txt
+configonaut.egg-info/dependency_links.txt
+configonaut.egg-info/top_level.txt
