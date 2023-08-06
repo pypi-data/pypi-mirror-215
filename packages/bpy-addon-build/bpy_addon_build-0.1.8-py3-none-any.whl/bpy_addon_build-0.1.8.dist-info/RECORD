@@ -1,0 +1,7 @@
+bpy_addon_build/__init__.py,sha256=NR1I7wuHHpX_tC2G8PP5_DtWgowvq-gyEsXX15HLsDI,4770
+bpy_addon_build/actions.py,sha256=8CsS1OgOcL_RkAQx6hxrTHrHJQmNM5sVblcbvuhiAAk,1642
+bpy_addon_build/yaml_conf.py,sha256=cPp190YyBG4SwwZm5IHMQBQsZUpRw1cPpljPz-kmZNs,1021
+bpy_addon_build-0.1.8.dist-info/METADATA,sha256=k3vZHzIG9krVSuKAsGZS0OEw38HHiYRrpcp3U_y2MFM,730
+bpy_addon_build-0.1.8.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bpy_addon_build-0.1.8.dist-info/entry_points.txt,sha256=LG8FdsoHHmuYBnNb00msD4z7qzDvrvUzD9MhTKFt7YE,56
+bpy_addon_build-0.1.8.dist-info/RECORD,,
