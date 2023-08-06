@@ -1,0 +1,7 @@
+pandas==2.0.2
+requests
+pytest
+coverage
+pytest-cov
+sphinx
+alabaster

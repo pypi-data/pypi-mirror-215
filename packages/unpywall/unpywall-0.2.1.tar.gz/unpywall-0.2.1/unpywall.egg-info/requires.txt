@@ -1,0 +1,9 @@
+pandas>=2.0
+requests
+
+[dev]
+pytest
+coverage
+pytest-cov
+sphinx
+alabaster
