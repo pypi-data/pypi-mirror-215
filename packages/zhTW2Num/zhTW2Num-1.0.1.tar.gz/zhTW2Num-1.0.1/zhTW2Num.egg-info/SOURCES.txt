@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+./zhTW2Num/__init__.py
+./zhTW2Num/lib.py
+zhTW2Num.egg-info/PKG-INFO
+zhTW2Num.egg-info/SOURCES.txt
+zhTW2Num.egg-info/dependency_links.txt
+zhTW2Num.egg-info/top_level.txt
