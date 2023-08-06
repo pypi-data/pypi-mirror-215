@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+color_pprint/__init__.py
+color_pprint/__main__.py
+color_pprint.egg-info/PKG-INFO
+color_pprint.egg-info/SOURCES.txt
+color_pprint.egg-info/dependency_links.txt
+color_pprint.egg-info/requires.txt
+color_pprint.egg-info/top_level.txt
+color_pprint/ansi/__init__.py
