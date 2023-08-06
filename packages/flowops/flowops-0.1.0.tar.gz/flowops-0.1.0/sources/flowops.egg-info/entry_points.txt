@@ -1,0 +1,2 @@
+[console_scripts]
+flowops = flowops:__main__
