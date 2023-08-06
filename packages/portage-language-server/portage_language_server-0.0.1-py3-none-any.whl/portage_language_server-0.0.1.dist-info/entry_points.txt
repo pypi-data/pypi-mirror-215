@@ -1,0 +1,2 @@
+[console_scripts]
+portage-language-server = portage_language_server.__main__:main
