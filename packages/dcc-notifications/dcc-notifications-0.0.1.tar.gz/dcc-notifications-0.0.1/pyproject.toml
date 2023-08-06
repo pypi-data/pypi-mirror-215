@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dcc-notifications"
+version = "0.0.1"
+authors = [{name = "Nils Soderman"}]
+license = {file = "LICENSE"}
+description = "Experimental library for showing notifications in DCC applications"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Operating System :: OS Independent",
+    "Development Status :: 2 - Pre-Alpha"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nils-soderman/dcc-notifications"
+"Bug Tracker" = "https://github.com/nils-soderman/dcc-notifications/issues"
+
+[options.package_data]
+dcc_notification = ["dcc_notification/styles/default.qss"]
+
+[tool.setuptools.package-data]
+dcc_notification = ["**/*.qss"]

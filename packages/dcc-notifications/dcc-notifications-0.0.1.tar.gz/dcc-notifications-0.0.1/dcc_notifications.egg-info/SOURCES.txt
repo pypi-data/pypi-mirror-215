@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+dcc_notification/__init__.py
+dcc_notification/manager.py
+dcc_notification/notification_message.py
+dcc_notification/notification_wrapper.py
+dcc_notification/styles/default.qss
+dcc_notifications.egg-info/PKG-INFO
+dcc_notifications.egg-info/SOURCES.txt
+dcc_notifications.egg-info/dependency_links.txt
+dcc_notifications.egg-info/top_level.txt

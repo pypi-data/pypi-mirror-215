@@ -1,0 +1,21 @@
+QLabel#title {
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
+QPushButton#closeButton {
+    border: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Segoe UI";
+}
+
+QPushButton#closeButton:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+QWidget#topBar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
