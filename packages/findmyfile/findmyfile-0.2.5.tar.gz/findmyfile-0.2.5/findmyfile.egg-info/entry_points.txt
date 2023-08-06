@@ -1,0 +1,2 @@
+[console_scripts]
+fmf = find_my_files.main:main
