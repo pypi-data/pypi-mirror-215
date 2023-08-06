@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/molo.egg-info/PKG-INFO
+src/molo.egg-info/SOURCES.txt
+src/molo.egg-info/dependency_links.txt
+src/molo.egg-info/top_level.txt
+src/mypackage/__init__.py
+src/mypackage/main.py
+src/mypackage/print.py
