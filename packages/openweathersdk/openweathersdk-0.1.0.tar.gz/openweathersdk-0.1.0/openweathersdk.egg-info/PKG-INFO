@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: openweathersdk
+Version: 0.1.0
+Summary: An SDK for getting weather and forecast information, using OpenWeatherMap api
+Home-page: https://github.com/dasilvactu/openweatherSDK
+Author: Marcus Vinicius da Silva
+Author-email: msilva@ice.ufjf.br
+Classifier: Programming Language :: Python :: 3.11
