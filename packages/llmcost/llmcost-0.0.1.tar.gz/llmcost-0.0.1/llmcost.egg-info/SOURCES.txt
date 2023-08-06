@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+llmcost/__init__.py
+llmcost.egg-info/PKG-INFO
+llmcost.egg-info/SOURCES.txt
+llmcost.egg-info/dependency_links.txt
+llmcost.egg-info/top_level.txt
