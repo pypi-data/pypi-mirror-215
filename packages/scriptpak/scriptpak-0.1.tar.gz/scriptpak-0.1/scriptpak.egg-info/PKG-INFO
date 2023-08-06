@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: scriptpak
+Version: 0.1
+Summary: The scriptpak programming language
+Author: RixTheTyrunt
+Author-email: rixthetyrunt@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
