@@ -1,0 +1,9 @@
+docgen/__init__.py,sha256=Noun0LQBHCTZRZBCqSSj54Gg1V7pTmT6tUXPhoKxFio,132
+docgen/description.py,sha256=EJkCw8jROtvmJmICH76FZba0FL3J-7IEBgbJ7sUc-IA,273
+docgen/run.py,sha256=DWglt2-b2slBAYTH6bZblGw6t6rXsFiKTQXzbMwAxzw,2389
+docgen/system_tests.py,sha256=GZcctLh-QuZRg9j8rkGi4b3dCW0mjsZQpdK-lkG5GjY,3874
+docgen/test_runner.py,sha256=snSpY_sstzmcmQVwfhVldoNnzDaZDanL3YVbDR9AoxA,746
+pdd_docgen-1.0.16.dist-info/METADATA,sha256=xYD-a9Sfj3SNvzUDp2-8YQudhZTAmts1L9HBjplQEyE,369
+pdd_docgen-1.0.16.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+pdd_docgen-1.0.16.dist-info/top_level.txt,sha256=ow-Fj1rHRtV5_ySxXSRA2q32ZL__Gmpj0WieZ5_niXs,7
+pdd_docgen-1.0.16.dist-info/RECORD,,
