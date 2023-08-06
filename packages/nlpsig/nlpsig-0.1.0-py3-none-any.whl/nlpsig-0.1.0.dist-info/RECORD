@@ -1,0 +1,13 @@
+nlpsig/__init__.py,sha256=zXQDLD4tbdXal3-ybI5m_LVCETJG8pOWSv_SNEPusVY,801
+nlpsig/classification_utils.py,sha256=3jJNS6M7hUq5BolisR7rpMEv1LGRXOqILTVwPeiQ7tY,13945
+nlpsig/data_preparation.py,sha256=NsfLYAS5F251cOPyAn1QMN3WneVxAVB210NbCvZqCyQ,44002
+nlpsig/dimensionality_reduction.py,sha256=0Hs2M1OZK_JnW69tmlEXpQa3u7Gog3uW28KWfwf8QuQ,9275
+nlpsig/encode_text.py,sha256=SvHcbk71_e_kgaMhpoxhEjw2FPDbzGBn6D0BOMfKSwQ,55334
+nlpsig/plot_embedding.py,sha256=SkJJ6pH7kBw1_ad-dHYcEetBKSZHQuKD2GC02WNeWas,4923
+nlpsig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlpsig/_compat/__init__.py,sha256=U4S_2y3zgLZVfMenHRaJFBW8yqh2mUBuI291LGQVOJ8,35
+nlpsig/_compat/typing.py,sha256=5bYOWIRnQU3d615fwhN3cyGgsdXk5HbSjijavkINt-o,309
+nlpsig-0.1.0.dist-info/METADATA,sha256=w0zqbaiq4VE8DRnhzR91cBXCddYb6OtJCRywFnqEqRg,4183
+nlpsig-0.1.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+nlpsig-0.1.0.dist-info/licenses/LICENSE,sha256=eKOkAwRdyJIpdZGnQKtiE02YxBBqB1V-3Vhjz5ZrUtM,1523
+nlpsig-0.1.0.dist-info/RECORD,,
