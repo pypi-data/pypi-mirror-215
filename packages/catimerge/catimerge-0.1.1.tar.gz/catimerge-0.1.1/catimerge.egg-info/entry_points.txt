@@ -1,0 +1,3 @@
+[console_scripts]
+catimerge = catimerge:main
+catimerge-gui = catimerge:gui

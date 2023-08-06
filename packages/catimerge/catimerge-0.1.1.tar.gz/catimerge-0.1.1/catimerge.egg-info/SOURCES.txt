@@ -1,0 +1,13 @@
+LICENSE.AGPLv3
+MANIFEST.in
+Makefile
+README.md
+changelog.txt
+setup.py
+catimerge/__init__.py
+catimerge/py.typed
+catimerge.egg-info/PKG-INFO
+catimerge.egg-info/SOURCES.txt
+catimerge.egg-info/dependency_links.txt
+catimerge.egg-info/entry_points.txt
+catimerge.egg-info/top_level.txt
