@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: boneflet
+Version: 0.1.1
+Author-Email: Rongrui Zhan <2742392377@qq.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: flet>=0.7.4
+Description-Content-Type: text/markdown
+
+# BoneFlet
+
+基于 flet 的包

@@ -1,0 +1,26 @@
+[project]
+name = "BoneFlet"
+dynamic = []
+description = ""
+authors = [
+    { name = "Rongrui Zhan", email = "2742392377@qq.com" },
+]
+dependencies = [
+    "flet>=0.7.4",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+version = "0.1.1"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm.version]
+source = "file"
+path = "boneflet/__init__.py"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
