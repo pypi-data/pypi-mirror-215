@@ -1,0 +1,7 @@
+numpy
+requests
+scikit-learn
+
+[test]
+pytest
+coverage

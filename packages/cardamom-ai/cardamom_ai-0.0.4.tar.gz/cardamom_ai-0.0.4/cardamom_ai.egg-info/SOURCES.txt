@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+cardamom_ai.egg-info/PKG-INFO
+cardamom_ai.egg-info/SOURCES.txt
+cardamom_ai.egg-info/dependency_links.txt
+cardamom_ai.egg-info/requires.txt
+cardamom_ai.egg-info/top_level.txt
