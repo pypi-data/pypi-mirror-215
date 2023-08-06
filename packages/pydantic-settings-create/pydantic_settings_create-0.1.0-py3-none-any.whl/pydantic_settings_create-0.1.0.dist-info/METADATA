@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pydantic-settings-create
+Version: 0.1.0
+Summary: Create Pydantic Settings
+Author-email: m9810223 <m9810223@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/m9810223/pydantic-settings-create
+Project-URL: Source, https://github.com/m9810223/pydantic-settings-create
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (>=2.0b1)
+Requires-Dist: pydantic-settings (>=2.0b1)
+
+# Create Pydantic Settings Model from function signature
+
+[![PyPI](https://img.shields.io/pypi/v/pydantic-settings-create)](https://pypi.org/project/pydantic-settings-create/)
+
+## Installation
+
+```shell
+pip install pydantic-settings-create
+```
