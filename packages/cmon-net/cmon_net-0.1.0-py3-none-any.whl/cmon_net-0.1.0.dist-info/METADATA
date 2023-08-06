@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cmon-net
+Version: 0.1.0
+Summary: An CLI app to manage all network interfaces namespace independent
+License: MIT
+Author: Luís Eduardo
+Author-email: eduardovansilva@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyroute2 (>=0.7.9,<0.8.0)
+Requires-Dist: textual (>=0.28.1,<0.29.0)
+Description-Content-Type: text/markdown
+
+# cmon-net
+
+cmon-net (come-on or containers network monitor) is a full-rich friendly CLI tool to verify all network information context independent (namespace). It is usefull to debug or understrand network connections and rules in environment with multiples namespaces (specially environments having multiples containers like kubenetes, docker, cloud-based containers, etc).
+
+TO DO Imagem
+
+## How to install
+
+```sh
+$ pip install cmon-net
+```
+

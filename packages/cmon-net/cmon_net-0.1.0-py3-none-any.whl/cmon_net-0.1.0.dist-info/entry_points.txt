@@ -1,0 +1,3 @@
+[console_scripts]
+cmon-net=cmon_net.cmon_net:app
+
