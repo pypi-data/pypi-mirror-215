@@ -1,0 +1,10 @@
+bottle
+PyJWT[crypto]
+aiohttp
+i2
+glom
+gunicorn
+requests
+strand
+swagger-ui-py
+pycparser
