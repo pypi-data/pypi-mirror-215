@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: celeste
+Version: 1.0a2
+Summary: The celeste.
+Home-page: http://gqylpy.com
+Author: 竹永康
+Author-email: <gqylpy@outlook.com>
+License: MIT
+Project-URL: Source, https://github.com/gqylpy/celeste
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[<img alt="LOGO" src="http://www.gqylpy.com/static/img/favicon.ico" height="21" width="21"/>](http://www.gqylpy.com)
+[![Release](https://img.shields.io/github/release/gqylpy/celeste.svg?style=flat-square")](https://github.com/gqylpy/celeste/releases/latest)
+[![Python Versions](https://img.shields.io/pypi/pyversions/celeste)](https://pypi.org/project/celeste)
+[![License](https://img.shields.io/pypi/l/celeste)](https://github.com/gqylpy/celeste/blob/main/LICENSE)
+
+# celeste
+
+> 创建蓝图以定义数据结构，使用蓝图以验证数据。
+
+<kbd>pip3 install celeste</kbd>
+
+```python
+from celeste import Celeste
+
+celeste = Celeste({'name': {type: str}})
+celeste.validate({'name': 'Tom'})
+```
