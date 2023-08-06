@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.13.7
+------
+
+* Handle quota exceeded in HTTP 403 (#543)
