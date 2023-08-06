@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyLauda
+Version: 1.0.3
+Summary: German Aerospace Center
+Home-page: http://gitsrv.intra.dlr.de/nieh_ko/PyLauda
+Author: German Aerospace Center
+Author-email: konstantin.niehaus@dlr.de
+License: MIT
+Keywords: driver,rs232,rs485,temperature control
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: pyserial (==3.4)
+
+Python driver for Lauda temperature control systems
