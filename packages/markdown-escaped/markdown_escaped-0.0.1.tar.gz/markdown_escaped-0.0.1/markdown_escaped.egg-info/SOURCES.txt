@@ -1,0 +1,9 @@
+COPYING
+README.md
+markdown_escaped.py
+setup.py
+markdown_escaped.egg-info/PKG-INFO
+markdown_escaped.egg-info/SOURCES.txt
+markdown_escaped.egg-info/dependency_links.txt
+markdown_escaped.egg-info/requires.txt
+markdown_escaped.egg-info/top_level.txt
