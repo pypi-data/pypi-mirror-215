@@ -1,0 +1,7 @@
+openai
+docstring-parser
+pydantic>=2.0b3
+marvin
+
+[test]
+pytest
