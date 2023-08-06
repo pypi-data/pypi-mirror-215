@@ -1,0 +1,9 @@
+hellomcb/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+hellomcb/somehello.py,sha256=Fj2yQ5fh8K9f01Yk2p5YZvSa0rguwcr0AjylW7KW9KM,137
+hellomcb/somehelloaux/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+hellomcb/somehelloaux/auxilliary.py,sha256=9n3SlBRvW5KbWoJ8K1RsLNrwNZPpHA9C5Rm2Dty3oFY,16
+hellomcb-0.0.2.dist-info/METADATA,sha256=9co918fbwYkcYF0TMX4B7r3Aokq1U_ghWAzZDPwGqDA,53
+hellomcb-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hellomcb-0.0.2.dist-info/entry_points.txt,sha256=l7wIHzC8jN313bTzyGto2vR-esWsmkoE5dTlUZ7fYfc,61
+hellomcb-0.0.2.dist-info/top_level.txt,sha256=jBEejq6k-lplMXiYnTcYKvNYFQ11FHbKupj7q6r4YNA,9
+hellomcb-0.0.2.dist-info/RECORD,,
