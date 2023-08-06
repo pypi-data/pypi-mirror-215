@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Mensajes-Isidro
+Version: 6.0.0
+Summary: Un paquete para saludar y despedir
+Home-page: https://www.ibcop.com
+Author: Isidro Bellón Cano
+Author-email: isidro.bellon@gmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.21.0)
+
+#Mensajes-Isidro
+
+El paquete de mensajería del Curso Python de Héctor Costa Guzmán
+
