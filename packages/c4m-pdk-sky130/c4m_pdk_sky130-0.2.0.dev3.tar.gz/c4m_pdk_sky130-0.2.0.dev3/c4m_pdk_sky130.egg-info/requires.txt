@@ -1,0 +1,5 @@
+setuptools
+PySpice>=1.5
+PDKMaster~=0.9.3
+c4m-flexcell~=0.4.0.dev0
+c4m-flexio~=0.3.0
