@@ -1,0 +1,14 @@
+{
+  "inbounds": {
+    "trojanIn": {
+      "protocol": "trojan",
+      "setting": {
+        "address": "0.0.0.0",
+        "password": "123",
+        "random": "123",
+        "port": 443
+      },
+      "route": "freedom"
+    }
+  }
+}
