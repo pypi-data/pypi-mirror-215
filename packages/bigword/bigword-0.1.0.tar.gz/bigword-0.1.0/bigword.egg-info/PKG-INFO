@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bigword
+Version: 0.1.0
+Summary: Print big words on a grid
+Home-page: https://github.com/caseyrwebb/bigword
+Author: Casey Webb
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10.5
+Description-Content-Type: text/markdown
+
+# BigWord
+
+---
+
+---
+
+---
+
+---
+
+---
+
+`bigword` is a Python package that enables you to print words in a grid on the terminal. Words are passed as command line arguments. The grid adjusts to the terminal width, ensuring the text wraps appropriately. As words wrap to the next line, the characters take up less space to accommodate the total amount of characters per line.
+
+## Installation
+
+You can install `bigword` using pip:
+
+```bash
+pip install bigword
+```
+
+

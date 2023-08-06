@@ -1,0 +1,12 @@
+README.md
+setup.py
+bigword/__init__.py
+bigword/__main__.py
+bigword/grid.py
+bigword/letter_class.py
+bigword/letter_dict.py
+bigword.egg-info/PKG-INFO
+bigword.egg-info/SOURCES.txt
+bigword.egg-info/dependency_links.txt
+bigword.egg-info/entry_points.txt
+bigword.egg-info/top_level.txt
