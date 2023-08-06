@@ -1,0 +1,15 @@
+dockery-0.5.0.dist-info/METADATA,sha256=1qHECgA5wd0VWU2mCN7m_OgNcmmJqvTbJQxVaxmkGS4,1345
+dockery-0.5.0.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+dockery-0.5.0.dist-info/entry_points.txt,sha256=j98F4ADSIzjKD-5Fo4oglA1mt6nF_G3-W9KLFIj9edk,50
+dockery-0.5.0.dist-info/licenses/LICENSE,sha256=MfkNyZDZquTulwPaIAtAcAUoWbJnB3BUTrqGyRHImE8,1082
+dockery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockery/custom_widgets.py,sha256=b9Ho32RFIY4NTdrrGyCPp5AyD1029tfn1ACxfcEaaVc,1760
+dockery/dockery.py,sha256=gWW70pc1Iw2lA4tWY7K5On5B0mVzLfBHA1rgdfRTxQk,2767
+dockery/gui.py,sha256=1bRMD7QR_1tgxuu7GKQyxg-_DkGAGQSsaoUwg0v1B8g,6167
+dockery/images.py,sha256=dwNR0NvW5c2B5Y12UTvRWvSsExBm4YsLQ_IbWt2c_x4,1616
+dockery/logs.py,sha256=N9iZ0I0RTqlHDLtIqZ4OTyGV2LSV3PR0iPThijy7Uig,1899
+dockery/networks.py,sha256=OLNlkcYd8Kc6A9XtkjVEOM1dXxYzXDR3K8iZsDGxggY,1763
+dockery/style.css,sha256=4lCUZ2ZYovSZaF0Q6v0Z4iSRpznqwkoAH_CPVpg4C6g,1070
+dockery/utils.py,sha256=UaCFfnRTa4GHaNgXgYkv5hvGKrhqmlm1nkWRQX78XkU,881
+dockery/volumes.py,sha256=DzGK3L-qCuWkDCYEp_TSgO41eDIX7p9YK0PthF47akA,1744
+dockery-0.5.0.dist-info/RECORD,,
