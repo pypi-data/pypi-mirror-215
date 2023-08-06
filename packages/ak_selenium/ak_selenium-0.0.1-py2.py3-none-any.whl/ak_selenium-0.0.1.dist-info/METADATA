@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ak_selenium
+Version: 0.0.1
+Summary: Selenium package with requests integration and anti-bot detection measures
+Author-email: Arun Kishore <pypi@rpakishore.co.in>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Requires-Dist: requests
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: ipykernel ; extra == "test"
+Project-URL: Home, https://github.com/rpakishore/ak_selenium
+Provides-Extra: test
