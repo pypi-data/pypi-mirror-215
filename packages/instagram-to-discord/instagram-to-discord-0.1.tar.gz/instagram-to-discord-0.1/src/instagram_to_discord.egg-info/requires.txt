@@ -1,0 +1,5 @@
+requests
+certifi
+idna
+instaloader
+urllib3
