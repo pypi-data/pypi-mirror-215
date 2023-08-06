@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpHTMLpanel/__init__.py
+Lib/wbpHTMLpanel.egg-info/PKG-INFO
+Lib/wbpHTMLpanel.egg-info/SOURCES.txt
+Lib/wbpHTMLpanel.egg-info/dependency_links.txt
+Lib/wbpHTMLpanel.egg-info/entry_points.txt
+Lib/wbpHTMLpanel.egg-info/requires.txt
+Lib/wbpHTMLpanel.egg-info/top_level.txt
