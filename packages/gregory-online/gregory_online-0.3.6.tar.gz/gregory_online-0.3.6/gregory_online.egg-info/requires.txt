@@ -1,0 +1,13 @@
+fire
+scipy
+pyfromroot
+pytermgui
+readchar
+fastnumbers
+sshkeyboard
+terminaltables
+fastparquet
+tables
+simple_term_menu
+tdb_io
+bs4

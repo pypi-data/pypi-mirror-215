@@ -1,0 +1,1583 @@
+#!/usr/bin/env python3
+
+# to override print <= can be a big problem with exceptions
+from __future__ import print_function # must be 1st
+import builtins
+
+import sys
+
+from fire import Fire
+
+from gregory_online.version import __version__
+#from gregory_online import utilone
+from gregory_online import config
+from gregory_online import fetchnp
+from gregory_online import topbar
+from gregory_online import key_enter
+
+from gregory_online.utils import is_int, is_float, is_bool
+from gregory_online.utils import ecalibration
+
+#from gregory_online import histo_np_ops
+from gregory_online.histo_np_ops import apply_calib, fill_h_with_np
+# CONTAINER:
+from gregory_online.histo_global_cont import histograms
+from gregory_online.histo_global_cont import canvases
+from gregory_online.histo_global_cont import range_and_peaks
+#
+# local calibration: list; a,b, database for fits
+from gregory_online.histo_global_cont import ECALIB, ECALIBa, ECALIBb, ECALIBdb
+#
+from gregory_online.histo_global_cont import last_fit_res # last fit result
+from gregory_online.histo_global_cont import gregory_started, is_zoomed
+# histo content manip
+from  gregory_online.histo_analyze import histo_details, histo_zoomenergy, \
+    histo_zoombins, histo_unzoom, histo_area, bin2ene, ene2bin, \
+    get_calib_coefs, histo_fit, get_ene_range
+
+
+import gregory_online.histo_io as histo_io
+from  gregory_online.histo_io import save_hist_txt, select_histo_to_load, load_hist_txt
+
+import gregory_online.ascgeneric as ascgeneric  # asc_stat_print - orig.  pd_detect_zeroes
+
+from  gregory_online.histo_displ import display_h_name, display_np, refresh_canvases
+from  gregory_online.decay_db import decay_candidates
+
+
+import threading
+import time
+import datetime as dt
+
+
+from console import fg, bg, fx
+
+import sys
+
+import socket
+
+import os
+
+
+#------display
+import ROOT
+import numpy as np
+import glob
+import re
+
+# prepared for rebin in numpy
+import scipy.ndimage
+
+from math import floor
+import csv
+# import array
+
+import fastnumbers # cor calib, let it crash here
+
+from tdb_io.influx import influxwrite
+
+
+import math
+
+HOSTNAME = socket.gethostname()
+
+#----------------------------global variables
+# histograms = {} # moved to container
+# canvases = {} # c will be dir
+
+
+
+
+#=============== histograms available to the system
+
+#backg_lt = 100 # background livetime
+### backg_np = None
+cala = 1
+calb = 0
+cala_bg = 1
+calb_bg = 0
+h1np = None
+h1np_diff = None # last poll
+h1np_old = None # define 60 sec eg
+h1np_last_interval = 20
+h1np_substr = None # h1np - backg
+#----load separately
+h1np_backg = None
+h1np_backg_lt = 100  # background livetime
+
+
+
+deadt = 0 #  for influx
+deadtavg = [0,0] #  long term dt for histosave # NOT USED
+deadttot = 0
+# global h1np,h1np_diff,h1np_old,h1np_old_age,h1np_substr,h1np_backg,h1np_backg_lt, cala, calb, cala_bg, calb_bg
+
+LOCAL_GLOB_NONE_CALIB = 1 # global normally
+INFLUX = True
+
+ascdf = None # DATAFRAME FOR ASC FILE
+ascdf_chan = None # DATAFRAME FOR ASC FILE
+ascfilename = None # asc filename
+iascfilename = None # ini filename if on http:// and then /tmp
+ascstart = None # ASCIFILE started
+TIMEWIN_US = 0 # Crutial window in ASC erlang analysis - dbl-zero limit
+TRGHOLD = 0
+#======================================== END OF GLOBALS ====================
+
+
+def refresh_canvases():
+    """
+    unselectively refresh every canvas
+    """
+    maxc = ROOT.gROOT.GetListOfCanvases().GetEntries()
+    for i in range(maxc):
+        ci = ROOT.gROOT.GetListOfCanvases().At(i)
+        ci.Modified()
+        ci.Update()
+
+
+
+
+
+
+def has_numbers(inputString):
+    return any(char.isdigit() for char in inputString)
+
+
+
+
+def time2seconds(TIME, defaulttime = "0:0:10"):
+    """
+just convert hand input 1:2:3 to seconds
+    """
+    h=0
+    failed = True
+    if TIME.find(":")<0:
+        try:
+            m = 0
+            s=float(TIME)
+            failed = False
+        except:
+            m,s = 0,1
+    if len(TIME.split(":"))==2:
+        try:
+            m,s=[ int(x) for x in TIME.split(":")]
+            failed = False
+        except:
+            m,s = 0,1
+    if len(TIME.split(":"))==3:
+        try:
+            h,m,s=[ int(x) for x in TIME.split(":")]
+            failed = False
+        except:
+            h,m,s= 0,0,1
+    if failed:
+        return time2seconds( defaulttime)
+    runtime = float( h)*3600+float(m)*60+float(s)
+    return runtime
+
+
+
+
+def rebin_to_std_calib():
+    """
+    convert backg to the current calibration
+    """
+
+
+
+
+def rebin_np( spectrum , sca, shi, order = 3):
+    """
+    should do sca* spectrum + shi .... order 3 has sometimes lower errors
+    """
+    spectrumb = scipy.ndimage.zoom(spectrum, sca, order=order)
+    spectrumb = scipy.ndimage.interpolation.shift(spectrumb, shi , cval=0, order = order)
+    asu = spectrum.sum()
+    bsu = spectrumb.sum()
+    spectrumb=spectrumb/bsu*asu
+    df = len(spectrumb) - len(spectrum)
+    #print( f" b={len(b)}    a={len(a)}   df = {df}")
+    while df<0:
+        spectrumb = np.append( spectrumb,[0] )
+        df = len(spectrumb) - len(spectrum)
+    if df>0:
+        spectrumb = spectrumb[:-df]
+    #print( len(a),"X" ,len(b),  f" 6 -->  {6*sca+shi}" )
+    #print( len(a),"X" ,len(b),  f" 22 -->  {22*sca+shi}" )
+    return spectrumb
+
+
+
+
+def main( target = None , timeold = None , debug=False, server = None, histogram = None, polltime = None, OFFLINE = False):
+    '''
+    Main function of the project
+    Config is settled in the beginning
+    '''
+    #OFFLINE = True
+    #online
+    #if online:
+    #OFFLINE = False
+
+    #======== DEFINE THE CONFIG FILE HERE ========
+    print("i... OVERRIDE the CONFIG with poll 5 sec.")
+    print("i... -s 127.0.0.1 -h b0c01 -p 5")
+    print("i... ")
+
+    # ---------------- container stuff
+    global histograms, canvases, range_and_peaks
+    global gregory_started
+    global last_fit_res
+    global ECALIB, ECALIBa, ECALIBb # calibrations
+    global deadtavg, deadt, deadttot # avg not used; tot from h1np
+    global LOCAL_GLOB_NONE_CALIB
+    global INFLUX
+    global ascdf, ascfilename, iascfilename, ascstart, ascdf_chan, TIMEWIN_US, TRGHOLD # full file, fnname, channel-cut
+    #
+    # --------------    other stuff
+    #global h1np,h1np_diff,h1np_old,h1np_old_age,h1np_substr,h1np_backg,h1np_backg_lt
+    global h1np,h1np_diff,h1np_old,h1np_last_interval,h1np_substr,h1np_backg,h1np_backg_lt, cala, calb, cala_bg, calb_bg
+
+
+    def local_generate_erlangs():
+        erlang2 = ascgeneric.histo_erlang( ascdf_chan ) # nonzero events only
+        histograms['erlang2'] = erlang2
+        display_h_name( 'erlang2' , "c_erlang2" , filled = True, color = 1, simple = True)
+
+        dzeroes = ascgeneric.histo_dzeroes( ascdf_chan )
+        histograms['dzeroes'] = dzeroes
+        dzeroes.SetLineColor(2)
+        #dzeroes.SetFillStyle(3001)
+        #dzeroes.SetFillColor(2)
+        dzeroes.Draw("same")
+        #display_h_name( 'dzeroes' , "c_dzeroes" , filled = False, color = 2, simple = True)
+
+        szeroes = ascgeneric.histo_szeroes( ascdf_chan )
+        histograms['szeroes'] = szeroes
+        szeroes.SetLineColor(3)
+        #szeroes.SetFillStyle(3001)
+        #szeroes.SetFillColor(3)
+        szeroes.Draw("same")
+
+
+    cmd = "" # no key command
+
+    gregory_started = None # dt.datetime.now()
+
+    config.CONFIG['filename'] = "~/.config/gregory_online/cfg.json"
+    config.CONFIG["poll_time"] = 3
+    config_version_code = config.CONFIG["version"]
+
+
+    #print(config.CONFIG["version"], config_version_code)
+    config.load_config()
+    #print(config.CONFIG["version"],config_version_code)
+    config.save_config() # UPDATE WITH THE STUFF HERE ABOVE
+    #print(config.CONFIG)
+    #print(config.CONFIG["version"],config_version_code)
+
+    if float(config_version_code)>float(config.CONFIG["version"]):
+        print(f"X... OLD CONFIG VERSION ON THE DISK: code={config_version_code} ; file={config.CONFIG['version']}")
+        sys.exit(1)
+
+    if target is None:
+        print(" ... give me the target....")
+        print()
+        selections = []
+        for i in config.CONFIG.keys():
+            if type(config.CONFIG[i]) is dict:
+                selections.append( f"      {i:15s}  {config.CONFIG[i]['description']}")
+
+        from simple_term_menu import TerminalMenu
+        terminal_menu = TerminalMenu( selections )
+        choice_index = terminal_menu.show()
+        target = selections[choice_index].strip().split(" ")[0]
+        print(f"                {bg.cyan}      {target}       {bg.default}")
+
+        #sys.exit(1)
+    elif target not in config.CONFIG:
+        print("X... give me the PROPER  target....")
+        for i in config.CONFIG.keys():
+            if type(config.CONFIG[i]) is dict:
+                print(i, type(config.CONFIG[i]) )
+        sys.exit(1)
+
+
+    # $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    CONFIG
+
+    if config.CONFIG[target]['online']:
+        spectrumname = config.CONFIG[target]['spectrum'] # "b0c01"
+        serverc = config.CONFIG[target]['server']  # "192.168.250.60"
+        TITLE = f"GREGORY_ONLINE:  polling the THttpServer on {serverc} port 9009"
+        print(f"{fg.white}")
+        print("_"*(len(TITLE)+22) )
+        print("_"*10, TITLE ,"_"*10)
+        print("_"*(len(TITLE)+22) )
+        print(f"{fg.default}")
+
+    else: # offline
+        spectrumname = None
+        serverc = None
+        INFLUX = False
+        print(f"""
+{fg.white}
+______________________________________________________________
+You are now in {fg.green} OFFLINE {fg.white} mode.
+You can list spectra via '{fg.green}l{fg.white}' or open spectra via '{fg.green}l#{fg.white}'
+                           OR
+list ASC files via '{fg.green}L{fg.white}' or open ASC files via '{fg.green}L#{fg.white}'
+FOLDER:
+{config.CONFIG[target]['data_folder']}
+______________________________________________________________ {fg.default}
+
+
+""")
+
+
+    # override from cmdline
+    if server is not None:
+        print("i... SERVER OVERRIDE:", server)
+        serverc = server
+    if histogram is not None:
+        print("i... HISTOGRAM OVERRIDE:", histogram)
+        spectrumname = histogram
+    if polltime is not None:
+        config.CONFIG["poll_time"] = float(polltime)
+
+
+
+    # INIT HISOGRAM AND SET STEP, PRESETIME
+    if config.CONFIG[target]['online']:
+        b0c01 = fetchnp.Histogram( serverc, spectrumname )
+        b0c01.set_step( config.CONFIG["poll_time"])
+
+        # can get spectrum total time on cmdline
+        if timeold is not None:
+            arg = time2seconds(timeold)
+            print(f"i... total time ({spectrumname} age) is set to {timeold} == {arg} s ")
+            b0c01.set_started_before( arg)
+
+        thr = threading.Thread( target=b0c01.start2collect , args=() )
+        thr.start()
+
+    else:
+        OFFLINE = True
+        thr = threading.Thread( target=None , args=() )
+
+
+    top = topbar.Topbar( bgcolor = bg.blue)
+    top2 = top.add(bgcolor = bg.black)
+
+    #start the Keyboard thread AFTER TOPBAR
+    #print("preparing kthread")
+    # kthread = key_enter.KeyboardThread(key_enter.my_callback)
+
+    kthread = key_enter.KeyboardThreadSsh(ending="q")
+
+
+    #--------- init values for TOP
+    deltat = 0
+    rate = 0
+    runtime = dt.datetime.now()
+    runtime = dt.datetime.now() -runtime
+    lenhistos = 0
+
+    d_last_interval = 0.0
+    warn_del = fg.default
+    unwarn_del = fg.default
+
+    while thr.is_alive() or OFFLINE:
+
+        if not OFFLINE and  b0c01.fetch_flag():
+            # if fetched - get values ==========================
+
+            h1np = b0c01.get_h1np()
+            h1np_diff = b0c01.get_h1np_diff()
+            deltat = b0c01.get_deltat()
+            if runtime>b0c01.get_runtime():
+                deadtavg = [0,0]
+
+            runtime = b0c01.get_runtime() # total histogram time/age; NOT last_interval
+            gregory_started = b0c01.get_started()
+            #if runtime.total_seconds()<=0:
+            #    runtime = 1#dt.datetime.now()-dt.datetime.now()
+            lenhistos = b0c01.get_lenhistos()
+            #print(runtime)
+
+            h1np_old, d_last_interval = b0c01.get_partial_time_histo( h1np_last_interval) # get 20sec old
+
+            # - if the age differs more than 1%, show in red on topbar
+            if d_last_interval/h1np_last_interval>0.01:
+                # print(f"{fg.cyan}i...                    delta in age={d_last_interval:.2f} s, demanded age={h1np_old_age} s{fg.default}")
+                warn_del = f"{fg.white}{bg.red}"
+            else:
+                warn_del = f"{fg.default}{bg.default}"
+            unwarn_del = f"{fg.default}{bg.blue}"
+
+            if LOCAL_GLOB_NONE_CALIB == 1:
+                limits_calib = b0c01.get_limits_calib()
+            if LOCAL_GLOB_NONE_CALIB == 2:
+                limits_calib = b0c01.get_limits_bins() # None calib
+            if LOCAL_GLOB_NONE_CALIB == 0:
+                binrange = b0c01.get_limits_bins()
+                limits_calib = 0*ECALIBa + ECALIBb,binrange[1]*ECALIBa + ECALIBb
+
+            #print( "D... calibration: ",limits_calib)
+
+            rate= h1np_diff.sum()/deltat # does sum contain underflow? ->Integral() doesnot
+            # I like to have underflow there...
+            # deadtavg  is on the line 444
+
+            # print(h1np_diff[0], h1np_diff[1]) # underflow and 1st bin #1
+            #------------------------- ending the small calc
+
+
+
+
+
+            #-----------------------------  DISPLAY AND UPDATE HISTO SECION ------------
+            #-----------------------------  DISPLAY AND UPDATE HISTO SECION ------------
+            #-----------------------------  DISPLAY AND UPDATE HISTO SECION ------------
+            #-----------------------------  DISPLAY AND UPDATE HISTO SECION ------------
+            #-----------------------------  DISPLAY AND UPDATE HISTO SECION ------------
+            #  histograms that need to be updated online
+
+            #if ROOT.gDirectory.FindObject("tot"):
+            fill_h_with_np(h1np,"tot", limits_calib=limits_calib, title=spectrumname)  # total is always there
+
+            #if ROOT.gDirectory.FindObject("rate"):
+            if runtime.total_seconds()>0:
+                fill_h_with_np(h1np,"rat",runtime.total_seconds(), limits_calib=limits_calib,title=spectrumname)  #
+
+            if ROOT.gDirectory.FindObject("diff"):
+                fill_h_with_np(h1np_diff,"diff",deltat, limits_calib=limits_calib, title=spectrumname)  #
+
+
+            if ROOT.gDirectory.FindObject("last"):
+                fill_h_with_np(h1np - h1np_old,"last", h1np_last_interval,
+                               limits_calib=limits_calib,
+                               title = f"last {h1np_last_interval:.1f}s as rate {spectrumname}")  #
+
+            if ROOT.gDirectory.FindObject("sub"):
+                h1np_substr = h1np/runtime.total_seconds() - h1np_backg/h1np_backg_lt
+                errors = np.square( np.sqrt( h1np )/runtime.total_seconds() ) + np.square( np.sqrt(h1np_backg)/h1np_backg_lt )
+                errors = np.sqrt(errors)
+                fill_h_with_np(h1np_substr,"sub",None, errors=errors , limits_calib=limits_calib, title=spectrumname)  #
+                ##display_np( h1np_substr,  "substr", "c_substr", 1, errors)
+
+
+            #if ROOT.gDirectory.FindObject("backg"):
+            #    fill_h_with_np(histograms["backg"],"backg")  # No livetime here
+
+
+            # __________calculate deadtime  for influx________________________
+            # just_spesum = h1np_diff[1:-1].sum()
+            just_spesum = h1np_diff.sum()
+            # print("D... just_spesum==",just_spesum, h1np_diff, h1np)
+            deadt = 0
+            if  just_spesum !=0:
+                # print("D... diff[0]==", h1np_diff[0], h1np_diff[1], len(h1np_diff) )
+                deadt = h1np_diff[0]/just_spesum*100
+
+            #______________ deadtime of all spectrum________________________-
+            just_spesum = h1np.sum()
+            # print("D... just_spesum==",just_spesum, h1np_diff, h1np)
+            deadttot = 0
+            if  just_spesum !=0:
+                # print("D... diff[0]==", h1np_diff[0], h1np_diff[1], len(h1np_diff) )
+                deadttot = h1np[0]/just_spesum*100
+            #deadtavg[0]+=deadt
+            #deadtavg[1]+=1
+
+            if INFLUX and len(h1np_diff)>2:
+                # # just_spesum = h1np_diff[1:-1].sum()
+                # just_spesum = h1np_diff.sum()
+                # # print("D... just_spesum==",just_spesum, h1np_diff, h1np)
+                # deadt = 0
+                # if  just_spesum !=0:
+                #     # print("D... diff[0]==", h1np_diff[0], h1np_diff[1], len(h1np_diff) )
+                #     deadt = h1np_diff[0]/just_spesum*100
+                if is_float(rate) and is_float(deadt):
+                    infvals = f"rate_{spectrumname}={rate:.1f},deadt_{spectrumname}={deadt:.1f}"
+                    # print("D...",infvals)
+                    try:
+                        influxwrite("test", f"greg",  infvals ) # hostname added automat
+                    except:
+                        INFLUX = False
+                        pass
+
+
+
+
+            # IN ANY CASE... REFRESH ALL CANVASES
+            refresh_canvases()
+
+        # it was if fetch_flag............__________________________________________
+        elif OFFLINE:
+            refresh_canvases()
+
+
+            #     print(f"i... new fetch: rate= {h1np_diff.sum()/deltat:.2f} (dt={deltat:.2f})")
+
+            #--------------------------- influx stuff ---------------
+
+            scr_outputed = False
+            if rate>0:
+                # DONT SEND in the beginning (what about LARGE values?)
+                if not OFFLINE and runtime.total_seconds()>1:
+                    print(f"i... {fg.green} watchdog {fg.default} T_fetch={1000*b0c01.tcp_fetch_time:.0f}ms           ", end = "\r")
+                    scr_outputed = True
+
+                    # k40 = 0.
+                    # if "last" in histograms:
+                    #     histo_zoomenergy( histograms["last"], 1440.0, 1480.0  )
+                    #     res = histo_fit( histograms["last"],  canvas = None )# "fitresult")
+                    #     if res is not None:
+                    #         if "area" in res.keys() and "E" in res.keys():
+                    #             k40 = res["area"]
+                    # print("test",f"{HOSTNAME}_grg",f"rate={rate:.1f},k40={k40}")
+                    # #influxwrite("test",f"{HOSTNAME}_grg",f"rate={rate:.1f},k40={k40}")
+
+            if not scr_outputed: print(f"i... {fg.magenta} {dt.datetime.now().strftime('%H:%M:%S.%f')[:10]}  {fg.default}            ", end = "\r")
+            #if rate>0: # DONT SEND in the beginning (what about LARGE values?)
+            #    if runtime.total_seconds()>1:
+            #        msg = compose_udp( spectrumname, rate )
+            #        udpsend( msg )
+
+
+
+        #=================================== FETCHING OR REFRESH IS DONE ==========
+        # -- drop closed canvases:  name changes to c1, c1_n4... or somethnig
+        for i in list(canvases.keys()):
+            if i!=canvases[i].GetName():
+                canvases.pop(i,None)
+
+        #---------------- HANDLE KEYBOARD -----------------------
+        # the concept is
+        # 1/ key (to display on bar2
+        # 2/ cmd if enter is hit
+        #
+        key,enter,abc = kthread.get_global_key()
+        (a_abc,b_abc) = abc # unpack tuple
+        if enter:
+            cmd = key.strip()
+        else:
+            cmd = ""
+        arg = ""
+
+        #============ NOW PROCESS THE KEY CODES-------- d dr db
+        # because I want to hava FAST KEYS (no spaces, unless filename)
+        # i will do later....?
+        # cmd,larg = (cmd)
+
+        # cmd with space  t v l
+        if len(cmd.split(" "))>1:
+            cmd = key.split()[0]
+            #arg = key.split()[-1] # the last? NO. take all
+            arg = " ".join(key.split()[1:]) # the last? NO. take all
+            if cmd == arg:
+                arg=""
+
+        #
+        # FIRST PROCESSING THE COMMAND
+        #
+        # nospace multiletter cmd  d    v q
+        #
+        #
+        if (arg=="") and (len(cmd)>0):
+            if cmd == "d":
+                #??
+                cmd = "d"  # total is default display
+                arg = "t"  # total is default display
+            elif cmd[0] == "d": # for display
+                arg = cmd[1:].strip()
+                cmd = "d"
+            if cmd[0] == "l": # for load
+                arg = cmd[1:].strip()
+                cmd = "l"
+            if cmd[0] == "L": # for load
+                arg = cmd[1:].strip(" ")
+                cmd = "L"
+            print(f"i... cmd = {cmd} arg={arg}")
+
+
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        #------------------------------------------COMMANDS
+        # ********************** CMD ***********************************
+        if cmd == "h":     # ***CMD***  HELP =========
+            yy=f"{fg.white}"
+            ny=f"{fg.default}{bg.default}"
+
+            yx=f"{fg.yellow}"
+            nx=f"{fg.default}"
+
+            yg=f"{bg.green}{fg.white}"
+            ng=f"{bg.default}{fg.default}"
+            print(f"""{yg}----HELP---------------------------------------{ng}
+ {yy}h{ny} ... this help
+({yy}t{ny} ... set time of real spectrum: 't 1:59:59')
+({yy}a{ny} ... age AKA last_interval for the "last" histo : e.g. "a 3600")
+ {yy}r{ny} ... range,pk search    {yy}R{ny} ... Record range, pks to DISK
+ {yy}f{ny} ... fit
+ {yy}c{ny} ... calib (energy)
+ {yy}i{ny} ... info               {yy}v{ny} ... view histo details
+ {yy}u{ny} ... unzoom             {yy}z{ny} ... zoom
+ {yy}n{ny} ... next               {yy}p{ny} ... previous
+ {yy}w{ny} ... window (view on 1st zoom) width
+ {yy}s{ny} ... save histogram     {yy}l{ny} ... load histogram
+                           {yy}L{ny} ... load ASC file; {yy}h{ny} more help avail.
+ {yy}d{ny} ... display histo:
+    {yx}t{nx} ... tot/total (also if t is omitted)
+    {yx}r{nx} ... rat/rates (tot normalized on time)
+    {yx}b{nx} ... bac/background  (must be loaded by l)
+    {yx}s{nx} ... sub/substracted (rate - backg-rate) rate
+    {yx}l{nx} ... last [age] seconds histogram (defined by a)
+    {yx}m{nx} ... the few seconds [dt] difference histo
+ {yy}q{ny} ... quit
+----------------
+Online Histograms:   tot, rat, bac  diff  last  sub
+""")
+            if ascdf is not None:
+                print(f"""
+ {yg}L {ng} ... load ASC file
+ {yg}# {ng} ... select channel # from ASC (create ASC-chan frame)
+ {yg}st{ng} ... stat ... statistics on ASC/ASC-chan file
+ {yg}sh{ng} ... show ... show a sample of ASC/ASC-chan file
+ {yg}cu{ng} ... cut ... 'cut from to' - use on ASC-chan frame
+ {yg}er{ng} ... erlang ... plot erlang from  ASC-chan frame
+ {yg}sp{ng} ... spectra ... plot energy spectrum from ASC-chan frame
+ {yg}sa{ng} ... save ... save energy spectrum from  ASC-chan frame
+ {yg}ti{ng} ... time ... plot rate vs. time for energy region for ASC-chan frame
+
+ {yg}re{ng} ... reset ... discard current selections = ASC-chan frame
+
+""")
+# diff ... what changed from the last read = last [dt] sec. histo
+# last ... tot - [age] seconds old histo = last [age] sec. histo
+# sub  ... tot - bac (normalized on rate)  ? last - bac ?  ? last - tot ?
+
+# Watchdog: for influx, log etc...
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "`":   # ***CMD***  TESTKEY ======
+            print(f"i... [ ] {arg}   TEST KEY   ")
+            if len(arg)>0:
+                thisname = arg.split()[0]
+                if thisname in histograms.keys():
+                    print("test")
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "r":   # ***CMD***  range, pksearch  ======
+            range_and_peaks["rng"] = None #spectrum name
+            range_and_peaks["spe"] = None #spectrum name
+            range_and_peaks["pks"] = None #list np
+            print(f"i...  arg=/{arg}/   ... range+pksearch   #canvs=", len(canvases))
+            # for i in list(canvases.keys()):
+            #     print("i... CANVASES:",i,canvases[i].IsDrawn(),\
+            #           canvases[i].IsRetained(), canvases[i].GetName() )
+            if len(arg)==0 and len(canvases)==1:
+                arg = list(canvases.keys())[0].split("c_")[-1]
+                #print("i... generated name for spectrum = ", arg)
+            if len(arg)>0:
+                thisname = arg.split()[0]
+                if thisname in histograms.keys():
+                    #print("i... pksearch", thisname)
+                    # i need sigma 1 here !
+                    tspe = ROOT.TSpectrum()
+                    res = tspe.Search( histograms[thisname], 1, "nodraw", 0.05 )
+
+                    print(f"i... {res} peaks detected")
+                    #print("D... 1")
+                    pkfuncs = histograms[thisname].GetListOfFunctions()
+                    #print("D... 2")
+                    pm = pkfuncs.FindObject("TPolyMarker");
+                    #print("D... 3")
+                    xvec = pm.GetX()
+                    #print("D... 4")
+                    xvecso = np.array( [] )
+                    #print("D... 5")
+                    for j in range(pm.GetN()):
+                        print(f"D... 5 .... {j:02d}  {float(xvec[j]):7.2f}" )
+                        xvecso = np.append( xvecso, float(xvec[j]) )
+                    #print("D... 6")
+                    xvecso = np.sort( xvecso )# xvecso = sorted(xvecso)
+                    #print("D... 7")
+                    print("========== i  remember these peaks for the next fit ======")
+                    range_and_peaks["rng"] = get_ene_range(histograms[thisname])
+                    range_and_peaks["spe"] = thisname
+                    range_and_peaks["pks"] = xvecso
+                    #print("i... ", len(xvecso), f" {thisname}:",xvecso)
+                    print( f"i... {fg.green}OK{fg.default}",range_and_peaks )
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "R":  # ***CMD***  Record Range to DISK  ======
+            print(f"i...  arg=/{arg}/   ... Range save to file")
+            RAP = False
+            if type(range_and_peaks) is not None and \
+               "rng" in range_and_peaks and \
+               "spe" in range_and_peaks and \
+               "pks" in range_and_peaks:
+                print(f"{fg.cyan}see:{fg.default}", type(range_and_peaks["pks"]) )
+                print(f"{fg.cyan}see:{fg.default}", len(range_and_peaks["pks"]) )
+                print("i...   we have peak positions in the buffer ...")
+                print(f"i... {fg.cyan}ok{fg.default}",range_and_peaks)
+                RAP = True
+            else:
+                print("X... NO rangle_and_peaks")
+            if RAP:
+                # save comma separated
+                with open("ranges.txt","a+",newline='') as f:
+                    f.write( f"{range_and_peaks['spe']}, {','.join([str(round(x,2)) for x in range_and_peaks['rng']])}, {','.join([str(round(x,2)) for x in range_and_peaks['pks']])}"+"\n" )
+                print(f"i... {bg.green}SAVED{bg.default} to ...  ranges.txt")
+            else:
+                print(f"i... {fg.red} range and peaks not recorded to disk {fg.default}")
+
+        # ********************** CMD ***********************************
+        elif cmd == "f":   # ***CMD***  FIT  ======
+            RAP = False
+            if "rng" in range_and_peaks and \
+               "spe" in range_and_peaks and \
+               "pks" in range_and_peaks and \
+               type(range_and_peaks["pks"]) is list and\
+               len(range_and_peaks["pks"])>0:
+                print("i...   we have peak positions in the buffer ...")
+                print(range_and_peaks)
+                RAP = True
+
+            print(f"i...  arg=/{arg}/   ... fit   #canvs=", len(canvases))
+            if len(arg)==0 and len(canvases)==1:
+                arg = list(canvases.keys())[0].split("c_")[-1]
+                #print("i... generated name for spectrum = ", arg)
+            if len(arg)>0:
+                thisname = arg.split()[0]
+                if thisname in histograms.keys():
+                    if RAP: # I HAVE INFOR FROM "r"
+                        histo_zoomenergy( histograms[thisname] ,
+                                         range_and_peaks["rng"][0]   ,  range_and_peaks["rng"][1]   )
+                    print("i... fitting", thisname)
+                    res = histo_fit( histograms[thisname],  canvas = "fitresult")
+                    if res is not None:
+                        last_fit_res = res
+                        for i in res.keys():
+                            if i.find("E")>=0: print( f"          {i:10s} {res[i]:.4f} ")
+                            if i.find("area")>=0: print( f"          {i:10s} {res[i]:.4f} ")
+
+                        # test to database - not here
+                        #if "E" in res:
+                        #    decay_candidates( res["E"] )
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "c":   # ***CMD***  CALIB =======
+            print(f"i...    c: {arg}              datalen= {len(ECALIB)} _______________________" )
+            if len(arg)==0:
+                print(f"i...    {fg.yellow}c Ene     channel {fg.default}")
+                print(f"i...    {fg.yellow}c Isotope channel {fg.default}")
+                print(f"i...    {fg.yellow}c [Isotope|Ene]  f {fg.default}   ... for fit result as the bin")
+                print(f"i...    {fg.yellow}c r   {fg.default} ....  reset calibration data")
+                print(f"i...    {fg.yellow}c l   {fg.default} ....  override calibration to LOCAL")
+                print(f"i...    {fg.yellow}c g   {fg.default} ....  override calibration to GLOBAL")
+                print(f"i...    {fg.yellow}c n   {fg.default} ....  override calibration to NONE")
+                print(f"i...    {fg.yellow}c f   {fg.default} ....  search database for last fit E")
+                print(f"i...    {fg.yellow}c f de{fg.default} ....  same search  with defined dE")
+                for ik in ECALIBdb.keys():
+                    print(f"i...         | {ik:7s} | {ECALIBdb[ik]:8.2f} |")
+                print( "             _________________________________")
+
+            if len(arg)>0:
+                eline = None # energy of the line
+                bline = None # bin of the line
+                dbline = 1
+                if len(arg.split())<1:
+                    print(f"X... {fg.red} give me {bg.white}'c  ene bin'{bg.default} OR 'c  reset' ==  'c r'{fg.default}")
+                    # break
+                elif arg.split()[0] in histograms.keys():  # ** APPLY FOR HISTO **
+                    print("D... Aplly calib for histogram", arg.split()[0])
+                    LOCAL_GLOB_NONE_CALIB == 0
+                    binmax =  histograms[arg.split()[0]].GetXaxis().GetXmax()
+                    limits_calib = 0*ECALIBa + ECALIBb,binmax*ECALIBa + ECALIBb
+                    histograms[arg.split()[0]].GetXaxis().SetLimits( limits_calib[0],limits_calib[1] )
+
+                elif arg.split()[0]=="reset" or arg.split()[0]=="r" :  # ** reset **
+                    ECALIB = []
+                    ECALIBa = 1
+                    ECALIBb = 0
+                    print(f"i... {fg.yellow} RESET! e-calibration done{fg.default} ")
+                elif arg.split()[0]=="local" or arg.split()[0]=="l" :  # **
+                    LOCAL_GLOB_NONE_CALIB = 0
+                    print(f"i... {fg.yellow} LOCAL! e-calibration NOW{fg.default} ")
+                elif arg.split()[0]=="global" or arg.split()[0]=="g" :  # **
+                    LOCAL_GLOB_NONE_CALIB = 1
+                    print(f"i... {fg.yellow} GLOBAL! e-calibration NOW{fg.default} ")
+                elif arg.split()[0]=="none" or arg.split()[0]=="n" :  # **
+                    LOCAL_GLOB_NONE_CALIB = 2
+                    print(f"i... {fg.yellow} NONE! e-calibration NOW{fg.default} ")
+
+                # decompose the arguments....
+                else:
+                    ok = True
+                    eline, bline = None,None
+                    if is_float(arg.split()[0]):   # ** energy was given **
+                        eline = float(arg.split()[0])
+                    elif arg.split()[0].upper() in ECALIBdb.keys(): #** 40K was given **
+                        eline = ECALIBdb[arg.split()[0].upper()]
+
+                    elif arg.split()[0].upper() == "F":
+                        print("i... search in database:")
+                        eline = 0
+                        deline = 0
+                        if "channel" in last_fit_res:
+                            eline = last_fit_res["E"]
+                            deline = last_fit_res["dE"]
+                            deline = 3*deline # 3sigma
+                            print(f"i... LAST FITTED PEAK ENE = {eline:.2f} +- {deline:.2f}")
+                        if len(arg.split())>1 and  is_float(arg.split()[1]):
+                            deline = float(arg.split()[1])
+                            print(f"i... LAST FITTED PEAK ENE = {eline:.2f} +- {deline:.2f}")
+
+                        if eline !=0:
+                            decay_candidates( eline, deline*3 )#deline*3 )
+                        else:
+                            print("X... you may not did the fit first....")
+                        ok = False
+
+                    else: # ** something else happened**
+                        print("X... problem if not float nor in LIST",arg.split() )
+                        ok = False
+                    #print(f"D... ... eline {eline}")
+
+
+                    #print(arg.split(), arg.split()[1], is_float(arg.split()[1]))
+                    # BIN to be decoded
+                    if len(arg.split())>1 and is_float(arg.split()[1]):   # ** bin **
+                        bline = float(arg.split()[1])
+                        #print(f"D... bline={bline}")
+                    # taking from fit.... SECOND F
+                    elif len(arg.split())>1 and arg.split()[1]=="f":      # ** f=fitted bin **
+                        if "channel" in last_fit_res:
+                            bline = last_fit_res["channel"]
+                            dbline = last_fit_res["dchannel"]
+                            print("i... GETTING LAST FITTED PEAK for calibration bin", bline)
+                        else:
+                            ok = False
+                            print("X... no fit result stored to get bin from there...")
+                    else:
+                        #print("X... some problem, bin not given (nor 'f') ")
+                        ok = False
+
+
+                    if ok:
+                        ECALIB.append( [ eline, bline, dbline ] ) # energy, channel, dchannel
+                        print(ECALIB)
+            ECALIBa, ECALIBb = ecalibration(ECALIB)
+            print(f"i...  calculated energy calibration is {fg.green} E = {ECALIBa:.6f}*k + {ECALIBb:.3f} {fg.default}")
+            #print(f"i... {fg.blue} REMEMBER!: spectra energy calibration comes from detector (for now)...  {fg.default}")
+            print(ECALIB)
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "i":   # ***CMD***  INFO =======
+            print(f"i... i: {arg}    ")
+            #if len(arg) == 0:
+            print(f"D...  ... POSSIBLE keys: {histograms.keys()}")
+            if len(arg)==0 and len(canvases)>=1:
+                arg = list(canvases.keys())[0].split("c_")[-1]
+                print("i... generated name for spectrum = ", arg)
+            if len(arg)>0 and arg in histograms.keys():
+                tarea = histo_area(  histograms[arg] )
+                # when zoom:
+                binlo = histograms[arg].GetXaxis().GetFirst()
+                binhi = histograms[arg].GetXaxis().GetLast()
+                elo = bin2ene(binlo, histograms[arg])
+                ehi = bin2ene(binhi, histograms[arg])
+                zarea = histo_area(  histograms[arg] ,elo , ehi)
+                #
+                myrate = tarea/runtime.total_seconds()
+                myratea = zarea/runtime.total_seconds()
+                started = "not done yet for offline"
+                if "b0c01" in locals():
+                    started = b0c01.started
+                print(f"""
+___________________________________________________________________
+       Name  = {fg.white}{arg}{fg.default}                           i need to redo this
+      Lenght = {len(histograms[arg])}
+     Started = {started}
+       Time  = {runtime}  (runtime)
+       Rate  = {myrate:.2f} cps    (if total histogram)
+   RateArea  = {myratea:.2f} cps
+    TotalArea= {tarea:16.6f}
+    ZoomeArea= {zarea:16.6f}
+        zoom = {elo:.1f} ... {ehi:.1f} (Energy)
+        zoom = {binlo} ... {binhi} (bins)
+
+""")
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "u":   # ***CMD***  UNZOOM =======
+            print(f"i... u pressed ... unzoom:  {arg}    ")
+            #print( list(canvases.keys() ) )
+            if "is_zoomed" in locals() and is_zoomed[0]:
+                low,hi = None,None
+                if len(arg)==0 and len(canvases)>=1:
+                    frhis = list(canvases.keys())[0].split("c_")[-1]
+                    low = histograms[frhis].GetXaxis().GetFirst()
+                    hi  = histograms[frhis].GetXaxis().GetLast()
+
+                    low = histograms[frhis].GetXaxis().GetBinCenter(low)
+                    hi  = histograms[frhis].GetXaxis().GetBinCenter(hi)
+
+                    delt = hi-low
+                    if delt<4000:
+                        print(f"i... delta is {delt:.1f},     low {low:.1f}   high {hi:.1f}  USING:{frhis}" )
+                        if low - 0.2*delt<0:
+                            low = 0 # low - 0.3*delt
+                        else:
+                            low = low - 0.2*delt
+                        hi = hi + 0.2*delt
+                        print(f"i... delta is {delt:.1f}, new low {low:.1f}  new high {hi:.1f}" )
+                        for i in histograms.keys():
+                            histo_zoomenergy( histograms[i] ,
+                                            int(low),   int(hi) )
+                    else:
+                        for i in histograms.keys():
+                            histo_unzoom( histograms[i] )
+                        is_zoomed =[ False, 0 ]
+
+
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "n":   # ***CMD***  NEXT ZOOM =======uses window
+            print(f"i... n pressed ... nexzoom: arg=/{arg}/   allcanvases   ")
+            low,hi = None,None
+            if len(arg)==0 and len(canvases)>=1: # ANY # OF CANVASES
+                arg = list(canvases.keys())[0].split("c_")[-1]
+            if len(arg)>0:
+            #if len(histograms)>0:
+                #frhis = list(histograms.keys())
+                frhis = list(canvases.keys())[0].split("c_")[-1]
+                low = histograms[frhis].GetXaxis().GetFirst()
+                hi  = histograms[frhis].GetXaxis().GetLast()
+                # this returns energy
+                low = histograms[frhis].GetXaxis().GetBinCenter(low)
+                hi  = histograms[frhis].GetXaxis().GetBinCenter(hi)
+
+                delt = hi-low
+                print(f"i... delta is {delt:.1f},     low {low:.1f}   high {hi:.1f}    {frhis[0]}" )
+
+                low = hi - 0.2*delt
+                hi = hi + delt - 0.2*delt
+                print(f"i... delta is {delt:.1f}, new low {low:.1f}  new high {hi:.1f}" )
+                is_zoomed =[ True, (low+hi)/2 ]
+                print(is_zoomed)
+                for i in histograms.keys():
+                    histo_zoomenergy( histograms[i] ,
+                                    low,   hi )
+                    #histo_zoombins( histograms[i] ,
+                    #                int(low),   int(hi) )
+
+        # ********************** CMD ***********************************
+        elif cmd == "p":   # ***CMD***  PREV ZOOM =======uses window
+            print(f"i... p pressed ... nexzoom: arg=/{arg}/   allcanvases   ")
+            low,hi = None,None
+            if len(arg)==0 and len(canvases)>=1: # ANY # OF CANVASES
+                arg = list(canvases.keys())[0].split("c_")[-1]
+            if len(arg)>0:
+            #if len(histograms)>0:
+                #frhis = list(histograms.keys())
+                frhis = list(canvases.keys())[0].split("c_")[-1]
+
+                # this returns bins it seems. I need to return energy
+                low = histograms[frhis].GetXaxis().GetFirst()
+                hi  = histograms[frhis].GetXaxis().GetLast()
+
+                # this returns energy
+                low = histograms[frhis].GetXaxis().GetBinCenter(low)
+                hi  = histograms[frhis].GetXaxis().GetBinCenter(hi)
+
+                delt = hi-low
+                print(f"i... delta is {delt:.1f},     low {low:.1f}   high {hi:.1f}    {frhis[0]}" )
+
+                low = low - delt + 0.2*delt
+                hi = hi - delt + 0.2*delt
+                print(f"i... delta is {delt:.1f}, new low {low:.1f}  new high {hi:.1f}" )
+                is_zoomed =[ True, (low+hi)/2 ]
+                print(is_zoomed)
+                for i in histograms.keys():
+                    histo_zoomenergy( histograms[i] ,
+                                    low,   hi )
+                    #histo_zoombins( histograms[i] ,
+                    #                int(low),   int(hi) )
+
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "z":   # ***CMD***  ZOOM =======uses window
+            print(f"i... z pressed ... zoom: arg=/{arg}/  allcanvases   ")
+            #print( list(canvases.keys() ) )
+            if len(arg)>0:
+                middle = None
+                try:
+                    middle = float(arg.split()[0])
+                except:
+                    print("X... zoom's  energy is not float")
+                if middle is not None:
+                    is_zoomed =[ True, middle ]
+                    for i in histograms.keys():
+                        histo_zoomenergy( histograms[i] ,
+                                      is_zoomed[1] - config.CONFIG["window"]/2,
+                                      is_zoomed[1] + config.CONFIG["window"]/2 )
+            # elif "is_zoomed" in locals() and is_zoomed[0]:
+            #     config.CONFIG["window"] = config.CONFIG["window"]/2
+            #     for i in histograms.keys():
+            #         histo_zoomenergy( histograms[i] ,
+            #                           is_zoomed[1] - config.CONFIG["window"]/2,
+            #                           is_zoomed[1] + config.CONFIG["window"]/2 )
+            elif len(arg)==0 and len(canvases)>=1: # ANY # OF CANVASES
+                arg = list(canvases.keys())[0].split("c_")[-1]
+                if len(arg)>0:
+                    frhis = list(canvases.keys())[0].split("c_")[-1]
+                    # this returns bins it seems. I need to return energy
+                    low = histograms[frhis].GetXaxis().GetFirst()
+                    hi  = histograms[frhis].GetXaxis().GetLast()
+                    # this returns energy
+                    low = histograms[frhis].GetXaxis().GetBinCenter(low)
+                    hi  = histograms[frhis].GetXaxis().GetBinCenter(hi)
+                    delt = hi-low
+                    print(f"i... delta is {delt:.1f},     low {low:.1f}   high {hi:.1f}    {frhis[0]}" )
+                    low = low +  0.2*delt
+                    hi = hi -  0.2*delt
+                    print(f"i... delta is {delt:.1f}, new low {low:.1f}  new high {hi:.1f}" )
+                    is_zoomed =[ True, (low+hi)/2 ]
+                    print(is_zoomed)
+                    for i in histograms.keys():
+                        histo_zoomenergy( histograms[i] ,
+                                    low,   hi )
+
+
+            #     thisname = arg.split()[0]
+            #     if thisname in histograms.keys():
+            #         try:
+            #             fr,to = float(arg.split()[1]),float(arg.split()[2])
+            #             print("i... zooming", thisname, histograms[thisname],f"range = {fr} ... {to} (energy)")
+            #             histo_zoomenergy( histograms[thisname] , fr, to )
+            #             print(f" ...  retains only when {thisname} was drawn")
+            #         except:
+            #             print(f"{fg.red}X... zoom problem{fg.default}")
+
+        # ********************** CMD ***********************************
+        elif cmd == "w":   # ***CMD***  W? ======== set window like 10kev
+            if "is_zoomed" in locals() and is_zoomed[0]:
+                print("i... w pressed ... window width ... like 10 (in keV).../",is_zoomed)
+                if len(arg)>0:
+                    print(f"i... interpreting argument {arg}")
+                    window = config.CONFIG["window"]
+                    try:
+                        window = abs(float(arg))
+                        if is_zoomed[0]:
+                            for i in histograms.keys():
+                                histo_zoomenergy( histograms[i] ,
+                                                is_zoomed[1] - window/2,
+                                                is_zoomed[1] + window/2 )
+                    except:
+                        print("X... float expected, not given in", arg)
+                    config.CONFIG["window"] = window
+            else:
+                print("X... is_zoomed must be initialized by zooming")
+
+
+        # ********************** CMD ***********************************
+        elif  cmd == "v":  # ***CMD***  ViewDetails ==== v view details
+            #
+            if "tot" in histograms:
+                # Started = {gregory_started} (server histogram - greg started)
+                cala, calb = get_calib_coefs( histograms["tot"] )
+                area = histo_area( histograms["tot"] )
+                print(f"""
+                Name  = {spectrumname}
+                Lenght= {len(h1np)}
+                Total = {h1np.sum()}
+                Time  = {runtime}  (runtime)
+                Started = {b0c01.started} (server histogram -  b0c01 started)
+                Avg Rate  = {h1np.sum()/(runtime.total_seconds())}
+                Interval= {deltat} s.
+                Last Rate = {rate}
+                Calibration = A={cala} B={calb} (wrong)
+                LocalName = "tot"
+                LocalSum  = {area} (should be the same as total)
+                """)
+            else:
+                print("X...   'tot' not in histograms; offline mode?")
+                #histo_details( histograms[ spectrumname] )
+            print(f"i... canvases  : {list(canvases.keys())}")
+            print(f"i... histograms:{list(histograms.keys())}")
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "t":   # ***CMD***  TIME ========== t time from start
+            if  arg=="":
+                print("i... cmd t needs time from start 3600s 1h 1:00:00")
+                continue
+            arg = time2seconds(arg)
+            print(f"i... arg: seconds == {arg} ")
+            b0c01.set_started_before( arg) # ON "T" time
+
+        elif cmd == "s":   # ***CMD*** #============= s save
+            if "b0c01" in locals():
+                #deadt2 = 0
+                #if deadtavg[1]>0:
+                #    deadt2 = deadtavg[0]/deadtavg[1]
+                print("i... just save total, deadtime = ",deadttot)
+                save_hist_txt( "tot" , total_time = runtime.total_seconds() , started = b0c01.started, deadtime = deadttot/100 )
+                if len(arg)>0:
+                    thisname = arg.split()[0]
+                    if thisname in histograms.keys():
+                        save_hist_txt( thisname , total_time = runtime.total_seconds() , started = b0c01.started, deadtime = deadttot/100 , errors = True)
+            else:
+                print("X... You may be in OFFLINE MODE, b0c0 does not exists in this universe")
+                print("X... in  OFFLINE MODE - - use sa filename_without_extension ")
+
+        # ********************** CMD ***********************************
+        elif cmd == "a":   # ***CMD***  AGE ========== a age_of_diff histo
+            if  arg=="":
+                print("i... cmd a needs time")
+                continue
+            arg = time2seconds(arg)
+            print(f"i... arg: seconds == {arg} / LAST {arg} seconds histogram ")
+            h1np_last_interval = arg
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "d":   # ***CMD***  DISPL ============= d
+            first_h = True # more histograms on the same canvas
+
+            # i blindly try
+            ROOT.gStyle.SetOptStat(1111111) # WORKSsp
+
+            print(arg)
+            if has_numbers(arg):
+                arg = arg.split(" ")
+                print(arg)
+                #if len(arg)==1:
+                #    arg = [arg]
+                print(arg)
+
+            for ic in arg: # plot letter par letter ....... one by one
+                print("   i... interpretting display argument:",ic)
+                if "t" in ic: # TOTAL
+                    if h1np is not None:
+                        display_np( h1np, "tot", "c_tot" , None , limits_calib=limits_calib)
+                        first_h = False
+                    else:
+                        print(f"X... {fg.red} histogram /tot/ doesnt exist {fg.red} try e.g. l1 ds1? ")
+
+                # fast way to displ hists one by one
+                for ii in range(1,99):
+                    if f"{ii}" in ic: #
+                        #display_np( h1np, "s{ii}", "c_s{ii}" , None , limits_calib=limits_calib)
+                        display_h_name(f"s{ii}", cname=f"c_s{ii}" , filled = True, color = ii+39)
+                        first_h = False
+
+
+                if "r" in ic: # RATE
+                    if first_h:
+                        print("i... RATE histogram FIRST")
+                        display_np( h1np,  "rat", "c_rat", runtime.total_seconds(), \
+                                    limits_calib=limits_calib, \
+                                    filled=True, color = 4 )
+                        #fill_h_with_np(h1np,"rat",runtime.total_seconds())  #
+                        histograms["rat"].SetLineColor(38)
+                        histograms["rat"].SetMarkerColor(4)
+                        histograms["rat"].SetMarkerStyle(7)
+                        first_h = False
+                    else:
+                        print("i... RATE histogram ALSO")
+                        fill_h_with_np(h1np,"rate",runtime.total_seconds(), \
+                                       limits_calib=limits_calib, title=spectrumname )#, \
+                                        #filled=True, color = 4  )  #
+                        histograms["rat"].SetLineColor(38) #16 gray
+                        histograms["rat"].SetMarkerColor(4)
+                        histograms["rat"].SetMarkerStyle(7)
+                        histograms["rat"].Draw("same EX0")
+
+                if "m" in ic: # RATEDIFF
+                    if first_h:
+                        print("i... RATEDIFF histogram FIRST")
+                        display_np( h1np_diff,  "diff", "c_diff", deltat, \
+                                    limits_calib=limits_calib, \
+                                               filled=True, color = 8 )
+                        histograms["diff"].SetLineColor(40)
+                        histograms["diff"].SetMarkerColor(8) # green2
+                        histograms["diff"].SetMarkerStyle(7)
+                        first_h = False
+                    else:
+                        print("i... RATEDIFF histogram ALSO")
+                        fill_h_with_np(h1np_diff,"diff", deltat, \
+                                       limits_calib=limits_calib,\
+                                        filled=True, color = 8, title=spectrumname)
+                        #display_np( h1np_diff,  "diff", "c_diff", deltat)
+                        histograms["diff"].SetLineColor(16)
+                        histograms["diff"].SetMarkerColor(8) # green2
+                        histograms["diff"].SetMarkerStyle(7)
+                        histograms["diff"].Draw("same EX0")
+
+                if "l" in ic: # RAte last
+                    if first_h:
+                        print("i... RATELAST histogram FIRST")
+                        display_np( h1np - h1np_old,  "last", "c_last", h1np_last_interval,
+                                    limits_calib=limits_calib, \
+                                    filled=True, color = 46)
+                        histograms["last"].SetLineColor(16)
+                        histograms["last"].SetMarkerColor(46) # dark red
+                        histograms["last"].SetMarkerStyle(7)
+                        first_h = False
+                    else:
+                        print("i... RATELAST histogram ALSO")
+                        fill_h_with_np(h1np - h1np_old,"last", h1np_last_interval,
+                                       limits_calib=limits_calib,
+                                       title = f"last {h1np_last_interval:.1f}s as rate {spectrumname}")
+                        #display_np( h1np_diff,  "diff", "c_diff", deltat)
+                        histograms["last"].SetLineColor(16)
+                        histograms["last"].SetMarkerColor(46) # green2
+                        histograms["last"].SetMarkerStyle(7)
+                        histograms["last"].Draw("same EX0")
+
+
+                if "b" in ic: # BACKG
+                    print("i... BACKG histogram")
+                    # display_np( h1np,  "rat", "c_rat", runtime.total_seconds())
+                    if "bac" in histograms:
+                        if first_h:
+                            first_h = False
+                            print("i... drawing FIRST bac")
+                            display_np( h1np_backg,  "bac", "c_bac" , h1np_backg_lt,\
+                                        limits_calib=limits_calib,\
+                                           filled=True, color = 6 )
+                            #print("i... BG histogram")
+                            histograms["bac"].SetLineColor(16)
+                            histograms["bac"].SetMarkerColor(6)
+                            histograms["bac"].SetMarkerStyle(7)
+                            #first_h = False
+                            #histograms["backg"].SetMarkerColor(6)
+                            ####histograms["backg"].Draw("EX0")
+                        else:
+                            print("i... drawing ALSO bac")
+                            histograms["bac"].SetLineColor(16)
+                            histograms["bac"].SetMarkerColor(6)
+                            histograms["bac"].SetMarkerStyle(7)
+                            histograms["bac"].Draw("same")
+                    else:
+                        print(f"{fg.red}X...  bac background histogram is not loaded...(use l name){fg.default}")
+
+
+
+                if "s" in ic: # SUBSTRACTION #================================ s
+                    print("i... substraction of rate and BG histograms ... ")
+                    #
+                    if not "bac" in histograms: continue
+                    if "bac" in histograms: #
+                        if not ("rat" in histograms): #
+                            print("~... no rate histo present")
+                            print("i... creating RATE histogram")
+                            # display_np( h1np,  "rat", "c_rat", runtime.total_seconds())
+                            fill_h_with_np(h1np,"rat",runtime.total_seconds(), limits_calib=limits_calib, title=spectrumname)
+
+                        #ROOT.gDirectory.ls()
+                        h1np_substr = h1np/runtime.total_seconds() - h1np_backg/h1np_backg_lt
+                        errors = np.square( np.sqrt( h1np )/runtime.total_seconds() ) + np.square( np.sqrt(h1np_backg)/h1np_backg_lt )
+                        errors = np.sqrt(errors)
+                        if first_h:
+                            first_h = False
+                            print("i... drawing FIRST sub/substr")
+                            display_np( h1np_substr,  "sub", "c_sub", None, errors = errors, limits_calib=limits_calib, title=spectrumname)
+                            histograms["sub"].SetMarkerColor(30) # 3 green # 9 violet
+                            histograms["sub"].SetLineColor(16)
+                            histograms["sub"].SetMarkerStyle(7)
+                            histograms["sub"].Sumw2()
+                        else:
+                            fill_h_with_np( h1np_substr,  "substr",  None, errors = errors, limits_calib=limits_calib, title=spectrumname)
+                            histograms["sub"].SetMarkerColor(30) # 3 green # 9 violet
+                            histograms["sub"].SetMarkerStyle(7)
+                            histograms["sub"].SetLineColor(16)
+                            histograms["sub"].Sumw2()
+                            histograms["sub"].Draw("same EX0")
+                            print("i... drawing ALSO sub/substr")
+                        first_h = False
+                    else:
+                        print(f"{fg.red}X... no bg histo present{fg.default}")
+
+            # print( ROOT.gPad, ROOT.addressof(ROOT.gPad) )
+            if ROOT.addressof(ROOT.gPad)!=0:
+                ROOT.gPad.SetGridx()
+                ROOT.gPad.SetGridy()
+                ROOT.gPad.Modified()
+                ROOT.gPad.Update()
+
+
+
+
+        # ********************** CMD *********************************** L
+        elif  cmd == "L":  # ***CMD***  LOAD ASC ====== L but only 1 spectrum
+            if arg=="":
+                histo_io.select_asc_to_load( folder = config.CONFIG[target]['data_folder'] )
+                print(f"i.. {fg.cyan} LOAD ASC WITH NUMBER like:    L1  L2 L3 ...  {fg.default}")
+            else:
+                ii = arg# for ii in arg: ONE ASC / SPECTRUM AT A TIME....
+                # ascstart is dt
+                ascdf,ascfilename,iascfilename, ascstart = histo_io.select_asc_to_load( ii ,
+                                                            folder = config.CONFIG[target]['data_folder']) # FULL DF
+                print(f" {bg.white}{fg.black} INPUT channel number now: {fg.default}{bg.default} OR 'show' 'stat' to look at data ")
+
+
+        # ********************** CMD *********************************** 0 1 2 3 4 5 6 7 8
+        elif cmd in [ str(x) for x in range(9) ]:
+            if ascdf is not None:
+                print(f"i... {bg.cyan}{fg.white}selected channel {int(cmd)} from ASC file /{ascfilename}/ {fg.default}{bg.default}" )
+                # ascdf_chan = ascgeneric.select_channels(ascdf, int(cmd),  delete_original = True) # more channels possible as a list
+                ascdf_chan = ascgeneric.select_channels(ascdf, int(cmd),  delete_original = True) # if no delete, problems
+                TRGHOLD,PEAKHOLD, TIMEWIN_US,ECALIBa, ECALIBb = ascgeneric.load_ini_file( iascfilename , int(cmd) )
+                TIMEWIN_US = PEAKHOLD
+
+                if ascdf_chan is not None:
+                    if 'dtus' in ascdf_chan: # never happens
+                        print("X... YOU NEED TO RELOAD BEFORE SELECTING DIFFERENT CHANNEL")
+                    else:
+                        ascdf_chan = ascgeneric.enhance_dt(ascdf_chan)
+                        ascgeneric.asc_stat_print(ascdf_chan, TIMEWIN_US, filename = ascfilename , TRGHOLD = TRGHOLD)
+                        t0 = ascdf_chan['time'].min()
+                        t1 = ascdf_chan['time'].max()
+                        rate = len(ascdf_chan)/(t1-t0) # divided by total time
+                        runtime = dt.timedelta( seconds = t1-t0 )
+                        if   'c_erlang2' in canvases:
+                            if ascdf_chan is not None:
+                                local_generate_erlangs()
+            else:
+                print("X... NO ASC FILE LOADED .. ( awaits asc file channel number) ")
+
+
+        # ********************** CMD *********************************** asc
+        elif  cmd in ['stat','st','show','sh',"cu","cut","reset","re", "er","erlang", "sp","spectrum", "sa", "save","ti","time"]:
+            ROOT.gStyle.SetOptStat(1111111) # WORKS
+            if ascdf is not None:
+
+                print(f"i... {bg.cyan}{fg.white} Data overview -  ASC file /{ascfilename}/ {fg.default}{bg.default}" )
+                if cmd.find("st")==0:
+                    if ascdf_chan is not None:
+                        deadttot = ascgeneric.asc_stat_print(ascdf_chan, TIMEWIN_US,  filename = ascfilename,  TRGHOLD = TRGHOLD)
+
+                    else:
+                        ascgeneric.asc_stat_print(ascdf, TIMEWIN_US,  filename = ascfilename, TRGHOLD = TRGHOLD)
+
+                if cmd.find("ti")==0:  # time histogram
+                    if ascdf_chan is not None:
+                        #if len(canvases)>0:
+                        if "c_energy" in canvases.keys():
+                            arg = "energy"
+                            #arg = list(canvases.keys())[0].split("c_")[-1]
+                            binlo = histograms[arg].GetXaxis().GetFirst()
+                            binhi = histograms[arg].GetXaxis().GetLast()
+                            elo = bin2ene(binlo, histograms[arg])
+                            ehi = bin2ene(binhi, histograms[arg])
+                        else:
+                            binlo = 0
+                            binhi = 99999
+                            elo   = 0
+                            ehi   = 99999
+
+                        print(f"D... REGION:  {binlo}..{binhi}  (in channels)  crosscheck4E: {elo:.1f}..{ehi:.1f} ")
+                        histt = ascgeneric.histo_time( ascdf_chan, "time" , binlo, binhi )
+                        histograms['time'] = histt
+                        display_h_name( 'time' , "c_time" , filled = False, color = 2, simple = True)
+                    else:
+                        print(f"X...  {fg.red} Select channel before time profile plot {fg.default}")
+
+                if cmd.find("sp")==0:  # energy spectrum
+                    if ascdf_chan is not None:
+                        hiene = ascgeneric.histo_energy( ascdf_chan , calibration = (ECALIBa, ECALIBb) )
+                        histograms['energy'] = hiene
+                        display_h_name( 'energy' , "c_energy" , filled = False, color = 1, simple = True)
+                    else:
+                        print(f"X...  {fg.red} Select channel before spectrum plot {fg.default}")
+
+
+                if cmd.find("sh")==0:
+                    if ascdf_chan is not None:
+                        print(ascdf_chan)
+                    else:
+                        print(ascdf)
+
+                if cmd.find("sa")==0:
+                    done = False
+                    if ascdf_chan is not None:
+                        if not 'energy' in histograms.keys():
+                            hiene = ascgeneric.histo_energy( ascdf_chan , calibration = (ECALIBa, ECALIBb) )
+                            histograms['energy'] = hiene
+                        if 'energy' in histograms.keys():
+                            done = True
+                            mychan = ascdf_chan['ch'].min()
+                            newname = f"{ascfilename}_ch{mychan}"
+                            print("D...", newname)
+                            histograms[newname] = histograms['energy']
+                            histograms[newname].SetName(newname)
+
+                            t0 = ascdf_chan['time'].min()
+                            t1 = ascdf_chan['time'].max()
+                            myrtime = runtime.total_seconds()
+                            myrtime = t1-t0 # WHEN CUT
+                            mystart = ascstart + dt.timedelta(seconds=t0)
+                            print(f"D... start = {ascstart}, dead = {deadttot} in % , ")
+                            print("i... just save total, deadtime = ",deadttot)
+                            save_hist_txt( newname , total_time = myrtime ,
+                                           started = mystart,
+                                           deadtime = deadttot/100 )
+
+                    if not done:
+                        print("X... NOT SAVED....  select channel '#' and  create spectrum 'sp' then 'sa' ")
+
+                if   cmd.find("er")==0:
+                    if ascdf_chan is not None:
+                        local_generate_erlangs() # internal function in this function
+                    else:
+                        print(f"X... {fg.red} Select channel before erlang plot {fg.default}")
+
+                if cmd.find("re")==0:
+                    if ascdf_chan is not None:
+                        ascdf_chan.drop(ascdf_chan.index, inplace=True)
+                        ascdf_chan = None
+                        rate = 0
+                        runtime = dt.datetime.now()
+                        runtime = dt.datetime.now() -runtime
+
+                        print(f"X... {fg.green}reset done, enter new channel to  select  {fg.default}")
+                    else:
+                        print(f"X... {fg.red}No reset done, channel cut is not present {fg.default}")
+
+                if cmd.find("cu")==0:
+                    if ascdf_chan is not None:
+                        t_from = None
+                        t_to = None
+                        arg = arg.split(" ")
+                        if len(arg)==2:
+                            t_from = arg[0]
+                            t_to = arg[1]
+                            ascdf_chan = ascgeneric.cut_asc(ascdf_chan, t_from, t_to)
+                            print(f"i... {fg.green}CUT DONE ({t_from},{t_to})  {fg.default}")
+                            t0 = ascdf_chan['time'].min()
+                            t1 = ascdf_chan['time'].max()
+                            rate = len(ascdf_chan)/(t1-t0) # divided by total time
+                            runtime = dt.timedelta( seconds = t1-t0 )
+
+                        else:
+                            print(f"X... {fg.red} NO times from - to - in seconds were given... {fg.default}", arg )
+                    else:
+                        # ascdf = ascgeneric.cut_asc(ascdf)
+                        print(f"X... {fg.red}  I dont cut the base ASC file, select channel first {fg.default}")
+
+
+            else:
+                print("X... ASC file is not loaded, type 'L' or 'L1' ... ")
+
+
+
+
+        # ********************** CMD ***********************************
+        elif  cmd == "l":  # ***CMD***  LOAD ====== l
+            if arg=="":
+                select_histo_to_load(  folder = config.CONFIG[target]['data_folder'] ) # load_txt()
+                print(f"i.. {fg.cyan} LOAD TXT WITH NUMBER like:    l1  l2 l3 ...  {fg.default}")
+            else:
+                ii = arg# for ii in arg: ONE ASC / SPECTRUM AT A TIME....for ii in arg:
+                select_histo_to_load( ii , folder = config.CONFIG[target]['data_folder']) # load_txt() # all that are given in argument l67
+                limits_calib = histograms[f"s{ii}"].GetXaxis().GetXmin(),histograms[f"s{ii}"].GetXaxis().GetXmax()
+                print("D... limits calib:", limits_calib)
+                if limits_calib[0]==0:
+                    histograms[f"s{ii}"].SetTitle(  histograms[f"s{ii}"].GetTitle()+"; channels" )
+
+
+        # ********************** CMD ***********************************
+        elif cmd == "q":   # ***CMD***  QUIT  ======= q
+            print("i... just q: doing exit...")
+            # immediate
+            config.CONFIG["poll_time"] = 1
+            if not OFFLINE:
+                b0c01.set_step( config.CONFIG["poll_time"])
+            thr.do_run = False
+            #kthread.do_run = False # NO NEED IN SSH VERSION
+            break
+            sys.exit(0) # I must kill in ssh version....
+
+        # ********************** CMD ***********************************
+        elif len(cmd)>0:   # ***CMD***  ?
+            print(f"{fg.red}X... unknown command cmd=/{cmd}/ arg=/{arg}/ ...{fg.default}")
+            #lis = glob.glob(f"*.txt")
+            #print("i... available TXT==",lis)
+            #lis = glob.glob(f"*_lt*.txt")
+            #print("i... available BG ==",lis)
+
+
+
+
+
+        #=============================================================END OF COMMMANDS==========
+        #=============================================================END OF COMMMANDS==========
+        #=============================================================END OF COMMMANDS==========
+
+        # why here?
+        top.place()
+
+        # total histogram time
+        rdays = runtime.days# floor(runtime.total_seconds()/3600/24)
+        rhours = floor(runtime.seconds/3600)
+        rminsec = runtime.total_seconds() - (rdays*24+rhours)*3600
+        rminu = floor(rminsec/60)
+        rsec = int(rminsec - rminu*60)
+
+        # total histogram time
+
+        rditime = f"{rdays*24+rhours:03d}:{rminu:02d}:{rsec:02d}"
+
+        # was ....RUN= str(runtime)[0:10]
+
+        # prima = str(dt.datetime.now())[:-5]
+        if OFFLINE:
+            if ascdf is not None:
+                prima = f"{bg.red}{fg.white}{fx.bold}{ascfilename}{fg.default}{bg.blue}"
+            else:
+                prima = f"{bg.green}{fg.white}{fx.bold}OFFLINE{fg.default}{bg.blue}"
+        else:
+            prima = f"{bg.green}{fg.white}{fx.bold}{spectrumname}{fg.default}{bg.blue}"
+
+
+        if LOCAL_GLOB_NONE_CALIB==0:LOCAL_GLOB_NONE_CALIBname=f"{bg.orange}{fg.white}CAL_loca{fg.default}{bg.default}"
+        if LOCAL_GLOB_NONE_CALIB==1:LOCAL_GLOB_NONE_CALIBname=f"{bg.green}{fg.white}CAL_glob{fg.default}{bg.default}"
+        if LOCAL_GLOB_NONE_CALIB==2:LOCAL_GLOB_NONE_CALIBname=f"{bg.black}{fg.white}CAL_none{fg.default}{bg.default}"
+
+        if INFLUX: INFLUXp = f"{bg.green}  INFLUX{bg.default}"
+        else: INFLUXp = f"{bg.orange}{fg.black}NOINFLUX{fg.default}{bg.default}"
+
+        top.print_to( 0, f" {prima} {fg.white}{fx.bold} dt={deltat:.2f} sec. {fg.yellow} rate={rate:7.1f} {fg.white} RUN={rditime} MEM={lenhistos:4}  D[{h1np_last_interval:.0f}s]={warn_del} {d_last_interval:.2f} {unwarn_del} {fg.default} : {INFLUXp} : {LOCAL_GLOB_NONE_CALIBname}" )
+
+        if len(key)==0:
+            top2.print_to( 0, f"{fg.cyan}{bg.black}{' '*80}{bg.black}")
+        else:
+            top2.print_to( 0, f"{fg.white}{bg.red} > {fx.bold}{a_abc}{fg.yellow}_{fg.white}{b_abc}{fx.default}{fg.default}{bg.default} ")
+        #top.place()
+
+        #top2.print_to( (1,2), f"{fg.black}{bg.yellow} > {key}{fg.default}{bg.default}")
+        time.sleep(0.05)
+
+    print(f"i... FINISHED; {bg.red}waiting{bg.default} for threads .... {fg.red}maybe few seconds OR Ctrl-C...{fg.default} ")
+
+if __name__=="__main__":
+    Fire(main)
