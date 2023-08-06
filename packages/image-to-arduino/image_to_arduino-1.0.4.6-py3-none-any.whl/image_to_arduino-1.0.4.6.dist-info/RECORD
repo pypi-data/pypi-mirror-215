@@ -1,0 +1,11 @@
+image_to_arduino/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+image_to_arduino/__main__.py,sha256=ywKe8G72COn2xkWWa7u74tIwuD6AAJGFnnqJpOsqQb8,78
+image_to_arduino/main.py,sha256=8pfQCq5LmVVJz2j483WXksPaNTcjPDdmL48XVPeQs24,14543
+image_to_arduino/icon/icon.png,sha256=xPu2KNLhRB0OxDP_zZGXOyX_i6foM4ot4Dv34IkrQxw,6620
+image_to_arduino-1.0.4.6.data/data/image_to_arduino/icon/icon.png,sha256=xPu2KNLhRB0OxDP_zZGXOyX_i6foM4ot4Dv34IkrQxw,6620
+image_to_arduino-1.0.4.6.dist-info/LICENSE,sha256=3uuQ0-ScDihaCRr2F3KvkPmGtbvaTjxfpz26wgTkHBM,1066
+image_to_arduino-1.0.4.6.dist-info/METADATA,sha256=iZBT6lPRGvbNuoDGDJj7P9oIne-VUP-39ECVPmiCAL4,509
+image_to_arduino-1.0.4.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+image_to_arduino-1.0.4.6.dist-info/entry_points.txt,sha256=fguoNnekB_xRD4p9YkkH2CUTwIHg6TNr-wBuUojR1gE,68
+image_to_arduino-1.0.4.6.dist-info/top_level.txt,sha256=eXL0w-VB1xwuxJvoXsJbBKawavK5hbdGHr1KCb-H9hw,17
+image_to_arduino-1.0.4.6.dist-info/RECORD,,
