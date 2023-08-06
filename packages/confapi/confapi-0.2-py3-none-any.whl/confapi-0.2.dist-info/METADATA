@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: confapi
+Version: 0.2
+Home-page: https://github.com/illini-motorsports/confapi
+Author: cmmeyer1800
+Author-email: collinmmeyer@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.31.0)
+Requires-Dist: PyYAML (>=6.0)
+
+<p align="center">
+  <img src="https://github.com/illini-motorsports/confapi/blob/dev/assets/confapi_logo.png?raw=true" alt="ConfAPI">
+</p>
+[![Unit Tests](https://github.com/illini-motorsports/confapi/actions/workflows/python_tests.yml/badge.svg)](https://github.com/illini-motorsports/confapi/actions/workflows/python_tests.yml)
