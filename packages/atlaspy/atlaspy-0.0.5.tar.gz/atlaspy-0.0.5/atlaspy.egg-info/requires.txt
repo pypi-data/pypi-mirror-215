@@ -1,0 +1,5 @@
+pyvista
+seaborn
+pandas
+matplotlib
+nibabel
