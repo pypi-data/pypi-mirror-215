@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nicovideo.py
+Version: 0.0.1
+Summary: Get nicovideo's video metadata.
+Home-page: https://github.com/okaits/nicovideo.py
+Author: okaits#7534
+Author-email: okaits@okaits7534.mydns.jp
+License: GNU Lesser General Public License 3.0
+Keywords: nicovideo
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: Japanese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.md
+
+UNKNOWN
+
