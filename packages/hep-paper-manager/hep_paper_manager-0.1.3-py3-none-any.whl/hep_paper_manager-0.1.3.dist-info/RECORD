@@ -1,0 +1,16 @@
+hpm/__init__.py,sha256=hmkU6Qd72LeqiV9ZfZpMzQfKoWUSSYBmqw6BdZzuhfs,366
+hpm/cli.py,sha256=CgT3YfXh36aFzX3o0Wc5uxf50CZGcGljgTqsaABy2BM,5864
+hpm/engines/__init__.py,sha256=0OTK2AiGN0czd9b-fuq6lkAtePXlaFnJSj5wMlYrOaA,29
+hpm/engines/inspire.py,sha256=DfoESebTzdEKTw468n5lR2HXktQ4pweMSd6oiUN2-xw,3648
+hpm/notion/__init__.py,sha256=MF64bwUCd4sm3dvcxZnkb4ujHtxT_KeuXdD0nVieEt4,27
+hpm/notion/client.py,sha256=VWDATLWFF6ToLs1cyi38DovbJeC_B49pO3aR3jvN8BA,3427
+hpm/notion/objects/__init__.py,sha256=L3xn34KGqgxdMtmTuibZZIvtWCQ6fLR0jJ2rqxGnLYE,54
+hpm/notion/objects/database.py,sha256=TBIGvR3DS8EGJcCc1MtM5Sc72VNZV-VBC7PyfQ64XPY,962
+hpm/notion/objects/page.py,sha256=vlGZfGsOW6PPIGDr_ZMKMsRkvBUMimCc1PqtuUNqOeg,3682
+hpm/notion/properties.py,sha256=Q2TJHZ8WWCAK6h8eqDw0fmnLQzBRoTwHI_hx_PQrVJk,5470
+hpm/templates/paper.yml,sha256=073rWeP7TAjF8yEH3xHVENHxy3havAh2jv0aUNkKLL0,215
+hep_paper_manager-0.1.3.dist-info/LICENSE,sha256=IQ4RWXocNh7D6geylvvwT6flEalRJcG9SqqKp8udql4,1064
+hep_paper_manager-0.1.3.dist-info/METADATA,sha256=z9XCUAYQcOXel0j0rE-ZXhgUqrL0T0PSceu7Pzhsf-4,4419
+hep_paper_manager-0.1.3.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+hep_paper_manager-0.1.3.dist-info/entry_points.txt,sha256=MJl8SypH72vr12Uca9m8oG0cScZSw9V_uVRbOW8JWJo,35
+hep_paper_manager-0.1.3.dist-info/RECORD,,
