@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: testless_autocomplete
+Version: 0.0.109
+Summary: Auto Complete Package
+Author: TestLess
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# see run.py file for details of importing and using the package
+
+# to run the package just run the run.py or write command -> python run.py on the terminal
