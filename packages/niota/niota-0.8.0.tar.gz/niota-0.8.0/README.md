@@ -1,0 +1,59 @@
+# NIOTA
+
+Make IOTA to be an integrity chain.
+
+Niota registers Asset history records to the integrity chain.
+
+## Installation
+
+```shell
+python3 -m pip install niota
+ ```
+
+## Unit Testing
+
+```shell
+make test
+```
+
+## Usage
+
+### Iota Client
+
+The `IotaClient` class is a client to interact with [IOTA REST API](https://editor.swagger.io/?url=https://raw.githubusercontent.com/rufsam/protocol-rfcs/master/text/0026-rest-api/0026-rest-api.yaml).
+
+Below is a minimal example for connecting to an IOTA hornet node with JWT authentication enabled, and create a message.
+
+```python
+from niota import IotaClient
+
+iota = IotaClient(base_url='https://example.iota.hornet.node', jwt_token='enter JWT token here')
+create_message_resp = iota.create_message('example-index', 'example-data')
+message_id = create_message_resp.data.messageId
+```
+
+
+### Niota client
+
+The `Niota` class can be used as a client to interact with IOTA Tangle messages with Numbers Protocol integrity record format.
+
+```python
+
+example_integrity_info = {
+    'raw_cid': 'bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku',
+    'ida_cid': 'bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenxquvyku',
+    'ida_mid': 'c7dfa6e5-346d-4b4d-a663-a421e7f9171f',
+    'ida_sha256sum': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+    'metadata_cid': 'bafkreidgkmzpzvot7a5r2iy44tmcojuvoyjgbwi5udldfisbvn4lnfrmoq',
+    'service_message': 'Create test data',
+}
+
+niota = Niota(
+    base_url='https://example.iota.hornet.node',
+    jwt_token='enter JWT token here'
+    private_key=private_key,
+    public_key=public_key,
+)
+message_id, index = niota.create_message(**message_data_fixture)
+
+```

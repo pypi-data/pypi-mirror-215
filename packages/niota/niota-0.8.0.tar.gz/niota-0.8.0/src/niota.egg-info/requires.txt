@@ -1,0 +1,10 @@
+cryptography
+pycryptodome
+pydantic
+requests
+
+[docs]
+sphinx
+
+[tests]
+tox
