@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pymetastore
+Version: 0.1.0
+Summary: A Python client for the Thrift interface to Hive Metastore
+Author: Kostas Pardalis
+Author-Email: Chris Riccomini <criccomini@apache.org>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: thrift>=0.16.0
+Description-Content-Type: text/markdown
+
+# pymetastore 🐝 🐍
+
+`pymetastore` is a Python client for Hive Metastore.
+
+## Key Features
+* Python-friendly interface for Hive Metastore
+* Comprehensive support for metadata operations
+* Fully compatible with the Hive metastore service over Thrift protocol
+
+## Installation
+
+Install pymetastore with pip:
+
+```bash
+pip install pymetastore
+```
+
+## Quick Start
+
+Here's a taste of using `pymetastore` to connect to Hive Metastore and list all databases:
+
+```python
+from pymetastore.metastore import HMS
+
+# create a connection to Hive Metastore
+with HMS.create(host="localhost", port=9083) as hms:
+    # list all databases
+    databases = hms.client.get_all_databases()
+    print(databases)
+```
