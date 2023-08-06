@@ -1,0 +1,3 @@
+[console_scripts]
+boto=aws_framework.scripts.main:main
+
