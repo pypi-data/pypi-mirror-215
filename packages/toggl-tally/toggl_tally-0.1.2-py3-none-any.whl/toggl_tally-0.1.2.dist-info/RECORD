@@ -1,0 +1,13 @@
+toggl_tally/__init__.py,sha256=g1AaQzc_XL0fmr14nsOzdB0yP6LkIT8F2krpWmk2O_Y,186
+toggl_tally/api.py,sha256=XD59HOct0eJuTZrBq1zUVy95-YfdWI-Opfj8dndBeqA,2329
+toggl_tally/cli.py,sha256=-p1R1zsFV587H00PcqOfL6RU6ZUfWtnXvns1xhl3uCo,6091
+toggl_tally/filter.py,sha256=tsQCb25W3X6PFxFtjHYtXiyAVJOPgoGy5yi2zBZllN4,5982
+toggl_tally/report.py,sha256=8rxpewDW3LzXbY3SFY8dKx85q2aUEp8lyZ0G_14noAQ,3879
+toggl_tally/tally.py,sha256=k-CwIZqlRwhtVy8L7MaANRSUVq6XM8gZFb0f0uT__BM,7183
+toggl_tally/time_utils.py,sha256=aNLiFF0NUoD00XDui63kKWo2d4E4GsrNmh32glk79Gw,944
+toggl_tally-0.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+toggl_tally-0.1.2.dist-info/METADATA,sha256=AOkcXTMdbaQxGFxJifUxnLdfyfATLKg7hAChLhMs5f0,46798
+toggl_tally-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+toggl_tally-0.1.2.dist-info/entry_points.txt,sha256=-iVwBiqgs9SKNDV_kCwaptyERdL6VuvP1-WER4U2sIQ,60
+toggl_tally-0.1.2.dist-info/top_level.txt,sha256=Hk01F2-K7XO34X-HQjNBWPMQYPlXdrt8L9iij26149k,12
+toggl_tally-0.1.2.dist-info/RECORD,,
