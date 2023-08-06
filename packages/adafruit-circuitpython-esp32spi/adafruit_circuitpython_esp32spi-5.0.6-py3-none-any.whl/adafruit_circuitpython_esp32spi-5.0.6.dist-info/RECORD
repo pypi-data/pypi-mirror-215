@@ -1,0 +1,12 @@
+adafruit_esp32spi/PWMOut.py,sha256=v8Z1IgdByZwvHt7Ia0GbRHQ5SxvoMtEbBDevwL2cf0A,3180
+adafruit_esp32spi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adafruit_esp32spi/adafruit_esp32spi.py,sha256=5Ujuc-YF0eyVRe0N_Xo50shwDyyCX_wvqUjTpTK9h1g,38983
+adafruit_esp32spi/adafruit_esp32spi_socket.py,sha256=uW4t1F_YuZ9gE0YxQe1Kcnu7C32vqfQD5nx7FMkEJAs,8850
+adafruit_esp32spi/adafruit_esp32spi_wifimanager.py,sha256=SAeMsO9wLRWFCiUaFMaTH27i4JKnMxlxUmIGobcPfwg,13094
+adafruit_esp32spi/adafruit_esp32spi_wsgiserver.py,sha256=Grd2ZsNZ7gJu1iOrAfKMfoCSRLrlOrj4r13dYVzIjf8,8634
+adafruit_esp32spi/digitalio.py,sha256=hVjiRlUwWl1rA-I9U6a8WWPpp9N2ucyMskDf5mmDfZU,6293
+adafruit_circuitpython_esp32spi-5.0.6.dist-info/LICENSE,sha256=IGlqpINvOHtYqDtzKQIPxTtSgJ68vzpahp4ZcB4WrH0,1098
+adafruit_circuitpython_esp32spi-5.0.6.dist-info/METADATA,sha256=1MMPxQAU02uIRnwUqqolLRv0Zs0biEuYw61azKcbP_I,3948
+adafruit_circuitpython_esp32spi-5.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+adafruit_circuitpython_esp32spi-5.0.6.dist-info/top_level.txt,sha256=iVqCT-V4JKnf_vOw01oeMHNzTg4wGxuVn95G3CqwFVI,18
+adafruit_circuitpython_esp32spi-5.0.6.dist-info/RECORD,,
