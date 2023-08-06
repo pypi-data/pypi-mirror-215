@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "bunkatopics"
+version = "0.39"
+description = "Advanced Topic Visualization"
+authors = ["Charles De Dampierre <charles.de-dampierre@hec.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+umap-learn = "^0.5.3"
+pandas = "^2.0.2"
+pydantic = "^1.10.9"
+loguru = "^0.7.0"
+langchain = "^0.0.206"
+plotly = "^5.15.0"
+textacy = "^0.13.0"
+gensim = "^4.3.1"
+instructorembedding = "^1.0.1"
+torch = "^2.0.1"
+sentence-transformers = "^2.2.2"
+jupyterlab = "^4.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
