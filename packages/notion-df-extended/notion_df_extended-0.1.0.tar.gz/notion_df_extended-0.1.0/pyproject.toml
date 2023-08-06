@@ -1,0 +1,117 @@
+[tool.poetry]
+name = "notion-df-extended"
+version = "0.1.0"
+description = "Notion modified to include more recent packages."
+authors = ["Kevin Hill <kivo360@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "notion_df", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+pydantic = "^1.10.9"
+notion-client = "^2.0.0"
+pandas = "^2.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-testmon = "^2.0.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# fix-only = true
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+line-length = 120
+select = ["SIM"]
+ignore = ["UP007", "F401"]
+
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = [
+    "ALL",
+    "A",
+    "B",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "N",
+    "Q",
+    "S",
+    "W",
+    "ANN",
+    "ARG",
+    "BLE",
+    "COM",
+    "DJ",
+    "DTZ",
+    "EM",
+    "ERA",
+    "EXE",
+    "FBT",
+    "ICN",
+    "INP",
+    "ISC",
+    "NPY",
+    "PD",
+    "PGH",
+    "PIE",
+    "PL",
+    "PT",
+    "PTH",
+    "PYI",
+    "RET",
+    "RSE",
+    "RUF",
+    "SIM",
+    "SLF",
+    "TCH",
+    "TID",
+    "TRY",
+    # # "UP",
+    "YTT",
+]
+show-fixes = true
+unfixable = ["F401"]
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+per-file-ignores = {}
+
+# Same as Black.
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.10.
+target-version = "py310"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
