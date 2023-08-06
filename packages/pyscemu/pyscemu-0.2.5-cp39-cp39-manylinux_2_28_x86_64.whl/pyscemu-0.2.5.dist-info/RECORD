@@ -1,0 +1,7 @@
+pyscemu-0.2.5.dist-info/METADATA,sha256=v9igHDh0XURq7eiRslvVb6i9mVG_1oxRGmnKwx2X95I,10409
+pyscemu-0.2.5.dist-info/WHEEL,sha256=bWLZFXoiMk9mmICB8flGptQXhYHNd3ojj0G5_gts1uI,108
+pyscemu.libs/libcrypto-53b68176.so.1.1,sha256=U-bEK7Q4-RpsNiUimbig5yu_D-KOhIyHzNr3a22OdOQ,3206729
+pyscemu.libs/libssl-f8da170d.so.1.1,sha256=yHqjhrkU1XDyddSLWI9fz1Pgz7B8EUJcJ70VJuP6AN8,642041
+pyscemu/__init__.py,sha256=jjMhIttPyfTdr1MHka85RPpp3dxlC-NA2fRUcY4P3og,111
+pyscemu/pyscemu.cpython-39-x86_64-linux-gnu.so,sha256=Wklg5YkglFmHLV-AcnhOhnJJa3XAPlrK70tIecgcmso,4862281
+pyscemu-0.2.5.dist-info/RECORD,,
