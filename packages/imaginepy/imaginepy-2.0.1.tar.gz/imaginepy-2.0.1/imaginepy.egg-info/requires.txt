@@ -1,0 +1,4 @@
+aiohttp
+requests_toolbelt
+langdetect
+pybase64
