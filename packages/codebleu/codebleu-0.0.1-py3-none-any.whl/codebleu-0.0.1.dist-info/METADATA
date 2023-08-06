@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: codebleu
+Version: 0.0.1
+Summary: Pip compatible `CodeBLEU` implementation
+Author-email: Konstantin Chernyshev <kdchernyshev@gmail.com>
+License: MIT License
+Project-URL: homepage, https://github.com/k4black/fastapi-jwt
+Project-URL: documentation, https://k4black.github.io/fastapi-jwt/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tree-sitter (<1.0.0,>=0.20.0)
+Provides-Extra: test
+Requires-Dist: pytest (<8.0.0,>=7.0.0) ; extra == 'test'
+Requires-Dist: pytest-cov (<5.0.0,>=4.0.0) ; extra == 'test'
+Requires-Dist: pytest-mock (<4.0.0,>=3.0.0) ; extra == 'test'
+Requires-Dist: black (==23.1.0) ; extra == 'test'
+Requires-Dist: mypy (<2.0.0,>=1.0.0) ; extra == 'test'
+Requires-Dist: flake8 (<7.0.0,>=6.0.0) ; extra == 'test'
+Requires-Dist: isort (<6.0.0,>=5.11.0) ; extra == 'test'
+
+# CodeBLEU
+Unofficial pip compatible CodeBLEU metric 
