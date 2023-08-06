@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+onion_network/__init__.py
+onion_network/generation.py
+onion_network/visualization.py
+onion_network.egg-info/PKG-INFO
+onion_network.egg-info/SOURCES.txt
+onion_network.egg-info/dependency_links.txt
+onion_network.egg-info/requires.txt
+onion_network.egg-info/top_level.txt
+tests/test_generation.py
