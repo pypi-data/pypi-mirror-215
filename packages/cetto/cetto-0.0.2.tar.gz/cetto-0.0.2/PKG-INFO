@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cetto
+Version: 0.0.2
+Summary: Simple CLI interface for ChatGPT
+Home-page: https://github.com/raphael2692/cetto
+Download-URL: https://github.com/user/reponame/archive/v_0_0_2.tar.gz
+Author: Raffaele Spataro
+Author-email: raffaele2692@gmail.com
+License: MIT
+Keywords: CHAT,GPT,CLI
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
