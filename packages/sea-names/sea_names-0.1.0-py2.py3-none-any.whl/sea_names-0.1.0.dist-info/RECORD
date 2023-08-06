@@ -1,0 +1,13 @@
+sea_names/__init__.py,sha256=DL2jQYPckA2Cu-yr7Iyb-NoWkCLuohNJfmf7TEn_1t8,260
+sea_names/cache.py,sha256=oexIVLSXt5oNnx2WE9OA0u1qrNpDgqh2Xb9GV9QmyLE,1956
+sea_names/cli.py,sha256=Nkui6UipV8kt0WKZAaRa9BNmayRqrqUp4hm3v1JLfbo,477
+sea_names/geo.py,sha256=QenruwIMkZ7nbcU8vBVD-VUdOzHx-kDJTsB21dP4L2E,3635
+sea_names/log.py,sha256=1HV6Z13n4afGVZgO3ts6VGyyEg0XcwZ-RWsVzsJPIUE,352
+sea_names/logging.conf,sha256=ug5bm_2N7GifkajsmTY2sRm5wi4zUBmb1hfDAys9Caw,440
+sea_names-0.1.0.dist-info/AUTHORS.rst,sha256=LbP_ibgoACRFl8G13ZQxQgm5SEMOYQFqso17ZJJIR9o,151
+sea_names-0.1.0.dist-info/LICENSE,sha256=7lnxyJppvXyegb0q5szbhnF2O2mOo7wZkGDHvjGA3ZY,1081
+sea_names-0.1.0.dist-info/METADATA,sha256=un3T8VOsgavW0U3Nvho-zaA8n4uUy8iXfHL17Aqnw74,2449
+sea_names-0.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+sea_names-0.1.0.dist-info/entry_points.txt,sha256=f2HaDQIOG3_JEp-JHtZwJ7T6RqKKRcQOOENIoFct8zs,49
+sea_names-0.1.0.dist-info/top_level.txt,sha256=YmG0B8Zs3nsGCSrEDGm60PTuEVpO0pIIoab_Mt2nz60,10
+sea_names-0.1.0.dist-info/RECORD,,
