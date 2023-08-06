@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: lapx
+Version: 0.5.2
+Summary: Customized Tomas Kazmar's lap, Linear Assignment Problem solver (LAPJV/LAPMOD).
+Home-page: https://github.com/rathaROG/lapx
+Author: rathaROG
+License: BSD-2-Clause
+Keywords: Linear Assignment,LAPJV,LAPMOD,lap,lap05
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Education :: Testing
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+
+**lap** is a linear assignment problem solver using Jonker-Volgenant
+algorithm for dense (LAPJV) or sparse (LAPMOD) matrices.
