@@ -1,0 +1,12 @@
+sihl/__init__.py,sha256=fVwEDIj_w_ZNWtSCs_0FnLdLrnt13lAnrGyghjOoxIs,77
+sihl/heads/NotoSansMono-Bold.ttf,sha256=1gGRg1AX2BqrAQYxknkfuoYpKYYrRGak8H59qg2gAV0,402648
+sihl/heads/__init__.py,sha256=VenAW0t3E-OsVeAoPfjR1k7prlaGjk2x4sn6gKInycI,233
+sihl/heads/binary_classification.py,sha256=JH9QvtnfOPSX09GgxLs4TENJGB79pgAbOETLXUvqf08,3148
+sihl/heads/multiclass_classification.py,sha256=ebcEGWnCO06fkA1GDME-7N_qZjmU696ezO9xTwS3Dns,3802
+sihl/heads/multilabel_classification.py,sha256=hECjLuB6OBw9d5AD_Y-x-coxCc5f86BLrwKOKAhRWqg,4658
+sihl/lightning_module.py,sha256=fAQsC4SGJ-4bHZmJ7zlmCNrkj_x8bll_k0WHxIzrbOc,3424
+sihl/torchvision_backbone.py,sha256=N1wTJZURVjjWgNNoqDsHsRBummTPSv43U9bIykSlR4k,6156
+sihl-0.0.3.dev0.dist-info/LICENSE,sha256=3Z8GJr8-OMkLyLnau7FXHBohdr3e2DB8LhvI8CI-MYg,1063
+sihl-0.0.3.dev0.dist-info/METADATA,sha256=e8140gDu9WVxAFrPu8si-Vp90IsJH_3b6I-gCrQ13AU,1793
+sihl-0.0.3.dev0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+sihl-0.0.3.dev0.dist-info/RECORD,,
