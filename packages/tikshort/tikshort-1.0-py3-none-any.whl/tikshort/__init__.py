@@ -1,0 +1,1 @@
+from tikshort.base import TikShorten
