@@ -1,0 +1,16 @@
+nonebot_plugin_shindan/__init__.py,sha256=wfD-SgWaxgOwexJulsSJn2SH9rdz0xeYzk80K_OKhoo,6835
+nonebot_plugin_shindan/config.py,sha256=Hkj_Afs4egNXfNj109xj6fwSiaYfSXJBU6eop7BU0GI,119
+nonebot_plugin_shindan/manager.py,sha256=VFuer2vXLW4kJbM9_yelEtfvhBFoQUpbxc16lSHqIz0,2374
+nonebot_plugin_shindan/migrations/02bb36c59899_init_db.py,sha256=xIaMs_DF4ZEkcBHpPeq_7Ft0qaxPT4_ReGGfYIQdG8E,3393
+nonebot_plugin_shindan/model.py,sha256=gGNpknF-Y1kMROsNi7ikXztEkiY1pSgZ6cT4X2TDsu4,530
+nonebot_plugin_shindan/onebot.py,sha256=tdAyF9yJH_w1-ObHzgtYYVEr4cduiCJU3y8QWImrrX4,2919
+nonebot_plugin_shindan/shindanmaker.py,sha256=XawcRuYay2y_xHdB4Fp9y6Tc67f5VflrVTJY9VKo3B8,4707
+nonebot_plugin_shindan/templates/app.css,sha256=pkrLoDGBBy9jxILq-Azk6y3nygLXATi9C9xPVBziDNI,180778
+nonebot_plugin_shindan/templates/app.js,sha256=GdXR-zOF19FSz8FpIIxui5lbeXC4ofxXup2YCQ-A0C0,247324
+nonebot_plugin_shindan/templates/chart.js,sha256=33pOgPw_isWG-rODJhRVPZOoW8LF12FUya2h_51wL30,477118
+nonebot_plugin_shindan/templates/shindan.html,sha256=9qb8cgtbMUoMJ1fc70iiyukRmUthnW7QY55Ha8o6vJI,339
+nonebot_plugin_shindan/templates/shindan_list.html,sha256=Vz8_26fPOPWU8nNscJD7p8vy-w_9m3nUx5DsVXk84_w,1965
+nonebot_plugin_shindan-0.4.0.dist-info/LICENSE,sha256=Y46u2BV5EbnQLp5EIx5YRLcHcCiB7sY06At5fiA6PiM,1063
+nonebot_plugin_shindan-0.4.0.dist-info/METADATA,sha256=HYHuX1t8Nfn0jIb-b_PNIHSu8IDk_6Fxp9m2pGHn5Hg,2829
+nonebot_plugin_shindan-0.4.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+nonebot_plugin_shindan-0.4.0.dist-info/RECORD,,
