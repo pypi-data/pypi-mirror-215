@@ -1,0 +1,7 @@
+pandas
+numpy
+charset_normalizer
+fuzzywuzzy
+scipy
+emoji
+googletrans
