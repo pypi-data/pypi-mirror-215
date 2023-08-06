@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: visualLLM
+Version: 0.1.0
+Summary: a language model with visual context.
+Author: Kartik Sharma
+Author-email: kartik4949@gmail.com
+License: Apache 2.0
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: torch
+Requires-Dist: pandas
+
+# V-LLM
+Language Model with vision context
