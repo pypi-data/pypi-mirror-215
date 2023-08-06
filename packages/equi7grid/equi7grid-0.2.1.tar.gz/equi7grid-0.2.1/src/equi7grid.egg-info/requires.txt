@@ -1,0 +1,10 @@
+numpy
+scipy
+veranda
+pytileproj
+geographiclib
+geopathfinder
+
+[testing]
+pytest
+pytest-cov
