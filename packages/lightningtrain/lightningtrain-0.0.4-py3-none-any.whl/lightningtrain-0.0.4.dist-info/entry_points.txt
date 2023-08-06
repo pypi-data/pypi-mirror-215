@@ -1,0 +1,3 @@
+[console_scripts]
+lightningtrain_eval = lightningtrain.eval:main
+lightningtrain_train = lightningtrain.train:main
