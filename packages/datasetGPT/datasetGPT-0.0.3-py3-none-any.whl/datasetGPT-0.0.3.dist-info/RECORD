@@ -1,0 +1,12 @@
+datasetGPT/__init__.py,sha256=sTn_M8MX9_BCGcRsyruAHe1NzJHXr8q3b0tBxvJOxDc,101
+datasetGPT/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+datasetGPT/base.py,sha256=l4XZFX8WRWcGXv17rSwhnMpM2k3l9H6oMA-4V2MlZOk,2222
+datasetGPT/cli.py,sha256=f3R5YYJMv6UUIStqdJlpxLJwKuewnRF5v3J3iCbonVk,7123
+datasetGPT/conversations.py,sha256=NGGhF_SL3o9WFXFeaGOYX3_GLaJBtcb8msCdrxvJMDE,5900
+datasetGPT/outputs.py,sha256=hKNcF_0iSMiBoImiP-raQvxb_FJblExqY6kcLP451qw,2173
+datasetGPT/texts.py,sha256=rczk8hSIeDzuEEXpobBswJMp81BW6dteRGZaLAWo7T4,3904
+datasetGPT-0.0.3.dist-info/METADATA,sha256=pQzJZ36k1lSscmYtfL_4SSmG_4p3tJ5gsguJ2iJs-Ic,11939
+datasetGPT-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datasetGPT-0.0.3.dist-info/entry_points.txt,sha256=jJSPoy4fF3f5r4RVZvbxQE0-ThpqfbmthP3Xuh-zCRs,53
+datasetGPT-0.0.3.dist-info/top_level.txt,sha256=phQc13dnkV1JiZrUtQLrUuks-X56SC5o8HPGnuKd03c,11
+datasetGPT-0.0.3.dist-info/RECORD,,
