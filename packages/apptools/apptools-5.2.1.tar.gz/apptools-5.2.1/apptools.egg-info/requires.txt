@@ -1,0 +1,23 @@
+configobj
+traits>=6.2.0
+traitsui
+
+[docs]
+enthought-sphinx-theme
+sphinx
+
+[h5]
+numpy
+pandas
+tables
+
+[persistence]
+numpy
+
+[preferences]
+configobj
+
+[test]
+
+[test:python_version < "3.9"]
+importlib-resources>=1.1.0
