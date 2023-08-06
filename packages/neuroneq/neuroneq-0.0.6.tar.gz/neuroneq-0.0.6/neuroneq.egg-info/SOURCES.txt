@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+neuroneq/__init__.py
+neuroneq/cli.py
+neuroneq/main.py
+neuroneq/utils.py
+neuroneq.egg-info/PKG-INFO
+neuroneq.egg-info/SOURCES.txt
+neuroneq.egg-info/dependency_links.txt
+neuroneq.egg-info/entry_points.txt
+neuroneq.egg-info/requires.txt
+neuroneq.egg-info/top_level.txt
