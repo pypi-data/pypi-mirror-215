@@ -1,0 +1,28 @@
+[bumpversion]
+current_version = "0.1.0"
+commit = true
+tag = true
+
+[bumpversion.file]
+source = "src/blocks_builder/version.py"
+
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+exclude = ["venv"]
+# Ignore missing docstrings in __init__: D107
+# Ignore missing type annotation for self: ANN101
+# Ignore missing type annotation for special methods (i.e. __init__): ANN204
+# Ignore missing type annotation for cls: ANN102
+# Conflicts with W504 and no longer conforms to PEP8: W503
+extend-ignore = ["D107", "ANN101", "ANN204", "ANN102", "W503"]
+per-file-ignores = ["src/blocks_builder/blocks/*.py:VNE003,U100,N805","src/blocks_builder/version.py:D100"]
+max-line-length = 120
+known-modules = ":[src]"
+literal-inline-quotes = "double"
+literal-multiline-quotes = "double"
+
+[tool.isort]
+profile = "black"

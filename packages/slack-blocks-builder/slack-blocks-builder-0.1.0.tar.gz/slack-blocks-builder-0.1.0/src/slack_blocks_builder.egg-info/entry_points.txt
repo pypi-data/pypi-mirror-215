@@ -1,0 +1,2 @@
+[console_scripts]
+generate_sample_files = blocks_builder.generate_files:generate_sample_files
