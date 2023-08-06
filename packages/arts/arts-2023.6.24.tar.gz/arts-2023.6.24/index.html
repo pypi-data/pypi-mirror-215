@@ -1,0 +1,142 @@
+<!--
+Copyright [2023] [许灿标]
+email: lcctoor@outlook.com
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>许灿标的创作</title>
+    <style>
+        .folder, a, a:visited, a:hover {
+            font-family: 'Chinese Quote', 'Segoe UI', Roboto, RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            border: 0 solid #c4c7ce;
+            box-sizing: border-box;
+            vertical-align: middle;
+            outline: none;
+            margin: 0;
+            padding: 0;
+            font-size: 1.1em;
+            line-height: 2em;
+        }
+        a, a:visited, a:hover {
+            color: #1479d7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #iframe, body, #div {
+            width: 100%;
+            height: 100%;
+            border: 0 solid #c4c7ce;
+            box-sizing: border-box;
+            vertical-align: middle;
+            outline: none;
+            margin: 0;
+            padding: 0;
+        }
+        #iframe {
+            position:fixed;
+            top: 0;
+            left: 0;
+        }
+        #div {
+            position:fixed;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+        }
+        #button {
+            position:fixed;
+            right: 35px;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            font-size: 4em;
+            background-color: rgba(2, 2, 2, 0);
+            border-color: rgba(2, 2, 2, 0);
+        }
+        #button:hover {
+            border-color:#1479d7;
+        }
+    </style>
+    <meta charset="utf-8">
+</head>
+<body scroll="no">
+    <button id="button" style="z-index: -300;" onclick="window.location.href = '/arts'">↶</button>
+    <iframe id="iframe" style="z-index: -200;"></iframe>
+    <div id="div" style="z-index: -100;"></div>
+    <script>
+        document.body.style.height = window.innerHeight + 'px'
+        iframe = document.getElementById('iframe')
+        div = document.getElementById('div')
+        button = document.getElementById('button')
+        let artdict = {"v2v8tzkqs": "arts/万象思考/ChatGPT已经有自我意识了", "op8eb8xi4": "arts/万象思考/万物为什么会遵循着物理定律？", "w2g3c76zh": "arts/万象思考/人权/人人平等是个伪概念", "j0zbn1756": "arts/万象思考/人权/堕胎自由权", "28a2w4c5g": "arts/万象思考/什么是“迷信科学”？", "tsvaewa2b": "arts/万象思考/有无相生，难易相成的启发", "jvvhbbqll": "arts/万象思考/熵增都是坏的，熵减都是好的吗？", "k7gmap1hw": "arts/原创小说/天使传奇/1、被绑架", "gr3gpundl": "arts/原创小说/陆小凤新传/燕山宝藏/第一章", "oessgtukx": "arts/时空遐想/轮回转世真的存在吗？", "v1a0b27e1": "arts/编程教程/Python/数据库/操作MongoDB简明教程", "9wpt1e39o": "arts/编程教程/Python/数据库/操作MySQL简明教程", "o8pvai7e8": "arts/编程教程/Python/正则表达式/1、清洗自然灾害数据", "4xbwpfefw": "arts/编程教程/Python/成果展示/用37行代码实现AI五子棋", "8pz1ipysw": "arts/编程教程/Python/其它/调用openAI进行连续对话", "b8l52p702": "arts/论时事/评价在北京工体冲进场的梅西粉丝", "u8u2ai52y": "arts/其它/现在的‘人工智能’是‘穷举智能’", "z2vkvopdq": "arts/其它/用均匀抽样作文件指纹的可靠性"}
+        let titledict = {"v2v8tzkqs": "ChatGPT已经有自我意识了", "op8eb8xi4": "万物为什么会遵循着物理定律？", "w2g3c76zh": "人人平等是个伪概念", "j0zbn1756": "堕胎自由权", "28a2w4c5g": "什么是“迷信科学”？", "tsvaewa2b": "有无相生，难易相成的启发", "jvvhbbqll": "熵增都是坏的，熵减都是好的吗？", "k7gmap1hw": "1、被绑架", "gr3gpundl": "第一章", "oessgtukx": "轮回转世真的存在吗？", "v1a0b27e1": "操作MongoDB简明教程", "9wpt1e39o": "操作MySQL简明教程", "o8pvai7e8": "1、清洗自然灾害数据", "4xbwpfefw": "用37行代码实现AI五子棋", "8pz1ipysw": "调用openAI进行连续对话", "b8l52p702": "评价在北京工体冲进场的梅西粉丝", "u8u2ai52y": "现在的‘人工智能’是‘穷举智能’", "z2vkvopdq": "用均匀抽样作文件指纹的可靠性"}
+        let ThisArtpk = window.location.href.match(/pk=[\w]+/gm)
+        if (ThisArtpk) {
+            let artpk = ThisArtpk[0].split('=')[1]
+            iframe.src = './' + artdict[artpk]
+            document.title = titledict[artpk]
+            document.body.setAttribute('state', '0')
+            div.style.zIndex = 100
+            button.style.zIndex = 300
+            iframe.style.zIndex = 200
+        }
+        function goto(artpk) {window.open('./?pk=' + artpk)}
+    </script>
+    <h1 style="text-align:center;">许灿标的创作</h1>
+    <div style="text-align:center; margin:2em 0 4em 0;">简单胜于复杂，明确胜于隐晦，扁平胜于嵌套，优美胜于丑陋。</div>
+    <div style="padding-left:10em;">
+        <div class="folder">万象思考</div>
+<ul><div><a href="javascript:;" onclick="goto('v2v8tzkqs')">ChatGPT已经有自我意识了</a></div>
+<div><a href="javascript:;" onclick="goto('op8eb8xi4')">万物为什么会遵循着物理定律？</a></div>
+<div class="folder">人权</div>
+<ul><div><a href="javascript:;" onclick="goto('w2g3c76zh')">人人平等是个伪概念</a></div>
+<div><a href="javascript:;" onclick="goto('j0zbn1756')">堕胎自由权</a></div>
+</ul>
+<div><a href="javascript:;" onclick="goto('28a2w4c5g')">什么是“迷信科学”？</a></div>
+<div><a href="javascript:;" onclick="goto('tsvaewa2b')">有无相生，难易相成的启发</a></div>
+<div><a href="javascript:;" onclick="goto('jvvhbbqll')">熵增都是坏的，熵减都是好的吗？</a></div>
+</ul>
+<div class="folder">原创小说</div>
+<ul><div class="folder">天使传奇</div>
+<ul><div><a href="javascript:;" onclick="goto('k7gmap1hw')">1、被绑架</a></div>
+</ul>
+<div class="folder">陆小凤新传</div>
+<ul><div class="folder">燕山宝藏</div>
+<ul><div><a href="javascript:;" onclick="goto('gr3gpundl')">第一章</a></div>
+</ul>
+</ul>
+</ul>
+<div class="folder">时空遐想</div>
+<ul><div><a href="javascript:;" onclick="goto('oessgtukx')">轮回转世真的存在吗？</a></div>
+</ul>
+<div class="folder">编程教程</div>
+<ul><div class="folder">Python</div>
+<ul><div class="folder">数据库</div>
+<ul><div><a href="javascript:;" onclick="goto('v1a0b27e1')">操作MongoDB简明教程</a></div>
+<div><a href="javascript:;" onclick="goto('9wpt1e39o')">操作MySQL简明教程</a></div>
+</ul>
+<div class="folder">正则表达式</div>
+<ul><div><a href="javascript:;" onclick="goto('o8pvai7e8')">1、清洗自然灾害数据</a></div>
+</ul>
+<div class="folder">成果展示</div>
+<ul><div><a href="javascript:;" onclick="goto('4xbwpfefw')">用37行代码实现AI五子棋</a></div>
+</ul>
+<div class="folder">其它</div>
+<ul><div><a href="javascript:;" onclick="goto('8pz1ipysw')">调用openAI进行连续对话</a></div>
+</ul>
+</ul>
+</ul>
+<div class="folder">论时事</div>
+<ul><div><a href="javascript:;" onclick="goto('b8l52p702')">评价在北京工体冲进场的梅西粉丝</a></div>
+</ul>
+<div class="folder">其它</div>
+<ul><div><a href="javascript:;" onclick="goto('u8u2ai52y')">现在的‘人工智能’是‘穷举智能’</a></div>
+<div><a href="javascript:;" onclick="goto('z2vkvopdq')">用均匀抽样作文件指纹的可靠性</a></div>
+</ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "arts"
+version = "2023.6.24"
+description = "GitHub Pages 部署辅助 —— README 文件提取器"
+
+readme = "README.md"
+authors = [{name = "许灿标", email = "lcctoor@outlook.com"}]
+requires-python = ">=3.10"
