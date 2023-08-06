@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: woon_vcfg
+Version: 0.0.1
+Summary: Module for .vfg configs type
+Home-page: https://woonworld.fun
+Author: MrWoon
+Author-email: vladpika51@gmail.com
+Project-URL: Homepage, https://woonworld.fun
+Project-URL: Documentation, https://github.com/MrWoonWorldT1/vconfig/issues/1
+Keywords: vcfg vconfig config
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This module is designed to work with .vcfg configs.
+
+# All commands:
+Create a new promotion: new(<name>, <text>)
+Get information: get(<name>)
+Change action: set(<name>, <text>)
+
+# Example:
+```
+# Import the library and create a variable for convenience
+import vconfig_by_mrwoon as config
+cfg = config.Configs("config.vcfg")
+
+# Create a new group
+cfg.new("name", "Vasya")
+
+# Display concentration on the screen
+print(cfg.get("name"))```

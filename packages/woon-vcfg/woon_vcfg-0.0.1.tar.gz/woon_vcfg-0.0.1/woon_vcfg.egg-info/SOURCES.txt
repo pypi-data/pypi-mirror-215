@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+woon_vcfg.egg-info/PKG-INFO
+woon_vcfg.egg-info/SOURCES.txt
+woon_vcfg.egg-info/dependency_links.txt
+woon_vcfg.egg-info/requires.txt
+woon_vcfg.egg-info/top_level.txt
