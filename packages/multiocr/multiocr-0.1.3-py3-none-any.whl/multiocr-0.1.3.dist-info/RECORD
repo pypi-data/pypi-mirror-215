@@ -1,0 +1,15 @@
+multiocr/__init__.py,sha256=MIZcJis_rNGJ_xdrqbEzzpApZr2dfvESifp_FolK7_Q,35
+multiocr/base_class.py,sha256=J_7j1ZOfvaO2aQcX7hgKYMWLdt093bEKe_dKfPslwQQ,338
+multiocr/main.py,sha256=mNSh4EkGVAw3a4d2B5wBh6mMPFEDnFVpr2ierXpSaVQ,2276
+multiocr/pipelines/__init__.py,sha256=SBzUHQ4KCjQevBIMv_AqkCwu58JTjoqNgLc6WSkvr6k,202
+multiocr/pipelines/aws_textract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiocr/pipelines/aws_textract/engine.py,sha256=p_HMFAiq02OQNp0U5yuVg7pGsEdj837NDhVUb1ou1Ps,4678
+multiocr/pipelines/easy_ocr/engine.py,sha256=4zakqc5IJwiZvPsTfckiMK3_IXLWCPptM9LrtHpc_l0,2717
+multiocr/pipelines/paddle_ocr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiocr/pipelines/paddle_ocr/engine.py,sha256=ZkxBU3NRb4q_e-KMW5dbdUJrAjV2davdDyoEulxLe1E,2827
+multiocr/pipelines/tesseract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiocr/pipelines/tesseract/engine.py,sha256=5QI1OoWkOtTZPEC_1BikiZFNYk7TzAAP5y8GUmTt0LA,3535
+multiocr/utils.py,sha256=rZm-gQBc90NO_wcUXStsTShUYWAS3-jg4i7x-8A6b0k,1319
+multiocr-0.1.3.dist-info/METADATA,sha256=0DN1yD3lcuBlD-jCWF5aY5P8WimQbMzjxO5OjqIZz3Y,3281
+multiocr-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+multiocr-0.1.3.dist-info/RECORD,,
