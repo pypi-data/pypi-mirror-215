@@ -1,0 +1,10 @@
+telcell/__init__.py,sha256=hXexIYRx5f5j4C4xl8lFYJEP7cXt3vK0vnqyi2fgmcE,142
+telcell/pipeline.py,sha256=UW7ANE90S_wznn3AiYmznPz-HdmnOyo6pv8Y6l8XQ8E,510
+telcell/models/__init__.py,sha256=6cVZblyYWriSQN6IxsZQbYGEoyCbJf5USJEBLdwUnyw,271
+telcell/models/dummy.py,sha256=-By8vu0uA3noK-TeL43g3JtyK22yaiQrYxMf-2x3sGI,419
+telcell/models/model.py,sha256=nCJxszV_WD2_o5SfL6kyw762qkOgCn4GOjQtQF74sck,1403
+telcell/models/simplemodel.py,sha256=NLt16av86SMs_bEwbHqb9K7Yckjp-dyP0VPpbA4fsAI,5198
+telcell-0.0.1.dist-info/METADATA,sha256=c0Nx_ntdGBu-w5LHmE6FqGvMXG5aUEsjvR_VTWtzCv0,298
+telcell-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+telcell-0.0.1.dist-info/top_level.txt,sha256=L8Zwegr9Y90sySIKNZnP8E1w4EcKyI2uSPuL0vib2lc,8
+telcell-0.0.1.dist-info/RECORD,,
