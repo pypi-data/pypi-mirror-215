@@ -1,0 +1,9 @@
+README.md
+setup.py
+string_thing/__init__.py
+string_thing/string_thing.py
+string_thing.egg-info/PKG-INFO
+string_thing.egg-info/SOURCES.txt
+string_thing.egg-info/dependency_links.txt
+string_thing.egg-info/top_level.txt
+tests/test_string_thing.py
