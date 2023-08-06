@@ -1,0 +1,9 @@
+README.md
+setup.py
+remla23team09librelease/VersionUtil.py
+remla23team09librelease/__init__.py
+remla23team09librelease.egg-info/PKG-INFO
+remla23team09librelease.egg-info/SOURCES.txt
+remla23team09librelease.egg-info/dependency_links.txt
+remla23team09librelease.egg-info/requires.txt
+remla23team09librelease.egg-info/top_level.txt
