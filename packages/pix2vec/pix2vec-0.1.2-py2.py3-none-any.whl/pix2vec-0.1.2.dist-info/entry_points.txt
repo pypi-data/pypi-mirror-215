@@ -1,0 +1,3 @@
+[console_scripts]
+pix2vec = pix2vec.cli:main
+
