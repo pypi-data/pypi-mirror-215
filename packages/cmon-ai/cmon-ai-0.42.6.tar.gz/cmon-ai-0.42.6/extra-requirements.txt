@@ -1,0 +1,89 @@
+# CMON PACKAGE DEPENDENCIES
+#
+# Essential only 5 they are labeled with `` docarray numpy grpcio protobuf pyyaml. They will be installed
+#           when you do `pip install cmon`. They are essential to run 90% features & functionalities of Cmon.
+# Extensions they are labeled with different tags. They will NOT be installed by default. One can install a group of
+#           of dependencies labeled `tag` by `pip install "cmon[tag]"`
+#
+# FILE FORMAT
+# https//hanxiao.io/2019/11/07/A-Better-Practice-for-Managing-extras-require-Dependencies-in-Python/
+# Put your extra requirements here in the following format
+#
+# package[version] tag1 tag2 ...
+#
+#
+# REMARKS ON TAGS
+# 1. Try to reuse the existing tags if possible.
+#    If you intend to create a new tag keep it alphabetical short and general
+# 2. Package name itself is a tag already so you don't need to tag it again.
+#    For example 'numpy>=0.4.1 numpy' is redundant
+# 3. Tag order doesn't matter; case-sensitive; duplicated tag will be ignored
+# 4. Tag `all` is reserved for representing all packages
+
+# AVAILABLE TAGS
+#  <  < standard <  these tags correspond to Docker image tag
+#  required for **setting up  ENVIRONMENT**
+
+
+numpy                      
+protobuf>=3.19.0           
+grpcio>=1.46.0<1.48.1     
+grpcio-reflection>=1.46.0<1.48.1  
+grpcio-health-checking>=1.46.0<1.48.1  
+pyyaml>=5.3.1              
+packaging>=20.0            
+docarray>=0.16.4<0.30.0  
+# cmon-hubble-sdk>=0.30.4    
+jcloud>=0.0.35             
+opentelemetry-api>=1.12.0  
+opentelemetry-instrumentation-grpc>=0.35b0   
+#uvloop==0.15.0                    
+prometheus_client>=0.12.0          
+opentelemetry-sdk>=1.14.0   
+#opentelemetry-exporter-otlp>=1.12.0  
+#opentelemetry-exporter-prometheus>=1.12.0rc1  
+#opentelemetry-instrumentation-aiohttp-client>=0.33b0    
+#opentelemetry-instrumentation-fastapi>=0.33b0 
+#opentelemetry-exporter-otlp-proto-grpc>=1.13.0 
+fastapi>=0.76.0            
+uvicorn[standard]          
+docker                     
+pathspec                   
+filelock                   
+requests                   
+websockets                 
+pydantic                   
+python-multipart           
+aiofiles                   
+aiohttp                    
+scipy>=1.6.1               
+Pillow                     
+pytest                     
+pytest-timeout             
+pytest-mock                
+pytest-cov==3.0.0          
+coverage==6.2              
+pytest-repeat              
+pytest-asyncio             
+pytest-reraise             
+flaky                      
+mock                       
+requests-mock              
+pytest-custom_exit_code    
+black==22.3.0              
+kubernetes>=18.20.0        
+pytest-kind==22.11.1       
+pytest-lazy-fixture        
+torch                      
+psutil                     
+strawberry-graphql>=0.96.0 
+sgqlc                      
+bs4                        
+jsonschema                 
+portforward>=0.2.4<0.4.3         
+tensorflow>=2.0            
+#opentelemetry-utils>=0.33b0  
+prometheus-api-client>=0.5.1  
+watchfiles>=0.18.0         
+urllib3<2.0.0              
+git+https://github.com/openai-ae/docarray.git
