@@ -1,0 +1,15 @@
+pycryptosat.pypy37-pp73-x86_64-linux-gnu.so,sha256=JA1D-6zKRcr9CCSlyogSVnmDvlvDIhBBs64d3gxHoxU,1600632
+msvc/stdint.h,sha256=jaafixDHAdGrcebwgUTFQran_C9D2yrZep_sEpSUec8,7728
+pycryptosat-5.11.11.dist-info/LICENSE.txt,sha256=rFeaM7AdZTD-9meJJOcuno7hfp3uv-1hP5XB5GEd-pY,2471
+pycryptosat-5.11.11.dist-info/WHEEL,sha256=5xZJeU9CDK7Pd0yJnwC-WClMM5mwQhphrQsHFjbe9Dk,162
+pycryptosat-5.11.11.dist-info/top_level.txt,sha256=soo65JVrRM8uGYzhV79Vopdlf8IchDxhCNJyW_8UdmU,32
+pycryptosat-5.11.11.dist-info/METADATA,sha256=GLLFuWt-yxJ4eHMFuTfSDFk-6y_rklqVwwttnnp-6TI,7530
+pycryptosat-5.11.11.dist-info/AUTHORS,sha256=3pyHfYoc2JZ7Z-dFTCgHswz1Hb9jbS87GxT4hRjhNU0,914
+pycryptosat-5.11.11.dist-info/RECORD,,
+oracle/oracle.cpp,sha256=zKZFHpZQ8sAEdppxQcnL6vXt-EoZiAv1Am2kAQM7ess,25654
+oracle/utils.h,sha256=WSQhzRwR4kOdG1JUs_2VY9gzBXc1OlwXGGG9mOnC30U,2150
+oracle/oracle.h,sha256=x1zZ5Id36xS3sXHaOGe7IcSllw9e-efN1ZPY1kz6utc,5764
+picosat/config.h,sha256=l2digGU9H4NtE3OmyAfrLDxNiMspAKIfkwliaPp0xCA,148
+picosat/picosat.c,sha256=b7X3TESOFt7Z37Tq3MFOr0W6DKZazpbo2sYs4HGtHQA,162828
+picosat/version.c,sha256=cPTwsvcBWP4vdONNsGPND7t7oY_UWObbsqotI5uW2AU,168
+picosat/picosat.h,sha256=MAHRDCvw9HcluR6L-sR4QK0nOioVsTAgxH1P1EPMH8w,28695
