@@ -1,0 +1,17 @@
+ordlookup-stubs/__init__.pyi,sha256=x4u5B9-eKQqVauOIsA-0kXQFw065BXivyrx2XUlcCOg,1222
+ordlookup-stubs/oleaut32.pyi,sha256=Bcu9PcC8Xjayb26SVFpTiQIKDboG9HCw2BgHC7u9Jc0,81
+ordlookup-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ordlookup-stubs/ws2_32.pyi,sha256=yFzBPBmxJgwcQ7HphL3SvW02yFkL_S18_bju8M0Ld7o,79
+ordlookup-stubs/_generated/oleaut32.pyi,sha256=tWBQM5sOqQVrztGAjefdwDo48i-sMUgMbx5MzYuQj4M,50368
+ordlookup-stubs/_generated/ws2_32.pyi,sha256=TWPTiJRDtaXdGhnH9RvF3HrxMQjy9RvEj_MZd7gaH1A,15474
+pefile-stubs/__init__.pyi,sha256=AbXDTi0R2JazSmNBqLXblyLoq2L8lV7bqc4CuGCrYyw,49132
+pefile-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pefile-stubs/_generated/pefile_formats.pyi,sha256=Y9SAoL20IEs60WCnLHM6P_Qq3f72rCTcwJ_NruKLJzU,18386
+pefile-stubs/_generated/pefile_lookup.pyi,sha256=9AL_4XuFIxx2E01ic80FoI60R7jd4q_UYRZliKAaDNU,93046
+types_pefile-2023.2.7.post0.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+types_pefile-2023.2.7.post0.dist-info/LICENSE,sha256=b8fqQe-P3uCZmWAoWdzs6RL0uR28uNyz1OjgqugoaUo,486
+types_pefile-2023.2.7.post0.dist-info/LICENSE.pefile,sha256=iXFoffNNcE6mg-zzKxb5qRI3YE1EiesWbRN3DN2PAHU,1082
+types_pefile-2023.2.7.post0.dist-info/METADATA,sha256=Y5G4kNf9dbYhRWV8Z7Ob8VLbb7uR_6wL3FpZYse8fP8,1535
+types_pefile-2023.2.7.post0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+types_pefile-2023.2.7.post0.dist-info/top_level.txt,sha256=TI7Ehf7WkSWMY65ZdIjuWJ6PnrL_kWr5kNLuUiM40V0,29
+types_pefile-2023.2.7.post0.dist-info/RECORD,,
