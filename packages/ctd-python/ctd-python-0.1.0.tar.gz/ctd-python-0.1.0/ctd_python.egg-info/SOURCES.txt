@@ -1,0 +1,12 @@
+README.md
+setup.py
+ctd/__init__.py
+ctd/get_data.py
+ctd/utils.py
+ctd/unzipped_data/__init__.py
+ctd/zipped_data/__init__.py
+ctd_python.egg-info/PKG-INFO
+ctd_python.egg-info/SOURCES.txt
+ctd_python.egg-info/dependency_links.txt
+ctd_python.egg-info/requires.txt
+ctd_python.egg-info/top_level.txt
