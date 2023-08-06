@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/tissue_detection/__init__.py
+src/tissue_detection/template.py
+src/tissue_detection/tpe.py
+src/tissue_detection.egg-info/PKG-INFO
+src/tissue_detection.egg-info/SOURCES.txt
+src/tissue_detection.egg-info/dependency_links.txt
+src/tissue_detection.egg-info/requires.txt
+src/tissue_detection.egg-info/top_level.txt
+src/tissue_detection/examples/A13_firstframe.tif
+src/tissue_detection/examples/__init__.py
+src/tissue_detection/templates/__init__.py
+src/tissue_detection/templates/tpe1_template.tif
+tests/test_demos.py
+tests/test_template_matching.py
