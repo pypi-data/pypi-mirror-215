@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: asv-runner
+Version: 0.0.5
+Summary: Core Python benchmark code for ASV
+Author-Email: Rohit Goswami <rog32@hi.is>
+Maintainer-Email: Rohit Goswami <rog32@hi.is>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Benchmark
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# About
+
+Core Python benchmark code for `asv`.
+
+**This package shall not have any dependencies on external packages and must be
+compatible with all Python versions greater than or equal to `3.8`.**
+
+
+For other functionality, refer to the `asv` package or consider writing an extension.
