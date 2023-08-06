@@ -1,0 +1,7 @@
+aspeak-6.0.0b2.data/scripts/aspeak.exe,sha256=jX9TcdZKKIM396aijR5YWQEc26BGgWsz026lTh67N0A,6400512
+aspeak-6.0.0b2.dist-info/METADATA,sha256=ChTDHiMwcmU-1sFPFuq3bmRJYAgcsmskGAswIci1aY4,18229
+aspeak-6.0.0b2.dist-info/RECORD,,
+aspeak-6.0.0b2.dist-info/WHEEL,sha256=AqVGELKyWWi5VRFuY2fsfQtkJ3pLyJIkacc0rC7ZCSA,94
+aspeak-6.0.0b2.dist-info/WHEEL,sha256=EeArRPVbze4iuMr-KX8-gLWfbfFQIgS-qF9ysi7GgNI,93
+aspeak/__init__.py,sha256=sj4r5-MOLBcE6ZPZqN948r83nNPArb3GXE1h7sq0fvk,107
+aspeak/aspeak.cp38-win_amd64.pyd,sha256=B9Fw0TTr1pUDUe3DQ6FU08bV23XKC3gaI2azenhg6gg,4052480
