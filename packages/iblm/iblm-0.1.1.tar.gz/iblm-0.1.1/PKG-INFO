@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: iblm
+Version: 0.1.1
+Summary: inductive bias learning
+License: MIT
+Author: toma tanaka
+Author-email: ulti4929@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: langchain (>=0.0.208,<0.0.209)
+Requires-Dist: openai (>=0.27.8,<0.28.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# IBLM:Inductive Bias Learning Models
+
+
+- [](#)
+- [How It Works](#how-it-works)
+- [How to Use](#how-to-use)
+- [Supported Models](#supported-models)
+- [Contributor](#contributor)
+- [Backstory](#backstory)
+
+
+
+## What is IBLM?
+
+
+
+## How It Works
+
+
+
+
+
+## How to Use
+Use the link below to try it out immediately on Google colab.
+
+
+## Supported Models
+Currently, the recommended model is GPT-4
+
+
+## Contributor
+- [@t-ymbys](https://github.com/t-ymbys)
+- [@cn47](https://github.com/cn47)
+
+
+## Backstory
+This idea is based on [langchain-tools](https://github.com/fuyu-quant/langchain-tools), which was created in an attempt to make LLM learn LightGBM.
