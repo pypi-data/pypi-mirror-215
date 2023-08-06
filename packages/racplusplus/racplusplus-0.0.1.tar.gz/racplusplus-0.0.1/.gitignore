@@ -1,0 +1,16 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*/__pycache__
+.DS_Store
+.vscode
+.env
+.pytest_cache
+*.pyc
+build/*
+racplusplus.egg-info/*
+dist/*
+src/Eigen
+src/pybind11
+_skbuild/*
+*.egg-info/*
+*.egg-info
