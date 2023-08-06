@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SparkMinIOHandle
+Version: 0.0.5
+Summary: Spark MinIO Handler Package
+Home-page: UNKNOWN
+Author: Yuri Dimitri
+Author-email: yuridrcosta@gmail.com
+License: UNKNOWN
+Keywords: python,minio,spark
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Pacote para gerenciar views e dataframes spark consumindo de tabelas JSON armazenadas no Object Storage MinIO
+
