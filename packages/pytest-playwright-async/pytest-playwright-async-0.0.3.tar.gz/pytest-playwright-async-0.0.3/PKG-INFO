@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pytest-playwright-async
+Version: 0.0.3
+Summary: ASYNC Pytest plugin for Playwright
+Author-email: m9810223 <m9810223@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# ASYNC Pytest plugin for Playwright [![PyPI](https://img.shields.io/pypi/v/pytest-playwright-async)](https://pypi.org/project/pytest-playwright-async/)
