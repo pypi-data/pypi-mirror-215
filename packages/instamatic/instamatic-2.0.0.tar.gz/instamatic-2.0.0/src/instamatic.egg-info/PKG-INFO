@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: instamatic
+Version: 2.0.0
+Summary: Python program for automated electron diffraction data collection
+Author-email: Stef Smeets <s.smeets@esciencecenter.nl>
+License: BSD License
+Project-URL: homepage, https://github.com/instamatic-dev/instamatic
+Project-URL: issues, http://github.com/instamatic-dev/instamatic/issues
+Project-URL: documentation, https://instamatic.readthedocs.io
+Project-URL: changelog, https://github.com/instamatic-dev/instamatic/releases
+Keywords: electron-crystallography,electron-microscopy,electron-diffraction,serial-crystallography,3D-electron-diffraction,micro-ed,data-collection,automation
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: develop
+Provides-Extra: serval
+Provides-Extra: docs
+Provides-Extra: publishing
+License-File: LICENCE
