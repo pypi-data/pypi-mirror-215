@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mec_jun2023
+Version: 1.0
+Summary: description of the package
+Home-page: 
+Author: ['Alfred Galichon', 'Antoine Jacquet']
+Author-email: ag133@nyu.edu
+License: GNU
+Requires-Python: >= 3
+License-File: LICENSE
