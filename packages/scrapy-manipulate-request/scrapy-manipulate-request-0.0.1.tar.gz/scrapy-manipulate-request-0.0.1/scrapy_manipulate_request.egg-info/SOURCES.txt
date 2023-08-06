@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+scrapy_manipulate_request/__init__.py
+scrapy_manipulate_request/__version__.py
+scrapy_manipulate_request/downloadermiddlewares.py
+scrapy_manipulate_request/exception.py
+scrapy_manipulate_request/settings.py
+scrapy_manipulate_request.egg-info/PKG-INFO
+scrapy_manipulate_request.egg-info/SOURCES.txt
+scrapy_manipulate_request.egg-info/dependency_links.txt
+scrapy_manipulate_request.egg-info/requires.txt
+scrapy_manipulate_request.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
