@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyblish-simple
+Version: 0.0.1
+Summary: a GUI for pyblish, to see which instance failed and why
+Author: Hannes
+Project-URL: Homepage, https://github.com/hannesdelbeke/pyblish-simple
+Project-URL: Source, https://github.com/hannesdelbeke/pyblish-simple
+Keywords: plugin,pyblish,add-on,extension,manager,studio,dcc,app,application,artist
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
