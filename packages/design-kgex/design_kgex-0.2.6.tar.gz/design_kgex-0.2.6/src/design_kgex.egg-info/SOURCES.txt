@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/design_kgex/__init__.py
+src/design_kgex/design_knowledge.py
+src/design_kgex/patent_text.py
+src/design_kgex/supplementary.pkl
+src/design_kgex.egg-info/PKG-INFO
+src/design_kgex.egg-info/SOURCES.txt
+src/design_kgex.egg-info/dependency_links.txt
+src/design_kgex.egg-info/requires.txt
+src/design_kgex.egg-info/top_level.txt

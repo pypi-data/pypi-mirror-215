@@ -1,0 +1,7 @@
+spacy
+requests
+beautifulsoup4
+patool
+
+[:python_version == "3.8"]
+importlib-metadata
