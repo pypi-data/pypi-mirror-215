@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "django-restit"
+version = "4.0.0"
+description = "A Rest Framework for DJANGO"
+authors = ["Ian Starnes <ians@311labs.com>"]
+license = "MIT"
+readme = "README.md"
+
+packages = [
+    {include = "account"},
+    {include = "auditlog"},
+    {include = "inbox"},
+    {include = "incident"},
+    {include = "location"},
+    {include = "medialib"},
+    {include = "metrics"},
+    {include = "pushit"},
+    {include = "rest"},
+    {include = "sessionlog"},
+    {include = "taskqueue"},
+    {include = "telephony"},
+    {include = "ws4redis"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyobjict = "^1.1.6"
+django = "*"
+uwsgi = "*"
+pyjwt = "*"
+pycryptodome = "*"
+ujson = "*"
+twilio = "*"
+six = "*"
+phonenumbers = "*"
+wsaccel = "*"
+pycountry = "*"
+psutil = "*"
+pillow = "*"
+pypng = "*"
+pygments = "*"
+mistune = "*"
+inlinestyler = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
