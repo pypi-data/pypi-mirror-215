@@ -1,0 +1,14 @@
+propulate/__init__.py,sha256=91n3upmPEW7_i0x12KsVmALuvd6kYAtKyjID_GkNWEY,524
+propulate/_globals.py,sha256=to0BcQMusVp54KFtadduAFGCRKjh_egEnWVx-pXfx3o,106
+propulate/islands.py,sha256=DlCnKDIBVifUB8XbD7LPy3ZZN8rpX6OR-uc4JrcWmss,10164
+propulate/pollinator.py,sha256=lXluwh5ZNrho8yKrwOgIsQoNhUKUWpMdlB6MUf3Zbjk,32944
+propulate/population.py,sha256=6E9D2y4Cfc28HuTKNfjagYcKXiEsm4LiCR93D3wstiw,2760
+propulate/propagators.py,sha256=ZVzqDDaaWnAbIIlX4HezlybRnGuiddPUeXeIXj8eDlE,26605
+propulate/propulator.py,sha256=lssgmM5QBuNYzbQ_6MBpen8f9PB8r3OOiZiXjvtQ68Q,33894
+propulate/utils.py,sha256=FIE_UoYelq079DuyJeOGj--fI5u3Gxyt4bmt3UoznWQ,2218
+propulate-1.0.0.dist-info/AUTHORS.md,sha256=_4ZIBJOP3muonCWcgpQIsA5BCWqp5Vr7CF_tDQRhHcY,93
+propulate-1.0.0.dist-info/LICENSE.md,sha256=CxN26hgJu53ArVi6lG78lE4PrT4JaPhP-LAmLYFz81o,1563
+propulate-1.0.0.dist-info/METADATA,sha256=tGBNdraf6o3qE4RnCWEXHOYz5hexDZ3kOjcui2rUDk8,3408
+propulate-1.0.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+propulate-1.0.0.dist-info/top_level.txt,sha256=8QkC-MmLPl5m2iszOYoe8_PP7qQMcUlbW24QvSDAViU,10
+propulate-1.0.0.dist-info/RECORD,,
