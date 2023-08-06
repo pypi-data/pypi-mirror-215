@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cmaster/__init__.py
+cmaster.egg-info/PKG-INFO
+cmaster.egg-info/SOURCES.txt
+cmaster.egg-info/dependency_links.txt
+cmaster.egg-info/top_level.txt
