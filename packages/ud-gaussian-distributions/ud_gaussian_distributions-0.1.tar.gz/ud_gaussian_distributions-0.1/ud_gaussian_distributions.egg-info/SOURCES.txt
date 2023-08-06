@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+ud_gaussian_distributions/Binomialdistribution.py
+ud_gaussian_distributions/Gaussiandistribution.py
+ud_gaussian_distributions/Generaldistribution.py
+ud_gaussian_distributions/__init__.py
+ud_gaussian_distributions.egg-info/PKG-INFO
+ud_gaussian_distributions.egg-info/SOURCES.txt
+ud_gaussian_distributions.egg-info/dependency_links.txt
+ud_gaussian_distributions.egg-info/not-zip-safe
+ud_gaussian_distributions.egg-info/top_level.txt
