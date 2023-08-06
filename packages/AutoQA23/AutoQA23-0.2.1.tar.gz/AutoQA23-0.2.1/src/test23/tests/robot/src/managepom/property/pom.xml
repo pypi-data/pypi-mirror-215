@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages category="automation-qa" name="tests" id="0.0" design_pattern="page-object-model" version="1.0">
+  <repository name="constants" id="1.0"></repository>
+  <package name="drivercontroller" id="2.0">
+    <package name="drivers" id="2.1">
+      <package name="abstract" id="2.1.1"></package>
+    </package>
+  </package>
+  <repository name="resources" id="3.0"></repository>
+  <package name="pages" id="4.0">
+    <repository name="locators" id="4.1"></repository>
+  </package>
+  <package name="factories" id="5.0"></package>
+  <package category="future-scope" name="features" id="6.0"></package>
+  <package name="testcases" id="7.0"></package>
+  <package name="testdata" id="8.0">
+    <package name="abstract" id="8.1"></package>
+    <package name="xl" id="8.2"></package>
+    <repository name="resources" id="8.3"></repository>
+    <package name="managexldata" id="8.4"></package>
+  </package>
+  <repository name="report" id="9.0"></repository>
+  <repository name="log" id="10.0"></repository>
+</packages>

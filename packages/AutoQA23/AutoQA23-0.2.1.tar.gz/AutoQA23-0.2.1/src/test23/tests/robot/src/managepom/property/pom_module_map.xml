@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages name="tests" type="package" extension="" id="0.0" design_pattern="page-object-model" version="1.0">
+  <module name="common_constants" type="abstract" extension="py" id="1.0"></module>
+  <module name="driver_controller" type="class" extension="py" id="2.0"></module>
+  <module name="driver_factory" type="class" extension="py" id="2.0"></module>
+    <module name="brave" type="class" extension="py" id="2.1"></module>
+    <module name="chrome" type="class" extension="py" id="2.1"></module>
+    <module name="chromium" type="class" extension="py" id="2.1"></module>
+    <module name="edge" type="class" extension="py" id="2.1"></module>
+    <module name="firefox" type="class" extension="py" id="2.1"></module>
+    <module name="opera" type="class" extension="py" id="2.1"></module>
+    <module name="safari" type="class" extension="py" id="2.1"></module>
+        <module name="driver" type="abstract" extension="py" id="2.1.1"></module>
+  <module name="custom_keywords" type="class" extension="py" id="3.0"></module>
+  <module name="test_log" type="class" extension="py" id="3.0"></module>
+  <module name="log_file" type="class" extension="py" id="3.0"></module>
+  <module name="json_report" type="class" extension="py" id="3.0"></module>
+  <module name="example_page" type="class" extension="py" id="4.0"></module>
+    <module name="nav_bar_locators" type="abstract" extension="py" id="4.1"></module>
+    <module name="example_page_locator" type="abstract" extension="py" id="4.1"></module>
+  <module name="test_scenario_0001" type="class" extension="py" id="7.0"></module>
+  <module name="test_data_manager" type="class" extension="py" id="8.0"></module>
+    <module name="test_data" type="abstract" extension="py" id="8.1"></module>
+    <module name="xl_test_data" type="class" extension="py" id="8.2"></module>
+    <module name="sample" type="class" extension="py" id="8.2"></module>
+    <module name="encrypt_xl_data" type="class" extension="py" id="8.2"></module>
+    <module name="decrypt_xl_data" type="class" extension="py" id="8.2"></module>
+    <file name="DataSet" type="binary" extension="xlsx" id="8.3"></file>
+    <file name="AutomationScriptTest" type="binary" extension="xlsx" id="8.3"></file>
+    <module name="manage_encryption_data" type="class" extension="py" id="8.4"></module>
+    <module name="manage_decryption_data" type="class" extension="py" id="8.4"></module>
+</packages>
