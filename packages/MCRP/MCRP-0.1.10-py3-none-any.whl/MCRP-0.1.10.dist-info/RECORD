@@ -1,0 +1,13 @@
+MCRP/__init__.py,sha256=e7Pc3_d3RwDfR4ajPy37Eb3fW5qnS8ZKYVzgxJWqRxs,81
+MCRP/dgi.py,sha256=OaGitqwvet-sX_XuAHJwS98RjEt215L1vENynLJXSCE,6061
+MCRP/iautil.py,sha256=MdYS1PZytd4OrSbUOVPGnw2_XlQp8aqvOOK750vLiYY,655
+MCRP/mcrp.py,sha256=96iIkvWN70lxdTUWeSic5cBB_zuQDPnFYLMHExJmY2k,17481
+MCRP/mcwp.py,sha256=xlk-vFKZy7p3uw52HCQodPiUoH7gJxpb6I64EmrxQLk,7953
+MCRP/tcproxy.py,sha256=-H3Z9gk5X-sofDfie1dXJjvY0LP4mpLXtYt3I0eXT_M,4157
+MCRP/util.py,sha256=QPWzVMO4ulHkSA9v3nPUqKfLecPa68uc03zz-rI-8MM,882
+MCRP-0.1.10.dist-info/LICENSE,sha256=5o3klq1LXYOQ7ZW15SETGFku4Z3oV9VOELnettdwfLU,35060
+MCRP-0.1.10.dist-info/METADATA,sha256=78-wXyk3o3dUIayl3hCxS3O8q1OhwfscaDPlKUVtKkM,8117
+MCRP-0.1.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MCRP-0.1.10.dist-info/entry_points.txt,sha256=8HjEjIsVMm6kdV9S1GqsjK9ICk_iAvrb3W6S2Zzfre4,41
+MCRP-0.1.10.dist-info/top_level.txt,sha256=kiBJB9iCobyqf3IxllWZAGupoBPqi7nHCNXQevMrEpc,5
+MCRP-0.1.10.dist-info/RECORD,,
