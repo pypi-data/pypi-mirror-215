@@ -1,0 +1,15 @@
+filecabinet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filecabinet/cabinet.py,sha256=upv00RRbVnz-Ljv4X1QuarkoRrsSs0eh_B2bM46sXeU,11584
+filecabinet/configuration.py,sha256=LwGcra4sxYMmmYbvg9l76l2xbdVkYjBCIOJv8uMaWNg,3247
+filecabinet/main.py,sha256=CKwTTFjw-AAr6Fz2vu6TFu8RmZTwqSaG4ZLNEC9Op3Q,9911
+filecabinet/manager.py,sha256=n2lOMZVSamT5t71na_8rpphxLuYb28cwP9MEgmvD6A4,7971
+filecabinet/meta.py,sha256=C8OFzg1Ju0iePX-JSr6eRjeRtcPScwj9zfiwfG9hl2Y,313
+filecabinet/shell.py,sha256=NDXRg_TBcHkToCCJ3-2AN1Stngk6x-tqjj-juH0Cc-c,8605
+filecabinet/utils.py,sha256=aTMHVGsquTRxSQwxoqoQTjbvU_gvFvQrxH643qcdajc,4058
+filecabinet/version.py,sha256=UkwSDL_h8G4LcClay8jybeuSFQjy74PzgKCoJNn2Dqo,19
+filecabinet-2.1.0.dist-info/LICENSE,sha256=N3OR1nLi8l2CWwgyO0y72GM9omLI3mJOxFd7hd_YWRQ,1500
+filecabinet-2.1.0.dist-info/METADATA,sha256=PQfoyZgmpq5xtvUHOAlNYwEJUaUKrIelR4RQIrl0nlk,10729
+filecabinet-2.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+filecabinet-2.1.0.dist-info/entry_points.txt,sha256=4lWWtyj1trJJZrMpIAcRyX6W-cWCtA8xa7DZkc9UP2o,53
+filecabinet-2.1.0.dist-info/top_level.txt,sha256=RikFDS9G5Dj9j6dlkkiJOvInsF1d9MbBZrkJp73IWa0,12
+filecabinet-2.1.0.dist-info/RECORD,,
