@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mypiprandomdata
+Version: 0.7.0
+Summary: A package to generate random data.
+Home-page: https://github.com/spat959/mypiprandomdata
+Author: Inzmamul Haq
+Author-email: spat959@gmail.com
+Keywords: random data generator
