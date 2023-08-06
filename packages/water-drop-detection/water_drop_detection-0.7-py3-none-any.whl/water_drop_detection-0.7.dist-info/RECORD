@@ -1,0 +1,14 @@
+water_drop_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water_drop_detection/main.py,sha256=pRQreY7DtCvIpy7ioMY8Vwx6YrLrm2oMWJ6ddNw47mY,64
+water_drop_detection/NN/BatchManager.py,sha256=wrBgi_KzUHnt-Hn4oonbd99b8cLlEBYkMFXKYiGgoO8,3802
+water_drop_detection/NN/SaveBatch.py,sha256=Of-X_KHDpm3IuvZQgvEh9BonZp2og4ojPLrIJyB3ozE,4315
+water_drop_detection/NN/SaveLoadModel.py,sha256=33IdxIuhwIHjCYCmWuNmirerj65UwHM7O61Tj8zGPmo,1315
+water_drop_detection/NN/TestNetwork.py,sha256=B2BioaFMOE3TvNbT0ti99Gq39lRp_F4CIdcgvis6Db4,3825
+water_drop_detection/NN/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water_drop_detection/NN/main.py,sha256=K9boV3DD7j2sgdu-MhBYf_q1X5KswPHTrhPODdiivz8,3919
+water_drop_detection/ui/GUI.py,sha256=SGp5VexhMsl0IMKJyDAL_MLIMBV4iXpXt0elX1BBJII,14554
+water_drop_detection/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water_drop_detection-0.7.dist-info/METADATA,sha256=6VsRXdIlJXEsfzgEE7GduKMUhBe1tWckERb4yut3GEk,10248
+water_drop_detection-0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+water_drop_detection-0.7.dist-info/top_level.txt,sha256=PdSOX54I2fxsn5f2YgTyCBh8FMMouPhfkSsqinzZhMk,69
+water_drop_detection-0.7.dist-info/RECORD,,
