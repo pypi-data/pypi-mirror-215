@@ -1,0 +1,8 @@
+merlin-core<23.07,>=23.06
+merlin-dataloader<23.07,>=23.06
+scipy
+
+[gpu]
+cudf-cu11
+dask-cudf-cu11
+cupy-cuda11x
