@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pysqrtrootof3taker
+Version: 1.0.0
+Summary: For computing the square root of 3 fastly and securely in a local environment.
+Home-page: https://github.com/TheCoderLab/pysqrtrootof3taker
+Author: Rudra Singh Rathore
+Author-email: rudrasinghrathore16022012@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pysqrtrootof3taker
+ PySqrtRootOf3Taker - A top class package to compute the square root of 3 in a local environment. (For an industrial environment use ThreeToTheOneHalfPy.)
+
+ ## Instructions
+
+ 1. Install
+
+ ```
+ pip install pysqrtrootof3taker
+ ```
+
+ 2. Compute the square root of 3:
+
+ ```python
+ from pysqrtof3taker import pysqrtrootof3taker
+
+ # Compute the square root of 3
+ print(pysqrtof3taker.compute_square_root_of_3())
+ ```
