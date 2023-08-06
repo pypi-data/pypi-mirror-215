@@ -1,0 +1,4 @@
+versioneer
+
+[redis]
+redis
