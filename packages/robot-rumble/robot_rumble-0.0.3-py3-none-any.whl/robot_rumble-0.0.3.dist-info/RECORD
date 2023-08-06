@@ -1,0 +1,15 @@
+robot_rumble/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robot_rumble/main.py,sha256=ABReGV7cLIHagf4zpGqr5dUt0Dxv5z2UuKkIn3_sFBM,7264
+robot_rumble/sprites/Robot_idle.png,sha256=q8UtaOXMLPKP4HmLvRKFQsgpW1h57FMzwqqrUnux6Gk,13070
+robot_rumble/sprites/Robot_run.png,sha256=h6WAz_Qb0AklLFOUVsrkMFWphX8q2tKEyof7rd7Iyo8,43769
+robot_rumble/sprites/table.png,sha256=CosfLsVLey1HJYzIUWG4JAHL5-sFpgxvohZO_ZCfnZM,555
+robot_rumble_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robot_rumble_package/main.py,sha256=MkX9HgCNe8Z0cnMMJG05MilBJODYjO-LpIOwdbVJyTw,7004
+robot_rumble_package/sprites/Robot_idle.png,sha256=q8UtaOXMLPKP4HmLvRKFQsgpW1h57FMzwqqrUnux6Gk,13070
+robot_rumble_package/sprites/Robot_run.png,sha256=h6WAz_Qb0AklLFOUVsrkMFWphX8q2tKEyof7rd7Iyo8,43769
+robot_rumble_package/sprites/table.png,sha256=CosfLsVLey1HJYzIUWG4JAHL5-sFpgxvohZO_ZCfnZM,555
+robot_rumble-0.0.3.dist-info/METADATA,sha256=wnJRkRGbRjlhyoAUin5I2Hcn12IP2h8ZLGbkCvI8W_s,400
+robot_rumble-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+robot_rumble-0.0.3.dist-info/entry_points.txt,sha256=0ZeuNR3jrGJ9V6TVoVEGUn2drZ0YmWKnYgTziyfu5ow,62
+robot_rumble-0.0.3.dist-info/top_level.txt,sha256=YC1lZ3vM8PScl2vk9bm30HGM5snl54T2SwSzXT--aUQ,13
+robot_rumble-0.0.3.dist-info/RECORD,,
