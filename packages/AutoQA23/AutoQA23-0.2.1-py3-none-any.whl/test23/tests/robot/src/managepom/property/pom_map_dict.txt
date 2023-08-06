@@ -1,0 +1,33 @@
+{
+	'1.0': ['constants'], 
+	'2.0': ['drivercontroller'], 
+	'2.1': ['drivercontroller', 'drivers'], 
+	'2.1.1': ['drivercontroller', 'drivers', 'abstract'], 
+	'3.0': ['resources'], 
+	'4.0': ['pages'], 
+	'4.1': ['pages', 'locators'], 
+	'7.0': ['testcases'], 
+	'8.0': ['testdata'], 
+	'8.1': ['testdata', 'abstract'], 
+	'8.2': ['testdata', 'xl'], 
+	'8.2.1': ['testdata', 'xl', 'resources']
+}
+
+{
+	"tests": 
+	[
+		"constants", 
+		{"drivercontroller": 
+			[{"drivers": ["abstract"]}]}, 
+		"resources", 
+		{"pages": ["locators"]}, 
+		"factories", 
+		"features", 
+		"testcases", 
+		{"testdata": 
+			["abstract", {"xl": ["resources"]}]}, 
+		"report", 
+		"log"
+	]
+
+}
