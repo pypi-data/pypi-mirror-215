@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tissue-detection
+Version: 0.0.1
+Summary: General suite of ODE solvers
+Author-email: Henrik Finsberg <henriknf@simula.no>
+License: MIT
+Project-URL: Homepage, https://computationalphysiology.github.io/tissue-detection
+Project-URL: Documentation, https://computationalphysiology.github.io/tissue-detection
+Project-URL: Source, https://github.com/ComputationalPhysiology/tissue-detection
+Project-URL: Tracker, https://github.com/ComputationalPhysiology/tissue-detection/issues
+Keywords: cardiac,ecg,electrophysiology
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: pypi
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: all
+License-File: LICENSE
+
+# Tissue detection
+
+Library for detecting tissue in cardiac TPE and MPS systems.
+
+- Source code: https://github.com/ComputationalPhysiology/tissue-detection
+- Documentation: https://computationalphysiology.github.io/tissue-detection
+
+## Install
+You can install the library with pip
+```
+python3 -m pip install git+https://github.com/ComputationalPhysiology/tissue-detection.git
+```
+
+
+## Getting started
+
+TBW
+
+## License
+MIT
+
+## Need help or having issues
+Please submit an [issue](https://github.com/ComputationalPhysiology/tissue-detection/issues)
