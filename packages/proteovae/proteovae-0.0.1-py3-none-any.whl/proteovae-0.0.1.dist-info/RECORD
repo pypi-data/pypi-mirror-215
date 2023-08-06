@@ -1,0 +1,14 @@
+proteovae/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+proteovae/disentanglement/__init__.py,sha256=e8tdXN6SzoIkCDgXTKc-GbUNYcs9h6aCKz2NhjGja6E,23
+proteovae/disentanglement/metrics.py,sha256=fMQH4sx6tGFdUrWJq2GYskvJZcgyIanvYo_xKyg-jGg,6900
+proteovae/models/__init__.py,sha256=aml8G9hRute6sDHdczQGF0hTrqiVsWt1f065_DdyyOc,258
+proteovae/models/base.py,sha256=mx063K_Dzxz3Oz4aAEutfldJH9T4SfzCWywrSbYfjsY,4883
+proteovae/models/models.py,sha256=dI3xwCERzXRdhQur4tG7QmBTU0aiLl92T2f4FlEqgP8,12936
+proteovae/models/utils.py,sha256=sjGKwhjtzmVtIM3v7WmCPuhRV3QLdKIaqjt6i4HoBAg,1857
+proteovae/trainers/Trainers.py,sha256=5yGlQNshdycKSl1PS4roADAGbzGrppBOnNdddRNErD0,4871
+proteovae/trainers/__init__.py,sha256=b88NXXNIrtAq5qcqc68HSZ750vCiFfCdvvoln6APYjE,52
+proteovae-0.0.1.dist-info/LICENSE,sha256=NXf46YVMxDjzAnjFxUR0NJb2YMknETiXo29H_IV2gGw,1072
+proteovae-0.0.1.dist-info/METADATA,sha256=N1tCTaAypfmg5lKP7ckqwhGYbXd_mcgv_1qiFc1G70k,6018
+proteovae-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+proteovae-0.0.1.dist-info/top_level.txt,sha256=ZmfGQ3yS0CznKaiEOcg692Uj552keu7lQmQMB9ZIkkg,10
+proteovae-0.0.1.dist-info/RECORD,,
