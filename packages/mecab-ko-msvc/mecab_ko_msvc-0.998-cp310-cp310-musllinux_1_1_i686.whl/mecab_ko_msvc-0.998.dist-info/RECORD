@@ -1,0 +1,15 @@
+_MeCab.cpython-310-i386-linux-gnu.so,sha256=rYM9UNd9yCCw8Js6etxNVxLOyt9jB7j8VAlRhwYNaGI,1649237
+mecabrc,sha256=2CChwX1gnUn-hTvBCjG3U1agHTex2l6Lxc_2xwtZVF0,286
+MeCab.py,sha256=pbTFghNdErft9Txh45tBaAk7W_1vspHLpGYKqKr173U,11744
+mecab_ko_msvc.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+mecab_ko_msvc.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+mecab_ko_msvc-0.998.dist-info/METADATA,sha256=BQypNEswSFfTu_y7HxZqpPrPiYjwhyVn62s5JsaYWTU,6454
+mecab_ko_msvc-0.998.dist-info/RECORD,,
+mecab_ko_msvc-0.998.dist-info/WHEEL,sha256=xob2QHhW7yheFRWdxuzEmlOUhIjUcJ0MEiGR0FHpey0,96
+mecab_ko_msvc-0.998.data/scripts/mecab-cost-train,sha256=lEGf5T-HWcUsC_SShd1laea9NVUh0WjpI4ZK2slUcYw,1463349
+mecab_ko_msvc-0.998.data/scripts/add-userdic.sh,sha256=a_YOnx3MMeHxCrQ-cjJCFfrF7WDoK9BtbTmoVHfdR5s,855
+mecab_ko_msvc-0.998.data/scripts/mecab,sha256=FVcj4sHlYIXFQ3ExNCEJXajMXJYT6CwmMkBnRf6iTkU,1405969
+mecab_ko_msvc-0.998.data/scripts/mecab-system-eval,sha256=uDexSEzxnhrJDNHd_zokRZF0N8Phtimp05PxKo_N2XI,89701
+mecab_ko_msvc-0.998.data/scripts/mecab-dict-index,sha256=0KL-gpguv_meJ_euVFoUiTgofeL5DWWv-xpIAjQPbgg,1426449
+mecab_ko_msvc-0.998.data/scripts/mecab-dict-gen,sha256=LK-JWExaOaQ_Pfv0bgR0vC05Ez5ConrUwafbKSH9_Pw,1848349
+mecab_ko_msvc-0.998.data/scripts/mecab-test-gen,sha256=hDTnmKmWyi6_NQaZWyptS8LMef5z4hpEpf8VOqeOoAM,89701
