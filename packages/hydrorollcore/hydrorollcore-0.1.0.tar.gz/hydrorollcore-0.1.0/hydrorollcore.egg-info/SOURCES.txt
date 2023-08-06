@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+HydroRollCore/__init__.py
+HydroRollCore/rule.py
+hydrorollcore.egg-info/PKG-INFO
+hydrorollcore.egg-info/SOURCES.txt
+hydrorollcore.egg-info/dependency_links.txt
+hydrorollcore.egg-info/top_level.txt
