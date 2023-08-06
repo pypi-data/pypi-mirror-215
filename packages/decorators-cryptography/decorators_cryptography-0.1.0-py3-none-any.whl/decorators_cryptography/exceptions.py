@@ -1,0 +1,2 @@
+class KeyInvalid(Exception):
+    pass
