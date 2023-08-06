@@ -1,0 +1,7 @@
+proxifier_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proxifier_cli/process.py,sha256=_hycOlWqbcvz7_DZytFOSIjol36bcPYItO99PdGInsA,465
+proxifier_cli/profiles.py,sha256=8C9SNzsudg2YDVghf-qiZrHYGLJSXt7n7mvspBvlzFE,1025
+proxifier_cli-1.0.0.dist-info/METADATA,sha256=uZXCtOcpiU-p5K6v3y8KVqrXrB2vB9UvaVM8tvYnw9Y,509
+proxifier_cli-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+proxifier_cli-1.0.0.dist-info/top_level.txt,sha256=40Z6DIj9TQnJwgHXSPSfjWs3keZPMmkcVzUPfWpaaQU,14
+proxifier_cli-1.0.0.dist-info/RECORD,,
