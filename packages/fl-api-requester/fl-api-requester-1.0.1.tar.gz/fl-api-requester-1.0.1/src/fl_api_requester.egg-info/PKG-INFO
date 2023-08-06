@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: fl-api-requester
+Version: 1.0.1
+Summary: The France Leader API requester.
+Author-email: FL-GL <franceleadergl@gmail.com>
+Project-URL: Homepage, https://github.com/France-Leader-Galaxy-Life/FL-Python-API-Requester
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Intallation
+
+```
+pip install fl-api-requester
+```
+
+# Usage
+
+```python
+from fl_api_requester import *
+
+connection_data = FLAPIConnectionData()
+connection_data.set_credentials("username", "password")
+
+try:
+    # Login
+    api_requester = FLAPIRequester()
+    connection_data.set_token(api_requester.login(connection_data).token)
+
+    # Get some data
+    player = api_requester.get_player("Galactifer", connection_data)
+    alliance = api_requester.get_alliance("France Leader", connection_data)
+
+    print(player)
+    print(len(alliance.players))
+
+    # Start a War
+    war = api_requester.start_war(StartWarDTO("Luxure Culinaire"), connection_data)
+
+    print(war.alliance, war.opponent)
+except APIErrorException as e:
+    print(e.api_error)
+```
