@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyweb_db/__init__.py
+pyweb_db/main.py
+pyweb_db.egg-info/PKG-INFO
+pyweb_db.egg-info/SOURCES.txt
+pyweb_db.egg-info/dependency_links.txt
+pyweb_db.egg-info/requires.txt
+pyweb_db.egg-info/top_level.txt
