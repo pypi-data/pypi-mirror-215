@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: JrKit
+Version: 0.0.1
+Summary: JR's Advanced Encoding Toolkit: Innovative encoding methods for data representation and feature extraction
+Home-page: https://github.com/jaberjaber23/JR_Advanced_Encoding_Toolkit
+Author: Jaber Jaber
+Author-email: Jaberib647@gmail.com
+Keywords: encoding machine-learning data-science toolkit
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
