@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+free-gpt/__init__.py
+free-gpt/free_gpt.py
+free_gpt.py.egg-info/PKG-INFO
+free_gpt.py.egg-info/SOURCES.txt
+free_gpt.py.egg-info/dependency_links.txt
+free_gpt.py.egg-info/requires.txt
+free_gpt.py.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: free-gpt.py
+Version: 1.2.9
+Summary: Library for use free gpt 3.5 in python
+Home-page: https://github.com/nxSlayer/free_gpt
+Author: nxSlayer
+Author-email: princediscordslay@gmail.com
+License: MIT
+Keywords: free_gpt
+Requires-Python: >=3.6
+
+### Discord
+` https://discord.gg/WR9MNs5Hqv`
+### How to install?
+`pip install free_gpt.py`
+### How Workd
