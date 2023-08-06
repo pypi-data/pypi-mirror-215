@@ -1,0 +1,13 @@
+eldian/__init__.py,sha256=nbJCiCI-RdlPyzBYrMLBkxhvWyGqkW8MN1-Upq6lmRE,94
+eldian/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eldian/core/dicts.py,sha256=OJI-XoxPGVBkOrhYh0wMouiAIBjcPEzkJZThMLnpTb0,5080
+eldian/core/mapper.py,sha256=H9cDCHC1mV1ZE0ntY79VIBuIPjJX0O2IenjN9RBoWX4,1107
+eldian/core/types.py,sha256=qtazXq5aTspvvAWfW-KRs6Subwz2kCxeNn6g6vFmu6A,1431
+eldian/partials.py,sha256=hXh9Ti6RdH8uNVCLA9ass1utPG7IDVnQijY_lzXzGhg,3560
+eldian/util.py,sha256=Eccg4_FYaccyA3YY1HWnMI29u_VCceY8TT-ygoEpJm8,2433
+eldian/validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eldian/validation/types.py,sha256=DnBdlzhow4DWyPK2a6Pe6QT3CewASY-4FKdAkbLfSfU,1405
+eldian-0.1.0.dist-info/LICENSE,sha256=GuWT40ZHB-1IdPmhMC1WfJB8q3utXymwajvXnN_LsFc,1065
+eldian-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+eldian-0.1.0.dist-info/METADATA,sha256=fZPVUD8-gleuAiS-Q8OPf5gldXYikZyA2TBRC8-xF1A,369
+eldian-0.1.0.dist-info/RECORD,,

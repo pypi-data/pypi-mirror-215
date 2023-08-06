@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: eldian
+Version: 0.1.0
+Summary: Library for elegant data interchange
+Author: Eric Pan
+Author-email: eric.pan@stanford.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jmespath (>=1.0.0,<2.0.0)
