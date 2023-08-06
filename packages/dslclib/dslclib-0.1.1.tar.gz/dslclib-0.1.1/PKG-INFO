@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dslclib
+Version: 0.1.1
+Summary: 対話システムライブコンペティションに使用できるPythonライブラリ
+Author: Yuta SASAKI
+Author-email: yubo1336@lr.pi.titech.ac.jp
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# dslc6
+対話システムライブコンペティションに使用できるPythonライブラリ
+
