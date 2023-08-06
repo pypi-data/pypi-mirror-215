@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+genepass/__init__.py
+genepass/genepass.py
+genepass.egg-info/PKG-INFO
+genepass.egg-info/SOURCES.txt
+genepass.egg-info/dependency_links.txt
+genepass.egg-info/top_level.txt
