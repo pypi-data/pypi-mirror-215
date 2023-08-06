@@ -1,0 +1,2 @@
+[console_scripts]
+lincot = lincot.commands:main

@@ -1,0 +1,12 @@
+pytak>=5.4.0
+
+[test]
+pytest-asyncio
+pytest-cov
+pylint
+flake8
+black
+cryptography
+
+[with_takproto]
+takproto>=2.0.0
