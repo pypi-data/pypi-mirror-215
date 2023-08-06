@@ -1,0 +1,26 @@
+[build-system]
+requires      = ["matplotlib", "numpy", "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyeletrica"
+version = "0.0.2"
+description = "Fundamental tools for electrical engineers."
+readme = "README.md"
+authors = [{ name = "Hugo Everaldo Salvador Bezerra", email = "hugoesb@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["engineer", "electrical"]
+dependencies = [
+    "matplotlib",
+    "numpy",
+    'tomli; python_version < "3.12"',
+]
+requires-python = ">=3.6"
+
+[project.urls]
+"Homepage" = "https://github.com/hugoesb/pyeletrica"
