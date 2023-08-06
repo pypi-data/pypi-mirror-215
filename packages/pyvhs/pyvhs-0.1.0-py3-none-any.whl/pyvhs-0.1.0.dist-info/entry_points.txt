@@ -1,0 +1,3 @@
+[console_scripts]
+pyvhs=pyvhs.vhs:main
+
