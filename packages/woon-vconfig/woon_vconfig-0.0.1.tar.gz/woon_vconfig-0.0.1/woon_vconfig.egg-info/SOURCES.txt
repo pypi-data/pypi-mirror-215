@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+package/__init__.py
+package/main.py
+woon_vconfig.egg-info/PKG-INFO
+woon_vconfig.egg-info/SOURCES.txt
+woon_vconfig.egg-info/dependency_links.txt
+woon_vconfig.egg-info/requires.txt
+woon_vconfig.egg-info/top_level.txt
