@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: azure-quantum-tgp
+Version: 1.1.0
+Summary: Topogap protocol code
+Author: Microsoft Quantum Hardware
+Author-email: noreply@microsoft.com
+License: Proprietary
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: h5netcdf
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: jinja2
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: ruamel.yaml
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: toolz
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions
+Requires-Dist: xarray
+Provides-Extra: test
+Requires-Dist: notebook ; extra == 'test'
+Requires-Dist: jupytext ; extra == 'test'
+Requires-Dist: pre-commit ; extra == 'test'
+Requires-Dist: nbmake ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
