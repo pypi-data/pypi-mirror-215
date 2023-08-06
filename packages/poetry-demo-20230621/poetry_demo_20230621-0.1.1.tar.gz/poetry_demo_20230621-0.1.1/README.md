@@ -1,0 +1,1 @@
+This is a demo on publishing a poetry package to pypi or gitlab registry.
