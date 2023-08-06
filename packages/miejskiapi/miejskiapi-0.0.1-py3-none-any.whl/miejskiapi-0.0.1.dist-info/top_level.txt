@@ -1,0 +1,5 @@
+MiejskiDefinicja
+Sprawdzacz
+Tester
+__init__
+main
