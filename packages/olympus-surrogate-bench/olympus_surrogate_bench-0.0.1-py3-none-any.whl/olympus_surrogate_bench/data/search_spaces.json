@@ -1,0 +1,186 @@
+{
+    "alkox": {
+        "residence_time": [
+            0.5,
+            2.0
+        ],
+        "ratio": [
+            1.0,
+            5.0
+        ],
+        "concentration": [
+            0.1,
+            0.5
+        ],
+        "temperature": [
+            60.0,
+            140.0
+        ]
+    },
+    "benzylation": {
+        "flow_rate": [
+            0.2,
+            0.4
+        ],
+        "ratio": [
+            1.0,
+            5.0
+        ],
+        "solvent": [
+            0.5,
+            1.0
+        ],
+        "temperature": [
+            110.0,
+            150.0
+        ]
+    },
+    "colors_bob": {
+        "red": [
+            0.0,
+            1.0
+        ],
+        "orange": [
+            0.0,
+            1.0
+        ],
+        "yellow": [
+            0.0,
+            1.0
+        ],
+        "blue": [
+            0.0,
+            1.0
+        ],
+        "green": [
+            0.0,
+            1.0
+        ]
+    },
+    "colors_n9": {
+        "red": [
+            0.0,
+            1.0
+        ],
+        "green": [
+            0.0,
+            1.0
+        ],
+        "blue": [
+            0.0,
+            1.0
+        ]
+    },
+    "fullerenes": {
+        "reaction_time": [
+            3.0,
+            31.0
+        ],
+        "sultine": [
+            1.5,
+            6.0
+        ],
+        "temperature": [
+            100.0,
+            150.0
+        ]
+    },
+    "hplc": {
+        "sample_loop": [
+            0.0,
+            0.08
+        ],
+        "additional_volume": [
+            0.0,
+            0.06
+        ],
+        "tubing_volume": [
+            0.1,
+            0.9
+        ],
+        "sample_flow": [
+            0.5,
+            2.5
+        ],
+        "push_speed": [
+            80.0,
+            150
+        ],
+        "wait_time": [
+            0.5,
+            10.0
+        ]
+    },
+    "photo_pce10": {
+        "mat_1": [
+            0.0,
+            1.0
+        ],
+        "mat_2": [
+            0.0,
+            1.0
+        ],
+        "mat_3": [
+            0.0,
+            1.0
+        ],
+        "mat_4": [
+            0.0,
+            1.0
+        ]
+    },
+    "photo_wf3": {
+        "mat_1": [
+            0.0,
+            1.0
+        ],
+        "mat_2": [
+            0.0,
+            1.0
+        ],
+        "mat_3": [
+            0.0,
+            1.0
+        ],
+        "mat_4": [
+            0.0,
+            1.0
+        ]
+    },
+    "snar": {
+        "residence_time": [
+            0.5,
+            2.0
+        ],
+        "ratio": [
+            1.0,
+            5.0
+        ],
+        "concentration": [
+            0.1,
+            0.5
+        ],
+        "temperature": [
+            60.0,
+            140.0
+        ]
+    },
+    "suzuki": {
+        "temperature": [
+            75.0,
+            90.0
+        ],
+        "pd_mol": [
+            0.5,
+            5.0
+        ],
+        "arbpin": [
+            1.0,
+            1.8
+        ],
+        "k3po4": [
+            1.5,
+            3.0
+        ]
+    }
+}
