@@ -1,0 +1,3 @@
+[console_scripts]
+moss-editor = moss.editor:main
+moss-run = moss.project:main
