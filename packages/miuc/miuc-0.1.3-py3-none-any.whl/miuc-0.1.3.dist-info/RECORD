@@ -1,0 +1,8 @@
+miuc/__init__.py,sha256=5YiGUvebagp_nf5JOAytYfu_IiLCVfiTsNJhW-OzJbk,45
+miuc/main.py,sha256=LFlqIplwk9UiE8G2oeLs6vzEC2QA3MB_Cjgzqo_6aDI,884
+miuc/site_processor.py,sha256=cezGAJWTA0GyDyQuWRbD1p1HRSKidPNuDdu8hHAEd-Q,22964
+miuc/web_parser.py,sha256=6Qr4afGWfA_4igbf6TR3dNZiyp-d5N222iy7R3jlgfM,1891
+miuc-0.1.3.dist-info/entry_points.txt,sha256=ZDkUsMaxs96VaPKyCqTT-vxu0CE7YbCcCAD73RyJfOk,39
+miuc-0.1.3.dist-info/METADATA,sha256=N-XlFjpAmOU-yrYDFu1hAjJVEBdY5-V6-oqmEtq0Qug,1758
+miuc-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+miuc-0.1.3.dist-info/RECORD,,
