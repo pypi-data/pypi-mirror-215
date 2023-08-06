@@ -1,0 +1,107 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "mismo"
+description = ""
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = []
+authors = [
+    { name = "Nick Crews", email = "nicholas.b.crews@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "ibis-framework[duckdb]>=5.1.0",
+    "typing-extensions ; python_version < \"3.11\"",
+]
+
+[project.license]
+text = "LGPL-3.0-or-later"
+
+[project.urls]
+Issues = "https://github.com/NickCrews/mismo/issues"
+Source = "https://github.com/NickCrews/mismo"
+
+[tool.pdm.dev-dependencies]
+lint = [
+    "black[jupyter]",
+    "ruff",
+    "mypy",
+    "nbqa",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+]
+docs = [
+    "mkdocs-material",
+]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+    "mismo/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "no cov",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.ruff]
+select = [
+    "E",
+    "F",
+    "I",
+]
+
+[tool.ruff.isort]
+force-sort-within-sections = true
+required-imports = [
+    "from __future__ import annotations",
+]
+
+[tool.mypy]
+python_version = "3.11"
+files = [
+    "mismo",
+]
+pretty = true
+show_traceback = true
+color_output = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+allow_redefinition = false
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+ignore_missing_imports = true
+implicit_reexport = false
+no_implicit_optional = true
+strict_equality = true
+strict_optional = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
