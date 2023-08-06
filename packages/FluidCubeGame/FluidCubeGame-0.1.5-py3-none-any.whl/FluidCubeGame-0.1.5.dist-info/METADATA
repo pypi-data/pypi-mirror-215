@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: FluidCubeGame
+Version: 0.1.5
+Summary: FluidCubeGame
+Home-page: https://github.com/Spektoruk3/PAK
+Author: Leshin Vladimir, Spektoruk Ilya, Krukovskiy Vasiliy
+Author-email: i.spektoruk@g.nsu.ru
+Requires-Dist: numpy
+Requires-Dist: pygame
+
+FluidCubeGame
