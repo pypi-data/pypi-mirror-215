@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+SafeURL_Python.egg-info/PKG-INFO
+SafeURL_Python.egg-info/SOURCES.txt
+SafeURL_Python.egg-info/dependency_links.txt
+SafeURL_Python.egg-info/requires.txt
+SafeURL_Python.egg-info/top_level.txt
+safeurl/__init__.py
+safeurl/safeurl.py
+safeurl/safeurl_tests.py
