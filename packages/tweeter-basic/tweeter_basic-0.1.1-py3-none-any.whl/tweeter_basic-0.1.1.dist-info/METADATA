@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: tweeter-basic
+Version: 0.1.1
+Summary: Send tweets (with optional images) through the Twitter v2 API (OAuth 2.0) - authentication included
+Home-page: https://mike.busuttil.ca/
+Author: Mike Busuttil
+Author-email: mike@busuttil.ca
+License: MIT
+Keywords: tweet,twitter,v2,OAuth,OAuth2.0,API,images
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: requests
+Requires-Dist: requests-oauthlib
+
+# Tweeter Basic
+
+Send tweets (with optional images) and authenticate through the Twitter v2 API (OAuth 2.0) using Python.
+
+## Quick Start
+
+Send a test tweet with the following steps:
+
+- generate and set the following environment variables:
+  - TWITTER_CONSUMER_API_KEY
+  - TWITTER_CONSUMER_API_KEY_SECRET
+  - TWITTER_ACCESS_TOKEN
+  - TWITTER_ACCESS_TOKEN_SECRET
+  - TWITTER_CLIENT_ID
+  - TWITTER_CLIENT_SECRET
+  - TWITTER_CALLBACK_URI <- must end in `/callback` (ie. `http://localhost/callback`)
+- authorize the application (1 time only) to generate the seed `token.json` with the following:
+  - build & run the token generation server by executing `Authenticate/authenticate.sh`
+  - navigate with a browser to your [http://localhost/auth](http://localhost/auth)
+- send a test tweet by executing `test/test.sh`
+
+## Prerequisites
+
+- Docker engine
+- Twitter project with: 
+  - v1.1 API read & write access
+  - v2 API access
+
+## 2do
+
+- give a more verbose explanation of the steps
+- write separate PyPI instructions
+
+### future
+
+- add geolocation to tweets:
+  - try posting with the v1 API instead of v2:
+    - https://developer.twitter.com/en/docs/twitter-api/v1/tweets/post-and-engage/api-reference/post-statuses-update
+    - using this format: https://en.wikipedia.org/wiki/GeoJSON
+  - wait for an answer to https://stackoverflow.com/questions/75817366/how-to-post-a-tweet-with-geo-data-using-twitter-api-v2-0
+    - update forums when answer is found:
+      - https://twittercommunity.com/t/how-tweet-with-latitude-longitude-information/189749
+
+### related projects
+
+- https://twitter.com/detroitships
+- https://github.com/ezod/aistweet
+- [testing grounds](https://twitter.com/HyperB0t)
+
+### resources used
+
+- helpful tutorials:
+  - https://developer.twitter.com/en/docs/tutorials/creating-a-twitter-bot-with-python--oauth-2-0--and-v2-of-the-twi
+  - https://dev.to/twitterdev/handling-refresh-tokens-in-the-oauth-20-authorization-code-flow-with-pkce-with-flask-481p
+- [Twitter POST /2/tweets](https://developer.twitter.com/en/docs/twitter-api/tweets/manage-tweets/api-reference/post-tweets)
+- [Twitter POST /1.1/media/uploads.json](https://developer.twitter.com/en/docs/twitter-api/v1/media/upload-media/api-reference/post-media-upload)
+  - [v2 uploading future](https://trello.com/c/Zr9zDrJx/109-replacement-of-media-uploads-functionality)
+- [media-upload.py](https://gist.github.com/jcipriano/133e44156837360197ba17e7113ddfbc)
+
+
