@@ -1,0 +1,9 @@
+client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client/client.py,sha256=uGo_6o23xmOvtZrhnMdp-AjZFX6NfE6wuBkhENqsh00,2304
+client/client_gui.py,sha256=4mIdM6iCnj71IROlQ2jNQjbXHJWjeg8952ALi9QyHuw,20235
+client/client_resource.py,sha256=5JIM6XVpQNkvjRfEhwBbE5Csoh1T3U-iuTbyMnvOY3o,14647
+client/client_storage.py,sha256=zFDgtJ72q0ByIVTfhfdU7uWLYTBdrXisxIg_JyyT6-U,9550
+my_messanger_client-0.0.0.dist-info/METADATA,sha256=f8DF1C-P0ZGYAYN88IF1p7uWpujgOMzOCT9MiVPO-aY,260
+my_messanger_client-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+my_messanger_client-0.0.0.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+my_messanger_client-0.0.0.dist-info/RECORD,,
