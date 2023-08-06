@@ -1,0 +1,6 @@
+cushy-storage
+pydantic
+requests
+duckduckgo_search
+broadcast-service==1.3.2
+arxiv
