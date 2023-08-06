@@ -1,0 +1,17 @@
+degex/__init__.py,sha256=CO0VmekjZ_r8LBYVaUXTM3i08rEVwYKhjb9sy0X7vz0,23
+degex/_modidx.py,sha256=9zrO4IEf3ZQ0xydgsK5yREk9f9PKF6XL8edOpWusQYM,18909
+degex/adata.py,sha256=vSsL5tTF9SQFCUuiKxSfzz3vASJEjZ4r07Ftzsfuy3g,21038
+degex/branches.py,sha256=iuGczNUdkW2GnwZxFcsnGvKUNtXQJTXI3wtnN1FhTkk,21299
+degex/core.py,sha256=aaS-3KFv1B8bCP65BbbMBlNf4LTeVuqjFm2wjsXxNRk,531
+degex/granger.py,sha256=ssz1J1DgaoweroM8RQggcCpTpMmhrMYBHqV7ToX4WTQ,21040
+degex/plots.py,sha256=l3hC0vZloAGxZdx2noxvMX9_aox9PhUS6B2CnVTi77U,2850
+degex/preprocessing.py,sha256=c0oQsDRv-wzri1Tehh9g4f9sT3gfnTM3RElSfdgskW0,4892
+degex/static.py,sha256=wKteP2djmUI5PNABPg1ZEvSyTuxId32squBMkvYCchE,2601
+degex/types.py,sha256=aGwMSz1zAB2KtEIdxVHNUvxER04sIG9RkXPVgs97lbQ,2564
+degex/utils.py,sha256=FpQBvE3XM3XGKMWweLEDX_LmKcmKbLseYVdJFmj15GY,2109
+degex-0.0.23.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+degex-0.0.23.dist-info/METADATA,sha256=rUemQ8o5N0w2Wbvw6KFDXcV2hHEULI3L8zVF2p87R80,1375
+degex-0.0.23.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+degex-0.0.23.dist-info/entry_points.txt,sha256=i0Yk1NT_k4swA4hctKxJCVrZ89IlTX4REAQcGGuF148,32
+degex-0.0.23.dist-info/top_level.txt,sha256=GHF7qUGrvwHOa1_gdRmipB90QLwJBMpSksUPyQIyYrY,6
+degex-0.0.23.dist-info/RECORD,,
