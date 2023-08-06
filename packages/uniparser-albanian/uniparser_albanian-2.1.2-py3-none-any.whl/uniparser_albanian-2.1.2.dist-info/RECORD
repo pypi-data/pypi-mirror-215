@@ -1,0 +1,16 @@
+uniparser_albanian/__init__.py,sha256=YMWkUUcn2ilxngr3JxoW0sqnopL8JYQ25obnoEwUrmM,3217
+uniparser_albanian/data_nodiacritics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_albanian/data_nodiacritics/albanian_disambiguation.cg3,sha256=S7TebsmPB7S4dp0ABx7i4xni-BLHl4nwhhlTE765n-g,17184
+uniparser_albanian/data_nodiacritics/derivations.txt,sha256=Ccg7r4Fz0FlL14ad0mpZxH4HmLd0vN_4Iowai7fCjqM,117
+uniparser_albanian/data_nodiacritics/lexemes.txt,sha256=wrj-Blh3m1TzdJdmLq5jwIcRBnU_jCI_y_z2d0PR83o,7867154
+uniparser_albanian/data_nodiacritics/paradigms.txt,sha256=xKgMFnGSMeE4tlhpP6ubRw_DhTeBN0uYaYWWbD1n23o,178767
+uniparser_albanian/data_strict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uniparser_albanian/data_strict/albanian_disambiguation.cg3,sha256=S7TebsmPB7S4dp0ABx7i4xni-BLHl4nwhhlTE765n-g,17184
+uniparser_albanian/data_strict/derivations.txt,sha256=Ccg7r4Fz0FlL14ad0mpZxH4HmLd0vN_4Iowai7fCjqM,117
+uniparser_albanian/data_strict/lexemes.txt,sha256=DCADwwWH3UnLz0uabtylnjZ84KJOV1M47HhMmat8mAY,7264687
+uniparser_albanian/data_strict/paradigms.txt,sha256=kKOfMah9flGSyrAYR_RikNSQAXBwmiVZBcFY97C5mUg,173632
+uniparser_albanian-2.1.2.dist-info/LICENSE,sha256=_W7sygtiQuBYubB543fEBeVc-CQ6HAMI_wNmpz4QWzY,1175
+uniparser_albanian-2.1.2.dist-info/METADATA,sha256=6cUkpcTmzVUXqTJkvjNiXcfHjccFlgumdB2b3b74bN8,5292
+uniparser_albanian-2.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+uniparser_albanian-2.1.2.dist-info/top_level.txt,sha256=BwQ4iJ58dDdY2uAa2OX-NCU0BtGMXoPNEWc2I-MVa1U,19
+uniparser_albanian-2.1.2.dist-info/RECORD,,
