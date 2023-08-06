@@ -1,0 +1,2 @@
+cubicweb<3.39.0,>=3.38.9
+sentry-sdk<1.26.0
