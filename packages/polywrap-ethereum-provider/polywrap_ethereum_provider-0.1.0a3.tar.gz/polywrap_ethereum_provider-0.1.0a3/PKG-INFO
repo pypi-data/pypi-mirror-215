@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: polywrap-ethereum-provider
+Version: 0.1.0a3
+Summary: Ethereum provider in python
+Author: Cesar
+Author-email: cesar@polywrap.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: eth_account (==0.8.0)
+Requires-Dist: polywrap-core (==0.1.0a33)
+Requires-Dist: polywrap-manifest (==0.1.0a33)
+Requires-Dist: polywrap-msgpack (==0.1.0a33)
+Requires-Dist: polywrap-plugin (==0.1.0a33)
+Requires-Dist: web3 (==6.1.0)
