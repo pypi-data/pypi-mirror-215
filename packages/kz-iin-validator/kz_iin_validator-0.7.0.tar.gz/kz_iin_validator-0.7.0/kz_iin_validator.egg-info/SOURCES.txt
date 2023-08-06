@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+kz_iin_validator/__init__.py
+kz_iin_validator/exceptions.py
+kz_iin_validator/iin_extractor.py
+kz_iin_validator/iin_generator.py
+kz_iin_validator/iin_validator.py
+kz_iin_validator/utils.py
+kz_iin_validator.egg-info/PKG-INFO
+kz_iin_validator.egg-info/SOURCES.txt
+kz_iin_validator.egg-info/dependency_links.txt
+kz_iin_validator.egg-info/top_level.txt
