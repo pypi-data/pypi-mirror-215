@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/glimy/__init__.py
+src/glimy/geo.py
+src/glimy.egg-info/PKG-INFO
+src/glimy.egg-info/SOURCES.txt
+src/glimy.egg-info/dependency_links.txt
+src/glimy.egg-info/requires.txt
+src/glimy.egg-info/top_level.txt
