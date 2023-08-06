@@ -1,0 +1,34 @@
+[project]
+name = "finetools"
+description = ""
+authors = [
+    { name = "iyanging", email = "iyanging@163.com" },
+]
+dependencies = []
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Mulan Permissive Software License v2 (MulanPSL-2.0)",
+    "Typing :: Typed",
+    "Topic :: Utilities",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Code Generators",
+]
+readme = "README.md"
+dynamic = []
+version = "0.0.0"
+
+[project.license]
+file = "LICENSE"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "file"
+path = "finetools/__init__.py"
