@@ -1,0 +1,24 @@
+---
+properties:
+  src_root:
+    type: string
+    default: src
+
+  ninja_out:
+    type: string
+    default: ninja
+
+  build_root:
+    type: string
+    default: build
+
+  common_ldflags:
+    type: array
+    default: ["-Wl,--gc-sections"]
+    items:
+      type: string
+
+  extra_third_party:
+    type: array
+    items:
+      type: string
