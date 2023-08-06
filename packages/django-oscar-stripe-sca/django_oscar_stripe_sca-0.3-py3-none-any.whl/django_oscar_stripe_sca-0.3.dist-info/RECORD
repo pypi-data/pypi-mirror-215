@@ -1,0 +1,13 @@
+oscar_stripe_sca/__init__.py,sha256=nK0SIqD9qeyJ9UDMvj8eIqclIv35GGDCIkgcLJgNNi0,69
+oscar_stripe_sca/apps.py,sha256=c3lv-AdJ0wYgXuF_28FDWdgLTzsz1qhWdViM94sM0bE,1058
+oscar_stripe_sca/facade.py,sha256=IU8FiE4l_LHFg1F7FBSAzteK25e3Tk903bXgVnNeR1o,3882
+oscar_stripe_sca/forms.py,sha256=8wCNnv5g5KHd8MpCXFI9oBpW_SqE2A-gd3rvRbO915Q,124
+oscar_stripe_sca/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oscar_stripe_sca/settings.py,sha256=R5-ubKn5VFtMjMF8B8PzerLgFEW6BkabOzI0eQGcTNA,764
+oscar_stripe_sca/tests.py,sha256=8swWiwmWNJQoFLwevFN3_tCS91XUklxxeGzvJcBRmhQ,79
+oscar_stripe_sca/views.py,sha256=UYY1hP29u8MmQw6vzTf1N3q3JPODtvj_FfyB1DTYrwY,6119
+django_oscar_stripe_sca-0.3.dist-info/LICENSE,sha256=ClVNYcRQTjddM-r75vzNTlPmro6f80i8wMrWhXW1i8E,1053
+django_oscar_stripe_sca-0.3.dist-info/METADATA,sha256=5ySU8DutLPx4pkyQFv9_qzt056p88TGJvOfyYzkBMqQ,3015
+django_oscar_stripe_sca-0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_oscar_stripe_sca-0.3.dist-info/top_level.txt,sha256=N6xZoWrG0khsUFPViXYk99U5dyrNyKAn-MQoi1JOi-4,17
+django_oscar_stripe_sca-0.3.dist-info/RECORD,,
