@@ -1,0 +1,10 @@
+Resistance report for sample ERR553187
+
+Considered drug: INH
+
+Resistance prediction based on FZB resistance catalog: 0.0 (susceptible)
+
+Resistance prediction based on Machine Learning: 0.0 (susceptible)
+
+Probability for resistance (estimated by Machine Learning): 1.402E-02
+
