@@ -1,0 +1,4 @@
+#recursive-include q2/Data/ColorTeff/ *
+#recursive-include q2/Data/Isochrones/ *
+#recursive-include q2/Data/ModelAtmospheres/ *
+#recursive-include q2/Data/Other/ *
