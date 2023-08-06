@@ -1,0 +1,48 @@
+[tool.pdm.build]
+includes = [
+    "nonebot_plugin_helltide",
+]
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+]
+plugins = [
+    "nonebot_plugin_helltide",
+]
+plugin_dirs = []
+builtin_plugins = []
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "nonebot-plugin-helltide"
+version = "0.1.5"
+description = "Diablo 4 Helltide Event Tracker work with nonebot2"
+authors = [
+    { name = "qbkira", email = "qbuouo@gmail.com" },
+]
+dependencies = [
+    "nonebot2",
+    "nonebot2[fastapi]",
+    "pydantic",
+    "aiohttp",
+    "aiofiles",
+    "httpx",
+    "nonebot-adapter-onebot",
+    "nonebot-plugin-apscheduler",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/QBkira/nonebot-plugin-helltide"
+repository = "https://github.com/QBkira/nonebot-plugin-helltide/tree/master/nonebot_plugin_helltide"
+documentation = "https://github.com/QBkira/nonebot-plugin-helltide#readme"
