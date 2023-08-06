@@ -1,0 +1,2 @@
+Version: 1.3.8
+Arguments: ['F:\\Github\\llama-rs-python\\.env\\Scripts\\delvewheel', 'repair', '.\\llm_rs_opencl-0.2.12-cp37-abi3-win_amd64.whl']
