@@ -1,0 +1,4 @@
+# Include the data files
+include data/*.dat
+include opendoor.py
+include opendoor.conf
