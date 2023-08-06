@@ -1,0 +1,9 @@
+jellyfish-1.0.0.dist-info/METADATA,sha256=MrZzLMVwU8rY0AZlOw7PEtJDyd57OxLQ8DhaufLvlZg,2542
+jellyfish-1.0.0.dist-info/WHEEL,sha256=Kk4P7nsII_4mlcl0eERj4CEP9eqHVH-5YUb6eWcZ2G4,111
+jellyfish-1.0.0.dist-info/license_files/LICENSE,sha256=aEvaTwAJKvu1SGNW0ODpW3kJ0XSWER0yJo5DjsXWGOA,1067
+jellyfish/__init__.pyi,sha256=9NHA4mJaDfi7Cd89ROwxL20_w19A9QDgcGsLZy1yBAo,508
+jellyfish/_jellyfish.py,sha256=hJbo4Nqb820N1ZsfkHxaUam_E7JzFemWAjNIK02W_p4,13116
+jellyfish/__init__.py,sha256=08ntUEHv1fF9oLzBt6wCdW-5lWJx8jxJ2dc9F6xfc9c,664
+jellyfish/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jellyfish/_rustyfish.pypy39-pp73-darwin.so,sha256=5GfPETcjnGLPjLjCH9ngEaboaM3APfs3_dG8c_ncUTs,792236
+jellyfish-1.0.0.dist-info/RECORD,,
