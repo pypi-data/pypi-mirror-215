@@ -1,0 +1,5 @@
+ml-starter
+tokenizers
+
+[dev]
+ml-starter[dev]
