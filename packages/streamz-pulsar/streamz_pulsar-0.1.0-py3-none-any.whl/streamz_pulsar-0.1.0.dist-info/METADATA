@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: streamz-pulsar
+Version: 0.1.0
+Summary: 
+Author: Marek Wadinger
+Author-email: marekwadinger@icloud.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pulsar-client (>=3.2.0,<4.0.0)
+Requires-Dist: streamz (>=0.6.4,<0.7.0)
