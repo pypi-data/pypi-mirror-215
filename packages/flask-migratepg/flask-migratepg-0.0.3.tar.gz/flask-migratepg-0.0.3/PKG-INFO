@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask-migratepg
+Version: 0.0.3
+Summary: Simple migration command for Flask and Psycopg 3.
+Author-email: Damien Bezborodov <dbezborodov@gmail.com>
+Project-URL: Homepage, https://github.com/bezborodow/flask-migratepg
+Project-URL: Bug Tracker, https://github.com/bezborodow/flask-migratepg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
