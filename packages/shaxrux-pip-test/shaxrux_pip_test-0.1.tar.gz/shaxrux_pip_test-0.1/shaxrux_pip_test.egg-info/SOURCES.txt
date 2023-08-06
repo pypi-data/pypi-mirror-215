@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+shaxrux_pip_test/_init_.py
+shaxrux_pip_test/programm.py
+shaxrux_pip_test.egg-info/PKG-INFO
+shaxrux_pip_test.egg-info/SOURCES.txt
+shaxrux_pip_test.egg-info/dependency_links.txt
+shaxrux_pip_test.egg-info/not-zip-safe
+shaxrux_pip_test.egg-info/top_level.txt
