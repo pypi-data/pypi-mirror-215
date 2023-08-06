@@ -1,0 +1,3 @@
+pyllo>=1.0.0.dev0
+rich==13.3.5
+applaunchservices==0.3.0

@@ -1,0 +1,2 @@
+[console_scripts]
+pyllo-kickstart = pyllo_kickstart.main:main

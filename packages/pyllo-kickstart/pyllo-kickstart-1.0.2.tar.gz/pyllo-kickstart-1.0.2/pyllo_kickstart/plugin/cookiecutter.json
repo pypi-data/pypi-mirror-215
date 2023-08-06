@@ -1,0 +1,7 @@
+{
+    "project_name": "helloworld",
+    "plugin_class_name": "HelloWorld",
+    "plugin_description": "Hello world plugin which doesn't contain dockable window.",
+    "author": "pyllo",
+    "company": "my awesome company"
+}
