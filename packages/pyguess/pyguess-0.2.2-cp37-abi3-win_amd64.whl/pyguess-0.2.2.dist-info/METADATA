@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pyguess
+Version: 0.2.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: The Python bindings to guess-rs
+Keywords: guess_rs
+Home-Page: https://github.com/Novalytica/guess-rs/pyguess
+Author: Vladyslav Rezohlazov <vladyslav.rezohlazov@novalytica.com>
+Author-email: Vladyslav Rezohlazov <vladyslav.rezohlazov@novalytica.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/Novalytica/guess-rs.git
+
+<div align="center">
+
+# pyguess
+The Python library to Guess Swiss Streets
+
+</div>
+
+---
+
+### Table of Contents
+
+1.  [Disclaimer](#org00a6381)
+2.  [Installation](#org549dfd1)
+3.  [Usage](#orgc7de4f4)
+
+
+
+<a id="org00a6381"></a>
+
+# Disclaimer
+
+**The library is in the alpha stage**, which means there's a lot of work to do still! So, don't expect too much from it!
+
+
+<a id="org549dfd1"></a>
+
+# Installation
+
+To install from PyPi, run:
+
+    pip install pyguess
+
+
+<a id="orgc7de4f4"></a>
+
+# Usage
+
+    import pyguess
+    from pyguess import Config, Candidate
+
+    config = Config(
+        path_to_streets="../misc/data/streets_data",
+    )
+    candidate = pyguess.guess_address("Rigistrasse 10", "Pfaffikon", config)
+
+    assert candidate == Candidate("rigistrasse 10", "pfäffikon zh")
+
