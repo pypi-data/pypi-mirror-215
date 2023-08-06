@@ -1,0 +1,38 @@
+name: OpenFractalClient
+version: {{ environ.get('OPENFRACTAL_CLIENT_CONSTRUCTOR_VERSION', '0.0.0') }}
+
+channels:
+  - hadim/label/qcportal_next
+  - conda-forge/label/libint_dev # for psi4
+  - conda-forge
+
+write_condarc: True
+keep_pkgs: True
+transmute_file_type: .conda
+
+specs:
+  - python =3.10
+  - pip
+  - loguru
+  - typer
+  - python-dotenv
+
+  # QCPortal deps
+  - hadim/label/qcportal_next::qcportal
+  - hadim/label/qcportal_next::qcfractalcompute
+
+  # Compute managers
+  - parsl
+  - psi4 =1.8
+  - openmm
+  - openff-forcefields
+  - openmmforcefields
+
+  # Optional
+  - datamol
+  - openff-toolkit
+  - zarr
+
+installer_type: sh
+initialize_by_default: false
+register_python: False

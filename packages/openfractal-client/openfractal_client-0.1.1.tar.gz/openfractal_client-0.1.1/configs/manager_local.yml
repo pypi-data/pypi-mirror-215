@@ -1,0 +1,44 @@
+# The base folder to use as the default for some options (logs, etc).
+base_folder: /tmp/qcf_compute
+
+# The name of the manager is used to identify the manager in the database.
+# It's not unique but for each manager launched a unique name will be computed
+# by the server.
+cluster: manager_demo_local_1
+
+loglevel: INFO
+logfile: null
+
+# Time between heartbeats/update checks between this Manager and the Fractal Server.
+update_frequency: 30
+
+# Settings to connect to the Fractal Server.
+server:
+  fractal_uri: https://openfractal-test-pgzbs3yryq-uc.a.run.app
+  username: YOUR_USERNAME
+  password: YOUR_PASSWORD
+  verify: false
+
+# How and where to detect the QM softwares.
+environments:
+  use_manager_environment: true
+  conda: []
+  apptainer: []
+
+executors:
+  local:
+    type: local
+
+    # Common to all executors.
+
+    # Tags are used to filter the tasks that will be sent to the manager.
+    queue_tags: ["demo_local"]
+    worker_init: []
+    scratch_directory: null
+    bind_address: null
+    cores_per_worker: 16
+    memory_per_worker: 16 # GB
+    extra_executor_options: {}
+
+    # Specific options for the local executor.
+    max_workers: 4

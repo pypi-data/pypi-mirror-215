@@ -1,0 +1,24 @@
+version: "3"
+services:
+  opf_client:
+    build:
+      context: ./
+    image: ghcr.io/opendrugdiscovery/openfractal-client:dev-local
+    environment:
+      # General
+      QCF_COMPUTE_BASE_FOLDER: /tmp/
+      QCF_COMPUTE_CLUSTER: manager_demo_1
+      QCF_COMPUTE_LOGLEVEL: INFO
+      QCF_COMPUTE_UPDATE_FREQUENCY: 30
+      # Server
+      QCF_COMPUTE_SERVER: "{}" # somehow this is needed....
+      QCF_COMPUTE_SERVER_FRACTAL_URI: https://openfractal-test-pgzbs3yryq-uc.a.run.app
+      QCF_COMPUTE_SERVER_USERNAME: compute_user
+      QCF_COMPUTE_SERVER_PASSWORD: compute_password
+      QCF_COMPUTE_SERVER_VERIFY: false
+      # Environment
+      QCF_COMPUTE_ENVIRONMENTS_USE_MANAGER_ENVIRONMENT: true
+      QCF_COMPUTE_ENVIRONMENTS_CONDA: "[]"
+      QCF_COMPUTE_ENVIRONMENTS_APPTAINER: "[]"
+      # Executors
+      QCF_COMPUTE_EXECUTORS: '{"local": {"type": "local", "queue_tags": ["demo"], "cores_per_worker": 16, "memory_per_worker": 16, "max_workers": 4}}'
