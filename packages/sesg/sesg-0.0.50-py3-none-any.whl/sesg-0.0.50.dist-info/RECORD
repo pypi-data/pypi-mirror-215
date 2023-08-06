@@ -1,0 +1,17 @@
+sesg/__init__.py,sha256=UziBXYgl91yNzAb8u5JzNIWGFbnxqJpe598zlsMApIU,310
+sesg/evaluation/__init__.py,sha256=md9h6GdNCRdSW-CqwhQYS_mGCZC5o647Q4CJyOm3ADY,307
+sesg/evaluation/evaluation_factory.py,sha256=Yvk5CQxH3nNATgjkXsFDExEo3kvHOjGcqZdzFxO07yk,10048
+sesg/evaluation/graph.py,sha256=rg8X4AjgZuJE-KglSAtrCfjmU4mt7WAqHOAJsbp9mX0,6813
+sesg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sesg/scopus/__init__.py,sha256=3Vk5_s6tQZcItAg7wcll0kDyDPmqWstfx6Wgtb5nHco,431
+sesg/scopus/_mutable_cycle.py,sha256=Up5ed5M3InNR2JMfNhkx1zxz-7WHjz0VEXiFsgTAKIo,1147
+sesg/scopus/client.py,sha256=EBCAm2i-ieWzeri2ZBzorNPw22BMqLL60uTYpD5z3Oo,12050
+sesg/search_string/__init__.py,sha256=VuwlUEbnZe2QAyEzu_2iwpPfky0HMvWGTGyYy2fEdSA,1506
+sesg/search_string/generate.py,sha256=ibxlvWxh1oX0g26bcAUNgGeKCfoqv7OSYNwXFtYgDcU,9592
+sesg/search_string/similar_words.py,sha256=Y6f9uqBURXXpZqxRqCH0EW_mRJqOyT-Ie1yeOrNKFR8,15180
+sesg/snowballing.py,sha256=jXO452Gm5Jsfdk5bIYfPM77Esrm1-lRs1RzglVGQfc4,7774
+sesg/topic_extraction.py,sha256=dBAB7l4hQ8R9SkPexvdG6MmiaS3vbQTqV7kVyGxCvF4,9069
+sesg-0.0.50.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+sesg-0.0.50.dist-info/METADATA,sha256=54TUzOPj5G6tstm0qGCnGUOJlwurMMqUWaGqyBL00NI,7635
+sesg-0.0.50.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+sesg-0.0.50.dist-info/RECORD,,
