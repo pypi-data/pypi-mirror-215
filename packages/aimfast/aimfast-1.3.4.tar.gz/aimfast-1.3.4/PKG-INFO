@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: aimfast
+Version: 1.3.4
+Summary: An Astronomical Image Fidelity Assessment Tool.
+Home-page: https://github.com/Athanaseus/aimfast
+License: GNU GPL 3
+Keywords: fits,dataset,lsm,models,statistics,html,catalogs
+Author: Athanaseus Ramaila
+Author-email: ramaila.jat@gmail.com
+Requires-Python: >=3.8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries
+Provides-Extra: aegean
+Provides-Extra: doc
+Provides-Extra: pybdsf
+Provides-Extra: source-finders
+Provides-Extra: svg-images
+Provides-Extra: testing
+Requires-Dist: AegeanTools ; extra == "aegean" or extra == "source-finders"
+Requires-Dist: astLib (==0.10.0)
+Requires-Dist: astro-tigger
+Requires-Dist: astropy
+Requires-Dist: astroquery
+Requires-Dist: bdsf ; extra == "pybdsf" or extra == "source-finders"
+Requires-Dist: bokeh
+Requires-Dist: jsonschema
+Requires-Dist: matplotlib ; extra == "pybdsf" or extra == "source-finders" or extra == "svg-images"
+Requires-Dist: mock
+Requires-Dist: numpy
+Requires-Dist: numpydoc ; extra == "doc"
+Requires-Dist: pytest (>=7.2.2,<8.0.0) ; extra == "testing"
+Requires-Dist: pytest-flake8 (>=1.1.1,<2.0.0) ; extra == "testing"
+Requires-Dist: pyyaml
+Requires-Dist: regions
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: selenium ; extra == "svg-images"
+Project-URL: Repository, https://github.com/Athanaseus/aimfast.git
+Description-Content-Type: text/x-rst
+
+=======
+aimfast
+=======
+
+|Build Version|
+|Doc Status|
+|Pypi Version|
+|Python Versions|
+|Project License|
+
+An Astronomical Image Fidelity Assessment Tool
+
+Main website: aimfast.rtfd.io_
+
+==============
+Introduction
+==============
+
+Image fidelity is a measure of the accuracy of the reconstructed sky brightness distribution. A related metric, dynamic range, is a measure of the degree to which imaging artifacts around strong sources are suppressed, which in turn implies a higher fidelity of the on-source reconstruction. Moreover, the choice of image reconstruction algorithm also affects the correctness of the on-source brightness distribution.
+
+==============
+Installation
+==============
+Installation from source_,
+working directory where source is checked out
+
+.. code-block:: bash
+  
+    $ pip install .
+
+This package is available on *PYPI*, allowing
+
+.. code-block:: bash
+  
+    $ pip install aimfast
+
+=======
+License
+=======
+
+This project is licensed under the GNU General Public License v3.0 - see license_ for details.
+
+=============
+Contribute
+=============
+
+Contributions are always welcome! Please ensure that you adhere to our coding
+standards pep8_.
+
+.. |Doc Status| image:: https://readthedocs.org/projects/aimfast/badge/?version=latest
+                :target: http://aimfast.readthedocs.io/en/latest
+                :alt:
+
+.. |Pypi Version| image:: https://img.shields.io/pypi/v/aimfast.svg
+                  :target: https://pypi.python.org/pypi/aimfast
+                  :alt:
+.. |Build Version| image:: https://github.com/Athanaseus/aimfast/actions/workflows/test_installation.yml/badge.svg
+                  :target: https://github.com/Athanaseus/aimfast/actions/workflows/test_installation.yml/
+                  :alt:
+
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/aimfast.svg
+                     :target: https://pypi.python.org/pypi/aimfast/
+                     :alt:
+
+.. |Project License| image:: https://img.shields.io/badge/license-GPL-blue.svg
+                     :target: https://github.com/Athanaseus/aimfast/blob/master/LICENSE
+                     :alt:
+
+.. _aimfast.rtfd.io: https://aimfast.rtfd.io
+.. _source: https://github.com/Athanaseus/aimfast
+.. _license: https://github.com/Athanaseus/aimfast/blob/master/LICENSE
+.. _pep8: https://www.python.org/dev/peps/pep-0008
+
