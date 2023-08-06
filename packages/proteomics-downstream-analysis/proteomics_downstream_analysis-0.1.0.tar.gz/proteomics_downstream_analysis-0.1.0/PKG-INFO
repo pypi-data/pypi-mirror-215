@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: proteomics_downstream_analysis
+Version: 0.1.0
+Summary: A package for downstream data analysis of proteomics data
+Home-page: https://github.com/vuductung/proteomics-downstream-anlaysis
+Author: Vu Duc Tung
+Author-email: tungvuduc@outlook.de
+Keywords: proteomics,downstream analysis,data analysis,data visualization,mass spectrometry
+Requires-Python: >=3.6.1
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+# proteomics-downstream-anlaysis
+Package for proteomics downstream data analysis
