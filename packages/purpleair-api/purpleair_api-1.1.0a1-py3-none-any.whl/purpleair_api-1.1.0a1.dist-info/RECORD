@@ -1,0 +1,13 @@
+purpleair_api/PurpleAirAPI.py,sha256=Px0yWb0qlv1fiHcC9eA0xSfkGbh2WpWFGJApoRR7JWw,5379
+purpleair_api/PurpleAirAPIConstants.py,sha256=_CD5PqFEdzZfcIPeB86_BA5enzgUPV2rFXeruH2I5Es,3906
+purpleair_api/PurpleAirAPIError.py,sha256=A1MZDb0TtZNiB2JUlPfHnllDo-76K6TUL_km7CEJ6oY,421
+purpleair_api/PurpleAirAPIHelpers.py,sha256=77ch5yUJe9x4HtUOp42gh_EE06joeZtTb8VBE8y7ssU,7011
+purpleair_api/PurpleAirLocalAPI.py,sha256=fWzIFfFSDAM3Dh1Ca5P4rNLIbW6smIsV0vpSg0NKrCU,1137
+purpleair_api/PurpleAirReadAPI.py,sha256=9dzxe99mj60F1qA8P1DkzysAtguJG02axDLK-GzG2uo,27865
+purpleair_api/PurpleAirWriteAPI.py,sha256=YabwQwCP4h60Q9pcRN7A-V3_SS8IMwWp3jOU6hEG-rA,5546
+purpleair_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+purpleair_api-1.1.0a1.dist-info/LICENSE,sha256=pb690WCQLieP9XyUcZODIWrcBdHBaJtX4lUZWrfsFWc,1070
+purpleair_api-1.1.0a1.dist-info/METADATA,sha256=JWnxdU1nB951_Kd11c7UXlC6KfP2ZEOuaa0HNgdRc5Y,2502
+purpleair_api-1.1.0a1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+purpleair_api-1.1.0a1.dist-info/top_level.txt,sha256=A3T7iHRAUkIoDafN_m6ZYJA0ZyoP3JbvwG79wFnsP_Y,14
+purpleair_api-1.1.0a1.dist-info/RECORD,,
