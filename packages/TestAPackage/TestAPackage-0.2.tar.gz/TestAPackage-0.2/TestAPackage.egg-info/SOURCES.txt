@@ -1,0 +1,8 @@
+README.md
+setup.py
+TestAPackage.egg-info/PKG-INFO
+TestAPackage.egg-info/SOURCES.txt
+TestAPackage.egg-info/dependency_links.txt
+TestAPackage.egg-info/top_level.txt
+sum/__init__.py
+sum/summing.py
