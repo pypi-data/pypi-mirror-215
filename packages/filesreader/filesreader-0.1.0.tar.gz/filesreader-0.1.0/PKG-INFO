@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: filesreader
+Version: 0.1.0
+Summary: A small project to read files
+Author: Sergio lema
+Author-email: lema.sergio.85@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Files Reader Project
+
+Small project to automatically read all the lines from a line without taking into account resources context and the new lines symbol.
+
+## Usage
+
+```
+reader = FileReader("path/of/the_file.txt")
+lines = reader.read_all_lines()
+```
+
+The resources context is already managed inside the controller. An FileNotFoundError will be thrown if the file doesn't exist. The returned lines won't have the special characters `\n` or `\r`.
+
+
