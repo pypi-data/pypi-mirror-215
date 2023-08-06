@@ -1,0 +1,12 @@
+README.md
+setup.py
+test/__init__.py
+test/test_background_noise_estimation.py
+test/test_completeness.py
+test/test_pmf_detection-deprecated.py
+test/test_pmf_detector.py
+trex_flare_detector.egg-info/PKG-INFO
+trex_flare_detector.egg-info/SOURCES.txt
+trex_flare_detector.egg-info/dependency_links.txt
+trex_flare_detector.egg-info/requires.txt
+trex_flare_detector.egg-info/top_level.txt
