@@ -1,0 +1,16 @@
+# Requirements for testing of clinvar-tsv
+
+# Base Requirements
+-r base.txt
+
+black ==23.3.0
+isort >=5.10.1, <6.0
+flake8 >=5.0.4, <6.0
+pytest
+pytest-cov
+pyfakefs
+
+factory_boy ==3.2.1
+pytest-factoryboy ==2.5.0
+
+coveralls

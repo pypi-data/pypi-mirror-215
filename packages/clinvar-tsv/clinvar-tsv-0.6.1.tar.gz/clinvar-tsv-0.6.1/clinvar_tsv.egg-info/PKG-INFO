@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: clinvar-tsv
+Version: 0.6.1
+Summary: Python 3 library for accessing and managing BioMedical sheets
+Home-page: https://github.com/bihealth/clinvar-tsv
+Author: Manuel Holtgrewe
+Author-email: manuel.holtgrewe@bihealth.de
+License: MIT license
+Keywords: clinvar
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![CI](https://github.com/bihealth/clinvar-tsv/actions/workflows/ci.yml/badge.svg)](https://github.com/bihealth/clinvar-tsv/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/bihealth/clinvar-tsv/branch/main/graph/badge.svg?token=287XB5P11T)](https://codecov.io/gh/bihealth/clinvar-tsv)
+[![Package Version](https://img.shields.io/pypi/v/clinvar-tsv.svg)](https://pypi.org/project/clinvar-tsv)
+[![Python Versions](https://img.shields.io/pypi/pyversions/clinvar-tsv.svg)](https://pypi.org/project/clinvar-tsv)
+
+# Clinvar-TSV
+
+The code in this repository allows to first download,t hen convert ClinVar XML files into TSV files (one for b37 and b38).
+The TSV files will contain one entry for each ClinVar `<ReferenceClinVarAssertion>` entry with important information extracted from ClinVar.
+The code is used by [bihealth/varfish-db-downloader](https://github.com/bihealth/varfish-db-downloader).
+
+- [clinvar-tsv on PyPi](https://pypi.org/project/clinvar-tsv/)
+- [clinvar-tsv on bioconda](http://bioconda.github.io/recipes/clinvar-tsv/README.html)
+
+## Overview
+
+Users usually run the tool by calling `clinvar_tsv main`.
+
+```
+$ clinvar_tsv main \
+    --cores 2 \
+    --b37-path hs37d5.fa \
+    --b38-path hs38.fa
+```
+
+This will call a Snakemake workflow that will in turn do the following
+
+1. Download the latest ClinVar XML file to the `downloads/` directory using `wget`.
+2. Parse the XML file and convert it into a "raw" TSV file in `parsed` for each the 37 and 38 release with `clinvar_tsv parse_xml`.
+   This file contains one record for each ClinVar VCV record.
+3. Sort this file by coordinate and VCV ID using Unix `sort`, and finally...
+4. Merge the lines in the resulting TSV file (for each genome build) by VCV ID and produce aggregate summaries for each VCV.
+
+There are two summaries:
+
+- `summary_clinvar_*` -- which merges record which attempts to imitate the [approach taken by ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/docs/review_status/)
+- `summary_paranoid_*` -- which considers all assessment as equally important, whether the reporter provided assessment criteria or not
+
+## References
+
+Documentation in ClinVar:
+
+- https://www.ncbi.nlm.nih.gov/clinvar/docs/review_status/
+- https://www.ncbi.nlm.nih.gov/clinvar/docs/help/
+- https://www.ncbi.nlm.nih.gov/clinvar/docs/variation_report/
+
+
+# Changelog
+
+### [0.6.1](https://www.github.com/bihealth/clinvar-tsv/compare/v0.6.0...v0.6.1) (2023-06-21)
+
+
+### Bug Fixes
+
+* missing/problematic clinvar version ([#19](https://www.github.com/bihealth/clinvar-tsv/issues/19)) ([b11a8a4](https://www.github.com/bihealth/clinvar-tsv/commit/b11a8a435d9269031589106cf8929169893db5ef))
+
+## [0.6.0](https://www.github.com/bihealth/clinvar-tsv/compare/v0.5.0...v0.6.0) (2023-06-21)
+
+
+### Features
+
+* allow providing clinvar version ([#17](https://www.github.com/bihealth/clinvar-tsv/issues/17)) ([dd80f2d](https://www.github.com/bihealth/clinvar-tsv/commit/dd80f2d10fceab350c61fa8de61bbe6264ad2008))
+
+
+### Documentation
+
+* adding badges to README ([#15](https://www.github.com/bihealth/clinvar-tsv/issues/15)) ([6e7ac01](https://www.github.com/bihealth/clinvar-tsv/commit/6e7ac013be4c0c7c34df41b69594581a7b8116f9))
+
+## [0.5.0](https://www.github.com/bihealth/clinvar-tsv/compare/v0.4.1...v0.5.0) (2023-05-03)
+
+
+### Features
+
+* export structural variants ([#13](https://www.github.com/bihealth/clinvar-tsv/issues/13)) ([db44d87](https://www.github.com/bihealth/clinvar-tsv/commit/db44d8739f6f619266f806611950f339b0842352))
+
+## 0.4.1
+
+- Also writing out ``set_type`` column (#10).
+
+## 0.4.0
+
+- Greatly refining record merging strategy (#6).
+  Also, providing both a ClinVar-like and a paranoid merging scheme.
+- Improving CI (#7)
+
+## 0.3.0
+
+- Various refinements of the code.
+- Adding tests and CI.
+
+## 0.2.2
+
+- Fixing bug with quotes.
+
+## 0.2.1
+
+- Fixing bug in setting clinical significance flags.
+
+## 0.2.0
+
+- Complete refurbishing of XML parsing, using models based on python-attrs.
+- Removing old tests.
+
+## 0.1.1
+
+- Fixing installation of Snakefile.
+
+## 0.1.0
+
+- First actual release, versioning done using versioneer.
+- Everything is new!

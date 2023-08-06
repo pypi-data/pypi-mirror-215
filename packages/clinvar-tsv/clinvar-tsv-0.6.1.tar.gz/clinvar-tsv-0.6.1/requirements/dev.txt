@@ -1,0 +1,10 @@
+# Requirements for developing clinvar-tsv
+
+# Base Requirements
+-r test.txt
+
+# Prettier CLI for py.test
+pytest-sugar
+
+# Sphinx theme
+sphinx_rtd_theme==0.1.9
