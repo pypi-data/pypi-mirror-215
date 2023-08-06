@@ -1,0 +1,10 @@
+design_kgex/__init__.py,sha256=LXG5E8bnBECFvvJRNynNxQogdFr9Wi6Ekf6r3xTt7qo,1289
+design_kgex/design_knowledge.py,sha256=GPuAY25_23-jVkVv_Vpq-j7mICYISZO8BxH7o8_pW8M,5380
+design_kgex/patent_text.py,sha256=PFhgichE2NT4IrIjuZ4C4tTeC6pDvdtFLEGlTH6YJLU,5671
+design_kgex/supplementary.pkl,sha256=uFnF2yMzD-VGdYCFE49Vq03kvvbsW0hIkZ8RNe9gYLM,15722
+design_kgex-0.2.6.dist-info/LICENSE,sha256=sLfxiuPVx4Yw5pTIQ2KPb9YMk8Wbg3pzq0LiynkiF1Y,1134
+design_kgex-0.2.6.dist-info/METADATA,sha256=F9l0qJcVwzePWnwX8usetyHSIaiNhXG_4_aloI6KLdk,459
+design_kgex-0.2.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+design_kgex-0.2.6.dist-info/dependency_links.txt,sha256=WpAooWJVi_h51qBRCFmcbaXWoSTyDXBI8_FyGqupK6k,121
+design_kgex-0.2.6.dist-info/top_level.txt,sha256=PUoYDPzaqNWF1Jf5wS1UjJE0jj2qeehF0xJm8njue2A,12
+design_kgex-0.2.6.dist-info/RECORD,,

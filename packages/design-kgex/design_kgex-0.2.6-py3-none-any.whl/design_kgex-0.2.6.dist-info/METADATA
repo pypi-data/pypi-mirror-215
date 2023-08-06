@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: design-kgex
+Version: 0.2.6
+Summary: Extracting Design Knowledge from Patent Text
+Author: L. Siddharth
+Author-email: siddharthl.iitrpr.sutd@gmail.com
+License: 2023 Data-Driven Innovation Lab, Singapore University of Technology and Design
+License-File: LICENSE
+Requires-Dist: spacy
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: patool
+Requires-Dist: importlib-metadata ; python_version == "3.8"
+
