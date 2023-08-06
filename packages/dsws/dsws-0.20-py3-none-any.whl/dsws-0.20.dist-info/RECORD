@@ -1,0 +1,10 @@
+dsws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsws/duct.py,sha256=zwZ3uutgqB6e-zix_BYctXGHpOl_tI5JGrDPYBo_jvY,6503
+dsws/ws_saspy.py,sha256=mJK-FDGg5JrgCG_N2ZKV4-U5JUzHn_8ozEZtCc2nR5w,4229
+dsws/ws_sqlalchemy.py,sha256=pxoKwq16Tz87ISFH8lyN-q9UWnISYSV7AdYEoViOHuU,2952
+dsws-0.20.dist-info/LICENSE,sha256=SkLf8V1h8qB25nyZDPp4y4c7oYiy-FZu9rXte8bgQjU,1068
+dsws-0.20.dist-info/METADATA,sha256=XD1jB0Y4aHLLDp96onNoTfNKP0DL4YjLy7YFoUbeqts,918
+dsws-0.20.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dsws-0.20.dist-info/top_level.txt,sha256=leX6ZkP-l2PW4UKvfrReIFVpz8qH8j8AhSRbGebeVWU,5
+dsws-0.20.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dsws-0.20.dist-info/RECORD,,
