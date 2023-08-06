@@ -1,0 +1,10 @@
+README.md
+setup.py
+SimpleVectors.egg-info/PKG-INFO
+SimpleVectors.egg-info/SOURCES.txt
+SimpleVectors.egg-info/dependency_links.txt
+SimpleVectors.egg-info/requires.txt
+SimpleVectors.egg-info/top_level.txt
+simplevectors/SimpleVector.py
+simplevectors/__init__.py
+simplevectors/add_vectors.py
