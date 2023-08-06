@@ -1,0 +1,12 @@
+{
+    "alkox": true,
+    "benzylation": false,
+    "colors_bob": false,
+    "colors_n9": false,
+    "fullerenes": true,
+    "hplc": true,
+    "photo_pce10": false,
+    "photo_wf3": false,
+    "snar": false,
+    "suzuki": true
+}
