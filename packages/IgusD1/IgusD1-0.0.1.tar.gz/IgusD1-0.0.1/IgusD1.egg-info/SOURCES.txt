@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+IgusD1.egg-info/PKG-INFO
+IgusD1.egg-info/SOURCES.txt
+IgusD1.egg-info/dependency_links.txt
+IgusD1.egg-info/top_level.txt
+igusD1.egg-info/PKG-INFO
+igusD1.egg-info/SOURCES.txt
+igusD1.egg-info/dependency_links.txt
+igusD1.egg-info/top_level.txt
+igusTest/MotorHor.py
+igusTest/__init__.py
+igusTest/initialisierung.py
+igusTest/motorVert.py
