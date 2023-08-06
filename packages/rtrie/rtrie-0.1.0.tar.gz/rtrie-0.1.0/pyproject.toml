@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rtrie"
+version = "0.1.0"
+description = ""
+authors = ["alexgagnon <alex@monad.media>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rapidfuzz = "^3.1.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
