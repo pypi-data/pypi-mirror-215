@@ -1,0 +1,32 @@
+[package]
+name = "guess-rs"
+version = "0.2.2"
+authors = ["Vladyslav Rezohlazov <vladyslav.rezohlazov@novalytica.com>"]
+edition = "2021"
+license = "MIT"
+description = "The library to Match Swiss Streets"
+keywords = ["guess-rs", "nlp", "street-processing", "text-processing"]
+categories = ["text-processing"]
+readme = "../README.md"
+homepage = "https://github.com/Novalytica/guess-rs/guess"
+repository = "https://github.com/Novalytica/guess-rs.git"
+
+[lib]
+name = "guess_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "guess"
+path = "src/main.rs"
+
+[[bench]]
+name = "guess_bench"
+harness = false
+
+[dependencies]
+strsim = "0.10.0"
+unicode-segmentation = "1.10.0"
+threadpool = "1.8.1"
+regex = "1.8.4"
+toml = "0.7.3"
+clap = { version = "4.3.3", features = ["derive"] }

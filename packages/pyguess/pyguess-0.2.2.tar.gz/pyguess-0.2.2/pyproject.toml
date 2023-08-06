@@ -1,0 +1,50 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "pyguess"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.isort]
+line_length = 79
+src_paths = ["."]
+profile = "black"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.pylint]
+max-line-length = 79
+disable=["raw-checker-failed",
+         "bad-inline-option",
+         "locally-disabled",
+         "file-ignored",
+         "suppressed-message",
+         "useless-suppression",
+         "deprecated-pragma",
+         "use-symbolic-message-instead",
+         "broad-exception-caught"]
+notes=["FIXME", "XXX"]
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

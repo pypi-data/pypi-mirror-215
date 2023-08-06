@@ -1,0 +1,21 @@
+[package]
+name = "pyguess"
+version = "0.2.2"
+authors = ["Vladyslav Rezohlazov <vladyslav.rezohlazov@novalytica.com>"]
+edition = "2021"
+license = "MIT"
+description = "The Python bindings to guess-rs"
+keywords = ["guess_rs"]
+readme = "README.md"
+homepage = "https://github.com/Novalytica/guess-rs/pyguess"
+repository = "https://github.com/Novalytica/guess-rs.git"
+
+[lib]
+name = "pyguess"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = { version = "0.19.0", features = ["abi3-py37", "extension-module"] }
+guess-rs = { path = "local_dependencies/guess-rs" }
