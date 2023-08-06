@@ -1,0 +1,10 @@
+oxdork/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+oxdork/config.py,sha256=u4iBUwSSs8ONdPZzSUr5z8fKIjcTvYOHsmfdsJrMbT4,2366
+oxdork/data/data.json,sha256=4LwMkMDx8AiO9WrRU6ORUe1w9bBT2Eyk2dhiaVauHMI,454
+oxdork/main.py,sha256=2BYZuv4-C8weiVCbcalWMWQW52JBJurepq54RZxqRV4,763
+oxdork/oxdork.py,sha256=o0xtYPW3Nq5faT8CWNHVZWtwaqZjq7iFgdoVnviLLvs,3000
+oxdork-3.2.0.dist-info/LICENSE,sha256=McOmNejwkUXsqcfHRiTjB4XfhRdz04FoYXS5wi7OZj8,1070
+oxdork-3.2.0.dist-info/METADATA,sha256=vKXc5QGxQaih8KgmPHI71lVuXg9FeBplgBN7kPpgzWc,2658
+oxdork-3.2.0.dist-info/WHEEL,sha256=HNQIvPlX3_ghCv6ljjG1vnIF6Npwq1SIN8tJybrRXEo,92
+oxdork-3.2.0.dist-info/entry_points.txt,sha256=IxmW2pc00A6CIiDBbiSPPJWfS7MWVsWBzx4RjfMKdBU,42
+oxdork-3.2.0.dist-info/RECORD,,
