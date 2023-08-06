@@ -1,0 +1,46 @@
+{
+    "jupyter.lab.toolbars": {
+        "Notebook": [
+            {
+                "name": "discover-notebook-snippets",
+                "command": "jupyterlab-pieces:discover-snippets",
+                "type": "command"
+            }
+        ],
+        "Cell": [
+            {
+                "name": "save-active-cell-to-pieces",
+                "command": "jupyterlab-pieces:save-cell-to-pieces",
+                "rank": 0,
+                "icon": "jupyterlab-pieces:logo"
+            }
+        ]
+    },
+    "jupyter.lab.shortcuts": [
+        {
+            "command": "text-shortcuts:save-selection-to-pieces",
+            "keys": ["Alt Shift V"],
+            "selector": "body"
+        },
+        {
+            "command": "text-shortcuts:share-selection-via-pieces",
+            "keys": ["Alt Shift I"],
+            "selector": "body"
+        },
+        {
+            "command": "text-shortcuts:save-cell-to-pieces",
+            "keys": ["Accel Shift V"],
+            "selector": "body"
+        },
+        {
+            "command": "text-shortcuts:share-cell-via-pieces",
+            "keys": ["Accel Shift I"],
+            "selector": "body"
+        }
+    ],
+    "title": "jupyterlab-pieces",
+    "description": "Pieces for Developers is a code snippet management tool powered by AI.",
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+}
