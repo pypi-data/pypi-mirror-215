@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: perform-eda
+Version: 0.1.1
+Summary: The perform_eda function is used to conduct Exploratory Data Analysis (EDA) on a given dataset. It provides various insights and visualizations to help understand the data.
+Author-email: ranjitmaity95@gmail.com
+Description-Content-Type: text/markdown
+
+
+# perform_eda
+
+The perform_eda function is used to conduct Exploratory Data Analysis (EDA) on a given dataset. It provides various insights and visualizations to help understand the data.
+
+# Function Signature
+
+Install my-project with npm
+
+```python
+  def perform_eda(data):
+```
+# Usage
+```python
+ perform_eda(data)
+```
+## Functionality
+
+The `perform_eda` function performs the following steps:
+
+1. Prints the dimensions of the dataset.
+2. Displays the data types of each column in the dataset.
+3. Provides summary statistics for the dataset.
+4. Checks for missing values and displays the count of null values for each column.
+5. Identifies duplicate rows in the dataset and prints the count of duplicate rows.
+6. Visualizes the distributions and relationships in the data:
+   - For categorical variables, generates bar plots showing the value counts for each category.
+   - For numeric variables, generates histograms, box plots, scatter plots (numeric vs. numeric), and kernel density plots.
+7. Displays a correlation matrix heatmap.
+8. Generates a pairwise scatter plot for numeric variables.
+9. For categorical variables, if there are more than one, generates cross-tabulation bar plots to visualize the relationships between different categorical variables.
+10. Displays a heatmap showing the locations of missing values in the dataset.
+11. If a target variable name is provided, calculates the correlation between each feature and the target variable and displays a bar plot of the feature correlations with the target variable.
+12. Detects outliers in numeric variables by calculating z-scores and identifying values that exceed a threshold of 3 standard deviations from the mean.
+
+**Note:** Replace `<target_variable_name>` with the actual name of your target variable to enable the feature correlation analysis.
+
+## Dependencies
+
+The `perform_eda` function requires the following libraries:
+
+- pandas
+- numpy
+- matplotlib.pyplot
+- seaborn
+- scipy.stats.ttest_ind
+
+Make sure to have these libraries installed in your Python environment before using the function.
+
+# Example
+```
+import pandas as pd
+
+# Load your dataset
+data = pd.read_csv('your_dataset.csv')
+
+# Perform EDA
+perform_eda(data)
+```
+
+## ðŸ”— Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ranjit-maity-75204a131/)
+
