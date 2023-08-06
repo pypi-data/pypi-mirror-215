@@ -1,0 +1,16 @@
+pydantic
+cryptography
+python-dotenv
+urllib3
+requests
+logbook
+pendulum
+boto3
+pytz
+retry2
+
+[black]
+black
+
+[mypy]
+mypy
