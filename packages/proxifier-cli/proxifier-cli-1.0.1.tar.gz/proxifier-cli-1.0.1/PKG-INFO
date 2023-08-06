@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: proxifier-cli
+Version: 1.0.1
+Summary: CLI to set up proxy configuration of Proxifier
+Home-page: https://github.com/sandbox-pokhara/proxifier-cli
+Author: Pradish Bijukchhe
+Author-email: pradishbijukchhe@gmail.com
+Project-URL: Bug Tracker, https://github.com/sandbox-pokhara/proxifier-cli/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3
