@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/helpers.py,sha256=9sNmFVoNFCJq9aA25aq7GPqVuH5jTQjeP7M6Z5VfM2k,850
+src/main.py,sha256=TgJxAyRUMn3CZV3TPlb7Oonc6CkeLqejZSh8YZdtdNA,285
+src/parsers.py,sha256=Rm7srw79d09zGUjaSE3mTYo-HtE8Xb9ugklOhlJvmlQ,8371
+src/storage.py,sha256=BtVridcD2zJdI5bLxROPNFoY-zvYeQBSyF3RUN94Kks,294
+src/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/tests/test_helpers.py,sha256=kanhVWIopoagwpGp6tYljNMa49jysCCJ9hvoO9puTuI,1546
+src/utils.py,sha256=RSLsxC7Du7uqjwVzclUeFpnSazszZnFE-boxcpzwuoA,1755
+yandex_reviews_parser-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+yandex_reviews_parser-0.1.2.dist-info/METADATA,sha256=ZihBSYM18LkvRFEbAZJ0cdu9U_n3GKy7I1e1-Q7jqNc,2179
+yandex_reviews_parser-0.1.2.dist-info/RECORD,,
