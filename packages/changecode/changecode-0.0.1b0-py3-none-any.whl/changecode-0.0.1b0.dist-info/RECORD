@@ -1,0 +1,10 @@
+changecode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+changecode/baseparse.py,sha256=bSQhPrzhSSQY8VWDUiTnAeQzZXnPyPpmLwkG0mwnrVc,181
+changecode/classes.py,sha256=lHtTd-lGJaIL56y6jrgaOObxUkoJJoXx-_2CK1lNRbQ,57
+changecode/code.py,sha256=uVhROKW1IRYhRVd4ooZgmt4t4zZuZDojz9ZfsVyY1q8,1654
+changecode/functions.py,sha256=pKObIgUPQLV4L6PhzxllTYC0-AnfX1n6J_uzARX8nxc,62
+changecode/imports.py,sha256=SG5zJLaPftVsYVm2MBxolCsRbMHQF_gb-jJu2v80lO0,379
+changecode-0.0.1b0.dist-info/LICENSE.md,sha256=2UuQlKKaJFF8m_QNNn2A1t4p9GPrcIV1xeF8lQC9aSU,1126
+changecode-0.0.1b0.dist-info/METADATA,sha256=3JiyRc40lIwM7TZxpzuvziklDwMUihoNInbTrighTOM,583
+changecode-0.0.1b0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+changecode-0.0.1b0.dist-info/RECORD,,
