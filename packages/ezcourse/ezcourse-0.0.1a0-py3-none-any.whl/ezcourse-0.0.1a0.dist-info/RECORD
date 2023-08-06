@@ -1,0 +1,13 @@
+lispi/.DS_Store,sha256=DKR0dbz34-3kf5wGcDgAEb9MB-2etJiHlhuwlG-5E-0,6148
+lispi/__init__.py,sha256=M5mWlrYyV9aI6xaOKX49Vc3Xu51_Zl4NOa7K7clwaB0,260
+lispi/__main__.py,sha256=bKDUn2NuXL1hY4bRf4lbgF4HVueFHtngaqPgg9AiAAY,3489
+lispi/lispi.py,sha256=MN-kN3P-Kij5xt-Kn6bq49SnZSAU7HW4lLyNq0SQ_mQ,2827
+lispi/revealjs_template.py,sha256=3kDfJhGNegAOI8-YYJphBaBkNuC-326uDEqKnezUIFA,489
+lispi/slideEdit.py,sha256=69escqKT43XPgCRKqQw57oJKqJmA8sUVjwwyohy9F9k,4422
+lispi/text2audio.py,sha256=xK4w_NAaOdtrhQ7wRVLq3xdzfPLGfRgForuO27uMQm4,1746
+lispi/example/original_example.ipynb,sha256=sYEvKsNH4LKMZMlNMyWqqH_TCjeG6hMZ7GFWi_vS7tM,2384
+ezcourse-0.0.1a0.dist-info/METADATA,sha256=CtnQ70p8o7KqdMKDThZGNLvV6bfFWdgDOPyoWisqglQ,6515
+ezcourse-0.0.1a0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+ezcourse-0.0.1a0.dist-info/entry_points.txt,sha256=NvvPL0pVOws1vx3TdFfuJarrvDt5Xqk3tX028GEWk00,46
+ezcourse-0.0.1a0.dist-info/licenses/LICENSE,sha256=4mT_lp7iCFlMUtNrV3g-_f4HZNeYjhDSH7HBDmBmxxs,1073
+ezcourse-0.0.1a0.dist-info/RECORD,,
