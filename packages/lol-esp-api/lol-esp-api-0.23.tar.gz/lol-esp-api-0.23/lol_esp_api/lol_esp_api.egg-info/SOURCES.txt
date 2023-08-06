@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+lol_esp_api/lol_esp_api.egg-info/PKG-INFO
+lol_esp_api/lol_esp_api.egg-info/SOURCES.txt
+lol_esp_api/lol_esp_api.egg-info/dependency_links.txt
+lol_esp_api/lol_esp_api.egg-info/requires.txt
+lol_esp_api/lol_esp_api.egg-info/top_level.txt
