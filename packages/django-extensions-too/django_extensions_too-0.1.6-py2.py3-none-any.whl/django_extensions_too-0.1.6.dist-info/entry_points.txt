@@ -1,0 +1,2 @@
+[console_scripts]
+xapp-monitor = xapp_monitor.client.cli:run
