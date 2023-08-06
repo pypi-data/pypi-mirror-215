@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: esterdb
+Version: 0.4.1
+Author-email: Trent Hauck <thauck@wheretrue.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Requires-Dist: duckdb==0.8.0
+Description-Content-Type: text/markdown
+
+# EsterDB
+
+**Table of Contents**
+
+- [Installation](#installation)
+
+## Installation
+
+```console
+pip install esterdb
+```
