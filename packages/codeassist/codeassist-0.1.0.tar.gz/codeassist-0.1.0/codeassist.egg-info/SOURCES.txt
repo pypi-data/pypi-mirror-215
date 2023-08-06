@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autocoder/__init__.py
+autocoder/create_dataset.py
+autocoder/gpt2_coder.py
+codeassist.egg-info/PKG-INFO
+codeassist.egg-info/SOURCES.txt
+codeassist.egg-info/dependency_links.txt
+codeassist.egg-info/not-zip-safe
+codeassist.egg-info/requires.txt
+codeassist.egg-info/top_level.txt
