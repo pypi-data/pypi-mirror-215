@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+madata/__init__.py
+madata/metadata.py
+madata.egg-info/PKG-INFO
+madata.egg-info/SOURCES.txt
+madata.egg-info/dependency_links.txt
+madata.egg-info/requires.txt
+madata.egg-info/top_level.txt
