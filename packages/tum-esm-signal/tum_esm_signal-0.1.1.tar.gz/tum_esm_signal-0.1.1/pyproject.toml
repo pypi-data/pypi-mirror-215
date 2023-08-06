@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "tum_esm_signal"
+version = "0.1.1"
+description = ""
+authors = ["Moritz Makowski <moritz@dostuffthatmatters.dev>"]
+readme = "README.md"
+packages = [
+    {include = "tum_esm_signal"},
+    {include = "tum_esm_signal/py.typed"}
+]
+keywords = [
+    "python",
+    "library",
+    "utilities",
+    "plotting",
+]
+license = "AGPL-3.0-only"
+repository = "https://github.com/tum-esm/signal"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.10.9"
+requests = "^2.31.0"
+pendulum = "^2.1.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pytest = "^7.3.2"
+mypy = "^1.4.0"
+python-dotenv = "^1.0.0"
+
+[tool.mypy]
+strict = true
+implicit_reexport = true
+no_warn_unused_ignores = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+    "requests"
+]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: tum-esm-signal
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/tum-esm/signal
+License: AGPL-3.0-only
+Keywords: python,library,utilities,plotting
+Author: Moritz Makowski
+Author-email: moritz@dostuffthatmatters.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/tum-esm/signal
+Description-Content-Type: text/markdown
+
+
+# TUM ESM Signal
+
+Replaces the `shareable-timeseries-visualization` repository.
+
+**Installation:**
+
+```bash
+poetry add tum-esm-signal
+# or
+pip install tum-esm-signal
+```
+
+**Usage:**
+
+```python
+signal_client = TUM_ESM_SignalClient(
+    cms_identity=cms_identity,
+    cms_password=cms_password,
+    collection_name="test",
+    table_name="test",
+    column_name="test",
+    sensor_id="test",
+    unit="test",
+    description="test",
+    minimum=0,
+    maximum=10,
+    decimal_places=0,
+)
+
+while True:
+    print("Sending datapoint")
+    signal_client.add_datapoint(random.randint(0, 10))
+    time.sleep(2)
+```
