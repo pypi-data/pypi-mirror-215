@@ -1,0 +1,15 @@
+melado/__init__.py,sha256=lVfXQ1zFTLw3VZDnC6Y7WX6UBPnOB2tQDooB-yzQZdQ,79
+melado/linear/__init__.py,sha256=_WuVgZ4AkOXi_RsYiQhPzZVKcr-hmJLxLbkUNxb-NLk,162
+melado/linear/adaline.py,sha256=dJdW4foLUL-8cR3JyNn4usWIfTZjdUYYHAHavuZc2qE,5128
+melado/linear/perceptron.py,sha256=QatV5q3gLdtJ4_15U2PPgIEuWhvTAjPTTo_1QGj_6TQ,2882
+melado/linear/regression.py,sha256=b_jRMahuMzTc0BwUBmiDRl7rka-Hi6yHZN9INvWeyhE,8816
+melado/utils/__init__.py,sha256=8gHsU8FsNTAGd4uyTF7j5es6yPKGBK-wcrWSBHvLQ4Y,40
+melado/utils/error.py,sha256=N7xkOQCYDHdAtvJHe86sVYGvds6mYC386x7KIvK-H7U,641
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_linear_regression.py,sha256=VO3VobyFG1KnX57P-440beZen457XybKujxA7l0cxHE,1241
+tests/test_perceptron.py,sha256=o3xiKBBQF0yVjrwU73rEjkx5RP4jFwMNFpb62VN66Mw,1271
+melado-0.1.0.dist-info/LICENSE,sha256=AF7FjMnSumXDY4ICR31qI0AtJdwSD5tmvA0zVr_RBqs,1085
+melado-0.1.0.dist-info/METADATA,sha256=j81oOR8VYmHPzIzNuOWvXZcYzYYo4LKjv9yc5777xwM,1633
+melado-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+melado-0.1.0.dist-info/top_level.txt,sha256=0dLlnDye3XmgF-tIk3hb2VC-a9iBTJkBrBHucYgmgxY,13
+melado-0.1.0.dist-info/RECORD,,
