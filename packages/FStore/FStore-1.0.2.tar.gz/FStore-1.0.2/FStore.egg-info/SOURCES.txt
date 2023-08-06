@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+FStore.egg-info/PKG-INFO
+FStore.egg-info/SOURCES.txt
+FStore.egg-info/dependency_links.txt
+FStore.egg-info/entry_points.txt
+FStore.egg-info/top_level.txt
+fstore/__init__.py
+fstore/__main__.py
+fstore/binary_search_tree.py
