@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Lib/wbpLogConfig/__init__.py
+Lib/wbpLogConfig/controls.py
+Lib/wbpLogConfig/logConfigPanel.py
+Lib/wbpLogConfig/logConfigPanelUI.py
+Lib/wbpLogConfig.egg-info/PKG-INFO
+Lib/wbpLogConfig.egg-info/SOURCES.txt
+Lib/wbpLogConfig.egg-info/dependency_links.txt
+Lib/wbpLogConfig.egg-info/entry_points.txt
+Lib/wbpLogConfig.egg-info/requires.txt
+Lib/wbpLogConfig.egg-info/top_level.txt
