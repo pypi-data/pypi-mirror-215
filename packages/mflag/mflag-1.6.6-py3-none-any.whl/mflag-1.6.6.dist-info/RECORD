@@ -1,0 +1,13 @@
+mflag/__init__.py,sha256=MJCJwy9M9aveNmGHxAG3htpaEYObuYEyfBhtlwu9Hjc,202
+mflag/src/flag.py,sha256=8Wliw7omJWfgdmye9uhNaPQctfAFvL0hYPEjKqxw2VI,4962
+mflag/src/rcmng/client/__init__.py,sha256=SKHKtZv_-YYaTolWC8WJNXlMeJx0rsLe5kuCZC9UlyU,1631
+mflag/src/rcmng/client/run.py,sha256=g8U-JdaKl9D97wAmtXRG5cunICfIKoF3Zdca02z8yho,433
+mflag/src/rcmng/server/__init__.py,sha256=_aEvuYs4gpDm47i4cO_pvIcS6J-YLRKvw9go9PVBePg,6832
+mflag/src/rcmng/server/run.py,sha256=6p37fSmLKXox4HqytmWYJ8DZ7Sth4FsFaTkGsQ2FiUQ,255
+mflag/src/rcmng/submit/__init__.py,sha256=UlBiL2S-zoPv51txyYQchMye7m0oeOFoZHo15ON8kEw,844
+mflag/src/rcmng/submit/run.py,sha256=XanP4elRH0JPxgAqe69_Dd_nj22St5Z_Jd1hd2K_fkw,444
+mflag-1.6.6.dist-info/LICENSE,sha256=hRv115YwRarr5wPuaEzj3_yO8iojV8DqDQvYFCPuKYY,1071
+mflag-1.6.6.dist-info/METADATA,sha256=j9N1iWvVCZgxZUoyLBwVj_JdJnSeThXACSmKlxkpIEE,2295
+mflag-1.6.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mflag-1.6.6.dist-info/top_level.txt,sha256=Zubj2n6d6FutnG9i08GJcDLCXwJJy5sXm2V-q7_rSp0,6
+mflag-1.6.6.dist-info/RECORD,,
