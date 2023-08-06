@@ -1,0 +1,13 @@
+tsetmc/__init__.py,sha256=JhdLnuRECUKtNpf2XSRkytZFjtvo_n4W8LVgqBsDjYw,6478
+tsetmc/docs.py,sha256=qXbtlDUECngXFqtS53-r6Ft-yAzUicDcejLD8KlCSpA,3450
+tsetmc/general.py,sha256=pWvF7TfuTSXcChNdscjgyr177cpWHyGlZedLllz6fDg,4187
+tsetmc/indices.py,sha256=SW1_6CGm0id63sOXDkXlxJAaENtPDdk9EjKKNaROV6c,1512
+tsetmc/instruments.py,sha256=e0rVyItUXnbQCeaI8eJcDYHY7cYAxULE14QVy2goN34,34644
+tsetmc/market_watch.py,sha256=BZYGDqH0gPtfAEIUMxqOLpzDR-ZwpPsiV2CujiMHdkE,11301
+tsetmc/dataset/__init__.py,sha256=4d26BGsE-wf9hAyiCTWu1Z2XUB7JIBQLcrbX5omrSUA,2085
+tsetmc/dataset/dataset.csv,sha256=yGns2Fx5ttWQ9HpJeZRdPVhpireikn4n51hy9-u53To,100082
+tsetmc-0.50.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tsetmc-0.50.0.dist-info/METADATA,sha256=a6uStd8l7gZNCjJMmK8OdNG47SFQz7KIhjRQc7mxUKc,7901
+tsetmc-0.50.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tsetmc-0.50.0.dist-info/top_level.txt,sha256=eGvJyDlzkONKexTNAdwZykW0lxyaaNw-FiBpt8yHww4,7
+tsetmc-0.50.0.dist-info/RECORD,,
