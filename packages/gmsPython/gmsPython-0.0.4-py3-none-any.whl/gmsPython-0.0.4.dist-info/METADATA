@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gmsPython
+Version: 0.0.4
+Summary: Automating GAMS models and execution from Python
+Home-page: https://github.com/ChampionApe/gamsPythonModels
+Author: Rasmus K. Skjødt Berg
+Author-email: rasmus.kehlet.berg@econ.ku.dk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: openpyxl
+Requires-Dist: pyDatabases
+Requires-Dist: gams
+
+# GamsPythonModels
+GamsPythonModels, version 0.0.2
