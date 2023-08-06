@@ -1,0 +1,6 @@
+[console_scripts]
+mmexport = mmenot.exporter:export
+mmhpo = mmenot.hyp_searcher:search_hyps
+mmprune = mmenot.pruner:prune
+mmtune = mmenot.trainer:train
+mmval = mmenot.tester:test
