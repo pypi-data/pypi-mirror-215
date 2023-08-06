@@ -1,0 +1,2 @@
+[console_scripts]
+brnet = brnet.brnet:main
