@@ -1,0 +1,3 @@
+[console_scripts]
+play_robot_rumble = robot_rumble.main:main
+
