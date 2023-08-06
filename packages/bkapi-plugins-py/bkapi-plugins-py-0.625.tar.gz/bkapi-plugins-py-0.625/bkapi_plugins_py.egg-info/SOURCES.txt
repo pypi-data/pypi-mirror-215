@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.cfg
+setup.py
+./setup.py
+./bkapi_plugins/__init__.py
+./build/lib/setup.py
+./build/lib/bkapi_plugins/__init__.py
+bkapi_plugins/files/grafana-mongodb-datasource-1.8.3.linux_amd64.zip
+bkapi_plugins_py.egg-info/PKG-INFO
+bkapi_plugins_py.egg-info/SOURCES.txt
+bkapi_plugins_py.egg-info/dependency_links.txt
+bkapi_plugins_py.egg-info/top_level.txt
