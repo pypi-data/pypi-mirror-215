@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Digital-Farming-Solution
+Version: 0.1.0
+Summary: The packages are helps to the DFS Teams to perform some of the task easily by importing this packages.
+Author: Bharatesha N S
+Author-email: bharatesha.ns.ext@bayer.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
