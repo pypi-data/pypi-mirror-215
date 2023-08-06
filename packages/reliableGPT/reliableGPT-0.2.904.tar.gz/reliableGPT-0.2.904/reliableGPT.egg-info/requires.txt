@@ -1,0 +1,5 @@
+openai
+termcolor
+klotty
+numpy
+posthog
