@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "non-normal"
+version = "0.1.0"
+description = "Generate non-normal distributions with known mean, variance, skewness and kurtosis"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/<your-username>/hypermodern-python"
+repository = "https://github.com/<your-username>/hypermodern-python"
+keywords = ["non-normal", "fleishman", "distribution", "statistics"]
+
+authors = ["Aman Chokshi <achokshi@student.unimelb.edu.au>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.25.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3.2"
+pytest-cov = "^4.1.0"
+coverage = {extras = ["toml"], version = "^7.2.7"}
+nox = "^2023.4.22"
+black = "^23.3.0"
+flake8 = "^6.0.0"
+flake8-black = "^0.3.6"
+flake8-import-order = "^0.18.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["non_normal"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
