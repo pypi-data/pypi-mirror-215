@@ -1,0 +1,11 @@
+entityshape/__init__.py,sha256=OYZC2-k5vjjpYGQVx5PpneIrhJ1JHNc_Ei3a5cje4xM,1725
+entityshape/enums.py,sha256=ud-1y6lrrSTaB3Q-eei9qJmABC0EHQu3PnxjxWl-mLU,446
+entityshape/exceptions.py,sha256=K_nuCT4lnD0qoz3fZwBtjQgmoCVFFQSQc9AA6-z9E9E,167
+entityshape/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entityshape/models/property_value.py,sha256=w8eL0G67UsIgs9C4XGshXL0peztfAngOIR3KxePssH8,245
+entityshape/models/result.py,sha256=Wj14Wykx6vbEt-817lAaZn-JDqlZWktKUpx0vXtKZsM,3970
+entityshape/models/statement_value.py,sha256=xH6lRmRGFD8elmAsUuFAEDPQXkY2uHlZqXA-vdO3WeY,252
+pyentityshape-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyentityshape-1.0.0.dist-info/METADATA,sha256=AG4aIAf0jNpRUo_q6FO0jgMB8vyEAfovv0Kq269NMro,1958
+pyentityshape-1.0.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyentityshape-1.0.0.dist-info/RECORD,,
