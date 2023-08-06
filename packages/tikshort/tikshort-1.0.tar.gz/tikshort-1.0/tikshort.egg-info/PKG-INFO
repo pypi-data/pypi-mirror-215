@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tikshort
+Version: 1.0
+Summary: Package to Short any Long Tiktok kVideo
+Author: vardxg
+Author-email: <dev@vardxg.com>
+Keywords: python,shorten
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# TikShort
+
+Developed by vardxg aka Fhivo (c) 2023
+
+## Examples of How To Use (Alpha Version)
+
+How To Use
+
+```python
+from tikshort import TikShorten
+
+result = TikShorten.short(input("\n Link >>> "))
+print(result)
+
+
+```
+if u have Questions or know bugs etc, contact me on Telegram: https://t.me/Fhivo
