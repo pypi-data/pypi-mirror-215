@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tdasha
+Version: 0.2.1
+Summary: Time-dependent Anthropogenic Seismic Hazard Assessment
+Author: Stanisław Lasocki, Francis Tong
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy >=1.21.6
+Requires-Dist: scipy >=1.7.3
+Requires-Dist: obspy >=1.4.0
+Requires-Dist: KDEpy >=1.1.3
+Requires-Dist: adaptivekde >=1.1.1
+Requires-Dist: resample >= 1.6.0
+Project-URL: Source, https://github.com/francistong/tdasha
+
+# tdasha
