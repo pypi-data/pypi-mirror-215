@@ -1,0 +1,7 @@
+SolidWrap/__init__.py,sha256=LYXPDKA1zRNEfmmUF-zvVmUxzXbXfCkJps1VtgydKhQ,362
+SolidWrap/solidwrap.py,sha256=WORU9QbRTJ_053eWZ2UqDLW-M5PS_A5UzXWRE4W9hM4,12733
+SolidWrap/extensions/__init__.py,sha256=zFArNjrpyhQX3sdUtApo0IATnoNtWXvfKWCrL6IyPC0,163
+SolidWrap/extensions/extensions.py,sha256=Fdq8ElEnlpJZ04GxyBjJQHxOefsQqaUMwJkRX2uNQ_Q,94
+solidwrap-0.0.1.dist-info/METADATA,sha256=jssq7Xqpv5PuCM700GcVE-Qp14bzrbyXRZSebVEAMlY,3514
+solidwrap-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+solidwrap-0.0.1.dist-info/RECORD,,
