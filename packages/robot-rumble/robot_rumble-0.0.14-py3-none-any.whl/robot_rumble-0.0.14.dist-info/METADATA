@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: robot-rumble
+Version: 0.0.14
+Summary: 2D Side-Scroller Game for UF CEN4930 Performant Programming (in Japan!)
+Home-page: https://github.com/guptat07/Robot-Rumble
+Author: Tony Gupta, Anthony Liao, Maya Singh, Kaylee Conrad
+Author-email: kaymconrad@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.10
+Description-Content-Type: text/plain
+Requires-Dist: arcade (>=2.6.17)
+
+Robot Rumble is a 2D Side-Scroller Game for UF CEN4930 Performant Programming (in Japan!)
+
+Installation: pip install robot_rumble
+
+Run Command: play_robot_rumble
+
+GitHub: https://github.com/guptat07/Robot-Rumble
+
+
+
