@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qsmap
+Version: 0.0.1
+Summary: Package provides functionality for working with geographical data, routing, and mapping
+Home-page: https://github.com/saferide-tech/QuestarMap
+Author: Yaroslav Mavliutov
+Author-email: yaroslavm@questarauto.com
+License: MIT
+Keywords: geo,routing,mapping
+Requires-Dist: folium (==0.14.0)
+Requires-Dist: numpy (==1.25.0)
+Requires-Dist: overpy (==0.6)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: polyline (==2.0.0)
+Requires-Dist: pyspark (==3.4.0)
+Requires-Dist: Requests (==2.31.0)
+
