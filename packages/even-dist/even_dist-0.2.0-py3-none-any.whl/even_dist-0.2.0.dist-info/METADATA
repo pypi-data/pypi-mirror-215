@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: even-dist
+Version: 0.2.0
+Summary: My first Python library
+Home-page: https://github.com/tic-top/even_dist/
+Author: kirp
+Author-email: kirp@umich.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# evenly distributed
+
+My first libray only have two funtion:
+- fibo_sphere(number)
+- plot_fibo_sphere(number)
+
