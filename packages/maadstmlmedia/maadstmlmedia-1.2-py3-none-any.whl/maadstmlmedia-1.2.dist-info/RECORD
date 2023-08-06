@@ -1,0 +1,15 @@
+maads-tml/__init__.py,sha256=VleWAiSXy7udWK_nYG7zELKYJm8FrHAJkduPgnVCnCE,1192
+maads-tml/sendfiles.py,sha256=z4UKYKyOR0KVJ5BmW19lQz2S8PITGZ2ZsnXY-uIaiZ4,42205
+maadstml/__init__.py,sha256=G6HNongX-olJ6VoiE73KenM7TtLHpNHrb33DdqC44EY,2260
+maadstml/readpdf.py,sha256=wOVHO25PGTdZ4PkCFwWW-nTQgB59UQ3Z2yla3Hm7QGU,4871
+maadstml/sendfiles.py,sha256=eEimDPxslQ6_2W25y0LPQ7W2TDvK3yQnfzRe1y8vshk,81197
+maadstml/tmltextsummary.py,sha256=JPS0L-h5B-UfbVMBjriXN6la9MNerV0Mq-1QNzame6o,10850
+maadstmlmedia/__init__.py,sha256=VoACeuYaX54kU2Ztqz1fkfxwJ96E2bfTBKhNf4xucTA,157
+maadstmlmedia/readpdf.py,sha256=wOVHO25PGTdZ4PkCFwWW-nTQgB59UQ3Z2yla3Hm7QGU,4871
+maadstmlmedia/sendfiles.py,sha256=FsYHxJr3eNFjyczIKNZj32Bx84gNCnmIfdJ2HhUwBoc,1609
+maadstmlmedia/tmltextsummary.py,sha256=JPS0L-h5B-UfbVMBjriXN6la9MNerV0Mq-1QNzame6o,10850
+maadstmlmedia-1.2.dist-info/METADATA,sha256=ae5HgSS7DjUxX_th55D5O3WT1eZr9TxdOdDSv7ptU1M,2355
+maadstmlmedia-1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+maadstmlmedia-1.2.dist-info/license.txt,sha256=8GBk9X8uSAFkmIytsfX8-3-8cBb6KPEn9SeJd1bd4lQ,852
+maadstmlmedia-1.2.dist-info/top_level.txt,sha256=asg1YqYmoH6HNWsiSzl970x9jSW9y7v8ZsgrwdEf1G8,14
+maadstmlmedia-1.2.dist-info/RECORD,,
