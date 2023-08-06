@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tum-esm-signal
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/tum-esm/signal
+License: AGPL-3.0-only
+Keywords: python,library,utilities,plotting
+Author: Moritz Makowski
+Author-email: moritz@dostuffthatmatters.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/tum-esm/signal
+Description-Content-Type: text/markdown
+
+
+## TUM ESM Signal
+
+Replaces the `shareable-timeseries-visualization` repository.
+
+
