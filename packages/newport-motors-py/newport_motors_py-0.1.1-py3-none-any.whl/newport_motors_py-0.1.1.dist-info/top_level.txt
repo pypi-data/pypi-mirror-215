@@ -1,0 +1,6 @@
+newport_motors
+newport_motors/GUI
+newport_motors/Mocks
+newport_motors/Motors
+newport_motors/USBs
+pyvisa_mock
