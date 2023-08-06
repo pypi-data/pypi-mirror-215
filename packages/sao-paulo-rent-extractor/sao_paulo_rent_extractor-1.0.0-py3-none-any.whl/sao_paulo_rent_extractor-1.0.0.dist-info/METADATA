@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sao-paulo-rent-extractor
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4 (==4.12.2)
+Requires-Dist: logging (==0.4.9.6)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: requests (==2.31.0)
+
+UNKNOWN
+
