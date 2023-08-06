@@ -1,0 +1,34 @@
+{% if page.block_indexing %}
+    <meta name="robots" content="noindex">
+{% endif %}
+
+{% if page.get_meta_title %}
+    <meta name="title" content="{{ page.get_meta_title }}">
+    <meta property="og:title" content="{{ page.get_meta_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.get_meta_title }}">
+{% endif %}
+
+{% if page.meta_description %}
+    <meta name="description" content="{{ page.meta_description }}">
+    <meta property="og:description" content="{{ page.meta_description }}">
+    <meta name="twitter:description" content="{{ page.meta_description }}">
+{% endif %}
+
+{% if page.site_name %}
+    <meta property="og:site_name" content="{{ page.site_name }}">
+{% endif %}
+
+{% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+{% else %}
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.META.HTTP_HOST }}/{{ page.request.path }}">
+{% endif %}
+
+{% if request %}
+    <meta property="og:url" content="{{ request.scheme }}://{{ request.META.HTTP_HOST }}/{{ page.request.path }}">
+{% endif %}
+
+{% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
