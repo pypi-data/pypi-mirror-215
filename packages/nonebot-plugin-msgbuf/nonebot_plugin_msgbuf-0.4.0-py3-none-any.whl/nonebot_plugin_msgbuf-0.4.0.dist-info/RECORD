@@ -1,0 +1,10 @@
+nonebot_plugin_msgbuf/__init__.py,sha256=WC3XK0I-1CpKDZ5tzC0pTJ2MtXqYby4FjzEtGBxXBc0,4890
+nonebot_plugin_msgbuf/base.py,sha256=KUzGXVVWSqEe7SrBvXsbefjd2XxU2vjJfwlllkuOzUc,2596
+nonebot_plugin_msgbuf/models.py,sha256=ULStScIsVuuh2J6rP4PKnF6ZVzB3Uv2SiaXHPYyDivg,5779
+nonebot_plugin_msgbuf/platforms.py,sha256=8HBflA90_7bvK1T1svRJSSUchuQ6WlX9vg-EayvuyNQ,23081
+nonebot_plugin_msgbuf/utils.py,sha256=2G2CtBKGpH7mc9aM98WEGyC9VQtXVGGiN_p-LJn8uog,1044
+nonebot_plugin_msgbuf-0.4.0.dist-info/LICENSE,sha256=VNJJ79aUfd9hsk9sxIpUfYRGLP4POAU4ax7NOIRkakA,1068
+nonebot_plugin_msgbuf-0.4.0.dist-info/METADATA,sha256=8udS3FchQY_-oi7GPGWnSsG8bVf6bYDmCWbVMgulOX4,6310
+nonebot_plugin_msgbuf-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nonebot_plugin_msgbuf-0.4.0.dist-info/top_level.txt,sha256=Gm38c3wCutXSIw7eQy3-EO5TMdFVwntOdO7tTYgRh34,22
+nonebot_plugin_msgbuf-0.4.0.dist-info/RECORD,,
