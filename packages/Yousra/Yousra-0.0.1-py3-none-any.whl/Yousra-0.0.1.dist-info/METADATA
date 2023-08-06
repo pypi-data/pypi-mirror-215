@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: Yousra
+Version: 0.0.1
+Summary: بسم الله الرحمن الرحيم  والصلاة و السلام على رسول الله خير المرسلين
+Author: Mahmoud Khalaf محمود خلف
+Author-email: mahmoudcodetest@gmail.com
+License: Copyright (c) 2023 Mahmoud Khalaf
+Project-URL: Download Button Images, https://github.com/MahmoudCodetest/Button-Images
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+
+من خلال هذه المكتبة يمكن صناعة زر حديث الشكل مع امكانية تغيير لون و مظهر الزر وكذلك تغيير لون النص للزر بالاضافة إلى امكانية تكبير وتصغير الزر مع امكانية حفظ موقع الزر طبعا باستخدام مكتبة الت كينتر في لغة بايتون , في الاسفل يوجد مثال يمكن الاستعانة به
+
+Through this library, you can make a real modern button in Tkinter Python, it has the ability to change the style and color of the button, in addition to saving the position of the button with the ability to zoom in and out of the button.
+
+
+
+
+# Usage: Copy the code to try طريفة الاستخدام: يرجى نسخ الرمز للمحاولة
+
+from tkinter import *
+
+from modernbutton import *
+   
+window=Tk()
+
+window.geometry("800x400")
+
+window.title("CodeTest Modern Button Designer")
+    
+btn1 = addMButton(window,30,30,"Button 1")
+
+btn2 = addMButton(window,30,80,"Button 2")
+
+btn3 = addMButton(window,30,130,"Button 3")
+
+btn4 = addMButton(window,30,180,"Button 4")
+
+btn5 = addMButton(window,30,230,"Button 5")
+
+
+loadwidgetsprop(window)
+
+window.protocol("WM_DELETE_WINDOW", lambda : RegisterData(window))
+
+mainloop()
+
+
+## Installation طريقة الاعداد
+You can install `modernbutton` using : pip install Yousra
+
+open CMD prompt and type: 
+pip install Yousra
+
+
