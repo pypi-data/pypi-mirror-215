@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: capsula
+Version: 0.0.1
+Summary: A Python package to capture and reproduce command execution environments
+License: MIT
+Author: Shunichiro Nomura
+Author-email: nomura@space.t.u-tokyo.ac.jp
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Capsula
+
+A Python package to capture and reproduce command execution environments.
+
