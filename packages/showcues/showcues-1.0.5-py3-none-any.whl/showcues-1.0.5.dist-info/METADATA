@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: showcues
+Version: 1.0.5
+Summary: showcues displays HLS CUE-IN and CUE-OUT tags with wallclock time
+Home-page: https://github.com/futzu/showcues
+Author: Adrian of Doom.
+Author-email: spam@iodisco.com
+Platform: all
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: m3ufu (>=0.0.69)
+Requires-Dist: new-reader (>=0.1.7)
+Requires-Dist: threefive (>=2.3.97)
+
