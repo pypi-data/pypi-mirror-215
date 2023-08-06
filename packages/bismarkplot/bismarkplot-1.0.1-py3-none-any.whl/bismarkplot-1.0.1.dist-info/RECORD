@@ -1,0 +1,15 @@
+bismarkplot/BarPlot.py,sha256=G30M-HlBbqmOJHxRstHlML6K_wD7H0Scn2JO6txEK1c,567
+bismarkplot/Bismark.py,sha256=hNY8gZwnfp96wI7BrWY0qYhbjN7FA4i9JlZ-RFj5M5I,2439
+bismarkplot/BismarkFiles.py,sha256=3SVYYsV7tvYWtnHhrA60Hvfnom4djwzwFoePSJIbPLw,16997
+bismarkplot/BoxPlot.py,sha256=-AvFgB8gDMVncFOIKjku_veiT3zVliTrMF1SZR25pYE,1803
+bismarkplot/HeatMap.py,sha256=xFITJWKYrvF6AyqLtJ4gDoxKAebT5wxtpFXK3Y7FLXI,2586
+bismarkplot/LinePlot.py,sha256=EgzAagWcNj6i1Xx05Fwg-1QtSqb7ZgL8JlmgdeRGRwg,2819
+bismarkplot/__init__.py,sha256=tILQh5nJQzdJqZ6vyVifl7WiGSVvb4v3HuFkgaoH030,270
+bismarkplot/__main__.py,sha256=tUNyw9ac7EVSrQecVEXiAnJMkyH7njjYIWG11tZKlHg,3951
+bismarkplot/read_bismark.py,sha256=s3uWciJ6PFVSsjs8GQF81l96pt0spAYTIryfQaZqukE,4803
+bismarkplot/read_genome.py,sha256=3kWcJ-UyTR2CWjC6DyixyZvuDjnwpum0GX9CPsSyKnQ,2669
+bismarkplot-1.0.1.dist-info/METADATA,sha256=Me8vV4bNL4OmMb48gMd0e72TwlroWgyFuxvEa2EJizk,43601
+bismarkplot-1.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+bismarkplot-1.0.1.dist-info/entry_points.txt,sha256=WjcmXScGKgf2izBK0xCqMmQ5O83faYtt83qSCiE-X1U,58
+bismarkplot-1.0.1.dist-info/licenses/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+bismarkplot-1.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+bismarkplot = bismarkplot.__main__:main
