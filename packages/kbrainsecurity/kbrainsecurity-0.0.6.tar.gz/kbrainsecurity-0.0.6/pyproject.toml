@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kbrainsecurity"
+version = "0.0.6"
+description = "Security and authentication functions for use in KBRAIN"
+authors = ["Daniel E. Fredriksen <daniel.fredriksen@us.kbr.com>"]
+license = "AGPLv3"
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-jose = "^3.3.0"
+azure-functions = "^1.15.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pre-commit = "^3.3.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
