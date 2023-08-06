@@ -1,0 +1,3 @@
+[console_scripts]
+bayfile_upload = bayfile_uploader.uploader:main
+
