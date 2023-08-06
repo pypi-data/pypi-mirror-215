@@ -1,0 +1,16 @@
+gerritcli/__init__.py,sha256=tFgDFfWCI0OiqIIwrPK81d0nmT5ttUFbLRJtyStYLXY,6573
+gerritcli/__main__.py,sha256=0lMELtxxPYyz1ANqb44RbnXiWd2Dxs5WVo1a-u-OsxE,1203
+gerritcli/utils.py,sha256=-pcWA9ujq1ep8oId0s7NRAZi1ILSmQynxB8TTxx8108,4031
+gerritcli/command/__init__.py,sha256=_E1CK6wxrjA7FiuKhlx9m8t3GqF03-wNjYU8eLeVSpI,288
+gerritcli/command/account_command.py,sha256=i_tpwMpFW4s5E3E-A0YiPy1uOlToQHtO8TapSidD5_o,6090
+gerritcli/command/change_command.py,sha256=oCcG8PX_lfCZI4RZQ7eX5y46gU4-_0Bwv9XfE_GpAVw,5652
+gerritcli/command/group_command.py,sha256=yRTdxEs400-88c7kHbDhJSEhifUj-zNDlwN5AixSjzk,5557
+gerritcli/command/project_command.py,sha256=RfBDZBMN5gvamAAkk1netCnnQ_HySO-xVBjlmWyHONs,4281
+gerritcli/command/server_command.py,sha256=On-68LaBn-h7HVE_vwwyB-fD39hQ_yvw0TY0hAP_V6Q,2112
+gerritcli/command/version_command.py,sha256=48HrrbiOo_I-jqYB0lKnWTt9dNc_dDAYD223sWhyzy8,497
+python_gerrit_cli-1.0.3.dist-info/LICENSE,sha256=yCZb8H-n3t8a6Tg69Gjy7VWqa16DpG5vMCsKnGoPyn8,1113
+python_gerrit_cli-1.0.3.dist-info/METADATA,sha256=sjUGLU9-gBIOfHsLRGdJhRSHzxadl_cmxjcvAXxZdTc,2328
+python_gerrit_cli-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python_gerrit_cli-1.0.3.dist-info/entry_points.txt,sha256=L1MRDV9rB4CmQ6IPPjK_DcOL-7fJqPscKA-ItxnHgxo,54
+python_gerrit_cli-1.0.3.dist-info/top_level.txt,sha256=XzBABstRMxzs1hJ6oDmZS-tdJzyoRx9wrpt0d4b2VfY,10
+python_gerrit_cli-1.0.3.dist-info/RECORD,,
