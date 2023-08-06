@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: supergraph
+Version: 0.0.1
+Summary: Supergraph compiler.
+Home-page: https://github.com/bheijden/supergraph
+License: Apache2.0
+Author: Bas van der Heijden
+Author-email: d.s.vanderheijden@tudelft.nl
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: networkx (>=2.8.8,<3.0.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Project-URL: Documentation, https://github.com/bheijden/supergraph
+Project-URL: Repository, https://github.com/bheijden/supergraph
