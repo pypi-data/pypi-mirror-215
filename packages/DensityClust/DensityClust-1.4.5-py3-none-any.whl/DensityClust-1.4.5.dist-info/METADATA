@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: DensityClust
+Version: 1.4.5
+Summary: Molecular Clump extraction algorithm based on Local Density Clustering*
+Home-page: https://github.com/Luoxiaoyu828/LDC_MGM
+Author: Luo Xiaoyu
+Author-email: vastlxy@163.com
+Project-URL: Bug Tracker, https://github.com/Luoxiaoyu828/LDC_MGM/issues
+License-File: LICENSE
+
