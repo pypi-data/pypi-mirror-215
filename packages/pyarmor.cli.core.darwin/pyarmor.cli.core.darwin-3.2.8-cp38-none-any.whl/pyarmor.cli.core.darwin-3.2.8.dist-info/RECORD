@@ -1,0 +1,7 @@
+pyarmor/cli/core/darwin/__init__.py,sha256=PG51kpFg0wVpa349hmCcuGnAthuwDOr30Fft4rWT9MI,22
+pyarmor/cli/core/darwin/x86_64/pyarmor_runtime.so,sha256=bV4hxfWLsD0zLsykxJqRSdsU2vXJY8n-yis-wnWemfI,885792
+pyarmor/cli/core/darwin/x86_64/pytransform3.so,sha256=kiBrXaqO0Z0YfRxKK3TNabwlZqruSv_-NnCH0yYIRKA,894192
+pyarmor.cli.core.darwin-3.2.8.dist-info/METADATA,sha256=PPu15itfr1QD_OhVHQrH5d9pmTib-XLzVXcOT_Izb8s,807
+pyarmor.cli.core.darwin-3.2.8.dist-info/WHEEL,sha256=fnwPkVKqsNvgwPfqPsCvTGK4Q1cWK5nDzby006d0lkY,93
+pyarmor.cli.core.darwin-3.2.8.dist-info/top_level.txt,sha256=UE1ovZ_90YzwF_lZ3LV7o8HKLe-RgzUaUUvdH5UTUus,8
+pyarmor.cli.core.darwin-3.2.8.dist-info/RECORD,,
