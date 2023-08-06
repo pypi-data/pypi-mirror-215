@@ -1,0 +1,16 @@
+dreamcoat/__init__.py,sha256=VzouJ_YePwgVliC3noc9LkRUh0OY6eXNSMyxPtlxz_U,2070
+dreamcoat/cmems.py,sha256=84iLMjzlta53gL3b4DfNsJMgFwil7htQ7so81sNnzSo,35118
+dreamcoat/convert.py,sha256=u3-U4jzDZnZ4yzx2xuKWHmUZ5r5oQGCnufVNJkC0Dsk,4102
+dreamcoat/ctd.py,sha256=M9SBM6LYzG5uf3HmDCcKl9XeeeBi5UuxyjC4mg7zKmo,5449
+dreamcoat/meta.py,sha256=YNrqxhSzznPEQaUh9YSCwDtqe1rlOYRsOYo-BzbY0Kk,1824
+dreamcoat/modis.py,sha256=cIgkHOhLzy8feY8aSg9oKVHXaG7oLOi60B1R44rlNtY,9378
+dreamcoat/plot.py,sha256=fpVmbwTCK-pE_sLxN0yvmwtmoS4jUpoK5BzjN6DX8j4,32148
+dreamcoat/send.py,sha256=E9Iuo_903UVo84JDWwjXGbv-tI9MSRgAdUyzzq2jMyY,4818
+dreamcoat/style.py,sha256=_VchBJy1ZGt5aXGmn6_PMyc-nG-QQwMLPMQ0z8Iguok,5774
+dreamcoat/mapping/__init__.py,sha256=NDAfhQNICXi_GjzBNUq7YOzU-l97CC8KNell8fd-Quo,18312
+dreamcoat/mapping/degrees_decimal_minutes.py,sha256=1-skNQgYKx4X-GU56BalN2OS8O_4vBNuStm13oDGKqI,3459
+dreamcoat-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dreamcoat-0.1.dist-info/METADATA,sha256=Lm3xERUk3fUrZ2PtAwHnCO-6WCNvUAejOXuN_vlAHq4,637
+dreamcoat-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dreamcoat-0.1.dist-info/top_level.txt,sha256=r4aGMUyX4sBTyUr2mm4VAU2dh2UOu7eVScfO6i0RIs0,10
+dreamcoat-0.1.dist-info/RECORD,,

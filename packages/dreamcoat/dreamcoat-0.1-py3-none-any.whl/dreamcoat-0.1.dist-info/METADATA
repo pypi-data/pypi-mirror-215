@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dreamcoat
+Version: 0.1
+Summary: The joyful oceanographic seagoing expedition planning helper
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: calkulate
+Requires-Dist: cartopy
+Requires-Dist: fsspec
+Requires-Dist: great-circle-calculator
+Requires-Dist: gsw
+Requires-Dist: keyring
+Requires-Dist: koolstof
+Requires-Dist: matplotlib
+Requires-Dist: motuclient
+Requires-Dist: napari
+Requires-Dist: netcdf4
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: xarray
+Requires-Dist: yagmail
+Requires-Dist: zarr
+
+# dreamcoat
+
+The joyful oceanographic seagoing expedition planning helper
