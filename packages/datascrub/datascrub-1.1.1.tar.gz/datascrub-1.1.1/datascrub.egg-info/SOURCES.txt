@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+datascrub/__init__.py
+datascrub/cleaner.py
+datascrub.egg-info/PKG-INFO
+datascrub.egg-info/SOURCES.txt
+datascrub.egg-info/dependency_links.txt
+datascrub.egg-info/requires.txt
+datascrub.egg-info/top_level.txt
