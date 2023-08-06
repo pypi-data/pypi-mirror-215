@@ -1,0 +1,62 @@
+exclude: templates/.+|notebook/.+
+repos:
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+    - id: trailing-whitespace
+    - id: requirements-txt-fixer
+#    - id: flake8
+#      name: flake8
+#      entry: flake8
+#      language: system
+#      types: [python]
+#      args: [--max-line-length=88]
+#      exclude: templates/*  notebook/*
+-   repo: https://github.com/timothycrosley/isort
+    rev: 4.3.21
+    hooks:
+    - id: isort
+      name: isort
+      entry: isort
+      language: system
+      types: [python]
+      exclude: templates/.+|notebook/.+
+-   repo: https://github.com/psf/black
+    rev: 19.10b0
+    hooks:
+    - id: black
+      name: black
+      entry: black
+      language: python
+      types: [python]
+      args: [--skip-string-normalization]
+      exclude: templates/.+|notebook/.+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.761
+    hooks:
+    - id: mypy
+      name: mypy
+      entry: mypy
+      language: system
+      types: [python]
+      files: \.py$
+      exclude: templates/.+|notebook/.+
+-   repo: https://github.com/pre-commit/mirrors-pylint
+    rev: v2.4.4
+    hooks:
+    - id: pylint
+      name: pylint
+      entry: pylint
+      language: system
+      exclude: templates/.+|notebook/.+
+      files: \.py$
+      types: [python]
+-   repo: https://github.com/MuttData/gfm-diagram
+    rev: v0.3.0
+    hooks:
+    - id: gfmd
+      name: gfmd
+      entry: gfmd
+      types: [file]
+      files: 'README.md'
+      require_serial: true

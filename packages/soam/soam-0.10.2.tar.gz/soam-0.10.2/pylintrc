@@ -1,0 +1,20 @@
+[MASTER]
+
+jobs = 0
+extension-pkg-whitelist=pdftotext
+
+[MESSAGES CONTROL]
+
+disable =
+    # Disable conventions and refactors warnings
+    C,
+    R,
+    # Warnings:
+    arguments-differ,
+    fixme,
+    logging-format-interpolation,
+    logging-fstring-interpolation,
+
+[FORMAT]
+
+max-line-length = 88  # as in black
