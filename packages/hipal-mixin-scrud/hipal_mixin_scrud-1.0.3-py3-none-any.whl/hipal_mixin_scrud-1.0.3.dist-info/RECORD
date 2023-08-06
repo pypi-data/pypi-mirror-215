@@ -1,0 +1,15 @@
+hipal_mixin_scrud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hipal_mixin_scrud/mixin.py,sha256=_EkhwhqWJqxvjCcbp9gu_XaHWWZhaUlZS36GhoFk5Qk,4691
+hipal_mixin_scrud/crud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hipal_mixin_scrud/crud/generator.py,sha256=_kYiD_lb5MCK8IjVnyqpxGWyXQQMNJoayJAdYcjF1eI,5808
+hipal_mixin_scrud/crud/mixin_list.py,sha256=21Lh0VKpOWTZBsCRHH36C3rCLPiXfCNrQ2YTPDAwSv0,3366
+hipal_mixin_scrud/enums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hipal_mixin_scrud/enums/operators.py,sha256=Gu23CjuDJENjV1J8I-C0oupV6PAJFk_SDwslLvG3B0w,255
+hipal_mixin_scrud/enums/sorts.py,sha256=UBAqZHdtlyUqmfRg-9TJZrDo8IVabAYmqUmKgQK87Hc,82
+hipal_mixin_scrud/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hipal_mixin_scrud/schemas/paginate_params.py,sha256=yHWU3LhRi27u_Pr5TJwIkvArX8_nxk2ZiniiIfIBzKY,352
+hipal_mixin_scrud/schemas/pagination_base.py,sha256=Z7AZeAetUtejZfCDIgOnWieITzDR2aRajRW-bpqi6gQ,364
+hipal_mixin_scrud-1.0.3.dist-info/METADATA,sha256=SiKelUdtI2UK3Ecv5fjMaIx7hU-TacxQ9VdyyJ-9rC4,3825
+hipal_mixin_scrud-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hipal_mixin_scrud-1.0.3.dist-info/top_level.txt,sha256=mtSR8_S5Xv581HMAh-R1VkwZ7GcNFk0J6FmEIyEqYjU,18
+hipal_mixin_scrud-1.0.3.dist-info/RECORD,,
