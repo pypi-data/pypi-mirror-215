@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>home template</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/epub.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="home-template">
+<h1>home template</h1>
+<p>The <cite>templates/maillib/home.html</cite> template contains an email form where the user can enter the details for the email they want to send.
+Here is how it look:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>{% extends &#39;_partials/base.html&#39; %}
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span>{% block title %}
+<span class="linenos"> 5</span>  Home
+<span class="linenos"> 6</span>{% endblock %}
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span>{% load static %}
+<span class="linenos"> 9</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span>{% block content %}
+<span class="linenos">12</span>&lt;h1&gt;Home&lt;/h1&gt;
+<span class="linenos">13</span>&lt;div class=&quot;formcarry-container&quot;&gt;
+<span class="linenos">14</span>  {% include &#39;_partials/messages.html&#39; %}
+<span class="linenos">15</span>  &lt;form method=&quot;post&quot; action={% url &#39;home&#39; %} class=&quot;formcarry-form&quot;&gt;
+<span class="linenos">16</span>      {% csrf_token %}
+<span class="linenos">17</span>    &lt;!-- &lt;label for=&quot;email&quot;&gt;Your API Key&lt;/label&gt;
+<span class="linenos">18</span>    &lt;input type=&quot;text&quot; id=&quot;email&quot; name=&quot;apiKey&quot; required /&gt; --&gt;
+<span class="linenos">19</span>
+<span class="linenos">20</span>    &lt;label for=&quot;fullName&quot;&gt;Your Name&lt;/label&gt;
+<span class="linenos">21</span>    &lt;input type=&quot;text&quot; id=&quot;fullName&quot; name=&quot;fullName&quot; required /&gt;
+<span class="linenos">22</span>
+<span class="linenos">23</span>    &lt;label for=&quot;fromEmail&quot;&gt;Your Email Address&lt;/label&gt;
+<span class="linenos">24</span>    &lt;input type=&quot;email&quot; id=&quot;fromEmail&quot; name=&quot;fromEmail&quot; required /&gt;
+<span class="linenos">25</span>
+<span class="linenos">26</span>    &lt;label for=&quot;toName&quot;&gt;Recepient&#39;s Name&lt;/label&gt;
+<span class="linenos">27</span>    &lt;input type=&quot;toName&quot; id=&quot;toName&quot; name=&quot;toName&quot; required /&gt;
+<span class="linenos">28</span>
+<span class="linenos">29</span>    &lt;label for=&quot;email&quot;&gt;Target Email Address&lt;/label&gt;
+<span class="linenos">30</span>    &lt;input type=&quot;email&quot; id=&quot;toEmail&quot; name=&quot;toEmail&quot; required /&gt;
+<span class="linenos">31</span>
+<span class="linenos">32</span>    &lt;label for=&quot;subject&quot;&gt;Subject&lt;/label&gt;
+<span class="linenos">33</span>    &lt;input type=&quot;text&quot; id=&quot;subject&quot; name=&quot;subject&quot; required /&gt;
+<span class="linenos">34</span>
+<span class="linenos">35</span>    &lt;label for=&quot;message&quot;&gt;Your Message&lt;/label&gt;
+<span class="linenos">36</span>    &lt;textarea name=&quot;message&quot; id=&quot;message&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+<span class="linenos">37</span>
+<span class="linenos">38</span>    &lt;button type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+<span class="linenos">39</span>  &lt;/form&gt;
+<span class="linenos">40</span>&lt;/div&gt;
+<span class="linenos">41</span>
+<span class="linenos">42</span>{% endblock %}
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
