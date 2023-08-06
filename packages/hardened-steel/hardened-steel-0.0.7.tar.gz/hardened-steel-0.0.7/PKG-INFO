@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: hardened-steel
+Version: 0.0.7
+Summary: Framework for helping to test projects with the generation of random data during TDD
+Author-email: IO Jægers <support@cloud.iojaegers.com>, Kent Madsen <kent.vejrup.madsen@outlook.com>
+License: # MIT License
+        
+        Copyright (c) 2023 IO Jægers
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/IO-Jaegers/Steel
+Project-URL: Issues, https://github.com/IO-Jaegers/Steel/issues
+Project-URL: Wiki, https://github.com/IO-Jaegers/Steel/wiki
+Project-URL: Releases, https://pypi.org/manage/project/hardened-steel/releases/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Steel
+## Status
+### Package
+[![Upload of python package](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/publish.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/publish.yml)
+[![Dependency Review](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/dependencies.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/dependencies.yml)
+[![Python package](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/package.yml/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/package.yml)
+
+[![CodeQL](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/IO-Jaegers/hardened-steel/actions/workflows/github-code-scanning/codeql)
+
+### Code state
+[![CodeScene Code Health](https://codescene.io/projects/40877/status-badges/code-health)](https://codescene.io/projects/40877)
+[![CodeScene System Mastery](https://codescene.io/projects/40877/status-badges/system-mastery)](https://codescene.io/projects/40877)
+
+
+##
+To install the project from [PyPi](https://pypi.org/) using pip:
+
+    pip install hardened-steel
