@@ -1,0 +1,7 @@
+hi.py
+setup.py
+hi_cli_jash.egg-info/PKG-INFO
+hi_cli_jash.egg-info/SOURCES.txt
+hi_cli_jash.egg-info/dependency_links.txt
+hi_cli_jash.egg-info/entry_points.txt
+hi_cli_jash.egg-info/top_level.txt
