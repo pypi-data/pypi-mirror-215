@@ -1,0 +1,2 @@
+[sopel.plugins]
+remind = sopel_remind.plugin
