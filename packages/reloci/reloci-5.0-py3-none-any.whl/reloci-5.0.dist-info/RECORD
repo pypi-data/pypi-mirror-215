@@ -1,0 +1,12 @@
+reloci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reloci/cli.py,sha256=pzInZYIJQcLLGoPPLC6QRFnVueZeiPpDUzHG5yz3gH4,2328
+reloci/file_info.py,sha256=6ZN1n9cHI_4dk2FuciQVtJ8BxhR54Tlat2tV5pm0kWQ,4145
+reloci/planner.py,sha256=9WRnm6RHjMSnu4svsbThHuHXKJvjGpxzx9ciAv1UCHk,4207
+reloci/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reloci/renamer.py,sha256=C0D-eI9CaiQPcT_4vh2fZA14h6jMgzD7KIK7VhoUE_k,6582
+reloci/worker.py,sha256=o-BKN9oaK1rBWh3GjYuSIYGSi7SFMOr37A-u8LHaVT8,1873
+reloci-5.0.dist-info/entry_points.txt,sha256=BQzmN5qzUQMXbmcY1isJzb_6qytueJmHa6LpmYWm-6g,72
+reloci-5.0.dist-info/LICENSE,sha256=ffWuD2kTonuiAEOHMMI0ZqhNhNHcs0sgyqDNbKC0Us0,1078
+reloci-5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+reloci-5.0.dist-info/METADATA,sha256=uW2G9IaDllBw_b79L9hsLOg6WLVC0vYEmwAaqeTc4jQ,2242
+reloci-5.0.dist-info/RECORD,,
