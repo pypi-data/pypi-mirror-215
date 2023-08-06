@@ -1,0 +1,15 @@
+startggapi/__init__.py,sha256=90tCxU2dS8o5gLWw4f_f1QuPEEAs6j1oU1wbeKJZtDw,127
+startggapi/__version__.py,sha256=oSXhydX4k4nTGFgXbFEdjehujonHsQQ7qfXQ2wWX8RI,74
+startggapi/startggapi.py,sha256=FMo0e-bHvPSvJ-7JTteqAS9ZpHDgN59Dc9ePbP0VbIQ,733
+startggapi/_apis/BaseApi.py,sha256=4kGitkIA0N3jH_0xkFEtkOQGQ-VpveSyzrYN7OlFdDY,554
+startggapi/_apis/EntrantApi.py,sha256=hpzfVxCI9OB4Ew6niaWZdZK3fVmwmNFB2VHzGDv7uoI,3523
+startggapi/_apis/EventApi.py,sha256=uFw7zwUbzmw3ROnkTPm9aSHe2bF07ebz8rZ7c94rTHE,3547
+startggapi/_apis/QueryStrings.py,sha256=4xpGJFjQ0b7IEyZ7WXURYFhe5ysl_JHYr5LdbZ2c17w,6762
+startggapi/_apis/TournamentApi.py,sha256=PbDJEm2UYhdHRxk0-xEQzwfSSiFGuEkqYH9W2YeRCkE,5265
+startggapi/_apis/VideogameApi.py,sha256=qVxk3204h2S836emx7iy39v6SLoPZZ5lsS0NEoGmdjE,1423
+startggapi/_apis/__init__.py,sha256=ib66m2IJi1i8RDY6WmVD5YrcGRxQVHQFzYGD1U_zElY,265
+startggapi-0.1.22.dist-info/LICENSE,sha256=p9utCuhKvJfG6m8J-cJc58OHeYTBCQ05-ydyU_pAXCc,1095
+startggapi-0.1.22.dist-info/METADATA,sha256=qOV5DFeya_WIslLdi9Mp_Arr0IOfMtDTZJ7lLvxitwc,680
+startggapi-0.1.22.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+startggapi-0.1.22.dist-info/top_level.txt,sha256=CstUzA1vhAJNOQ7PkgfSx5R_mbdGuthfskmiNlVvj4Y,11
+startggapi-0.1.22.dist-info/RECORD,,
