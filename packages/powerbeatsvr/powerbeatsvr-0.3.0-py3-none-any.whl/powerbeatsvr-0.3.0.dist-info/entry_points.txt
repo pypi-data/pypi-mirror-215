@@ -1,0 +1,3 @@
+[console_scripts]
+powerbeatsvr = powerbeatsvr.writer:run
+
