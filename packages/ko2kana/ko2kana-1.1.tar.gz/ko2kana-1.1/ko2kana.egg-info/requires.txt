@@ -1,0 +1,4 @@
+g2pk2
+jamo
+cmake
+pyopenjtalk
