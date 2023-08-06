@@ -1,0 +1,5 @@
+setup.py
+src/fcutil.egg-info/PKG-INFO
+src/fcutil.egg-info/SOURCES.txt
+src/fcutil.egg-info/dependency_links.txt
+src/fcutil.egg-info/top_level.txt
