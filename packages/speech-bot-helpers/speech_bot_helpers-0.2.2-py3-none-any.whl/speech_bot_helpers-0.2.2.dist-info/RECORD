@@ -1,0 +1,7 @@
+speech_bot_helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speech_bot_helpers/clients.py,sha256=77ZnCjUuQvZNRzW7RhJI2DrifR1W3aNoJYWMu-DqlxI,2660
+speech_bot_helpers/exceptions.py,sha256=gqLFJnGMDu89Tx_SafKPV0tQE-r7D0hKgVKz8icwo1s,45
+speech_bot_helpers/wrappers.py,sha256=cFBdZvxzCY8kxp2C2fWHwe-mhw7ctyXtPaLTIasEdUs,340
+speech_bot_helpers-0.2.2.dist-info/METADATA,sha256=83HFrgYbr4GiaXc6E06bEIzSUUUMQQMz4fGPZ5ClAkk,310
+speech_bot_helpers-0.2.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+speech_bot_helpers-0.2.2.dist-info/RECORD,,
