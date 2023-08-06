@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+vk_urls_validator/__init__.py
+vk_urls_validator/validator.py
+vk_urls_validator.egg-info/PKG-INFO
+vk_urls_validator.egg-info/SOURCES.txt
+vk_urls_validator.egg-info/dependency_links.txt
+vk_urls_validator.egg-info/top_level.txt
+vk_urls_validator/utils/__init__.py
+vk_urls_validator/utils/exceptions.py
+vk_urls_validator/utils/utils.py

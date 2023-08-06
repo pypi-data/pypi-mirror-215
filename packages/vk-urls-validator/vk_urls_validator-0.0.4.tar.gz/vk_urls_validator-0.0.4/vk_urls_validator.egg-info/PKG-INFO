@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: vk-urls-validator
+Version: 0.0.4
+Summary: Validator for VK URLs.
+Home-page: https://github.com/Wiped-Out/vk_urls_validator
+Download-URL: https://github.com/Wiped-Out/vk_urls_validator/releases/latest
+Author: Emir Takhaviev
+Author-email: tah116emir@outlook.com
+Keywords: python,vk urls,validation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# vk_urls_validator
+
+Library for validating VK urls and brings them to one standart.
+
+# How method works?
+
+1. Add prefix "https://"
+2. Change all hostnames to "vk.com"
+3. Check URL hash for VK rules
+
+
+# Examples
+
+```python
+from vk_urls_validator import validate_url
+
+validated_url = validate_url(url='vk.com/id1')
+# >> https://vk.com/id1
+
+validated_url = validate_url(url='https://m.vk.com/id1')
+# >> https://vk.com/id1
+```
+
+
+# Installing
+
+```commandline
+pip3 install vk_urls_validator
+```
