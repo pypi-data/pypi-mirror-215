@@ -1,0 +1,8 @@
+
+[test]
+packaging
+flake8
+pydocstyle
+pytest
+pytest-cov
+pre-commit
