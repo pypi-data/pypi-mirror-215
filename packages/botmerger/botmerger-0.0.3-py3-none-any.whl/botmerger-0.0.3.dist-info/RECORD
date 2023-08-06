@@ -1,0 +1,14 @@
+botmerger/__init__.py,sha256=qbs7QCUO5hWDUyW7mRne9nlo7F8-_zHOMB-s9xaAJfE,533
+botmerger/base.py,sha256=gPmAqEy5rTg1Jj2TShO6oxY8OtwWrP0TEAk8gtZVA7A,10173
+botmerger/core.py,sha256=rRa8KB-9zQt2BhnY1mp1gEghMhdhmOcFQB9qdjcbuWg,11578
+botmerger/errors.py,sha256=Z4sHxQkr5M34LgZ_69AN0avTT4juKJdLxa7ER9fM0XU,1017
+botmerger/experimental/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botmerger/experimental/inquiry_bot.py,sha256=NwKhi5tmeX30r3c24-EmEHsyoRsFZa11-bhTEspWhbY,464
+botmerger/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+botmerger/ext/discord_integration.py,sha256=nt10Kt2-Wn3Gdk0VopmGaN5ComkeJsSgRmHscmrQ4fE,3456
+botmerger/models.py,sha256=y6pTaszUw1zGnPoWR1yz1hpN1-kazYtv1FX11IN0das,5921
+botmerger/utils.py,sha256=huowMRluAfSZ_9R2bgojBzXeAoxZ5uIW5K1pHdmch0k,507
+botmerger-0.0.3.dist-info/LICENSE,sha256=JjFMNdIkHJCkDNyGoPEuR2wucA7sT1fbgt0p_L2xsVQ,1079
+botmerger-0.0.3.dist-info/METADATA,sha256=8guaCL73THZEwa5GS7sUzh09bVMCQwlBouq15364jWw,2561
+botmerger-0.0.3.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+botmerger-0.0.3.dist-info/RECORD,,
