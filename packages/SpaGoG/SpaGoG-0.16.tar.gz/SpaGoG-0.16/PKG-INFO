@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: SpaGoG
+Version: 0.16
+Summary: Sparse data classification using Graph of Graphs
+Home-page: https://github.com/HananyaS/SpaGoG
+Author: Shachar Hananya
+Author-email: shacharhananya@gmail.com
+License: MIT
+Download-URL: https://github.com/HananyaS/SpaGoG/archive/refs/tags/v_0.16.tar.gz
+Description: UNKNOWN
+Keywords: GoG,Missing values,Graphs
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
