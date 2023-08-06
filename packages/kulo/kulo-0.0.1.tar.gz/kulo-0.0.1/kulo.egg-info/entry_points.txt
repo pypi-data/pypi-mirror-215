@@ -1,0 +1,2 @@
+[console_scripts]
+kulo = kulo.cli:main
