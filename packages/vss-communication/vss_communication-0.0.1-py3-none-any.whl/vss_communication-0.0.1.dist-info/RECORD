@@ -1,0 +1,7 @@
+vss_communication/__init__.py,sha256=g1kpiiQUaKgFTYwyxWaE6G5gj8nsbsEmxXR7y5fztWs,39
+vss_communication/classes.py,sha256=Byzl8EkrlL94A_GXN6yl5QpGxB9xmdONncDxH7nvEg8,3239
+vss_communication/command_pb2.py,sha256=5owXp2tm9LUzCvN2l9sIX6tq9FFmAeWu_b89uvOIFqs,4448
+vss_communication-0.0.1.dist-info/METADATA,sha256=m89_AgTVY79QTI5jfOyyOCQPYGvakjLDR8enEIjEqSI,520
+vss_communication-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vss_communication-0.0.1.dist-info/top_level.txt,sha256=xUNb-zfuOD3c3rRAhzey0DGqf1muA5fBp-4bCp2Q_xM,18
+vss_communication-0.0.1.dist-info/RECORD,,

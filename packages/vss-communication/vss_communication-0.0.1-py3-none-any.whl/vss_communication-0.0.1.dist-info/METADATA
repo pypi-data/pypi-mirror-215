@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: vss-communication
+Version: 0.0.1
+Summary: Pacote de comunicacao VSSS - Red Dragons
+Home-page: UNKNOWN
+Author: Joao Carlos
+Author-email: <campijoao@estudante.ufscar.br>
+License: UNKNOWN
+Keywords: python,vsss,communication
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+
+Pacote criado para realizar a interface de comunicacao python entre as areas da equipe Red Dragons UFSCar
+
+
