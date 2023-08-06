@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flask-allowedhosts
+Version: 1.0.0
+Summary: A Flask extension to limit access to your routes by using allowed hosts.
+Home-page: https://github.com/riad-azz/flask-allowedhosts
+Author: Riadh Azzoun
+Author-email: riadh.azzoun@hotmail.com
+License: MIT
+Keywords: flask,allowed hosts,web development,security
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Security
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.md
