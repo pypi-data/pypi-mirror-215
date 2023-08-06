@@ -1,0 +1,11 @@
+datafog/__init__.py,sha256=4EXQUE5Av7dQ0PDNd2nTK2LyUF5Sr6dvq3vDt-o47Ek,68
+datafog/datafog.py,sha256=meGDHLK89Fpl48Qyq_jbcz8p-U3Prk8qAnehlmSffFk,7829
+datafog/models.py,sha256=2456_rkXKfKl-ktBq96AuzPPOZC-xTn_cn5b0Wf9dv4,477
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_datafog.py,sha256=LgWhTyKvUl9t8X4wP0Y_X0GOqAHlmzDqld-87FExoKk,3123
+tests/test_models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datafog-1.1.0.dist-info/LICENSE.MD,sha256=wPhGtO3iZZcnP9uHTDTZT5FCVYg3Tbjt_rLmJDs2uB8,1497
+datafog-1.1.0.dist-info/METADATA,sha256=yC5OGbfPvvPM5UtFcUy9CqMEYiH6yV2UCHgKlTkUI-g,469
+datafog-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+datafog-1.1.0.dist-info/top_level.txt,sha256=L_LF1nNB1VROEQmBvRwzVf5jUAhXzxTCGi4V9N--R1M,14
+datafog-1.1.0.dist-info/RECORD,,
