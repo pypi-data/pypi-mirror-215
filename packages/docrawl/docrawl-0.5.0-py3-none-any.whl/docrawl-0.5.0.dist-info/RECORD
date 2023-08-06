@@ -1,0 +1,10 @@
+docrawl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docrawl/docrawl_core.py,sha256=6u8HvL4FiJsRXKhMKDyfX9ah3r40lrIKTl6zP2FdWvo,44673
+docrawl/docrawl_launcher.py,sha256=7nJjyllHZ_LLp2dg_fEjHNrvLIo-tbyUA6Scw2CEWpo,6505
+docrawl/docrawl_logger.py,sha256=QCpzFf31atxtHbyUTncNYssNak5gKvzyY3b7iR6TZ8g,1108
+docrawl/elements.py,sha256=oek0P38PH5ZGruuZ1VdvbJnpJMnAjWS11Vnk0S12Hys,2674
+docrawl-0.5.0.dist-info/LICENSE,sha256=4_RTPHOB-HN5pmpzc9rFvlkp_Vg_pDW_q5QE5k6-sLo,1090
+docrawl-0.5.0.dist-info/METADATA,sha256=WBH9P9y3aOwEwVfvqc-SSG2PtFmsK3LjEGQQ3vyIRYQ,781
+docrawl-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+docrawl-0.5.0.dist-info/top_level.txt,sha256=rhNzoYH1NLIe4eh23_glXjJjyLxzo8jJMXomRVKCu4s,8
+docrawl-0.5.0.dist-info/RECORD,,
