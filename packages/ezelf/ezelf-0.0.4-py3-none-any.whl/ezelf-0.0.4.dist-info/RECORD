@@ -1,0 +1,10 @@
+ezelf/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+ezelf/__main__.py,sha256=muqXFCDPG2pKwOlKw970IuREZNOIOVtKeSrHoM4I-eQ,46
+ezelf/main.py,sha256=vqhvUFManyq6mMpDXHGD200vrY637tuq0vRztHR0Pfo,376
+ezelf/sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezelf/sync/ezpie.py,sha256=TA50YLRdHjC9mHRIpzS_tnH6HH6L3icB464XKobRC9s,48
+ezelf-0.0.4.dist-info/METADATA,sha256=8SNgOouNbYb31DJJv1YCXiv_UWeYpvm0nvAASDX2ECk,1572
+ezelf-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+ezelf-0.0.4.dist-info/entry_points.txt,sha256=M5G4zmLJYrHKG8fr3qNGPXs3K0_ZjKL9DdGOMXMr0e0,41
+ezelf-0.0.4.dist-info/licenses/LICENSE,sha256=wrxFe4pXfWElUiDa6PyauchTyCujm_dbldjxCdn2yqQ,1063
+ezelf-0.0.4.dist-info/RECORD,,
