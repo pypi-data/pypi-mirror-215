@@ -1,0 +1,9 @@
+pyppms/__init__.py,sha256=lJTMMrkfwX6NRpwAUQCfkEjBk_7E8ueCCbuJ0xJhAGc,231
+pyppms/booking.py,sha256=xqbzJ5GR__V885kM_JpiDYpjVwUQwv8WIt5uIrbOI0I,5657
+pyppms/common.py,sha256=A5q6-uTPjrbsu2VdmbuOivIV5SWEmYsGgeuyitZVyak,7551
+pyppms/ppms.py,sha256=bQCmToULfp0qKhjYM__knnYbtj-mWvcEbCZqSRzMd68,47070
+pyppms/system.py,sha256=sZ4mbrtSDceS-iTROxxA1H-QT393xoyNSfihu_2lRU0,3944
+pyppms/user.py,sha256=iDBXIpEcrV3n-EKoPlpqKwGkG3-HXh1hNZl5_8hp7TY,2270
+pyppms-3.1.0a0.dist-info/METADATA,sha256=PHNLakplqnFKc5tdAfFXQpJiYo4UEeMX_c85ju1Tcto,3778
+pyppms-3.1.0a0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pyppms-3.1.0a0.dist-info/RECORD,,
