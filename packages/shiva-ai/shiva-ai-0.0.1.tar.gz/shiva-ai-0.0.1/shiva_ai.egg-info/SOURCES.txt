@@ -1,0 +1,9 @@
+README.md
+setup.py
+shiva_ai/__init__.py
+shiva_ai/main.py
+shiva_ai.egg-info/PKG-INFO
+shiva_ai.egg-info/SOURCES.txt
+shiva_ai.egg-info/dependency_links.txt
+shiva_ai.egg-info/requires.txt
+shiva_ai.egg-info/top_level.txt
