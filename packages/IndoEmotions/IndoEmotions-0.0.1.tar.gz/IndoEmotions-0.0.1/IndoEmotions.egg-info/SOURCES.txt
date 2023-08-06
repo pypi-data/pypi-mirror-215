@@ -1,0 +1,8 @@
+README.md
+setup.py
+IndoEmotions/__init__.py
+IndoEmotions/dataset.py
+IndoEmotions.egg-info/PKG-INFO
+IndoEmotions.egg-info/SOURCES.txt
+IndoEmotions.egg-info/dependency_links.txt
+IndoEmotions.egg-info/top_level.txt
