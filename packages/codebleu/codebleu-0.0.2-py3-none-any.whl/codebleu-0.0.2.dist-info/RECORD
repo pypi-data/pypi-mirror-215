@@ -1,0 +1,17 @@
+codebleu/__init__.py,sha256=pMRaW_XHZChFwySU8ne528T8vEg4JohyLtAvja2sylM,65
+codebleu/__main__.py,sha256=NGMkcJUdFS-_muiwbP3iUb5YErFvXWS26adPqs1qYYU,2833
+codebleu/bleu.py,sha256=C_Uy8GRPX5-Xr7QFP_FWUHlkiJ2PNnC0Tnrme86r5lc,28527
+codebleu/codebleu.py,sha256=1O2xYmLeTtFfqYLa61pjcDIb75HqUnS0S0nVTbsLURc,3656
+codebleu/dataflow_match.py,sha256=ED6LvDHMVLErPm9c0mvFY8edIp1wLCVR9HPl8TIlMyg,5140
+codebleu/syntax_match.py,sha256=sd5gFeoqmiZn2yfK9Ke026y0w17tLl140oGbcfdm9Bk,2629
+codebleu/utils.py,sha256=Ra4ds08zYg3lwL7v1JLQn3SJLj1kwnTdY1OI0YsAFdU,4013
+codebleu/weighted_ngram_match.py,sha256=77Ygjy-Tti-5QMt83vfRyNoCtTILfv85EYrTTZCZysc,25797
+codebleu/parser/DFG.py,sha256=k7jZRE0hR-OIMtFqg0XcKY62PMW86QRjsT6kugRKSRI,56861
+codebleu/parser/__init__.py,sha256=-iPv9ZsMAEUsFkqRyqfzeXewBOVuyx6XtyOMHMG-U3Y,592
+codebleu/parser/build.py,sha256=Fggf5mnmvQV8Zi2aghtAm_ImZLs7RMGV7czlW9CreW0,374
+codebleu/parser/utils.py,sha256=sGIy3JWpwognUANCuFukL55l85wx7-ayQmXMb0ni4hM,3681
+codebleu-0.0.2.dist-info/LICENSE,sha256=_cy2ZoBZLTrAmHTdyqMUSPzmNcZO-Bibjsh4NDfuZk8,1078
+codebleu-0.0.2.dist-info/METADATA,sha256=NDM1HKubaVzbqQtWAHhV2-0TBS1qXb6s58k2T2gY1IA,1280
+codebleu-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+codebleu-0.0.2.dist-info/top_level.txt,sha256=oH_VEw_A8VucgGURS0My3lgBpVbBNzf9M25ZbwTvkfg,9
+codebleu-0.0.2.dist-info/RECORD,,
