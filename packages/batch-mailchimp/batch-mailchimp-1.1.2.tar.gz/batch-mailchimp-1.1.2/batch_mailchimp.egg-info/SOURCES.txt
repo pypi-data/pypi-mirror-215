@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+batch_mailchimp/__init__.py
+batch_mailchimp/batches_api.py
+batch_mailchimp/collections.py
+batch_mailchimp/decorators.py
+batch_mailchimp.egg-info/PKG-INFO
+batch_mailchimp.egg-info/SOURCES.txt
+batch_mailchimp.egg-info/dependency_links.txt
+batch_mailchimp.egg-info/requires.txt
+batch_mailchimp.egg-info/top_level.txt
