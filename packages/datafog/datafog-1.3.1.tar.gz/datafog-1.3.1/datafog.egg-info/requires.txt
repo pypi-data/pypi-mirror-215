@@ -1,0 +1,7 @@
+faker
+pandas
+sqlalchemy
+sqlalchemy.orm
+werkzeug
+typing
+hashlib
