@@ -1,0 +1,11 @@
+instagram_archiver/__init__.py,sha256=AjI6U0whv8ct7-WSaoy8ww95saz_S5L4dqVJ1qqpAME,44
+instagram_archiver/client.py,sha256=OsWsoZ_6ct9C2FG0D1xSNs01vnHjZnXOs2Yk0eZbzD4,14066
+instagram_archiver/constants.py,sha256=ACKYWU0d1ltIMua8UEjrrsZjwvc9jlgny5kOHniana8,3490
+instagram_archiver/ig_typing.py,sha256=Rd3naGBL7VvDcMSVE5ybwwsADtzMyj5Zh8aVr6Qj4F0,2361
+instagram_archiver/main.py,sha256=6CzEF--rwWm6sTBaDZoWJov_OSKTRvaQIcN46U9PZ3Q,2463
+instagram_archiver/utils.py,sha256=s9sbgDcOj1ImyMD7FhYgdTLQ3UfkgfNDSL3ldxBxb7s,3169
+instagram_archiver-0.2.0.dist-info/LICENSE.txt,sha256=qAUCPLGklRH097Pa_MaOO8ayD9q2OKRFqqVs2LrBsWg,1080
+instagram_archiver-0.2.0.dist-info/METADATA,sha256=gbs84rrwbKRsvyCoP5ByLcLZoiRLKIPkgWWgtoU5Nmc,952
+instagram_archiver-0.2.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+instagram_archiver-0.2.0.dist-info/entry_points.txt,sha256=g-QtnibcuQsqL4dBRkvQcPm3cgwshNRzTr57OyZXKFg,51
+instagram_archiver-0.2.0.dist-info/RECORD,,
