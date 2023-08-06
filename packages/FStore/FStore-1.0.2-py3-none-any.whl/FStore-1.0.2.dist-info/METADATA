@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: FStore
+Version: 1.0.2
+Summary: Key-value store in Python
+Home-page: https://github.com/colin-m-davis/kvs
+Author: Colin Davis
+Author-email: colinmichaelsdavis@gmail.com
+License: LICENSE.txt
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# FStore
+A simple key-value store written in Python.
+https://pypi.org/project/FStore/
+
+## Usage
+Install FStore in your terminal with pip: `$ pip install fstore`
+
+Initialize a new FStore database: `$ fstore init [path/to/database]`
+
+Connect to an existing FStore database: `$ store init [path/to/database]`
+
+Feel free to contact me with any questions or concerns!
