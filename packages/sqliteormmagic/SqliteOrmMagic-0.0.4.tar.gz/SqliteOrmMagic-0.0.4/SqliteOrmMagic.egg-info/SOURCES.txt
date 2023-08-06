@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+SqliteOrmMagic.egg-info/PKG-INFO
+SqliteOrmMagic.egg-info/SOURCES.txt
+SqliteOrmMagic.egg-info/dependency_links.txt
+SqliteOrmMagic.egg-info/requires.txt
+SqliteOrmMagic.egg-info/top_level.txt
