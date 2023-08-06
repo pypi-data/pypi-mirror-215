@@ -1,0 +1,8 @@
+README.md
+setup.py
+SparkMinIOHandle.egg-info/PKG-INFO
+SparkMinIOHandle.egg-info/SOURCES.txt
+SparkMinIOHandle.egg-info/dependency_links.txt
+SparkMinIOHandle.egg-info/top_level.txt
+sparkminiohandler/__init__.py
+sparkminiohandler/sparkminiohandler.py
