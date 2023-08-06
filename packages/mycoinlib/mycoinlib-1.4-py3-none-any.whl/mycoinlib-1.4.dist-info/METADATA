@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mycoinlib
+Version: 1.4
+Requires-Dist: bitcoinlib
+Requires-Dist: blockcypher
+Requires-Dist: requests
+Requires-Dist: eth-account
+Requires-Dist: eth-keys
+
