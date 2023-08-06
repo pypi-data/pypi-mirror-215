@@ -1,0 +1,3 @@
+[console_scripts]
+osom_work = osom_work.entrypoint:main
+

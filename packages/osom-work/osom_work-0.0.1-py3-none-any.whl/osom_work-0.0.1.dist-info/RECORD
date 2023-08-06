@@ -1,0 +1,16 @@
+osom_work/__init__.py,sha256=8yxB_B76eTf4fuNq7tzsT7uK60sPHcpeM9EyGjlqbMU,47
+osom_work/__main__.py,sha256=S8iAitJkJRMnnSxcGUL2qBFzC_L0tzEJk7Smkquk8Bg,146
+osom_work/arguments.py,sha256=wfXJBBtF5-c6fRt3ihDmrRa4OfVbC93_teJwmGyTrBU,3997
+osom_work/entrypoint.py,sha256=kHIdMu49AQQzAvhlj0fvN3P8ZX1aSQe4MHovK6DQrM8,2162
+osom_work/apps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osom_work/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osom_work/logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osom_work/logging/colored_formatter.py,sha256=fAedRmXIM6ttJyI8263O9uggHf8__a1SoS1lNj3I20g,1099
+osom_work/logging/logging.py,sha256=PUaps4SkBu-fwLmI5NoZ9J0l_hU57IKx8jZ8tdjQxn8,6012
+osom_work/www/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osom_work-0.0.1.dist-info/LICENSE,sha256=W6E4CImwrifHZNTPd3mERP-Ni9XDYgU6BFAxMyccl4c,1065
+osom_work-0.0.1.dist-info/METADATA,sha256=S4_Bd2vOsA-EYBModkVhp9mqazIFD_LSoFYGf5MVs6A,1385
+osom_work-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+osom_work-0.0.1.dist-info/entry_points.txt,sha256=V6NskE6nFmV8y7C3djrb7sJHRXfufTZITNXo15xzASI,57
+osom_work-0.0.1.dist-info/top_level.txt,sha256=3myYcJRndpNx3IwmlyFQInBju7h5RHalbW3omF2SLXU,10
+osom_work-0.0.1.dist-info/RECORD,,
