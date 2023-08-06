@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+dime/__init__.py
+dime/client.py
+dime/dimeb.py
+dime/json.py
+dime_client.egg-info/PKG-INFO
+dime_client.egg-info/SOURCES.txt
+dime_client.egg-info/dependency_links.txt
+dime_client.egg-info/requires.txt
+dime_client.egg-info/top_level.txt
