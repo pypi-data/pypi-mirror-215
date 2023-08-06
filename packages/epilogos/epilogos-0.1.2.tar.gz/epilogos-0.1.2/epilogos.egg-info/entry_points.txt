@@ -1,0 +1,4 @@
+[console_scripts]
+epilogos = epilogos.run:main
+plotregion = epilogos.plotRegion:main
+simsearch = epilogos.similaritySearch_run:main
