@@ -1,0 +1,6 @@
+ruamel.yaml<0.18,>=0.17.10
+sage-flatsurf<0.6,>=0.5
+pyflatsurf<4,>=3.9.0
+ipyvue-async<0.2,>=0.1.0
+jupyter-ui-poll<0.3,>=0.2.1
+ipyvue<=1.7.0,>=1.5.0
