@@ -1,0 +1,12 @@
+scrapy_db/__init__.py,sha256=h_fpJqfOj0PZvLLp6e2XWtK0t22IzOiKDv1ZX6THnQg,107
+scrapy_db/db.py,sha256=qaO0FK-BWgvdRxR9rvxX0CdEvpy8u42E6CkpfXnqwFY,5350
+scrapy_db/defaults.py,sha256=ktEfI0X1pzR9SVh-NjDFnke8ADVcd5e8nAz2M7lUp2I,475
+scrapy_db/dupefilter.py,sha256=q4HPCkqqB-13MGcCWzUZW5k3kXlQFQHfQ61cODN53V0,3256
+scrapy_db/queue.py,sha256=qnwPYRC3uC7cnpxyR_GjfZzoPD9k50JLRmTo6a_qm44,2473
+scrapy_db/scheduler.py,sha256=AI16CkRIxmpFHqojFoHE5ED4yV7xPZrnAwJQCvoOkNk,4381
+scrapy_db/spiders.py,sha256=JkWNyGfP9tjYQcQiroRhA_MIppo0Uka_0eFZxynKcO4,4705
+scrapy_db/utils.py,sha256=wmdZT6t4BDDDtm8CLDHYvfNk4IZpPO6S1sU5aGX3tfM,1089
+scrapy_db-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scrapy_db-0.0.1.dist-info/METADATA,sha256=msDBWPTLC4op4LR6923zo1wTlb9wGBQTHvnRGQFaiBw,2632
+scrapy_db-0.0.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+scrapy_db-0.0.1.dist-info/RECORD,,
