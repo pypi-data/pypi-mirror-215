@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nyria-eldritha
+Version: 1.0.0
+Summary: A Database management tool
+Home-page: https://gitlab.redtronics.de/Redtronics/nyria-eldritha/
+Author: Redtronics
+License: All rights reserved.
+Keywords: python,databasemanagement,tool
+License-File: LICENSE
+
+A Database management tool
