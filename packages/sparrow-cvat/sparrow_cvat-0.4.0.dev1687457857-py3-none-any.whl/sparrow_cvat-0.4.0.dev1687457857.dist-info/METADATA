@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sparrow-cvat
+Version: 0.4.0.dev1687457857
+Author: Sparrow Computing
+Author-email: ben@sparrow.dev
+License-File: LICENSE
+Requires-Dist: cvat-sdk (<2.4.0)
+Requires-Dist: fire
+Requires-Dist: requests
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: av ; extra == 'full'
+Requires-Dist: datumaro (<1.0.0) ; extra == 'full'
+Requires-Dist: natsort ; extra == 'full'
+Requires-Dist: opencv-python ; extra == 'full'
+Requires-Dist: pandas ; extra == 'full'
+Requires-Dist: sparrow-datums ; extra == 'full'
+Requires-Dist: xmltodict ; extra == 'full'
+
