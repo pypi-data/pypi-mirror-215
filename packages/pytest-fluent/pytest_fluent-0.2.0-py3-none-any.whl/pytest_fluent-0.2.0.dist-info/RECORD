@@ -1,0 +1,15 @@
+pytest_fluent/__init__.py,sha256=1e8xJoVA7cdTZNueUfEOaZJGa5onj6d0thybkZJ89nc,630
+pytest_fluent/additional_information.py,sha256=NK6lSgPvYYCrC0XJFMwUi4mMAPKG8V_oHYRc8wxSmow,2315
+pytest_fluent/content_patcher.py,sha256=W5ShCQ9u6xooKH6boM-1rkD3JZvwDWmexZiOPrg3PHQ,7708
+pytest_fluent/event.py,sha256=MqXqpOc_vP51YY0_P5yQ9zHG1_IYj5_y4epMNHfMlV8,1564
+pytest_fluent/plugin.py,sha256=zPrvD9oNaOT2A3V90D8BI7VTmN-Vodr9_zSDqgI7iks,15746
+pytest_fluent/setting_file_loader_action.py,sha256=u2difw7JKFYaqaF7N73fKHMm8oiVCOqCAahBLxbjkI8,1465
+pytest_fluent/test_report.py,sha256=dkUNgfabgMcfwevLQovajYLrWwQjG_vVEYqkLoXBpjQ,4750
+pytest_fluent/data/default.stage.json,sha256=cYM9qxZrL2KHPIr4MHq81x0OXUxeD51kteX1JbuQZsE,89
+pytest_fluent/data/schema.stage.json,sha256=zUSrcGePMtUxv8_fO2ff0SRjM05mtf-VUNUWy2Pi6wU,2674
+pytest_fluent-0.2.0.dist-info/LICENSE,sha256=R-7szugcB21LuwTUNuBVA1Re_qareqEGxp7Ni5gDkbM,1086
+pytest_fluent-0.2.0.dist-info/METADATA,sha256=YIYAZr-6ZJs8-N9MaXi1onfUZ6x5n_NCIn2aXG74THM,12422
+pytest_fluent-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_fluent-0.2.0.dist-info/entry_points.txt,sha256=kXmGeXdhIaXcEfbBBXYZcGBidSDqdUsi60w4V-zKu_U,49
+pytest_fluent-0.2.0.dist-info/top_level.txt,sha256=zifrLo5QtSQZhgPg_hpxXcI4xEPN7Yr9mcJd4QJAj9A,14
+pytest_fluent-0.2.0.dist-info/RECORD,,
