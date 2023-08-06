@@ -1,0 +1,162 @@
+# classattr package
+
+This package provides tools to manage objects attributes.
+
+It has been made tu be used as a parent class in order to deal with default values for some attributes.
+
+# Installation
+
+```console
+pip install classattr
+```
+
+# Class and object attibutes
+
+For example, you'd like to program a Dot class. 
+Dots attributes are *x* and *y* coordinates, *diameter* and *color* of the dot.
+
+Most of the time, *x* and *y* coordinates depend of the dot but *diameter* and *color* are the same.
+
+You can program it in python this way:
+```python
+class Dot:
+	diameter = 2
+	color = 'blue'
+	
+	def __init__(self,x,y):
+		self.x = x
+		self.y = y
+		
+	def __repr__(self):
+		return f'x = {self.x}, y = {self.y}, diameter = {self.diameter}, color = {self.color}'
+```
+
+```python
+>>> d1 = Dot(2,3)
+>>> d2 = Dot(-1,4)
+>>> d3 = Dot(6,11)
+>>> d1
+x = 2, y = 3, diameter = 2, color = blue
+```
+
+If you want to change d2 color: 
+```python
+>>> d2.color = 'yellow'
+>>> d2
+x = -1, y = 4, diameter = 2, color = yellow
+>>> d3
+x = 6, y = 11, diameter = 2, color = blue
+```
+And if you want to turn default color from blue to black:
+```python
+>>> Dot.color = 'black'
+>>> d1
+x = 2, y = 3, diameter = 2, color = black
+>>> d2
+x = -1, y = 4, diameter = 2, color = yellow		
+>>> d3
+x = 6, y = 11, diameter = 2, color = black
+```
+
+# With classattr
+
+To program the above example with classattr, you can do it this way:
+
+```python
+from classattr import ClassAttr, RAISE, FORCE
+
+class Dot(ClassAttr):
+
+    ## class atribute, can be default value
+    x = 0
+    y = 0
+    radius = 2
+    color = 'blue'
+
+    def __init__(self,attr = {},mode=RAISE,**kwargs):
+
+        ClassAttr.__init__(self,attr,mode,**kwargs)
+```
+
+Then to create new dots, you can use syntax below:
+
+```python
+>>> d1 = Dot(x=2,y=3)
+>>> d2 = Dot(x=-1,y=4,color='yellow')
+>>> d3 = Dot(x=6,y=11)
+```
+
+or use a dictionary
+
+```python
+>>> d1 = Dot({'x':2,'y':3})
+>>> d2 = Dot({'x':-1,'y':4,'color':'yellow'})
+>>> d3 = Dot({'x':6,'y':11})
+```
+
+To change an attribute's value :
+
+```python
+>>> d1.set(x=8)
+```
+or
+```python
+>>> d1.set({'x':8})
+```
+
+To change an attribute's default value :
+
+```python
+>>> Dot.set_default(color='lightblue')
+```
+or
+```python
+>>> Dot.set_default({'color':'lightblue'})
+```
+
+To get attributes values :
+
+```python
+>>> d1.get()
+{'x': 8, 'y': 3, 'radius': 2, 'color': 'lightblue'}
+>>> d2.get()
+{'x': -1, 'y': 4, 'radius': 2, 'color': 'yellow'}
+>>> d3.get()
+{'x': 6, 'y': 11, 'radius': 2, 'color': 'lightblue'}
+```
+
+To get only one attribute :
+
+```python
+>>> d1.get('color')
+'lightblue'
+```
+
+And to get some :
+
+```python
+>>> d1.get(['color','radius'])
+{'color': 'lightblue', 'radius': 2}
+```
+
+To get attributes list :
+
+```python
+d1.get_keys()
+['color', 'radius', 'x', 'y']
+```
+
+To create a new attribute, use mode :
+
+MODE :
+ 
+RAISE (default value) raise an exception error if attribute doesn't already exist
+IGNORE ignore attribute doesn't already exist
+FORCE create the new attribute 
+
+
+```python
+>>> d1.set({'z':8},mode=FORCE)
+>>> d1.get()
+{'x': 8, 'y': 3, 'radius': 2, 'color': 'lightblue', 'z': 8}
+```
