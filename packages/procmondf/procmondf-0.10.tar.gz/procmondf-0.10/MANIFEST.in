@@ -1,0 +1,8 @@
+include procmondf/requirements.txt
+include procmondf/thirdparty.json
+include procmondf/README.MD
+include procmondf/procmon.chm
+include procmondf/Procmon.exe
+include procmondf/Procmon64.exe
+include procmondf/Procmon64a.exe
+include procmondf/Eula.txt
