@@ -1,0 +1,9 @@
+License
+README.rst
+setup.py
+sdypy/io/__init__.py
+sdypy_io.egg-info/PKG-INFO
+sdypy_io.egg-info/SOURCES.txt
+sdypy_io.egg-info/dependency_links.txt
+sdypy_io.egg-info/requires.txt
+sdypy_io.egg-info/top_level.txt
