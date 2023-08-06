@@ -1,0 +1,10 @@
+setup.py
+gas_bin_distribution/Binomialdistribution.py
+gas_bin_distribution/Gaussiandistribution.py
+gas_bin_distribution/Generaldistribution.py
+gas_bin_distribution/__init__.py
+gas_bin_distribution.egg-info/PKG-INFO
+gas_bin_distribution.egg-info/SOURCES.txt
+gas_bin_distribution.egg-info/dependency_links.txt
+gas_bin_distribution.egg-info/not-zip-safe
+gas_bin_distribution.egg-info/top_level.txt
