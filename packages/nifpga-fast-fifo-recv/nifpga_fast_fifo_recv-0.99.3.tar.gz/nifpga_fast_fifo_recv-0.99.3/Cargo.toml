@@ -1,0 +1,27 @@
+[package]
+name = "nifpga-fast-fifo-recv"
+readme = "README.md"
+version = "0.99.3"
+edition = "2021"
+license = "MIT"
+authors = ["Mattia Donato"]
+description = "A Python module for fast reading of data from NI FPGA FIFOs with a separate thread."
+repository = "https://github.com/mattia-donato/nifpga-fast-fifo-recv"
+exclude = ["nifpga.*", "NiFpga.*", ".idea/*" ]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "nifpga_fast_fifo_recv"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.19.0"
+crossbeam = "0.8"
+nifpga-sys = { git = "https://github.com/mattia-donato/nifpga-win-rs"} # "PLEASE USE THE VERSION ON THE "
+nifpga-type-macro = { git = "https://github.com/mattia-donato/nifpga-win-rs"} # "0.1.3"
+nifpga = { git = "https://github.com/mattia-donato/nifpga-win-rs"} # "0.1.3"
+
+[build-dependencies]
+cc = "1.0.54"
+
+
