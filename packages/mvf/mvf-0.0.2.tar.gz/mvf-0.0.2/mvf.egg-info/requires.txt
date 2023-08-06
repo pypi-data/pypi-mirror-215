@@ -1,0 +1,11 @@
+feather-format
+pandas
+ploomber
+rpy2
+rpy2-r6
+scikit-learn
+
+[dev]
+coverage
+pytest
+twine
