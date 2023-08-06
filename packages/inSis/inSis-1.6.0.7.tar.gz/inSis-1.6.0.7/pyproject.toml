@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inSis"
+version = "1.6.0.7"
+authors = [
+  { name="Sivarambrahmam", email="sivarambrahmam@jaajitech.com" },
+]
+description = "inSis Infoview package"
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.jaajitech.com"
+"Bug Tracker" = "https://www.jaajitech.com"
