@@ -1,0 +1,8 @@
+setup.py
+verysimplemodule_lais/__init__.py
+verysimplemodule_lais/baixar_arquivo.py
+verysimplemodule_lais.egg-info/PKG-INFO
+verysimplemodule_lais.egg-info/SOURCES.txt
+verysimplemodule_lais.egg-info/dependency_links.txt
+verysimplemodule_lais.egg-info/requires.txt
+verysimplemodule_lais.egg-info/top_level.txt
