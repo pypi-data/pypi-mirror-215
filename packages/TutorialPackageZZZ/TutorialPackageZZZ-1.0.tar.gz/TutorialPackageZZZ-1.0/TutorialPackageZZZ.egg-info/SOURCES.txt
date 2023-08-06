@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TutorialPackage/__init__.py
+TutorialPackage/pdf2image.py
+TutorialPackage/pdf2text.py
+TutorialPackageZZZ.egg-info/PKG-INFO
+TutorialPackageZZZ.egg-info/SOURCES.txt
+TutorialPackageZZZ.egg-info/dependency_links.txt
+TutorialPackageZZZ.egg-info/top_level.txt
