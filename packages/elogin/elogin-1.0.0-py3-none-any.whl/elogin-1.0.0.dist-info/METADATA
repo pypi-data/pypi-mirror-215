@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: elogin
+Version: 1.0.0
+Summary: contains code used for login process and sign up 
+Author: pitta sai arun
+Keywords: login
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: licence
+
+# login
+
+## about
+works good
+
+workÅ› as an login page and it sends OTP by 
+using mail 
+## install
+pip install elogin
+
+## Example
+import elogin as el
+
+el.login()
+
+
