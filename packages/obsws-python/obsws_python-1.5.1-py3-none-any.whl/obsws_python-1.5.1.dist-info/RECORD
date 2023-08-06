@@ -1,0 +1,13 @@
+obsws_python/__init__.py,sha256=SEYzKQaoYwCRqL33BqWwaS2BzrCG457SnZfKOrFnXIU,181
+obsws_python/baseclient.py,sha256=QMzgHGgcfcWF7wFVTfndI_2sS7l08Eci-M8G2lly-z4,4485
+obsws_python/callback.py,sha256=TKPLnPZTnKTzDV8h1ktSgS1LkHuaGImk6ly_Ggcsno4,1548
+obsws_python/error.py,sha256=DNhxWcCTtUX2tJ-O21VnVxPWesNF-5Ht2dgkvel9cHc,183
+obsws_python/events.py,sha256=ihxd9-MQ6WRoKb82ydmh3pmh5t-IZjnl55yH_Gcrmbo,2297
+obsws_python/reqs.py,sha256=XbHyV5vHraEI14qg-yKZjB5nTWbBH88_eRqEddpMisQ,58004
+obsws_python/subs.py,sha256=GA5B-WPecD0PgBE_jrAXFNzWJBAyanuGiXRDbQTenHM,889
+obsws_python/util.py,sha256=j33ucYRejlSGkR3TcHM-hgPizc09W4YXfA8L3wbM8Ro,578
+obsws_python/version.py,sha256=LRbKez-vqxQfYVYMeccJaNd6naVkrWmNPGDZL9ERFz8,19
+obsws_python-1.5.1.dist-info/METADATA,sha256=itjekZwqQJmqiAPToGElQCaDEwv0LAToWNdGMIgeiXc,4702
+obsws_python-1.5.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+obsws_python-1.5.1.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+obsws_python-1.5.1.dist-info/RECORD,,
