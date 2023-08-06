@@ -1,0 +1,5 @@
+tqdm
+unidecode
+opencv-python
+torch
+torchvision
