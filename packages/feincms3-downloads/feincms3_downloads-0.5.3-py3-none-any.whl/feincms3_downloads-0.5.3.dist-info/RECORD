@@ -1,0 +1,11 @@
+feincms3_downloads/__init__.py,sha256=tgzuqHKcEdKBaP57F5oXxq4XlW2n9J4Fj8ZGu7nGOZg,22
+feincms3_downloads/checks.py,sha256=B3mul9Y5Ww4-3Y_6YLHZIinWLcL8lbtLxAVhJHheMwU,751
+feincms3_downloads/plugins.py,sha256=v77lVw_GabMD-oAsUG11c3E0hd9a2WAeNXTIPExc0mE,1754
+feincms3_downloads/previews.py,sha256=WC9VwjYuJeEiNVBA9tbrZywqqKPRNdi-6c07oSUxbC4,936
+feincms3_downloads/locale/de/LC_MESSAGES/django.mo,sha256=IzUT8wSNh_XkH_CeVVEpnLgUOvG-MQ_QDmnxgNCqXCM,660
+feincms3_downloads/locale/de/LC_MESSAGES/django.po,sha256=l0TW53lgSYrmNTH2Nr0oIdKKwOSJPrEoGKgWNp5NPo8,1008
+feincms3_downloads/templates/plugins/download.html,sha256=50jCzsaDQGD4tCyIyBa6-6500INw382zXe8UXqDcfbU,252
+feincms3_downloads-0.5.3.dist-info/METADATA,sha256=nh6cWUOyuT8hxfjgJ8rqtYP2EU04HrGdfCZW9yP3Lkk,1554
+feincms3_downloads-0.5.3.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+feincms3_downloads-0.5.3.dist-info/licenses/LICENSE,sha256=UtaZBVVyWoJe7WMN257G-sONZ-xW5mC4kfruj5bzy8s,1077
+feincms3_downloads-0.5.3.dist-info/RECORD,,
