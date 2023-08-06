@@ -1,0 +1,8 @@
+perky/__init__.py,sha256=to0Hm023Jrqg08FHulKQMPM-Cy5hzbaLqpGm2BwdT5E,13785
+perky/tokenize.py,sha256=YV8iZrk-jFxvaHsCkcy_bfGM2KtzjuQDVB-2HssipQA,13071
+perky/transform.py,sha256=ruL9GSIbbU4AUN2jZQR40vUMy0Cl7Tl99ysNpNWaM70,7146
+perky/utility.py,sha256=Hd-_qgGYwCiG4vfRKvxFLMnjRDOnhP-vTqdiQ8m182Y,4422
+perky-0.8.1.dist-info/LICENSE,sha256=pmxTsIhc6oo4m_qmwwoVbtfxlGixqm6ffG1ar_TgWi8,1089
+perky-0.8.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+perky-0.8.1.dist-info/METADATA,sha256=VjYrhqyqxG8eHpJ8Ppc1OWtOTLLoxOGVGtgnReSx_sk,14413
+perky-0.8.1.dist-info/RECORD,,
