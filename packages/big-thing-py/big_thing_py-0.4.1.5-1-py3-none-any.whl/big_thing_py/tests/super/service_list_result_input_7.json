@@ -1,0 +1,513 @@
+{
+  "servic": [
+    {
+      "middleware": "Test_Middleware_Level3-0",
+      "hierarchy": "local",
+      "things": [
+        {
+          "name": "basic_feature_big_thing",
+          "is_alive": 1,
+          "is_super": 0,
+          "is_parallel": 1,
+          "alive_cycle": 60,
+          "values": [
+            {
+              "name": "value_current_time",
+              "description": "No Information",
+              "bound": {
+                "min_value": 0.0,
+                "max_value": 2147483647.0
+              },
+              "type": "int",
+              "is_private": 0,
+              "latest_val": "1681367010",
+              "updated_on": "2023-04-13 15:23:30.233",
+              "format": "(null)",
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "name": "func_no_arg",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 0,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 45,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ]
+            },
+            {
+              "name": "func_with_arg",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 12,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "10000"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "func_with_arg_and_delay",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 56,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "10000"
+                  }
+                },
+                {
+                  "name": "delay_arg",
+                  "order": 1,
+                  "type": "double",
+                  "bound": {
+                    "min_value": "0.00",
+                    "max_value": "10000.00"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "__value_current_time",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 0,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 0,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                },
+                {
+                  "name": "big_thing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "super_feature_big_thing",
+          "is_alive": 1,
+          "is_super": 1,
+          "is_parallel": 1,
+          "alive_cycle": 60,
+          "values": [],
+          "functions": [
+            {
+              "name": "super_multiple_sub_service_request2",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 100,
+              "tags": [
+                {
+                  "name": "super"
+                },
+                {
+                  "name": "super_thing"
+                },
+                {
+                  "name": "super_feature_big_thing"
+                },
+                {
+                  "name": "super_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "1000000"
+                  }
+                },
+                {
+                  "name": "delay_arg",
+                  "order": 1,
+                  "type": "double",
+                  "bound": {
+                    "min_value": "0.00",
+                    "max_value": "1000000.00"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "middleware": "Test_Middleware_Level2-0",
+      "hierarchy": "child",
+      "things": [
+        {
+          "name": "basic_feature_big_thing",
+          "is_alive": 1,
+          "is_super": 0,
+          "is_parallel": 1,
+          "alive_cycle": 60,
+          "values": [
+            {
+              "name": "value_current_time",
+              "description": "No Information",
+              "bound": {
+                "min_value": 0.0,
+                "max_value": 2147483647.0
+              },
+              "type": "int",
+              "is_private": 0,
+              "latest_val": "1681367010",
+              "updated_on": "2023-04-13 15:23:30.233",
+              "format": "(null)",
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "name": "func_no_arg",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 0,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 45,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ]
+            },
+            {
+              "name": "func_with_arg",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 12,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "10000"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "func_with_arg_and_delay",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 56,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "10000"
+                  }
+                },
+                {
+                  "name": "delay_arg",
+                  "order": 1,
+                  "type": "double",
+                  "bound": {
+                    "min_value": "0.00",
+                    "max_value": "10000.00"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "__value_current_time",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 0,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 0,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                },
+                {
+                  "name": "big_thing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "middleware": "Test_Middleware_Level1-0",
+      "hierarchy": "child",
+      "things": [
+        {
+          "name": "basic_feature_big_thing",
+          "is_alive": 1,
+          "is_super": 0,
+          "is_parallel": 1,
+          "alive_cycle": 60,
+          "values": [
+            {
+              "name": "value_current_time",
+              "description": "No Information",
+              "bound": {
+                "min_value": 0.0,
+                "max_value": 2147483647.0
+              },
+              "type": "int",
+              "is_private": 0,
+              "latest_val": "1681367010",
+              "updated_on": "2023-04-13 15:23:30.233",
+              "format": "(null)",
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "name": "func_no_arg",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 0,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 45,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ]
+            },
+            {
+              "name": "func_with_arg",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 12,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "10000"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "func_with_arg_and_delay",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 1,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 56,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "big_thing"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                }
+              ],
+              "arguments": [
+                {
+                  "name": "int_arg",
+                  "order": 0,
+                  "type": "int",
+                  "bound": {
+                    "min_value": "0",
+                    "max_value": "10000"
+                  }
+                },
+                {
+                  "name": "delay_arg",
+                  "order": 1,
+                  "type": "double",
+                  "bound": {
+                    "min_value": "0.00",
+                    "max_value": "10000.00"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "__value_current_time",
+              "description": "No Information",
+              "return_type": "int",
+              "use_arg": 0,
+              "is_private": 0,
+              "exec_time": 0,
+              "energy": 0,
+              "tags": [
+                {
+                  "name": "basic"
+                },
+                {
+                  "name": "basic_feature_big_thing"
+                },
+                {
+                  "name": "big_thing"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
