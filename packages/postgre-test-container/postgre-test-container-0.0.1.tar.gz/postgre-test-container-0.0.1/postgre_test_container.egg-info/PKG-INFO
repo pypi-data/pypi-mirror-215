@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: postgre-test-container
+Version: 0.0.1
+Summary: Temporary test docker container
+Home-page: https://github.com/malmstine/postgre-test-container
+Author: Ivan Malmstine
+Author-email: ivan@malmstine.com
+License: MIT
+Keywords: docker,postgreSQL,postgre,test,test container
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Postgre Test Container
+
+Module to create postgre test container from docker image
+
+
+## Requirements
+* docker on host
+
+## Example
+```
+with temporary_postgres() as cp:
+    # connect(port=cp.port, user=cp.user, db=cp.db, password=cp.passwrod) 
+```
