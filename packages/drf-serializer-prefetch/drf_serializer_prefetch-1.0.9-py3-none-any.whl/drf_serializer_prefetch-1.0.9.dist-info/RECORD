@@ -1,0 +1,14 @@
+serializer_prefetch/__init__.py,sha256=lw1R4ibKi_D7g1b9o8YlumeGLnLtec8CqSleGZ5uUbw,139
+serializer_prefetch/base.py,sha256=XOL7cdhFBQB4xJCpFiUD5Ea9KSKTR-gMIH93ko-I_R0,12465
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=yLmb3nE7aAl1cRP_VYYHWXSuOzkzi5jEHCyKZiZ4ckg,515
+tests/serializers.py,sha256=aX8sQib_LzzljjELm6qIeq2csnHEbiUU2o51ut_LX_A,708
+tests/settings.py,sha256=HuxJvV0x82F1h1wa9RCktusNZ_k6xnpSiGNRiwyjdTw,381
+tests/test_conditions.py,sha256=F5bBOo5XkoHl85eRYG86MnxKHNclPUdnp3mFIwbltk0,4003
+tests/test_errors.py,sha256=sYwzOj4uizYVt36sNCz8GsaKvwelte4RmfR4llzN8So,2404
+tests/test_serializers.py,sha256=X3kKj09k274oKASxfDJVtmcDHrTwdK__ow4Ofe_6EGs,16527
+drf_serializer_prefetch-1.0.9.dist-info/LICENSE,sha256=cNka4j6QFVS35t7o7otxK85tAc2puymh2dRorOoUIfY,1073
+drf_serializer_prefetch-1.0.9.dist-info/METADATA,sha256=5alNI7eZhrkhgEuo1_13DjmMouOJ6fpfczkMpDhd51A,9381
+drf_serializer_prefetch-1.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+drf_serializer_prefetch-1.0.9.dist-info/top_level.txt,sha256=K56wLIlPhYi7RXDE6TxtU7z02qq60sLWGbyKD8HFZBI,26
+drf_serializer_prefetch-1.0.9.dist-info/RECORD,,
