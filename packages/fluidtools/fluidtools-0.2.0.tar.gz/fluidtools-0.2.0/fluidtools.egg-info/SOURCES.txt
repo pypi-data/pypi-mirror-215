@@ -1,0 +1,10 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+fluidtools.egg-info/PKG-INFO
+fluidtools.egg-info/SOURCES.txt
+fluidtools.egg-info/dependency_links.txt
+fluidtools.egg-info/requires.txt
+fluidtools.egg-info/top_level.txt
+src/fluidtools.c
+src/fluidtools.pyx
