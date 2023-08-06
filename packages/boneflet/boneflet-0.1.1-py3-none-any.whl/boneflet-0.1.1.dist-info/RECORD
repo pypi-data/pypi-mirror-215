@@ -1,0 +1,11 @@
+boneflet-0.1.1.dist-info/METADATA,sha256=LD4wxLi0T6b2pXfNms_PG3_Sk2yUHI0PsCvpUaqaGnw,234
+boneflet-0.1.1.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+boneflet/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+boneflet/bonetools.py,sha256=CS4e_Jew2yjKatL4XQJFf-nqgQmfR9bTACgrDAEIrao,2616
+boneflet/button.py,sha256=fXjZHUS6REmCeM6jsOfCcdw7FOWRIOpu9DD-68fBPcU,2371
+boneflet/demo.py,sha256=K4C2rr2yeP6N9A4RF2FVl4NYx2p90LXUkxmfxp-v4TQ,2612
+boneflet/plugins/__init__.py,sha256=qKEUq6Nx8BknEl7wLUSAsIjZICAJZVTDz0mIwUX3mUA,141
+boneflet/plugins/demo.py,sha256=tzPpnH1yitmAQCEppmzwCMi570im5CFielFGTbYBN1A,3343
+boneflet/plugins/ui_demo.py,sha256=Rn7jBkOoPxSyx3tnrFaQvz2WTjv8Bv8njHfOX4zgvmE,141
+boneflet/tab.py,sha256=sq4ThfewZYUvDm_Y_12n1ZOnBcMrXUUj8psdYJoG0_Y,6243
+boneflet-0.1.1.dist-info/RECORD,,
