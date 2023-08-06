@@ -1,0 +1,18 @@
+# Libs required for local development
+docker-compose
+bump2version
+tox
+pre-commit
+pylint
+prettytable
+twine
+
+# Reqs to run the stress tests using gunicorn
+gunicorn
+
+# Reqs to run the tests - remember to keep in sync with `tox.ini`
+django>=4.2,<4.3
+psycopg2-binary
+pytest
+pytest-django
+requests
