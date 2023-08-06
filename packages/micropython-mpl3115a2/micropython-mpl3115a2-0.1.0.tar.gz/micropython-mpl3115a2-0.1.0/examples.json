@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_mpl3115a2/examples/mpl3115a2_oversample_ratio.py", "github:jposada202020/MicroPython_MPL3115A2/examples/mpl3115a2_oversample_ratio.py"],
+    ["micropython_mpl3115a2/examples/mpl3115a2_simpletest.py", "github:jposada202020/MicroPython_MPL3115A2/examples/mpl3115a2_simpletest.py"]
+  ],
+  "version": "0.1"
+}
