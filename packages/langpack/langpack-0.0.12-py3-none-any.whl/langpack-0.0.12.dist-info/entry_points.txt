@@ -1,0 +1,4 @@
+[console_scripts]
+pack=langpack.apis:pack
+unpack=langpack.apis:unpack
+
