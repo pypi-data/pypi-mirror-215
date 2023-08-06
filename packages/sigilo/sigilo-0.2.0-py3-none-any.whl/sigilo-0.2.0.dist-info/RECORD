@@ -1,0 +1,12 @@
+sigilo/__init__.py,sha256=TcEapr8UpQPi1Cw_R6kSy_t2M6D-tfpV8foyozpo-dk,518
+sigilo/ciphers/__init__.py,sha256=aaUwx3noHpeN6CDTiF7vAqq2IIogpj8I8rtDDTTQjHU,211
+sigilo/ciphers/fernet.py,sha256=d1lLXtCjWMt4rHQ9LBIzqgCSREbktAF9aaSFJcQ33uw,505
+sigilo/ciphers/plain.py,sha256=4YGZO9C7xpOlKCrGpn9fJrjMqZ9QX0G_HlcNJyc5CjU,185
+sigilo/stores/__init__.py,sha256=qtZClcP3pK2e6o6oILwIx1pQLgr4ly0OQKAb0urM4_g,119
+sigilo/stores/memcache.py,sha256=gvm4hXZM7xHbY2B7555YKza9O-sTuHxEBzWBwJcYYQM,473
+sigilo/stores/memory.py,sha256=8M3RNB7nGG986fLFuVCb43rH6VvZ7zePuH1rttRIjW4,260
+sigilo/stores/redis.py,sha256=imyUQfR67PWvgWvn--mVtoEOnpJQJtFnw5x5vc4nxes,402
+sigilo-0.2.0.dist-info/METADATA,sha256=HVpwjdH4Y9ej7oMRuWP3WeoVgCCsqKsZwMhp1_D7OM0,1730
+sigilo-0.2.0.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+sigilo-0.2.0.dist-info/licenses/LICENSE,sha256=6L9LMJA31fVizbgRx6904ThtcVRF--JZqw2R7VhJVd4,1069
+sigilo-0.2.0.dist-info/RECORD,,
