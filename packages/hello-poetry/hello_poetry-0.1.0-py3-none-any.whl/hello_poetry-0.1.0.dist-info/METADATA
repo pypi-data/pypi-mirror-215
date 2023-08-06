@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hello-poetry
+Version: 0.1.0
+Summary: Hello, Poetry!
+Author: mancuoj
+Author-email: 1337381768@qq.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fastapi[all] (>=0.98.0,<0.99.0)
+Description-Content-Type: text/markdown
+
+# hello-poetry
+
