@@ -1,0 +1,11 @@
+README.md
+setup.py
+fast_coco_eval/__init__.py
+fast_coco_eval/fast_coco_eval_api.py
+fast_coco_eval/cocoeval/cocoeval.cpp
+fast_coco_eval/cocoeval/cocoeval.h
+fast_coco_eval_python.egg-info/PKG-INFO
+fast_coco_eval_python.egg-info/SOURCES.txt
+fast_coco_eval_python.egg-info/dependency_links.txt
+fast_coco_eval_python.egg-info/requires.txt
+fast_coco_eval_python.egg-info/top_level.txt
