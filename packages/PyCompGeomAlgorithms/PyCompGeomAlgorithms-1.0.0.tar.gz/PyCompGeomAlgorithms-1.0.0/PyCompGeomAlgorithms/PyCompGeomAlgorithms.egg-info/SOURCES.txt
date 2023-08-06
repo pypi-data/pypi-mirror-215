@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PyCompGeomAlgorithms/PyCompGeomAlgorithms.egg-info/PKG-INFO
+PyCompGeomAlgorithms/PyCompGeomAlgorithms.egg-info/SOURCES.txt
+PyCompGeomAlgorithms/PyCompGeomAlgorithms.egg-info/dependency_links.txt
+PyCompGeomAlgorithms/PyCompGeomAlgorithms.egg-info/top_level.txt
