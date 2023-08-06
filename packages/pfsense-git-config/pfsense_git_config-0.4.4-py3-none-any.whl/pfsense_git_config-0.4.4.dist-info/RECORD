@@ -1,0 +1,8 @@
+pfsense_git_config/__init__.py,sha256=4_mX9w7ixmPenXptOQYZClmxSPZMuvj4zPpnAaMGRBo,90
+pfsense_git_config/git_repo.py,sha256=EMyMPBP0CQ0O6s4-4Eg-3J3EsjIQ4pW8yuydAB3Ggjc,3999
+pfsense_git_config/main.py,sha256=6u6ULVojNTnTzLNBjvZ_PdUPM7EiaABdEO7sBI0nETg,4165
+pfsense_git_config/pfsense_configs.py,sha256=-ahhWnz5XjhuCl6X7puVjpGsguYNGTgF7nUgbpelxaE,1973
+pfsense_git_config-0.4.4.dist-info/METADATA,sha256=cbWMupHU5Jrej3eS_xSH3g5SfOZN5csBfJI7Np2_894,3340
+pfsense_git_config-0.4.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pfsense_git_config-0.4.4.dist-info/entry_points.txt,sha256=w30lIhbPxJ1rLbyt6nPHcTohFKh3xxQBiC-NUeRzxnI,66
+pfsense_git_config-0.4.4.dist-info/RECORD,,
