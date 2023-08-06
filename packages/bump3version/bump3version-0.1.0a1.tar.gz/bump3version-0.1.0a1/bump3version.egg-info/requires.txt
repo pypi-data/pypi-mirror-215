@@ -1,0 +1,16 @@
+click~=8.1
+pydantic~=1.9
+semver~=3.0
+tomli~=2.0
+
+[quality]
+bandit
+black
+doc8
+flake8
+isort
+mypy
+pydocstyle
+
+[test]
+testfixtures

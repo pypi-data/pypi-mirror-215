@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: bump3version
+Version: 0.1.0a1
+Summary: Bumpversion - bump your project versions
+Author: Jan Musílek
+Author-email: jan.musilek@nic.cz
+License: GPLv3+
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: ~=3.8
+Provides-Extra: quality
+Provides-Extra: test
+License-File: LICENSE
+
+===========
+Bumpversion
+===========
+
+Bump your project versions.
+
+ChangeLog
+=========
+
+.. contents:: Releases
+   :backlinks: none
+   :local:
+
+Unreleased
+----------
+
+
+0.1.0a1 (2023-06-09)
+--------------------
+
+* Initial version
