@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/package_name/__init__.py
+src/pynerd.egg-info/PKG-INFO
+src/pynerd.egg-info/SOURCES.txt
+src/pynerd.egg-info/dependency_links.txt
+src/pynerd.egg-info/requires.txt
+src/pynerd.egg-info/top_level.txt
