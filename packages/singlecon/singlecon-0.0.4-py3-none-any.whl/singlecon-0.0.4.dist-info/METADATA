@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: singlecon
+Version: 0.0.4
+Summary: One config to rule them all
+Author-email: Victor Serban <serban.victor@gmail.com>
+License-Expression: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Requires-Dist: tomlkit
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# One Config to Rule Them All
+
+This package provides basic utilities to make template files from 
+configration defined in Python. It is build on top of pydantic BaseSettings.
