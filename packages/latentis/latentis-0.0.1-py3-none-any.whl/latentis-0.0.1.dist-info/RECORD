@@ -1,0 +1,11 @@
+latentis/__init__.py,sha256=ba21sTKqT0HH7amlW-ZbWQaEX_eJMBpDcp53HrL1J40,1213
+latentis/relative/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latentis/relative/projection.py,sha256=B6hw2rlorMywAHSMxi41rdjaaJHr36VbI7B7Gj6QojE,7417
+latentis/relative/space.py,sha256=L503u_a6Kv1SinHpBs5061oRy5aiIc3lgRCRE214IoQ,6051
+latentis/translate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latentis/translate/translation.py,sha256=Hw82qmV9EcefcQsU2FV8enI7H6xqWf8mhYxpVANbBNw,5921
+latentis-0.0.1.dist-info/LICENSE,sha256=bMyoQen3WzMZGPp9ZWNnhzUaeXk-bWucDcBuAmQQqQg,1090
+latentis-0.0.1.dist-info/METADATA,sha256=dFiqlfiUwUvVSdp7Kaiy_bfdxE78pQl5Nz-RPjv65mE,2472
+latentis-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+latentis-0.0.1.dist-info/top_level.txt,sha256=ZQtWTw5FVedLb1GJXU_-trvurrg82ul4vs5EfwPZMF8,9
+latentis-0.0.1.dist-info/RECORD,,
