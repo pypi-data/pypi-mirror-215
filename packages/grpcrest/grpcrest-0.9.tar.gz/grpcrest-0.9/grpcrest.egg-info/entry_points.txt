@@ -1,0 +1,3 @@
+[console_scripts]
+start-grpc-rest = grpcrest.grpc_rest:main
+
