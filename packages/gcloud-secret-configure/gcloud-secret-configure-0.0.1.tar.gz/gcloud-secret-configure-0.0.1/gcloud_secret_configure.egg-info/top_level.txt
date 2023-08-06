@@ -1,0 +1,2 @@
+gcloud_secret_configure
+tests
