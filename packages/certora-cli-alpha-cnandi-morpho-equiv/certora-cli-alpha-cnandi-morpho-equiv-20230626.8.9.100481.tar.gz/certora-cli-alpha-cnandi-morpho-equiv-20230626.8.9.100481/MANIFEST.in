@@ -1,0 +1,6 @@
+recursive-include certora_jars *.jar gambit* CERTORA-CLI-VERSION-METADATA.json
+recursive-include certora_jars EquivalenceCheck/equivCheck.py
+recursive-include certora_jars EquivalenceCheck/Eq_sanity.conf
+recursive-include certora_jars EquivalenceCheck/Eq_default.conf
+recursive-include certora_jars EquivalenceCheck/Eq_template.spec
+recursive-include certora_jars EquivalenceCheck/Eq_mc_template.spec
