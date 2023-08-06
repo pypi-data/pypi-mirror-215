@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: langpack
+Version: 0.0.12
+Summary: A library to pakcage and deploy langugage model apps
+Home-page: https://www.github.com/LambdaLabsML/langpack
+Author: Lambda, Inc.
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: apify-client (>=1.0.0,<2.0.0)
+Requires-Dist: astor (>=0.8.1,<0.9.0)
+Requires-Dist: astpretty (>=3.0.0,<4.0.0)
+Requires-Dist: astunparse (>=1.6.3,<2.0.0)
+Requires-Dist: boto3 (>=1.26.120,<2.0.0)
+Requires-Dist: chromadb (>=0.3.26,<0.4.0)
+Requires-Dist: faiss-cpu (>=1.7.3,<2.0.0)
+Requires-Dist: flask (>=2.2.3,<3.0.0)
+Requires-Dist: google-api-python-client (>=2.85.0,<3.0.0)
+Requires-Dist: google-search-results (>=2.4.2,<3.0.0)
+Requires-Dist: langchain (>=0.0.185,<0.0.186)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: openai (>=0.27.4,<0.28.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: pgvector (>=0.1.6,<0.2.0)
+Requires-Dist: psutil (>=5.9.5,<6.0.0)
+Requires-Dist: redis (>=4.5.4,<5.0.0)
+Requires-Dist: tiktoken (>=0.4.0,<0.5.0)
+Requires-Dist: unstructured (>=0.5.12,<0.6.0)
+Requires-Dist: wikipedia (>=1.4.0,<2.0.0)
+Project-URL: Repository, https://www.github.com/LambdaLabsML/langpack
