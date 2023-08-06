@@ -1,0 +1,3 @@
+[console_scripts]
+emreader=src.runner:run
+

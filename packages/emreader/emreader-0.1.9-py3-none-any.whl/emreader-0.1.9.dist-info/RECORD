@@ -1,0 +1,16 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/app.py,sha256=RPrDA96qdyqhY_T04qurft8XTBdSUYmEjGbLrf0aWCU,3828
+src/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/core/base.py,sha256=XhtJpBqkNxh1yYJOm6l6X1v1UoKCxnVEUtdXWECEVLc,6204
+src/core/eml.py,sha256=95bXb2x7ijZp3SRkSx6XZQTnMmbU4RlcCtZG-lJ9veQ,3228
+src/core/parse_tab.py,sha256=ffc7SvJzPW9mS0ctNdmsVYp5d_Qgq8SOo4o2aJhLeUM,2326
+src/core/store.py,sha256=0yCQdHXwVnPcEDflWZ9Sw0787jT2UbPCpFt8lJ8VtYE,597
+src/core/util.py,sha256=4DMS-ybs3S3lHijPkO1zGS3p10vLHXjD5woBbi84kzs,5540
+src/db/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/runner.py,sha256=23VdwzUpIyvYfxyX1hdAuCOGmMQEpAFSrdyeTLXRjks,189
+src/storage/output/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/storage/source/emails/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emreader-0.1.9.dist-info/METADATA,sha256=0zKq0POB-UUz3PIvgv1rKKSAYY_HtLiuddsYclTJlzI,1812
+emreader-0.1.9.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+emreader-0.1.9.dist-info/entry_points.txt,sha256=ZTXa_gm-OzXYoERJsZgDaWCorz601OYjieDT7K3CEls,43
+emreader-0.1.9.dist-info/RECORD,,
