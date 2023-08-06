@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: latviastreetify
+Version: 0.0.1
+Summary: module that help get streets and neiborhoods from latitude longitude
+Author-email: William Droz <william.droz@idiap.ch>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: black == 22.3.0 ; extra == "dev"
+Requires-Dist: coverage >= 6.4.2,<7.0.0 ; extra == "dev"
+Requires-Dist: flake8 >=3.8.3,<4.0.0 ; extra == "dev"
+Requires-Dist: mypy >=0.971,<1.0 ; extra == "dev"
+Requires-Dist: pre-commit >=3.3.3,<4.0.0 ; extra == "dev"
+Requires-Dist: pytest >=7.1.2,<8.0.0 ; extra == "dev"
+Project-URL: Home, https://gitlab.idiap.ch/socialcomputing/Icarus/latvian_streets_neighborhoods
+Provides-Extra: dev
+
+# latvian_streets_neighborhoods
+
+
