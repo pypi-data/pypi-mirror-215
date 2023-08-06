@@ -1,0 +1,14 @@
+clubscore/API.py,sha256=BB0Gck6F0Y81IPN-IQnHTRFx6aFwAYGHuvJdfQsEB0M,1206
+clubscore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clubscore/bot.py,sha256=f8refshkjs7WMM_UQbnnyXsmHaqVCwC3JbHVZjot_G0,5159
+clubscore/utils.py,sha256=OgS8Pivg1tgWEpOXKLKZNYrne8AYidZgZjBcEm4fdxo,6333
+clubscore/objects/CONTAINER.py,sha256=6swfG-unlZz0OqK_W3LRAYLVyGGn2-treR3jd1YNz-c,5435
+clubscore/objects/IMG.py,sha256=bWAg6YBgUX8MR7P700SDw-sgcJG0Tccj6Po3lNPHPc0,3171
+clubscore/objects/RECTANGLE.py,sha256=c15fZLl5Dk9y9soFIgBeWkviHNTFyFffOYyJYFgHSvw,1161
+clubscore/objects/TEXT.py,sha256=oEYluuxSXjDEAF0E7vwcy1qsYf8lRPhhGiWsBaLy_oA,4241
+clubscore/objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clubscore-0.2.3.dist-info/LICENSE,sha256=WJd9dtWB6coBJAMJWYtueFidTuDFNa6FkALiM1DhnqY,1071
+clubscore-0.2.3.dist-info/METADATA,sha256=W_vU8UeyTl9udBYXTS7JFz1m54ZEjPCfPzSkMSed7II,1129
+clubscore-0.2.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+clubscore-0.2.3.dist-info/top_level.txt,sha256=tUi0Qu0Nr1vLaDah2RD8LlZxxTqsAXThKGKhN1BNz0A,10
+clubscore-0.2.3.dist-info/RECORD,,
