@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ai_embedder/__init__.py
+ai_embedder/__main__.py
+ai_embedder/main.py
+ai_embedder.egg-info/PKG-INFO
+ai_embedder.egg-info/SOURCES.txt
+ai_embedder.egg-info/dependency_links.txt
+ai_embedder.egg-info/requires.txt
+ai_embedder.egg-info/top_level.txt
