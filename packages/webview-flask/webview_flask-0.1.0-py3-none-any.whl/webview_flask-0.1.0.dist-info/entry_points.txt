@@ -1,0 +1,3 @@
+[console_scripts]
+webview_flask=webview_flask.main:main
+
