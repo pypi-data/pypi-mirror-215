@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: unrollcuda
+Version: 0.0.2
+Summary: Loop unrolling and batching for CUDA
+Project-URL: Homepage, https://github.com/format37/unrollcuda
+Project-URL: Bug Tracker, https://github.com/format37/unrollcuda/issues
+Author-email: Aleksei Iurasov <format37@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# unrollcuda
+Loop unrolling and batching for CUDA  
+The core idea of this solution is to give a way to solve the following tasks:  
+1. Use Loop unrolling to compute in CUDA any size and any count of dimensions array  
+2. Use Batching to compute any size array, even if it s big that can't be fitted in GPU memory  
