@@ -1,0 +1,18 @@
+[console_scripts]
+Detected = potato_tool:Detected
+Error = potato_tool:Error
+Information = potato_tool:Information
+Input = potato_tool:Input
+Input_lines = potato_tool:Input_lines
+Processing = potato_tool:Processing
+Result = potato_tool:Result
+blue = potato_tool:blue
+bold = potato_tool:bold
+cyan = potato_tool:cyan
+green = potato_tool:green
+magenta = potato_tool:magenta
+printF = potato_tool:printF
+printT = potato_tool:printT
+red = potato_tool:red
+yellow = potato_tool:yellow
+
