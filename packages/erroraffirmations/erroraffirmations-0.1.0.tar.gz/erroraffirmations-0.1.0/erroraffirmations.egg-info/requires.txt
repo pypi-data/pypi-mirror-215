@@ -1,0 +1,13 @@
+
+[docs]
+sphinx
+sphinx_rtd_theme
+numpydoc
+
+[test]
+packaging
+flake8
+pydocstyle
+pytest
+pytest-cov
+pre-commit
