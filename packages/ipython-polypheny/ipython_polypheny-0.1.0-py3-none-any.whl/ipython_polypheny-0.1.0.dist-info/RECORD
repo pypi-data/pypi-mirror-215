@@ -1,0 +1,9 @@
+poly/__init__.py,sha256=3XxlyoKfpSvNVhGSJYM_2-aDbb85OzNtwNBZfC7G-Zo,110
+poly/http_interface.py,sha256=bxO698Kzt2I6F3d_rqu3wtv76YVmS8UqocxG1Pshp7g,942
+poly/poly_magic.py,sha256=_7W1iikcSqhFp9Wx4y2NSYmirdsQnMGgxxKIq6OMorQ,5302
+poly/poly_result.py,sha256=hngC9XfIgpMOwKOQ6fi7fsHR_qHK7cVdVwwN1xlGPHc,2453
+ipython_polypheny-0.1.0.dist-info/LICENSE,sha256=kmSms8E0URzPyuSO04CDIGiK5pM-xPxUdHagBQlfwe8,10349
+ipython_polypheny-0.1.0.dist-info/METADATA,sha256=9KVRdejyzrzscqjrcxVpGiGOIiAO7YS-nIRc-32_HzU,4119
+ipython_polypheny-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ipython_polypheny-0.1.0.dist-info/top_level.txt,sha256=4uIio9o0yJVhhSkDspTq8PZnAk-nXtHfBluFN9mis3k,5
+ipython_polypheny-0.1.0.dist-info/RECORD,,
