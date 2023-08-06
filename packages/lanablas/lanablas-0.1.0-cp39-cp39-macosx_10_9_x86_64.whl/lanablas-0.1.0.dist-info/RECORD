@@ -1,0 +1,8 @@
+matrix.cpython-39-darwin.so,sha256=BF72FJfoZzSBaMicaB5nu_UcVMfhM1MbkbLjy56eUR8,35360
+lanablas/__init__.py,sha256=4CZ6S1AsnNbxzHVROAu_RjbtVMHUQDjuZP51HzfknZQ,1113
+lanablas/matrix.c,sha256=kQQurucoN-zTA2y7f_UGIzlzcqC_VkyX7cGqXfA_RAk,13248
+lanablas-0.1.0.dist-info/LICENSE,sha256=O7Jx7U5E47Jnth8Z1s0lnAt21DLoXgaQQsF1AZAQuZY,1060
+lanablas-0.1.0.dist-info/METADATA,sha256=db_zdWM8Ibu-dVcGcjAnycDLtDRHeAyZmA1TOIM_NEI,2158
+lanablas-0.1.0.dist-info/WHEEL,sha256=pfjXB0CCNW4PSSqQc2t4Up6p3o0jxBnHy_2o38FQkyE,109
+lanablas-0.1.0.dist-info/top_level.txt,sha256=o1rd8cK4Nx31pCuFQS7hAWs65Jxktk6wfcegcCksrYs,16
+lanablas-0.1.0.dist-info/RECORD,,
