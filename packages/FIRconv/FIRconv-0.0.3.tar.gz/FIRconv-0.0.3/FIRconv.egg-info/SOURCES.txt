@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+FIRconv/FIRconv.py
+FIRconv/__init__.py
+FIRconv.egg-info/PKG-INFO
+FIRconv.egg-info/SOURCES.txt
+FIRconv.egg-info/dependency_links.txt
+FIRconv.egg-info/requires.txt
+FIRconv.egg-info/top_level.txt
