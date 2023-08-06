@@ -1,0 +1,10 @@
+mizdb_tomselect/__init__.py,sha256=3Frp46J99nV5OPPhiylWZj-TzsXtsTUbRZh4HpDPu1w,123
+mizdb_tomselect/views.py,sha256=TPXjNn4zDwBlujmJVTXj9YRVOf_nAU5bep2n9HOBQSY,2652
+mizdb_tomselect/widgets.py,sha256=hbCXB6LfLFlKzoEpSTWIBwzSB5qoenBUsNvdzlLB7E0,5076
+mizdb_tomselect/static/mizdb_tomselect/css/mizselect.css,sha256=8qs0-Pm3SNG7rOL9OKIfA-CshXE5xJb5sA1-9aKaea0,430
+mizdb_tomselect/static/mizdb_tomselect/js/mizselect.js,sha256=lKbRzPm6ec1Jvcm9_goDwEX9g7IP8LT6pOpWIM0CJxE,144386
+mizdb_tomselect-0.1.0.dist-info/LICENSE,sha256=bL_JjhO4tkmPVFNWunLORMlmRKWIQoYv66tP0Ne9Yv0,1064
+mizdb_tomselect-0.1.0.dist-info/METADATA,sha256=f9CJ7-AaqiW28p8Afrg3sLG_fVJQ-_CWJbkx9NkjzEs,3798
+mizdb_tomselect-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mizdb_tomselect-0.1.0.dist-info/top_level.txt,sha256=iyBKGa1Nz-dQxfBiv8tohyvZ0YY4dmKXOkQNE7qQtrE,16
+mizdb_tomselect-0.1.0.dist-info/RECORD,,
