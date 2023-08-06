@@ -1,0 +1,13 @@
+medsenger_api/__init__.py,sha256=YWIHCDBmHuKuPNdF_7pLxVsaPSihlCK0TfpV1-z1H6U,220
+medsenger_api/api_client.py,sha256=aRGW53zFFP5JGau_0HJUun7FnERh5PWMtNBLv_5XyIA,7861
+medsenger_api/grpc_client.py,sha256=DdX3Lhd8pB_8dHvbBIJA1wCmPi1nluOtDUA-2k7bm1E,9418
+medsenger_api/rest_client.py,sha256=lT70AL3ZPqa1IngIkusGZOBLaprz71Quh9wx-3VP9mg,12044
+medsenger_api/utils.py,sha256=683u33J_Zso4QdPxKRoNZ7EQD-y_L939_8cGGE9tJPg,1245
+medsenger_api/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+medsenger_api/protocol/records_pb2.py,sha256=bceVYB74leKRfo-MAFhJJMDQxg56Gp3TaD1F5_llN3w,4466
+medsenger_api/protocol/records_pb2_grpc.py,sha256=yqlQn4fl1AQ3TJmKn1Yq42jGoAXcCfNK_x-Xp-vpZhw,10379
+medsenger_api-0.1.54.dist-info/LICENSE,sha256=Cufvkxfsa6htlM0XP75jSqnZe1Ihq7qS0uPw_oGnopw,1313
+medsenger_api-0.1.54.dist-info/METADATA,sha256=aEB0N6tVGnlSmFF65Rwd2z7CRc4YBGQleUavO9ov06c,481
+medsenger_api-0.1.54.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+medsenger_api-0.1.54.dist-info/top_level.txt,sha256=d6b801qLbQ0_Yz8ChoYUIg4yff3H1aCtYkQWvJz2OW4,14
+medsenger_api-0.1.54.dist-info/RECORD,,
