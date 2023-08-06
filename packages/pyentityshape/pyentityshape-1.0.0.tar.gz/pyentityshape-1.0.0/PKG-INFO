@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pyentityshape
+Version: 1.0.0
+Summary: Python library to validate Wikidata items using the entityshape API.
+Home-page: https://github.com/dpriskorn/PyEntityshape
+License: GPLv3+
+Keywords: entityshape API,wikidata,entityschema,entity validation
+Author: Dennis Priskorn
+Author-email: 68460690+dpriskorn@users.noreply.github.com
+Requires-Python: >=3.8,<=3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: requests (>=2.28.1,<3.0.0)
+Project-URL: Repository, https://github.com/dpriskorn/PyEntityshape
+Description-Content-Type: text/markdown
+
+# PyEntityshape
+Python library to lookup Wikidata items in the entityshape API.
+
+This is the alpha software. Please open an issue if you have any ideas or suggestions or bugs to report.  
+
+# Features
+It can be used programmatically to get the results of one validation at a time.
+
+# Installation
+Get it from pypi
+
+`$ pip install pyentityshape`
+
+# Usage
+```
+e = EntityShape(eid="E1", lang="en", qid="Q1")
+result = e.get_result()
+print(result)
+result.is_valid
+False|True
+result.required_properties_that_are_missing
+["P1", "P2"]
+```
+
+The result is a Result object with the following properties:
+* some_required_properties_are_missing
+* properties_with_too_many_statements_found
+* incorrect_statements_found
+* is_valid
+* is_empty
+* analyzed
+* error
+* general
+* incorrect_statements
+* missing_properties
+* name
+* optional_properties_that_are_missing
+* properties
+* properties_with_too_many_statements
+* required_properties
+* required_properties_that_are_missing
+* schema_
+* statements
+* validity
+
+# License
+GPLv3+
+
