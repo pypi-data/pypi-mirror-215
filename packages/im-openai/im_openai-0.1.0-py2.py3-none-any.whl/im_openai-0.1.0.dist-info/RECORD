@@ -1,0 +1,9 @@
+im_openai/__init__.py,sha256=5mMVDt7RYo8ethgJYcgVOkeQsZsAQgI_s1NlisOkHQk,218
+im_openai/client.py,sha256=JdaXPgr682G2Qn1hAqiSI0xkLuH4D5kFgV0Xq0ld8UU,1448
+im_openai/patch.py,sha256=0mnCEqvqW3S2nua2eJzoPnrd3Ot4eF6Fei18relilJY,1755
+im_openai-0.1.0.dist-info/AUTHORS.rst,sha256=r0__E7QLfi4bUDKUn1eJSpWNQ5oPjyA3JTW2HgcFPVE,150
+im_openai-0.1.0.dist-info/LICENSE,sha256=9y4XbUG1dP6tIdvOrPK8oYoSn_ICMpISpFppZtKslY8,1069
+im_openai-0.1.0.dist-info/METADATA,sha256=X54os7A7-dZpEJlU95MTCRzFgqeXF3xngyOcnK350Lc,2408
+im_openai-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+im_openai-0.1.0.dist-info/top_level.txt,sha256=wDuNgFei0P3nBB8rnxuDa5-7OJ1zgCNIBpO2oFbi6IE,10
+im_openai-0.1.0.dist-info/RECORD,,
