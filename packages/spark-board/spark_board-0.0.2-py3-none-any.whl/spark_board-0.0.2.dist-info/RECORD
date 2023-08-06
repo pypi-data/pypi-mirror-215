@@ -1,0 +1,13 @@
+spark_board/__init__.py,sha256=gAR-JWrq_Lb61AAYqv7YAvHoTYZKdoJzVjxikxPmXek,12
+spark_board/html.py,sha256=Kn3TQ8GYF7wJljeXTLMCLKQkF13ymVxrN0UepROLsL0,5282
+spark_board/plan_extractor/__init__.py,sha256=QvBprWUhF2LDXofoAvyK4FI7WlFT5yrWGAtFo7DCorY,35
+spark_board/plan_extractor/dag.py,sha256=iyPmJOSwye-H8P0PVJudQV3YzYvOfK0t3qr22kzghP8,1620
+spark_board/plan_extractor/dag_builder.py,sha256=yKGa7oDKTZvmiun9yppNe-6KCGpVe4rnTiIpxm51acY,826
+spark_board/plan_extractor/py4j_utils.py,sha256=U-EhLtJMPmsOdhU9zFmPaDgElzWBKoSgZFp_8prjpDM,232
+spark_board/plan_extractor/transformation_node_builders.py,sha256=ZjUPxOn_zpPBNVGEbfmGj8Pm4w8vJKOqkYR_P2jCUc8,8127
+spark_board/plan_extractor/transformations_dag.py,sha256=yoCId17vsaeRPbKnugfNd_oxgfSoUuTkTTH0Eh5WK8E,1618
+spark_board-0.0.2.dist-info/LICENSE,sha256=kEInvmZPY0_DuY29VRsd5fthjY2zNnE2Br-plU3ziFY,1065
+spark_board-0.0.2.dist-info/METADATA,sha256=YK19zwKVbkrnW_zyWcWmFYUXfWUYYafWjbGkI_8xxEw,1612
+spark_board-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+spark_board-0.0.2.dist-info/top_level.txt,sha256=zBT6frvJxHpnntaPqZvpceCNFPkzRf6fzUm3dNOG5GE,12
+spark_board-0.0.2.dist-info/RECORD,,
