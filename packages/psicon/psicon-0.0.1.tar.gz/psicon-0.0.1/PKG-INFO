@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: psicon
+Version: 0.0.1
+Summary: PSICON
+Project-URL: Homepage, https://github.com/clelange/psicon
+Project-URL: Bug Tracker, https://github.com/clelange/psicon/issues
+Author-email: Clemens Lange <clemens.lange@cern.ch>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PSICON
+
+The PSICON package.
