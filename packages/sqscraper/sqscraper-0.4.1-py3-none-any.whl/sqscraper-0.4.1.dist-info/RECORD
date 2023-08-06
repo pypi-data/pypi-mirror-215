@@ -1,0 +1,13 @@
+sqscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqscraper/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqscraper/utils.py,sha256=ugcv7wsx1qrfnDcOIiip9LNqt9UQZ9DIXj7ypg34FuY,592
+sqscraper/cnbc/__init__.py,sha256=YyalMeA7KZsgiiaYjR_lRDKETB58q9khKLrLAmRw6gE,84
+sqscraper/cnbc/_apps.py,sha256=nI9R9lSDSgnKmOFtod95SCmnDHcGdJXg6Bwcvd-Vc8s,931
+sqscraper/cnbc/_serializer.py,sha256=Cup2avo8-Ere6P9xZ7aetWXqgsUbLaTImEsx06y6Xao,12837
+sqscraper/cnbc/quote_page.py,sha256=TdVLf54cW6RHDRWjfl9LMsK-abVIe7XWAoNuR8rCfFI,13041
+sqscraper/cnbc/summary.py,sha256=n5TI6AMSb5oCvfwo2ydfPDKZOrSsIu36ZkKpzLvDbsI,15339
+sqscraper-0.4.1.dist-info/LICENSE,sha256=xJqnN9DYrbuKHH3MilZ275gAgpqDizdcyg0uJHtyn5w,1087
+sqscraper-0.4.1.dist-info/METADATA,sha256=M6_WKihlxKCJyWhaxKQXnDk7C8OCs9DcgzlCu7b2YSc,3186
+sqscraper-0.4.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sqscraper-0.4.1.dist-info/top_level.txt,sha256=TamDzMSzx0Yaq7DvgsGIQuG3489GUCdpY6wWsy7D6SI,10
+sqscraper-0.4.1.dist-info/RECORD,,
