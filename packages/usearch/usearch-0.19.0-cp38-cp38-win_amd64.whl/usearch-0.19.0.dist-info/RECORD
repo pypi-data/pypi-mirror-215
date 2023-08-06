@@ -1,0 +1,14 @@
+usearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usearch/client.py,sha256=GGPjJt7baBYppvB43Bd9DdxMCWM1_LxF4ZF1E8ziaKo,4320
+usearch/compiled.cp38-win_amd64.pyd,sha256=4jCDKAvmm7EscGgDqqvA2mW0qcBHjJUzoKM_fz-z8tw,348160
+usearch/eval.py,sha256=ZuyuzmCIIgGLpzlU5eM9UnjRGmWSt4sG_-tayTHri28,13164
+usearch/index.py,sha256=vH-vK3ZX0DySviMF2dadpsZZgpOzOezU3x0qOGij-L8,15823
+usearch/io.py,sha256=LYE7zphm13EYEuB7jNa3b04PIDC7T-1HQCX0Z0xwG4s,2628
+usearch/join.py,sha256=47FZHqkBq4CDciTbOhHp1hoJ6U8C2GM2R1N_5TgJgt8,3474
+usearch/numba.py,sha256=38Ky4VAz1Tjry1wgo08PEfa8nAz538vLUnUA8RjwXZY,3830
+usearch/server.py,sha256=Cbo58-y87j9tQArt_ATqE4j3akp5Lty2oAvGNSRKTKc,3880
+usearch-0.19.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+usearch-0.19.0.dist-info/METADATA,sha256=isgID53lGVKraI_BkiPVIKzboegzTvkuTdNBBEaq9tY,29860
+usearch-0.19.0.dist-info/WHEEL,sha256=F2aDWtWrilNM3-px1vBtJOEd7aRVTetQfFuDYmYbAUQ,100
+usearch-0.19.0.dist-info/top_level.txt,sha256=zFbid1SmQjk8RsbEgpqF7tTjgWdFvE2z0e1LQ2hKdPg,8
+usearch-0.19.0.dist-info/RECORD,,
