@@ -1,0 +1,13 @@
+autopack/VERSION,sha256=6d2FB_S_DG9CRY5BrqgzrQvT9hJycjNe7pv01YVB7Wc,6
+autopack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autopack/__main__.py,sha256=JOVG_6wDMXshiWePVe_2dIs5XTupOiTmK4XlOWj74C0,134
+autopack/api.py,sha256=P0Yrnldg4_PRn-IbUyh94ooiqv5_EtoH8DiwphBj-bo,1427
+autopack/cli.py,sha256=mAKGzw4aNTuVXxpcoemr59JbroOZr_l-TAtDy9snKrk,864
+autopack/errors.py,sha256=zl7VIRgATscflyg1ikgl6hKw0lTzmJY-4mClZe-VNVU,258
+autopack/get_pack.py,sha256=O9lAmctUpSxaIwLL9tsJ4dtw6GKemA74ZoOQ2NxU7bI,4459
+autopack/installation.py,sha256=sfqt6-pEPVbTQaFI5nnKfjNeU5dmYCf_9zg46b8cStE,2679
+autopack_tools-0.1.3.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+autopack_tools-0.1.3.dist-info/METADATA,sha256=AcvbpjwTKu9zmmY3diQcca71IEsYt_8b1RJFCbeMxUc,3576
+autopack_tools-0.1.3.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+autopack_tools-0.1.3.dist-info/entry_points.txt,sha256=W1UkHtcAWDQznOeTtqEtQRRPiZGtTgNPw7DIDyIDjFk,46
+autopack_tools-0.1.3.dist-info/RECORD,,
