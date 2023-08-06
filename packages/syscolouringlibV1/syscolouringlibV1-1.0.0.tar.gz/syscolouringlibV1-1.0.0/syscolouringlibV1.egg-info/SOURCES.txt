@@ -1,0 +1,7 @@
+setup.py
+pythonfontinglibraryV1/__init__.py
+syscolouringlibV1/__init__.py
+syscolouringlibV1.egg-info/PKG-INFO
+syscolouringlibV1.egg-info/SOURCES.txt
+syscolouringlibV1.egg-info/dependency_links.txt
+syscolouringlibV1.egg-info/top_level.txt
