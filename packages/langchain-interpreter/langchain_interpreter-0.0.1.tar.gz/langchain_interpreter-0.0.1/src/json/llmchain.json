@@ -1,0 +1,15 @@
+{
+  "type": "LLMChain",
+  "llm": {
+    "name": "openai",
+    "args": {
+      "temperature": 0
+    }
+  },
+  "prompt": {
+    "template": "What is a good name for a company that makes {product}?",
+    "input_variables": [
+      "product"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: langchain_interpreter
+Version: 0.0.1
+Summary: A way to turn json into langchain pipelines.
+Project-URL: Homepage, https://github.com/eoriont/langchain_interpreter
+Project-URL: Bug Tracker, https://github.com/eoriont/langchain_interpreter/issues
+Author-email: Elijah Tarr <elijahotarr@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Langchain Interpreter
+
+This project aims to allow for langchain pipelines to be created from a config file.
