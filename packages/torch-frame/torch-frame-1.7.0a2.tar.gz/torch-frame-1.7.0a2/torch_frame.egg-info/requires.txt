@@ -1,0 +1,7 @@
+termcolor
+numpy
+opencv-python
+tabulate
+torch
+pyyaml
+tqdm
