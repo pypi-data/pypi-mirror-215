@@ -1,0 +1,8 @@
+immutabledict
+matplotlib
+numpy
+pandas
+tqdm
+treelib
+xarray
+xrft
