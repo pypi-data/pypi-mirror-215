@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sospice
+Version: 0.0.2
+Summary: Python data analysis tools for Solar Orbiter/SPICE
+Author-email: SPICE consortium <spice-github.ias@universite-paris-saclay.fr>
+Project-URL: Homepage, https://github.com/solo-spice/sospice/
+Project-URL: Bug Tracker, https://github.com/solo-spice/sospice/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
