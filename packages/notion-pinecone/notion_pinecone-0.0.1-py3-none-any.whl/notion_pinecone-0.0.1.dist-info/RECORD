@@ -1,0 +1,10 @@
+NotionPinecone/__init__.py,sha256=2B8V9Gd6lI5_cTCSScZTkzVioz6lUfxqC_lHcwK-KZM,140
+NotionPinecone/embedding.py,sha256=7dNmyO-eOuPIp1r33HtQmflXx2hWKBHF-SVKfBkt4tQ,1779
+NotionPinecone/notion.py,sha256=vQ547mnahIoIv1ktuMMV9UCIMaYMdVXWOe6a6jGGmZM,3144
+NotionPinecone/pinecone.py,sha256=OVJ_v9USpZl9hKrRY0DLLitN_aI5G9ZDk-T4C3MpK2M,2686
+NotionPinecone/utils.py,sha256=jXbtHRN4SZUOGTDni3iEXag6p7x2EUsGpbtBYWCiVWg,495
+notion_pinecone-0.0.1.dist-info/LICENSE,sha256=4D7-0nWrN_fGTYTYgjdrrop2tHTpqLVuWZ44HKM3gPs,1088
+notion_pinecone-0.0.1.dist-info/METADATA,sha256=Dff59AwuayLqMYrXQlBwWavOEAKy3wVfzbWYvlfTylo,435
+notion_pinecone-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+notion_pinecone-0.0.1.dist-info/top_level.txt,sha256=NOOeK53CtRtSlfQlFu-o0MswPipm0qG2F6XDP6gEJD8,15
+notion_pinecone-0.0.1.dist-info/RECORD,,
