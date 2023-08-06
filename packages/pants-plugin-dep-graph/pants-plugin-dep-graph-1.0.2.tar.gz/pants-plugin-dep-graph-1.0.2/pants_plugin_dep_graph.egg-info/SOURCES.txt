@@ -1,0 +1,16 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+depgraph/__init__.py
+depgraph/register.py
+depgraph/backend/__init__.py
+depgraph/backend/goal.py
+depgraph/backend/rules.py
+depgraph/backend/structs.py
+pants_plugin_dep_graph.egg-info/PKG-INFO
+pants_plugin_dep_graph.egg-info/SOURCES.txt
+pants_plugin_dep_graph.egg-info/dependency_links.txt
+pants_plugin_dep_graph.egg-info/entry_points.txt
+pants_plugin_dep_graph.egg-info/namespace_packages.txt
+pants_plugin_dep_graph.egg-info/requires.txt
+pants_plugin_dep_graph.egg-info/top_level.txt

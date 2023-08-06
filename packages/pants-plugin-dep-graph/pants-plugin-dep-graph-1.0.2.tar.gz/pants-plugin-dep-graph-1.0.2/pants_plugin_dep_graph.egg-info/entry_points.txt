@@ -1,0 +1,3 @@
+[pantsbuild.plugin]
+rules = depgraph.register:rules
+target_types = depgraph.register:target_types
