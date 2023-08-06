@@ -1,0 +1,32 @@
+Bootstrap: docker
+#From: python:3.10-slim
+From: centos:7
+
+%files
+    bcl2fastq.rpm
+
+%post
+
+    yum install -y curl
+
+
+    curl -o cellranger-7.1.0.tar.gz "https://cf.10xgenomics.com/releases/cell-exp/cellranger-7.1.0.tar.gz?Expires=1686368001&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZi4xMHhnZW5vbWljcy5jb20vcmVsZWFzZXMvY2VsbC1leHAvY2VsbHJhbmdlci03LjEuMC50YXIuZ3oiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODYzNjgwMDF9fX1dfQ__&Signature=TuCtYfVD7BI1N~vVbvPwSUva7OL0oN3M~FkUQ8g5QxGJdW23T6waA2I6ooVN~ha8L1w-q7e9svQJFMpd9hr0bsV3K3yuNtN8K20c1tQS14UDgFGNI-P5n1K4rb0n~ccuQXpVLwSNQ8zsIC0kHmeykgE4~UJjHzxyZkkMR0DLXOt7Trx6AcaYibOKNnpSmoFZAadiLJi-t92-777-xZMOEKLD2gojiTTzj8IP5W1zKQUJ~6EZ3QZTCP21BrYFHb1lUcv9K6ySV2yCAFBke6tNhSMRtAREHq~PUyM4-uOjsj61sOdvcjGLqfVV-MLPy1j7bUwWVApj1CZxAQpsUiAPyA__&Key-Pair-Id=APKAI7S6A5RYOXBWRPDA"
+
+    tar xvfz cellranger-7.1.0.tar.gz
+    rm -f cellranger-7.1.0.tar.gz
+
+    export PATH=${PATH}:/cellranger-7.1.0/bin
+
+    yum install -y bcl2fastq.rpm
+    rm  bcl2fastq.rpm
+
+    export PATH=${PATH}:/cellranger-7.1.0/bin
+
+    yum install -y which 
+
+%environment
+    export PATH=${PATH}:/cellranger-7.1.0/bin
+
+%runscript
+    exec /cellranger-7.1.0/bin/cellranger "$@"
+

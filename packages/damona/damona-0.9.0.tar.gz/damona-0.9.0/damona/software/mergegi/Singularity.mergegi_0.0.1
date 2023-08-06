@@ -1,0 +1,29 @@
+Bootstrap: docker
+From: python:3.10-slim
+
+%labels
+  maintainer Thomas Cokelaer
+  package.name mergegi
+  package.version 0.1.0
+
+%post
+    apt-get update
+    apt-get install -y unzip
+
+
+    # The main package
+    pip install mergegi=='0.1.0'
+
+    ######## clean image ########
+    apt-get autoremove -y
+    apt-get clean -y
+
+
+%environment
+    export PYTHONPATH=/usr/local/lib/python3.10/site-packages
+
+
+%runscript
+  exec /usr/local/bin/mergegi "$@"
+
+

@@ -1,0 +1,83 @@
+Bootstrap: localimage
+From: micromamba_1.4.3.img
+
+
+%environment
+    export DEBIAN_FRONTEND=noninteractive
+
+%post
+    apt -y update && apt -y upgrade
+    #apt-get install -y  build-essential
+
+    # export the PATH here so that pip is found later on
+    export PATH=$PATH:/opt/conda/envs/main/bin/
+
+    # an alias
+    export OPTS=" -q -c conda-forge -c bioconda -n main -y "
+
+    micromamba install $OPTS python="3.10" pip
+
+    # compression
+    micromamba install $OPTS pigz pbzip2 dsrc
+
+    # mapping
+    micromamba install $OPTS bwa minimap2 samtools bamtools bowtie bowtie2 star
+
+
+    # sequana_fastqc pipeline
+    micromamba install $OPTS fastqc==0.11.9 falco fastp 
+
+
+    # General libraries easy and light to install
+    micromamba install $OPTS bcftools deeptools freebayes bedtools gffread shustring
+
+    # note that v0.6.8 (default in conda 4.9.2 gives a seg fault)
+    # at the time of this recipes, the latest is 0.8.0
+    micromamba install $OPTS sambamba==0.8.0
+
+    # for the transdenovo pipeline
+    micromamba install $OPTS trinity transdecoder trinotate hmmer
+
+
+    # 
+    micromamba install $OPTS sra-tools
+
+    # rnaseq
+    # subread is for featureCounts executable
+    micromamba install $OPTS subread salmon kallisto
+    micromamba install $OPTS RNA-seQC==2.3.5
+    micromamba install $OPTS rseqc
+
+    # misc
+    micromamba install $OPTS igvtools picard
+
+
+    # denovo, taxonomy, phylogeny
+    # khmer not provided since it requires python<3.9
+    micromamba install $OPTS spades krona kraken2 mafft raxml vt tabix
+
+    # only pacbio dependencies
+    micromamba install $OPTS pbccs
+
+
+    # pangolin related
+    #micromamba install $OPTS pangolin usher gofasta
+
+    #
+    micromamba install $OPTS 'snpEff=5.1d'
+
+    micromamba install $OPTS sequana==0.15.1
+
+
+    # cleanup
+    micromamba clean --packages -y
+    micromamba clean --all -y
+    rm -rf /opt/condas/pkg
+
+
+%environment
+    export PATH=$PATH:/opt/conda/envs/main/bin/
+
+%runscript
+    # Set the default command to run sequana
+    sequana "$@"

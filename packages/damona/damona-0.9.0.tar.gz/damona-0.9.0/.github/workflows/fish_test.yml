@@ -1,0 +1,86 @@
+name: fish shell test
+
+on:
+  workflow_dispatch:
+  push:
+      branches:
+        - main
+        - dev
+      paths:
+        - '**.py'
+        - '.github/workflows/fish/**'
+
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-20.04
+    strategy:
+      max-parallel: 5
+      matrix:
+        python: [3.9]
+        fish:
+         - 3
+      fail-fast: false
+
+    steps:
+
+    - name: precleanup
+      run: |
+        sudo rm -rf /usr/share/dotnet
+        sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
+    - uses: actions/checkout@v2
+    - uses: docker-practice/actions-setup-docker@master
+    - uses: fish-actions/install-fish@master
+    - name: Test docker
+      run: |
+          set -x
+          docker version
+          docker run --rm hello-world
+
+    - name: install apptainer
+      run: |
+        sudo add-apt-repository -y ppa:apptainer/ppa
+        sudo apt update
+        sudo apt install -y apptainer
+        singularity version
+
+    - name: Set up Python 3.X
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+
+    - name: Install Damona using pip
+      run: |
+        pip install .[testing]
+    - name: Init damona in bash
+      run: |
+        damona
+        mkdir -p ~/.config/fish
+        echo "source ~/.config/damona/damona.fish" >> ~/.config/fish/config.fish
+    - name: Test installation hisat2
+      run: |
+        which fish
+        cat << EOF > test.fish
+        #!/usr/bin/fish
+        damona create TEST
+        damona activate TEST
+        damona install hisat2
+        damona install fastqc
+        damona deactivate
+        EOF
+        cat test.fish
+        `(fish test.fish)`
+      env:
+        DAMONA_EXE: /usr/share/miniconda/bin/damona
+        DAMONA_PATH: /home/runner/.config/damona
+        DAMONA_ENV: /home/runner/.config/damona/envs/TEST
+        DAMONA_SHELL_INFO: "fish"
+        DAMONA_SINGULARITY_OPTIONS: ""
+   
+
+
+
+
+
+

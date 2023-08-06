@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: alpine:latest
+
+%labels
+    Author thomas cokelaer
+
+%post
+    apk add curl
+    apk add --no-cache gcc musl-dev && apk add --no-cache rust cargo
+
+
+%environment
+    #echo "backend:agg" > matplotlibrc
+
+%runscript
+    #PYTHONNOUSERSITE=1 exec ${1+"$@"}

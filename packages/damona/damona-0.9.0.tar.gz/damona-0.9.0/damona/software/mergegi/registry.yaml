@@ -1,0 +1,10 @@
+mergegi:
+  doi: 10.5072/zenodo.1134856
+  binaries: mergegi
+  zenodo_id: 1134857
+  releases:
+    0.0.1:
+      download: https://sandbox.zenodo.org/record/1134857/files/mergegi_0.0.1.img
+      md5sum: 2591ac4883e63fb91eab2442df03fe55
+      doi: 10.5072/zenodo.1134857
+      filesize: 63651840

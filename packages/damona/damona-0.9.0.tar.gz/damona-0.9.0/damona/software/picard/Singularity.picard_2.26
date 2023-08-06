@@ -1,0 +1,29 @@
+Bootstrap: library
+From: cokelaer/damona/conda:4.9.2
+
+
+%labels
+    Author thomas cokelaer
+
+%post
+
+
+    export PATH=$PATH:/usr/local/anaconda/bin
+    export LANG=C   # prevents perl for raising warnings
+    export PERL5LIB=/usr/local/anaconda/lib/perl5/5.22.0
+
+    # misc
+    conda install picard
+
+
+    # Let us save some space
+    conda clean --packages -y
+    conda clean --all -y # next requires lots of space
+    rm -rf /usr/local/anaconda/pkgs
+
+
+%environment
+    #
+    
+%runscript
+    PYTHONNOUSERSITE=1 exec ${1+"$@"}

@@ -1,0 +1,77 @@
+name: bash shell test
+
+on:
+  workflow_dispatch:
+  push:
+      branches:
+        - main
+        - dev
+      paths:
+        - '**.py'
+        - '.github/workflows/bash/**'
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-20.04
+    strategy:
+      max-parallel: 5
+      matrix:
+        python: [3.9]
+      fail-fast: false
+
+    steps:
+
+    - name: precleanup
+      run: |
+        sudo rm -rf /usr/share/dotnet
+        sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
+    - uses: actions/checkout@v2
+    - uses: docker-practice/actions-setup-docker@master
+    - name: Test docker
+      run: |
+          set -x
+          docker version
+          docker run --rm hello-world
+
+    - name: install apptainer
+      run: |
+        sudo add-apt-repository -y ppa:apptainer/ppa
+        sudo apt update
+        sudo apt install -y apptainer
+        singularity version
+
+    - name: Set up Python 3.X
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+
+    - name: Install Damona using pip
+      run: |
+        pip install .[testing]
+    - name: Init damona in bash
+      run: |
+        bash
+        damona 
+        echo " source ~/.config/damona/damona.sh" >> ~/.bashrc
+    - name: Test installation hisat2
+      run: |
+        #source /home/runner/.config/damona/damona.sh
+        damona create TEST
+        damona activate TEST
+        damona install hisat2  # a docker file
+        damona install fastqc  # a zenodo/damona file
+        damona install minimap2  # a zenodo/damona file
+        damona deactivate
+      env:
+        DAMONA_EXE: /usr/share/miniconda/bin/damona
+        DAMONA_PATH: /home/runner/.config/damona
+        DAMONA_ENV: /home/runner/.config/damona/envs/TEST
+        DAMONA_SINGULARITY_OPTIONS: ""
+   
+
+
+
+
+
+
