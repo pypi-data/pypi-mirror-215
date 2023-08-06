@@ -1,0 +1,8 @@
+micropython_mpl3115a2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+micropython_mpl3115a2/i2c_helpers.py,sha256=PiLpenDIimcCDIuLQ0TvVuY6M0KFeNHjxcLzVyYYm-A,3972
+micropython_mpl3115a2/mpl3115a2.py,sha256=uzQZx_Uq5NG9mw8Dke92FallddY0Bd0VKV4-5qOqRGk,6781
+micropython_mpl3115a2-0.1.0.dist-info/LICENSE,sha256=RzDRQUi8478TRF8tEO9TZzAIdMZDxwpMRik2l1mwdog,1082
+micropython_mpl3115a2-0.1.0.dist-info/METADATA,sha256=6r-OQriOlfx2NVHLXv0XseM222qm-m-Q__cJnqT4538,3277
+micropython_mpl3115a2-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+micropython_mpl3115a2-0.1.0.dist-info/top_level.txt,sha256=D0Q55HTLe-gDvujO-itoaNKuw3VZ6FneFVw0jLoundE,22
+micropython_mpl3115a2-0.1.0.dist-info/RECORD,,
