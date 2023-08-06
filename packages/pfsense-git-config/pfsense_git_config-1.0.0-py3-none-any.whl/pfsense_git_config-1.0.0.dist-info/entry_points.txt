@@ -1,0 +1,3 @@
+[console_scripts]
+pfsense_git_config=pfsense_git_config.main:app
+
