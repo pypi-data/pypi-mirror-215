@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: thzsts
+Version: 0.0.1
+Home-page: https://github.com/NanoTHzCoding/THz_STS_Algorithm
+Author: Stefanie Adams
+Author-email: nanothz.coding@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+
+# THz-STS-Algorithm
+A compilation of functions to perform the steady-state terahertz scanning tunneling spectroscopy (THz-STS) algorithm described in Ammerman, S.E. et al. Nat Commun 12, 6794 (2021). https://doi.org/10.1038/s41467-021-26656-3 and functions to determine a true waveform from THz cross-correlation measurements described in ...
+
+## Installation
+
+Run the following to install
+
+```python
+pip install thzsts
+```
+
+## Usage
+
+```python
+from thzsts import algorithm
+
+...
+
+```
