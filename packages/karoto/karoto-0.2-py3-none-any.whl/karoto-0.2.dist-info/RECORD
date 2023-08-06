@@ -1,0 +1,17 @@
+karoto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karoto/backend.py,sha256=-gPdz_dMMun2cLVBk68SwiWsdr7u822C5vERqzMYAjI,10577
+karoto/base_feed.py,sha256=5LwHIlW0jo6Cp3iZqfHThsrOBJWJO3CieAUaGHs45CM,2751
+karoto/clickable_label.py,sha256=0wx2McnKmJaXsQ9Os53puCVTRwBRDLfj3R8hC-WXXyQ,573
+karoto/error_bar.py,sha256=mDltjhGsTV8h0wTKuseEA4XoLjgf3vU8-CzKrfmAUtU,2533
+karoto/flow_layout.py,sha256=SS06AltQUlQP4DX5pacnuoDSRl2r1DqVYxTbGzpmckg,11302
+karoto/main.py,sha256=uWTG6kmk69kheSc1YAxyU3vQdY65ExQQ9Zm6k4j497Q,6381
+karoto/shopping_feed.py,sha256=1Rv1BzYgL-5jhv0_W5hZ7vodFR9_Ohqb0kM_EpEbmzs,8353
+karoto/storage_feed.py,sha256=yoNWmvyrTIS80YVtmzjp4H3t7zGtkUDf5cs0VpAnUzc,12738
+karoto/style.py,sha256=Rg6OTync7L8CUKWkC3M1oO8Bav60MdKKD0a4pFBhXJw,7369
+karoto/tags.py,sha256=zz9Ey1hp24A5t0hFUdpA2cEyHIjViUQ3aTTfLq_Jt0A,4491
+karoto-0.2.dist-info/LICENSE.MIT,sha256=K_IFSv3qmxU1W3RRwcBC-DP1ie-cXHH6G4g2DDMcZC0,1056
+karoto-0.2.dist-info/LICENSE.anarchist.md,sha256=yY4u7tHkcFubibcEX7cOAgW7ehpJC4YUdKUB64Zt8E0,627
+karoto-0.2.dist-info/METADATA,sha256=UqWGbHb0tjNHHBQDUC5KZhU6HA6x8K9e5yUG64pCS2k,5152
+karoto-0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+karoto-0.2.dist-info/entry_points.txt,sha256=Ud58if1dsPg4ndtPVgCROj7rqMxCji1QhqkLOi4sFUg,43
+karoto-0.2.dist-info/RECORD,,
