@@ -1,0 +1,48 @@
+# jinja2-ext-path
+
+    $ pip install jinja2-ext-path
+
+## Usage
+
+See [Extensions - Adding Extensions](https://jinja.palletsprojects.com/en/3.0.x/extensions/#adding-extensions).
+
+You would be able to use it like this:
+
+```py
+jinja_env = Environment(extensions=['jinja2_ext_path.basename', 'jinja2_ext_path.dirname'])
+```
+
+Or:
+
+```py
+jinja_env.add_extension('jinja2_ext_path.dirname')
+```
+
+Then you can render like this:
+
+```py
+jinja2_env.from_string("{{ '/home/user/test.txt'| dirname }}")
+```
+
+For further reference:
+
+- [Python 3 — os.path](https://docs.python.org/3/library/os.path.html)
+- [jinja2 — Template Designer Documentation - Filters](https://jinja.palletsprojects.com/en/3.1.x/templates/#filters)
+
+**Please note:** currently methods `os.path.dirname` and `os.path.basename` are included. Feel free to put in a PR.
+
+## Installation
+
+```$
+$ pip install jinja2-ext-path
+```
+
+## Development
+
+This project uses [pre-commit](https://pre-commit.com/#installation).
+
+## License
+
+Licensed under **GNU General Public License** (Version 3, 29 June 2007).
+
+See [LICENSE.md](LICENSE.md).
