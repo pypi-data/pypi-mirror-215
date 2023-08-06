@@ -1,0 +1,92 @@
+[tool.poetry]
+name = "jupyter-cleaner"
+version = "0.2.2"
+description = "Easy git tracking of Jupyter lab files"
+license = "MIT"
+authors = ["Daniel Stoops <danielstoops25@gmail.com>"]
+maintainers = ["Daniel Stoops <danielstoops25@gmail.com>"]
+readme = "README.md"
+packages = [{include = "jupyter_cleaner"}]
+homepage = "https://github.com/Stoops-ML/jupyter-cleaner"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+black = {extras = ["jupyter"], version = "^23.3.0"}
+reorder-python-imports = "^3.10.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.0"
+tox = "^4.6.3"
+flake8 = "^6.0.0"
+pytest = "^7.3.2"
+pre-commit = "^3.3.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jupyter-cleaner = "jupyter_cleaner.jupyter_cleaner:main"
+
+[tool.jupyter-cleaner]
+execution_count=0
+remove_outputs=true
+format=true
+reorder_imports=true
+indent_level=4
+
+[tool.pytest.ini_options]
+testpaths = "tests"
+addopts = [
+    "--cov=jupyter_cleaner",
+    "--cov-fail-under=90",
+    "--cov-report=term-missing",
+    "--cov-report=term",
+    "--cov-report="
+]
+
+[tool.tox]
+# run in parent (pwsh) shell before tox: pyenv local 3.8.10, 3.9.13, 3.10.10, 3.11.2
+legacy_tox_ini = """
+[tox]
+envlist =
+    python38
+    python39
+    python310
+    python311
+    lint
+isolated_build = true
+
+[testenv]
+deps =
+    pytest
+    pytest-cov
+setenv =
+    PYTHONPATH = {toxinidir}
+commands =
+    python -c "import sys; print(sys.version_info)"
+    python -m pytest --basetemp={envtmpdir}
+
+[testenv:python38]
+base_python = python38
+
+[testenv:python39]
+base_python = python39
+
+[testenv:python310]
+base_python = python310
+
+[testenv:python311]
+base_python = python311
+
+[testenv:lint]
+deps =
+    flake8
+    mypy
+    black
+commands =
+    python -m flake8 jupyter_cleaner/ tests/
+    python -m mypy jupyter_cleaner/ tests/
+    python -m black --check --diff .
+"""
