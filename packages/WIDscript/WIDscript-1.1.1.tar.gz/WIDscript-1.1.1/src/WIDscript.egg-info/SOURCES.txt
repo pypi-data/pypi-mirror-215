@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/WIDscript/__init__.py
+src/WIDscript.egg-info/PKG-INFO
+src/WIDscript.egg-info/SOURCES.txt
+src/WIDscript.egg-info/dependency_links.txt
+src/WIDscript.egg-info/top_level.txt
