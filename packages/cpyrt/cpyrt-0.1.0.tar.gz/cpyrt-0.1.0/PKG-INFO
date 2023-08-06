@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cpyrt
+Version: 0.1.0
+Summary: A Python library for handling data in NIST's Cybersecurity and Privacy Reference Tool JSON format.
+License: GPL-3.0
+Author: Al S
+Author-email: xee5ch@member.fsf.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
