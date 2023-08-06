@@ -1,0 +1,15 @@
+src/greeting/__about__.py,sha256=kap-ohHNU1Q9afLNAfUOdMwL0IBTpHgkEZOzVNwcPoM,131
+src/greeting/__init__.py,sha256=oZXPM-84YM5kEwdl4m-9VFrukImABno53e6f37lXpxA,109
+src/greeting/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+src/greeting/apps.py,sha256=FSsqhVZicP5lYPpw92wDxM1uNT-uq_SPvAe0_kouORU,148
+src/greeting/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+src/greeting/tests.py,sha256=hwbDyaIrq93ZDogWcl5tW3SAvPWzNwYXiHix-r_Ff1A,375
+src/greeting/urls.py,sha256=kj5htUWy80tMzp1jUvG31GH2iJWzqbCAFLOjGhpUc7A,136
+src/greeting/views.py,sha256=sd1POCH3Op9MTHqCwyReiurvjsR39Pu_rrwNFHI-Fb0,193
+src/greeting/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/greeting/static/greeting/style.css,sha256=Tn4GSVbxFNjDMwpBy5IMt0-5T-3N7T2nT4mFyeDgdyE,36
+src/greeting/templates/greeting/index.html,sha256=2y4QGP-EP95OsTnezqgSJdOQPyeTC5g2C60LAj1vWL0,106
+greeting_green-0.0.1.dist-info/METADATA,sha256=qlt-KqAmbF_4ycSBBLfPKv-MPtHqfkp8-C1FdXlhPk0,1571
+greeting_green-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+greeting_green-0.0.1.dist-info/licenses/LICENSE.txt,sha256=46RExFXjIfEh2GLrX2gb24h-u-PLG7tQh5HxGwhll8A,1101
+greeting_green-0.0.1.dist-info/RECORD,,
