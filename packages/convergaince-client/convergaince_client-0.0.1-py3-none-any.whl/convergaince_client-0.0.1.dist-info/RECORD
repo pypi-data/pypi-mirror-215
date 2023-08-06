@@ -1,0 +1,10 @@
+convergaince_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convergaince_client/cfg.py,sha256=YClb6fOGuyAH6sXXjI7zoi4IkVSC9NS-YLDJk5vFAxY,16
+convergaince_client/dataset.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convergaince_client/lib.py,sha256=Kf2YtJ8xPNGFevCiu9M6hVg57j62wfAvDuQdXhymQAw,4277
+convergaince_client/main.py,sha256=Uo53uHNnwvr3INzzi0-5xeCJuVOLywQkd3kUzb-9moE,2850
+convergaince_client/retrieve.py,sha256=uzVrOMQpI5OVfQ9qvF5IHJgtQfziBOj7Z4lCLuAJZko,615
+convergaince_client-0.0.1.dist-info/METADATA,sha256=Tr6kBFhla-2s7JCijFfZcIFdi3SmC5sYb2u0OLiUXgA,370
+convergaince_client-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+convergaince_client-0.0.1.dist-info/top_level.txt,sha256=YI84o46pf1GwzyfNBjm3Btj49Cl0k85FPuPbFrMVSCk,20
+convergaince_client-0.0.1.dist-info/RECORD,,

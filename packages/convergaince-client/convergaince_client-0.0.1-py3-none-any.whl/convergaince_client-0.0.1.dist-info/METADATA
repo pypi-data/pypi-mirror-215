@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: convergaince-client
+Version: 0.0.1
+Summary: This is the API client of Convergaince Platform
+Home-page: UNKNOWN
+Author: Rachid Belmeskine
+Author-email: rachid.belmeskine@gmail.com
+License: PRIVATE LICENSE
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+UNKNOWN
+
+
