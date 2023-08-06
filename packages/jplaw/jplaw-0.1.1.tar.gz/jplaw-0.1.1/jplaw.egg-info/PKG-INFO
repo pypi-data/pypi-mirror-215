@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jplaw
+Version: 0.1.1
+Summary: A python wrapper for the lemmy HTTP API. Forked from plaw by Benjamin Jablonski (benja810)
+Author: Amar Persaud
+Author-email: Amar Persaud <tehspartaa@gmail.com>
+Project-URL: Homepage, https://github.com/amarpersaud/python-jplaw
+Project-URL: Bug Tracker, https://github.com/amarpersaud/python-jplaw/issues
+Keywords: lemmy plaw api jplaw
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python Lemmy API Wrapper
+Like PRAW but for Lemmy
+
+Written using the [Lemmy TS library](https://github.com/LemmyNet/lemmy-js-client) for reference.
+
+Forked from benja810's plaw
