@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230624.0
+-------------
+
+* Fix execution of local netbox playbooks (#499)
