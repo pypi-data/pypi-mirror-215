@@ -1,0 +1,104 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Perangkat sudah dikonfigurasi"
+        },
+        "error": {
+            "cannot_connect": "Gagal terhubung",
+            "invalid_auth": "Autentikasi tidak valid",
+            "invalid_input": "Nama host atau alamat IP tidak valid"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "ip_address": "Alamat IP",
+                    "password": "Kata Sandi"
+                },
+                "description": "Berikan alamat IP atau mDNS perangkat dan kata sandinya",
+                "title": "Identifikasi perangkat"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "hydrogen_sulfide": {
+                "name": "Hidrogen sulfida"
+            },
+            "industrial_volatile_organic_compounds": {
+                "name": "VOC (Industri)"
+            },
+            "maximum_noise": {
+                "name": "Kebisingan (Maksimum)"
+            },
+            "methane": {
+                "name": "Metana"
+            },
+            "methanethiol": {
+                "name": "Methanethiol"
+            },
+            "nitrogen_dioxide": {
+                "name": "Nitrogen dioksida"
+            },
+            "nitrogen_monoxide": {
+                "name": "Nitrogen monoksida"
+            },
+            "nitrous_oxide": {
+                "name": "Nitrogen oksida"
+            },
+            "noise": {
+                "name": "Kebisingan"
+            },
+            "organic_acid": {
+                "name": "Asam organik"
+            },
+            "oxygen": {
+                "name": "Oksigen"
+            },
+            "ozone": {
+                "name": "Ozon"
+            },
+            "performance_index": {
+                "name": "Indeks kinerja"
+            },
+            "pm1": {
+                "name": "PM1"
+            },
+            "pm10": {
+                "name": "PM10"
+            },
+            "pm25": {
+                "name": "PM2.5"
+            },
+            "pressure": {
+                "name": "Tekanan"
+            },
+            "propane": {
+                "name": "Propana"
+            },
+            "radon": {
+                "name": "Radon"
+            },
+            "refigerant": {
+                "name": "Pendingin"
+            },
+            "relative_pressure": {
+                "name": "Tekanan relatif"
+            },
+            "silicon_hydride": {
+                "name": "Silikon Hidrida"
+            },
+            "sulphur_dioxide": {
+                "name": "Sulfur dioksida"
+            },
+            "temperature": {
+                "name": "Suhu"
+            },
+            "virus_index": {
+                "name": "Indeks Virus"
+            },
+            "volatile_organic_compounds": {
+                "name": "VOC"
+            }
+        }
+    }
+}
