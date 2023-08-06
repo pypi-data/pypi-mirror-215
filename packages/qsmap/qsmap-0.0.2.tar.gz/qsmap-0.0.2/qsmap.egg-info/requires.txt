@@ -1,0 +1,7 @@
+folium==0.14.0
+numpy
+overpy==0.6
+pandas
+polyline==2.0.0
+pyspark
+Requests==2.31.0
