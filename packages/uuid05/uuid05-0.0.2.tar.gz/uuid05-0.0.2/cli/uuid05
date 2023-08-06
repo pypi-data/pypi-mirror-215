@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+from argparse import ArgumentParser
+
+from uuid05 import UUID05
+
+
+def main():
+    parser = ArgumentParser()
+    parser.add_argument('-w', '--workers', type=int, help='Amount of worker processes.')
+    parser.add_argument('-t', '--ttl', type=int, help='How many seconds an object lives before being deleted.')
+    parser.add_argument('-p', '--precision', type=int, help='Increase up to 6 if you create objects frequently.')
+    parser.add_argument('-b', '--base64', action='store_true', help='Use base64 to compact it event more')
+    parser.add_argument('-a', '--altchars', type=str, help='Alternative characters for b64encode')
+    args = parser.parse_args()
+    kwargs = {}
+    if args.workers:
+        kwargs['workers'] = args.workers
+    if args.ttl:
+        kwargs['ttl'] = args.ttl
+    if args.precision:
+        kwargs['precision'] = args.precision
+    uid: UUID05 = UUID05.make(**kwargs)
+    print((uid.as_b64(altchars=args.altchars.encode()) if args.altchars else uid.as_b64()) if args.base64 else uid)
+
+
+if __name__ == '__main__':
+    main()
