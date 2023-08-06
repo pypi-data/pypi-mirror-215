@@ -1,0 +1,3 @@
+[console_scripts]
+vulturecov=vulturecov.__main__:main
+
