@@ -1,0 +1,27 @@
+musketeer/__init__.py,sha256=N53F87jnDXnPWTxIl8Act-J_9sVbOVV8kluLQav-f9o,23
+musketeer/__main__.py,sha256=_raqaa0ciQQJVRiG-uqDCNCvcTLQ8-xwjdBAOc8Hp2M,10662
+musketeer/combineResiduals.py,sha256=rheUO4_w2MOqWnh8mGmDRBAJXe6kQxScvNHro3PxeRI,1082
+musketeer/contributingSpecies.py,sha256=IuBTDMkFZMu010xSzXG7lzFrnw82QT52MtbNzDZoXH4,8000
+musketeer/contributors.py,sha256=OAhmZiq5p2S_t85Wb5Q8VWt-deyxgBjDrY6umPDya58,19032
+musketeer/editData.py,sha256=T1uEaH0aHeN8rZ89UoE1twVgmf7jO9O_mrdKKwTGLmY,8404
+musketeer/equilibriumConstants.py,sha256=gSCb4HO5SFQYzi4qj7f2U9HwtQ0iqQnyGCXwJlr4kcE,13925
+musketeer/fitSignals.py,sha256=eKZkAzU6tH3-xa4WoPFpeQjzNnAOSiTU8qsV7a_gs9g,8433
+musketeer/knownSignals.py,sha256=F0IfUHrxphTX8KWSwOyPxwJjQU14nE2PiehXSxTlJ_c,10506
+musketeer/logo small.png,sha256=Lm5Fu0dUqRNSzhS4Fd_M8dnDVlUD8u2Ylutaxb8-keQ,937
+musketeer/moduleFrame.py,sha256=OMlYKW-WZXiGC9QF1KXhYLP-o2j9zUR4eW43RwkbILY,5452
+musketeer/patchMatplotlib.py,sha256=tKCJcKqnqVcYyWNQtF0vr9Jo0FFNmr5Rg-wj3mH85xA,8875
+musketeer/proportionality.py,sha256=PDE15RSSPpVkY_O7NufeUrL3Nr7ZDITJLEZAlLdwwIE,1266
+musketeer/scrolledFrame.py,sha256=PZ5NbwgleXP2HA72PdEPaCf9GBctLcwjIJRhD4n7pLE,12401
+musketeer/speciation.py,sha256=gLIwOj56ckH1YVZtI_SHhfP76m79V25v7XvymB1vMPY,22687
+musketeer/style.py,sha256=Bk-OS-CiFfBWOFOAsjFYn_M72f3L11UFWZKPzcclCjQ,607
+musketeer/table.py,sha256=_P1KhrZY28XHziAO7jV2w7beZVlLuFUaotXERqjJDeY,17174
+musketeer/titration.py,sha256=SAMduh3l1FYN2wYaSu3T8Nio92TIlACVkAlQSH3Yd-A,9381
+musketeer/titrationFrame.py,sha256=ORLDcWjQ2oQZqvAFBVrgz7W94xixuKmxd6P79KT-He0,48125
+musketeer/titrationReader.py,sha256=MVz5d5-PXPbhC_ytNTDyDsQ6oZas7sWBYsKTSkC6idw,8950
+musketeer/totalConcentrations.py,sha256=C9qDbAvpdRisHpFwi_R6PdxJYMzSspTGcmZ9wuCKV7c,17120
+musketeer/windowsHighDpiPatch.py,sha256=rt1VnOiiNTiRowDH0AgsQ_7kDzFHRh-krYLpJHQujpg,2903
+musketeer-1.3.0.dist-info/LICENSE,sha256=QRxyfgbSlt6dcxhDM9qLSlxVPMAEOqS13ZpNhsJM4_8,1093
+musketeer-1.3.0.dist-info/METADATA,sha256=bSbBPN7MOv7CDFbVc1Nd0gz8gr6CxNKrEqtcmQ2WwBc,1033
+musketeer-1.3.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+musketeer-1.3.0.dist-info/top_level.txt,sha256=TJI9oobeP5a1MU6i9ZhgdL-JPvihYQUVMK0h-4ue0Ls,10
+musketeer-1.3.0.dist-info/RECORD,,
