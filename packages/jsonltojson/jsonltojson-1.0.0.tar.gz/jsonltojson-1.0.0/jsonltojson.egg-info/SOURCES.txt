@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+jsonltojson/__init__.py
+jsonltojson/formatters.py
+jsonltojson.egg-info/PKG-INFO
+jsonltojson.egg-info/SOURCES.txt
+jsonltojson.egg-info/dependency_links.txt
+jsonltojson.egg-info/top_level.txt
