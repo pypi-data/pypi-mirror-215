@@ -1,0 +1,13 @@
+ddocs/__init__.py,sha256=UtQ2-ktxCyQOy6ZUNP_tCdsqzeMS6t6X0gh-BAiwMRw,122
+ddocs/__main__.py,sha256=D5caXKod4X2fZDN2KgyQj2bANOtgZPh1gTfLfjQmzCc,4355
+ddocs/db.py,sha256=y6OEJ6fJtOtTvjtBMEPrEsAHW0v-hG8y8uVnQHyC6uk,7015
+ddocs/gui.py,sha256=5eg5Il6v1QiOjjHe4jxKs0renGu1LrxosOvOUKgNnf0,5500
+ddocs/modules.py,sha256=4pYIuJr3uPY2FqA7-1nJGJxyysrjGIGBwwBdGVcU35Q,11519
+ddocs/fonts/OpenSans.ttf,sha256=46W9ytqpNa4mJ3g6y-dnLVDg82gfbZQxMD5R68QDL3g,528976
+ddocs/languages/javascript.txt,sha256=POEEInMr2bLWKNqd-1aywpSI--wkHdARiXGFHyk81bM,311
+ddocs/languages/python.txt,sha256=6J89Op90phu-M9R9KbfJ7ON3sTgLif8vJxUMoaurvmc,665
+ddocs-0.1.2.dist-info/METADATA,sha256=yvaTXLCVBtoRpVJQ-IcY0paWWxshhqgVLvzOlZS3NHg,7476
+ddocs-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ddocs-0.1.2.dist-info/entry_points.txt,sha256=cVUHFp6V7IdsrDuVJe97Likrb9gi1t22g1zbCQe1quc,73
+ddocs-0.1.2.dist-info/top_level.txt,sha256=6vcWrso25_UTEzI_OyIcLga5moIh7VZPyss6cAoGsz4,6
+ddocs-0.1.2.dist-info/RECORD,,
