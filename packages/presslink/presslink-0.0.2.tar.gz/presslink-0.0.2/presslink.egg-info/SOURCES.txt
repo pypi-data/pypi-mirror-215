@@ -1,0 +1,7 @@
+README.txt
+setup.py
+presslink.egg-info/PKG-INFO
+presslink.egg-info/SOURCES.txt
+presslink.egg-info/dependency_links.txt
+presslink.egg-info/requires.txt
+presslink.egg-info/top_level.txt

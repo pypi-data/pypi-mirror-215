@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: presslink
+Version: 0.0.2
+Summary: link mechanisms of mechanical press
+Home-page: UNKNOWN
+Author: Sanchit
+Author-email: sanchitsharma84@gmail.com
+License: MIT
+Description: This package contains set of modules for various link mechanisms used in mechanical presses
+Keywords: mechanical press link mechanism
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
