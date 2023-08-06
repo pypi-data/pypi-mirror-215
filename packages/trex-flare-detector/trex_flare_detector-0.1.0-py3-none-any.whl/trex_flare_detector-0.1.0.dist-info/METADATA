@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: trex-flare-detector
+Version: 0.1.0
+Summary: A PMF Flare Detection Tool
+Author: Shachar Israeli
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
