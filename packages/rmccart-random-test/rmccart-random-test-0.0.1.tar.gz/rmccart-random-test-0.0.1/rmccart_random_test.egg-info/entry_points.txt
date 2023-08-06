@@ -1,0 +1,2 @@
+[nbdev]
+sample_py = sample_py._modidx:d
