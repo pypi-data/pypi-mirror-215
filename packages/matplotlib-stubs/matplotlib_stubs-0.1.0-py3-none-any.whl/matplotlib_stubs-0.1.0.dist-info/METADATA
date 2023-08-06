@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: matplotlib-stubs
+Version: 0.1.0
+Summary: Unofficial stubs for the matplotlib package.
+Project-URL: Homepage, https://github.com/hoel-bagard/matplotlib-stubs
+Project-URL: Bug Tracker, https://github.com/hoel-bagard/matplotlib-stubs/issues
+Author: Bagard Hoel
+License: MIT
+License-File: LICENSE
+Keywords: matplotlib,stubs
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: matplotlib>=3.0
+Provides-Extra: build
+Requires-Dist: hatch; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pyright; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Matplotlib stubs
+
+Unofficial python stubs for the [matplotlib package](https://pypi.org/project/matplotlib/).
+
+Taken from [Microsoft's Python Type Stubs repo](https://github.com/microsoft/python-type-stubs) and made pip installable.
+
+
+## Installation
+
+```
+pip install .
+```
