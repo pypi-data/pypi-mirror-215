@@ -1,0 +1,2 @@
+[console_scripts]
+pypostman = pypostman.__main__:main
