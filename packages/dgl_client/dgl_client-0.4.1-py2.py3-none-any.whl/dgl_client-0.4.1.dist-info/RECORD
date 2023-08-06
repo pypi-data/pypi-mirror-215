@@ -1,0 +1,14 @@
+dgl_client/__init__.py,sha256=M2yNTNTaPiWXySaHsMarE7CWNlKYOEcRVAMKGQucoBU,64
+dgl_client/api_cli.py,sha256=L52wukJiRd-aIY6Gl_UuwEHJ25BI8efBAnVEISUDk6w,10719
+dgl_client/main.py,sha256=zHWPmCJDBr3uyhS0s_mqiaYK4lBcf7NRQYF_EBdIHkM,5011
+dgl_client/main2.py,sha256=GRNqMiUhjbdmyFxhpR2jswNrVLmBQAhLnpWJU6fb9jI,1448
+dgl_client/utils.py,sha256=CW_IFXEw_Elto0PQ_nHx28LQdKDRSQXUfAjR1bMpYUE,2573
+dgl_client/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dgl_client/commands/chat.py,sha256=BFJpQ94u0F3a8wjC0vI9hUM_-yLcNwu8D0VNL2zyf7s,1667
+dgl_client/commands/collections.py,sha256=9rB_eH5SO-3RJt1kgXPEqWH5fJ9M8DYu6WvWaTO0LhI,3092
+dgl_client/commands/ls.py,sha256=mcHb9iafO1fFneUydYvEn5XvBwi1DzPXY0sG4hr4ey4,1593
+dgl_client/commands/utils.py,sha256=zN4Yj7ZiEuP5nYYZXfsmyaxwZQcvxPbZLkfZ5-OGoBU,1008
+dgl_client-0.4.1.dist-info/entry_points.txt,sha256=2RanijUSV_n5Jf6trny5Db8b0q4u60dP7lohj48l7Ms,48
+dgl_client-0.4.1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+dgl_client-0.4.1.dist-info/METADATA,sha256=KvGMZA-4gkY9NggrKrvM1m08vK80-QX07uu8OfHtRcg,361
+dgl_client-0.4.1.dist-info/RECORD,,
