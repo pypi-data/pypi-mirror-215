@@ -1,0 +1,7 @@
+setup.py
+fancyTextTools/__init__.py
+fancyTextTools/fancyTextTools.py
+fancyTextTools.egg-info/PKG-INFO
+fancyTextTools.egg-info/SOURCES.txt
+fancyTextTools.egg-info/dependency_links.txt
+fancyTextTools.egg-info/top_level.txt
