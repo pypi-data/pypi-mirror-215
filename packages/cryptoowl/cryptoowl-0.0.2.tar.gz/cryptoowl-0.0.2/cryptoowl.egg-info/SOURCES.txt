@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+cryptoowl.egg-info/PKG-INFO
+cryptoowl.egg-info/SOURCES.txt
+cryptoowl.egg-info/dependency_links.txt
+cryptoowl.egg-info/requires.txt
+cryptoowl.egg-info/top_level.txt
