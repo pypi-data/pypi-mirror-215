@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: crystalpy
+Version: 0.0.11
+Summary: Python crystal polarization calcution
+Home-page: https://github.com/oasys-kit/crystalpy/
+Author: Manuel Sanchez del Rio, Edoardo Cappelli, Mark Glass
+Author-email: srio@esrf.eu
+License-File: LICENSE
