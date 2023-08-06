@@ -1,0 +1,15 @@
+mecabrc,sha256=2CChwX1gnUn-hTvBCjG3U1agHTex2l6Lxc_2xwtZVF0,286
+_MeCab.cpython-37m-x86_64-linux-gnu.so,sha256=olzKXSx3jr7MpnecZej_0lDvKrwlQxD57yX_hOq3qPg,1647089
+MeCab.py,sha256=pbTFghNdErft9Txh45tBaAk7W_1vspHLpGYKqKr173U,11744
+mecab_ko_msvc-0.999.data/scripts/mecab-cost-train,sha256=3YKlajhcWlkbI1XsHD8SlCrgiUxq3K-eZ18vPAEqq04,1451377
+mecab_ko_msvc-0.999.data/scripts/add-userdic.sh,sha256=a_YOnx3MMeHxCrQ-cjJCFfrF7WDoK9BtbTmoVHfdR5s,855
+mecab_ko_msvc-0.999.data/scripts/mecab,sha256=sgy-pQ_W7HMzW75zHtBMdz10vHftSzqMrvrJH5jhvSg,1381713
+mecab_ko_msvc-0.999.data/scripts/mecab-system-eval,sha256=AbzmVZQxJGL7480woiXueUK_WV4fnBpAE2fyJj7Vrp4,94049
+mecab_ko_msvc-0.999.data/scripts/mecab-dict-index,sha256=uGYwA2DKfAaQTTn8h41F2GLE2q1motyYRuvm2fHLftk,1402193
+mecab_ko_msvc-0.999.data/scripts/mecab-dict-gen,sha256=Ys740ce1W87fNbHymkvdiBxAf3YayHl041sWJsFMKGg,1815945
+mecab_ko_msvc-0.999.data/scripts/mecab-test-gen,sha256=r7Gr86tEYZ4krHMnYDfK9_zj2s700XdkINMF2yKdEZM,94049
+mecab_ko_msvc-0.999.dist-info/METADATA,sha256=iH-I29MqaXsvzCVD5SGl09cwVn7sCTtQn9c8U0FQGWg,7183
+mecab_ko_msvc-0.999.dist-info/RECORD,,
+mecab_ko_msvc-0.999.dist-info/WHEEL,sha256=5EmlTTqpRoo6_HubjOu8E3oU1erG5C5CUoVmz5map7g,97
+mecab_ko_msvc.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+mecab_ko_msvc.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
