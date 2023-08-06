@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+translang/__init__.py
+translang/core.py
+translang.egg-info/PKG-INFO
+translang.egg-info/SOURCES.txt
+translang.egg-info/dependency_links.txt
+translang.egg-info/entry_points.txt
+translang.egg-info/requires.txt
+translang.egg-info/top_level.txt

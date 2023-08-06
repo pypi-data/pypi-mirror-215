@@ -1,0 +1,6 @@
+requests
+deepl
+deep_translator
+bardapi
+openai
+google-cloud-translate==2.0.1
