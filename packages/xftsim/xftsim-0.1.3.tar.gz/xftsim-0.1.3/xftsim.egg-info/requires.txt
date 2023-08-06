@@ -1,0 +1,11 @@
+funcy
+networkx
+nptyping
+numba
+numpy
+pandas
+pandas_plink
+pygraphviz
+scipy
+sgkit
+xarray
