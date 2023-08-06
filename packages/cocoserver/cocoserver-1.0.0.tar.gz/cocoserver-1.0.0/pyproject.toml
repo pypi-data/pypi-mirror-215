@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cocoserver"
+dynamic = ["version", "readme", "description"]
+
+[tool.setuptools.dynamic]
+version = {attr = "cocoserver.__version__"}
+
+[metadata]
+authors = [
+    "Marc Culler <culler@users.noreply.github.com>",
+    "Nathan M. Dunfield <nathan@dunfield.info>",
+    "Matthias Görner <enischte@gmail.com>"
+]
+maintainers = [
+    "Marc Culler <culler@users.noreply.github.com>",
+    "Nathan M. Dunfield <nathan@dunfield.info>",
+    "Matthias Görner <enischte@gmail.com>"
+]
+readme = "README.rst"
+description = "A local HTTP server for compressed content."
+long-description_content_type = "text/x-rst"
+urls = ["https://github.com/3-manifolds/cocoserver"]
+license = "GPLv2+"
+keywords = "http, server, gzip, documentation"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Documentation"
+]
