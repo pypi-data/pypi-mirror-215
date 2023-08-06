@@ -1,0 +1,7 @@
+include sigdf/requirements.txt
+include sigdf/thirdparty.json
+include sigdf/README.MD
+include sigdf/Eula.txt
+include sigdf/sigcheck.exe
+include sigdf/sigcheck64.exe
+include sigdf/sigcheck64a.exe
