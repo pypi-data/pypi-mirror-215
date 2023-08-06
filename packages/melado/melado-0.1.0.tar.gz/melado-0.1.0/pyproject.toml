@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "melado"
+version = "0.1.0"
+description = ""
+authors = ["Luiz Mugnaini <luizmugnaini@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+numpy = ">=1.18,<1.24"
+matplotlib = "^3.7.1"
+pandas = "^2.0.0"
+scipy = "^1.10.1"
+numba = "^0.56.4"
+scikit-learn = "^1.2.2"
+tomli = "^2.0.1"
+sphinx = "^7.0.1"
+furo = "^2023.5.20"
+myst-parser = "^2.0.0"
+pytest = "^7.4.0"
+black = "^23.3.0"
+mypy = "^1.4.0"
+ruff = "^0.0.275"
+setuptools = "^68.0.0"
+wheel = "^0.40.0"
+twine = "^4.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+ignore = [
+    "E501",  # line too long, handled by black
+    "C901",  # too complex
+]
