@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ocfworker
+Version: 0.0.3
+Summary: Open Compute Framework for Serving Inference Requests in a Decentralized Manner.
+Author-email: Xiaozhe Yao <askxzyao@gmail.com>
+Project-URL: Homepage, https://github.com/autoai-org/ocf
+Project-URL: Bug Tracker, https://github.com/autoai-org/ocf/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: nats-py
+
