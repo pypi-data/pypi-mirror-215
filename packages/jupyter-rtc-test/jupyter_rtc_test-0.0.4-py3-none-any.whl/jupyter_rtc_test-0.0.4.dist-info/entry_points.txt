@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-rtc-test = jupyter_rtc_test.__main__:main
