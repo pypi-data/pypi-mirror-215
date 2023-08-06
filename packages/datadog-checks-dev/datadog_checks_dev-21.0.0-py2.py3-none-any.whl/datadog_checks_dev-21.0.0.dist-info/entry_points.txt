@@ -1,0 +1,8 @@
+[hatch]
+datadog_checks = datadog_checks.dev.plugin.hatch
+
+[pytest11]
+datadog_checks = datadog_checks.dev.plugin.pytest
+
+[tox]
+datadog_checks = datadog_checks.dev.plugin.tox
