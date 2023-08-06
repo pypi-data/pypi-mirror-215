@@ -1,0 +1,3 @@
+[console_scripts]
+compare_packages = compare_packages.cli:main
+

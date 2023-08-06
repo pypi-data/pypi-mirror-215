@@ -1,0 +1,9 @@
+compare_packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compare_packages/cli.py,sha256=NNmJLIC2sFqoZr39uOfRiFNbgCDA0aDqDey6of591KM,548
+compare_packages/compare_packages.py,sha256=xudEMOhUuOzDo45eI8JqKfWyU5PshTYW5sDXWRob86E,2547
+compare_packages-0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compare_packages-0.1.dist-info/METADATA,sha256=CBX4TMV7ghZktwnsMAgdGbG5kTeJxj_wGU34FXTlPaU,403
+compare_packages-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+compare_packages-0.1.dist-info/entry_points.txt,sha256=t9nmxVW5qqgQrewD6v4MJHdfijepx2uOmeY9ayCdGyM,64
+compare_packages-0.1.dist-info/top_level.txt,sha256=d3yLLNC8xNTJdepQ_FKapYvcpU1geV7y42As6yIMk34,17
+compare_packages-0.1.dist-info/RECORD,,
