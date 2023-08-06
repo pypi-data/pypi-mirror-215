@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: trackteroid
+Version: 0.1.0rc3
+Summary: Declarative, object-oriented wrapper for Ftrack queries. Powerful functional-style interactions with resulting collections.
+Author: Rico Koschmitzky, Dennis Weil
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023, Trixter
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/TrixterFilm/trackteroid
+Project-URL: Bug Tracker, https://github.com/TrixterFilm/trackteroid/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: ftrack-python-api
+Requires-Dist: wrapt
+
+<p>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset=".graphics/svg/logo_white.svg" width=100>
+        <img src=".graphics/svg/logo_black.svg" width=100>
+    </picture>
+</p>
+
+# Trackteroid
+
+[![Documentation Status][documentation-button]][documentation]
+[![Python Versions][pyversion-button]][pypi]
+[![BSD License][bsdlicense-button]][bsdlicense]
+
+[documentation]: https://trackteroid.readthedocs.io
+[documentation-button]: https://readthedocs.org/projects/trackteroid/badge/?version=latest
+[pyversion-button]: https://img.shields.io/pypi/pyversions/Trackteroid.svg
+[pypi]: https://pypi.org/project/trackteroid/
+[bsdlicense]: https://opensource.org/licenses/BSD-3-Clause
+[bsdlicense-button]: https://img.shields.io/badge/license-BSD-yellow.svg
+
+----
+**Declarative, object-oriented wrapper for Ftrack queries. Powerful functional-style interactions with resulting collections.**
