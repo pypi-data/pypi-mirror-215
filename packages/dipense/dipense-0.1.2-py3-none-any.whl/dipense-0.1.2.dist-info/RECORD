@@ -1,0 +1,10 @@
+dipense/__init__.py,sha256=aBT5Q8OT6XWmmSauRQr7hkNtZer2b4rYaNoc2kOOGWw,2626
+dipense/default.py,sha256=4fPzLJLa7A6ZXhWMEk__wtbrc_D3HCdrEw388NM-FlQ,1351
+dipense/drone.py,sha256=xk9Tq4K7nmrAd87oJAYsnKRXmjvKeJtH8UYYtfUlsj0,9288
+dipense/icheckp.py,sha256=TrW9V4QZj6uWdqkaebUurB7tW3JynVHLtxBgyKfeZm8,4601
+dipense/structure.py,sha256=BNhLkqXwcJmXLYF0vHFkADlmX5FTZ8JVXznTXwECYhU,1750
+dipense-0.1.2.dist-info/LICENSE,sha256=lCzJKjCwhzCbOvVs2M1O88pdLAX56m_iZys0TUQHj3k,1077
+dipense-0.1.2.dist-info/METADATA,sha256=bN2WHB0DYGdh2QoB1WZcS6a6J8KhWALpM4TWmzGzbUQ,4009
+dipense-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dipense-0.1.2.dist-info/top_level.txt,sha256=Vv5aNL26ASsL3oC5PM4DEMi-c1HJ0xdKKrY0rcjcP3g,8
+dipense-0.1.2.dist-info/RECORD,,
