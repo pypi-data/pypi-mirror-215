@@ -1,0 +1,9 @@
+synecdoche/__init__.py,sha256=k-9pwpxELBQLKAXs2c4YI3XQdg7VLPxmjZ7TdXw8dko,129
+synecdoche/_version.py,sha256=xy5icTVL_-T_uZleOq5SPoLjDLVLWIK0U8whN-ij6kI,21
+synecdoche/experimental.py,sha256=zGjjiss-N_YPwJJ4c7O9zso6PxcXs4qlFPbpOa-IslA,1740
+synecdoche/hyper.py,sha256=_gCRBFg1jeIHiBr3lyX4aP-9srKHNSPvJZTva3aDjeg,8460
+synecdoche-0.0.3.dist-info/LICENSE,sha256=XnDvQVsMN2t0lDayetouxBH6eQGhJGfBT6wFiUQXygs,1064
+synecdoche-0.0.3.dist-info/METADATA,sha256=hQBeLo9w83v8XWJ9GmcRHc3buUVfLE5U3bc6C3UMQx4,919
+synecdoche-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+synecdoche-0.0.3.dist-info/top_level.txt,sha256=T2Br7yPLnVWQjrpXX7-AJjP_sgs2oRmLYZ03tCduLi8,11
+synecdoche-0.0.3.dist-info/RECORD,,
