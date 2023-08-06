@@ -1,0 +1,18 @@
+[package]
+name = "ruff_rustpython"
+version = "0.0.0"
+publish = false
+authors = ["Charlie Marsh <charlie.r.marsh@gmail.com>"]
+edition = "2021"
+rust-version = "1.70"
+homepage = "https://beta.ruff.rs/docs"
+documentation = "https://beta.ruff.rs/docs"
+repository = "https://github.com/astral-sh/ruff"
+license = "MIT"
+resolver = "2"
+
+[lib]
+
+[dependencies]
+anyhow = { version = "1.0.69" }
+rustpython-parser = { git = "https://github.com/astral-sh/RustPython-Parser.git", rev = "08ebbe40d7776cac6e3ba66277d435056f2b8dca" , default-features = false, features = ["full-lexer", "all-nodes-with-ranges", "num-bigint"] }
