@@ -1,0 +1,14 @@
+django_super_svgs/management/commands/create_snippets.py,sha256=qht2_k7teRyrDkZYUVCNljRKvlzy04PW2hTuxWxXusQ,3645
+django_super_svgs/static/django_super_svgs/css/main.css,sha256=VZsjek2RKNPnSChSlq_zd5SHUTIZbkEfSST3baWQkVA,43
+django_super_svgs/templatetags/base.py,sha256=pPww562gF4BSYi04Z57lUoynwtNdlqmBb1P_De_rCas,5469
+django_super_svgs/templatetags/super_svgs.py,sha256=v4DBY3nlbz-qE1QYvF48eZ9ZT3azexBJExh1q_edVUo,218
+django_super_svgs/templatetags/svgs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_super_svgs/templatetags/svgs/dripicons.py,sha256=YF7eDIPRILJg-_Sn-_aEp4xcttGSuh7c_wMspHl_CVM,188194
+django_super_svgs/templatetags/svgs/hero_outline.py,sha256=-HZGi7QWMVkf8gYFfEYt4aEVmuoZ7PoH6oeEBwWSAqk,126226
+django_super_svgs/templatetags/svgs/hero_solid.py,sha256=HI7KRMxZznI9mWfkTysBNps6WjgEyCWLN0ohaU_LqwE,160707
+django_super_svgs/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_super_svgs/tests/test_snippets.py,sha256=7GiPvuY4u1s7TahUbxWbU2LFoTrFxlwlh8lnuG8uaus,3269
+django_super_svgs/tests/test_templates.py,sha256=GBiNFG6fTB0GT3CmSe9bZRAfIXOehZ37gNLzr3wDpzw,3187
+django_super_svgs-0.1.0.dist-info/METADATA,sha256=i5RyGYcLwUKkCYMnrLcxtNdQY6Rgc5sIEmGFlYkDCjM,2472
+django_super_svgs-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+django_super_svgs-0.1.0.dist-info/RECORD,,
