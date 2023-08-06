@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ProjectREMLA23Team09Lib
+Version: 0.0.1
+Summary: A version-aware library
+Home-page: https://github.com/remla23-team09/lib
+Author: Zhiyong Zhu
+Author-email: z13913982280@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+ProjectREMLA23Team09Lib
+
+
