@@ -1,0 +1,15 @@
+
+
+#info
+from water5py.decode import w5_decode
+
+print(w5_decode(b"\x61\x11\x22\x33\x44\x55\x66\xBF", 3))
+
+#command
+print(w5_decode(b"\x51\x11\x22\x33\x44\x55\x66\x77", 3))
+
+#reset
+print(w5_decode(b"\x41\x11\x22\x33\x44\x55\xBF\x66", 3))
+
+#daily
+print(w5_decode(b"\xF4\xFF\xFF\xFF\xFF\xFF\xFF\xFF", 3))

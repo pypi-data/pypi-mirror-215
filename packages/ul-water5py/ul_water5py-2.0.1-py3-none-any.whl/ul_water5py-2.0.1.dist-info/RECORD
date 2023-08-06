@@ -1,0 +1,15 @@
+water5py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water5py/__main__.py,sha256=GlUcGORpD2RWlialaGGpZgRT38_As68zx7NdsIwhn_A,301
+water5py/command.py,sha256=YzkAKJx8MxUQxC3uc03OfcjgztsbbNLFqMaZn0pPuFQ,1360
+water5py/daily.py,sha256=z3MISIlXJsC3xE2yrYRV2vxjcioV-oBegYHmxsKRDmo,1042
+water5py/decode.py,sha256=KMYqAPt0e3rcSBBAbFAIQKJSNN-k8o1_JhnXsNCe6b8,1708
+water5py/info.py,sha256=tFHGmGer4H5C6MBZj8XZHwy2WPsiLEZkRZ9_ZaDfq74,1398
+water5py/reset.py,sha256=EcjKdk66Q5Ip0S8F6YVOC2xWtREmHWFr_oJSQrGSPFQ,1437
+water5py/type_massage.py,sha256=IzmkZ86Jyz0nJh8W4UJ1Gb5AYW61YBDRZsayr4rTuwg,393
+water5py/utils.py,sha256=UIuFn7PnfTsz6KkVeLasc3C1oPeONYrxEQ4sIVRI1ZM,671
+water5py/weekly.py,sha256=g4CRvdn4WGWUpA_rK7Bky5gdBrntAE8YZq-mGPe7q1w,1741
+ul_water5py-2.0.1.dist-info/LICENSE,sha256=6Qo8OdcqI8aGrswJKJYhST-bYqxVQBQ3ujKdTSdq-80,1062
+ul_water5py-2.0.1.dist-info/METADATA,sha256=zsrgS1DnUjqMW9A_Iw2djQ3Gc5K4ehO5ElXGI6BWCps,627
+ul_water5py-2.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ul_water5py-2.0.1.dist-info/top_level.txt,sha256=gAKJ4ZvMLvu06KQxnB-SJIhWgj7zgxzOCjQvIcKbW2Y,9
+ul_water5py-2.0.1.dist-info/RECORD,,
