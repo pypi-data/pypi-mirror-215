@@ -1,0 +1,2 @@
+[console_scripts]
+cars = cars.cars:main
