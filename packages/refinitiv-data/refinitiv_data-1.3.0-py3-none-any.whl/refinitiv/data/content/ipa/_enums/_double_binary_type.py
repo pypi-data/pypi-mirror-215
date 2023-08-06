@@ -1,0 +1,11 @@
+# coding: utf8
+
+from enum import unique
+
+from ...._base_enum import StrEnum
+
+
+@unique
+class DoubleBinaryType(StrEnum):
+    DOUBLE_NO_TOUCH = "DoubleNoTouch"
+    NONE = "None"
