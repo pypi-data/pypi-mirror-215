@@ -1,0 +1,9 @@
+README.md
+setup.py
+zeroset/__init__.py
+zeroset/cv0.py
+zeroset.egg-info/PKG-INFO
+zeroset.egg-info/SOURCES.txt
+zeroset.egg-info/dependency_links.txt
+zeroset.egg-info/requires.txt
+zeroset.egg-info/top_level.txt
