@@ -1,0 +1,14 @@
+datamazing/__init__.py,sha256=Nu-rR7iMnGjFVBndkhPyoIWvir9Y9zfK7pZUsYdqVfA,21
+datamazing/pandas/__init__.py,sha256=rhKDJ8y5ytQr_DhFrujUtPSTe5BOhS4fQp3ZbfmKQpM,295
+datamazing/pandas/datacollection/__init__.py,sha256=NGVcfx9Bes-JQlMM45s34f-NpRCV1J7FaZpj6Rrr_mo,267
+datamazing/pandas/testing/__init__.py,sha256=pEyJ6oeYRkq-30Jt2Qv_qCUltHiTTZXRFNEpGJoIOvI,113
+datamazing/pandas/testing/assertions.py,sha256=1jS24iDFRoRz8-RNflGjav6jznZgnG3MG3CxsOD8v3w,826
+datamazing/pandas/testing/data.py,sha256=dyxhKt51RkF13i_E5Z3qh8RHp-ck4VJQgdFdxF7xxNk,3752
+datamazing/pandas/transformations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamazing/pandas/transformations/basic.py,sha256=bX_RSRi7l_reocythVzL3kjuj660mqiXnIMgLqrGJxc,649
+datamazing/pandas/transformations/grouping.py,sha256=ZrjHtmKUTXs9JxmP4Ex5VWD2-LLjJN_UmZvVhiUvSWU,1998
+datamazing/pandas/transformations/resampling.py,sha256=-kixhhiIO3NHjTNc3lxfezoSuv4vrmZiisTjvuapzSQ,868
+datamazing/pandas/types.py,sha256=syzUdKhiC_S-ZjifUmfNRM9vtX5dFBYJEGeaJnbSF_A,660
+datamazing-0.0.6.dist-info/METADATA,sha256=ewuNTBIZ96THJF4uwqsU0pVyVjPlP5K_RtsEYJINZDU,534
+datamazing-0.0.6.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+datamazing-0.0.6.dist-info/RECORD,,
