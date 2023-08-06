@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jaxfit
+Version: 0.0.5
+Summary: Uses JAX for GPU/TPU accelerated nonlinear least-squares curve fitting
+Home-page: https://github.com/Dipolar-Quantum-Gases/jaxfit
+Author: Lucas Hofer
+Keywords: fit
+Requires-Python: <4,>=3.6
+License-File: LICENSE.txt
+
+This is a longer description for the project
