@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/proteovae/__init__.py
+src/proteovae.egg-info/PKG-INFO
+src/proteovae.egg-info/SOURCES.txt
+src/proteovae.egg-info/dependency_links.txt
+src/proteovae.egg-info/requires.txt
+src/proteovae.egg-info/top_level.txt
+src/proteovae/disentanglement/__init__.py
+src/proteovae/disentanglement/metrics.py
+src/proteovae/models/__init__.py
+src/proteovae/models/base.py
+src/proteovae/models/models.py
+src/proteovae/models/utils.py
+src/proteovae/trainers/Trainers.py
+src/proteovae/trainers/__init__.py

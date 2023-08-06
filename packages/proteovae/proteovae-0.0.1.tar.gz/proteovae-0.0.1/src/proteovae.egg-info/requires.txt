@@ -1,0 +1,10 @@
+numpy==1.22.4
+pydantic==1.10.7
+scikit_learn==1.2.2
+torch==2.0.0
+tqdm==4.65.0
+
+[tutorial]
+torchvision==0.15.1
+jupyter
+matplotlib==3.7.1
