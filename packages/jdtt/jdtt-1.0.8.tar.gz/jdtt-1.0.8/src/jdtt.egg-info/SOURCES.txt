@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+src/jdtt/__init__.py
+src/jdtt/__main__.py
+src/jdtt/conversion.py
+src/jdtt.egg-info/PKG-INFO
+src/jdtt.egg-info/SOURCES.txt
+src/jdtt.egg-info/dependency_links.txt
+src/jdtt.egg-info/entry_points.txt
+src/jdtt.egg-info/not-zip-safe
+src/jdtt.egg-info/top_level.txt
