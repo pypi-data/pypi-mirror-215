@@ -1,0 +1,2 @@
+[console_scripts]
+asteria = asteria.__main__:main
