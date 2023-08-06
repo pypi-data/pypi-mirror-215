@@ -1,0 +1,11 @@
+xcn_translate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcn_translate/conf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcn_translate/conf/folder.py,sha256=9i-bnP4tPsi9a0gH7BDtCHqNfGoFZqV8HY0wLHAY7t4,727
+xcn_translate/conf/ini_file.py,sha256=f0_NGKUYuJFkt5uCR8B-_-9OpLFqxhqB1O19oiU-mFI,4387
+xcn_translate/date/__init__.py,sha256=29DQBA5tU_8SZjawLbtbH0BQLt3PXN8AGx4Wd9QGqn8,22
+xcn_translate/date/str.py,sha256=2i9iC6cVZD8ZWI-F4srBMBLrk82xoZIdf5jvD8sMHgk,794
+xcn_translate-0.0.4.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+xcn_translate-0.0.4.dist-info/METADATA,sha256=ZKv9FjaE73wmjFv-sG24MEE7AWKOlHoMlWFhr5foYW8,688
+xcn_translate-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xcn_translate-0.0.4.dist-info/top_level.txt,sha256=zopQfenbokKG07mFhl8Kg_lMjvitAvJLxKbsEefhDks,14
+xcn_translate-0.0.4.dist-info/RECORD,,
