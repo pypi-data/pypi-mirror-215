@@ -1,0 +1,10 @@
+pylsd/__init__.py,sha256=MQB6FRwXIvSq-HoqOD38xdjf2zFe5v53NQ8AugUk2uM,209
+pylsd/lsd.py,sha256=ZQ09FlC82bWoBm2YIOTQoMv5uQKuorJ01BWip3DnRhk,2296
+pylsd/lib.cpython-38-x86_64-linux-gnu.so,sha256=Za220C0NPD0MbM0L61d_0LXEtA7EK6qyKtuB7YIV4ac,149056
+pylsd/bindings/__init__.py,sha256=GGxOqtQt1Y5zLi3BODkguz95fUMeHKewIRmyubWPcqA,217
+pylsd/bindings/lsd_ctypes.py,sha256=Jsx7LKuKfQgSepdhGVPiTUo23vYY7L8cL8nFJCr7Akw,883
+ocrd_fork_pylsd-0.0.8.dist-info/RECORD,,
+ocrd_fork_pylsd-0.0.8.dist-info/LICENSE,sha256=ZumilS_q1km8D32jgYVfwB5f-KIGVbj2mH3T7dHuPm4,751
+ocrd_fork_pylsd-0.0.8.dist-info/WHEEL,sha256=NOAhgw20kYU5I9Nb1TPKWuNrdVfBibm59YwSQWPYWAU,111
+ocrd_fork_pylsd-0.0.8.dist-info/METADATA,sha256=lBTquKKATEqozxv-OyEP54FSJAnwWkFN3zzn4ItMN2o,3246
+ocrd_fork_pylsd-0.0.8.dist-info/top_level.txt,sha256=6NCAa3awiy7hHSu3l8GyPnkiEGVntfkvlTRUUKQ0YPw,6
