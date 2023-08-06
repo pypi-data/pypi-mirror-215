@@ -1,0 +1,17 @@
+README.md
+setup.py
+water_drop_detection/__init__.py
+water_drop_detection/main.py
+water_drop_detection.egg-info/PKG-INFO
+water_drop_detection.egg-info/SOURCES.txt
+water_drop_detection.egg-info/dependency_links.txt
+water_drop_detection.egg-info/requires.txt
+water_drop_detection.egg-info/top_level.txt
+water_drop_detection/NN/BatchManager.py
+water_drop_detection/NN/SaveBatch.py
+water_drop_detection/NN/SaveLoadModel.py
+water_drop_detection/NN/TestNetwork.py
+water_drop_detection/NN/__init__.py
+water_drop_detection/NN/main.py
+water_drop_detection/ui/GUI.py
+water_drop_detection/ui/__init__.py
