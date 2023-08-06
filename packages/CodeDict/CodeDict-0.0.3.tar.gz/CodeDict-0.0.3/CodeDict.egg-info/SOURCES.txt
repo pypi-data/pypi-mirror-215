@@ -1,0 +1,14 @@
+README.md
+setup.py
+CodeDict.egg-info/PKG-INFO
+CodeDict.egg-info/SOURCES.txt
+CodeDict.egg-info/dependency_links.txt
+CodeDict.egg-info/requires.txt
+CodeDict.egg-info/top_level.txt
+codedict/__init__.py
+codedict/__version__.py
+codedict/books.zip
+codedict/books/5M.txt
+codedict/books/top1000.txt
+codedict/books/wpa.txt
+test/test.py
