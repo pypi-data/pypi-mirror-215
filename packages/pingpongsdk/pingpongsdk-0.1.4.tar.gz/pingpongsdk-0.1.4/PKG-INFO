@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pingpongsdk
+Version: 0.1.4
+Summary: 
+Author: Ewan Valentine
+Author-email: ewan.valentine89@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# PingPong Python SDK
+
+## Example
+
+
+```python
+
+from pingpongsdk import PingPong
+from pingpongsdk.deployments.model import CreateDeployment
+
+pingpong = PingPong()
+deployment = pingpong.deployments.create(deployment=CreateDeployment(
+    name="example-deployment",
+    model='pingpongai/<model-name>',
+    args={
+        'input_image_file': 'https://cdn.mediamagic.dev/media/eb341446-be53-11ed-b4a8-66139910f724.jpg',
+    }
+))
+
+```
+
