@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: shaidata
+Version: 0.11
+Summary: Shinhan AI Data Pipeline
+Author: Shinhan AI
+Requires-Python: >=3.9.13
