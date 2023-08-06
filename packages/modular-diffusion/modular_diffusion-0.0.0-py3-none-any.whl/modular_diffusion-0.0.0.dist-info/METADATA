@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: modular-diffusion
+Version: 0.0.0
+Summary: Placeholder package for Modular Diffusion
+Home-page: https://github.com/cabralpinto/modular-diffusion
+Author: João Cabral Pinto
+Author-email: jmcabralpinto@gmail.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+This is a placeholder for the Modular Diffusion package. Stay tuned for the actual package.
