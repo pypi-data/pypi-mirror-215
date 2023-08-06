@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dsspkg
+Version: 0.2.2
+Summary: A data splitting and scaling package
+Author: DW
+Author-email: prwe98@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A python package for data processing.The data is sliced and normalized based on sklearn
+
+version：0.2.2
