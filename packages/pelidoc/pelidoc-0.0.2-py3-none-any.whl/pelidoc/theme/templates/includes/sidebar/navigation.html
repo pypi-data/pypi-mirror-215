@@ -1,0 +1,31 @@
+{% from 'includes/sidebar/macros.jinja' import title %}
+{% for title, link in MENUITEMS %}
+    <li class="list-group-item"><a href="{{ link }}">{{ title }}</a></li>
+{% endfor %}
+{% if not PAGES_SORT_ATTRIBUTE -%}
+    {% set PAGES_SORT_ATTRIBUTE = 'title' %}
+{%- endif %}
+{% if DISPLAY_PAGES_ON_MENU %}
+    {% for p in pages | sort(attribute=PAGES_SORT_ATTRIBUTE) %}
+        {% if p.url %}
+         <li class="list-group-item{% if p == page %} active{% endif %}"><a href="{{ SITEURL }}/{{ p.url }}">
+             {{ p.menulabel|default(p.title) }}
+          </a></li>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% if DISPLAY_CATEGORIES_ON_MENU %}
+    {% for cat, null in categories %}
+        <li class="list-group-item{% if cat == category %} active{% endif %}">
+            <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat | capitalize }}</a>
+        </li>
+    {% endfor %}
+{% endif %}
+
+
+    <!-- {% for name, link in NAVIGATION %}
+    <li class="list-group-item">
+      <a href="{{ link }}">{{ name }}</a>
+    </li>
+    {% endfor %}
+  </ul> -->
