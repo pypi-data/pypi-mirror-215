@@ -1,0 +1,14 @@
+torch
+numpy
+scipy
+h5py
+matplotlib
+numba
+ipython
+imageio
+colorlog
+tqdm
+scikit-learn
+scikit-image
+tensorboardX
+torchvision
