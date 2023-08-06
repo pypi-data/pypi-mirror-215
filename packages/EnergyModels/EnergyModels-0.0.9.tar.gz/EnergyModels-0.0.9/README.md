@@ -1,0 +1,119 @@
+# Energy Models Package
+
+                             THIS IS A PACKAGE OF MODELS OF PREDICT IN TIMESERIES FORECASTING                
+             this package helps any developer in univariate and multivariate-multi-step time series forcasting lets take a look about each type 
+             Real-world time series forecasting is challenging for a whole host of reasons not limited to problem features such as having multiple input variables,the requirement 
+             to predict multiple time steps,nd the need to a perform the same type of prediction for multiple physical sites.
+
+# Installation
+
+````
+pip install EnergyModels
+````
+
+# Models list
+  
+  * LSTM
+  * LSTM-CNN 
+  * BILSTM
+  * GRU
+  * BIGRU
+  * TimeDistributer
+  * CNN
+  * TCN
+  * Transformer
+  * Performer
+  * Informer
+  * Seq2Seq
+  * Bert
+  * Lstnet
+  * DeepAr
+  * FNN
+  * Conv-Lstm
+  * MLP
+  * Nbeats
+  * RBFN
+  * Autoformer
+  
+  All models take 3 parameters except
+  
+  * TCN :
+    
+        * must take value 
+          * 1 : n_steps
+          * 2 : n_features 
+        * default value = 1 
+          * 3 : n_outputs  
+        
+        **TCN Model you can build it by just give it data to build function**
+        
+  * Transformer :
+  
+        * must take value 
+          * 1 : input_shape
+          * 2 : n_outputs
+          * 3 : head_size
+          * 4 : num_heads
+          * 5 : ff_dim
+          * 6 : num_transformer_blocks
+          * 7 : mlp_units 
+        * default value = 0 
+          * 8 , 9 : dropout  , mlp_units
+    
+  * Performer :
+  
+          * must take value 
+            * 1 : maxlen
+            * 2 : n_features
+            * 3 : n_outputs
+            * 4 : vocab_size
+            * 5 : embed_dim
+            * 6 : num_heads
+            * 7 : ff_dim 
+          * default value:
+            * 8 : method => 'linear'
+            * 9 : supports => 10
+            * 10 : rate => 0.1 
+            
+  
+# Package Folders 
+ 
+ * Energy_Models
+ 
+# how to use the package
+
+ first you must read the data set you want to use the models on it 
+ and then preprocess the data
+ 
+ now you can build model by import it from Energy_Models folder :
+ 
+  ````
+  from Energy_Models import ==== as m
+  
+  ** [====] refer to model name **
+  
+  model=m.lstm(21, 7 , 7 ).getModel()
+  21 ==> n_steps
+  7 ==> n_features
+  7==>n_outputs
+  ````
+  
+ After that you will able to predict and evaluate your models used. 
+ 
+  ````
+  y=model.predict(X)
+  X==>input
+  ````
+     
+  now you can calculate loss using metrics function for train and test both by just primt_metrix func :
+  
+  **exists on Evaluation_Metrix if u want to just import it  :**
+   
+  ````
+  from Energy_Models import Evaluation_Metrix as mx
+  ````
+ 
+  ````
+  mx.print_metrics(Y_train,Y_pred_train,Y_test,Y_pred_test)
+  
+  ```` 
