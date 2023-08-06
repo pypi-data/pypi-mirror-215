@@ -1,0 +1,3 @@
+[console_scripts]
+oligo-server=app.server:main
+
