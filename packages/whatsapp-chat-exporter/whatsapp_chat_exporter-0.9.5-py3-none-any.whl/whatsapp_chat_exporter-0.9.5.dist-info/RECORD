@@ -1,0 +1,15 @@
+Whatsapp_Chat_Exporter/__init__.py,sha256=_TpvQMLG_3P9NwPWMIlnaPiMiDRYxQzNJxPwTQCy95M,42
+Whatsapp_Chat_Exporter/__main__.py,sha256=zo-KPBPEqUaAgagJO6KZ07a2D1dfklIWASQK0VVcKAs,12213
+Whatsapp_Chat_Exporter/data_model.py,sha256=1gPaekbsanPcNVxXUqYP24Gux7ypFyPYfkn5WGBC_Js,3296
+Whatsapp_Chat_Exporter/extract.py,sha256=Zw8TUlFNovjM7cofKwicXuHXcKjkKsb-VPO-x4N_rig,29916
+Whatsapp_Chat_Exporter/extract_exported.py,sha256=UtoWw_WCF8DKFd5ECi47q2mTAI0bvU1iec2WxC8CI7o,4121
+Whatsapp_Chat_Exporter/extract_iphone.py,sha256=tRcweLgAPUO2t8QJeNGKo-ePYcLdBSBbExepo1GohUQ,11367
+Whatsapp_Chat_Exporter/extract_iphone_media.py,sha256=DPAoQMGVGLn_wKM6cEnZ5GDbBtG9LO0C0V0kGODxuG4,5062
+Whatsapp_Chat_Exporter/utility.py,sha256=u0xNYrh1B5KHgniXvqws0FH-rJ83xwCOUhHc2UOlWc0,10253
+Whatsapp_Chat_Exporter/whatsapp.html,sha256=lmq6T2scRZjhgggrgf1DciiKfdusMJD_ZsR1QV-_q1I,7928
+whatsapp_chat_exporter-0.9.5.dist-info/LICENSE,sha256=y_38TJHZkzRCzI8X-9b2YJ_3rsmh6oDnIbbz0i4ToC8,1067
+whatsapp_chat_exporter-0.9.5.dist-info/METADATA,sha256=j_KmDHe7TuJDqqapjvaKsPcH2q8mD-FrB-l5--CjbrM,10946
+whatsapp_chat_exporter-0.9.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+whatsapp_chat_exporter-0.9.5.dist-info/entry_points.txt,sha256=3AHRELlCTqQMOloMWDn9FGt0B7KWk-xsVKU7rPZHmXo,181
+whatsapp_chat_exporter-0.9.5.dist-info/top_level.txt,sha256=EOkfC7PlL8tuylxDusiNwInHWbc2ADrIdpKlFVCBmsA,23
+whatsapp_chat_exporter-0.9.5.dist-info/RECORD,,
