@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "faker-pyspark"
+version = "0.8.0"
+description = "faker-pyspark is a PySpark DataFrame and Schema provider for the Faker python package"
+authors = ["Sury Soni <github@suryasoni.info>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/spsoni/faker-pyspark"
+keywords = ["Faker, PySpark"]
+repository = "https://github.com/spsoni/faker-pyspark"
+packages = [{include = "faker_pyspark"}]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^4.1.0"
+pyspark = "^3.4.0"
+faker = "^18.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
