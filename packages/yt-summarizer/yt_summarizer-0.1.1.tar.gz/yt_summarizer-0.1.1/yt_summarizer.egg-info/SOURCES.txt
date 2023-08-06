@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+yt_summarizer/__init__.py
+yt_summarizer/youtube_video_summary.py
+yt_summarizer.egg-info/PKG-INFO
+yt_summarizer.egg-info/SOURCES.txt
+yt_summarizer.egg-info/dependency_links.txt
+yt_summarizer.egg-info/requires.txt
+yt_summarizer.egg-info/top_level.txt

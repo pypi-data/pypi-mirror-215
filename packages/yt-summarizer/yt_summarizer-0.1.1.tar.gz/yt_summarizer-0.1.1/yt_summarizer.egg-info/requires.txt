@@ -1,0 +1,7 @@
+googleapiclient
+youtube_transcript_api
+openai
+tqdm
+nltk
+gtts
+langdetect
