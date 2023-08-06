@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: genepass
+Version: 0.1.2
+Summary: genepass can automatically generates passwords
+Home-page: https://github.com/senya-koku/genepass
+Author: ny7777
+Author-email: meathouse47@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# genepass
+
+generating passward randomly!
+
+# Install
+`pip install odach`
+
+# Usage
+
+```python
+import genepass
+
+genepass.create_random_password()
+```
+
+# Option
+
+- strong : DIGITS & CAPITAL_LETTER & SMALL_LETTER
+- god : DIGITS & CAPITAL_LETTER & SMALL_LETTER & SYMBOLS
+- custom : Under construction
