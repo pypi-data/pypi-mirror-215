@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_sht20/__init__.py", "github:jposada202020/MicroPython_SHT20/micropython_sht20/__init__.py"],
+    ["micropython_sht20/i2c_helpers.py", "github:jposada202020/MicroPython_SHT20/micropython_sht20/i2c_helpers.py"],
+    ["micropython_sht20/sht20.py", "github:jposada202020/MicroPython_SHT20/micropython_sht20/sht20.py"]
+  ],
+  "version": "0.1"
+}

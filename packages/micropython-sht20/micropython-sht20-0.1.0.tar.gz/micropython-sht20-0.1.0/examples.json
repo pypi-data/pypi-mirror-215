@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_sht20/examples/sht20_resolution.py", "github:jposada202020/MicroPython_SHT20/examples/sht20_resolution.py"],
+    ["micropython_sht20/examples/sht20_simpletest.py", "github:jposada202020/MicroPython_SHT20/examples/sht20_simpletest.py"]
+  ],
+  "version": "0.1"
+}
