@@ -1,0 +1,31 @@
+</br>
+<p align="center">
+  <a href="https://www.data-drift.io">
+    <img src="./datadrift-logo.png" width="100px" alt="DataDrift logo" />
+  </a>
+</p>
+
+<h2 align="center" >A Changelog for Data</h3>
+<p align="center">Git-Based. Data-Consumer-Friendly.</p>
+
+<p align="center"><a href="https://data-drift.io">Website</a> · <a href="https://www.data-drift.io/blog">Blog</a></p>
+
+# DBT Snapshot Analysis
+
+[![PyPI version](https://badge.fury.io/py/dbt-snapshot-analysis.svg)](https://badge.fury.io/py/dbt-snapshot-analysis)
+
+DBT Snapshot Analysis is a Python package for analyzing snapshots. It provides a set of tools for visualizing and exploring data in a variety of ways.
+
+## Installation
+
+You can install Plot Analysis using `pip`:
+
+```sh
+pip install dbt-snapshot-analysis
+```
+
+## Usage
+
+```sh
+dbt-snapshot-analysis --
+```
