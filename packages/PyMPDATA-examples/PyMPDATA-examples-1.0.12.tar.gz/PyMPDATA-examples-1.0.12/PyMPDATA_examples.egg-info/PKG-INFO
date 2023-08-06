@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PyMPDATA-examples
+Version: 1.0.12
+Summary: PyMPDATA usage examples reproducing results from literature and depicting how to use PyMPDATA in Python from Jupyter notebooks
+Author: https://github.com/open-atmos/PyMPDATA/graphs/contributors
+License: GPL-3.0
+Project-URL: Tracker, https://github.com/open-atmos/PyMPDATA/issues
+Project-URL: Documentation, https://open-atmos.github.io/PyMPDATA
+Project-URL: Source, https://github.com/open-atmos/PyMPDATA
+Description-Content-Type: text/markdown
