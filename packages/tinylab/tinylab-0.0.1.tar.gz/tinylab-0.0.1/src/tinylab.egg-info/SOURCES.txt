@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/tinylab.egg-info/PKG-INFO
+src/tinylab.egg-info/SOURCES.txt
+src/tinylab.egg-info/dependency_links.txt
+src/tinylab.egg-info/top_level.txt
