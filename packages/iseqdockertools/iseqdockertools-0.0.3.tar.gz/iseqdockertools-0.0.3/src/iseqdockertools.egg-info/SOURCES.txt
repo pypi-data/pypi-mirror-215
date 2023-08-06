@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/iseqdocker/dockerbuilder
+src/iseqdockertools.egg-info/PKG-INFO
+src/iseqdockertools.egg-info/SOURCES.txt
+src/iseqdockertools.egg-info/dependency_links.txt
+src/iseqdockertools.egg-info/top_level.txt
