@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+rpsbot/__init__.py
+rpsbot/__main__.py
+rpsbot/rpsbot.py
+rpsbot.egg-info/PKG-INFO
+rpsbot.egg-info/SOURCES.txt
+rpsbot.egg-info/dependency_links.txt
+rpsbot.egg-info/entry_points.txt
+rpsbot.egg-info/top_level.txt
