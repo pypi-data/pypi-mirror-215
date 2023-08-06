@@ -1,0 +1,11 @@
+dataschema/__init__.py,sha256=iafDYuOJDubDSipC8wQ6lZECpn8JYbtbFEBb2EnCmbM,479
+dataschema/_utils.py,sha256=UoaOB8PXzIQJ0kYUVhEvso4XEnW_iaVAmir3Xuw26j4,1264
+dataschema/base.py,sha256=Jnr-oyJ_Sbdb5PRZDG1xTKBKY4DMTPYKKwCZBLtKD40,7672
+dataschema/common.py,sha256=nfmgwJ1rQh8kWoJ7kynbESi0T6HFAMuSLDec0FW3Js8,1360
+dataschema/specs.py,sha256=QQ8MOyzsmWXHIambePvkDTMibFV7calUP_eriWYiUPg,28112
+dataschema/utils.py,sha256=bkXRnD-YC7If6J0x0odR9rEBBu3k-1781hUpJwk-wFQ,1836
+python_dataschema-0.1.5.dist-info/LICENSE.txt,sha256=-AHGawl_w-TIxxuqv3rn-HWxh5FfukKWGY1iOie2mCo,1049
+python_dataschema-0.1.5.dist-info/METADATA,sha256=6_QeKcW3DRslHTuoSM0DTTYsJ_SQ4ybwNe7DkLcEtek,349
+python_dataschema-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_dataschema-0.1.5.dist-info/top_level.txt,sha256=HbSMo6wrW6-V5f8lnrIW58HMChIQt3UeH294xnRw6c8,11
+python_dataschema-0.1.5.dist-info/RECORD,,
