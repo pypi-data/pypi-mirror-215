@@ -1,0 +1,13 @@
+ocp_freecad_cam/__init__.py,sha256=NyD3I9kwcnvmyPZ4Uru4Xu-YWQS_nzywPr-E6stm62g,704
+ocp_freecad_cam/api.py,sha256=6WsTKbCc5CvLm8Ipstibg36B2nNuUzmLKmwwnAn2l9Y,33993
+ocp_freecad_cam/api_tool.py,sha256=sGpgJhIpU4J8euCp1yjUn1rVL45uzyCPrKkLXmOn51g,9587
+ocp_freecad_cam/api_util.py,sha256=aUwZAc73c-g50mH_kryAIVwmZXAU-dwS4zrUQTQ1EfA,10273
+ocp_freecad_cam/common.py,sha256=lvAcTCaGaek8j3hNj8QDREZUfazePXXZRNbpbA8-AwE,880
+ocp_freecad_cam/fc_impl.py,sha256=PK-5uxZbUMUc6O-HIqsHLejN5FbYKSgbJ2pyT6YCcd8,28562
+ocp_freecad_cam/fc_impl_util.py,sha256=NIxwwi5cJ6i4AUuk19HUq1bNFJtUciYqzGoeB4Vznow,598
+ocp_freecad_cam/visualizer.py,sha256=IioYT_cW7GxjE_CI8IETQesSQKX1o-vCaNNYMr2-TgA,16857
+ocp_freecad_cam-0.9.3.dist-info/LICENSE,sha256=ZJlNVYM6vbx2i7cVSmKC_amRHg-v4Vhl2D9A0vUz-H8,11341
+ocp_freecad_cam-0.9.3.dist-info/METADATA,sha256=FsPeFG5_RIFpwv2bb4-jhrY7dpMhcbELEjCubzFYOVo,3937
+ocp_freecad_cam-0.9.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ocp_freecad_cam-0.9.3.dist-info/top_level.txt,sha256=F1y_UmddObUT7psM1abKhugCSTeHMUC_FKsx2r_A7wU,16
+ocp_freecad_cam-0.9.3.dist-info/RECORD,,
