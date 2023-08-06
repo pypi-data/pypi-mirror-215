@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-error-alert
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: ssttkkl
+Author-email: huang.wen.long@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nonebot-plugin-apscheduler (>=0.2.0)
+Requires-Dist: nonebot-plugin-datastore (>=0.6.0)
+Requires-Dist: nonebot-plugin-send-anything-anywhere (>=0.2,<0.3)
+Requires-Dist: nonebot2 (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+nonebot-plugin-error-alert
+========
+
+当Bot发生运行错误时发送消息提醒
+
+## 卖家秀
+
+![1](img/1.jpg)
+
+## 指令
+
+### `/error_alert subscribe`
+
+订阅错误告警。发生错误时立即发送告警至本账号。
+
+### `/error_alert subscribe <cron>`
+
+订阅错误告警。但不会在发生错误时立即发送告警，而是在满足cron表达式的时间点统一发送该时间段发生的错误告警。
+
+### `/error_alert unsubscribe`
+
+取消订阅错误告警。
+
+## 配置项
+
+### `error_alert_superuser_only`
+
+是否仅允许超级用户调用指令。
+
+默认值：`True`
+
+## LICENSE
+
+MIT License
