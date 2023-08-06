@@ -1,0 +1,83 @@
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<script>
+ var csrftoken = '{{ csrf_token }}';
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+clicked_item = {}
+const setonclick = (value) => {
+  setTimeout(() => {
+    if (document.getElementsByName(value)[0]) {
+      document.getElementsByName(value)[0].onclick = () => {
+        document.getElementsByClassName('rjsf')[0].outerHTML = document.getElementsByClassName('rjsf')[0].outerHTML.replace("<form", "<div").replace("</form>", "</div>")
+        document.getElementById("snortrule_form").submit()
+        document.getElementsByClassName('rjsf')[0].outerHTML = document.getElementsByClassName('rjsf')[0].outerHTML.replace("<div", "<form").replace("</div>", "</form>")
+      }
+    }
+    else{
+      setTimeout(() => {setonclick(value)},100)
+    }
+  },1000
+  );
+}
+setonclick("_save")
+setonclick("_continue")
+setonclick("_addanother")
+
+
+var my_inputs = {};
+var id_content = document.getElementById("id_content");
+
+if (document.getElementsByClassName("objectaction-item")[0] !== undefined){
+    document.getElementsByClassName("objectaction-item")[0].onclick=function(){
+            var copy_id_content = document.getElementById("id_content");
+            sessionStorage.setItem("snort_content", copy_id_content.value);
+            sessionStorage.setItem("snort_description", document.getElementById("id_description").value);
+            sessionStorage.setItem("snort_name", document.getElementById("id_name").value);
+            sessionStorage.setItem("snort_treatment", document.getElementById("id_treatment").value);
+            sessionStorage.setItem("snort_document", document.getElementById("id_document").value);
+            };
+}
+
+function get_clone_rule(){
+    while (document.getElementById("id_description")== undefined){
+        setTimeout(() => { get_clone_rule();}, 100)
+        return;
+    }
+    document.getElementById("id_description").value = sessionStorage.getItem("snort_description").replace(/^[\x22\x27]|[\x22\x27]$/g, '');
+    while (document.getElementById("id_name")== undefined){
+        setTimeout(() => { get_clone_rule();}, 100)
+        return;
+    }
+    document.getElementById("id_name").value = sessionStorage.getItem("snort_name").replace(/^[\x22\x27]|[\x22\x27]$/g, '');
+    while (document.getElementById("id_treatment")== undefined){
+        setTimeout(() => { get_clone_rule();}, 100)
+        return;
+    }
+    document.getElementById("id_treatment").value = sessionStorage.getItem("snort_treatment").replace(/^[\x22\x27]|[\x22\x27]$/g, '');
+    while (document.getElementById("id_document")== undefined){
+        setTimeout(() => { get_clone_rule();}, 100)
+        return;
+    }
+    document.getElementById("id_document").value = sessionStorage.getItem("snort_document").replace(/^[\x22\x27]|[\x22\x27]$/g, '');
+
+    sessionStorage.removeItem("snort_content");
+    sessionStorage.removeItem("snort_name");
+    sessionStorage.removeItem("snort_treatment");
+    sessionStorage.removeItem("snort_document");
+}
+
+setTimeout(() => {get_clone_rule();}, 10)
+setTimeout(() => {
+    var field_user = document.getElementsByClassName("form-row field-user")[0];
+    field_user.style.display = "None";
+
+    if (document.getElementsByClassName("errorlist").length > 0){
+        document.getElementsByClassName("errorlist")[0].parentElement.scrollIntoView()
+    };
+    }, 200)
+
+</script>
+
