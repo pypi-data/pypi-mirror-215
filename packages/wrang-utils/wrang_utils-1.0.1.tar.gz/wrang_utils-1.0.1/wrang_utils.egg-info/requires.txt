@@ -1,0 +1,16 @@
+python-dotenv
+langchain
+openai
+guidance
+pandas
+requests
+graphql-core
+dataclasses-json
+jsonschema
+
+[dev]
+pytest
+mypy
+black
+pylint
+pytest-cov

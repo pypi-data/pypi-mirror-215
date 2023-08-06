@@ -1,0 +1,10 @@
+# wrang-utils==1.0.1
+python-dotenv
+langchain
+openai
+guidance
+pandas
+requests
+graphql-core
+dataclasses-json
+jsonschema
