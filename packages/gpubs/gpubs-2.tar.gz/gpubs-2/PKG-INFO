@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gpubs
+Version: 2
+Summary: Pipeline to download and annotate gene-related publications
+Home-page: http://github.org/saboredge/gpubs
+Author: Kimberly Robasky
+Author-email: kimberly.robasky@gmail.com
+Keywords: pubmed,abstracts,genetics
