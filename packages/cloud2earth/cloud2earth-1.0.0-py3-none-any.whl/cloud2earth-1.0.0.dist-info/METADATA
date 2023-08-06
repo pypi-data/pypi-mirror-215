@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cloud2earth
+Version: 1.0.0
+Requires-Dist: earthengine-api
+Requires-Dist: pandas
+Requires-Dist: click
+Requires-Dist: tqdm
+
