@@ -1,0 +1,9 @@
+README.md
+setup.py
+dowell_permutation.egg-info/PKG-INFO
+dowell_permutation.egg-info/SOURCES.txt
+dowell_permutation.egg-info/dependency_links.txt
+dowell_permutation.egg-info/requires.txt
+dowell_permutation.egg-info/top_level.txt
+permutation/__init__.py
+permutation/permutation.py
