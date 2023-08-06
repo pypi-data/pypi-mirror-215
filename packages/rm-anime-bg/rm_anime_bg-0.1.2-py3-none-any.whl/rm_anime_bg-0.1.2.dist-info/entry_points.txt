@@ -1,0 +1,3 @@
+[console_scripts]
+rm_anime_bg=rm_anime_bg.cli:main
+
