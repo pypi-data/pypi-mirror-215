@@ -1,0 +1,10 @@
+pix2vec/__init__.py,sha256=QYID7C0IJoaPQ62K4ZQfmPGkCmDL2uV8E0PhGbQoNaI,2180
+pix2vec/cli.py,sha256=KDckQrDzGcZW-HAkrlWi-AzhJ9PlhCEy3StmtBJmQns,1785
+pix2vec/pix2vec.py,sha256=DQ0Q4pJFWZTWnv06Ucuf3cSHG1Pyv-qWhIslfskyXWU,6857
+pix2vec-0.1.1.dist-info/AUTHORS.rst,sha256=TITqoVdrQrygd1sx8tbsmUv6f__cf4BIzLikgmW4Hn4,212
+pix2vec-0.1.1.dist-info/LICENSE,sha256=86ELZpvto_EIqZ7oUI4VTFB03haybRnRKOIL_fcHFgk,1564
+pix2vec-0.1.1.dist-info/METADATA,sha256=4KkZ4ZiowR__CSVG6NutBu294RV0YCHZfQagRk5HvzE,4423
+pix2vec-0.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pix2vec-0.1.1.dist-info/entry_points.txt,sha256=sVNfNBIWIYL5jpzAMyHj8cyX21m3PqLCv0h7WeGDRiQ,46
+pix2vec-0.1.1.dist-info/top_level.txt,sha256=_WqBnPAs3JQXl7EuX2Yu_ZSxgg6Y0YxfzC78YLqSfgA,8
+pix2vec-0.1.1.dist-info/RECORD,,
