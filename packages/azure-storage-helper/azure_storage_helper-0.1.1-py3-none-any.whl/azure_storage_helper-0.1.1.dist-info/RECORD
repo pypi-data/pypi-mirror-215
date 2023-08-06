@@ -1,0 +1,10 @@
+azure/gen1/__init__.py,sha256=RXGZierB4UXuD0h2vf985y0LfRqNGv20CSon1Kh5ZL4,137
+azure/gen1/gen1.py,sha256=H5sFu9QsaObphW-ddGm16mhYPuO7T8zwxr33delKosQ,9808
+azure/gen1/helper.py,sha256=3fsclEBepMO-5AVUdRCAn3pN-r1l-E5g_sEGtmq5byc,2747
+azure/gen2/__init__.py,sha256=g1LVwp1rCVVaMOKnN_GC7_5Nf_hr7G6i9H9o1_K58ts,177
+azure/gen2/gen2.py,sha256=Zwcc58-7z20USQzGrdmpCH_QOJ-0bxTKn6YgMnY9jW4,16958
+azure/gen2/helper.py,sha256=VRZ7veUD1ojPHJe4fj1DUR-AO6L_DRT1-6S91pDpPNQ,2809
+azure_storage_helper-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+azure_storage_helper-0.1.1.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure_storage_helper-0.1.1.dist-info/METADATA,sha256=DxOxp5YxZs1m5mrd8ToJoupW2GnhGFERF370uOSdMNs,628
+azure_storage_helper-0.1.1.dist-info/RECORD,,
