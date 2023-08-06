@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyuff_ustb"
+version = "2.0.0"
+authors = [
+  { name="Magnus Dalen Kvalevåg", email="magnus.kvalevag@ntnu.no" },
+]
+description = "An implementation of USTB's ultrasound file format (UFF) in Python."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://pyuff-ustb.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://github.com/magnusdk/pyuff_ustb/issues"
