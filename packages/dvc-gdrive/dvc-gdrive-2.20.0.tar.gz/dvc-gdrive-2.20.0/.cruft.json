@@ -1,0 +1,15 @@
+{
+  "template": "https://github.com/iterative/cookiecutter-dvc-plugin",
+  "commit": "aefa54102988425072ef16449921aead31afdda8",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "plugin_name": "gdrive",
+      "_template": "https://github.com/iterative/cookiecutter-dvc-plugin"
+    }
+  },
+  "directory": null,
+  "skip": [
+    ".git"
+  ]
+}
