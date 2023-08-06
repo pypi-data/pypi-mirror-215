@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: iolsmp
+Version: 1.0.0
+Summary: Log linear model regression and dealing with zeros
+Author: Oussama Elghodhben, Rami Znazen
+Author-email: <oussama.elghodhben@telecom-paris.fr>
+Keywords: log linear,regression
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: statsmodels
+
+The Zero-Inflated Log Linear Regression package provides a set of functions and utilities to handle zero-inflated cases in log linear regression models. It offers methods for estimating model parameters, calculating predicted values, and handling clustered data. This package is particularly useful when dealing with datasets where the dependent variable has excess zeros, allowing for more accurate and robust analysis of log linear regression models. It leverages the power of numpy, statsmodels, and pandas libraries to provide efficient and reliable computations for zero-inflated log linear regression analysis.
