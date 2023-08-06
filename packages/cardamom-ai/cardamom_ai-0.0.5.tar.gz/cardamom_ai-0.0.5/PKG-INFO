@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cardamom_ai
+Version: 0.0.5
+Home-page: https://cardamom.ai
+Author: Cardamom AI
+Author-email: sales@cardamom.ai
+License: AGPL
+Keywords: cardamom,ml,deployment
+Requires-Python: <4,>=3.7
+Provides-Extra: test
+License-File: LICENSE
+
+Deploy ML with Cardamom

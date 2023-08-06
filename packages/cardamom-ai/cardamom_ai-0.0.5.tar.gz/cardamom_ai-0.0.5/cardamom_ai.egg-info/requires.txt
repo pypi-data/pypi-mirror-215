@@ -1,0 +1,8 @@
+numpy
+requests
+scikit-learn
+pandas
+
+[test]
+pytest
+coverage
