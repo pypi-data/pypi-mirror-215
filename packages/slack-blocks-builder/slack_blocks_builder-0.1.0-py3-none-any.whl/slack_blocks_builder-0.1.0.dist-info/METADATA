@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: slack-blocks-builder
+Version: 0.1.0
+Home-page: https://github.com/ABizzinotto/slack-blocks-builder
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+
+# Slack Blocks Builder
+
+Very simple block builder to build messages in the Slack block kit format. The official Slack Block Kit documentation is available [here](https://api.slack.com/block-kit) and Slack also offers a [Block Kit Builder](https://app.slack.com/block-kit-builder/T02BW1AAK).
+
+This package allows you to configure a block kit conformant message using YAML or JSON files, as well as Pydantic models or dictionaries with only the required parameters.
+
+## Installation
+
+To get the latest stable release from PyPi:
+
+```shell
+pip install slack-blocks-builder
+```
+
+Add the package to your `requirements.txt` file:
+
+```text
+blocks_builer~=0.1.0
+```
+
+## Usage
+
+To get started, add the package to the file where you'd like to generate the message block kit schema:
+
+```python
+from blocks_builer import Builder
+```
+
+To generate a block kit type message from a file, regardless of whether it is a YAML or JSON file:
+
+```python
+message = Builder().build_from_file("path/to/file.yaml")
+```
+
+To generate a block kit formatted message from a Python dictionary:
+
+```python
+message = Builder().build_from_dict(data=data)
+```
+
+Finally, in order to generate a block kit message using Pydantic models directly, import the relevant classes.
+
+## Examples
+
+You can generate a sample YAML and a sample JSON file running the following command:
+
+```shell
+generate_sample_files
+```
+
+To compose a file, the following top key blocks are supported:
+
+- actions
+- context
+- divider
+- header
+- image
+- input
+- section
+
+To use multiple blocks of the same type, simply add an underscore followed by a number to the key name, for example:
+
+```yaml
+section:
+  text: "This is the first section"
+section_2:
+  text: "This is the second section"
+section_3:
+  text: "This is the third section"
+```
+
+When adding actions, list under the `action` key each block you'd like to add with the necessary parameters:
+
+```yaml
+actions:
+  button:
+    text: "This is a button"
+    value: "click_me_123"
+  channels_select:
+    elements: true
+  checkboxes:
+    options: [{text: "Option 1", description: "Option 1", value: "option-1"}, {text: "Option 2", description: "Option 2", value: "option-2"}]
+```
+
+When adding a context block, use the `context` key and list under it each context block you'd like to add:
+
+```yaml
+context:
+  text: "This is a context block."
+  image:
+    image_url: "https://www.google.com"
+```
+
+When adding a divider, simply set the value of the `divider` key to `true`:
+
+```yaml
+divider: true
+```
+
+When adding a header, add the `header` key with the `text` parameter under it. To control the `emoji` setting, just add that key under the `header` parameter also:
+
+```yaml
+header:
+  text: "This is a header example."
+```
+
+When adding an image, add the `image` key with the `image_url` parameter under it. To add an image with a title, just add the `title` parameter as well.
+
+```yaml
+image:
+  image_url: "https://www.validurl.com"
+  title: "This is an image"
+```
+
+When adding an input field, just add the `input` key with the name of the block you'd like to add under it. For each input block, provide the necessary parameters.
+
+```yaml
+input:
+  datepicker:
+    elements: true
+    label: "Sample date picker"
+```
+
+When adding a section, add both the `text` and `accessory` parameters under section. Accessory should have the parameters required for the specific section block:
+
+```yaml
+section:
+  text: "Section 1"
+  accessory:
+    image_url: "https://www.validurl.com"
+```
+
+**Note:** If adding a text section, accessory is not required.
+
+To generate a sample message with a text section, divider, text and image section and action buttons:
+
+```yaml
+section:
+  text: "Hello, Assistant to the Regional Manager Dwight! *Michael Scott* wants to know where you'd like to take the Paper Company investors to dinner tonight.\n\n *Please select a restaurant:*"
+divider: true
+section_2:
+  text: "*Farmhouse Thai Cuisine*\n:star::star::star::star: 1528 reviews\n They do have some vegan options, like the roti and curry, plus they have a ton of salad stuff and noodles can be ordered without meat!! They have something for everyone here"
+  accessory:
+    image_url: "https://s3-media3.fl.yelpcdn.com/bphoto/c7ed05m9lC2EmA3Aruue7A/o.jpg"
+section_3:
+  text: "*Kin Khao*\n:star::star::star::star: 1638 reviews\n The sticky rice also goes wonderfully with the caramelized pork belly, which is absolutely melt-in-your-mouth and so soft."
+  accessory:
+    image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/korel-1YjNtFtJlMTaC26A/o.jpg"
+section_4:
+  text: "*Ler Ros*\n:star::star::star::star: 2082 reviews\n I would really recommend the  Yum Koh Moo Yang - Spicy lime dressing and roasted quick marinated pork shoulder, basil leaves, chili & rice powder."
+  accessory:
+    image_url: "https://s3-media2.fl.yelpcdn.com/bphoto/DawwNigKJ2ckPeDeDM7jAg/o.jpg"
+divider_2: true
+actions:
+  button:
+    text: "Farmhouse"
+    "value": "click_me_123"
+  link_button:
+    text: "Kin Khao"
+    value: "click_me_123"
+    url: "https://google.com"
+  link_button_2:
+    text: "Ler Ros"
+    value: "click_me_123"
+    url: "https://google.com"
+```
