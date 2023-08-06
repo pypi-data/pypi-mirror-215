@@ -1,0 +1,14 @@
+{% load i18n %} {% load l10n %} {% load static %}
+<br />
+<div>
+  <p>
+    Aguardamos pela confirmação do pagamento via M-Pesa para o número
+    {{ msisdn }}.
+  </p>
+  <p>
+    Em <strong id="countdown"></strong> segundos, esta janela será atualizada
+    automaticamente.
+  </p>
+  <br />
+</div>
+<script src="{% static 'pretix_mpesamz/countdown.js' %}"></script>
