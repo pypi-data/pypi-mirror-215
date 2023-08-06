@@ -1,0 +1,5 @@
+setup.py
+vxnich_finder.egg-info/PKG-INFO
+vxnich_finder.egg-info/SOURCES.txt
+vxnich_finder.egg-info/dependency_links.txt
+vxnich_finder.egg-info/top_level.txt
