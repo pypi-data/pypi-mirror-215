@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: py-jokes-py
+Version: 1.1.1
+Summary: Python wrapper for jokes APIs provided by icanhazdadjokes.com and jokeapi.dev
+Home-page: https://github.com/LoisaKitakaya/Jokes
+Keywords: python,jokes,api,dad jokes
+Author: Freedom Loisa
+Author-email: kitakayaloisa@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Documentation, https://github.com/LoisaKitakaya/Jokes#readme
+Description-Content-Type: text/markdown
+
+# dad_jokes
+
+Python wrapper for the jokes APIs provided by:
+
+- [icanhazdadjokes.com](https://icanhazdadjoke.com/)
+
+and
+
+- [jokeapi.dev](https://jokeapi.dev/)
+
