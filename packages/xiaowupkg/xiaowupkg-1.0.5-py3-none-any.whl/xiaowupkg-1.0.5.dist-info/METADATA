@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: xiaowupkg
+Version: 1.0.5
+Summary: it's wzh's packages include many useful menthod
+Author: wzh
+Author-email: wzh@example.com
+Requires-Dist: pyautogui (>=0.9.54)
+Requires-Dist: pyperclip (>=1.8.2)
+Requires-Dist: openpyxl (>=3.1.2)
+Requires-Dist: PyQt5 (>=5.15.9)
+
