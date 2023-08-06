@@ -1,0 +1,257 @@
+# Object Detection, Localization, and Pose Prediction for Robotic Manipulation
+
+The **Object Detection, Localization, and Pose Prediction** project is a Python package specifically designed for robotic manipulation tasks. The package leverages the latest advancements in computer vision and deep learning techniques to enable robust object detection, accurate localization, and precise pose prediction in a robotic environment.
+The system is built upon a proof-of-concept (PoC), which includes notebooks and scripts. It aims to provide a modular and platform-agnostic solution, ensuring compatibility with various robotic platforms and environments.
+
+Key Features:
+- **Modularity**: The system is designed to be modular, allowing flexibility in integrating with different robotic platforms and configurations. It can be easily extended and customized to meet specific requirements.
+- **Video Stream Input**: The system accepts a video stream as input, enabling real-time object detection, localization, and pose prediction in dynamic environments.
+- **Output Information**: In addition to detecting objects and providing bounding boxes, the system also outputs the positions and poses of the detected objects. It incorporates a measure of certainty or confidence in its predictions.
+- **Training Flexibility**: The system supports training on both local machines and cloud services. This allows users to leverage their preferred environment and scale training resources as needed.
+- **CLI and API Accessibility**: The system provides a command-line interface (CLI) for easy interaction and control. It can also be deployed as an API using cloud services, enabling remote access and integration with other systems.
+- **Web Interface and API**: In a robotic arm setup, the system performs inference on the video stream captured by the arm-mounted camera. The results are displayed on a web interface, allowing real-time monitoring and visualization. Additionally, the results are accessible through an API, facilitating seamless integration with other applications.
+- **MLOps Best Practices**: The project incorporates MLOps best practices, ensuring efficient management of data environments, streamlined training processes, and scalable deployment using Azure Machine Learning. This approach guarantees the system's scalability, maintainability, and adherence to industry standards.
+
+The **Object Detection, Localization, and Pose Prediction** package empowers robotic manipulation tasks with advanced computer vision capabilities, enabling accurate perception and interaction in complex environments. Whether it's for industrial automation, logistics, or robotics research, this project provides a versatile and powerful toolset for enhancing robotic systems' perception and decision-making abilities.
+
+## Prerequisites
+Before using the **MLOpsRobotics** package, ensure you have the following prerequisites installed:
+
+- Python (version 3.8)
+- [PyTorch](https://pytorch.org/) (version 2.0.0 or later)
+- [OpenCV](https://opencv.org/) (version 4.7.0.72 or later)
+- [Pillow](https://python-pillow.org/) (version 9.5.0 or later)
+- [Requests](https://pypi.org/project/requests/) (version 2.30.0 or later)
+- [Psutil](https://psutil.readthedocs.io/) (version 5.9.5 or later)
+- [PyYAML](https://pyyaml.org/) (version 6.0 or later)
+- [Tqdm](https://tqdm.github.io/) (version 4.65.0 or later)
+- [Matplotlib](https://matplotlib.org/) (version 3.7.1 or later)
+- [Seaborn](https://seaborn.pydata.org/) (version 0.12.2 or later)
+- [Sphinx](https://www.sphinx-doc.org/) (version 1.6 or later)
+- [Sphinx-autobuild](https://pypi.org/project/sphinx-autobuild/) (version 2021.3.14 or later)
+- [Sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/) (version 1.2.0 or later)
+- [Roboflow](https://roboflow.com/) (version 1.0.8 or later)
+- [Pytest](https://pytest.org/) (version 7.3.1 or later)
+- [NumPy](https://numpy.org/) (version 1.24.3 or later)
+- [Loguru](https://github.com/Delgan/loguru) (version 0.7.0 or later)
+- [Ansimarkup](https://github.com/gvalkov/python-ansimarkup) (version 1.5.0 or later)
+- [Ultralytics](https://github.com/ultralytics/yolov5) (version 8.0.101 or later)
+
+## Requirements
+The required Python packages and their versions are listed in the `pyproject.toml` file:
+
+```plaintext
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+pandas = "^2.0.1"
+torch = "^2.0.0"
+pillow = "^9.5.0"
+requests = "^2.30.0"
+psutil = "^5.9.5"
+torchvision = "^0.15.1"
+pyyaml = "^6.0"
+tqdm = "^4.65.0"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+sphinx = "^4.3.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-rtd-theme = "^1.2.0"
+roboflow = "^1.0.8"
+pytest = "^7.3.1"
+numpy = "^1.19.3"
+loguru = "^0.7.0"
+ansimarkup = "^1.5.0"
+ultralytics = "^8.0.101"
+robosuite = "^1.4.0"
+mujoco = "^2.3.5"
+gymnasium = "^0.28.1"
+termcolor = "^2.3.0"
+h5py = "^3.8.0"
+gym = "^0.26.2"
+azureml = "^0.2.7"
+azureml-core = "^1.51.0"
+setuptools = "^67.8.0"
+wandb = "^0.15.3"
+torchaudio = "^2.0.2"
+azure-ai-ml = "^1.7.2"
+azure-identity = "^1.13.0"
+poetry2conda = "^0.3.0"
+opencv-python-headless = "^4.5.0.72"
+mlflow = "^2.3.2"
+azureml-mlflow = "^1.51.0"
+pyarrow = "^8.0.0"
+azureml-dataset-runtime = "^1.51.0"
+mldesigner = "^0.1.0b13"
+python-multipart = "^0.0.6"
+fastapi = "^0.97.0"
+uvicorn = "^0.22.0"
+azure-keyvault-secrets = "^4.7.0"
+flake8 = "^6.0.0"
+autopep8 = "^2.0.2"
+black = "^23.3.0"
+pre-commit = "^3.3.3"
+mypy = "^1.4.0"
+
+[tool.poetry.dev-dependencies]
+ipython = "*"
+poethepoet = "^0.10.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.1"
+
+[tool.poetry2conda]
+name = "mark-processor"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+force-cuda18 = "python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118"
+```
+
+Ensure you have these packages installed with the specified versions by using a package manager like [Poetry](https://python-poetry.org/) or by manually installing them using `pip`.
+
+Please refer to the respective documentation of each package for installation instructions specific to your operating system.
+
+## Installation
+To install the **MLOpsRobotics** package, follow these steps:
+
+**Recommended** installation:
+1. Make sure you have Poetry installed on your system. If you don't have it installed, you can follow the installation instructions for your operating system from the official Poetry documentation: https://python-poetry.org/docs/#installation
+2. Clone the [GitHub repository](https://github.com/BredaUniversityADSAI/2022-23d-fga2_p1-adsai-group-mlops_robotics/tree/main).
+   ```
+   git clone https://github.com/BredaUniversityADSAI/2022-23d-fga2_p1-adsai-group-mlops_robotics.git
+   ```
+3. Once you have Poetry installed, navigate to the project directory that contains the existing Poetry environment.
+   ```
+   cd 2022-23d-fga2_p1-adsai-group-mlops_robotics/MLOpsRobotics
+   ```
+4. In the project directory, you should see a pyproject.toml file, which specifies the project dependencies and other configuration         details. To create the environment based on the pyproject.toml file, run the following command:
+   ```
+   poetry install
+   ```
+5. Make sure to activate the environment if not automaticly
+
+Not recommended installation:
+1. Ensure you have Python (version 3.8 or later) installed on your system.
+2. Open a terminal or command prompt.
+3. Run the following command to install the package using `pip`:
+
+   ```
+   pip install mlopsrobotics
+   ```
+
+   This command will download and install the package along with its dependencies.
+
+4. Once the installation is complete, you can import the package into your Python scripts or notebooks and use its functionality.
+
+Note: It is recommended to set up a virtual environment before installing the package to keep your project dependencies isolated.
+
+## Usage Inference.py
+The `inference.py` script performs inference using YOLO and a localization model on an image. It takes command-line arguments to specify the input parameters, but also allows for interactive user input to change the default settings.
+
+### Prerequisites
+Before using the `inference.py` script, make sure you have the following prerequisites:
+
+## Default Setup:
+- The default YOLO model weight file (`best.pt`) should be located in the `data/Yolo_weights` directory.
+- The default image file to perform inference on (`5-c.png`) should be present in the `data/images` directory.
+- The default localization model weight file (`weights_Localization_XY_YAW.pt`) should be located in the `data/object_loc_weights` directory.
+
+## Custom Model Setup:
+- If you want to use your own model, please provide the corresponding model files:
+  - YOLO model weight file should be placed in the `data/Yolo_weights` directory.
+  - PNG image file for inference should be located in the `data/test_images/5-c.png` directory.
+  - Localization model weight file should be present in the `data/object_loc_weights` directory.
+
+To use your own models and alter the default options, run the `inference.py` script with the `--user_input yes` flag. This will enable you to provide custom paths for the model files and images, overriding the default options. For example, you can use the following path for the YOLO model: `./data/Yolo_weights/<your_model.pt>`. Make sure to specify the correct paths when using the `--user_input yes` flag.
+
+### Command-Line Arguments
+The script supports the following command-line arguments:
+
+- `--user_input`: Allows changing the default settings interactively. Accepts values `yes` or `no`. (default: `no`)
+- `--model_path`: Path to the YOLO model weight file. (default: `./data/Yolo_weights/best.pt`)
+- `--image_path`: Path to the image file to perform inference on. (default: `./data/test_images/5-c.png`)
+- `--loc_model_path`: Path to the localization model weight file. (default: `./data/object_loc_weights/weights_Localization_XY_YAW.pt`)
+
+### Usage Examples
+1. Perform inference using default settings:
+    ```
+    python src/inference.py
+    ```
+
+2. Perform inference with custom settings interactively:
+    ```
+    python src/inference.py --user_input yes
+    ```
+
+**Note:** If the `--user_input` flag is set to `yes`, the script will prompt you to enter the paths to the YOLO model weight file, image file, and localization model weight file interactively.
+
+# Usage train.py
+The `train.py` script is used to train a specified model based on user inputs. It provides options to train either a YOLO model, a localization model, or both. This document explains how to use the script and provides examples.
+
+## Train Script Prerequisites
+
+Before using the `train.py` script, make sure you have the following prerequisites:
+
+### YOLO Model Training:
+- Prepare the training dataset with annotated bounding box labels. The dataset can be created using tools like Roboflow.
+- You should have the API codes ready to put into the CLI
+  
+### Localization Model Training:
+- Prepare the training dataset as follows:
+  .NPZ file(s) with 3 Numpy arrays named arr_0 - arr_1 - arr_2.
+  - arr_0 should contain image arrays with the following shape: (amount_items, 92, 138, 3)
+  - arr_1 should contain the X for the model with the following columns:
+    - column1: Boundingbox Xmin
+    - column2: Boundingbox Xmax
+    - column3: Boundingbox Ymin
+    - column4: Boundingbox Ymax
+    - column5: Classes from 0 to 4 (max 5 different classes allowed)
+  - arr_2 should contain the Y for the model with the following columns:
+    - column1: X Location of the item between -0,1 and 0,1
+    - column2: Y Location of the item between -0,1 and 0,1
+    - column3: Z Location of the item between -0,1 and 0,1
+    - column4: Yaw of the items between -0,1 and 0,1
+      
+**!Important Note:** The number of pictures should match the number of items. So for example, if your image has 3 items, you should have 3 rows of the same image in the image array. So the row index corresponds with the items' X and Y indexes. 
+
+**Note:** The module will normalize and process all of the data as long as the above structure is being used.
+
+## Running the Script
+To run the script, execute the following command in your terminal. Options can be inputted interactively:
+
+```
+python train.py
+```
+The script will prompt you to enter the model and user input interactively to change the default settings.
+
+## Interactive Command-line Options
+Settings that can be changed for the **Yolo** model is or press ENTER for default options:
+- api_key: Roboflow API Key for RoboFlow Project
+- workspace_name: Workspace name from RoboFlow Project
+- project_name: Project name from RoboFlow Project
+- version_number: Version Number from RoboFlow Project
+- model_weight: Pre-trained weights file
+- model_path: Option to change pre-trained file
+- img_size: Image Size
+- batch_size: Batch Size
+- epochs: Epochs
+  
+Settings that can be changed for the **Localization** model is or press ENTER for default options:
+- data_path:  The path to the MAP where the dataset(s) are located
+- batch_size: Batch Size
+- epoch_size: Epochs
+- loc_model_path_save: Name of created weights file, file saved in 'data/object_loc_weights/' folder
+
+## Examples
+Here are some examples of how to use the `train.py` script:
+
+Train a YOLO model:
+
+```shell
+python src/train.py
+```
+
+

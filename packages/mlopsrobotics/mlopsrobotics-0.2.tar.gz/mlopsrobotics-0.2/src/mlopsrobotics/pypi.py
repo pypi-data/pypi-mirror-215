@@ -1,0 +1,9 @@
+# Author: Michael Nederhoed
+# username = __token__
+# password = pypi-AgEIcHlwaS5vcmcCJDExMGRhMzdmLWY3YzYtNDcyZi04ZTNmLTJjODQwMjFjMTdhZAAC
+# KlszLCJkOTI5MTJiNS1iNjU3LTQxYTktOWRkMC1lZGMxYzA5Mjg2ODUiXQAABiBcL4hQU2_53nTvbkPJT35JzoQLDGZ2Gp6DQXDCrQLFIg
+
+# [testpypi]
+#  username = __token__
+#  password = pypi-AgENdGVzdC5weXBpLm9yZwIkNjVlMWI2YmQtZWQ1NC00M2Y4LThlZTYtZTlhNzI5YjZlY2EyAAIqWzMs
+# IjY0ODE1NTVlLWMyNjItNDdiNC1iNTYxLTU4OTE3MWQyOTM0NCJdAAAGIHFkj5qqdG6uspeAXDKRI8tmeI_i_VlT_KuwTNukNhEa
