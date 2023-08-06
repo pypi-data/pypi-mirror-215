@@ -1,0 +1,8 @@
+citation_utils/__init__.py,sha256=8tEQJuTmIEDWZq2mSY-qrEZN-A8oXP1hunZ_bjgb0fs,48
+citation_utils/helpers.py,sha256=-7Pv_EnfBkZyl9XIdxdsdyhqhgoaG4AAr3bWbzWe8ZM,1580
+citation_utils/main.py,sha256=c9Pp02DGAOEhMJJRZcZIuS9dTKy4Qdgq7Y3GF2MUWAE,9366
+citation_utils/sql/legacy/multiple_cat_idx.sql,sha256=A9i6aWtgm4VD1KZc1a10oYi8PxQNFLEvhwlS8VCVx2w,541
+citation_utils-0.3.0.dist-info/LICENSE,sha256=u25HpCn9QJw8J9uO9ZPOtJL5jkyM3Qha8kLUeUCtwm0,1491
+citation_utils-0.3.0.dist-info/METADATA,sha256=w4uLjLudGK7wUBi8ZbgL6OlUoFUHSH4qkP5PAiEB8Hg,800
+citation_utils-0.3.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+citation_utils-0.3.0.dist-info/RECORD,,
