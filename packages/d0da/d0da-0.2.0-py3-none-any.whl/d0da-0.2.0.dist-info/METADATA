@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: d0da
+Version: 0.2.0
+Summary: Wooting D0DA protocol
+Author: Dick Marinus
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: protobuf (>=4.23.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Wooting D0DA Protocol
+
+## Introduction
+
+Wooting has been very generous in supplying Open Source (!) SDKs for their hardware, only, the SDKs aren't
+very thoroughly documented, limited to a single use case and written in C.
+
+This repository tries to fill in these gaps, it generated the packets and the used fields are described. It also
+describes what the packets do and in what order they should be sent.
+
+## Features
+
+- Technical documentation
+- Command line interface (d0da-cli) for sending packets to the keyboard
+- Unit tests
+
+## Limitations
+
+- Linux only (for now)
+- Wooting 60HE (ARM) only, though the packets should be compatible with other keyboards.
+
+## Installation
+
+Run:
+
+```bash
+pipx install d0da
+```
+
