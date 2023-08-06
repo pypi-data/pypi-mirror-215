@@ -1,0 +1,13 @@
+lol_esp_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lol_esp_api/lol_esports_api.py,sha256=HW3A4eC38sOZQ_SwjAfB3vKuXgvaZQNwyBTQMafZ2G0,185
+lol_esp_api/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lol_esp_api/apis/eventsAPI.py,sha256=4xwJWY0Exl2cE4tsPgcr0AeNbBP2-cA9pV1BnMiuXxw,921
+lol_esp_api/apis/leaguesAPI.py,sha256=3ZRwTLHUJw5tBp4oQWWnFW8J-M1hmT50VOvnGXfKsQ4,2055
+lol_esp_api/apis/matchAPI.py,sha256=e-jcoBlMaO01hV-lMDK_99KFmNfa_2Wnz_Fn7uJxRvg,520
+lol_esp_api/apis/supfunc.py,sha256=NotWlbaL6PT1SxEA9EQbpCbz7umeAAYvjU-N7r7IDa0,265
+lol_esp_api/apis/teamsAPI.py,sha256=CCHsHyem1A2Bn1Wev7TUiA1ORD2fX3HmT43jFF95Rgo,1119
+lol_esp_api-0.24.4.dist-info/LICENSE,sha256=PddIkFRwz4fWb0tDAnwlQfRmMXlGLwBJVHShMMVFpJE,1071
+lol_esp_api-0.24.4.dist-info/METADATA,sha256=p2kI4EaiuBWQ24tGkZPjN1IdLrPAmII_W2J65WM9rmE,277
+lol_esp_api-0.24.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lol_esp_api-0.24.4.dist-info/top_level.txt,sha256=uc2v80twzIM2YFjzCbzAU31VzJwQi5Ygb-rB_IVQ1pc,12
+lol_esp_api-0.24.4.dist-info/RECORD,,
