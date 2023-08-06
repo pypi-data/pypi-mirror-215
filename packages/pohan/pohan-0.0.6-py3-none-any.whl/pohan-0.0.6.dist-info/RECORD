@@ -1,0 +1,15 @@
+pohan/__init__.py,sha256=KsqLyagJa5c2ennvDtIbIpIusmRA6s39YDqur00mhZw,58
+pohan/api/__init__.py,sha256=XvjyjD5Ju4OMSEcjPhtXzPWoB1POAYLWxilLBBSaz3U,20
+pohan/api/common.py,sha256=qwp_mr7ID4hRhLPYz9Ag5K9QPWjLtMYP6PHFQT94qsA,1404
+pohan/api/普通话.py,sha256=M6gbdZY6_7gTYJo-0Kiv4TNSj3TOo-ScRhk_Gq_wk1w,402
+pohan/api/重庆话.py,sha256=MctpVwPr99IQpKlvl8CLNfSvh7UqDHkTxdelAlZpkcU,342
+pohan/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pohan/pinyin/__init__.py,sha256=1MEn9DBqW1BDZifPLmQhjTnwIsFiaxcUDqWtUL_wj5c,20
+pohan/pinyin/pinyin.py,sha256=DdgUGWGlwCNi-owp_qfGSjJmaLrHk9eNb-_tjyqKpbo,629
+tests/__init__.py,sha256=qt3eAR_Xd1OK6jRzIk9T4scYzEveGHDvIPzQfTVjOHg,181
+tests/test_pohan.py,sha256=gfTFTuaAiX5fGfwN0IIDI7ppg1JURNnn5N9nT6BHFe8,392
+pohan-0.0.6.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+pohan-0.0.6.dist-info/METADATA,sha256=dpBvzxTHxllLmjPrVJh9iSVfNTk5XaO3PFZVf8CzEKk,2902
+pohan-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pohan-0.0.6.dist-info/top_level.txt,sha256=Lx89XN9bgcpbV_Oe-yMOpwG1DYGRuwM_P-gxzaTYPqo,12
+pohan-0.0.6.dist-info/RECORD,,
