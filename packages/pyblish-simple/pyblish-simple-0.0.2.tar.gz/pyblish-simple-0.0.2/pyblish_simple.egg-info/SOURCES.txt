@@ -1,0 +1,12 @@
+pyproject.toml
+requirements.txt
+.github/workflows/python-publish.yml
+docs/README.md
+docs/screen1.jpg
+pyblish_simple/__init__.py
+pyblish_simple/view.py
+pyblish_simple.egg-info/PKG-INFO
+pyblish_simple.egg-info/SOURCES.txt
+pyblish_simple.egg-info/dependency_links.txt
+pyblish_simple.egg-info/requires.txt
+pyblish_simple.egg-info/top_level.txt
