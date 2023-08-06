@@ -1,0 +1,3 @@
+[console_scripts]
+bigword = bigword.__main__:bigword
+

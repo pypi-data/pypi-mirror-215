@@ -1,0 +1,10 @@
+bigword/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bigword/__main__.py,sha256=VcC92i6199xEnQfyQZ0SEutk0Nihn6_gFFhNPYtb2Yk,1039
+bigword/grid.py,sha256=dw1-COv3nIPwtzEyfu2NO8gkfPJ6kBqmXYLIcDkWcYc,1550
+bigword/letter_class.py,sha256=iF1ny_NGuz4MSVPbg6M-EdntIJT6Czwyp2ABEtXspbI,627
+bigword/letter_dict.py,sha256=2JFAAvDUknqXZush5sKEkdd-F6WSMRxqfXZd5d1aB3o,9089
+bigword-0.1.0.dist-info/METADATA,sha256=KwIqVmaorlMxpLVGLT0HIbiRmT40YokErK9uIARRaNo,716
+bigword-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bigword-0.1.0.dist-info/entry_points.txt,sha256=UDjoUyV9pl-kTSwkSUukrL4RCuQAcGdvITRJLBjgx1g,54
+bigword-0.1.0.dist-info/top_level.txt,sha256=LuxhGybT1IrJ15NQjge5nKPC44iFnHA8vDuFcW6cOvY,8
+bigword-0.1.0.dist-info/RECORD,,
