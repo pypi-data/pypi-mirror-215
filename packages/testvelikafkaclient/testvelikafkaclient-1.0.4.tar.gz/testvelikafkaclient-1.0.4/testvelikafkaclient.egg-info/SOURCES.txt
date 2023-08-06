@@ -1,0 +1,9 @@
+MANIFEST.in
+readme.md
+setup.py
+testvelikafkaclient/__init__.py
+testvelikafkaclient/producer.py
+testvelikafkaclient.egg-info/PKG-INFO
+testvelikafkaclient.egg-info/SOURCES.txt
+testvelikafkaclient.egg-info/dependency_links.txt
+testvelikafkaclient.egg-info/top_level.txt
