@@ -1,0 +1,10 @@
+webpfield/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+webpfield/apps.py,sha256=L9pqEgLODzBdwfm_91AHbdOK6lhJyXi2pGSwsYtnKas,150
+webpfield/fields.py,sha256=IgQxxin8BmA6hVDgubGMSM2hKNeZdofkwWQf1B1x9kU,458
+webpfield/settings.py,sha256=tLnXWmONxztTYr5NA_2AgpFQl8Ecipz_q6R_dygZ5CA,842
+webpfield/utils.py,sha256=qAdqc3JjD7mGIR5q_DV3acDVfTWkn9-8skDNaDs_Om0,869
+webpfield/webp_storage.py,sha256=oY3U11mc2cSetY109Tf0CLc9szsyqPfYza675P4_Vqo,998
+django_webpfield-0.0.1.dist-info/METADATA,sha256=h-7jTfhqrLZQqO323a5Q9NiX2QRIAbiG8Njo7IZroog,4301
+django_webpfield-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_webpfield-0.0.1.dist-info/licenses/LICENSE,sha256=WKDf2fMwJc-pSrSPUARoytOpQucf9EFhfkhRl_DUeto,1094
+django_webpfield-0.0.1.dist-info/RECORD,,
