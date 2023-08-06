@@ -1,0 +1,2 @@
+[console_scripts]
+bitssh = src.bitssh:main

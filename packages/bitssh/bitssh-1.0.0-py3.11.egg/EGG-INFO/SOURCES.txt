@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bitssh.egg-info/PKG-INFO
+bitssh.egg-info/SOURCES.txt
+bitssh.egg-info/dependency_links.txt
+bitssh.egg-info/entry_points.txt
+bitssh.egg-info/requires.txt
+bitssh.egg-info/top_level.txt
+src/__init__.py
+src/bitssh.py
