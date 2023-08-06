@@ -1,0 +1,8 @@
+exifread
+portalocker
+pyperclip
+python-dateutil
+
+[:platform_system == "Windows"]
+pywin32
+winshell
