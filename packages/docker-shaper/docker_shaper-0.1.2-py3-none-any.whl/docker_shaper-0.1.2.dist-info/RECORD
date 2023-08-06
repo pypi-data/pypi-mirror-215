@@ -1,0 +1,12 @@
+docker_shaper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_shaper/cli.py,sha256=W-agmrl70Twnk5OcS-tk09dYHZG52Vy_5gvg59wxJnI,1459
+docker_shaper/common.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_shaper/docker_stuff.py,sha256=EBG0sw3GuheqXS8jglGQ_L6EUqS4C1T2Ry1ySAUIOFU,2502
+docker_shaper/dynamic.py,sha256=C1n-CHARu6pVuJ0c4-k4lcN0h47Js210wJFdfGBYhOM,3977
+docker_shaper/server.py,sha256=5iWHLLBm54KNGe3h1vXVY9XeBb8UXKNJZQ96JP27qns,8379
+docker_shaper/templates/result.html,sha256=uoZvSO0VtrnAVSrEqmX77HgzmqKhKU1pOn4BxbDMqPk,149
+docker_shaper/utils.py,sha256=uqkRA3GivE8wgYI3TofmkdhmaFcbm2JkK3EM-Koic4E,4907
+docker_shaper-0.1.2.dist-info/METADATA,sha256=CX9xhdWj9nKeX17RKtEjAeO9kj_rjeb8YylOGF2RyP8,2852
+docker_shaper-0.1.2.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+docker_shaper-0.1.2.dist-info/entry_points.txt,sha256=E6jzhHs9YMDtNb4Xf9-KApdsIIeK45A9SNOK7lgtyLo,56
+docker_shaper-0.1.2.dist-info/RECORD,,
