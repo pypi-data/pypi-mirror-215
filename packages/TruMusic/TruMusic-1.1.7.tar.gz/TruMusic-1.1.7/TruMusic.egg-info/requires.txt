@@ -1,0 +1,5 @@
+mutagen
+requests
+pylast>=5.1.0
+musicbrainzngs
+TruLogger
