@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: user-discord
+Version: 1.2.9
+Summary: Library for discord bots.
+Home-page: https://github.com/nxSlayer/user-discord
+Author: nxSlayer
+Author-email: princediscordslay@gmail.com
+License: MIT
+Keywords: user_discord,user-discord
+Requires-Python: >=3.6
+
+### Discord
+` https://discord.gg/WR9MNs5Hqv`
+### How to install?
+`pip install user-discord`
+### No work
+Join-server, login, access discord database :D
