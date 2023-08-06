@@ -1,0 +1,5 @@
+INFO:root:Current Iteration: 5 | Incumbent 0.7553748305703263 | Duration 0.0 | Epochs 0 | Noise 9.999999750862769e-05
+INFO:root:Current Iteration: 6 | Incumbent 0.7553748305703263 | Duration 0.0 | Epochs 0 | Noise 9.999999750862769e-05
+INFO:root:Current Iteration: 7 | Incumbent 0.7582838077364196 | Duration 0.0 | Epochs 0 | Noise 9.999999750862769e-05
+INFO:root:Current Iteration: 8 | Incumbent 0.7582838077364196 | Duration 0.0 | Epochs 0 | Noise 9.999999750862769e-05
+INFO:root:Current Iteration: 9 | Incumbent 0.7582838077364196 | Duration 0.0 | Epochs 0 | Noise 9.999999750862769e-05
