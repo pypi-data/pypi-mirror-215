@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dfcsv2parquet/README.MD
+dfcsv2parquet/__init__.py
+dfcsv2parquet/requirements.txt
+dfcsv2parquet/thirdparty.json
+dfcsv2parquet.egg-info/PKG-INFO
+dfcsv2parquet.egg-info/SOURCES.txt
+dfcsv2parquet.egg-info/dependency_links.txt
+dfcsv2parquet.egg-info/requires.txt
+dfcsv2parquet.egg-info/top_level.txt

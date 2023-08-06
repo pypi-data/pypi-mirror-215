@@ -1,0 +1,3 @@
+include dfcsv2parquet/requirements.txt
+include dfcsv2parquet/thirdparty.json
+include dfcsv2parquet/README.MD
