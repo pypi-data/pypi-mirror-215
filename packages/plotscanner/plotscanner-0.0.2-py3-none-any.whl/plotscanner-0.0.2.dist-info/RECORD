@@ -1,0 +1,16 @@
+plotscanner/GUI.py,sha256=do-DTRWHhBizkYeS34Nz9kp0UxQkcjWr3mC3Wgq0S1Q,12881
+plotscanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plotscanner/data_frame_table.py,sha256=KHdkiEHJMVZV4mC3i-BN7iQQruF45WU1FBZX0l8WKK8,2897
+plotscanner/geometry.py,sha256=i3Mto2m9Juwj_Y_RRSTokviTsWVPIYyw1adUpOl3-vA,3165
+plotscanner/grid.py,sha256=PyIQlxmSI3xp3XEy4oqaOpUexLwcaXQxvqVBVG0CN_M,3418
+plotscanner/plotdigitizer.py,sha256=tBJehrIF0GFZgtUziZ6tBXwH8IXD8bNC9UGfvCqT76E,11361
+plotscanner/trajectory.py,sha256=c1-4z3HAoN7JTnIoW2Io5_PzU_pIE8c__yLqmVPD-8k,3517
+plotscanner/widgets.py,sha256=e3vHl-m0mrbYTYPo11Vdi1gwqsWeaCNMoRvO8zNOtgY,11252
+plotscanner/readme_imgs/example.jpg,sha256=FGDp_5f18xR37S3ANlWaGFmNtcZxtxmHIrMZ4kVR82w,47773
+plotscanner/ui/buttons.ui,sha256=sCs_iKyc4DVue2HAAoo9pDl5eGp-pmVDAm3qJF9vytk,3534
+plotscanner/ui/plots.ui,sha256=-AtLAL1aUBG5s8SN7-t3oUJ2JIM8PPNOkb26lZuHZXs,1850
+plotscanner-0.0.2.dist-info/METADATA,sha256=hV5jW9Lb5vH9LW6p5A8c11c2_TZeC32RYN0Vul14mlk,1828
+plotscanner-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+plotscanner-0.0.2.dist-info/entry_points.txt,sha256=l42FChIg5Koc9MQVp0pT3nxL5RxPpXR6YdkenHFsJSg,54
+plotscanner-0.0.2.dist-info/top_level.txt,sha256=IEJjAYEBpcx929WVAbaPRDeZcJrh_L398GKLtIXsq98,12
+plotscanner-0.0.2.dist-info/RECORD,,
