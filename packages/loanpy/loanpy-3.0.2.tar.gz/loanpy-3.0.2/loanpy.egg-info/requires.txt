@@ -1,0 +1,9 @@
+
+[dev]
+wheel
+twine
+sphinx
+
+[test]
+pytest>=7.1.2
+coverage>=7.2.2
