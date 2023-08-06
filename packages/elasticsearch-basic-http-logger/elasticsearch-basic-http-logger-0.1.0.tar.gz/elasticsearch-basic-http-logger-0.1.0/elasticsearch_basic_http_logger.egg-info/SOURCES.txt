@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+elasticsearch_basic_http_logger/__init__.py
+elasticsearch_basic_http_logger.egg-info/PKG-INFO
+elasticsearch_basic_http_logger.egg-info/SOURCES.txt
+elasticsearch_basic_http_logger.egg-info/dependency_links.txt
+elasticsearch_basic_http_logger.egg-info/not-zip-safe
+elasticsearch_basic_http_logger.egg-info/requires.txt
+elasticsearch_basic_http_logger.egg-info/top_level.txt
