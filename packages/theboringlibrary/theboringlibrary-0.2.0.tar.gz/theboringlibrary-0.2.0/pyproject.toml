@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "theboringlibrary"
+version = "0.2.0"
+description = "It does nothing!"
+authors = ["Stefano Frassetto <frassetto.stefano@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "theboringlibrary", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = {version = "^7.3.2", optional = true}
+mkdocs = {version = "^1.4.3", optional = true}
+
+[tool.poetry.extras]
+
+dev  = [
+    "pytest",
+    "mkdocs"
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
