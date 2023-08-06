@@ -1,0 +1,2 @@
+[console_scripts]
+rwkv = rwkv.run:main
