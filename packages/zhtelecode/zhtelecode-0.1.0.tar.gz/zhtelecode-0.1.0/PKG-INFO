@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: zhtelecode
+Version: 0.1.0
+Summary: Convert between Chinese Telegraph Codes and Unicode Chinese characters.
+Home-page: https://github.com/charlessimpson/zhtelecode/
+Author: Charles Simpson
+License: MIT License
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# zhtelecode
+
+`zhtelecode` is a Python package that converts between
+[Chinese Telegraph Codes](https://en.wikipedia.org/wiki/Chinese_telegraph_code)
+and Unicode Chinese characters (both simplified and traditional).
+
+## Usage
+
+Convert from Unicode to telegraph codes:
+```python
+>>> zhtelecode.to_telecode("中文信息")
+['0022', '2429', '0207', '1873']
+
+>>> zhtelecode.to_telecode("萧爱国")
+['5618', '1947', '0948']
+
+>>> zhtelecode.to_telecode("蕭愛國")
+['5618', '1947', '0948']
+```
+
+Convert from telegraph codes back to Unicode:
+```python
+>>> telecode = ["0022", "2429", "0207", "1873"]
+>>> zhtelecode.to_unicode(telecode)
+'中文信息'
+
+>>> telecode = ["5618", "1947", "0948"]
+>>> zhtelecode.to_unicode(telecode, encoding="mainland")
+'萧爱国'
+
+>>> zhtelecode.to_unicode(telecode, encoding="taiwan")
+'蕭愛國'
+```
+
+## Data
+
+The codebooks are derived from the Unicode consortium's
+[Unihan database](http://www.unicode.org/Public/UNIDATA/Unihan.zip) (last
+updated 2022-08-03 17:20).
+
+## License
+
+[MIT License](LICENSE.txt).
+
+Also see [Unicode terms of use](http://www.unicode.org/terms_of_use.html).
