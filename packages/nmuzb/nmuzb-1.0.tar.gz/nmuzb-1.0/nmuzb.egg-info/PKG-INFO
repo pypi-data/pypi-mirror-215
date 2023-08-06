@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nmuzb
+Version: 1.0
+Summary: O'zbek ismlarining to'liq, batafsil ma'nosi, kelib chiqishi, shakllari. O'zingiz va yaqinlaringizni ismlari ma'nosini bilib oling.
+Home-page: 
+Author: XUDOBERDI GAYRATOV
+Author-email: xudoberdigayratov@gmail.com
+License: MIT
+Keywords: name meaning
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+You can find out the meaning of your name through this
+
+Change Log
+==========
+
+0.0.1 (26/06/2023)
+-------------------
+- First Release
