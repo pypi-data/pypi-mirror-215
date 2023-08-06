@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: firenze
+Version: 0.1.2
+Summary: A lean executor for jupyter notebooks.
+Home-page: https://github.com/pabloalcain/firenze
+License: MIT
+Keywords: jupyter,notebook
+Author: Pablo Alcain
+Author-email: pabloalcain@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.156,<2.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: ipykernel (>=6.22.0,<7.0.0)
+Requires-Dist: nbclient (>=0.7.4,<0.8.0)
+Requires-Dist: nbconvert (>=7.3.1,<8.0.0)
+Requires-Dist: nbformat (>=5.8.0,<6.0.0)
+Project-URL: Repository, https://github.com/pabloalcain/firenze
+Description-Content-Type: text/markdown
+
+# Firenze
+
+Firenze is a lean jupyter notebook executor, that generates the notebook output in a single HTML
+file. You can also parameterize the notebooks without any modification to the notebook itself.
+It supports local files and `s3` paths, both for the notebook and for the output.
+
+## As a Library
+You can use `firenze` as a library in your own project. Install it through `pip`
+
+```bash
+pip install firenze
+```
+
+Suppose you have a very simple notebook that runs a "Hello, World!"
+
+![A notebook in jupyter](https://github.com/pabloalcain/firenze/blob/main/docs/img/hello_world_in_jupyter.png?raw=true)
+
+You can execute it right away with `firenze` through
+```bash
+firenze docs/notebooks/hello_world.ipynb
+```
+and the output html will be, as expected:
+
+![Hello, World! output](https://github.com/pabloalcain/firenze/blob/main/docs/img/hello_world_output.png?raw=true)
+
+You can also send parameters and `firenze` will automatically modify the variable:
+
+```bash
+firenze docs/notebooks/hello_world.ipynb name=Firenze
+```
+
+![Hello, Firenze! output](https://github.com/pabloalcain/firenze/blob/main/docs/img/hello_world_with_parameters.png?raw=true)
+
+## As a Docker Image
+This is still in the making, but one idea is to call `firenze` as a docker image with a notebook
+and a `requirements.txt`, so the notebook execution can be easily deployed to remote servers.
+
