@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tkadw
+Version: 0.1.1
+Summary: 
+Author: XiangQinxi
+Author-email: 1379773753@qq.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# tkadw 
+使用Canvas、WinForms（继tkforms、tktelerik之后）、tcltk制作的扩展界面库
+
