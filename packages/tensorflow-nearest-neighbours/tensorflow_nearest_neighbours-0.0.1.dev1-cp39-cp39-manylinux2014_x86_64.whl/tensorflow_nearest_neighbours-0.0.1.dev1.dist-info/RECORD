@@ -1,0 +1,11 @@
+tensorflow_nearest_neighbours/__init__.py,sha256=mJJunDEPq4KBx7w1gnAXxV6vxADZEYEyT0e7iTuGj3Y,128
+tensorflow_nearest_neighbours/_nearest_neighbours_op.so,sha256=lVnx0KAzdqEWxJuV_OoN0PPvlbGjpnb1-3OGhklCO_Q,593936
+tensorflow_nearest_neighbours/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorflow_nearest_neighbours/python/nearest_neighbours.py,sha256=U7tLUey9xnbd3HT1ttqEmgmtL3dlGPIBh5VAlJMFjVs,1774
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/nearest_neighbours_test.py,sha256=P5cjlw--gCXt1Ti9_KbTiauk5Y7HQ87Lnue8oTOFgSs,7394
+tensorflow_nearest_neighbours-0.0.1.dev1.dist-info/LICENSE,sha256=hbaDEFH4dVcqPAXJ18VwFcz-Lo3NDEAIi8vVw6rKjvw,11342
+tensorflow_nearest_neighbours-0.0.1.dev1.dist-info/METADATA,sha256=BQ5OeH2EgkXh6TIFsFZnNyTfshv8SwD22GjTJOFact4,1172
+tensorflow_nearest_neighbours-0.0.1.dev1.dist-info/WHEEL,sha256=3s2LSuQQhT9U1Dyv6MxBd72puf_ocSkY6hn5h0Kjf-o,103
+tensorflow_nearest_neighbours-0.0.1.dev1.dist-info/top_level.txt,sha256=C_-Y8PgpGtmWWL-3fDydJOkjyoPCtQ2QYQmncKargis,35
+tensorflow_nearest_neighbours-0.0.1.dev1.dist-info/RECORD,,
