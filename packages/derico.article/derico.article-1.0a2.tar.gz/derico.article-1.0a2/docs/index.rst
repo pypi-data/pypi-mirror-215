@@ -1,0 +1,5 @@
+==============
+derico.article
+==============
+
+User documentation
