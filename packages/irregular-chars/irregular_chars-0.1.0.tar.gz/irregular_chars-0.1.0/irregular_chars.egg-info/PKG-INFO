@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: irregular-chars
+Version: 0.1.0
+Summary: A library for cleaning text, such as removing zero-width characters or converting full-width characters to half-width
+Home-page: https://github.com/masatoEmata/replace_irregular_chars
+Author: Masato Emata
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
