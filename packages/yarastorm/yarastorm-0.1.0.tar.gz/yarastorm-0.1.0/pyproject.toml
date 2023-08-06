@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yarastorm"
+version = "0.1.0"
+description = "The yarastorm Python package"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "pyyaml>=6.0",
+    "stormlibpp>=0.3.0",
+]
+
+[[project.authors]]
+name = "John Gorman"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/gormaniac/yarastorm"
+Documentation = "https://gormo.co/yarastorm/"
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = [
+    "pkgproto/*.yaml",
+    "pkgproto/storm/*/*.storm",
+]

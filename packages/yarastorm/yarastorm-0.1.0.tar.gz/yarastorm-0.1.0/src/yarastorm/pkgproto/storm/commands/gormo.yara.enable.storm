@@ -1,0 +1,7 @@
+init {
+    $yaralib = $lib.import(gormo.yara.lib)
+}
+
+if ($node.form() = "it:app:yara:rule") {
+    $yaralib.enable_rule($node)
+}
