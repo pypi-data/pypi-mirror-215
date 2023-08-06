@@ -1,0 +1,10 @@
+neural_compressor>=2.2
+Flask
+Flask-Cors
+Flask-SocketIO
+gevent
+gevent-websocket
+cryptography
+
+[:sys_platform != "linux"]
+pywin32
