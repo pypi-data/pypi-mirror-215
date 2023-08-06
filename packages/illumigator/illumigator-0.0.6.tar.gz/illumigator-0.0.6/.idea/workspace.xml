@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ddb1138-aaaf-4f2f-9667-1ab2b2170b7f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/character2-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/character2-left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/character2-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/character2-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/character2.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/character2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/character_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/character_left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/character_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/character_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/light_receiver.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/light_receiver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mirror.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/mirror.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/new_walk.wav" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/new_walk.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/walking.wav" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/walking.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/wall.png" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/assets/wall.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/geometry.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/geometry.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/illumigator.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/light.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/light.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/menus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/util/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/illumigator/worldobjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/illumigator/worldobjects.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="syginzd6" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RYIns84Z8mxu8s93qQod9eYzIB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Performant Prog/IllumiGator/src/illumigator/illumigator.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Performant Prog\IllumiGator" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Performant Prog\IllumiGator\illumigator" />
+      <recent name="C:\Performant Prog\IllumiGator" />
+      <recent name="C:\Performant Prog\IllumiGator\src\illumigator" />
+      <recent name="C:\Performant Prog\IllumiGator\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="IllumiGator" type="PythonConfigurationType" factoryName="Python">
+      <module name="IllumiGator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Performant Prog\IllumiGator\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (IllumiGator)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/illumigator" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/illumigator/illumigator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="illumigator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IllumiGator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Lib/site-packages/illumigator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/Lib/site-packages/illumigator/illumigator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IllumiGator" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/illumigator" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Performant Prog\IllumiGator\illumigator\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.IllumiGator" />
+      <item itemvalue="Python.illumigator" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.illumigator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ddb1138-aaaf-4f2f-9667-1ab2b2170b7f" name="Changes" comment="" />
+      <created>1687420757630</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687420757630</updated>
+      <workItem from="1687420758969" duration="8198000" />
+      <workItem from="1687439771896" duration="3450000" />
+      <workItem from="1687611917548" duration="7254000" />
+      <workItem from="1687672267773" duration="8227000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IllumiGator$IllumiGator.coverage" NAME="IllumiGator Coverage Results" MODIFIED="1687679097143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/illumigator" />
+    <SUITE FILE_PATH="coverage/IllumiGator$light.coverage" NAME="light Coverage Results" MODIFIED="1687421228692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/scripts" />
+    <SUITE FILE_PATH="coverage/IllumiGator$util.coverage" NAME="util Coverage Results" MODIFIED="1687617889545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/illumigator/util" />
+    <SUITE FILE_PATH="coverage/IllumiGator$illumigator.coverage" NAME="illumigator Coverage Results" MODIFIED="1687679638023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/illumigator" />
+    <SUITE FILE_PATH="coverage/IllumiGator$illumigator__1_.coverage" NAME="main Coverage Results" MODIFIED="1687680510454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/illumigator" />
+    <SUITE FILE_PATH="coverage/IllumiGator$entry_point.coverage" NAME="entry_point Coverage Results" MODIFIED="1687675387862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

@@ -1,0 +1,103 @@
+Index: src/scripts/illumigator.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import arcade\r\nimport pyglet.media\r\n\r\nfrom menus import draw_title_menu, InGameMenu\r\nfrom util.util import *\r\nimport worldobjects\r\nimport numpy\r\n\r\n\r\nclass Character:\r\n    def __init__(self, sprite_path, scale_factor=2, image_width=24, image_height=24,\r\n                 center_x=WINDOW_WIDTH // 2, center_y=WINDOW_HEIGHT // 2, velocity=10):\r\n        self.character_sprite = arcade.Sprite(sprite_path, scale_factor, image_width=image_width,\r\n                                              image_height=image_height, center_x=center_x, center_y=center_y,\r\n                                              hit_box_algorithm=\"Simple\")\r\n        self.velocity = velocity\r\n        self.left = False\r\n        self.right = False\r\n        self.up = False\r\n        self.down = False\r\n        self.interactive_line = None\r\n        self.is_walking = False\r\n        self.player = pyglet.media.Player()\r\n\r\n        self.walking_sound = arcade.load_sound(\"../../assets/new_walk.wav\")\r\n\r\n    def draw(self):\r\n        self.character_sprite.draw()\r\n\r\n    def update(self, level):\r\n        if self.left and not self.right:\r\n            self.character_sprite.center_x -= self.velocity\r\n            if level.check_collisions(self):\r\n                self.character_sprite.center_x += self.velocity\r\n        elif self.right and not self.left:\r\n            self.character_sprite.center_x += self.velocity\r\n            if level.check_collisions(self):\r\n                self.character_sprite.center_x -= self.velocity\r\n        if self.up and not self.down:\r\n            self.character_sprite.center_y += self.velocity\r\n            if level.check_collisions(self):\r\n                self.character_sprite.center_y -= self.velocity\r\n        elif self.down and not self.up:\r\n            self.character_sprite.center_y -= self.velocity\r\n            if level.check_collisions(self):\r\n                self.character_sprite.center_y += self.velocity\r\n\r\n        if self.is_walking and not arcade.Sound.is_playing(self.walking_sound, self.player):\r\n            self.player = arcade.play_sound(self.walking_sound)\r\n        elif not self.is_walking and arcade.Sound.is_playing(self.walking_sound, self.player):\r\n            arcade.stop_sound(self.player)\r\n\r\n    def rotate_world_object(self, direction):\r\n        if self.interactive_line is None:\r\n            return\r\n\r\n        rotation_amount = numpy.deg2rad(1) * direction\r\n        point1, point2 = self.interactive_line.point1, self.interactive_line.point2\r\n        center = (point1 + point2) / 2\r\n\r\n        # rotate the points around the center of the mirror\r\n        rotated_point1 = rotate_around_center(point1, rotation_amount, center)\r\n        rotated_point2 = rotate_around_center(point2, rotation_amount, center)\r\n\r\n        # update the mirror's points\r\n        self.interactive_line.point1 = rotated_point1\r\n        self.interactive_line.point2 = rotated_point2\r\n\r\n\r\nclass Level:\r\n    def __init__(self, wall_coordinate_list: list[list], mirror_coordinate_list: list[list] = (),\r\n                 name='default'):\r\n        self.background = None\r\n        self.name = name\r\n        self.wall_list = []\r\n        self.mirror_list = []\r\n        self.level_border = [\r\n            #                 center position                      width & height        rotation\r\n            worldobjects.Wall(numpy.array([8, WINDOW_HEIGHT/2]),              numpy.array([80, 1]), numpy.pi / 2),\r\n            worldobjects.Wall(numpy.array([WINDOW_WIDTH-8, WINDOW_HEIGHT/2]), numpy.array([80, 1]), numpy.pi / 2),\r\n            worldobjects.Wall(numpy.array([WINDOW_WIDTH/2, WINDOW_HEIGHT-8]), numpy.array([80, 1]), 0),\r\n            worldobjects.Wall(numpy.array([WINDOW_WIDTH/2, 8]),               numpy.array([80, 1]), 0),\r\n        ]\r\n        for wall_coordinate in wall_coordinate_list:\r\n            self.wall_list.append(worldobjects.Wall(numpy.array([wall_coordinate[0], wall_coordinate[1]]),\r\n                                                    numpy.array([wall_coordinate[2], wall_coordinate[3]]),\r\n                                                    wall_coordinate[4]))\r\n\r\n        for wall in self.level_border:\r\n            self.wall_list.append(wall)\r\n\r\n        for mirror_coordinate in mirror_coordinate_list:\r\n            self.mirror_list.append(\r\n                worldobjects.Mirror(numpy.array([mirror_coordinate[0], mirror_coordinate[1]]), mirror_coordinate[4]))\r\n\r\n    def draw(self):\r\n        for mirror in self.mirror_list:\r\n            mirror.draw()\r\n        for wall in self.wall_list:\r\n            wall.draw()\r\n\r\n    def check_collisions(self, character: Character):\r\n        for wall in self.wall_list:\r\n            if character.character_sprite.collides_with_list(wall.sprite_list):\r\n                return True\r\n        for mirror in self.mirror_list:\r\n            if character.character_sprite.collides_with_list(mirror.sprite_list):\r\n                return True\r\n\r\n\r\nclass GameObject(arcade.Window):\r\n    def __init__(self):\r\n        super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)\r\n        self.elem_list = None\r\n        self.mirror = None\r\n        self.wall = None\r\n        self.game_state = None\r\n        self.set_mouse_visible(False)\r\n        arcade.set_background_color(arcade.color.BROWN)\r\n        self.game_menu = None\r\n        self.tile_map = None\r\n        self.character = None\r\n        self.game_state = None\r\n        self.current_level = None\r\n\r\n    def setup(self):\r\n        self.game_state = 'menu'\r\n        self.game_menu = InGameMenu()\r\n        self.character = Character('../../assets/character1.png')\r\n        self.elem_list = arcade.SpriteList()\r\n\r\n        # TODO: eventually JSON file\r\n        mirror_coordinate_list = [[WINDOW_WIDTH / 3, WINDOW_HEIGHT - 80, 1, 1, numpy.pi / 2]]\r\n        wall_coordinate_list = [[800, 150, 20, 1, numpy.pi / 2]]\r\n\r\n        self.current_level = Level(wall_coordinate_list, mirror_coordinate_list)\r\n\r\n    def update(self, delta_time):\r\n        self.character.update(self.current_level)\r\n\r\n    def on_draw(self):\r\n        self.clear()\r\n\r\n        if self.game_state == 'menu':\r\n            draw_title_menu()\r\n        elif self.game_state == 'game' or self.game_state == 'paused':\r\n            self.current_level.draw()\r\n            self.character.draw()\r\n\r\n            if self.game_state == 'paused':\r\n                self.game_menu.draw()\r\n\r\n    def on_key_press(self, key, key_modifiers):\r\n        if self.game_state == 'menu':\r\n            if key == arcade.key.ENTER:\r\n                self.game_state = 'game'\r\n            if key == arcade.key.ESCAPE:\r\n                arcade.close_window()\r\n\r\n        elif self.game_state == 'game':\r\n            if key == arcade.key.ESCAPE:\r\n                self.game_state = 'paused'\r\n            if key == arcade.key.W or key == arcade.key.UP:\r\n                self.character.up = True\r\n                self.character.is_walking = True\r\n            if key == arcade.key.A or key == arcade.key.LEFT:\r\n                self.character.left = True\r\n                self.character.is_walking = True\r\n            if key == arcade.key.D or key == arcade.key.RIGHT:\r\n                self.character.right = True\r\n                self.character.is_walking = True\r\n            if key == arcade.key.S or key == arcade.key.DOWN:\r\n                self.character.down = True\r\n                self.character.is_walking = True\r\n\r\n        elif self.game_state == 'paused':\r\n            if key == arcade.key.ESCAPE:\r\n                self.game_state = 'game'\r\n            if key == arcade.key.DOWN:\r\n                self.game_menu.increment_selection()\r\n            if key == arcade.key.UP:\r\n                self.game_menu.decrement_selection()\r\n            if key == arcade.key.ENTER:\r\n                if self.game_menu.selection == 0:\r\n                    self.game_state = 'game'\r\n                elif self.game_menu.selection == 1:\r\n                    self.game_state = 'menu'\r\n\r\n    def on_key_release(self, key, key_modifiers):\r\n        if key == arcade.key.W or key == arcade.key.UP:\r\n            self.character.up = False\r\n            self.character.is_walking = False\r\n        if key == arcade.key.A or key == arcade.key.LEFT:\r\n            self.character.left = False\r\n            self.character.is_walking = False\r\n        if key == arcade.key.D or key == arcade.key.RIGHT:\r\n            self.character.right = False\r\n            self.character.is_walking = False\r\n        if key == arcade.key.S or key == arcade.key.DOWN:\r\n            self.character.down = False\r\n            self.character.is_walking = False\r\n        self.character.update(self.current_level)\r\n\r\n\r\ndef main():\r\n    window = GameObject()\r\n    window.setup()\r\n    arcade.run()\r\n\r\n\r\nif __name__ == '__main__':\r\n    main()\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/scripts/illumigator.py b/src/scripts/illumigator.py
+--- a/src/scripts/illumigator.py	(revision d3be202f7b3cd502b0f83a18b72889e4b30dea53)
++++ b/src/scripts/illumigator.py	(date 1687427282156)
+@@ -6,7 +6,6 @@
+ import worldobjects
+ import numpy
+ 
+-
+ class Character:
+     def __init__(self, sprite_path, scale_factor=2, image_width=24, image_height=24,
+                  center_x=WINDOW_WIDTH // 2, center_y=WINDOW_HEIGHT // 2, velocity=10):
+@@ -20,10 +19,14 @@
+         self.down = False
+         self.interactive_line = None
+         self.is_walking = False
++        self.counter_clockwise = False
++        self.clockwise = False
+         self.player = pyglet.media.Player()
+ 
+         self.walking_sound = arcade.load_sound("../../assets/new_walk.wav")
+ 
++        self.closest_interactable = None
++
+     def draw(self):
+         self.character_sprite.draw()
+ 
+@@ -50,21 +53,20 @@
+         elif not self.is_walking and arcade.Sound.is_playing(self.walking_sound, self.player):
+             arcade.stop_sound(self.player)
+ 
+-    def rotate_world_object(self, direction):
+-        if self.interactive_line is None:
+-            return
+-
+-        rotation_amount = numpy.deg2rad(1) * direction
+-        point1, point2 = self.interactive_line.point1, self.interactive_line.point2
+-        center = (point1 + point2) / 2
+-
+-        # rotate the points around the center of the mirror
+-        rotated_point1 = rotate_around_center(point1, rotation_amount, center)
+-        rotated_point2 = rotate_around_center(point2, rotation_amount, center)
+-
+-        # update the mirror's points
+-        self.interactive_line.point1 = rotated_point1
+-        self.interactive_line.point2 = rotated_point2
++        closest_distance = 10000000 # arbitrarily large number
++        for mirror in level.mirror_list:
++            distance_x = abs(self.character_sprite.center_x - mirror.position[0])
++            distance_y = abs(self.character_sprite.center_y - mirror.position[1])
++            distance = distance_x + distance_y
++            print(distance)
++            if distance < closest_distance and distance < 200:
++                self.closest_interactable = mirror
++            else:
++                self.closest_interactable = None
++        if self.counter_clockwise and self.closest_interactable and not self.clockwise:
++            self.closest_interactable.move(numpy.zeros(2), 0.02)
++        elif self.clockwise and self.closest_interactable and not self.counter_clockwise:
++            self.closest_interactable.move(numpy.zeros(2), -0.02)
+ 
+ 
+ class Level:
+@@ -107,7 +109,6 @@
+             if character.character_sprite.collides_with_list(mirror.sprite_list):
+                 return True
+ 
+-
+ class GameObject(arcade.Window):
+     def __init__(self):
+         super().__init__(WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE)
+@@ -173,6 +174,13 @@
+                 self.character.down = True
+                 self.character.is_walking = True
+ 
++            if key == arcade.key.Q:
++                if self.character.closest_interactable:
++                    self.character.counter_clockwise = True
++            if key == arcade.key.E:
++                if self.character.closest_interactable:
++                    self.character.clockwise = True
++
+         elif self.game_state == 'paused':
+             if key == arcade.key.ESCAPE:
+                 self.game_state = 'game'
+@@ -201,6 +209,11 @@
+             self.character.is_walking = False
+         self.character.update(self.current_level)
+ 
++        if key == arcade.key.Q:
++            self.character.counter_clockwise = False
++        if key == arcade.key.E:
++            self.character.clockwise = False
++
+ 
+ def main():
+     window = GameObject()
