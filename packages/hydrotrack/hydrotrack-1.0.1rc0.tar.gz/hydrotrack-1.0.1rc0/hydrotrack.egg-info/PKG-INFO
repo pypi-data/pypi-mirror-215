@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hydrotrack
+Version: 1.0.1rc0
+Summary: A Python package for track and forecasting.
+Home-page: https://github.com/hydrotrack-project/hydrotrack
+Author: Helvecio B. L. Neto, Alan J. P. Calheiros
+Author-email: hydrotrack.project@gmail.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# hydrotrack
+Python library for tracking and forecasting precipitation.
+
+conda create -n hydrotrack python=3.11
+conda activate hydrotrack
+pip3 install -r requirements.txt
