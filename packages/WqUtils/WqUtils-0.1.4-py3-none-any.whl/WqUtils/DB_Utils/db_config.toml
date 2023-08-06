@@ -1,0 +1,20 @@
+[es_database]
+hosts = ['es-cn-7pp2pap15000c7gqb.public.elasticsearch.aliyuncs.com']
+user = 'elastic'
+password = 'Colourdata110!'
+port = 9200
+
+[sqlserver_database]
+HOST = '123.57.241.126'
+PORT = 1433
+USERNAME = 'wanqiang'
+PASSWORD = 'wq2022'
+DB = 'YiliPOC'
+
+[pg_database]
+HOST = "gp-uf6xpccjt4kem37d4o-master.gpdb.rds.aliyuncs.com"
+PORT = "5432"
+USERNAME = "colourdata"
+PASSWORD = "Colourdata110!"
+DB = "CD_Research_DB"
+options = "-c search_path=dbo,public"
