@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: DielModels
+Version: 0.0.2
+Summary: DielModels:
+Author: Luciana Martins and João Capela
+License: MIT
+Keywords: plants,diel models
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: cobra
+Requires-Dist: numpy
+Requires-Dist: pandas
+Provides-Extra: testing
+Requires-Dist: pytest (>=7.1.1) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=3.0.0) ; extra == 'testing'
+Requires-Dist: mypy (>=0.942) ; extra == 'testing'
+Requires-Dist: flake8 (>=4.0.1) ; extra == 'testing'
+Requires-Dist: tox (>=3.25.0) ; extra == 'testing'
+
+# DielModels
+
+### Package diel_models
+
+``` pip install DielModels==0.0.1 ```
+
+``` import diel_models```
+
+For more information read __index.html__ documentation file.
+
+https://github.com/LucianaMartins26/DielModels.git
+
+
+
+
