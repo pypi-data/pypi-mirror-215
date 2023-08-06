@@ -1,0 +1,6 @@
+pyvista
+seaborn
+pandas
+matplotlib
+nibabel
+nilearn
