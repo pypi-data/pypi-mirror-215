@@ -1,0 +1,3 @@
+[console_scripts]
+sparkcraft=sparkcraft.__main__:main
+

@@ -1,0 +1,11 @@
+sparkcraft/__init__.py,sha256=kFbY06RbVe3YuptOYnG5RaE9CpYJ9GRfNUkBTqCeLxk,18
+sparkcraft/joins.py,sha256=sUzA6eKPCY7dvOMqnoSpkHb7zi3wCFMBPqvCk3dhOYY,1516
+sparkcraft/partitions.py,sha256=5Lxyz9SfP5iAPZdiNOUHp7WwOQj-rpL2BFij6FYFXhQ,6391
+sparkcraft/utils/__init__.py,sha256=GCkqu22sX3o9eiYX6E5vEuaMKZBQibPDPQGizABRnC4,239
+sparkcraft/utils/session.py,sha256=vDsPl86MHLT0_xb74mSEM1YuczZG-kvcqoSd7xYG-0A,772
+sparkcraft/utils/size_estimation.py,sha256=0EpACNz_JaQd8fq90Y6i60Tl3ei4z8nWzHwDTtpaxwc,1420
+sparkcraft-0.0.4.dist-info/LICENSE,sha256=hnwqEuMtE2Q9ej98XsYyaferF9y2JQE_hp410W3CZmY,1076
+sparkcraft-0.0.4.dist-info/METADATA,sha256=OTtzzWHkypI39AbGaaa2IExnUcqQk_l4G9GQkusXwqI,3335
+sparkcraft-0.0.4.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sparkcraft-0.0.4.dist-info/entry_points.txt,sha256=lN_b2Rd54zRRYgfCLDSkTQMLfsVWiIX2r6BahMPdk10,55
+sparkcraft-0.0.4.dist-info/RECORD,,
