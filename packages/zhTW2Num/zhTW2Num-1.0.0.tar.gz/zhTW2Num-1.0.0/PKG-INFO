@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: zhTW2Num
+Version: 1.0.0
+Summary: Convert zh-TW numbers to Arabic numerals
+Author: ben60523
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zhTW2Num
+
+## Summary
+* This tool is for converting the number texts of Traditional Chinese into float
+* Float value is supported
+
+## How to use it
+
+```
+text = '金額總共兩千零二十元'
+res = zhTW2Num(text)
+print(res) # 2020.0
+text = '長度二點零五公分
+res = zhTW2Num(text)
+print(res) # 2.05
+
+```
+
