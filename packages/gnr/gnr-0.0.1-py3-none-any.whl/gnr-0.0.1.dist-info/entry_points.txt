@@ -1,0 +1,2 @@
+[nbdev]
+gnr = gnr._modidx:d
