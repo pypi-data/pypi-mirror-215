@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: deeppipe-api
+Version: 0.0.4
+Summary: DeepPipe efficiently optimizes Machine Learning Pipelines using meta-learning.
+Project-URL: Homepage, https://github.com/releaunifreiburg/DeepPipe
+Project-URL: Bug Tracker, https://github.com/releaunifreiburg/DeepPipe/issues
+Author-email: Sebastian Pineda <pineda@cs.uni-freiburg.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: gpytorch==1.4.2
+Requires-Dist: pandas==1.2.4
+Requires-Dist: scikit-learn==1.2.2
+Requires-Dist: tensorboard==2.5.0
+Requires-Dist: torch==1.8.1
+Requires-Dist: tqdm==4.65.0
+Description-Content-Type: text/markdown
+
+# DeepPipe
+
+DeepPipe efficiently optimizes Machine Learning Pipelines using meta-learning.
+
+## Install 
+
+`
+pip install deeppipe
+`
+
+
+
