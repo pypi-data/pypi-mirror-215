@@ -1,0 +1,17 @@
+climpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+climpy/metric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+climpy/metric/metric.py,sha256=Jw7iY3Nffnq9K_Dp3daf1h7XNI6bqpFwbWKZG3Vuvak,1650
+climpy/ml_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+climpy/ml_data/data.py,sha256=oPatp3efLeSSqXDdyEXQkcbuOOYNjvtfxROEsKFlS-k,220
+climpy/transform/condition.py,sha256=QnjlrCyaOC-d-HdmeioMVKXeg1lj4QEcqRDJIXc3VX4,3087
+climpy/transform/criterion.py,sha256=dkuscEAU0ZDnqb6ihnynqw5HLnALFJcSQcH32GnatPA,915
+climpy/transform/event.py,sha256=3zMrBjasXuPyMmnTCiV2P8-qvhAWNR3ELh-Hcz9pTEA,3546
+climpy/transform/hazard.py,sha256=GoH9zobWWU9n84I1w4cxGujAIvKzqop7USbVvRVz78I,2338
+climpy/transform/link.py,sha256=mYJF2pw8J6Zqts3r_4D0E1Ho1EOeN0gbH7DnrwZqblg,1357
+climpy/transform/select.py,sha256=9vWo4VorBCnuQNluqishMpQXIyOJWo8nNCtruJ_QB0w,2884
+climpy/transform/specialized/flood_criterion.py,sha256=He2aaDeEub7UK-yKB-yocstZcZw6xVgAXl9fBKcoTNo,628
+climpy/transform/utils.py,sha256=m2eJq2Tph6tSeLHj2A2ECgigJfl2Ph082C-7ibAMoJ0,879
+climpy-0.0.0.2.dist-info/LICENSE,sha256=DgR2QRFXJud27dSfcdMBfyXNdWoaTvdB9s4teXXnl84,1498
+climpy-0.0.0.2.dist-info/METADATA,sha256=6waP1n0GB4xYTiQJ_QmXs4dKe_uk_UBADT5bw4EC8LE,2675
+climpy-0.0.0.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+climpy-0.0.0.2.dist-info/RECORD,,
