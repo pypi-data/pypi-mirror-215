@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cli/uuid05
+uuid05/__init__.py
+uuid05.egg-info/PKG-INFO
+uuid05.egg-info/SOURCES.txt
+uuid05.egg-info/dependency_links.txt
+uuid05.egg-info/top_level.txt
