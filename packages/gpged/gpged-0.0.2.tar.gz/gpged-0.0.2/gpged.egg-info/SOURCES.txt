@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+gpged/__init__.py
+gpged/__main__.py
+gpged/app.py
+gpged/run_gpged.py
+gpged.egg-info/PKG-INFO
+gpged.egg-info/SOURCES.txt
+gpged.egg-info/dependency_links.txt
+gpged.egg-info/entry_points.txt
+gpged.egg-info/top_level.txt

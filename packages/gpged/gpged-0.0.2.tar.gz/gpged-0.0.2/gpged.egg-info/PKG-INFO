@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: gpged
+Version: 0.0.2
+Summary: GUI for encrypting and decrypting text with GPG.
+Author-email: Sky Moore <i@msky.me>
+License: Copyright 2022 Sky Moore
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Keywords: gpg,gnupg,pgp,gui,encryption,decryption,cryptography
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# GPG Encrypt Decrypt GUI: gpged
+> `gpged` is a QT6 python application that makes use of GnuPG to present a simple interface for basic pgp operations.
+
+## Install with Pip from Pypi:  
+`pip install gpged`
+## Install with Pip from source:  
+```bash
+# clone the repo then
+cd gpged
+pip install .
+```
+## Install with pipenv from source:  
+`pipenv install --system --deploy`
+## Run gpged
+`gpged`
+### Nice UI  
+![layout](https://github.com/skymoore/gpged/blob/main/gpged/images/layout.png?raw=true)
+### Encrypt with multiple public keys  
+![multi-key select](https://github.com/skymoore/gpged/blob/main/gpged/images/multi_key_select.png?raw=true)
+### Decrypt messages  
+![decypted message](https://github.com/skymoore/gpged/blob/main/gpged/images/decrypted_message.png?raw=true)
