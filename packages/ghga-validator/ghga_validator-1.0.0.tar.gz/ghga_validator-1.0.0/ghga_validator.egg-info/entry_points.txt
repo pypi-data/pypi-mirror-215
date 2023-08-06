@@ -1,0 +1,2 @@
+[console_scripts]
+ghga-validator = ghga_validator.__main__:run
