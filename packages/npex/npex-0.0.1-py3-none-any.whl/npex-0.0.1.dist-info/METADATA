@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: npex
+Version: 0.0.1
+Summary: NeuroPAL extractor
+Author: Greg Bubnis
+Author-email: gregory.bubnis@ucsf.edu
+Requires-Python: >=3.8
+Description-Content-Type: ## NPEX the NeuroPal EXtractor
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: tifffile (>=2022.5.4)
+Requires-Dist: pandas (>=1.4.2)
+Requires-Dist: matplotlib (>=3.5.2)
+Requires-Dist: pyqtgraph (>=0.12.4)
+Requires-Dist: pyqt5
+Requires-Dist: napari (>=0.4.16)
+Requires-Dist: foco-improc
+Requires-Dist: xmltodict
+
+Extract nuclear positions, intensities and ID from NeuroPAL image volumes.
+
+
+License-File: LICENSE

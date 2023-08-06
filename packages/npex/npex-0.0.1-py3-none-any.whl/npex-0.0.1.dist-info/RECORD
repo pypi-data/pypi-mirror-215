@@ -1,0 +1,12 @@
+npex/alignment.py,sha256=uPkQI_X1blqBqA7_hZZ6XZZYFKuDgJOktLAGsPuHvk4,9519
+npex/blob.py,sha256=9hiM_mi0uZOgbvWI5B_uZBK-8CD5ZvoKQuxkTpnLEbY,5262
+npex/datachunk.py,sha256=3d-MdGEnQ44_EE2GaxJfhnjaxNcSdk0eKG2ReFhMlzU,19166
+npex/gui.py,sha256=hgvSb-tWqV5BXkQqTfMDDehD1Rf3Q6JiyH8q81Naj-E,72371
+npex/npex.py,sha256=LbjEmQkpc__G39mIEhTLgE7S1qL0KpEPO7nxgsWzzYw,19003
+npex/peaks.py,sha256=vswODbLm-cWBWfK4RB3dgiaMs_E5PSCAm7naalmHUq4,14362
+npex/tiffreader.py,sha256=vc6ILDhwKswHa8fP6Y_0pgyeD5zKtrNBarNYz_2FN5o,28643
+npex-0.0.1.dist-info/LICENSE,sha256=GJ6tX9zyNgZvMP_Gza2lo_3PRBEADwyjI4gL2ga_xlc,1085
+npex-0.0.1.dist-info/METADATA,sha256=OQX8zJkSLOyDYn_lLyMcNGH9LIPhvLAMDm8XDqu2vqE,593
+npex-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+npex-0.0.1.dist-info/top_level.txt,sha256=X470lc7Ah7A8-HRBiEojMdZGMCsNDfq7ocqj6iv60wQ,5
+npex-0.0.1.dist-info/RECORD,,
