@@ -1,0 +1,2 @@
+sdypy-EMA>=0.27
+sdypy-io>=0.1.0
