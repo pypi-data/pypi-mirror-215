@@ -1,0 +1,8 @@
+README.md
+setup.py
+workflowSession/__init__.py
+workflowSession/workflow_details.py
+workflowSession.egg-info/PKG-INFO
+workflowSession.egg-info/SOURCES.txt
+workflowSession.egg-info/dependency_links.txt
+workflowSession.egg-info/top_level.txt
