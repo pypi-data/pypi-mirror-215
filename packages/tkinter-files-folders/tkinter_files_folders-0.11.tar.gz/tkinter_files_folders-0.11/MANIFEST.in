@@ -1,0 +1,4 @@
+include tkinter_files_folders/requirements.txt
+include tkinter_files_folders/thirdparty.json
+include tkinter_files_folders/README.MD
+include tkinter_files_folders/LICENSE

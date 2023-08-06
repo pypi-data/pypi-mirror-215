@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tkinter_files_folders/LICENSE
+tkinter_files_folders/README.MD
+tkinter_files_folders/__init__.py
+tkinter_files_folders/requirements.txt
+tkinter_files_folders/thirdparty.json
+tkinter_files_folders.egg-info/PKG-INFO
+tkinter_files_folders.egg-info/SOURCES.txt
+tkinter_files_folders.egg-info/dependency_links.txt
+tkinter_files_folders.egg-info/top_level.txt
