@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "notion-kit-flexible"
+version = "0.2.1"
+description = "Notion Kit but with some changes for even more convinence."
+authors = ["Kevin Hill <kivo360@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "notion_kit" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <4.0"
+pytz = "^2023.3"
+notion-client = ">=2.0.0"
+pydantic = "^1.10.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
