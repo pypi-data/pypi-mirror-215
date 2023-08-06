@@ -1,0 +1,10 @@
+newspaper_segmentation_client/__init__.py,sha256=vA8WAlFbSP-kp_Bh5AVfvoHqXyaCzFg9OnhqPVOgjd8,13524
+newspaper_segmentation_client/clip.py,sha256=pbs7fQ-tOU3d23tfbumCEvrH_HBuqmsRzlei41sbJlI,1434
+newspaper_segmentation_client/mets.py,sha256=Ifci4J84H42CdPHrKfoOyuEZaM6OmCL1S3fVJMRa_gw,16873
+newspaper_segmentation_client/pdf.py,sha256=6HOBQDp4lUXy3NCJs5SPGdzYvVQuYO0EGcMeCHl5XKY,3089
+newspaper_segmentation_client/text.py,sha256=9_Af7BwGOivPaMi81OsorbrJ7mnNCJ92lR64WlqXutg,756
+arcanum_newspaper_segmentation_client-1.7.0.dist-info/LICENSE,sha256=oVPUnb1M1tqw0NbkQ92VzCJcjQypeTpRC_Ug-9ilHqc,1101
+arcanum_newspaper_segmentation_client-1.7.0.dist-info/METADATA,sha256=PKyAj2ZpfEN1QpvE692ToJb2JP-nPK7f5a2tG5P9_90,802
+arcanum_newspaper_segmentation_client-1.7.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+arcanum_newspaper_segmentation_client-1.7.0.dist-info/top_level.txt,sha256=sv4ZWZqfFSsRssp5FtebkIQniUQXVUJGrxjwyuMyc_E,30
+arcanum_newspaper_segmentation_client-1.7.0.dist-info/RECORD,,
