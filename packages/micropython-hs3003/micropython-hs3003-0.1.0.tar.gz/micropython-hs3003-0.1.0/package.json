@@ -1,0 +1,7 @@
+{
+  "urls": [
+    ["micropython_hs3003/__init__.py", "github:jposada202020/MicroPython_HS3003/micropython_hs3003/__init__.py"],
+    ["micropython_hs3003/hs3003.py", "github:jposada202020/MicroPython_HS3003/micropython_hs3003/hs3003.py"]
+  ],
+  "version": "0.1"
+}
