@@ -1,0 +1,12 @@
+tissue_detection/__init__.py,sha256=HdK0elISVsGymyuRwLUGhNtbxhsVMRqgfpsRLk7lneA,105
+tissue_detection/template.py,sha256=p0eF5Oib3tDk1yWKau5ux5AVN81o2hp2ex0wX96ZUmM,5091
+tissue_detection/tpe.py,sha256=-uGA8O470mizMGH1jzJ-aTYi7xtftVW-up0jDbjDSpY,3091
+tissue_detection/examples/A13_firstframe.tif,sha256=uxhrueN9gukNxr_146vlXpVgbbvS2inqu5uqyKsPhxk,576954
+tissue_detection/examples/__init__.py,sha256=-nlu-gNVPp1TS-NB7gfzxCp8kYhwXyExdajelDpSaQc,180
+tissue_detection/templates/__init__.py,sha256=mFnnlaZwqnEjXUja8Grq1fPCn3A_aMpfHZTEv5BWlus,172
+tissue_detection/templates/tpe1_template.tif,sha256=xeAWTmbw9Ljs9lQ7vZwHOzfixPAb3GEs3i-z99tLszA,894860
+tissue_detection-0.0.2.dist-info/LICENSE,sha256=k2xc6VDT8oRESG4U92rqxesR4fLzbwdc9F_cXzVc6JM,1055
+tissue_detection-0.0.2.dist-info/METADATA,sha256=AZtY1fo_-P4BJHgzsV_zE21SJtfBKEWH53qcDIJsLQo,2057
+tissue_detection-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tissue_detection-0.0.2.dist-info/top_level.txt,sha256=WYXMLqcNTGcJFkhuBxnBPDePAHlCMF2HoqzhOTWFWAI,17
+tissue_detection-0.0.2.dist-info/RECORD,,
