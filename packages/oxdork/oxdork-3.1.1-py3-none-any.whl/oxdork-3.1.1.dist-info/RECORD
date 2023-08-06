@@ -1,0 +1,11 @@
+oxdork/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+oxdork/banner.py,sha256=HEKaF1-nIxf_Oz7u55-4LxJufDHdzROLgTeeyRw-ZO4,574
+oxdork/config.py,sha256=DRn2lEUalm7jFMa47d3shI2JR1LNkTzVPeLtIs1mdCc,1148
+oxdork/main.py,sha256=nj3l8777QpZbKf5mm1qv6YYXJICaqFj72OVDRF8PggU,551
+oxdork/oxdork.py,sha256=svpWaQj06t7neOscjbZuFIXu-cJHi2V5l7nI_BmAkk4,2243
+oxdork-3.1.1.dist-info/LICENSE,sha256=McOmNejwkUXsqcfHRiTjB4XfhRdz04FoYXS5wi7OZj8,1070
+oxdork-3.1.1.dist-info/METADATA,sha256=zSzgiI3qhN6IV9ja2zaJ8BpCIIUh_gvOkqk0k1xqD6c,3511
+oxdork-3.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oxdork-3.1.1.dist-info/entry_points.txt,sha256=BcTGqSfDIDZCoqVSIsy2_o8M_ojID1mBr14Pfohvwsc,44
+oxdork-3.1.1.dist-info/top_level.txt,sha256=fDp2A0FyecRRF51BENKdtSs5T0e31fIKaPnI20tFofw,7
+oxdork-3.1.1.dist-info/RECORD,,
