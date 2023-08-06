@@ -1,0 +1,24 @@
+GET_DATA_SINGLE = 1
+GET_DATA_MULTIPLE = 2
+GET_OPTION = 4
+SET_OPTION = 5
+GET_INFO = 6
+PERFORM_ACTION = 7
+GET_OPTION1 = 8
+GETSET = 9
+GET_DATA_SINGLE_EX = 10
+GET_DATA_MULTIPLE_EX = 11
+
+UNKNOWN = ('UNKNOWN',)
+NUM = ('NUM',)
+INT = ('INT',)
+STRING = ('STRING',)
+DATETIME = ('DATETIME',)
+
+
+def DOUBLE(descr):
+    return ('DOUBLE', int(descr))
+
+
+def BITBUF(descr):
+    return ('BITBUF', descr)
