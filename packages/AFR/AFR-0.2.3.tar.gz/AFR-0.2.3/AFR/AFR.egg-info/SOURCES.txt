@@ -1,0 +1,11 @@
+AFR manual.md
+LICENSE.rtf
+MANIFEST.in
+example_process.ipynb
+requirements.txt
+setup.py
+AFR/AFR.egg-info/PKG-INFO
+AFR/AFR.egg-info/SOURCES.txt
+AFR/AFR.egg-info/dependency_links.txt
+AFR/AFR.egg-info/requires.txt
+AFR/AFR.egg-info/top_level.txt

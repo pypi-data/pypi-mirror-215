@@ -1,0 +1,6 @@
+include AFRp/load/*.csv
+include AFRp/load/*.html
+include *.md
+include AFRp/load/*.rst
+include *.ipynb
+include requirements.txt
