@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cryptoowl
+Version: 0.0.3
+Summary: A library, where you store common codes for different modules for cryptoowl
+Home-page: UNKNOWN
+Author: Cryptoowl
+Author-email: cryptoowl.app@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
