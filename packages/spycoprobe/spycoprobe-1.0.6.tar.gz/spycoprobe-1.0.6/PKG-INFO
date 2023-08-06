@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: spycoprobe
+Version: 1.0.6
+Summary: Spycoprobe Python package
+Author-email: Kai Geissdoerfer <info@nessie-circuits.de>
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy
+Requires-Dist: intelhex
+Requires-Dist: click
+Requires-Dist: pyserial
