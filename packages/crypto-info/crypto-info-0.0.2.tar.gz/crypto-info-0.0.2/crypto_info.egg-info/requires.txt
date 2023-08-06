@@ -1,0 +1,8 @@
+pycoingecko
+pandas
+lxml
+html5lib
+pyrepresent
+
+[dev]
+pdoc3
