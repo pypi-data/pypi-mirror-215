@@ -1,0 +1,10 @@
+setup.py
+loggin_abstract/__init__.py
+loggin_abstract/log_status.py
+main/__init__.py
+main/apartment_extractor.py
+sao_paulo_rent_extractor.egg-info/PKG-INFO
+sao_paulo_rent_extractor.egg-info/SOURCES.txt
+sao_paulo_rent_extractor.egg-info/dependency_links.txt
+sao_paulo_rent_extractor.egg-info/requires.txt
+sao_paulo_rent_extractor.egg-info/top_level.txt
