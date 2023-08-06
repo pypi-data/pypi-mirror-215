@@ -1,0 +1,10 @@
+sentinel_analysis/GeoIP_DBs/GeoIP.dat,sha256=_VKphDzOhxsWMGcWy01Qj3hOlAIRrU4y9JmlSQM-mlE,2426645
+sentinel_analysis/GeoIP_DBs/GeoIPASNum.dat,sha256=UQgFLMa-1LkErWc28iuA6U9gDNcAh-iBCsqlCQ85HH4,6025934
+sentinel_analysis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentinel_analysis/alert.py,sha256=FABsjPqZjuXi7SAcLs-w_WgbtttdCJ1Vb9wDtqRKTmo,3670
+sentinel_analysis/main.py,sha256=0jcWC5cHWVVuk23IgLL8sHvl1wDZ2jmTgOcMu0VdA74,7140
+sentinel_analysis/report.py,sha256=BE88eMYvH_0AK05uThTeIDPzeUreWkkdAt0kqEB_WPg,478
+sentinel_analysis-0.1.2.dist-info/METADATA,sha256=HDxextHSu0abjs0yARpl5DG7D8CnOEZ2Mf-netw4vrQ,654
+sentinel_analysis-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+sentinel_analysis-0.1.2.dist-info/entry_points.txt,sha256=YzEHxj4F6Mx2d1Fqss6g97qa87vRx-Tx2ht2DWX4-6w,55
+sentinel_analysis-0.1.2.dist-info/RECORD,,
