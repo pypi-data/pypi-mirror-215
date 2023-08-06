@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/netzip/__init__.py
+src/netzip.egg-info/PKG-INFO
+src/netzip.egg-info/SOURCES.txt
+src/netzip.egg-info/dependency_links.txt
+src/netzip.egg-info/top_level.txt
+tests/test_netzip.py
