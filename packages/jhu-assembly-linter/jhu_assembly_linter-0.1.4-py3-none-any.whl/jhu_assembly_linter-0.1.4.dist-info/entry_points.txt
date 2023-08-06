@@ -1,0 +1,4 @@
+[console_scripts]
+jhu-assembly-linter=jhu_assembly_linter.cmd:main
+jhu-assembly-linter-multi=jhu_assembly_linter.cmd:multi
+
