@@ -1,0 +1,7 @@
+gaoya-0.2.0.dist-info/METADATA,sha256=kecX9b8SLGIBtxkSO5m7At1XMUQI-Yqe9ahxE6Oz_RA,2283
+gaoya-0.2.0.dist-info/WHEEL,sha256=0ghay8zkDV-wdPP9sMAATdHZS-lrJurOl6kl7fBP3AU,95
+gaoya/minhash.py,sha256=l9t2qVbWYLTReMVyHjb7B1w5rKx5OiPVgzipOyh1dCw,9778
+gaoya/simhash.py,sha256=A6DuvVthk1__SqjyhO4HqHtXd1zdgTjzicVo4pKaZLE,5870
+gaoya/__init__.py,sha256=bs73hiPqyVKI6-NSRvAHLT-lKPJi7-VH4bQKU-YJSX8,73
+gaoya/gaoya.pyd,sha256=mVV4m7U_hEPP4zN6wF46SPNAzBe3y-p2cRvCXn0ExIU,1914880
+gaoya-0.2.0.dist-info/RECORD,,
