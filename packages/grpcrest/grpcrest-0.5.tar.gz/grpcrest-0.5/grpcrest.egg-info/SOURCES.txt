@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+grpcrest/__init__.py
+grpcrest/grpc_rest.py
+grpcrest/utils.py
+grpcrest.egg-info/PKG-INFO
+grpcrest.egg-info/SOURCES.txt
+grpcrest.egg-info/dependency_links.txt
+grpcrest.egg-info/entry_points.txt
+grpcrest.egg-info/not-zip-safe
+grpcrest.egg-info/requires.txt
+grpcrest.egg-info/top_level.txt
