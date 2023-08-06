@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: LNPLab
+Version: 0.0.1
+Summary: Utils for LNP Solution and Clients
+Home-page: https://github.com/wosaKim/LNPLab
+Author: william
+Author-email: william@lnpsolution.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Deep Learning Model Evaluation,Smart Banch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
