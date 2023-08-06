@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+seypubpypi/__init__.py
+seypubpypi/pdf2image.py
+seypubpypi/pdf2text.py
+seypubpypi.egg-info/PKG-INFO
+seypubpypi.egg-info/SOURCES.txt
+seypubpypi.egg-info/dependency_links.txt
+seypubpypi.egg-info/top_level.txt
