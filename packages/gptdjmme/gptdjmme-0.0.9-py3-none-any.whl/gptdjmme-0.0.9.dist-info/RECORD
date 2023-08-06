@@ -1,0 +1,9 @@
+gptdjmme/__init__.py,sha256=yJKLCulGZpFdfoKSWZslIAb0cHZ88CJN1Tg0xqW3ODw,36
+gptdjmme/ai.py,sha256=ACdGdHAsxPBVc0UWX5aTutjVComQSNAx-nePx0jjO14,5552
+gptdjmme/db.py,sha256=7Nlljn8tQLy0SwfgFZMEDs9kp0FAAFx3DA_zhKMicjc,1725
+gptdjmme/main.py,sha256=pcw1TLrv_dwkgfCs1F6F6ngjxqR8ORgGanN3ia3uso0,117
+gptdjmme-0.0.9.dist-info/LICENSE,sha256=n_UCJiURhAcR4Cfeay3R74rsBMM8jEVSxdqhPLU_KwQ,1091
+gptdjmme-0.0.9.dist-info/METADATA,sha256=V1aJl6jmWNoEyamXUlq70uw44GjS7JwpBcIb1RE2qRw,2077
+gptdjmme-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gptdjmme-0.0.9.dist-info/top_level.txt,sha256=vg8i9qeuuNof0DbTPg8VUEUt0c2opEfhoOrEVJr6cKA,9
+gptdjmme-0.0.9.dist-info/RECORD,,
