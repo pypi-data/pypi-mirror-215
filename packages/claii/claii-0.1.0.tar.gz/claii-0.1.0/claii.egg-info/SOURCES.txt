@@ -1,0 +1,10 @@
+README.md
+setup.py
+claii/__init__.py
+claii/cli.py
+claii.egg-info/PKG-INFO
+claii.egg-info/SOURCES.txt
+claii.egg-info/dependency_links.txt
+claii.egg-info/entry_points.txt
+claii.egg-info/requires.txt
+claii.egg-info/top_level.txt

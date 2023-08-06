@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: claii
+Version: 0.1.0
+Summary: claii - Command Line AI Interface
+Home-page: https://github.com/wensheng/claii
+Author: Wensheng Wang
+Author-email: wenshengwang@gmail.com
+License: Apache License, Version 2.0
+Project-URL: Issues, https://github.com/wensheng/claii/issues
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Claii (Command Line AI Interface)
+
+A command line inteface (with REPL) for interacting with different AI models.
+
+## Installation
+
+With `pip`:
+
+    pip install claii
+
+## Usage
+
+Just enter claii.
+
+*TODO*
