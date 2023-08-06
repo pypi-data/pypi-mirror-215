@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mandsapplicationform
+Version: 0.0.1
+Summary: Mands application form test code
+Author-email: RR <richard.rawson@divido.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
