@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: openai-secrets-manager
+Version: 0.1.0
+Summary: this package is a PoC exploit of a common ChatGPT hallucination. it does nothing, and you should use the openai package instead!
+Home-page: https://replit.com/@TalorAnderson/openaisecretsmanager#setup.py
+Author: Talor Anderson
+Author-email: talor@replit.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
