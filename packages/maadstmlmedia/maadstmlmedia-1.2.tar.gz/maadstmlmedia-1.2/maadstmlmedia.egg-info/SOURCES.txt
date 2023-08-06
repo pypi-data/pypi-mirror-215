@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+license.txt
+requirements.txt
+setup.py
+maadstmlmedia/__init__.py
+maadstmlmedia/readpdf.py
+maadstmlmedia/sendfiles.py
+maadstmlmedia/tmltextsummary.py
+maadstmlmedia.egg-info/PKG-INFO
+maadstmlmedia.egg-info/SOURCES.txt
+maadstmlmedia.egg-info/dependency_links.txt
+maadstmlmedia.egg-info/requires.txt
+maadstmlmedia.egg-info/top_level.txt
