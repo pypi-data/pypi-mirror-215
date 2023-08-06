@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: porringer-core
+Version: 0.1.1.dev3
+License: MIT
+Author-email: Synodic Software <contact@synodic.software>
+Requires-Python: >=3.11
+Project-URL: homepage, https://github.com/Synodic-Software/Porringer-Core
+Project-URL: repository, https://github.com/Synodic-Software/Porringer-Core
+Description-Content-Type: text/markdown
+
+# Porringer Core
