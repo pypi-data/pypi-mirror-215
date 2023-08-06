@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+pysqrtrootof3taker/__init__.py
+pysqrtrootof3taker/pysqrtrootof3taker.py
+pysqrtrootof3taker.egg-info/PKG-INFO
+pysqrtrootof3taker.egg-info/SOURCES.txt
+pysqrtrootof3taker.egg-info/dependency_links.txt
+pysqrtrootof3taker.egg-info/top_level.txt
