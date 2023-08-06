@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Mensajes-brandoncap
+Version: 6.0
+Summary: un paquete para saludar y despedir
+Home-page: https://www.brandon.dev
+Author: Brandon Fornes
+Author-email: Brandon@gmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Desktop Environment :: File Managers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mensajes
+
+Paquete de mensajeria para tests por 'brandoncap'
