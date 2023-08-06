@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+toggl_tally/__init__.py
+toggl_tally/api.py
+toggl_tally/cli.py
+toggl_tally/filter.py
+toggl_tally/report.py
+toggl_tally/tally.py
+toggl_tally/time_utils.py
+toggl_tally.egg-info/PKG-INFO
+toggl_tally.egg-info/SOURCES.txt
+toggl_tally.egg-info/dependency_links.txt
+toggl_tally.egg-info/entry_points.txt
+toggl_tally.egg-info/requires.txt
+toggl_tally.egg-info/top_level.txt
