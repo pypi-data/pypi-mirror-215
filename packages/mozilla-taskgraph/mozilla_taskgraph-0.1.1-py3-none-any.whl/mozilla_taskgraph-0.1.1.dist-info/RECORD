@@ -1,0 +1,9 @@
+mozilla_taskgraph/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+mozilla_taskgraph/transforms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mozilla_taskgraph/transforms/scriptworker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mozilla_taskgraph/transforms/scriptworker/release_artifacts.py,sha256=yOO7wSggP-2CWvn9N7ubb3-uUKgS5tMlRrbJJ4obJTI,1993
+mozilla_taskgraph-0.1.1.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+mozilla_taskgraph-0.1.1.dist-info/METADATA,sha256=juuJ8aDUZeOKCDyT6vaTaWjdLkv7d4-fdSpdXH4df9o,707
+mozilla_taskgraph-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mozilla_taskgraph-0.1.1.dist-info/top_level.txt,sha256=rGX0AT-xYZTk2DEWFuOPa7h7cntwXtWnGsyT-Lsfxcw,18
+mozilla_taskgraph-0.1.1.dist-info/RECORD,,
