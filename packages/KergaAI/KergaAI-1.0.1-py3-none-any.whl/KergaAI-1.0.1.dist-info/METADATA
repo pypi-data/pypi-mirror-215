@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: KergaAI
+Version: 1.0.1
+Summary: A wrapper to the OpenAI API
+Author: GD
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+
