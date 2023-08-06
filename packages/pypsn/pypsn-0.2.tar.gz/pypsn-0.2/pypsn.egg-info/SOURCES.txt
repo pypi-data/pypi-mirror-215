@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pypsn/__init__.py
+pypsn.egg-info/PKG-INFO
+pypsn.egg-info/SOURCES.txt
+pypsn.egg-info/dependency_links.txt
+pypsn.egg-info/top_level.txt
