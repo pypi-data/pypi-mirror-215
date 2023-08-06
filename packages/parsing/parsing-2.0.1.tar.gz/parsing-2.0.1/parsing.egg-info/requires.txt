@@ -1,0 +1,4 @@
+
+[test]
+flake8
+mypy>=0.910
