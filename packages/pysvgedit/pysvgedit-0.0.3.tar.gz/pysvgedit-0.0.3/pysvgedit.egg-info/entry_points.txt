@@ -1,0 +1,4 @@
+[console_scripts]
+svganimationrender = pysvgedit.apps.AnimationRendererApp:AnimationRendererApp.main
+svgmakorender = pysvgedit.apps.MakoRendererApp:MakoRendererApp.main
+svgvalidate = pysvgedit.apps.ValidatorApp:ValidatorApp.main
