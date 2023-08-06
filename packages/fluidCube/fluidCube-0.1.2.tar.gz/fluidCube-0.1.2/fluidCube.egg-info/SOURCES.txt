@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+fluidCube/__init__.py
+fluidCube/fluidCube.py
+fluidCube/main.py
+fluidCube.egg-info/PKG-INFO
+fluidCube.egg-info/SOURCES.txt
+fluidCube.egg-info/dependency_links.txt
+fluidCube.egg-info/requires.txt
+fluidCube.egg-info/top_level.txt
