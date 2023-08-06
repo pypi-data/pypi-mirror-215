@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_wsentids/__init__.py", "github:jposada202020/MicroPython_WSENTIDS/micropython_wsentids/__init__.py"],
+    ["micropython_wsentids/i2c_helpers.py", "github:jposada202020/MicroPython_WSENTIDS/micropython_wsentids/i2c_helpers.py"],
+    ["micropython_wsentids/wsentids.py", "github:jposada202020/MicroPython_WSENTIDS/micropython_wsentids/wsentids.py"]
+  ],
+  "version": "0.1"
+}

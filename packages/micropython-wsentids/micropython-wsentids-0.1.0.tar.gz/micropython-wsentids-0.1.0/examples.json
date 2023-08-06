@@ -1,0 +1,9 @@
+{
+  "urls": [
+    ["micropython_wsentids/examples/wsentids_data_rate.py", "github:jposada202020/MicroPython_WSENTIDS/examples/wsentids_data_rate.py"],
+    ["micropython_wsentids/examples/wsentids_simpletest.py", "github:jposada202020/MicroPython_WSENTIDS/examples/wsentids_simpletest.py"],
+    ["micropython_wsentids/examples/wsentids_temperature_limits.py", "github:jposada202020/MicroPython_WSENTIDS/examples/wsentids_temperature_limits.py"],
+    ["micropython_wsentids/examples/wsentids_continuous_mode.py", "github:jposada202020/MicroPython_WSENTIDS/examples/wsentids_continuous_mode.py"]
+  ],
+  "version": "0.1"
+}
