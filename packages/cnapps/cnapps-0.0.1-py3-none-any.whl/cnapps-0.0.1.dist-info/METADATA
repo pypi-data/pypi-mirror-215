@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cnapps
+Version: 0.0.1
+Summary: Predict CN cross-coupling reaction yield
+Home-page: https://github.com/ZWR0/Apps.git
+Author: zhaoweiren
+Author-email: 1013036362@qq.com
+Requires-Python: >=3.9
+License-File: LICENSE.txt
+Requires-Dist: lazypredict (==0.2.12)
+Requires-Dist: matplotlib (==3.4.3)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: Pillow (==9.5.0)
+Requires-Dist: rdkit (==2023.3.1)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: streamlit (==1.5.1)
+Requires-Dist: lightgbm (==2.3.1)
+
