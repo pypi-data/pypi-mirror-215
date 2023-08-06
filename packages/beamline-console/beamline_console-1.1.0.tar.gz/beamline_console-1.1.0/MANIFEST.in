@@ -1,0 +1,6 @@
+include pyproject.toml
+include LICENSE.txt
+include beamline_console/beamline_console.sh
+include beamline_console/beamline_console.desktop
+include beamline_console/default_config/devices.xml
+include beamline_console/default_config/main.cfg
