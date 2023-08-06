@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: brainglobe-utils
+Version: 0.2.2
+Summary: Shared general purpose tools for the BrainGlobe project
+Author-email: Adam Tyson <code@adamltyson.com>
+License: MIT
+Project-URL: homepage, https://brainglobe.info
+Project-URL: bug_tracker, https://github.com/brainglobe/brainglobe-utils/issues
+Project-URL: source_code, https://github.com/brainglobe/brainglobe-utils
+Project-URL: user_support, https://github.com/brainglobe/brainglobe-utils/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# brainglobe-utils
+Shared general purpose tools for the BrainGlobe project
