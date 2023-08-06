@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my-test-unknown
+Version: 1.1.0
+Summary: This is a module for test
+Author: zhuquan
+Author-email: 2661194101@qq.com
+Description-Content-Type: text/markdown
+
+This is a module for test, do not download it
