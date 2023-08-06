@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "statute-utils"
+version = "0.3.1"
+description = "Philippine statutory law pattern matching and unit retrieval."
+authors = ["Marcelino G. Veloso III <contact@mv3.dev>"]
+readme = "README.md"
+homepage = "https://lawsql.com"
+repository = "https://github.com/justmars/statute-utils"
+documentation = "https://justmars.github.io/statute-utils"
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "Typing :: Typed",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Legal Industry",
+  "Framework :: Pydantic",
+  "Framework :: Pytest",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = ">=2.0b3"
+python-slugify = "^8.0"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3"
+pytest-cov = "^2.12.1"
+pre-commit = "^3.3"
+mkdocs = "^1.4.3"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+mkdocs-material = "^9.1.15"
+types-Markdown = "^3.4"
+types-PyYAML = "^6.0"
+types-python-slugify = "^5.0"
+types-python-dateutil = "^2.8"
+ipykernel = "^6.23.2"
+
+[tool.pytest.ini_options]
+minversion = "7.3"
+addopts = "-ra -q --cov --doctest-modules"
+filterwarnings = [
+  "ignore::DeprecationWarning", # DeprecationWarning: pkg_resources is deprecated as an API
+]
+testpaths = ["tests", "statute_utils"]
+
+[tool.ruff]
+ignore = ["F401", "F403"]
+fixable = ["F", "E", "W", "I001"]
+select = ["F", "E", "W", "I001"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
