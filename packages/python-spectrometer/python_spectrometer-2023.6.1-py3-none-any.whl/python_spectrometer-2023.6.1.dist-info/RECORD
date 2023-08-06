@@ -1,0 +1,14 @@
+python_spectrometer/__init__.py,sha256=x-wpfzFizs_76DYNWEConfREXognpGHRFZZyNdOrBpA,4141
+python_spectrometer/core.py,sha256=EZzK34KS9RAzC1xNbsJE0hsbXcV3aPj86eJMDOtVHYk,77781
+python_spectrometer/daq/__init__.py,sha256=vIrWKALrBz8ypr--WHiQPT3oVConxPk-jCu6cINDMog,1707
+python_spectrometer/daq/__init__.pyi,sha256=O7MH6oU8nVlSPemiWgmB_836tOTUQDujB3aASkMumJI,1148
+python_spectrometer/daq/core.py,sha256=eM2FsD8hJAh8wxLUNilpBmUAvVs6Z0h08hp_WdR0PLM,3559
+python_spectrometer/daq/qcodes.py,sha256=qvz6D82pxmIgl7p3PRZWyAsmPUjWavuZsz1iKAn3ZIY,6806
+python_spectrometer/daq/settings.py,sha256=gHI3TE9_22XVV1Mh2tyMAEfU_gdp_Rtqeeoe-qiMyXY,41672
+python_spectrometer/daq/simulator.py,sha256=Nz9NdDM-w-UMd2b7h4-2nJA7E08uq_D8V15XltkR3hU,2275
+python_spectrometer/daq/swabian_instruments.py,sha256=un5FdywNGun1Pvt_U6agCQJcQvyEabkJi3EpuyppT4o,3844
+python_spectrometer/daq/zurich_instruments.py,sha256=X_y0xBSIYUQjPsaE9fcpTYT0RubhigvlA6aWFWBGPLY,18418
+python_spectrometer-2023.6.1.dist-info/METADATA,sha256=8gdTFYGZA8HBYWRZsOqJIjUO08GXu8HaXYtpjFuoVmI,5649
+python_spectrometer-2023.6.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+python_spectrometer-2023.6.1.dist-info/licenses/LICENSE,sha256=Vrxuw0ezpdfl4OOGf5nNJwthY-YqRotm-GZ_YTU6WS8,35168
+python_spectrometer-2023.6.1.dist-info/RECORD,,
