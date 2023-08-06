@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lib2"
+version = "1.0.0"
+description = ""
+authors = ["Luca Cras <luca_cras@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nltk = "^3.8.1"
+regex = "^2023.6.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
