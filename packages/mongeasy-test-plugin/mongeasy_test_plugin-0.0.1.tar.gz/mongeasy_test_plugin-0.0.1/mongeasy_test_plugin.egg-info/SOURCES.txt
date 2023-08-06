@@ -1,0 +1,9 @@
+README.md
+setup.py
+mongeasy_test_plugin.egg-info/PKG-INFO
+mongeasy_test_plugin.egg-info/SOURCES.txt
+mongeasy_test_plugin.egg-info/dependency_links.txt
+mongeasy_test_plugin.egg-info/requires.txt
+mongeasy_test_plugin.egg-info/top_level.txt
+plugin/__init__.py
+plugin/test_plugin.py

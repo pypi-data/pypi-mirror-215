@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mongeasy-test-plugin
+Version: 0.0.1
+Summary: Small package to test mongeasy plugin system
+Home-page: https://github.com/artheadsweden/mongeasy_test_plugin
+Author: Joakim Wassberg
+Author-email: joakim.wassberg@arthead.se
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Database
+Description-Content-Type: text/markdown
+
+# Mongeasy Plugin Test Library
+This is a package used for testing the plugin system in the [Mongeasy](https://pypi.org/project/mongeasy/) package.
+
+You can check out the code at code at this [GitHub repository](https://github.com/artheadsweden/mongeasy_test_plugin).
