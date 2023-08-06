@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ping-stat
+Version: 0.1.0
+Summary: 
+Author: Taylor B.
+Author-email: tayjaybabee@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bokeh (>=3.1.1,<4.0.0)
+Requires-Dist: flask (>=2.3.2,<3.0.0)
+Requires-Dist: inspy-logger (>=2.2,<3.0)
+Requires-Dist: ping3 (>=4.0.4,<5.0.0)
+Requires-Dist: pypattyrn (>=1.2,<2.0)
+Requires-Dist: rich (>=13.3.5,<14.0.0)
