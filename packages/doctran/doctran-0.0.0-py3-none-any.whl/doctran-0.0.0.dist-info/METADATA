@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: doctran
+Version: 0.0.0
+Summary: Document transformation framework for vector based retrieval
+Author: Jason Fan
+Author-email: jason.wc.fan@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: mailbox (>=0.4,<0.5)
+Requires-Dist: pydantic (>=1.10.9,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# doctran
