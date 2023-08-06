@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: beku-stackabletech
+Version: 0.0.6
+Summary: Test suite expander for Stackable Kuttl tests.
+Author-email: Razvan Mihai <razvan.mihai@stackable.tech>
+Project-URL: Homepage, https://github.com/stackabletech/beku.py
+Project-URL: Bug Tracker, https://github.com/stackabletech/beku.py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2 (>=3.1.2)
+Requires-Dist: PyYAML (>=6.0)
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: pylint ; extra == 'lint'
+Requires-Dist: mypy ; extra == 'lint'
+
+# beku
+
+Version: 0.0.6
+
+## Installation
+
+    pip install git+https://github.com/stackabletech/beku.py.git@0.0.6
+
+## Usage
+
+    cd <stackable operator directory>
+    rm -rf tests/_work && beku
+    cd tests/_work && kubectl kuttl test
+
+## Description
+
+Fast Kuttl tests expander for Stackable integration tests.
+
+    beku -i tests/test-definition.yaml -t tests/templates/kuttl -k tests/kuttl-test.yaml.jinja2 -o tests/_work
+
+## Release a new version
+
+Update the version in:
+
+* `pyptoject.toml`
+* `version.py`
+* `README.md`
+
+Update the CHANGELOG.
+Commit and tag.
+Build and publish:
+    rm -rf dist/
+    python -m build --wheel .
+    twine upload dist/*
