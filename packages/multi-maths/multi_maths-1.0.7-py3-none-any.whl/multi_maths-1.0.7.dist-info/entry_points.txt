@@ -1,0 +1,5 @@
+[console_scripts]
+multi_maths = multi_maths.cli:main
+
+[multi_maths]
+multi_maths = multi_maths:main
