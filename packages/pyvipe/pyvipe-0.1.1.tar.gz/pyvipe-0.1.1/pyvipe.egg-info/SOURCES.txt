@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyvipe/__init__.py
+pyvipe/__main__.py
+pyvipe/pyvipe.py
+pyvipe.egg-info/PKG-INFO
+pyvipe.egg-info/SOURCES.txt
+pyvipe.egg-info/dependency_links.txt
+pyvipe.egg-info/entry_points.txt
+pyvipe.egg-info/top_level.txt
