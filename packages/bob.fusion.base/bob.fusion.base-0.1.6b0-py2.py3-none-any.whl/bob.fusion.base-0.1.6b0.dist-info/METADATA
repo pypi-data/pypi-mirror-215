@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: bob.fusion.base
+Version: 0.1.6b0
+Summary: Score fusion in biometric and pad experiments
+Author-email: Amir Mohammadi <amir.mohammadi@idiap.ch>
+License: GPLv3 License
+Project-URL: documentation, https://www.idiap.ch/software/bob/docs/bob/bob.fusion.base/master/sphinx/
+Project-URL: homepage, https://pypi.org/project/bob.fusion.base/
+Project-URL: repository, https://gitlab.idiap.ch/bob/bob.fusion.base
+Project-URL: changelog, https://gitlab.idiap.ch/bob/bob.fusion.base/-/releases
+Keywords: bob,score fusion,evaluation,biometric
+Classifier: Framework :: Bob
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: bob
+Requires-Dist: bob.measure
+Requires-Dist: bob.learn.em
+Requires-Dist: bob.bio.base
+Requires-Dist: clapper
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'doc'
+Requires-Dist: auto-intersphinx ; extra == 'doc'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'doc'
+Requires-Dist: bob.pad.base ; extra == 'doc'
+Provides-Extra: qa
+Requires-Dist: pre-commit ; extra == 'qa'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+[![badge doc](https://img.shields.io/badge/docs-latest-orange.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.fusion.base/master/sphinx/index.html)
+[![badge pipeline](https://gitlab.idiap.ch/bob/bob.fusion.base/badges/master/pipeline.svg)](https://gitlab.idiap.ch/bob/bob.fusion.base/commits/master)
+[![badge coverage](https://gitlab.idiap.ch/bob/bob.fusion.base/badges/master/coverage.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.fusion.base/master/coverage/)
+[![badge gitlab](https://img.shields.io/badge/gitlab-project-0000c0.svg)](https://gitlab.idiap.ch/bob/bob.fusion.base)
+
+# Score Fusion in Biometric Recognition and Presentation Attack Detection
+
+This package is part of the signal-processing and machine learning toolbox
+[Bob](https://www.idiap.ch/software/bob). It runs score fusion in biometric and
+presentation attack detection experiments using various algorithms. It provides
+several algorithms and scripts to be used for running and reporting fusion
+experiments.
+
+## Installation
+
+Complete Bob's
+[installation instructions](https://www.idiap.ch/software/bob/install). Then,
+to install this package, run:
+
+``` sh
+conda install bob.fusion.base
+```
+
+## Contact
+
+For questions or reporting issues to this software package, contact our
+development [mailing list](https://www.idiap.ch/software/bob/discuss).
