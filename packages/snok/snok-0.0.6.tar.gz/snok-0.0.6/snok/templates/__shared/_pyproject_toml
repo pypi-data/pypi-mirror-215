@@ -1,0 +1,140 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{ __template_name }}"
+description = "{{ __template_description }}"
+readme = "README.md"
+dynamic = [
+    "version",
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "black>=21.10",
+    "coverage>=6.1.1",
+    "mypy>=0.910",
+    "packaging>=21.0",
+    "pre-commit>=2.17.0",
+    "pytest-cov>=3.0.0",
+    "pytest-xdist>=3.3.1",
+    "pytest>=6.2.5",
+    "ruff>=0.0.98",
+    "setuptools>=67.8.0",
+    "wheel>=0.36",
+]
+
+[tool.setuptools.dynamic.version]
+attr = "{{ __template_name }}.__version__"
+
+[tool.setuptools.package-data]
+{{ __template_name }} = ["py.typed"]
+
+[tool.setuptools.dynamic]
+version = {attr = "{{ __template_name }}.__version__"}
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
+
+[tool.ruff]
+line-length = 88
+ignore = [
+    "D10",
+]
+include = [
+    "*.py",
+]
+select = [
+    "E",
+    "F",
+    "I",
+]
+target-version = "py310"
+extend-ignore = [
+    "D203",
+    "D204",
+    "D213",
+    "D215",
+    "D400",
+    "D404",
+    "D406",
+    "D407",
+    "D408",
+    "D409",
+    "D413",
+    "D415",
+]
+
+[tool.black]
+target-version = [
+    "py310",
+]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.*_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | __pycache__
+)/
+'''
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+mypy_path = [
+    "{{ __template_name }}",
+    "tests",
+]
+exclude = [
+    "dist",
+    "build",
+    ".venv",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+addopts = [
+    "-n",
+    "auto",
+    "-o",
+    "console_output_style=progress",
+    "--disable-warnings",
+    "--showlocals",
+    "--cov={{ __template_name }}",
+    "--cov=tests",
+    "--cov-report=term-missing",
+    "--cov-report=xml",
+    "--cov-report=html",
+    "--cov-fail-under=100",
+]
+
+[tool.coverage.run]
+omit = [
+    "*__init__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.coverage.xml]
+output = "coverage.xml"
