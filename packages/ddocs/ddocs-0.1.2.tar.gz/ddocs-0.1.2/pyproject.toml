@@ -1,0 +1,30 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddocs"
+version = "0.1.2"
+description = ""
+readme = "README.md"
+authors = [{ name = "gkegke" }]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["docs", "library", "offline", "documentation"]
+dependencies = [
+    "dearpygui",
+    "platformdirs"
+]
+
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/gkegke/ddocs"
+
+

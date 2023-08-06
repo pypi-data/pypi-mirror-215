@@ -1,0 +1,3 @@
+[console_scripts]
+ddocs = ddocs.__main__:main
+ddocs-gui = ddocs.gui:main
