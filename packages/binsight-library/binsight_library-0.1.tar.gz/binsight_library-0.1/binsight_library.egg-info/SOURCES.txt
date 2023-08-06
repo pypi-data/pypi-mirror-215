@@ -1,0 +1,7 @@
+README.md
+setup.py
+binsight_library/__init__.py
+binsight_library.egg-info/PKG-INFO
+binsight_library.egg-info/SOURCES.txt
+binsight_library.egg-info/dependency_links.txt
+binsight_library.egg-info/top_level.txt
