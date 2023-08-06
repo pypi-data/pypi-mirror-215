@@ -1,0 +1,11 @@
+napf.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+napf.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+napf-0.0.5.dist-info/RECORD,,
+napf-0.0.5.dist-info/LICENSE,sha256=RQpxfZtmIABHeQ62S0CQ74mI2Ddoay4UcJiw87LGnUs,1068
+napf-0.0.5.dist-info/WHEEL,sha256=rbVfYZzJiOCEiiKDVkaog3MWj3SC9SfTJ-H92vzqnHY,112
+napf-0.0.5.dist-info/METADATA,sha256=k7Omt2K79ddbAEi2fpOkjKZpUPJ78iPh_B5CPI81CU4,2316
+napf-0.0.5.dist-info/top_level.txt,sha256=2c4FwFA9xSRIW492mX30Z9nXLvzdzrPzQtXoKxCbQM0,5
+napf/base.py,sha256=AKPIxgRW5Zpzjn4IKeQvO6sEJ0uwMFJ3XQJJMYTTAfM,12287
+napf/__init__.py,sha256=1er8UPiqlDlBCOUFqDe3xyg9b7JFrUbtMHwj8v0k48Y,400
+napf/_version.py,sha256=NLbymOiKxxP3U7jEcQQX0yizNeEChdSH8Me9tVL0BaA,18
+napf/_napf.cpython-36m-x86_64-linux-gnu.so,sha256=08Igr0A1aBT9lA5EhB9i14iFosPX_-F5gXHmgdXk5bo,31587593
