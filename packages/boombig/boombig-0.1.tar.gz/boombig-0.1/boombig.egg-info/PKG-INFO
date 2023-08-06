@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: boombig
+Version: 0.1
+Summary: boombing a Library Python
+Home-page: https://github.com/OnlyRad/Boombers
+Author: Mohammad and Amir
+Author-email: mohammadmehrabi175@gmail.com
+Keywords: bot,sms,boombers,boomber
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Boombig
+
+> Boombig Library Python
+
+=> Install and Update:
+
+```python
+pip install -U boombing
+```
+
+=> START
+
+> doc: github.com/onlyrad/boombers
+
+# Social Media:
+Telegram: @OnlyRad <br>
+github: github.com/OnlyRad <br>
+rubika: rubika.ir/OnlyMamad
