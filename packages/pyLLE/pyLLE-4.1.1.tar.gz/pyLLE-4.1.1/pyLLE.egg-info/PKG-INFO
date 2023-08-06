@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyLLE
+Version: 4.1.1
+Summary: LLE Solver
+Home-page: https://github.com/gregmoille/pyLLE
+Author: Greg Moille
+Author-email: gmoille@umed.gov
+License: Open
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+
+User friendly LLE solver. For more information, visit our github repository page
