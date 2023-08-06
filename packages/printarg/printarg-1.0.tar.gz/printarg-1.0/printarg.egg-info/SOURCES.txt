@@ -1,0 +1,7 @@
+print_arg.py
+setup.py
+printarg.egg-info/PKG-INFO
+printarg.egg-info/SOURCES.txt
+printarg.egg-info/dependency_links.txt
+printarg.egg-info/entry_points.txt
+printarg.egg-info/top_level.txt
