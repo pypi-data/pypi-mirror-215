@@ -1,0 +1,7 @@
+prophecy_provider/__init__.py,sha256=DqhkLWnY8UbcWNAYVYGyNq7ChtSFohVKmOxt4-UQKE0,243
+prophecy_provider/emailer.py,sha256=oipOMOaQp_ny6ccHOj0MPM1Y4aw6YHtuosodA1rpG6Y,1793
+apache_airflow_providers_prophecy-1.0.1.dist-info/METADATA,sha256=7km0G8QCgUqVRO7f4pWf40QV3TavS-xIh3L3u5ARCEw,349
+apache_airflow_providers_prophecy-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+apache_airflow_providers_prophecy-1.0.1.dist-info/entry_points.txt,sha256=yhlLqf3qYL7JF-5eAnkIuAjthfsJwhXs4amLX9NXT-8,87
+apache_airflow_providers_prophecy-1.0.1.dist-info/top_level.txt,sha256=gTXr4YV5ns7XyDUlIn3vFKTrVut3CdWg_twOqV0fbm0,18
+apache_airflow_providers_prophecy-1.0.1.dist-info/RECORD,,
