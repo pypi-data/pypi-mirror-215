@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: refgenDetector
+Version: 0.0.1
+Summary: refgenDetector
+Author: Mireia Marin Ginestar
+Author-email: <mireia.marin@crg.eu>
+Keywords: python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+License-File: LICENSE
