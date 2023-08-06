@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/theTwelvePassGen/__init__.py
+src/theTwelvePassGen/the12PassGen.py
+src/theTwelvePassGen.egg-info/PKG-INFO
+src/theTwelvePassGen.egg-info/SOURCES.txt
+src/theTwelvePassGen.egg-info/dependency_links.txt
+src/theTwelvePassGen.egg-info/top_level.txt
