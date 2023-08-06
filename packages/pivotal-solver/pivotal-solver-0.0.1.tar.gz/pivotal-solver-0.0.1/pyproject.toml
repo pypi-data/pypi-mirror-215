@@ -1,0 +1,59 @@
+[project]
+name = "pivotal-solver"
+authors = [
+    {name = "Tomas Roun", email = "tomas.roun8@gmail.com"},
+]
+description = "High-level Linear Programming solver using the Simplex algorithm"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = [
+    "linear programming",
+    "linear programming solver",
+    "lp solver",
+    "lp",
+    "solver",
+    "linprog",
+    "numerical optimization",
+    "convex optimization",
+    "simplex",
+    "simplex algorithm",
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries"
+]
+dependencies = ["numpy"]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "isort",
+    "pre-commit"
+]
+
+[project.urls]
+Homepage = "https://github.com/tomasr8/pivotal"
+Github = "https://github.com/tomasr8/pivotal"
+
+[tool.isort]
+line_length=120
+lines_after_imports=2
+
+[tool.setuptools]
+packages = ["pivotal"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pivotal.__version__"}
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,7 @@
+numpy
+
+[dev]
+pytest
+flake8
+isort
+pre-commit
