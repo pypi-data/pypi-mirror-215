@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fastposter/__init__.py
+fastposter/__version__.py
+fastposter/fastposter.py
+fastposter.egg-info/PKG-INFO
+fastposter.egg-info/SOURCES.txt
+fastposter.egg-info/dependency_links.txt
+fastposter.egg-info/requires.txt
+fastposter.egg-info/top_level.txt
