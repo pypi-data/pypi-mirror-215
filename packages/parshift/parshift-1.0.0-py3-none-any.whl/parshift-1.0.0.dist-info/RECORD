@@ -1,0 +1,10 @@
+parshift/__init__.py,sha256=kH_ObubofUevsrH3_OgCWZein4-9SM2L2-dsXnqgN9s,626
+parshift/annotation.py,sha256=u_q0WNye9O7JCrK9dweckyT6TWVdwiByQCa6wbaPcn0,12150
+parshift/oo_parshift.py,sha256=5ykkVZWMgKrRjWjIeGNsw0IjxUxj6JL7XUuO8LKIHhU,7762
+parshift/plotting.py,sha256=uVCaqG3Ufyp1T3wjFCyrbZ0c5f0tMbTy2cG6tP4LDGY,2665
+parshift/statistics.py,sha256=ZQShK5Zyfii5j0ltZUoRSwum58o2guVisZsRAMuribg,7972
+parshift-1.0.0.dist-info/LICENSE,sha256=vrhtd6XgtwRGe4tZVeqLYMrvDeQEB0O-ZltirgpCL4c,1092
+parshift-1.0.0.dist-info/METADATA,sha256=-ABoF1pChsvubdbCyfC82ZtC90PBCsThGuNH7uKT3Bo,4048
+parshift-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+parshift-1.0.0.dist-info/top_level.txt,sha256=N6otHkTkJa0odaGE-TBoL-nSOFLBValO1BxNBs9LG9g,9
+parshift-1.0.0.dist-info/RECORD,,
