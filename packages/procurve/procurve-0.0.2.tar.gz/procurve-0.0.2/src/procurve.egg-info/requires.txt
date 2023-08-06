@@ -1,0 +1,14 @@
+numpy
+matplotlib
+scipy
+
+[dev]
+build
+twine
+jupyterlab
+
+[doc]
+sphinx
+
+[test]
+pytest

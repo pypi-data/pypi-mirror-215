@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+src/procurve/__init__.py
+src/procurve/plotting.py
+src/procurve/principal_curve.py
+src/procurve/utils.py
+src/procurve.egg-info/PKG-INFO
+src/procurve.egg-info/SOURCES.txt
+src/procurve.egg-info/dependency_links.txt
+src/procurve.egg-info/requires.txt
+src/procurve.egg-info/top_level.txt
