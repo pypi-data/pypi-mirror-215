@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=59.6.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catesegy"
+version = "0.0.1"
+authors = [
+  { name="Motion Signal Technologies", email="kit.chambers@motionsignaltechnologies.com" },
+]
+description = "Python client for extracting data from CATE archives and writing as segy data"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent"
+]
+dependencies = ["numpy>=1.24.3",
+                "requests>=2.31.0",
+                "catenp>=0.0.9",
+                "decorator>=4.4.2",
+                "obsln>=0.0.3"]
+
+[project.urls]
+"Homepage" = "https://github.com/motionsignaltechnologies/cate-segy"

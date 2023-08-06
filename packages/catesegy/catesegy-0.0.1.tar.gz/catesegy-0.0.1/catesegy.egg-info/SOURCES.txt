@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+catesegy/__init__.py
+catesegy/catesegy.py
+catesegy.egg-info/PKG-INFO
+catesegy.egg-info/SOURCES.txt
+catesegy.egg-info/dependency_links.txt
+catesegy.egg-info/requires.txt
+catesegy.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+numpy>=1.24.3
+requests>=2.31.0
+catenp>=0.0.9
+decorator>=4.4.2
+obsln>=0.0.3
