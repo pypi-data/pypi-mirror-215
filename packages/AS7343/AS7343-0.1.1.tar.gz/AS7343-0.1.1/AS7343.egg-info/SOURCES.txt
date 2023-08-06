@@ -1,0 +1,8 @@
+README.md
+setup.py
+AS7343/__init__.py
+AS7343/addr.py
+AS7343.egg-info/PKG-INFO
+AS7343.egg-info/SOURCES.txt
+AS7343.egg-info/dependency_links.txt
+AS7343.egg-info/top_level.txt
