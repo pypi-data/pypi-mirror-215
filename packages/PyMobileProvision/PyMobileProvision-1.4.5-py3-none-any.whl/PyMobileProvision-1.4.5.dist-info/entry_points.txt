@@ -1,0 +1,2 @@
+[console_scripts]
+mobileprovision = mobileprovision.command:main
