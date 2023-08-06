@@ -1,0 +1,13 @@
+summarizedexperiment/BaseSE.py,sha256=CT6vcFzWEGRs2hCxFbhPoLTeEEZMkY695mZLfIwY6-Q,16830
+summarizedexperiment/RangeSummarizedExperiment.py,sha256=rP5vcpIljgooAy1pKkyVS9qPBGdTqZBFHwmPxdzX7eY,22997
+summarizedexperiment/RangedSummarizedExperiment.py,sha256=LzDV-i-oQP4kF-GbhnG1k91BZ54L-4JC1Gu78UotSW0,358
+summarizedexperiment/SummarizedExperiment.py,sha256=-k6zLx2pey-FOBZYAO6iUerefSz9XeAnmKgT9IkVWMs,3150
+summarizedexperiment/__init__.py,sha256=3JO7DepvJm7qsBR3A27yB2ExWLVCAlWVhahlbxrl6ss,828
+summarizedexperiment/dispatchers/__init__.py,sha256=c_jwaiOWvGZL38OSdL3LG0I9TkkQxdSPaeHqlNTUiiQ,97
+summarizedexperiment/dispatchers/colnames.py,sha256=eb-yHqNT3YK2OuxlnQZC0AJU5rjjHo86mcjtHAMIh0Q,1418
+summarizedexperiment/dispatchers/rownames.py,sha256=VMcIFkceRjcfhbxT6vTS9ZTiDKeXgToLfgMYFUJICY4,1412
+SummarizedExperiment-0.2.7.dist-info/LICENSE.txt,sha256=pkwgQ8WMTR1-Qa0qwIaBf5I1-8OGN1B20E_eeDg-bqc,1082
+SummarizedExperiment-0.2.7.dist-info/METADATA,sha256=1gn_IREec8gmYNxPn8NNK5y-oTolRNZcXQcDDOFQNxs,2844
+SummarizedExperiment-0.2.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+SummarizedExperiment-0.2.7.dist-info/top_level.txt,sha256=B2YgdKBS0dzi3xJ-PivIeXaVQVvoxx3Rs5GQilRferc,21
+SummarizedExperiment-0.2.7.dist-info/RECORD,,
