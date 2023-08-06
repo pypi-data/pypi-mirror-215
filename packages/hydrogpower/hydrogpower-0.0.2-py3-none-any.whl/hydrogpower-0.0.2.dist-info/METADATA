@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hydrogpower
+Version: 0.0.2
+Summary: A small example package
+Author-email: JulianDPastrana <j.pastrana@utp.edu.com>
+Project-URL: Homepage, https://github.com/cblancom/natural_gas_project
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-probability
+Requires-Dist: gpflow (~=2.8.0)
+
+# HydroGPower
+
+HydroGPower is a Python package that utilizes Gaussian Process (GP) models for predicting time-series hydro-resources.
+
+## Installation
+
+To use the HydroGPower tool, install the hydrogpower package:
+```bash
+pip install hydrogpower
+```
+## Example of usage
+
+We created a ```dataset_example.xlsx``` file containing the time-series data at the script's path.
+```bash
+from hydrogpower import main
+
+hydrogpower = main.HydroGPower(
+    filename="dataset_example",
+    horizont=5,
+    M=2,
+    seed=1234
+)
+hydrogpower.train_model()
+hydrogpower.predict()
