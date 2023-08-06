@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kangtools
+Version: 0.0.1
+Summary: A Python package for version control.
+Author: xiaowen kang
+Author-email: kangxiaowen@gmail.com
+License: LICENSE
+Description-Content-Type: text/markdown
+
+# kangtools
+kangtools
+
+- git remote
+- renew verison.
+- upload add date. 
