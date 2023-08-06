@@ -1,0 +1,13 @@
+[package]
+name = "pyrtls"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.19"
+rustls = "0.21"
+rustls-native-certs = "0.6.2"
+socket2 = "0.5"
