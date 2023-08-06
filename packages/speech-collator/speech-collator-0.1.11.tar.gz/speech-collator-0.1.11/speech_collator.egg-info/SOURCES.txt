@@ -1,0 +1,11 @@
+README.md
+setup.py
+speech_collator/__init__.py
+speech_collator.egg-info/PKG-INFO
+speech_collator.egg-info/SOURCES.txt
+speech_collator.egg-info/dependency_links.txt
+speech_collator.egg-info/requires.txt
+speech_collator.egg-info/top_level.txt
+speech_collator/measures/__init__.py
+speech_collator/measures/snr.py
+speech_collator/measures/srmr.py

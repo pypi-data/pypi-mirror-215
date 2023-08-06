@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: speech-collator
+Version: 0.1.11
+Summary: A collator for speech datasets with different batching strategies and attribute extraction.
+Author: Christoph Minixhofer
+Author-email: christoph.minixhofer@gmail.com
+License: MIT
+Requires-Python: >=3.6
