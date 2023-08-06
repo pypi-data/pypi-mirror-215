@@ -1,0 +1,2 @@
+[console_scripts]
+FBA_Matting = FBA_Matting.__main__:main
