@@ -1,0 +1,8 @@
+tree_sitter_languages/__init__.py,sha256=IB0aNVrIbjN8qhfA0uHxITaFcZOFySWn7YJoVL9iNuU,232
+tree_sitter_languages/core.cpython-36m-darwin.so,sha256=tbIC0SLavJwpZJRrOiZAL-oQ4BOize6Wauwp5rKoQ8A,63424
+tree_sitter_languages/languages.so,sha256=Gx1F1ksa4BuNg5RVa9X2bO9MMYNRsoOq6qjH9vNXpZo,47048080
+tree_sitter_languages-1.6.1.dist-info/LICENSE,sha256=HXl69bZNbMGr3E6nNJ0iLyutb83p7DYVrs8GcNz7luo,554
+tree_sitter_languages-1.6.1.dist-info/METADATA,sha256=CpvF1JgY5tGCoF6h7cKKy2HcPiRrtF8FEKZj39LbByg,10184
+tree_sitter_languages-1.6.1.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+tree_sitter_languages-1.6.1.dist-info/top_level.txt,sha256=1WmcNkOJg9xmImRjbeI-XQHXNsQox9gEShuMMeZC3jg,22
+tree_sitter_languages-1.6.1.dist-info/RECORD,,
