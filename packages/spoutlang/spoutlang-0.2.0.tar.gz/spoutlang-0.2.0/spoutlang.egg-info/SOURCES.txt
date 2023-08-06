@@ -1,0 +1,8 @@
+README.md
+main.py
+setup.py
+spoutlang.egg-info/PKG-INFO
+spoutlang.egg-info/SOURCES.txt
+spoutlang.egg-info/dependency_links.txt
+spoutlang.egg-info/entry_points.txt
+spoutlang.egg-info/top_level.txt
