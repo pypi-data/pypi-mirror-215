@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cc2dataset/__init__.py
+cc2dataset/main.py
+cc2dataset/spark_session_builder.py
+cc2dataset.egg-info/PKG-INFO
+cc2dataset.egg-info/SOURCES.txt
+cc2dataset.egg-info/dependency_links.txt
+cc2dataset.egg-info/requires.txt
+cc2dataset.egg-info/top_level.txt
