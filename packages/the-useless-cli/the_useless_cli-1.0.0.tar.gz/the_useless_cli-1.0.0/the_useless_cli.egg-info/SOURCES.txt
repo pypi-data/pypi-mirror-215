@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+the_useless_cli/__init__.py
+the_useless_cli/__main__.py
+the_useless_cli/constants.py
+the_useless_cli.egg-info/PKG-INFO
+the_useless_cli.egg-info/SOURCES.txt
+the_useless_cli.egg-info/dependency_links.txt
+the_useless_cli.egg-info/entry_points.txt
+the_useless_cli.egg-info/requires.txt
+the_useless_cli.egg-info/top_level.txt
