@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pycones
+Version: 0.1.1
+Summary: 
+Author: william
+Author-email: william_swl@163.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: numpy (>=1.25.0,<2.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# pycones
+
+[![PyPI Version][pypi-image]][pypi-url]
+
+...
+
+<!-- Badges: -->
+
+[pypi-image]: https://img.shields.io/pypi/v/pycones
+[pypi-url]: https://pypi.org/project/pycones
+
