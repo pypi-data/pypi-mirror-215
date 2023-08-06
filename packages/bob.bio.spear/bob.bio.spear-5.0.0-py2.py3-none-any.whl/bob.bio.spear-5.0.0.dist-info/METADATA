@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: bob.bio.spear
+Version: 5.0.0
+Author-email: Andre Anjos <andre.anjos@idiap.ch>
+License: GPLv3
+Project-URL: documentation, https://www.idiap.ch/software/bob/docs/bob/bob.bio.spear/v5.0.0/
+Project-URL: homepage, https://pypi.org/project/bob.bio.spear/
+Project-URL: repository, https://gitlab.idiap.ch/bob/bob.bio.spear
+Project-URL: changelog, https://gitlab.idiap.ch/bob/bob.bio.spear/-/releases
+Keywords: bob,biometric recognition,evaluation
+Classifier: Framework :: Bob
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: bob (==12.0.0)
+Requires-Dist: bob.io.base (==5.1.0)
+Requires-Dist: bob.measure (==6.1.0)
+Requires-Dist: bob.pipelines (==4.0.0)
+Requires-Dist: bob.learn.em (==3.3.0)
+Requires-Dist: bob.bio.base (==8.0.0)
+Requires-Dist: clapper (==1.0.1)
+Requires-Dist: pysoundfile
+Requires-Dist: scikit-learn (==1.1.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: torch (==1.13.0)
+Requires-Dist: torchaudio
+Requires-Dist: tqdm (==4.64.1)
+Provides-Extra: doc
+Requires-Dist: sphinx (==5.3.0) ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme (==1.1.1) ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints (==1.21.8) ; extra == 'doc'
+Requires-Dist: auto-intersphinx (==1.0.2) ; extra == 'doc'
+Requires-Dist: sphinxcontrib-programoutput (==0.17) ; extra == 'doc'
+Requires-Dist: matplotlib (==3.6.2) ; extra == 'doc'
+Provides-Extra: qa
+Requires-Dist: pre-commit ; extra == 'qa'
+Provides-Extra: test
+Requires-Dist: pytest (==7.2.1) ; extra == 'test'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'test'
+Requires-Dist: coverage (==7.0.5) ; extra == 'test'
+Requires-Dist: dask (==2023.1.0) ; extra == 'test'
+
+[![badge doc](https://img.shields.io/badge/docs-v5.0.0-orange.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.bio.spear/v5.0.0/sphinx/index.html)
+[![badge pipeline](https://gitlab.idiap.ch/bob/bob.bio.spear/badges/v5.0.0/pipeline.svg)](https://gitlab.idiap.ch/bob/bob.bio.spear/commits/v5.0.0)
+[![badge coverage](https://gitlab.idiap.ch/bob/bob.bio.spear/badges/v5.0.0/coverage.svg)](https://www.idiap.ch/software/bob/docs/bob/bob.bio.spear/v5.0.0/coverage/index.html)
+[![badge gitlab](https://img.shields.io/badge/gitlab-project-0000c0.svg)](https://gitlab.idiap.ch/bob/bob.bio.spear)
+
+# Run speaker recognition algorithms
+
+This package is part of the signal-processing and machine learning toolbox
+[Bob](https://www.idiap.ch/software/bob).
+This package is part of the `bob.bio` packages, which allow to run comparable
+and reproducible biometric recognition experiments on publicly available
+databases.
+
+This package contains functionality to run speaker recognition experiments.
+It is an extension to the
+[bob.bio.base](https://pypi.python.org/pypi/bob.bio.base) package, which
+provides the basic scripts.
+This package contains utilities that are specific for speaker recognition, such
+as:
+
+* Audio databases
+* Voice activity detection preprocessing
+* Acoustic feature extractors
+* Recognition algorithms based on acoustic features
+
+For further information about `bob.bio`, please read
+[its Documentation](https://www.idiap.ch/software/bob/docs/bob/bob.bio.base/master/sphinx/index.html).
+
+## Installation
+
+Complete Bob's
+[installation instructions](https://www.idiap.ch/software/bob/install). Then,
+to install this package, run:
+
+``` sh
+pip install bob.bio.spear
+```
+
+## Contact
+
+For questions or reporting issues to this software package, contact our
+development [mailing list](https://www.idiap.ch/software/bob/discuss).
