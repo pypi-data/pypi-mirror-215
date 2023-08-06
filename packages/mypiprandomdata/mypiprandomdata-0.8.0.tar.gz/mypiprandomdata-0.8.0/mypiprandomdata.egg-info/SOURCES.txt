@@ -1,0 +1,16 @@
+setup.py
+mypiprandomdata/__init__.py
+mypiprandomdata/cli.py
+mypiprandomdata.egg-info/PKG-INFO
+mypiprandomdata.egg-info/SOURCES.txt
+mypiprandomdata.egg-info/dependency_links.txt
+mypiprandomdata.egg-info/entry_points.txt
+mypiprandomdata.egg-info/top_level.txt
+mypiprandomdata/data/Cities.txt
+mypiprandomdata/data/FirstName.txt
+mypiprandomdata/data/LastName.txt
+mypiprandomdata/data/Real_Address.txt
+mypiprandomdata/data/States.txt
+mypiprandomdata/data/UserAgent.txt
+mypiprandomdata/data/ZipCode.txt
+mypiprandomdata/data/data.json
