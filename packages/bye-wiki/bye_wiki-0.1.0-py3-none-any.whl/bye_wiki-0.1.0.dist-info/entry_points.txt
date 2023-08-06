@@ -1,0 +1,2 @@
+[console_scripts]
+bw = bye_wiki.cli:main
