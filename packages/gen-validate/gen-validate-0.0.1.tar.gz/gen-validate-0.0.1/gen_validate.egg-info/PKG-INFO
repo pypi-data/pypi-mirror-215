@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gen-validate
+Version: 0.0.1
+Summary: validate客户端
+Home-page: https://www.lanqiao.cn/
+Author: 吴建华
+Author-email: wujianhua@lanqiao.cn
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
