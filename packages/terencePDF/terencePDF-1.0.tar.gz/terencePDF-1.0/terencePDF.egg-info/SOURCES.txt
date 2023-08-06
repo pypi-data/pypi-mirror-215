@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+terencePDF/__init__.py
+terencePDF/pdf2image.py
+terencePDF/pdf2text.py
+terencePDF.egg-info/PKG-INFO
+terencePDF.egg-info/SOURCES.txt
+terencePDF.egg-info/dependency_links.txt
+terencePDF.egg-info/top_level.txt
