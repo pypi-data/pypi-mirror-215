@@ -1,0 +1,11 @@
+NS-MapToolkit/NSMapToolkit.py,sha256=OBw59vOu-g7qs_TAVoZXEEYe4UCJtZJBJBz9BUgXRVU,12163
+NS-MapToolkit/__init__.py,sha256=XZXaB77LIa5WqVgtIeE-rLRuw7CCjenIBzB_qfnWoAM,185
+NS-MapToolkit/modelSystems.py,sha256=06srCClG4URO_xVQeL5mc0w9V1KuK_kbo_7NWTcJNUQ,3843
+NSMap/NSMapToolkit.py,sha256=OBw59vOu-g7qs_TAVoZXEEYe4UCJtZJBJBz9BUgXRVU,12163
+NSMap/__init__.py,sha256=jNFP5ajQSHDTg4r_WplXld95ZaFRuTIHlwfMsbEJH1s,237
+NSMap/modelSystems.py,sha256=06srCClG4URO_xVQeL5mc0w9V1KuK_kbo_7NWTcJNUQ,3843
+NSMap-1.0.dist-info/LICENSE,sha256=z7lvE_Zofpptlb0hkND1uNpUbhMxQVqjhkgIvm1otXY,1086
+NSMap-1.0.dist-info/METADATA,sha256=Aw68MxhQ7O2d1ZdWZd6mH9qoQifjy32-ff5XqzgE9kE,706
+NSMap-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+NSMap-1.0.dist-info/top_level.txt,sha256=Ibk1JviqtxIfIVsTOlfTqJRNkEB1nbRvsSOOJw08HqI,6
+NSMap-1.0.dist-info/RECORD,,
