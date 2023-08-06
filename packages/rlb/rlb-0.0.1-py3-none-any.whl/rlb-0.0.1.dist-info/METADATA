@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rlb
+Version: 0.0.1
+Summary: Racing Llama Benchmark is a benchmark tool for comparing llama.cpp performance against different versions and hardware.
+Home-page: https://github.com/racingllama/benchmark
+License: MIT
+Author: Soleblaze
+Author-email: soleblaze@racingllama.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: llama-cpp-python (>=0.1.65,<0.2.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: wurlitzer (>=3.0.3,<4.0.0)
+Project-URL: Repository, http://github.com/racingllama/benchmark
+Description-Content-Type: text/markdown
+
+# rlb
+
+The Racing Llama Benchmark (rlb) is designed to provide consistent LLM
+benchmarking across Linux, MacOS, and Windows.
+
+NOTE: This project is in Alpha state and is currently being developed for MacOS.
+Linux and Windows support will be added next.
+
+## TODO
+
+- Support Running llama.cpp against multiple parameter and quantization types
+- Graph output
+- Comparing thread counts
+- Improved benchmark prompts
+- Memory benchmarking
+- CPU benchmarking
+- Possible HPL-MxP support
+- Possible jitter measurements
+- JSON output
+- Versions in output, such as llama.cpp, python-llama-cpp
+- Linux support
+- Windows Support
+
