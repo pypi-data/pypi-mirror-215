@@ -1,0 +1,10 @@
+README.md
+setup.py
+mypythonpackageblablabla/__init__.py
+mypythonpackageblablabla/greet.py
+mypythonpackageblablabla/mymath.py
+mypythonpackageblablabla.egg-info/PKG-INFO
+mypythonpackageblablabla.egg-info/SOURCES.txt
+mypythonpackageblablabla.egg-info/dependency_links.txt
+mypythonpackageblablabla.egg-info/not-zip-safe
+mypythonpackageblablabla.egg-info/top_level.txt
