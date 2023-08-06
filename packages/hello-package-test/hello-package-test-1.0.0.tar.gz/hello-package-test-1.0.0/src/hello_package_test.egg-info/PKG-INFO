@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hello-package-test
+Version: 1.0.0
+Summary: SDK for the Risk Simulator
+Home-page: https://riskprotocol.io
+Author: Oyetunji Abioye
+Author-email: oabioye@riskprotocol.io
+Project-URL: Docs, https://riskprotocol.io/docs
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11.3
+Description-Content-Type: text/markdown
+
+# SDK for the Risk Simulator
