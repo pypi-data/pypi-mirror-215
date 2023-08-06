@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gmaps-locator
+Version: 0.0.2
+Summary: Get geocode from google map
+Author: Akbar Tolandy
+Author-email: <akbartolandy@gmail.com>
+Project-URL: Homepage, https://github.com/AkbarTolandy/gmaps_locator.git
+Keywords: python,gmaps,geocode
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+
+# gmaps_locator
+
+Under construction! Beta Version! Currently experimenting and planning!
+
+Developed by Akbar Tolandy (c) 2023
+
+## Examples of How To Use (Beta Version)
+```python
+from gmaps_locator import GetCoord
+
+coord = GetCoord()
+
+address = 'Jl. Jenderal Sudirman No.Kav. 60, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12190'
+print(coord.get_latlon(address))
+
+# example output
+{'lat': '-6.2257608', 'lon': '106.804772'}
+```

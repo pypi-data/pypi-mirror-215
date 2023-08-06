@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+gmaps_locator/__init__.py
+gmaps_locator/get_detail.py
+gmaps_locator.egg-info/PKG-INFO
+gmaps_locator.egg-info/SOURCES.txt
+gmaps_locator.egg-info/dependency_links.txt
+gmaps_locator.egg-info/requires.txt
+gmaps_locator.egg-info/top_level.txt
