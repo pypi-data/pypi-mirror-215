@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+boombig/__init__.py
+boombig.egg-info/PKG-INFO
+boombig.egg-info/SOURCES.txt
+boombig.egg-info/dependency_links.txt
+boombig.egg-info/top_level.txt
+boombig/config/__init__.py
+boombig/main/__init__.py
