@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: unkey-py
+Version: 0.1.0
+Summary: An asynchronous Python SDK for unkey.dev.
+Home-page: https://github.com/Jonxslays/unkey.py
+License: GPL-3.0-only
+Author: Jonxslays
+Requires-Python: >=3.8
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>3.8.1)
+Requires-Dist: attrs (>=22)
+Project-URL: Repository, https://github.com/Jonxslays/unkey.py
+Description-Content-Type: text/markdown
+
+# unkey.py
+
+An asynchronous Python SDK for [unkey.dev](https://unkey.dev/).
+
+## License
+
+unkey.py is licensed under the [GPLv3 License](https://github.com/Jonxslays/unkey.py/blob/master/LICENSE)
+
