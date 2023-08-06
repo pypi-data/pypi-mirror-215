@@ -1,0 +1,10 @@
+README.md
+setup.py
+eurlex/__init__.py
+eurlex.egg-info/PKG-INFO
+eurlex.egg-info/SOURCES.txt
+eurlex.egg-info/dependency_links.txt
+eurlex.egg-info/requires.txt
+eurlex.egg-info/top_level.txt
+tests/__init__.py
+tests/test_parsing.py
