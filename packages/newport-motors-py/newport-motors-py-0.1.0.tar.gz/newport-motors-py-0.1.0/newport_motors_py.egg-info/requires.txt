@@ -1,0 +1,8 @@
+pytest
+streamlit
+usbinfo
+PyVISA
+PyVISA-py
+PyYAML
+parse
+visa
