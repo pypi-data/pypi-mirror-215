@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kiwii
+Version: 0.1.0
+Summary: Home IOT ecosystem made easy.
+License: Unlicense
+Author: Vlad Poberezhny
+Author-email: vlad.pbr@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+Kiwii
+=====
+
+* * *
+
+Kiwi (/ˈkiːwi/ KEE-wee) or kiwis are flightless birds native to New Zealand, in the genus Apteryx and family Apterygidae. Approximately the size of a domestic chicken, kiwi are by far the smallest living ratites (which also consist of ostriches, emus, rheas, and cassowaries).
+
+`kiwii`, on the other hand, is a home IOT ecosystem.
