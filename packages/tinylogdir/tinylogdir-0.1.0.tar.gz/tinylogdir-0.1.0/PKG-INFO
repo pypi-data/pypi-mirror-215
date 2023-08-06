@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tinylogdir
+Version: 0.1.0
+Summary: A lightweight library for creating output directories of python scripts.
+Home-page: https://github.com/fferflo/tinylogdir
+Author: Florian Fervers
+Author-email: florian.fervers@gmail.com
+License: MIT
+License-File: LICENSE

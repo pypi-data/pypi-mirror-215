@@ -1,0 +1,11 @@
+LICENSE
+setup.cfg
+setup.py
+tinylogdir/__init__.py
+tinylogdir/logdir.py
+tinylogdir.egg-info/PKG-INFO
+tinylogdir.egg-info/SOURCES.txt
+tinylogdir.egg-info/dependency_links.txt
+tinylogdir.egg-info/not-zip-safe
+tinylogdir.egg-info/requires.txt
+tinylogdir.egg-info/top_level.txt
