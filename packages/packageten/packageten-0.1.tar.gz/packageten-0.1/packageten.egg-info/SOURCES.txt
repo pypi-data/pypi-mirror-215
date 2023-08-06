@@ -1,0 +1,8 @@
+Licence.txt
+pyproject.toml
+setup.py
+packageten/__init__.py
+packageten.egg-info/PKG-INFO
+packageten.egg-info/SOURCES.txt
+packageten.egg-info/dependency_links.txt
+packageten.egg-info/top_level.txt
