@@ -1,0 +1,9 @@
+confclient/__init__.py,sha256=_CCxxVBRtCRn4cmsSKoRG3bOUkh_uLChtbtpcfMWy-A,196
+confclient/confexcept.py,sha256=AjK6lPmoJyucVVt7y1uZjYuSjm_Fy1Ilic-pfUlcH2c,563
+confclient/restclient.py,sha256=RlikOpCmeVE64AO4Dhb-_Jg3qUQXbHQLtqRqXwoxJBo,1772
+confclient/rpcclient.py,sha256=4eZ4sumYJgVseYatBNPEObGV5_6ImRmpC_-JwHcfnH8,6893
+confapi-0.1.dist-info/LICENSE,sha256=fyT79jFy8FB-vnXzodNuWhUPEW5bJrl4OZ03DP-AnO4,1068
+confapi-0.1.dist-info/METADATA,sha256=JDrBBIMsemKSj1H3CTO9qy5tmgb3ndTzjdMtTM3EahM,325
+confapi-0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+confapi-0.1.dist-info/top_level.txt,sha256=sogmRSNU9wCyX0ObNDvqLb4wUiZivZ8bJ0LKOX21UlA,11
+confapi-0.1.dist-info/RECORD,,
