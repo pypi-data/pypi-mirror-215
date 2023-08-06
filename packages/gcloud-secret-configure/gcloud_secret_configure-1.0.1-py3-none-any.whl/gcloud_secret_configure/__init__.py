@@ -1,0 +1,2 @@
+from gcloud_secret_configure.config import get_config
+from gcloud_secret_configure.secret import GoogleSecretFetcher
