@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          as-mongodb=as_mongodb:main
+      
