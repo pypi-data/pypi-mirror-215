@@ -1,0 +1,7 @@
+README.md
+setup.py
+pkchat/__init__.py
+pkchat.egg-info/PKG-INFO
+pkchat.egg-info/SOURCES.txt
+pkchat.egg-info/dependency_links.txt
+pkchat.egg-info/top_level.txt
