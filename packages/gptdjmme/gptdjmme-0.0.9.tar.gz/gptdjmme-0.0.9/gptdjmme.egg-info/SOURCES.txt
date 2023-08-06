@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gptdjmme/__init__.py
+gptdjmme/ai.py
+gptdjmme/db.py
+gptdjmme/main.py
+gptdjmme.egg-info/PKG-INFO
+gptdjmme.egg-info/SOURCES.txt
+gptdjmme.egg-info/dependency_links.txt
+gptdjmme.egg-info/requires.txt
+gptdjmme.egg-info/top_level.txt
