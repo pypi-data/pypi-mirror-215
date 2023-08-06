@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pythoven"
+version = "0.1.0"
+description = ""
+authors = ["Tomasz Roszczynialski <roszcz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fortepyan = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
