@@ -1,0 +1,17 @@
+autograd/__init__.py,sha256=M5y2DM-uy7DJv0aOl2yUtxjG2981T9rabIDNE_DxcNQ,331
+autograd/tinytorch/__init__.py,sha256=0w0ervi9X52ylS9_mIv6TkNnTFqTUbDay6zTZY1Xg74,119
+autograd/tinytorch/init.py,sha256=6szVgz7m73qQ5Dc93IfKoUXAKZkqnwtBt6PRWCDjed0,241
+autograd/tinytorch/tensor.py,sha256=oJ_iR4KD4P231YbFnrk6bkWmvpqasjvW3ukF6GY698I,19876
+autograd/tinytorch/nn/__init__.py,sha256=Vee3q-HIZSR4xIe1WPjjy6tZk7-rgDn3e2QcbWnWhJk,59
+autograd/tinytorch/nn/functional.py,sha256=G87nswZkwV0yTH3egaTsAVPjb7Dc7q5RL0vXNwdG3EY,3047
+autograd/tinytorch/nn/module.py,sha256=tSMQeFqgJdItjVsb2EC5xWc2HJogALE05KJ9hZksbU0,3918
+autograd/tinytorch/optim/__init__.py,sha256=kgmJox1msQam9QwTe4c_a5lCVjoGfpLJh-Ec0Ny1WZI,64
+autograd/tinytorch/optim/lr_scheduler.py,sha256=J0-2zRDyMP4NPXu9rK7ZoBjt3z01A3qX21Cj5TkOa_4,1886
+autograd/tinytorch/optim/optimizer.py,sha256=OPXNWt0NauGu92uJWf_AQ7NxLFGvrDthLKpaI-y7if4,1373
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/autograd.py,sha256=uMgneV1lhEqoPJmpQBKxlufmKjuNz03DIzmEd-rbt3Q,2644
+test/test_engine.py,sha256=qOXnYtH7GVRajTu_QdEPfvgzMmrAKjwg7R_Z3x50t5U,2455
+nano_autograds-0.1.0.dist-info/METADATA,sha256=O3WM4ip-z2R0xmMUC0ZTRh7KRgS4I5hH8ivQ3wccpbQ,574
+nano_autograds-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nano_autograds-0.1.0.dist-info/top_level.txt,sha256=yK3Kn_liEIgc8r3xCHSnflsK0bQLx8NTnI1waqg-J5Y,14
+nano_autograds-0.1.0.dist-info/RECORD,,
