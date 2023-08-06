@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+newpackageone.egg-info/PKG-INFO
+newpackageone.egg-info/SOURCES.txt
+newpackageone.egg-info/dependency_links.txt
+newpackageone.egg-info/entry_points.txt
+newpackageone.egg-info/requires.txt
+newpackageone.egg-info/top_level.txt
