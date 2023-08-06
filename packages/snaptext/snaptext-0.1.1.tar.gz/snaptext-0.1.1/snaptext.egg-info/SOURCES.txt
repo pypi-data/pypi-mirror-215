@@ -1,0 +1,11 @@
+pyproject.toml
+readme.md
+snaptext/__init__.py
+snaptext/core.py
+snaptext/json.py
+snaptext/string.py
+snaptext/value.py
+snaptext.egg-info/PKG-INFO
+snaptext.egg-info/SOURCES.txt
+snaptext.egg-info/dependency_links.txt
+snaptext.egg-info/top_level.txt
