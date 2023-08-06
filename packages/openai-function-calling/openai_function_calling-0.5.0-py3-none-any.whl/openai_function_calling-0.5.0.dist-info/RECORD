@@ -1,0 +1,6 @@
+openai_function_calling/__init__.py,sha256=C63koSHvm-OScZHij8xooAepAv9rVcUF2hxaoQwctTI,316
+openai_function_calling/function.py,sha256=Uquuf9ERiK4naD9K9RS9v62pqRSMkIbm2tK5qAdxxmg,1756
+openai_function_calling/parameter.py,sha256=AFcWPH-huNr1aDLZofJiV8re20o0wqNtWdHeIoMPvFI,848
+openai_function_calling-0.5.0.dist-info/METADATA,sha256=bDIhddTgdvxH3xsE34flySBf5ESUy3bgrkjWL3jUFsw,2624
+openai_function_calling-0.5.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+openai_function_calling-0.5.0.dist-info/RECORD,,
