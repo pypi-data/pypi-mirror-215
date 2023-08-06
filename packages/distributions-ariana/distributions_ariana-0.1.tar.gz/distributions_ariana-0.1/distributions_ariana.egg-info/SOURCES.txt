@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_ariana/Binomialdistribution.py
+distributions_ariana/Gaussiandistribution.py
+distributions_ariana/Generaldistribution.py
+distributions_ariana/__init__.py
+distributions_ariana.egg-info/PKG-INFO
+distributions_ariana.egg-info/SOURCES.txt
+distributions_ariana.egg-info/dependency_links.txt
+distributions_ariana.egg-info/not-zip-safe
+distributions_ariana.egg-info/top_level.txt
