@@ -1,0 +1,3 @@
+[console_scripts]
+report2junit=report2junit:main
+
