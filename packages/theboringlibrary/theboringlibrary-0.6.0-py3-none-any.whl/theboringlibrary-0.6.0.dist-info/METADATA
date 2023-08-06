@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: theboringlibrary
+Version: 0.6.0
+Summary: It does nothing!
+Author: Stefano Frassetto
+Author-email: frassetto.stefano@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+Requires-Dist: coverage[toml] (>=7.2.7,<8.0.0) ; extra == "dev"
+Requires-Dist: mkdocs (>=1.4.3,<2.0.0) ; extra == "dev"
+Requires-Dist: mkdocs-gen-files (>=0.5.0,<0.6.0) ; extra == "dev"
+Requires-Dist: mkdocs-material (>=9.1.17,<10.0.0) ; extra == "dev"
+Requires-Dist: mkdocstrings[python] (>=0.22.0,<0.23.0) ; extra == "dev"
+Requires-Dist: pytest (>=7.3.2,<8.0.0) ; extra == "dev"
+Requires-Dist: pytest-cov (>=4.1.0,<5.0.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+[![codecov](https://codecov.io/gh/stefanondisponibile/theboringlibrary/branch/develop/graph/badge.svg?token=8VHJ01UKLX)](https://codecov.io/gh/stefanondisponibile/theboringlibrary)
+
+# theboringlibrary
+
+It does nothing.
+
