@@ -1,0 +1,2 @@
+[console_scripts]
+opfc = openfractal_client.cli:app
