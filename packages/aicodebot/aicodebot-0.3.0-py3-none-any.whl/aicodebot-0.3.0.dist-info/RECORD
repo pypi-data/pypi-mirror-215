@@ -1,0 +1,16 @@
+aicodebot/.aicodebot.template,sha256=PPFvGONYZFuptJozlZB33ngh8NxwOTF-EnRTWZ5Vh7U,97
+aicodebot/__init__.py,sha256=EqIccytbgmIh3EOfv7QIiksdjJSlB-o2LbyXxRtoMGs,18
+aicodebot/cli.py,sha256=ibgrBfF4bDudHjjOEYFD4-1_qpIGTLZuMY6SRUYmGJg,6223
+aicodebot/helpers.py,sha256=2vlJCdEtUaU5Z164xOt41PoTs7ZLSOZzl5NeUabjBck,366
+aicodebot/prompts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aicodebot/prompts/alignment.yaml,sha256=L0OjEDLROr1ZVqn1ZZbVB1EyKbumGO0Iln8m4cW3__Q,838
+aicodebot/prompts/commit_message.yaml,sha256=oyKWiiXsmYDWckUhYTsAb21vo9tAsKmduQoBjhNSI10,1018
+aicodebot/prompts/fun_fact.yaml,sha256=UWM3Zm48mQa9Aogmr3hziAlKSgq2J3sFcq3f5Wu60Yc,212
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=OlatGxAtAbqndn51T33c3eyHPCkzv1NuudBcjrqn01w,535
+aicodebot-0.3.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+aicodebot-0.3.0.dist-info/METADATA,sha256=LJZVA6NQjU7O5ytIcenOrx3fmDEVlOv0Uxk82XSY-tE,7212
+aicodebot-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aicodebot-0.3.0.dist-info/entry_points.txt,sha256=tpMRSyq_j-gOc7VOPImCnLdrbp8rJeYfhBbkvomhTnM,48
+aicodebot-0.3.0.dist-info/top_level.txt,sha256=7cCIgwqJaGkr8JzvTvtEsJGqIEepBHEYWx5aG6D09jQ,10
+aicodebot-0.3.0.dist-info/RECORD,,
