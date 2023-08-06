@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: subwhisper
+Version: 0.1.0
+Summary: 
+Author: tupiznak
+Author-email: akej-vonavi@mail.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+SubWhisper
+---------
+
+Use command for preload model
+```python
+from subwhisper import setup
+
+setup()
+```
+
+Use command for transcribe audio
+```python
+from subwhisper import process
+
+process(file='/path/to/file')
+```
+
