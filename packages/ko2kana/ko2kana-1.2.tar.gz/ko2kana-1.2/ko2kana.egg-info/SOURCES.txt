@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ko2kana/__init__.py
+ko2kana/japanese.py
+ko2kana/ko2kana.py
+ko2kana/korean.py
+ko2kana.egg-info/PKG-INFO
+ko2kana.egg-info/SOURCES.txt
+ko2kana.egg-info/dependency_links.txt
+ko2kana.egg-info/requires.txt
+ko2kana.egg-info/top_level.txt
