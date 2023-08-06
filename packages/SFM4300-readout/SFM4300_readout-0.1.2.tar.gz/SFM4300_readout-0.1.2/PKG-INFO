@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: SFM4300_readout
+Version: 0.1.2
+Summary: simple wrapper class to read flow data from the SFM4300-20 flow sensor
+Author-email: Oscar Weissenbach <oscar.weissenbach@tu-berlin.de>
+Project-URL: Homepage, https://github.com/oscarisolin/SFM4300_readout
+Project-URL: Bug Tracker, https://github.com/oscarisolin/SFM4300_readout/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SFM4300_readout
+Simple wrapper class to read flow data from the SFM4300-20 flow sensor.
+
+## Usage
+```python 
+from SFM4300_readout import SFM4300
+sensor1 = SFM4300(1)
+print(sensor1.get_flow())
+```

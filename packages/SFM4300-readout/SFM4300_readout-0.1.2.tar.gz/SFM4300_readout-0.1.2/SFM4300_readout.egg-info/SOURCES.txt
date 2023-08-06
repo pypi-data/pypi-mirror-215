@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+SFM4300_readout/SensorInterface.py
+SFM4300_readout/__init__.py
+SFM4300_readout.egg-info/PKG-INFO
+SFM4300_readout.egg-info/SOURCES.txt
+SFM4300_readout.egg-info/dependency_links.txt
+SFM4300_readout.egg-info/requires.txt
+SFM4300_readout.egg-info/top_level.txt
