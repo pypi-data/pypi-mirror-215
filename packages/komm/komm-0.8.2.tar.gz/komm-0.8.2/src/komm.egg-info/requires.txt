@@ -1,0 +1,10 @@
+numpy
+scipy
+
+[dev]
+black
+isort
+pytest
+mkdocs
+mkdocs-material
+mkdocstrings
