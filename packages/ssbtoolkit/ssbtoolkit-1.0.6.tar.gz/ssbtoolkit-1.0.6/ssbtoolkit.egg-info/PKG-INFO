@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ssbtoolkit
+Version: 1.0.6
+Summary: Simulation of methematical models of signaling pathways of GPCRs
+Author: Rui Ribeiro
+Author-email: <rui.ribeiro@univr.it>
+Keywords: python,bioinformatics,Systems Biology,GPCR
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Description-Content-Type: text/markdown
+
+The SSB computational toolkit was developed to easily predict classical pharmacodynamic models of drug-GPCR (class A) interactions given just as input structural information of the receptor and the ligand.
