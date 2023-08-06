@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: pidgeotto
+Version: 0.0.5
+Summary: Yet another static blog generator.
+Home-page: https://github.com/niharokz/pidgeotto
+Author: nihar
+Author-email: <mail@nihars.com>
+License: MIT
+Keywords: python,jinja2,pyyam,markdown2,static,site
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: markdown2
+Requires-Dist: Jinja2
+Requires-Dist: pyyaml
+
+# pidgeotto
+
+## Description
+Yet another static website generator. 
+
+Why choose pidgeotto?
+1. Free of javascript.
+2. Extensible, flexible, forkable.
+3. Minimal and fast.
+4. Free under MIT License.
+
+## Installation
+``` pip install pidgeotto ```
+
+$ pip install git+https://github.com/niharokz/pidgeotto
+
+## Prerequisites
+By default, pidgeotto will install the below packages from PyPI pip
+``` pyyaml, jinja2, markdown2 ```
+* PyYAML:	To consume the config file and header of blog posts.
+* jinja2:	Templating engine
+* markdown2:	To convert markdown to HTML
+
+## Usage:
+```console
+$ pidgey init project
+```
+To initiate pidgeotto with name "project"
+
+```console
+$ pidgey new pageName
+```
+To create new page/post/note with name "pageName"
+
+```console
+$ pidgey build pageName
+```
+To build static pages and keep those in the "public" directory.
+
+## Extra Functionalaties
+1. showInHome tag is present in each note markdown.
+        ``` showInHome: True ``` 
+        will create page which are blog/note post.
+        
+        ``` showInHome: False ``` 
+        will create page which are pages.
+
+2. config.yml is extensible. 
+        For example, if you want to add favicon.ico. Keep favicon in the resource folder.
+        ``` favicon: resource/favicon.ico ``` 
+        in config.yml
+        In template, add {{ config.get('favicon') }}.
+
+3. Extra metadata per page.
+        If you want to add some metadata to your page, it can be done using the below command on the markdown page.
+        ``` meta : '<link rel="stylesheet" type="text/css" href="/extra.css" /> ```
+
+
+## Structure
+
+    pidgeotto_project
+    â”œâ”€â”€ public
+    â”œâ”€â”€ config.yml
+    â”œâ”€â”€ content
+    â”‚   â”œâ”€â”€ header.md
+    â”‚   â”œâ”€â”€ footer.md
+    â”‚   â”œâ”€â”€ home.md
+    â”‚   â”œâ”€â”€ archive.md
+    â”‚   â””â”€â”€ note
+    â”‚       â””â”€â”€ other_pages.md
+    â”œâ”€â”€ resource
+    â””â”€â”€ templates
+        â”œâ”€â”€ home_template.html
+        â”œâ”€â”€ note_template.html
+        â””â”€â”€ rss_template.xml
+
+* config.yml:	To configure the title, name, CSS file, js file, and other configurations.
+* resource:	Location to store all CSS, js, image data and other static content.
+* content:	All markdown files are stored here.
+* template:	Layouts for different HTML pages are kept here.
+* public: All generated static files. It can be changed in config.yml
+
+## Example
+
+Below are examples of sites running via pidgeotto.
+1. [nih.ar](https://nih.ar)
+
+
+## TODO
+
+* (A) 08-05-2021 Clean up some clutter coding
+
+## Update
+
+### 0.0.3
+
+* Server Functionality added
+* Automatic .md extension
+* Error/Exception handled
+
+### 0.0.4
+
+* Cleanup
+
+### 0.0.5
+
+* Windows support added
