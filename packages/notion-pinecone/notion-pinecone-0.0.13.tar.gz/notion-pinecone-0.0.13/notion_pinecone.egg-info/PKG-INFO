@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: notion-pinecone
+Version: 0.0.13
+Summary: Automated QA of Notion in Pinecone
+Home-page: https://github.com/felixzhu17/Notion-Pinecone
+Author: Felix Zhu
+Author-email: zhu.felix@outlook.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+# Notion-Pinecone
+Automated setup of Notion in Pinecone for Question-Answering
+
+
