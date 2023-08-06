@@ -1,0 +1,9 @@
+[comicapi.archiver]
+folder = comicapi.archivers.folder:FolderArchiver
+rar = comicapi.archivers.rar:RarArchiver
+sevenzip = comicapi.archivers.sevenzip:SevenZipArchiver
+tar = comicapi.archivers.tar:TarArchiver
+zip = comicapi.archivers.zip:ZipArchiver
+
+[pyinstaller40]
+hook-dirs = comicapi.__pyinstaller:get_hook_dirs
