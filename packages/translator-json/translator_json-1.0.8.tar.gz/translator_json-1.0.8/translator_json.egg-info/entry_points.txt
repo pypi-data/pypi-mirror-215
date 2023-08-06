@@ -1,0 +1,3 @@
+[console_scripts]
+json_translator = translator.translate_generator:json_translator
+

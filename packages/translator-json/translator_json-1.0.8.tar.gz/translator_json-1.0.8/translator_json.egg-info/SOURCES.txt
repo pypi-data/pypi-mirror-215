@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+translator/__init__.py
+translator/_version.py
+translator/translate_generator.py
+translator_json.egg-info/PKG-INFO
+translator_json.egg-info/SOURCES.txt
+translator_json.egg-info/dependency_links.txt
+translator_json.egg-info/entry_points.txt
+translator_json.egg-info/requires.txt
+translator_json.egg-info/top_level.txt
