@@ -1,0 +1,7 @@
+pyarmor/cli/core/themida/__init__.py,sha256=PG51kpFg0wVpa349hmCcuGnAthuwDOr30Fft4rWT9MI,22
+pyarmor/cli/core/themida/windows/x86/pyarmor_runtime.pyd,sha256=vewqPUML8rZZM7UpndrNIxSrXCItKtuypV3ggb8Y948,3794462
+pyarmor/cli/core/themida/windows/x86_64/pyarmor_runtime.pyd,sha256=gdgbJa1WtM_SKR8BOG40m76qUfIJk1xXbyqA-4GNiTQ,4900880
+pyarmor.cli.core.themida-3.2.8.dist-info/METADATA,sha256=GtYJfVpgdQJzhq9ASXok_caaUdEkxRsPAh1qndDcqDo,809
+pyarmor.cli.core.themida-3.2.8.dist-info/WHEEL,sha256=B1xNSF-3cuB7fHdJVETQupXu4HfdTmSjLassywAtmRc,93
+pyarmor.cli.core.themida-3.2.8.dist-info/top_level.txt,sha256=UE1ovZ_90YzwF_lZ3LV7o8HKLe-RgzUaUUvdH5UTUus,8
+pyarmor.cli.core.themida-3.2.8.dist-info/RECORD,,
