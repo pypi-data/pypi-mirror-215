@@ -1,0 +1,12 @@
+nics/__init__.py,sha256=a3kqiR8XjG-G53DuZnrsj3B8FJpqdt1V9yCs7yw0c5k,2290
+nics/__main__.py,sha256=DHnDvTWXrMZBF50OllZNOOSlau1KyTQBrE0SGwBJUjE,65
+nics/compile/__init__.py,sha256=aK9JaBdPtPkuxf58cgoqUbg50mnQ2veevoNXQp0G09w,1499
+nics/wizard/step1.py,sha256=faZwAzQU8a49A6EvjZ_p14r_YebO_89YYE0yDCmubSI,137
+nics/wizard/step2.py,sha256=faZwAzQU8a49A6EvjZ_p14r_YebO_89YYE0yDCmubSI,137
+nics/wizard/step3.py,sha256=faZwAzQU8a49A6EvjZ_p14r_YebO_89YYE0yDCmubSI,137
+nics-0.6.0.dist-info/LICENSE,sha256=LK5mntc96e8G7HoMqOOapBXaDlDLFOcrE8GV749nybE,1097
+nics-0.6.0.dist-info/METADATA,sha256=umEHR9F4NM2otXsXdMGvIhaw3lUZsBR8RNGaoe0ZxlU,1383
+nics-0.6.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+nics-0.6.0.dist-info/entry_points.txt,sha256=NBZvds44bFbATCL6mrdaqYOYO5GMPvaDqp5DJuAhKco,44
+nics-0.6.0.dist-info/top_level.txt,sha256=mDZIgJHkawW7mZbws30qezrIjXITNO7_YW8CvTMD2hg,5
+nics-0.6.0.dist-info/RECORD,,
