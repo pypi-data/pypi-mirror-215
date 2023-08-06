@@ -1,0 +1,2 @@
+[console_scripts]
+gerritcli = gerritcli.__main__:main
