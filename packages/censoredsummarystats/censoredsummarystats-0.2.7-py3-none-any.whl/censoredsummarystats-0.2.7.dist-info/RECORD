@@ -1,0 +1,12 @@
+censoredsummarystats/__init__.py,sha256=OS3ZgQB6zyK3JIrss6uXdSE_cZYKcLVRRexu89bGU3E,58
+censoredsummarystats/interval_to_result.py,sha256=ve7NCXZonoBVuaKCdaSDlXiMFNesKmSvZVXRbVJOrcY,7707
+censoredsummarystats/merge_count_info.py,sha256=GNzaIwiClbyBAwwyozd0wxsLSF3VOklzfrHxeLcIE5w,3347
+censoredsummarystats/percent_exceedance.py,sha256=x8WUeHmH4TnvkiqQoAZU8aYtPv95zcQ8jDYNiDR8jP4,5009
+censoredsummarystats/precision.py,sha256=dMs4RqH1OJBBPlNjCwmZqsdX6iiXhYsqHwAA8my-AIc,2466
+censoredsummarystats/stat_interval_aggregation.py,sha256=_V2nwXXd_9YEajI8J84-nT6CXMLMFOCVkIAHfX8JJW4,15228
+censoredsummarystats/statistics.py,sha256=2_aQknBzUR_FztqbZpmU_s-K44Jfvyt16ZSRXQdnLP4,14298
+censoredsummarystats/validation.py,sha256=BSiy_uZVv7ceDYp6zP8KZOGaXLVWfGXG9xKLE8Gu47I,6055
+censoredsummarystats-0.2.7.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+censoredsummarystats-0.2.7.dist-info/METADATA,sha256=4mYYdmX8eagSX66iznALtHWM_yA0aX1DaMugypAaMq0,9230
+censoredsummarystats-0.2.7.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+censoredsummarystats-0.2.7.dist-info/RECORD,,
