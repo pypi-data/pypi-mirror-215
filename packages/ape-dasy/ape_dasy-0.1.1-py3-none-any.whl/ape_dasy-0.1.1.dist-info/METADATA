@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ape-dasy
+Version: 0.1.1
+Summary: 
+Author: z80
+Author-email: z80@ophy.xyz
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: dasy (>=0.1.24,<0.2.0)
+Requires-Dist: eth-ape (>=0.6.3,<0.7.0)
