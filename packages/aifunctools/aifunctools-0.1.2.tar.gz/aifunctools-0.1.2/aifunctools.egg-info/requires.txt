@@ -1,0 +1,6 @@
+openai
+docstring-parser
+pydantic
+
+[test]
+pytest
