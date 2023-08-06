@@ -1,0 +1,12 @@
+varinfo/__init__.py,sha256=vWiMilIX5JM_ERAgJNir0ly5mO3vk333E3uxgKnMcy0,252
+varinfo/cf_config.py,sha256=1Hpds1_FSfDY3TF9SprWsycjn7-Zuu7jyR39mI9NFF4,9475
+varinfo/exceptions.py,sha256=CL9upyjFB5veJtN4NhGPG1SJF_EsUgncB5Dqn5j3pn4,2122
+varinfo/umm_var.py,sha256=V8xvZa9D02zTCId0IU7vjXTZCj3gIz5jsWiH1-00040,12605
+varinfo/utilities.py,sha256=OibzUxhb5dvj6m7kbBS1x37mcMyb4YCy65mOdR1dSWU,4362
+varinfo/var_info.py,sha256=TX_LBXo-wBh2OcWmg4qr1XwJLtOStdu_cAzm749gu44,25737
+varinfo/variable.py,sha256=aALKv44JwuTLVXFs22oPJLyq9ohGPxdOyFws-IXTH4Q,19766
+earthdata_varinfo-1.0.0.dist-info/LICENSE,sha256=9BIXPEumOc_qbH1x_hLV5zpHj4rXhfWkfIC_sXrVbpQ,9768
+earthdata_varinfo-1.0.0.dist-info/METADATA,sha256=TBQ4024MjLQBjhze0mLGjEutmeWcEcXlmTnteW3b-ig,7216
+earthdata_varinfo-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+earthdata_varinfo-1.0.0.dist-info/top_level.txt,sha256=HVCPv5ozAmXHNnmcFe8D97wtFmaWq9Kn6FvZDaG5OlE,8
+earthdata_varinfo-1.0.0.dist-info/RECORD,,
