@@ -1,0 +1,11 @@
+src/cdnjs_cli/__about__.py,sha256=7doScDQgGvpxzW3KnSQbA5_vmSEvejNIwDC6oSFibp4,160
+src/cdnjs_cli/__main__.py,sha256=agWVu51Xu7kl-O4wBXAmmDqnhdHfM0XaOr80dZHNtpk,190
+src/cdnjs_cli/cli.py,sha256=edYIOCatNdhEuH9zwVdUXe2_x9LvbscE30OrX8jepxo,670
+src/cdnjs_cli/injector.py,sha256=Ix8MH8BqHIPVaRnV8QSv8GEW87_mkFKdchmOAILwBac,1268
+src/cdnjs_cli/logger.py,sha256=ZOCn2Y_9ZU64URrDLHyFQakik3HFzhI_-NEHvnIy4n0,408
+src/cdnjs_cli/util.py,sha256=NyJcCazPLqTyjkG_sON-thupwxB-Q4KvyT-FqEvZd0s,486
+cdnjs_cli-0.0.1.dist-info/METADATA,sha256=1h1eJ65QzuH0HFDYfVHQVMZQQCst022NJy_8RgsQD1A,1770
+cdnjs_cli-0.0.1.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+cdnjs_cli-0.0.1.dist-info/entry_points.txt,sha256=gTaXxVkujVPpRFS_KR1AdF22-JjUv0q0fcd7BJ-c3Ew,50
+cdnjs_cli-0.0.1.dist-info/licenses/LICENSE.txt,sha256=-vkbZ7KkbHzedEkdYELt7WlrqMrTjv0J008t7deMfTA,1127
+cdnjs_cli-0.0.1.dist-info/RECORD,,

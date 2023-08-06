@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: cdnjs-cli
+Version: 0.0.1
+Summary: CDNjs unofficial CLI tool.
+Project-URL: Documentation, https://github.com/woidzero/cdnjs-cli#readme
+Project-URL: Issues, https://github.com/woidzero/cdnjs-cli/issues
+Project-URL: Source, https://github.com/woidzero/cdnjs-cli
+Author-email: woidzero <woidzeroo@gmail.com>
+License-Expression: WTFPL
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: cachecontrol
+Requires-Dist: click
+Requires-Dist: mcfc
+Description-Content-Type: text/markdown
+
+# cdnjs-cli
+
+Unofficial [cdnjs](https://cdnjs.com/) CLI tool.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/cdnjs-cli.svg)](https://pypi.org/project/cdnjs-cli)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/cdnjs-cli)](https://pypi.org/project/cdnjs-cli)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cdnjs-cli.svg)](https://pypi.org/project/cdnjs-cli)
+
+## Installation
+
+```bash
+ pip install cdnjs-cli
+```
+
+## Usage
+
+```bash
+ cdnjs ./test.html jquery
+```
+
+## Support
+
+For support, email <a href="mailto://woidzeroo@gmail.com">woidzeroo@gmail.com</a>
+
+## License
+
+`cdnjs-cli` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
