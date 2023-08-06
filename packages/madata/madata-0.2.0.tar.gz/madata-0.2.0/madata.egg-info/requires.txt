@@ -1,0 +1,6 @@
+sickle
+pandas
+requests
+wikidataintegrator
+tqdm
+appengine-python-standard
