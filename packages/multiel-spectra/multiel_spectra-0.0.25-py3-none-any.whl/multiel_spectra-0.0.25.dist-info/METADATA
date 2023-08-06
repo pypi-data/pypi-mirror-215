@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: multiel-spectra
+Version: 0.0.25
+Summary: Multi-Element Fluorescence Xray Spectra Generator
+Home-page: https://github.com/Fernandogarciagoatcoder/multiel_spectra
+Author: Fernando Garcia-Avello 
+Author-email: fgarciaa@fi.infn.it
+Project-URL: Documentation, https://github.com/Fernandogarciagoatcoder/multiel_spectra
+Project-URL: Bug Reports, https://github.com/Fernandogarciagoatcoder/multiel_spectra
+Project-URL: Source Code, https://github.com/Fernandogarciagoatcoder/multiel_spectra
+Keywords: xray,fluorescence,pypi,package
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xraylarch (>=0.9.68)
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: bokeh
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# Multiel_spectra
+
+Multiel_spectra ("Multi element spectra generator") is a pyhton package for creating  fluorescence X-ray spectra that simulates photon transmission through several material layers created by a source spectra and with detector effects.
+
+
+## Suggestions for a good README
+
+
+## Name
+ Highly scalable Multielement Fluorescence Xray Spectra measure simulation.  
+
+## Description
+
+Spectra_gen is a package that approximately simulates all steps in an Xray-Fluorescence measure. That is, it simulates the whole photon path from the x-ray source to the detector, and the transmission throuh several diverse element layers. The main goal of the package was to generate a more accurate approximation of the X-ray computer simulated spectra in order to be more similar to actual Xray detected spectra. ( As a consequence this spectra could efficiently be used in order to train an artificial neural netwok for several tasks such as automatic element detection or denoising.) 
+
+SIMULATED PATH ELEMENTS: 
+
+- Incident Spectra (Source spectra): Incident spectra is simulated through spekpy package. The oputput is a tuple of arrays, one having the energy values (X), and the other the fluence of the spectrum (Y). For the whole details visit spekpy documentation. 
+
+- Fluorescence Spectra Transmission: Elements are supposed to be in layers. Elemental composition of the probe must be given before, and it is formed by the position of each element and the relative abundance to the whole probe. Once the composition is set the fluorescence spectra produced by the source spectra is correctly transmitted through the different layers. (Air is used as the last layer of the material, but can be removed). (Air is the only material with thickness, the rest are used with fixed z = 1mm). 
+
+- Detector effects. Several detector effects are simulated. Mainly: 
+     - Escape peaks 
+     - Sum peaks
+     - detector efficiency 
+
+* Approximations and Future improvements 
+
+The transmission of the source spectra has not been properly simulated. That is, the same source spectra arrives to all elements in the different layers. As well, once the different fluorescence spectra are being transmitted through different layers, only transmission is simualted but not the creation of new spectra with this fluorescence spectra as a source. 
+
+Another important approximation is that transmission (photon material absortion) is approximated by perfect composited materials. No impurities or noise is being introduced here but probably it will be a very good idea to do it. 
+
+ 
+Full 3D photon path with geometric and other constraints. 
+
+
+Spectra_gen is based into threee main libraries: 
+- Spekpy. Python package for Xray tube spectrum simulation (That is the incident spectrum producing the Xray fluorescence spectra)
+- Xraylarch : Python package used to get the mass_atenuation coefficients of a mix of a certain compound as a function of energy. 
+- Scikit-beam : Python package used to get the energies and cross sections for all the Xray lines in an element. 
+
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+
+## Installation
+
+### Setting the environment and related packages: 
+
+As the package makes use of skbeam, a install_skbeam.py (and install_spekpy.py) script is included with the package so run: " python install_skbeam.py" in order to isntall it (link to the skbeam documentation for all the different installation procedures, this one is the reccomended one). This files are typically lcoated: /opt/conda/lib/python3.10/site-packages/multiel_spectra when you download it. 
+
+1. set conda environment named 'base' 
+2. run: "python install_skbeam.py" in conda base environment
+3. run: "python install spekpy.py"
+4. install the rest of dependencies (torch, xraylarch, scipy..etc).  
+
+The order is important since usually the packages created outside the conda environment will not be linked into the environment. 
+
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+## Support
+fgarciaa@fi.infn.it
+
+## Roadmap
+
+* 3d simulation 
+
+* proper transmission and excitation simulation 
+
+* Material mix and impurities simulation
+
+* ANN element detection 
+
+* ANN denoising 
+
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
+
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
+
+## License
+For open source projects, say how it is licensed.
+
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
