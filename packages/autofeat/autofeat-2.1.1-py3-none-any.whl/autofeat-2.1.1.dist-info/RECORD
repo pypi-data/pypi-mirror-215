@@ -1,0 +1,11 @@
+autofeat/__init__.py,sha256=67Iy5CXPPvg6hlOV6J30PyrYoOVoRP1pnwRyNT5jGpI,282
+autofeat/autofeat.py,sha256=sF67xMStsYSBf0a5w7IX8k2gqiHbk-DOEb01_mwJJ0E,28722
+autofeat/autofeatlight.py,sha256=KE0vXcUNXD3gYYUtjVrJorYEd7aeQK6RTiQcGM7LRl4,12893
+autofeat/feateng.py,sha256=f1NvyGtqKao7SxErBykp7rLlg_THqpKFYE1vnZnF-zE,19894
+autofeat/featsel.py,sha256=zJbKgrOiOSwh_VJWtSZ3DWtoHawcVsmjtHjJBaitISI,17868
+autofeat/nb_utils.py,sha256=IPb3aIQoTF4AMd2d9VtXvvKkY_HJnvd7tdn1kbDLAgQ,866
+autofeat-2.1.1.dist-info/LICENSE,sha256=pEbyGaq-NmeFBES71fEbfpMYibTV2_O8B0_gDyXxEkw,1057
+autofeat-2.1.1.dist-info/METADATA,sha256=7j6WMa-r83EbBNQVug2MZi_UdTbqMQALCreEZDSh6BA,7152
+autofeat-2.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+autofeat-2.1.1.dist-info/top_level.txt,sha256=gu2hO--cXHgCtgZa-w02lBdAm8RH-CMEnuK4cd-ykeU,9
+autofeat-2.1.1.dist-info/RECORD,,
