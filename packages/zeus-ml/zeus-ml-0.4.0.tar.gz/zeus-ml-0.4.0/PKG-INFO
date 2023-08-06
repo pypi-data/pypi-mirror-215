@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: zeus-ml
+Version: 0.4.0
+Summary: An Energy Optimization Framework for DNN Training
+Home-page: https://github.com/SymbioticLab/Zeus
+Author: Jae-Won Chung
+Author-email: jwnchung@umich.edu
+License: Apache-2.0
+Project-URL: Documentation, https://ml.energy/zeus
+Keywords: deep-learning,power,energy,mlsys
+Platform: UNKNOWN
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: lint
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+# Zeus: An Energy Optimization Framework for DNN Training
+
+
