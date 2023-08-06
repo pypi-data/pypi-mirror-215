@@ -1,0 +1,5 @@
+djangorestframework>=3.14.0
+django-filter
+django>=4.2.2
+dacite>=1.8.1
+djangorestframework-dataclasses>=1.2.0
