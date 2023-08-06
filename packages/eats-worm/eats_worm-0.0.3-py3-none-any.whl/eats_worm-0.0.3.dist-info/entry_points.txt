@@ -1,0 +1,2 @@
+[napari.manifest]
+eats-worm = eats_worm:napari.yaml
