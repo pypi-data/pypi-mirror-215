@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+psalpsdtools/Binomialdistribution.py
+psalpsdtools/Gaussiandistribution.py
+psalpsdtools/Generaldistribution.py
+psalpsdtools/PhilippinesRegions.py
+psalpsdtools/ProvincesOfRegions.py
+psalpsdtools/__init__.py
+psalpsdtools/test.py
+psalpsdtools.egg-info/PKG-INFO
+psalpsdtools.egg-info/SOURCES.txt
+psalpsdtools.egg-info/dependency_links.txt
+psalpsdtools.egg-info/not-zip-safe
+psalpsdtools.egg-info/top_level.txt
