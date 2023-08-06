@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gcloud-secret-configure
+Version: 1.0.0
+Summary: A package to configure environment variables from Google Cloud Secret Manager
+Home-page: https://github.com/masatoEmata/cloud_secret_configure
+Author: Masato Emata
+Keywords: google cloud secret manager environment variables
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
