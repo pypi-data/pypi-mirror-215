@@ -1,0 +1,15 @@
+torch
+pandas
+numpy
+matplotlib
+tqdm
+
+[dev]
+isort
+black
+mypy
+pylint
+pytest
+pytest-cov
+twine
+build
