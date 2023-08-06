@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "turkish-validator"
+version = "0.1.4"
+description = "A package for validating Turkish ID and tax numbers."
+authors = ["Hasan Özdemir <hasanozdemir1@trakya.edu.tr>"]
+readme = "README.md"
+homepage = "https://github.com/hasanozdem1r/turkish_validator"
+repository = "https://github.com/hasanozdem1r/turkish_validator"
+documentation = "https://github.com/hasanozdem1r/turkish_validator#readme"
+keywords = ["turkish", "validator", "ID", "tax number"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+black = "^23.1.0"
+pre-commit = "^3.3.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
