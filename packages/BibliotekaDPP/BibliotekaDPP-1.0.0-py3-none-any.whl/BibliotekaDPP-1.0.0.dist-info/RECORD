@@ -1,0 +1,8 @@
+api_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_client/api_request.py,sha256=A6pwMmmAAecL7dAWUZPaApNXhcI0UEbwPdB-EZa-lg8,276
+data_processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_processing/data_utils.py,sha256=K5LsSQW8qDAI2lrVdhUmEhqu2TiQ1Wecstb39--yYiU,1293
+BibliotekaDPP-1.0.0.dist-info/METADATA,sha256=vaqMsEcoaOC84Dn2-vPcJCdQrFCBOyv52FzPYuTAes0,132
+BibliotekaDPP-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+BibliotekaDPP-1.0.0.dist-info/top_level.txt,sha256=0jQCZG7Nn6FC3Qcs4bNkLrAcQgzhlYhHoiCDnw2j1bg,27
+BibliotekaDPP-1.0.0.dist-info/RECORD,,
