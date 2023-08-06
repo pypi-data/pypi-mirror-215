@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rmccart-random-test
+Version: 0.0.1
+Summary: testing nbdev
+Home-page: https://github.com/RyanMcCarthy/sample_py
+Author: RyanMcCarthy
+Author-email: ryan.t.mccarthy@raytheon.com
+License: Apache Software License 2.0
+Keywords: nbdev jupyter notebook python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+
+This file will be overwritten by `index.ipynb`
