@@ -1,0 +1,14 @@
+mecab_ko_msvc-0.999.dist-info/METADATA,sha256=iH-I29MqaXsvzCVD5SGl09cwVn7sCTtQn9c8U0FQGWg,7183
+mecab_ko_msvc-0.999.dist-info/WHEEL,sha256=vIXzP6jLUy4sdmrQppnovVBqmdfNCkEM0I7EHxeJ-zs,83
+_MeCab.cp38-win_amd64.pyd,sha256=j1mMBAcYq8SxyDWl-SzYqTMB5JhE70uKRFFACtkuubk,677376
+_MeCab.cp38-win_amd64.lib,sha256=GAhe4O_--Hj70RmZWK8lWPocZ-uBrLczb_eyJ78kKpQ,30752
+mecabrc,sha256=rNx7b-LNQYo1dnOwTwCIWwUW2c1EsWf-_hY_rW72xCU,302
+MeCab.py,sha256=YJ6_Ue8bFVixDgZ1jwPRtNtGEoyF9hH7U8VGNyWs0-A,12101
+mecab_ko_msvc-0.999.data/scripts/mecab.exe,sha256=WEv50GE3jYrVVgzL8BuU-lqNKXOcvOmpR2oO_-pXcoc,565248
+mecab_ko_msvc-0.999.data/scripts/mecab-dict-index.exe,sha256=Kii_2GYqfCWQo8HRovr1en10tCkvDBZdLZ-PxG8yuHs,1095168
+mecab_ko_msvc-0.999.data/scripts/mecab-dict-gen.exe,sha256=3qpFrkhDiXv0aVcbXTHSG7lwynrmh1aWFQgfHmmarVg,1034240
+mecab_ko_msvc-0.999.data/scripts/mecab-cost-train.exe,sha256=2Uebo3-ZH8-HmpQTslvFY3uVfsB4fvzP0j4lzTLag2Y,655872
+mecab_ko_msvc-0.999.data/scripts/mecab-system-eval.exe,sha256=IfnUEDCMqZnM4Aq8I7FFE3pClVFTde3z7xC_xm4ESEI,74752
+mecab_ko_msvc-0.999.data/scripts/mecab-test-gen.exe,sha256=ZCxXkjPU75CCGLzElVRCRZbMt3IqA6C24_uj9jFim4c,74752
+mecab_ko_msvc-0.999.data/scripts/add-userdic.ps1,sha256=zw2WYpo9CrbbUsXo09pMbvXPsgeK10sjsRgj_tg2hTk,896
+mecab_ko_msvc-0.999.dist-info/RECORD,,
