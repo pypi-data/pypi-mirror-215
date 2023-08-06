@@ -1,0 +1,14 @@
+q2/__init__.py,sha256=VkZK3U3gNA7gAp0XH3mgZ3lHZL_ykudg7W72P6t6iv0,991
+q2/abundances.py,sha256=nFzhdzKuaCWmj4iMEwvJS9yNl6u4VFAy49anUkc03tY,22312
+q2/config.py,sha256=piNK1P2G9mU8f6a-gxTKlg7icgADcMsMeTocp5igNnc,7331
+q2/errors.py,sha256=YPv-GG92a6omSpwvoWUH5IxciOzFlK-KMz0OByoH_Ic,5833
+q2/isopars.py,sha256=i0bSKTJuWd9eZY7Pfdsdg90Sn30wenD1n8RvNxsRjWs,33910
+q2/modatm.py,sha256=3FLs60ruylt1b-HCJ77PIqAk5MJvH1itDTKyK6spQfk,7479
+q2/moog.py,sha256=IPsgpRzBz5ffr-_w7bZD82xImup4YtZwxx5eZi0EM48,11898
+q2/specpars.py,sha256=GhWinbrnhjmGqaY44E9uAUxUSZAgx_Zu5iu8nadg_3k,24526
+q2/star.py,sha256=ihdpJw4aP3ZGmc4xxlwMOLZqI5N5XKoG3gLIW1BME0U,7492
+q2/tools.py,sha256=AYA-Fd-xh_sRWVI3H46STvMLnWRw_LLcPM4ep1C8Bog,4100
+qoyllur_quipu-1.0.2.dist-info/METADATA,sha256=RIGXuHOo-ucNBjdJX0jcbqxoaCYBoIYmDd5yT8lO158,4640
+qoyllur_quipu-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qoyllur_quipu-1.0.2.dist-info/top_level.txt,sha256=FzP7lHwMk4_kGG56pZUqyR_loJnnSGIRZI4_O7GFiMw,3
+qoyllur_quipu-1.0.2.dist-info/RECORD,,
