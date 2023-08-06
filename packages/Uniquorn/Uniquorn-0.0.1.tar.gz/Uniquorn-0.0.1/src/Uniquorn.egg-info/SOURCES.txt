@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/uniquorn.py
+src/Uniquorn.egg-info/PKG-INFO
+src/Uniquorn.egg-info/SOURCES.txt
+src/Uniquorn.egg-info/dependency_links.txt
+src/Uniquorn.egg-info/top_level.txt
+test/test__uniquorn.py
