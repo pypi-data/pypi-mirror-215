@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dadajokes
+Version: 0.1.0
+Summary: A Python package for getting random dad jokes
+Author: Innocent Kithinji
+Author-email: innocent@ikithinji.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6

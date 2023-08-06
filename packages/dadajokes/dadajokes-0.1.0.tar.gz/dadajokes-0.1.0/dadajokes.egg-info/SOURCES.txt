@@ -1,0 +1,8 @@
+setup.py
+dadajokes.egg-info/PKG-INFO
+dadajokes.egg-info/SOURCES.txt
+dadajokes.egg-info/dependency_links.txt
+dadajokes.egg-info/requires.txt
+dadajokes.egg-info/top_level.txt
+dadjoke/__init__.py
+dadjoke/jokes.py
