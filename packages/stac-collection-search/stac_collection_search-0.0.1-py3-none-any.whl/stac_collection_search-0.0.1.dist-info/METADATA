@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: stac-collection-search
+Version: 0.0.1
+Summary: STAC Collection Search helper utility
+Author: Ivica Matic
+Author-email: <ivica.matic@spatialdays.com>
+Keywords: python,azure,stac,fastapi,eo,earth observation,spatial,search,collection
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2023.5.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: numpy (==1.25.0)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: shapely (==2.0.1)
+Requires-Dist: urllib3 (==2.0.3)
+
+
+# STAC Collection Search
+Quick utility which enables you to search for STAC collections with a given bbox and datetime extent.
+
+## How to use
+
+``` python
+import requests
+import datetime
+import shapely
+from stac_collection_search import search_collections
+
+url ="https://planetarycomputer.microsoft.com/api/stac/v1/collections"
+response = requests.get(url)
+collection_list_json_dict = response.json()
+temporal_extent_start = datetime.datetime(2019, 1, 1)
+temporal_extent_end = datetime.datetime(2021, 1, 1)
+spatial_extent = shapely.geometry.box(50, 0, 51, 1)
+collection_list = search_collections(collection_list_json_dict, spatial_extent=spatial_extent,
+                                     temporal_extent_start=temporal_extent_start,
+                                     temporal_extent_end=temporal_extent_end)
+print(collection_list, len(collection_list)) """ -> ['3dep-seamless', 'sentinel-1-rtc', 'terraclimate', 'nasa-nex-gddp-cmip6',
+ 'gpm-imerg-hhr', 'modis-64A1-061', 'alos-fnf-mosaic', 'landsat-c2-l2', 'era5-pds', 'chloris-biomass', 'planet-nicfi-analytic',
+  'modis-17A2H-061', 'modis-11A2-061', 'modis-17A2HGF-061', 'planet-nicfi-visual', 'modis-17A3HGF-061', 'modis-09A1-061', 
+  'alos-palsar-mosaic', 'deltares-water-availability', 'modis-16A3GF-061', 'modis-21A2-061', 'jrc-gsw', 'modis-43A4-061', 
+  'modis-09Q1-061', 'modis-14A1-061', 'hrea', 'modis-13Q1-061', 'modis-14A2-061', 'sentinel-2-l2a', 'modis-15A2H-061', 
+  'modis-11A1-061', 'modis-15A3H-061', 'modis-13A1-061', 'modis-10A2-061', 'ecmwf-forecast', 'sentinel-1-grd', 
+  'io-lulc', 'esa-cci-lc', 'esa-cci-lc-netcdf', 'noaa-climate-normals-tabular', 'cil-gdpcir-cc-by-sa', 'io-lulc-9-class', 
+  'io-biodiversity', 'noaa-cdr-sea-surface-temperature-whoi', 'noaa-cdr-ocean-heat-content', 'cil-gdpcir-cc0', 
+  'cil-gdpcir-cc-by', 'noaa-cdr-sea-surface-temperature-whoi-netcdf', 'noaa-cdr-sea-surface-temperature-optimum-interpolation', 
+  'modis-10A1-061', 'sentinel-5p-l2-netcdf', 'sentinel-3-olci-wfr-l2-netcdf', 'noaa-cdr-ocean-heat-content-netcdf', 'sentinel-3-synergy-aod-l2-netcdf', 
+  'sentinel-3-synergy-v10-l2-netcdf', 'sentinel-3-olci-lfr-l2-netcdf', 'sentinel-3-sral-lan-l2-netcdf',  'sentinel-3-slstr-lst-l2-netcdf',
+  'sentinel-3-slstr-wst-l2-netcdf', 'sentinel-3-sral-wat-l2-netcdf', 'ms-buildings', 'sentinel-3-slstr-frp-l2-netcdf',  
+  'sentinel-3-synergy-syn-l2-netcdf', 'sentinel-3-synergy-vgp-l2-netcdf', 'sentinel-3-synergy-vg1-l2-netcdf', 'esa-worldcover'] 66 """
+
+```
