@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: SFM4300_readout
+Version: 0.1
+Summary: simple wrapper class to read flow data from the SFM4300-20 flow sensor
+Home-page: https://github.com/oscarisolin/SFM4300_readout
+Author: Oscar Weissenbach
+Author-email: oscar.weissenbach@tu-berlin.de
+License: MIT
+Description: UNKNOWN
+Keywords: i2c,read,SFM4300,flow sensor
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
