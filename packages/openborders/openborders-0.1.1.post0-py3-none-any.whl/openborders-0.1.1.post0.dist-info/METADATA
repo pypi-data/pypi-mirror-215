@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: openborders
+Version: 0.1.1.post0
+Summary: 
+Home-page: https://arnos-stuff.github.io/open-borders-index
+Author: arnos-stuff
+Author-email: mail@arnov.dev
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: draw
+Requires-Dist: ipywidgets (>=8.0.6,<9.0.0) ; extra == "draw"
+Requires-Dist: mkdocs-coverage (>=0.2.7,<0.3.0)
+Requires-Dist: numpy (>=1.25.0,<2.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: plotly (>=5.15.0,<6.0.0) ; extra == "draw"
+Requires-Dist: shiny (>=0.3.3,<0.4.0) ; extra == "draw"
+Requires-Dist: shinyswatch (>=0.2.4,<0.3.0) ; extra == "draw"
+Requires-Dist: shinywidgets (>=0.2.1,<0.3.0) ; extra == "draw"
+Requires-Dist: typer-tinydb (>=0.1.4,<0.2.0)
+Requires-Dist: wbdata (>=0.3.0,<0.4.0)
+Description-Content-Type: text/markdown
+
+# Open Borders Toolbox
+
+## A python toolbox making open-borders metrics easier !
+
+![](https://i.imgur.com/4UCAuYd.png)
+
+## One-liner CLI
+
+If you just want a CSV/JSON/Excel file with the metrics, don't bother, just go
+
+```bash
+opbd preprocess -n -o open-borders-index.csv
+```
+
+* `-n` means normalize actross countries
+* `-o` means output to file, extension is detected (`.csv`|`.xlsx`|`.json`)
+
+
+## Example result
+
+A sample CSV file can be found [here](tests/open-borders-index.csv)
+
+## Credits
+
+This toolbox heavily relies on the work from the folks at [wbdata](https://github.com/OliverSherouse/wbdata) and overall APIs of
+international organisations:
+
+- [World Bank API](https://data.worldbank.org/)
+- [World Bank's GDIM][1] which is the Global Database on Intergenerational Mobility
+
+
+[1]:https://datacatalog.worldbank.org/search/dataset/0050771/Global-Database-on-Intergenerational-Mobility
+

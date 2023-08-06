@@ -1,0 +1,4 @@
+[console_scripts]
+opbd=openborders.cli:app
+openborders=openborders.cli:app
+
