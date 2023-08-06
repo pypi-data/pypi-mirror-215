@@ -1,0 +1,209 @@
+[tool.poetry]
+name = "application_settings"
+version = "0.3.0"
+description = "For providing a python application with configuration and/or settings"
+authors = ["Stockwatchdevs <stockwatchdevs@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/StockwatchDev/application_settings"
+repository = "https://github.com/StockwatchDev/application_settings"
+keywords = ["configuration", "settings", "dataclass", "pydantic", "toml"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+include = [
+    { path = "CHANGELOG.md" },
+    { path = "LICENSE" },
+    { path = "README.md" },
+    { path = "tests", format = "sdist" },
+    { path = "examples", format = "sdist" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pathvalidate = ">=2.5,<4.0"
+pydantic = "^1.10"
+tomli = { version = "^2.0", python = "<3.11" }
+tomli-w = "^1.0"
+typing-extensions = { version = "^4.5.0", python = "<3.11" }
+
+[tool.poetry.group.testing]
+optional = true
+
+[tool.poetry.group.testing.dependencies]
+pytest = "^7.0"
+pytest-cov = "^4.0"
+
+[tool.poetry.group.typing]
+optional = true
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.1"
+lxml = "^4.9"
+
+[tool.poetry.group.style]
+optional = true
+
+[tool.poetry.group.style.dependencies]
+black = ">=22.10,<24.0"
+isort = "^5.12"
+pylint = "^2.15"
+
+[tool.poetry.group.testrunner]
+optional = true
+
+[tool.poetry.group.testrunner.dependencies]
+tox = "^4.4"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+portray = "^1.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+warn_unused_configs = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+no_implicit_reexport = true
+strict_equality = true
+show_error_codes = true
+show_error_context = true
+
+[[tool.mypy.overrides]]
+module = [
+    "dash.*",
+    "dash_bootstrap_components.*",
+    "dash_bootstrap_templates.*",
+    "dash_extensions.*",
+    "plotly.*",
+]
+ignore_missing_imports = true
+
+[tool.pylint.main]
+load-plugins = [
+    "pylint.extensions.bad_builtin",
+    "pylint.extensions.code_style",
+    "pylint.extensions.typing",
+    "pylint.extensions.no_self_use",
+]
+
+[tool.pylint.messages_control]
+# Reasons disabled:
+# format - handled by black
+# wrong-import-order - isort guards this
+# fixme - too handy for now
+disable = ["fixme", "format", "wrong-import-order"]
+enable = ["useless-suppression", "use-symbolic-message-instead"]
+
+[tool.pylint.typecheck]
+mixin-class-rgx = ".*[Mm]ix[Ii]n"
+
+[tool.pylint.typing]
+runtime-typing = false
+
+[tool.pylint.similarities]
+ignore-imports = "yes"
+
+[tool.portray.mkdocs]
+markdown_extensions = [
+    "pymdownx.highlight",
+    "pymdownx.superfences",
+    "pymdownx.tabbed",
+]
+
+[[tool.portray.extra_markdown_extensions]]
+[tool.portray.extra_markdown_extensions."pymdownx.tabbed"]
+alternate_style = true
+
+[tool.portray.mkdocs.theme]
+name = "material"
+palette = { scheme = "slate", primary = "blue" }
+
+[[tool.portray.mkdocs.nav]]
+Home = "README.md"
+
+[[tool.portray.mkdocs.nav]]
+"Quick start" = "docs/Quick_start.md"
+
+[[tool.portray.mkdocs.nav]]
+[[tool.portray.mkdocs.nav.Usage]]
+"1. Installation" = "docs/1-Installation.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"2. Defining parameters" = "docs/2-Defining_parameters.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"3. Files and file location" = "docs/3-Files.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"4. Using parameters" = "docs/4-Using_parameters.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"5. Usage in a library package" = "docs/5-Usage_in_a_library_package.md"
+
+[[tool.portray.mkdocs.nav.Usage]]
+"6. Handling deviations" = "docs/6-Handling_deviations.md"
+
+[[tool.portray.mkdocs.nav]]
+Changelog = "CHANGELOG.md"
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist =
+    py{39,310,311}
+    style
+    py{39,310,311}-typing
+
+[testenv]
+allowlist_externals = poetry
+commands_pre =
+    poetry install --no-root --with testing -v
+commands =
+    poetry run pytest --cov-report xml:coverage.xml --cov-report term-missing --cov=application_settings tests/ --import-mode importlib
+
+[testenv:style]
+skip_install = true
+commands_pre =
+    poetry install --with style -v
+commands =
+    poetry run python -m black --check ./src
+    poetry run isort --check --diff ./src
+    poetry run pylint ./src
+
+[testenv:py{39,310,311}-typing]
+skip_install = true
+commands_pre =
+    poetry install --with typing -v
+commands =
+    poetry run mypy ./src
+"""
