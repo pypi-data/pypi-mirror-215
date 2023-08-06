@@ -1,0 +1,2 @@
+pyserial==3.4
+timeout-decorator==0.4.1
