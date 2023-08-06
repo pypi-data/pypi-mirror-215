@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: segmindapi
+Version: 0.1
+Summary: Package for Using Segmind APIs in Python
+Home-page: https://docs.segmind.com/apis
+Author: Yatharth Gupta
+Author-email: yatharth1.g@gmail.com
+License: MIT
