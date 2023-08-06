@@ -1,0 +1,4 @@
+opencv-python>=4.7.0.72
+pyminitouch>=0.3.3
+scrcpy-client
+requests>=2.31.0
