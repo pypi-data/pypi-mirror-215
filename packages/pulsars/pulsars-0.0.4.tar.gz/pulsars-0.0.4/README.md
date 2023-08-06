@@ -1,0 +1,71 @@
+# <img src="./Assets/full-logo-pulsars.png" alt="Image Title" width="800" height="auto">
+
+## ☕️ About
+**Pulsars** (pronounced "Pulsar") is a **building** and **Command Line Interface (CLI)** system to help researchers, engineers to **practically** use [Machine Learning (ML)](https://en.wikipedia.org/wiki/Machine_learning), [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) algorithms and/or solve [Partial Differential Equations](https://en.wikipedia.org/wiki/Partial_differential_equation) using the [Finite Element Method (FEM)](https://en.wikipedia.org/wiki/Finite_element_method).
+
+
+**Pulsars** is based on **configuration files** and **CLI**. In other words, it takes an **input configuration file** in the [YAML](https://yaml.org/) format with a **domain specific semantics** and generate **automatically** the associated python code.
+In that way, the user only write (or use template) **configurations files** and run the whole system through the **CLI**.
+
+Thus, the user can focus on the problem without to manage the **cumberstone stuff** and **complex python codes**, generally involved for building ML/DL models or numerical simulations.
+
+
+## ⁉️ Why
+Because at first, researchers and engineers are not necessary **Python programmers** or **ML/DL/FEM specialists**. 
+In addition, even for **specialists**, we want to bring a different way of building such complex systems with **productivity** in minds.
+
+## Built on the Python ecosystem
+
+We do not want to **reinvent the wheel**, that's why **Pulsars** is built upon **Python ML/DL/FEM ecosystem**. 
+
+The Pulsars library is composed of two main components which could be used together or independently:
+
+### PulseML: The Machine Learning Side
+- 🔁 Machine Learning Lifecycle ([mlflow](https://mlflow.org/))
+- 🤖 Machine Learning Algorithms ([XGBoost](https://xgboost.readthedocs.io/en/stable/)...)
+- 🕸️ Deep Learning Algorithms ([Keras](https://keras.io/), [Tensorflow](https://www.tensorflow.org/))
+- 🛠️ Hyperparameters Tuning ([Ray Tune](https://docs.ray.io/en/latest/tune/index.html))
+- 📈 Results visualization ([Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/index.html))
+
+### PulseSIM: The Numerical Simulation Side
+- 🕸️ Mesh generation ([Gmsh](https://gmsh.info/),[Meshio](https://github.com/nschloe/meshio) ) 
+- ⚙️ Efficient FEM solver ([FEniCSx](https://fenicsproject.org/))
+- 📈 Results visualization ([Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/index.html))
+
+### The Command Line Interface (CLI)
+Pulsars provide an expressive CLI to manage and run the whole system 
+
+- [Click](https://panel.holoviz.org/index.html)
+
+## 📚 Documentation
+
+To do ...
+
+
+## 💻 Installation
+
+```bash
+pip install pulsars
+```
+
+## For developement
+
+### 🔗 Dependencies
+
+- Install [Conda](https://www.anaconda.com/) package management tool
+
+```bash
+git clone https://github.com/altar31/pulsars
+cd pulsars
+conda env create -f environment.yaml 
+conda activate pulsars
+```
+
+## ⚠️ Under construction
+This project is at the **early developement stage** and is truly **experimental**.
+This mean **most** of the features are **missing** and the documentation is still **lacking**.
+The project **github** repository will be available soon ! Stay tuned !
+After the public release of the github repository, contributions of any kinds (code, documentation, logo, community ...) will be really welcome !😁
+
+
+

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pulsars"
+version = "0.0.4"
+description = "A Practical Machine Learning & Simulation Building System"
+authors = ["altar31 <damien.sicard31@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
