@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: synecdoche
+Version: 0.0.2
+Summary: Synecdoche: Hypernetworks for Haiku in JAX
+Home-page: https://github.com/kmheckel/synecdoche
+Author: Kade Heckel
+Author-email: example@email.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax (>=0.3.0)
+Requires-Dist: jaxlib (>=0.3.0)
+Requires-Dist: dm-haiku
+
+Synecdoche is a micro-library built on top of DeepMind's Haiku library that implements hypernetworks and other methods for compressed weight search and optimization.
