@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lib2
+Version: 0.1.1a0
+Summary: 
+Author: Luca Cras
+Author-email: luca_cras@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nltk (>=3.8.1,<4.0.0)
+Requires-Dist: regex (>=2023.6.3,<2024.0.0)
+Description-Content-Type: text/markdown
+
+
