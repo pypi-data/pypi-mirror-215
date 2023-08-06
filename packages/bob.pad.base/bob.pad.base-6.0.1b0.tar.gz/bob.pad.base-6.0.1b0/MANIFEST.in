@@ -1,0 +1,6 @@
+include README.md COPYING
+recursive-include doc *.py *.rst
+recursive-include tests/data scores-* *.sql3 *.wav
+recursive-include tests/example_filelist *.lst
+recursive-include tests/ *.csv
+recursive-include tests/ *.tar.gz
