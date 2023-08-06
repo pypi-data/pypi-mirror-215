@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: blipnlptest
+Version: 0.1.4
+Summary: Teste dos provedores integrados na plataforma em conjunto com o Assistente de Conteudo.
+Author: Caio Souza
+Author-email: caios@blip.ai
+Requires-Python: >=3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.3.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: ujson (>=4.2.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# BlipNlpTest
+
+Essa é uma classe que permite o teste de mensagens em provedores integrados na plataforma, com o retorno do conteúdo cadastrado no Assistente de Conteudo.
+
+## Instalação
+
+Para instalar o pacote, basta executar o comando abaixo:
+
+<pre><code>pip install blipnlptest</code></pre>
+
+## Uso
+
+Após a instalação do pacote, você terá acesso a classe que permitirá a execução do teste.
+
+Os parâmetros necessários são:
+
+df : dataframe de entrada
+key : chave do bot.
+
+Exemplo do código:
+
+<pre><code>
+
+import blipnlptest as bnt
+
+cc = bnt.contentchecker(df, key)
+</code></pre>
+
+A composição do df definirá qual método deverá ser utilizado.
+
+Caso a análise seja de dados já analisados pelo provedor (envie um dataframe que tenha no mínimo as colunas Text, Intentions, Entities e Score), use:
+
+<pre><code>
+
+import blipnlptest as bnt
+
+cc = bnt.contentchecker(df, key)
+cc.identityanalysis()
+</code></pre>
+
+Se a análise for feita com dados que não foram analisados (envie um dataframe que a coluna de texto tenha o nome Text), use:
+
+<pre><code>
+
+import blipnlptest as bnt
+
+cc = bnt.contentchecker(df, key)
+cc.sentences()
+</code></pre>
+
+OBS: A divisão foi feita para que os dados já rotulados não realizem outra análise no provedor.
+
+Com os parâmetros previamente atribuídos, rodando o código acima você terá como saída a exibição do resultado com:
+
+- A mensagem de entrada;
+- A resposta entregue pelo Assistente de Conteudo;
+- As entidades reconhecidas;
+- A intenção reconhecida;
+- O score.
+
+## Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
