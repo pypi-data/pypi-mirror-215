@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: EASYPLOT-TOOLBOX
+Version: 2023.5
+Summary: Ferramenta para plotagem rápida de gráficos
+Home-page: https://wmpjrufg.github.io/EASYPLOT_TOOLBOX/
+Author-email: wanderlei_junior@ufcat.edu.br
+License: Apache License 2.0
+Keywords: Plot,Data Science,Optimezation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Build Tools
+License-File: license.md
