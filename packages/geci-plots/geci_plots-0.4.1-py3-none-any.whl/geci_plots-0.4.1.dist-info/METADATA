@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: geci_plots
+Version: 0.4.1
+Summary: A custom matplotlib module
+Home-page: https://github.com/IslasGECI/geci_plots
+Author: Ciencia de Datos • GECI
+Author-email: ciencia.datos@islas.org.mx
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+<img src="https://www.islas.org.mx/img/logo.svg" align="right" width="256" />
+
+# geci_plots
+
