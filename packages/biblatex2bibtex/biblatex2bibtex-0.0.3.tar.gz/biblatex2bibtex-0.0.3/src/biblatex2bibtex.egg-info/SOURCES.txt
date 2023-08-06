@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/biblatex2bibtex/__init__.py
+src/biblatex2bibtex/cli.py
+src/biblatex2bibtex.egg-info/PKG-INFO
+src/biblatex2bibtex.egg-info/SOURCES.txt
+src/biblatex2bibtex.egg-info/dependency_links.txt
+src/biblatex2bibtex.egg-info/entry_points.txt
+src/biblatex2bibtex.egg-info/not-zip-safe
+src/biblatex2bibtex.egg-info/requires.txt
+src/biblatex2bibtex.egg-info/top_level.txt
+src/biblatex2bibtex/data/biblatex2bibtex.conf

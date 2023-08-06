@@ -1,0 +1,2 @@
+[console_scripts]
+biblatex2bibtex = biblatex2bibtex.cli:main
