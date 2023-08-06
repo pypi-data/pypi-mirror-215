@@ -1,0 +1,9 @@
+bkbit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bkbit/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bkbit/models/kbmodel.py,sha256=SQi7YsBQTNeRz1m7p8B28D_Diyh4IcjEDPzetJvmf5k,1263600
+bkbit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bkbit-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bkbit-0.0.1.dist-info/METADATA,sha256=9f1eJBzATlyGGhyWMqevVMHcVpx01Ac91I-q0Af5Pzk,585
+bkbit-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bkbit-0.0.1.dist-info/top_level.txt,sha256=2F8fRAKfWec8TTbdO7UgZfTuJv2WbQouMfy9rhF9qik,6
+bkbit-0.0.1.dist-info/RECORD,,
