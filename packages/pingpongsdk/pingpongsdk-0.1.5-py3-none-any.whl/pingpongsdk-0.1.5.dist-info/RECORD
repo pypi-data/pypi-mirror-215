@@ -1,0 +1,16 @@
+pingpongsdk/__init__.py,sha256=uqcNNodJ2JWoimbCtSv-0Qg05Yu8dRa4Rt7oH1lrSO8,528
+pingpongsdk/deployments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pingpongsdk/deployments/deployments.py,sha256=UPA_wWVCUUrFtDyzj_dtRHBukk-HnV5DQiJlSKqGQ6s,1300
+pingpongsdk/deployments/model.py,sha256=HLKEYmJaCL0ejBTB6FoetbAsJSk1XTbQiz80rFuVPBY,606
+pingpongsdk/deployments/test_deployments.py,sha256=k3AZFwI5WLvNo1eOK0hL1J01G_M84PUlkfmOUo_xpUM,743
+pingpongsdk/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pingpongsdk/models/model.py,sha256=z3S2xIpMaUv2B4ygmcblwMXOU8eaTXj9bA60blRkiu8,206
+pingpongsdk/models/models.py,sha256=wlCUtqnFsWu6g7CVfV5X0XTD8O9LAqCQrHF2gCYnYjM,1308
+pingpongsdk/models/test_models.py,sha256=Szd7vIDgGsYAaBUkpZpyYRx0CmpXWwF9r5lZ9jFObiE,503
+pingpongsdk/shared/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pingpongsdk/shared/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pingpongsdk/shared/client/client.py,sha256=UySpLx651gobCV-mb8bjEBBKKYKT5gVRxm52F-JiAo4,1124
+pingpongsdk/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pingpongsdk-0.1.5.dist-info/METADATA,sha256=Q2QwLHnpdRofHcmUgqQ2pwL5osU55QwlyKk8UcDLUYY,930
+pingpongsdk-0.1.5.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+pingpongsdk-0.1.5.dist-info/RECORD,,
