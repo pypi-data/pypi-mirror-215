@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: zhei
+Version: 0.0.2
+Summary: 深度学习实验工具类
+Home-page: https://github.com/deng1fan
+Author: deng1fan
+Author-email: dengyifan@iie.ac.cn
+Requires-Python: >=3.6
+
