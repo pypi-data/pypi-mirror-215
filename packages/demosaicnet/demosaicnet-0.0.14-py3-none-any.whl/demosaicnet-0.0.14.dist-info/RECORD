@@ -1,0 +1,16 @@
+demosaicnet/__init__.py,sha256=_Re0hRE3P8oIJzASax5a1Aj-JcPayeeWPKJwJTz3h8I,201
+demosaicnet/dataset.py,sha256=ELEnau_E0nMwSnDkto2Sl6padEAs2oeehujKzseeXZc,24857
+demosaicnet/modules.py,sha256=cmb9i9L91OnWf6EU3e08R-Zl-adWm0FZ5UoYgskbXL8,4922
+demosaicnet/mosaic.py,sha256=tA9Vl0F6Yhvb-vJT6vUUYwJrOI3MgpCmWCKG4PKMSoE,3052
+demosaicnet/utils.py,sha256=tUaKySvVJQATYeAju_5gDKZkeqWuzYzeOznNQ6Zd1eo,29621
+demosaicnet/version.py,sha256=71Tw8stu19MsLPyF1q_DF5mb_BefzOTPYggLlSLvCms,23
+demosaicnet/data/bayer.pth,sha256=qQ9Fw0uJ_qP69JBgaHg5p9GR0wL1l6MCsx0bvAIf99g,2251181
+demosaicnet/data/test_input.png,sha256=JqyHubjJeLVXHLMXKb3a8EczY4FzcFSWiMZ0LMQMbwk,36594
+demosaicnet/data/xtrans.pth,sha256=N1mhMpb-zrroOjao8MOJDYovfTPl-BSe2bdqcPgoW8c,1644547
+demosaicnet-0.0.14.data/scripts/demosaicnet_demo,sha256=5W7z5XgrSizEWFk1HnR_P_GLnXKipITwkDegpbOHxmg,1974
+demosaicnet-0.0.14.data/scripts/demosaicnet_demo.py,sha256=UgVTmJGx3osThvhylER_aaUy8kuIQkWEL5_Fn5uoYaU,1974
+demosaicnet-0.0.14.dist-info/LICENSE,sha256=o3EIMxl4fsVWrgJTf121iM6DPmqiNTgzhGnEDVoWrvM,1216
+demosaicnet-0.0.14.dist-info/METADATA,sha256=_vJUDyo8Dp2FkCTHNqyoXH7l-JLLP7l91kvx6BbSCkg,1638
+demosaicnet-0.0.14.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+demosaicnet-0.0.14.dist-info/top_level.txt,sha256=Y_f3fVSEdJ1_8ZF2eRFI6_q9rbxLlPlH6Fhhl1DDzLA,12
+demosaicnet-0.0.14.dist-info/RECORD,,
