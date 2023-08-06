@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "theboringlibrary"
+version = "0.4.0"
+description = "It does nothing!"
+authors = ["Stefano Frassetto <frassetto.stefano@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "theboringlibrary", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = {version = "^7.3.2", optional = true}
+mkdocs = {version = "^1.4.3", optional = true}
+pytest-cov = "^4.1.0"
+coverage = {version = "^7.2.7", extras = ["toml"]}
+
+[tool.poetry.extras]
+
+dev  = [
+    "pytest",
+    "mkdocs",
+    "pytest-cov",
+    "coverage",
+]
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=./src --cov-report=html --cov-append"
+
+[tool.coverage.report]
+omit = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
