@@ -1,0 +1,2 @@
+[console_scripts]
+research = researchgpt.cli:main
