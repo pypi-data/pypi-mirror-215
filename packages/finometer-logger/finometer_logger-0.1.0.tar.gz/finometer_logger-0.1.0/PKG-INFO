@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: finometer-logger
+Version: 0.1.0
+Summary: A logger that logs finometer data from a serial input.
+License: GPL-v3-or-above
+Author: Alex
+Author-email: adrysdale@protonmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dash (>=2.10.0,<3.0.0)
+Requires-Dist: dash-daq (>=0.5.0,<0.6.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Requires-Dist: plotly (>=5.14.1,<6.0.0)
+Requires-Dist: serialdatalog (>=0.1.5,<0.2.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# Finometer Logger
+
+## Installation
+
+- Clone this repository with:
+
+``` sh
+git clone git@gitlab.com:abdrysdale/finometer-logger.git
+```
+
+- Change into the `finometer-logger` directory.
+- Install the dependencies either with:
+
+``` sh
+poetry install
+poetry shell
+```
+
+or by manually installing using your preferred method. The installation dependencies are only:
+    - `serialdatalog`
+    - `numpy`
+    - `plotly`
+    - `dash`
+    - `dash_daq`
+    - `toml`
+
+## Usage
+
+The main python script is in `finometer_logger/finometer.py` and to run, simple use:
+
+``` sh
+poetry run python finometer_logger/finometer.py
+```
+
+or 
+
+``` sh
+python finometer_logger/finometer.py
+```
+
+By default, the script continously gathers data from the [serialdatalog](https://gitlab.com/abdrysdale/serial-data-logger) database in a background thread whilst plotting the results every 1s in plotly Dash app.
+
+The webapp can be accessed on https://127.0.0.1:8050 and will display the live results of the data logger.
+
+To start collecting data, click the switch above the graph.
+
+To stop collecting data, click the switch again, the data is automatically saved to a csv file with the name as the timestamp the data collection was started - e.g. `t20230530090056.csv` if data collection was started on `30/05/2023 09:00:56`.
+

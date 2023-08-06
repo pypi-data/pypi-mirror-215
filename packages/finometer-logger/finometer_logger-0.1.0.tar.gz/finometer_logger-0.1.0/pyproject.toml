@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "finometer-logger"
+version = "0.1.0"
+description = "A logger that logs finometer data from a serial input."
+authors = ["Alex <adrysdale@protonmail.com>"]
+license = "GPL-v3-or-above"
+readme = "README.md"
+packages = [{include = "finometer_logger"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+serialdatalog = "^0.1.5"
+numpy = "^1.24.3"
+plotly = "^5.14.1"
+dash = "^2.10.0"
+toml = "^0.10.2"
+dash-daq = "^0.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^5.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
