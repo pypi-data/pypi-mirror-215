@@ -1,0 +1,9 @@
+Licence
+MANIFEST.in
+setup.py
+newcaclculator.egg-info/PKG-INFO
+newcaclculator.egg-info/SOURCES.txt
+newcaclculator.egg-info/dependency_links.txt
+newcaclculator.egg-info/requires.txt
+newcaclculator.egg-info/top_level.txt
+newcalculator/__init__.py
