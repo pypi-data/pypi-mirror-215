@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "travel-pricing-scraper"
+version = "0.1.2"
+description = "In this project, Playwright is used to navigate through different airline websites, fill in search forms, click buttons, and extract price information. "
+authors = ["Kalel L. Martinho <kalel@tutamail.com>"]
+license = "BeerWare"
+readme = "README.md"
+packages = [{include = "travel_pricing_scraper"}]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Education",
+    "Environment :: Console",
+    "Development Status :: 5 - Production/Stable"
+]
+
+[tool.poetry.urls]
+"Docs" = "https://travel-pricing-scraper.readthedocs.io/en/latest/"
+"Code" = "https://github.com/kalelmartinho/travel-pricing-scraper"
+"Bug Tracker" = "https://github.com/kalelmartinho/travel-pricing-scraper/issues"
+
+[tool.poetry.scripts]
+travels = "travel_pricing_scraper.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+playwright = "^1.35.0"
+typer = "^0.9.0"
+pydantic = "^1.10.9"
+rich = "^13.4.2"
+airportsdata = "^20230617"
+python-dateutil = "^2.8.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+pytest-cov = "^4.1.0"
+pytest-playwright = "^0.3.3"
+blue = "^0.9.1"
+isort = "^5.12.0"
+taskipy = "^1.11.0"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.16"
+mkdocstrings = "^0.22.0"
+mkdocstrings-python = "^1.1.2"
+mkdocs-macros-plugin = "^1.0.1"
+jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint = "blue --check --diff . && isort --check --diff ."
+docs = "mkdocs serve"
+pre_test = "task lint"
+test = "pytest -s -x --cov=travel_pricing_scraper -vv"
+post_test = "coverage html"
