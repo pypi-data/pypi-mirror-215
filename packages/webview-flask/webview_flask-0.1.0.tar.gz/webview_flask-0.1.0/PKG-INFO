@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: webview-flask
+Version: 0.1.0
+Summary: flask app with webview
+Author: Sander van Dragt
+Author-email: sander@vandragt.com
+Requires-Python: >=3.11,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Flask (>=2.3.2,<3.0.0)
+Requires-Dist: pygobject (>=3.44.1,<4.0.0)
+Requires-Dist: pywebview (>=4.1,<5.0)
+Description-Content-Type: text/markdown
+
+Setup:
+
+```shell
+poetry install
+poetry run python app.py
+```
+
+Bundle:
+
+```
+pyinstaller --onefile app.py && dist/app serve
+```
+
+# Conclusion
+
+Apps are 117mb zipped! slow to load.
+
+Known issues:
+
+- click doesn't work, ie doesn't handle commandline arguments.
+- onefile means the app is extracted before loading. This affects the boot performance.
+

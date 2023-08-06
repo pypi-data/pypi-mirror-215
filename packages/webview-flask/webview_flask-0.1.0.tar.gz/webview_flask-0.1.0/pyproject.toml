@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "webview_flask"
+version = "0.1.0"
+description = "flask app with webview"
+authors = ["Sander van Dragt <sander@vandragt.com>"]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12" #pyinstaller
+Flask = "^2.3.2"
+pywebview = "^4.1"
+pygobject = "^3.44.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+vext = "^0.7.6"
+vext-gi = "^0.7.4"
+pex = "^2.1.137"
+
+[tool.poetry.scripts]
+webview_flask = "webview_flask.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
