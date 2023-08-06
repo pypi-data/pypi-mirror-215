@@ -1,0 +1,12 @@
+setup.py
+Dakada.egg-info/PKG-INFO
+Dakada.egg-info/SOURCES.txt
+Dakada.egg-info/dependency_links.txt
+Dakada.egg-info/requires.txt
+Dakada.egg-info/top_level.txt
+dakada/Dakada.py
+dakada/User.py
+dakada/__init__.py
+dakada/admin.py
+dakada/cookie.py
+dakada/render.py
