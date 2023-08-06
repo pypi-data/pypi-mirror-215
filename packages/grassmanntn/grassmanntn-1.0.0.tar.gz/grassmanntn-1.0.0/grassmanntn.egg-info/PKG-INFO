@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: grassmanntn
+Version: 1.0.0
+Summary: a Python library for Grassmann tensor network computation
+Home-page: https://github.com/ayosprakob/grassmanntn
+Download-URL: https://github.com/ayosprakob/grassmanntn/archive/refs/tags/v_100.tar.gz
+Author: Atis Yosprakob
+Author-email: yosprakob2@gmail.com
+License: Apache
+Keywords: physics,lattice,gauge theory,tensor network,grassmann
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
