@@ -1,0 +1,2 @@
+[console_scripts]
+useless = the_useless_cli.__main__:app
