@@ -1,0 +1,2 @@
+[console_scripts]
+pybinpack = iosslsniffer.__main__:cli
