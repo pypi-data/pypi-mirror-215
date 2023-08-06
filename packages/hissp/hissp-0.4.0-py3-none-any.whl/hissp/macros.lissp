@@ -1,0 +1,3023 @@
+;;; Copyright 2019, 2020, 2021, 2022, 2023 Matthew Egan Odendahl
+;;; SPDX-License-Identifier: Apache-2.0
+
+"Hissp's bundled macros.
+
+To help keep macro definitions and expansions manageable in complexity,
+these macros lack some of the extra features their equivalents have in
+Python or in other Lisps. These are not intended to be a standard
+library for general use, but do bring Hissp up to a basic standard of
+utility without adding dependencies, which may suffice in some cases.
+
+Because of certain deliberate restrictions in design, there are no
+dependencies in their expansions either, meaning compiled Hissp code
+utilizing the bundled macros need not have Hissp installed to work, only
+the Python standard library. All helper code must therefore be inlined,
+resulting in larger expansions than might otherwise be necessary.
+
+They also have no prerequisite initialization, beyond what is available
+in a standard Python module. For example, a ``_macro_`` namespace need
+not be available for ``defmacro``. It's smart enough to check for the
+presence of ``_macro_`` (at compile time) in its expansion context, and
+inline the initialization code when required.
+
+As a convenience, the bundled macros are automatically made available
+unqualified in the Lissp REPL, but this does not apply to modules. A
+Hissp module with better alternatives need not use the bundled macros at
+all.
+
+They also eschew any expansions of subexpressions to non-atomic Python
+code strings, relying only on the built-in special forms ``quote`` and
+``lambda``, which makes their expansions compatible with advanced
+rewriting macros that process the Hissp expansions of other macros. (`[#
+<QzLSQB_QzHASH_>` is something of an exception, as one subexpression is
+written in Python to begin with.) Note that this need not apply to
+inlined helper functions that contain no user code. `if-else
+<ifQz_else>` is one such example, expanding to a lambda containing a
+Python `conditional expression<if_expr>`, immediately called with the
+subexpressions as arguments.
+"
+
+;;; This module is not necessarily a good example of how you should
+;;; write Lissp or Lissp macros. Besides the design restrictions
+;;; mentioned in the module docstring above, the macros defined here
+;;; were not available at the start, so some had to be bootstrapped
+;;; without the benefit of a complete macro suite.
+
+;;; These macros don't create compiled dependencies on Hissp, but that
+;;; doesn't mean you can't depend on your own code. Hissp's qualified
+;;; symbols, and Lissp's template syntax that automatically creates
+;;; them, are there to make helper functions easy to use in
+;;; macroexpansions. Use them.
+
+;;; However, the restriction on text-substitution is still recommended.
+;;; Many useful advanced macros must process the expansion of other
+;;; macros, but they require syntax trees to work on. Text hides that
+;;; structure. If you want to go that route, you might as well use `ast`
+;;; and ``exec()` and forget about Hissp. Nevertheless, text
+;;; substitution is available, and judicious use can improve performance
+;;; and maintainability.
+
+
+_#"
+Hidden doctest adds bundled macros for REPL-consistent behavior.
+#> (.update (globals) : _macro_ (types..SimpleNamespace : :** (vars hissp.._macro_)))
+>>> globals().update(
+...   _macro_=__import__('types').SimpleNamespace(
+...             **vars(
+...                 __import__('hissp')._macro_)))
+
+"
+
+;;;; - Bootstrap Macros -
+;;;  ---
+
+;; Bootstrap macro namespace using builtins.
+(.update (globals) : _macro_ (types..ModuleType (.format "{}._macro_" __name__)))
+(operator..setitem sys..modules _macro_.__name__ _macro_)
+
+;;; YO DAWG, I HERD YOU LIKE MACROS
+;;; SO I PUT A BOOTSTRAP defmacro IN YOUR _macro_ SO YOU CAN defmacro A
+;;; REAL defmacro WHILE YOU DEFINE ALL YOUR MACROS!
+
+;; Simplified bootstrap version assumes ideal conditions to avoid branching.
+(setattr _macro_
+         'defmacro
+         (lambda (name parameters docstring : :* body)
+           `((lambda (: $#G (lambda ,parameters ,@body))
+               (setattr $#G ','__doc__ ,docstring)
+               (setattr $#G ','__qualname__ (.join "." '(,'_macro_ ,name)))
+               (setattr _macro_ ',name $#G)))))
+
+(defmacro if-else (test consequent alternate)
+  "``if-else`` Basic ternary branching construct.
+
+  Like Python's conditional expressions, the 'else' clause is required.
+
+  .. code-block:: REPL
+
+     #> (any-map c 'ab
+     #..  (if-else (op#eq c 'b)            ;ternary conditional
+     #..    (print 'Yes)
+     #..    (print 'No)))
+     >>> # anyQz_map
+     ... __import__('builtins').any(
+     ...   __import__('builtins').map(
+     ...     (lambda c:
+     ...       # ifQz_else
+     ...       (lambda b,c,a:c()if b else a())(
+     ...         __import__('operator').eq(
+     ...           c,
+     ...           'b'),
+     ...         (lambda :
+     ...           print(
+     ...             'Yes')),
+     ...         (lambda :
+     ...           print(
+     ...             'No')))),
+     ...     'ab'))
+     No
+     Yes
+     False
+
+  See also: `when`, `cond`, `any-map <anyQz_map>`, `if_expr`.
+  "
+  `((lambda ,'bca .#"c()if b else a()") ; boolean, consequent, alternate
+    ,test
+    (lambda : ,consequent)
+    (lambda : ,alternate)))
+
+(defmacro progn (: :* body)
+  "Evaluates each body expression in sequence (for side effects),
+  resulting in the value of the last (or ``()`` if empty).
+
+  .. code-block:: REPL
+
+     #> (print (progn (print 1)             ;Sequence for side effects, eval to last.
+     #..              (print 2)
+     #..              3))
+     >>> print(
+     ...   # progn
+     ...   (lambda :(
+     ...     print(
+     ...       (1)),
+     ...     print(
+     ...       (2)),
+     ...     (3))[-1])())
+     1
+     2
+     3
+
+  See also: `prog1`, `Expression statements <exprstmts>`.
+  "
+  ;; TODO: consider flattening nested progns
+  `((lambda :
+      ,@body)))
+
+(defmacro when (condition : :* body)
+  "When the condition is true,
+  evaluates each expression in sequence for side effects,
+  resulting in the value of the last.
+  Otherwise, skips them and returns ``()``.
+
+  .. code-block:: REPL
+
+     #> (any-map c 'abcd
+     #..  (print c)
+     #..  (when (op#eq c 'b)
+     #..    (print 'found)
+     #..    :break))
+     >>> # anyQz_map
+     ... __import__('builtins').any(
+     ...   __import__('builtins').map(
+     ...     (lambda c:(
+     ...       print(
+     ...         c),
+     ...       # when
+     ...       (lambda b,c:c()if b else())(
+     ...         __import__('operator').eq(
+     ...           c,
+     ...           'b'),
+     ...         (lambda :(
+     ...           print(
+     ...             'found'),
+     ...           ':break')[-1])))[-1]),
+     ...     'abcd'))
+     a
+     b
+     found
+     True
+
+  See also: `if-else<ifQz_else>`, `unless`, `if`.
+  "
+  `((lambda ,'bc .#"c()if b else()") ; boolean, consequent
+    ,condition (lambda : ,@body)))
+
+(defmacro unless (condition : :* body)
+  "Unless the condition is true,
+  evaluates each expression in sequence for side effects,
+  resulting in the value of the last.
+  Otherwise, skips them and returns ``()``.
+
+  .. code-block:: REPL
+
+     #> (any-map c 'abcd
+     #..  (unless (op#eq c 'b)
+     #..    (print c)))
+     >>> # anyQz_map
+     ... __import__('builtins').any(
+     ...   __import__('builtins').map(
+     ...     (lambda c:
+     ...       # unless
+     ...       (lambda b,a:()if b else a())(
+     ...         __import__('operator').eq(
+     ...           c,
+     ...           'b'),
+     ...         (lambda :
+     ...           print(
+     ...             c)))),
+     ...     'abcd'))
+     a
+     c
+     d
+     False
+
+  See also: `when`.
+  "
+  `((lambda ,'ba .#"()if b else a()") ; boolean, alternate
+    ,condition (lambda : ,@body)))
+
+(defmacro let (pairs : :* body)
+  "Creates local variables. Pairs are implied by position.
+
+  Locals are not in scope until the body.
+
+  .. code-block:: REPL
+
+     #> (let (x 'a                          ;Create locals.
+     #..      y 'b )                        ;Any number of pairs.
+     #..  (print x y)
+     #..  (let (x 'x
+     #..        y (op#concat x x))          ;Not in scope until body.
+     #..    (print x y))                    ;Outer variables shadowed.
+     #..  (print x y))                      ;Inner went out of scope.
+     >>> # let
+     ... (lambda x='a',y='b':(
+     ...   print(
+     ...     x,
+     ...     y),
+     ...   # let
+     ...   (lambda x='x',y=__import__('operator').concat(
+     ...     x,
+     ...     x):
+     ...     print(
+     ...       x,
+     ...       y))(),
+     ...   print(
+     ...     x,
+     ...     y))[-1])()
+     a b
+     x aa
+     a b
+
+  See also: `let-from<letQz_from>`, `my#<myQzHASH_>`, `locals`.
+  "
+  `((lambda (: ,@pairs)
+      ,@body)))
+
+;;;; - Post-Bootstrap -
+;;;  ---
+
+;;;; Definition
+
+;; Define the real defmacro using the bootstrap macros.
+(defmacro defmacro (name parameters : docstring () :* body)
+  "Creates a new macro for the current module.
+
+  If there's no local ``_macro_`` namespace (at compile time), creates
+  one using `types.ModuleType` (at runtime). If there's a docstring,
+  stores it as the new lambda's ``__doc__``. Adds the ``_macro_`` prefix
+  to the lambda's ``__qualname__``. Saves the lambda in ``_macro_``
+  using the given attribute name.
+
+  .. code-block:: REPL
+
+     #> (defmacro p123 (sep)
+     #..  <<#;Prints 1 2 3 with the given separator
+     #..  `(print 1 2 3 : sep ,sep))
+     >>> # defmacro
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzAW22OE5Kz_fn=(lambda sep:(
+     ...   'Prints 1 2 3 with the given separator',
+     ...   (lambda * _: _)(
+     ...     'builtins..print',
+     ...     (1),
+     ...     (2),
+     ...     (3),
+     ...     ':',
+     ...     '__main__..sep',
+     ...     sep))[-1]):(
+     ...   __import__('builtins').setattr(
+     ...     _QzAW22OE5Kz_fn,
+     ...     '__doc__',
+     ...     'Prints 1 2 3 with the given separator'),
+     ...   __import__('builtins').setattr(
+     ...     _QzAW22OE5Kz_fn,
+     ...     '__qualname__',
+     ...     ('.').join(
+     ...       ('_macro_',
+     ...        'p123',))),
+     ...   __import__('builtins').setattr(
+     ...     __import__('operator').getitem(
+     ...       __import__('builtins').globals(),
+     ...       '_macro_'),
+     ...     'p123',
+     ...     _QzAW22OE5Kz_fn))[-1])()
+
+     #> (p123 ::)
+     >>> # p123
+     ... __import__('builtins').print(
+     ...   (1),
+     ...   (2),
+     ...   (3),
+     ...   sep='::')
+     1::2::3
+
+  See also:
+  `<\<# <QzLT_QzLT_QzHASH_>`, `attach`,
+  `lambda <hissp.compiler.Compiler.function>`.
+  "
+  (let ($fn `$#fn)
+    (let (fn `(lambda ,parameters ,docstring ,@body)
+          ns (unless (operator..contains (.get hissp.compiler..NS) '_macro_)
+               `((.update (globals) : _macro_ (types..ModuleType ','_macro_))))
+          dc (when (hissp.reader..is_hissp_string docstring)
+               `((setattr ,$fn ','__doc__ ,docstring)))
+          qn `(setattr ,$fn ','__qualname__ (.join "." '(,'_macro_ ,name))))
+      `(let (,$fn ,fn)
+         ,@ns
+         ,@dc
+         ,qn
+         (setattr (operator..getitem (builtins..globals)
+                                     ','_macro_)
+                  ',name
+                  ,$fn)))))
+
+(defmacro <<\# (comment)
+  `',(.contents comment))
+(setattr
+ _macro_.<<\# '__doc__
+ <<#
+ ;; ``<<#`` 'comment string' reader macro.
+ ;;
+ ;; Converts a block of line comments to a raw string.
+ ;;
+ ;; .. code-block:: REPL
+ ;;
+ ;;    #> <<#
+ ;;    #..;; You won't have to
+ ;;    #..;; escape the "quotes".
+ ;;    #..
+ ;;    >>> 'You won\'t have to\nescape the "quotes".'
+ ;;    'You won\'t have to\nescape the "quotes".'
+ ;;
+ ;; See also: `triple-quoted string`.
+ ;;
+ _#/)
+
+(defmacro define (name value)
+  "Assigns a global the value in the current module.
+
+  .. code-block:: REPL
+
+     #> (define SPAM 'tomato)
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   SPAM='tomato')
+
+     #> SPAM
+     >>> SPAM
+     'tomato'
+
+  See also:
+  `globals`, `dict.update`, `defonce`, `def`, `assignment`, `global`.
+  "
+  `(.update (globals)
+            : ,name
+            ,value))
+
+(defmacro defonce (name value)
+  "Assigns a global the value in the current module, unless it exists.
+
+  Like `define`, but won't overwrite an existing global.
+  Useful when sending the whole file to the REPL repeatedly or when
+  using `importlib.reload` and you want to cache an expensive object
+  instead of re-initializing it every time.
+
+  .. code-block:: REPL
+
+     #> (defonce CACHE (types..SimpleNamespace : x 1))
+     >>> # defonce
+     ... # hissp.macros.._macro_.unless
+     ... (lambda b,a:()if b else a())(
+     ...   __import__('operator').contains(
+     ...     __import__('builtins').globals(),
+     ...     'CACHE'),
+     ...   (lambda :
+     ...     # hissp.macros.._macro_.define
+     ...     __import__('builtins').globals().update(
+     ...       CACHE=__import__('types').SimpleNamespace(
+     ...               x=(1)))))
+
+     #> (setattr CACHE 'x 42)
+     >>> setattr(
+     ...   CACHE,
+     ...   'x',
+     ...   (42))
+
+     #> (defonce CACHE (progn (print 'not 'evaluated)
+     #..                      (types..SimpleNamespace : x 1)))
+     >>> # defonce
+     ... # hissp.macros.._macro_.unless
+     ... (lambda b,a:()if b else a())(
+     ...   __import__('operator').contains(
+     ...     __import__('builtins').globals(),
+     ...     'CACHE'),
+     ...   (lambda :
+     ...     # hissp.macros.._macro_.define
+     ...     __import__('builtins').globals().update(
+     ...       CACHE=# progn
+     ...             (lambda :(
+     ...               print(
+     ...                 'not',
+     ...                 'evaluated'),
+     ...               __import__('types').SimpleNamespace(
+     ...                 x=(1)))[-1])())))
+     ()
+
+     #> CACHE ; The second defonce had no effect.
+     >>> CACHE
+     namespace(x=42)
+
+  "
+  `(unless (operator..contains (globals) ',name)
+     (define ,name ,value)))
+
+(defmacro deftype (name bases : :* body)
+  <<#
+  ;; Defines a type (class) in the current module.
+  ;;
+  ;; Key-value pairs are implied by position in the body.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (deftype Point2D (tuple)
+  ;;    #..  __doc__ "Simple ordered pair."
+  ;;    #..  __new__ (lambda (cls x y)
+  ;;    #..            (.__new__ tuple cls `(,x ,y)))
+  ;;    #..  __repr__ (lambda (self)
+  ;;    #..             (.format "Point2D({!r}, {!r})" : :* self)))
+  ;;    >>> # deftype
+  ;;    ... # hissp.macros.._macro_.define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   Point2D=__import__('builtins').type(
+  ;;    ...             'Point2D',
+  ;;    ...             (lambda * _: _)(
+  ;;    ...               tuple),
+  ;;    ...             __import__('builtins').dict(
+  ;;    ...               __doc__=('Simple ordered pair.'),
+  ;;    ...               __new__=(lambda cls,x,y:
+  ;;    ...                         tuple.__new__(
+  ;;    ...                           cls,
+  ;;    ...                           (lambda * _: _)(
+  ;;    ...                             x,
+  ;;    ...                             y))),
+  ;;    ...               __repr__=(lambda self:
+  ;;    ...                          ('Point2D({!r}, {!r})').format(
+  ;;    ...                            *self)))))
+  ;;
+  ;;    #> (Point2D 1 2)
+  ;;    >>> Point2D(
+  ;;    ...   (1),
+  ;;    ...   (2))
+  ;;    Point2D(1, 2)
+  ;;
+  ;; Also supports kwds in the bases tuple for
+  ;; `object.__init_subclass__`. Separate with a ``:``.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (deftype Foo ()
+  ;;    #..  __init_subclass__ (lambda (cls :/ : :** kwargs)
+  ;;    #..                      (print kwargs)))
+  ;;    >>> # deftype
+  ;;    ... # hissp.macros.._macro_.define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   Foo=__import__('builtins').type(
+  ;;    ...         'Foo',
+  ;;    ...         (lambda * _: _)(),
+  ;;    ...         __import__('builtins').dict(
+  ;;    ...           __init_subclass__=(lambda cls,/,**kwargs:
+  ;;    ...                               print(
+  ;;    ...                                 kwargs)))))
+  ;;
+  ;;    #> (deftype Bar (Foo : a 1  b 2))
+  ;;    >>> # deftype
+  ;;    ... # hissp.macros.._macro_.define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   Bar=__import__('builtins').type(
+  ;;    ...         'Bar',
+  ;;    ...         (lambda * _: _)(
+  ;;    ...           Foo),
+  ;;    ...         __import__('builtins').dict(),
+  ;;    ...         a=(1),
+  ;;    ...         b=(2)))
+  ;;    {'a': 1, 'b': 2}
+  ;;
+  ;; See also: `attach`, `type`, `@#!<QzAT_QzHASH_>`, :keyword:`class`,
+  ;; `types.new_class`
+  ;;
+  (let (ibases (iter bases))
+    `(define ,name
+       (type ',name (,hissp.reader..ENTUPLE
+                     ,@(itertools..takewhile (lambda x (operator..ne x ':))
+                                             ibases))
+             (dict : ,@body)
+             : ,@ibases))))
+
+;;;; Locals
+
+;;; see also from Bootstrap: let
+
+(defmacro let-from (syms itr : :* body)
+  "``let-from`` Create listed locals from iterable.
+
+  .. code-block:: REPL
+
+     #> (let-from (a b : :* cs) 'ABCDEFG
+     #..  (print cs b a))
+     >>> # letQz_from
+     ... (lambda a,b,*cs:
+     ...   print(
+     ...     cs,
+     ...     b,
+     ...     a))(
+     ...   *'ABCDEFG')
+     ('C', 'D', 'E', 'F', 'G') B A
+
+  See also: `let`, `let*from<letQzSTAR_from>`, `assignment`.
+  "
+  `((lambda ,syms
+      ,@body)
+    : :* ,itr))
+
+(defmacro let*from (pairs : :* body)
+  "``let*from`` 'let star from' Nested `let-from<letQz_from>`.
+
+  Can unpack nested iterables by using multiple stages.
+
+  .. code-block:: REPL
+
+     #> (dict : A 'B  C 'D)
+     >>> dict(
+     ...   A='B',
+     ...   C='D')
+     {'A': 'B', 'C': 'D'}
+
+     #> (let*from ((ab cd) (.items _)    ;Nested let-froms.
+     #..           (a b) ab              ;Unpacks first item ('A', 'B')
+     #..           (c d) cd)             ;Unpacks second item ('C', 'D')
+     #..  (print a b c d))
+     >>> # letQzSTAR_from
+     ... # hissp.macros.._macro_.letQz_from
+     ... (lambda ab,cd:
+     ...   # hissp.macros..QzMaybe_.letQzSTAR_from
+     ...   # hissp.macros.._macro_.letQz_from
+     ...   (lambda a,b:
+     ...     # hissp.macros..QzMaybe_.letQzSTAR_from
+     ...     # hissp.macros.._macro_.letQz_from
+     ...     (lambda c,d:
+     ...       # hissp.macros..QzMaybe_.letQzSTAR_from
+     ...       # hissp.macros.._macro_.progn
+     ...       (lambda :
+     ...         print(
+     ...           a,
+     ...           b,
+     ...           c,
+     ...           d))())(
+     ...       *cd))(
+     ...     *ab))(
+     ...   *_.items())
+     A B C D
+
+
+     #> (let*from ((ab cd) (.items _)    ;Fewer stack frames.
+     #..           (a b c d) `(,@ab ,@cd)) ;Leveraging ,@ splicing.
+     #..  (print a b c d))
+     >>> # letQzSTAR_from
+     ... # hissp.macros.._macro_.letQz_from
+     ... (lambda ab,cd:
+     ...   # hissp.macros..QzMaybe_.letQzSTAR_from
+     ...   # hissp.macros.._macro_.letQz_from
+     ...   (lambda a,b,c,d:
+     ...     # hissp.macros..QzMaybe_.letQzSTAR_from
+     ...     # hissp.macros.._macro_.progn
+     ...     (lambda :
+     ...       print(
+     ...         a,
+     ...         b,
+     ...         c,
+     ...         d))())(
+     ...     *(lambda * _: _)(
+     ...        *ab,
+     ...        *cd)))(
+     ...   *_.items())
+     A B C D
+
+
+     #> (let-from (a c b d) ; Didn't really need let*from this time.
+     #..          `(,@(.keys _) ,@(.values _)) ; Not always this easy.
+     #..  (print a b c d))
+     >>> # letQz_from
+     ... (lambda a,c,b,d:
+     ...   print(
+     ...     a,
+     ...     b,
+     ...     c,
+     ...     d))(
+     ...   *(lambda * _: _)(
+     ...      *_.keys(),
+     ...      *_.values()))
+     A B C D
+
+  "
+  (if-else pairs
+    `(let-from ,(operator..getitem pairs 0)
+               ,(operator..getitem pairs 1)
+       (let*from ,(operator..getitem pairs (slice 2 None))
+         ,@body))
+    `(progn ,@body)))
+
+(defmacro my\# e
+  "``my#`` Anaphoric. `let` ``my`` be a fresh `types.SimpleNamespace`
+  in a lexical scope surrounding e.
+
+  Creates a local namespace for imperative-style reassignments,
+  typically combined with  `set@<setQzAT_>` for an assignment.
+
+  .. code-block:: REPL
+
+     #> my#(print (set@ my.x (op#add 1 1))
+     #..           my.x)
+     >>> # hissp.macros.._macro_.let
+     ... (lambda my=__import__('types').SimpleNamespace():
+     ...   print(
+     ...     # setQzAT_
+     ...     # hissp.macros.._macro_.let
+     ...     (lambda _QzRMG5GSSIz_val=__import__('operator').add(
+     ...       (1),
+     ...       (1)):(
+     ...       __import__('builtins').setattr(
+     ...         my,
+     ...         'x',
+     ...         _QzRMG5GSSIz_val),
+     ...       _QzRMG5GSSIz_val)[-1])(),
+     ...     my.x))()
+     2 2
+
+  ``my#my`` is a shorthand for a new empty namespace.
+
+  Often combined with branching macros to reuse the results of an
+  expression, with uses similar to Python's 'walrus' operator ``:=``.
+
+  See also, `attach`, `python-grammar:assignment_expression`.
+  "
+  ;; TODO: consider using extras for initial contents.
+  `(let (,'my (types..SimpleNamespace))
+     ,e))
+
+;;;; Abbreviations
+
+(defmacro O\# e
+  "``O#`` 'thunk' Make ``e`` an anonymous function with no parameters.
+
+  See also: `X#<XQzHASH_>`.
+  "
+  `(lambda : ,e))
+
+(defmacro X\# e
+  <<#
+  ;; ``X#`` Anaphoric. Make ``e`` an anonymous function with paramter X.
+  ;;
+  ;; Examples:
+  ;;
+  ;; Convert macro to function.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (list (map X#(@ X) "abc")) ; en#list would also work here.
+  ;;    >>> list(
+  ;;    ...   map(
+  ;;    ...     (lambda X:
+  ;;    ...       # QzAT_
+  ;;    ...       (lambda *xs:[*xs])(
+  ;;    ...         X)),
+  ;;    ...     ('abc')))
+  ;;    [['a'], ['b'], ['c']]
+  ;;
+  ;; Compact function definition using Python operators.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (define teen? X#.#"13<=X<20")
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   teenQzQUERY_=(lambda X:13<=X<20))
+  ;;
+  ;;    #> (teen? 12.5)
+  ;;    >>> teenQzQUERY_(
+  ;;    ...   (12.5))
+  ;;    False
+  ;;
+  ;;    #> (teen? 19.5)
+  ;;    >>> teenQzQUERY_(
+  ;;    ...   (19.5))
+  ;;    True
+  ;;
+  ;; Get an attribute without calling it.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (X#X.upper "shout")
+  ;;    >>> (lambda X:X.upper)(
+  ;;    ...   ('shout'))
+  ;;    <built-in method upper of str object at ...>
+  ;;
+  ;;    #> (_)
+  ;;    >>> _()
+  ;;    'SHOUT'
+  ;;
+  ;;    #> (define class-name X#X.__class__.__name__) ; Attributes chain.
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   classQz_name=(lambda X:X.__class__.__name__))
+  ;;
+  ;;    #> (class-name object)
+  ;;    >>> classQz_name(
+  ;;    ...   object)
+  ;;    'type'
+  ;;
+  ;;    #> (class-name "foo")
+  ;;    >>> classQz_name(
+  ;;    ...   ('foo'))
+  ;;    'str'
+  ;;
+  ;; See also:
+  ;; `en#<enQzHASH_>`, `O#<OQzHASH_>`, `XY#<XYQzHASH_>`, `getattr`,
+  ;; `operator.attrgetter`, `lambda`, `^#<QzHAT_QzHASH_>`.
+  ;;
+  `(lambda ,'X ,e))
+
+(defmacro XY\# e
+  "``XY#`` Anaphoric. Make ``e`` an anonymous function with paramters X Y.
+
+  .. code-block:: REPL
+
+     #> (functools..reduce XY#(op#concat Y X) 'abcd)
+     >>> __import__('functools').reduce(
+     ...   (lambda X,Y:
+     ...     __import__('operator').concat(
+     ...       Y,
+     ...       X)),
+     ...   'abcd')
+     'dcba'
+
+  See also: `X#<XQzHASH_>`, `XYZ#<XYZQzHASH_>`, `^^#<QzHAT_QzHAT_QzHASH_>`.
+  "
+  `(lambda ,'XY ,e))
+
+(defmacro XYZ\# e
+  <<#
+  ;; ``XYZ#`` Anaphoric. Make ``e`` an anonymous function with paramters X Y Z.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (XYZ#.#"X*Y == Z" : X math..pi  Y 2  Z math..tau)
+  ;;    >>> (lambda X,Y,Z:X*Y == Z)(
+  ;;    ...   X=__import__('math').pi,
+  ;;    ...   Y=(2),
+  ;;    ...   Z=__import__('math').tau)
+  ;;    True
+  ;;
+  ;; See also: `XY#<XYQzHASH_>`, `XYZW#<XYZWQzHASH_>`,
+  ;; `^^^#<QzHAT_QzHAT_QzHAT_QzHASH_>`.
+  ;;
+  `(lambda ,'XYZ ,e))
+
+(defmacro XYZW\# e
+  <<#
+  ;; ``XYZW#`` Anaphoric. Make ``e`` an anonymous function with paramters X Y Z W.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (XYZW#.#"X[Y:Z:W]" "QuaoblcldefHg" -2 1 -2)
+  ;;    >>> (lambda X,Y,Z,W:X[Y:Z:W])(
+  ;;    ...   ('QuaoblcldefHg'),
+  ;;    ...   (-2),
+  ;;    ...   (1),
+  ;;    ...   (-2))
+  ;;    'Hello'
+  ;;
+  ;; See also: `XYZ#<XYZQzHASH_>`, `en#<enQzHASH_>`, `X#<XQzHASH_>`.
+  ;; `^^^^#<QzHAT_QzHAT_QzHAT_QzHAT_QzHASH_>`.
+  ;;
+  `(lambda ,'XYZW ,e))
+
+(defmacro alias (abbreviation qualifier)
+  <<#
+  ;; Defines a reader macro abbreviation of a qualifier.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (hissp.._macro_.alias H: hissp.._macro_)
+  ;;    >>> # hissp.._macro_.alias
+  ;;    ... # hissp.macros.._macro_.defmacro
+  ;;    ... # hissp.macros.._macro_.let
+  ;;    ... (lambda _QzAW22OE5Kz_fn=(lambda _QzARAQTXTEz_prime,_QzARAQTXTEz_reader=None,*_QzARAQTXTEz_args:(
+  ;;    ...   'Aliases ``hissp.._macro_`` as ``HQzCOLON_#``.',
+  ;;    ...   # hissp.macros.._macro_.ifQz_else
+  ;;    ...   (lambda b,c,a:c()if b else a())(
+  ;;    ...     _QzARAQTXTEz_reader,
+  ;;    ...     (lambda :
+  ;;    ...       __import__('builtins').getattr(
+  ;;    ...         __import__('hissp')._macro_,
+  ;;    ...         ('{}{}').format(
+  ;;    ...           _QzARAQTXTEz_reader,
+  ;;    ...           # hissp.macros.._macro_.ifQz_else
+  ;;    ...           (lambda b,c,a:c()if b else a())(
+  ;;    ...             'hissp.._macro_'.endswith(
+  ;;    ...               '._macro_'),
+  ;;    ...             (lambda :'QzHASH_'),
+  ;;    ...             (lambda :('')))))(
+  ;;    ...         _QzARAQTXTEz_prime,
+  ;;    ...         *_QzARAQTXTEz_args)),
+  ;;    ...     (lambda :
+  ;;    ...       ('{}.{}').format(
+  ;;    ...         'hissp.._macro_',
+  ;;    ...         _QzARAQTXTEz_prime))))[-1]):(
+  ;;    ...   __import__('builtins').setattr(
+  ;;    ...     _QzAW22OE5Kz_fn,
+  ;;    ...     '__doc__',
+  ;;    ...     'Aliases ``hissp.._macro_`` as ``HQzCOLON_#``.'),
+  ;;    ...   __import__('builtins').setattr(
+  ;;    ...     _QzAW22OE5Kz_fn,
+  ;;    ...     '__qualname__',
+  ;;    ...     ('.').join(
+  ;;    ...       ('_macro_',
+  ;;    ...        'HQzCOLON_QzHASH_',))),
+  ;;    ...   __import__('builtins').setattr(
+  ;;    ...     __import__('operator').getitem(
+  ;;    ...       __import__('builtins').globals(),
+  ;;    ...       '_macro_'),
+  ;;    ...     'HQzCOLON_QzHASH_',
+  ;;    ...     _QzAW22OE5Kz_fn))[-1])()
+  ;;
+  ;;    #> 'H:#alias
+  ;;    >>> 'hissp.._macro_.alias'
+  ;;    'hissp.._macro_.alias'
+  ;;
+  ;;    #> H:#b\#                              ;b# macro callable
+  ;;    >>> __import__('hissp')._macro_.bQzHASH_
+  ;;    <function _macro_.bQzHASH_ at ...>
+  ;;
+  ;;    #> (H:#b\# "b# macro at compile time")
+  ;;    >>> # hissp.._macro_.bQzHASH_
+  ;;    ... b'b# macro at compile time'
+  ;;    b'b# macro at compile time'
+  ;;
+  ;;    #> hissp.._macro_.b#"Fully-qualified b# macro at read time."
+  ;;    >>> b'Fully-qualified b# macro at read time.'
+  ;;    b'Fully-qualified b# macro at read time.'
+  ;;
+  ;;    #> H:#!b"Read-time b# via alias."      ;Extra arg for alias with (!)
+  ;;    >>> b'Read-time b# via alias.'
+  ;;    b'Read-time b# via alias.'
+  ;;
+  ;; The bundled `op#<opQzHASH_>` and `i#<iQzHASH_>` reader macros are aliases
+  ;; for `operator` and `itertools`, respectively.
+  ;;
+  ;; See also: `prelude`, `attach`.
+  ;;
+  `(defmacro ,(.format "{}{}" abbreviation '#)
+             ($#prime : $#reader None :* $#args)
+     ',(.format "Aliases ``{}`` as ``{}#``." qualifier abbreviation)
+     (if-else $#reader
+       ((getattr ,qualifier (.format "{}{}"
+                                     $#reader
+                                     (if-else (.endswith ',qualifier ','._macro_)
+                                        ','#
+                                        "")))
+        $#prime : :* $#args)
+       (.format "{}.{}" ',qualifier $#prime))))
+
+(alias i itertools.)
+(alias op operator.)
+
+(defmacro chain\# (itr)
+  "``chain#`` Abbreviation for `itertools.chain.from_iterable`"
+  `(i#chain.from_iterable ,itr))
+
+(defmacro get\# e
+  <<#
+  ;; ``get#`` 'itemgetter-' Makes an `operator.itemgetter` function from ``e``.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (define first get#0)                ;Gets an item by key.
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   first=__import__('operator').itemgetter(
+  ;;    ...           (0)))
+  ;;
+  ;;    #> (first "abc")
+  ;;    >>> first(
+  ;;    ...   ('abc'))
+  ;;    'a'
+  ;;
+  ;;    #> (get#(slice None None -1) "abc")    ;Slicing without injection.
+  ;;    >>> __import__('operator').itemgetter(
+  ;;    ...   slice(
+  ;;    ...     None,
+  ;;    ...     None,
+  ;;    ...     (-1)))(
+  ;;    ...   ('abc'))
+  ;;    'cba'
+  ;;
+  ;;    #> (get#'+ (dict : foo 2  + 1))        ;These also work on dicts.
+  ;;    >>> __import__('operator').itemgetter(
+  ;;    ...   'QzPLUS_')(
+  ;;    ...   dict(
+  ;;    ...     foo=(2),
+  ;;    ...     QzPLUS_=(1)))
+  ;;    1
+  ;;
+  ;; See also: `operator.getitem`, `[#<QzLSQB_QzHASH_>`,
+  ;; `set!<setQzBANG_>`, `^*#<QzHAT_QzSTAR_QzHASH_>`.
+  ;;
+  `(op#itemgetter ,e))
+
+(defmacro @\# (definition decoration)
+  "``@#!`` 'decorator' applies ``decoration`` to a global and reassigns.
+
+  ``definition`` form must assign a global identified by its first arg.
+  Expands to a `define`, meaning decorators can stack.
+
+  Decorator syntax is for global definitions, like `define` and
+  `deftype`, and would work on any global definition macro that has
+  the (unqualified) defined name as its first argument.
+
+  .. code-block:: REPL
+
+     #> @#!str.swapcase
+     #..@#!str.title
+     #..(define spam 'spam) ; Unlike Python def, not always a function.
+     >>> # hissp.macros.._macro_.define
+     ... __import__('builtins').globals().update(
+     ...   spam=# hissp.macros.._macro_.progn
+     ...        (lambda :(
+     ...          # hissp.macros.._macro_.define
+     ...          __import__('builtins').globals().update(
+     ...            spam=# hissp.macros.._macro_.progn
+     ...                 (lambda :(
+     ...                   # define
+     ...                   __import__('builtins').globals().update(
+     ...                     spam='spam'),
+     ...                   str.title(
+     ...                     spam))[-1])()),
+     ...          str.swapcase(
+     ...            spam))[-1])())
+
+     #> spam
+     >>> spam
+     'sPAM'
+
+  "
+  (let (name (get#1 definition))
+    `(define ,name (progn ,definition (,decoration ,name)))))
+
+(defmacro \[\# e
+  "``[#`` 'subscript' Injection. Python's subscription operator.
+
+  Creates a function from the Python expression ``e`` prepended with
+  the argument and a ``[``.
+
+  .. code-block:: REPL
+
+     #> ([#1][::2] '(foo bar))
+     >>> (lambda _Qz5GEAOGSQz_G:(_Qz5GEAOGSQz_G[1][::2]))(
+     ...   ('foo',
+     ...    'bar',))
+     'br'
+
+  See also:
+  `get#<getQzHASH_>`, `-><Qz_QzGT_>`, `slice`, `subscriptions`, `slicings`.
+  "
+  `(lambda ($#G) ,(.format "({}[{})" '$#G (hissp..demunge e))))
+
+;;;; Configuration
+
+(defmacro set! (coll key val)
+  "``set!`` 'setbang' Assigns an item, returns the value.
+  Mnemonic: set !tem.
+
+  .. code-block:: REPL
+
+     #> (define spam (dict))
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   spam=dict())
+
+     #> (set! spam 2 10) ; Like operator.setitem, but returns value given.
+     #..
+     >>> # setQzBANG_
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzE3BPTV2Tz_val=(10):(
+     ...   __import__('operator').setitem(
+     ...     spam,
+     ...     (2),
+     ...     _QzE3BPTV2Tz_val),
+     ...   _QzE3BPTV2Tz_val)[-1])()
+     10
+
+     #> spam
+     >>> spam
+     {2: 10}
+
+  See also: `operator.setitem`, `operator.delitem`, `zap!<zapQzBANG_>`.
+  "
+  `(let ($#val ,val)
+     (op#setitem ,coll ,key $#val)
+     $#val))
+
+(defmacro zap! (op coll key : :* args)
+  "``zap!`` 'zapbang' Augmented item assignment operator.
+
+  The current item value becomes the first argument.
+  Returns the value.
+  Mnemonic: zap !tem.
+
+  .. code-block:: REPL
+
+     #> (define spam (dict : b 10))
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   spam=dict(
+     ...          b=(10)))
+
+     #> (zap! operator..iadd spam 'b 1) ; Augmented item assignment, like +=.
+     #..
+     >>> # zapQzBANG_
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzRDZYRDXSz_coll=spam,_QzRDZYRDXSz_key='b':
+     ...   # hissp.macros.._macro_.setQzBANG_
+     ...   # hissp.macros.._macro_.let
+     ...   (lambda _QzE3BPTV2Tz_val=__import__('operator').iadd(
+     ...     __import__('operator').getitem(
+     ...       _QzRDZYRDXSz_coll,
+     ...       _QzRDZYRDXSz_key),
+     ...     (1)):(
+     ...     __import__('operator').setitem(
+     ...       _QzRDZYRDXSz_coll,
+     ...       _QzRDZYRDXSz_key,
+     ...       _QzE3BPTV2Tz_val),
+     ...     _QzE3BPTV2Tz_val)[-1])())()
+     11
+
+     #> spam
+     >>> spam
+     {'b': 11}
+
+  See also: `set!<setQzBANG_>`, `zap@<zapQzAT_>`, `augassign`.
+  "
+  `(let ($#coll ,coll
+         $#key ,key)
+     (set! $#coll $#key (,op (op#getitem $#coll $#key)
+                             ,@args))))
+
+(defmacro set@ (name val)
+  "``set@`` 'setat' Assigns an attribute, returns the value.
+  Mnemonic: set @tribute.
+
+  .. code-block:: REPL
+
+     #> (define spam (types..SimpleNamespace))
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   spam=__import__('types').SimpleNamespace())
+
+     #> (set@ spam.foo 10)
+     >>> # setQzAT_
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzRMG5GSSIz_val=(10):(
+     ...   __import__('builtins').setattr(
+     ...     spam,
+     ...     'foo',
+     ...     _QzRMG5GSSIz_val),
+     ...   _QzRMG5GSSIz_val)[-1])()
+     10
+
+     #> spam
+     >>> spam
+     namespace(foo=10)
+
+  See also: `attach`, `delattr`, `zap@<zapQzAT_>`, `setattr`.
+  "
+  (let-from (ns _ attr) (.rpartition name ".")
+    `(let ($#val ,val)
+       (setattr ,ns ',attr $#val)
+       $#val)))
+
+(defmacro zap@ (op name : :* args)
+  "``zap@`` 'zapat' Augmented attribute assignment operator.
+
+  The current attribute value becomes the first argument.
+  Returns the value.
+  Mnemonic: zap @tribute.
+
+  .. code-block:: REPL
+
+     #> (define spam (types..SimpleNamespace : foo 10))
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   spam=__import__('types').SimpleNamespace(
+     ...          foo=(10)))
+
+     #> (zap@ operator..iadd spam.foo 1)
+     >>> # zapQzAT_
+     ... # hissp.macros.._macro_.setQzAT_
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzRMG5GSSIz_val=__import__('operator').iadd(
+     ...   spam.foo,
+     ...   (1)):(
+     ...   __import__('builtins').setattr(
+     ...     spam,
+     ...     'foo',
+     ...     _QzRMG5GSSIz_val),
+     ...   _QzRMG5GSSIz_val)[-1])()
+     11
+
+     #> spam
+     >>> spam
+     namespace(foo=11)
+
+
+  See also:
+  `set@<setQzAT_>`, `zap!<zapQzBANG_>`, `operator.iadd`, `augassign`.
+  "
+  `(set@ ,name (,op ,name ,@args)))
+
+(defmacro attach (target : :* args)
+  "Attaches the named variables to the target as attributes.
+
+  Positional arguments must be identifiers. The identifier name becomes
+  the attribute name. Names after the ``:`` are identifier-value pairs.
+  Returns the target.
+
+  .. code-block:: REPL
+
+     #> (attach (types..SimpleNamespace) _macro_.attach : a 1  b 'Hi)
+     >>> # attach
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzWG5WN73Wz_target=__import__('types').SimpleNamespace():(
+     ...   __import__('builtins').setattr(
+     ...     _QzWG5WN73Wz_target,
+     ...     'attach',
+     ...     _macro_.attach),
+     ...   __import__('builtins').setattr(
+     ...     _QzWG5WN73Wz_target,
+     ...     'a',
+     ...     (1)),
+     ...   __import__('builtins').setattr(
+     ...     _QzWG5WN73Wz_target,
+     ...     'b',
+     ...     'Hi'),
+     ...   _QzWG5WN73Wz_target)[-1])()
+     namespace(a=1, attach=<function _macro_.attach at 0x...>, b='Hi')
+
+  See also: `setattr`, `set@<setQzAT_>`, `vars`.
+  "
+  (let (iargs (iter args)
+        $target `$#target)
+    (let (args (i#takewhile X#(op#ne X ':) iargs))
+      `(let (,$target ,target)
+         ,@(map X#`(setattr ,$target ',.#"X.split('.')[-1]" ,X) args)
+         ,@(map X#`(setattr ,$target ',X ,(next iargs))
+                iargs)
+         ,$target))))
+
+(defmacro doto (self : :* invocations)
+  "Configure an object.
+
+  Calls multiple 'methods' on one 'self'.
+
+  Evaluates the given ``self``, then injects it as the first argument to
+  a sequence of invocations. Returns ``self``.
+
+  .. code-block:: REPL
+
+     #> (doto (list)
+     #..  (.extend 'bar)
+     #..  .sort
+     #..  (.append 'foo))
+     >>> # doto
+     ... (lambda _QzKIUMBHNZz_self=list():(
+     ...   _QzKIUMBHNZz_self.extend(
+     ...     'bar'),
+     ...   _QzKIUMBHNZz_self.sort(),
+     ...   _QzKIUMBHNZz_self.append(
+     ...     'foo'),
+     ...   _QzKIUMBHNZz_self)[-1])()
+     ['a', 'b', 'r', 'foo']
+
+  See also: `attach`, `progn`, `-> <Qz_QzGT_>`.
+  "
+  (let ($self `$#self)
+    `((lambda (: ,$self ,self)
+        ,@(map X#`(,(get#0 X)
+                   ,$self
+                   ,@([#1:] X))
+               (map X#.#"X if type(X) is tuple else (X,)" invocations))
+        ,$self))))
+
+;;;; Arrange Macros
+
+(defmacro -> (expr : :* forms)
+  "``->`` 'Thread-first'.
+
+  Converts a pipeline to function calls by recursively threading
+  expressions as the first argument of the next form.
+  Non-tuple forms (typically function identifiers) will be wrapped
+  in a tuple. Can make chained method calls easier to read.
+
+  .. code-block:: REPL
+
+     #> (.-> _macro_ : :* '(x (A b) (C d e)))
+     >>> _macro_.Qz_QzGT_(
+     ...   *('x',
+     ...     ('A',
+     ...      'b',),
+     ...     ('C',
+     ...      'd',
+     ...      'e',),))
+     ('C', ('A', 'x', 'b'), 'd', 'e')
+
+     #> (-> 'a set (en#list 'bc) (en#tuple 'de))
+     >>> # Qz_QzGT_
+     ... (lambda *_Qz6RFWTTVXz_xs:
+     ...   tuple(
+     ...     _Qz6RFWTTVXz_xs))(
+     ...   (lambda *_Qz6RFWTTVXz_xs:
+     ...     list(
+     ...       _Qz6RFWTTVXz_xs))(
+     ...     set(
+     ...       'a'),
+     ...     'bc'),
+     ...   'de')
+     ([{'a'}, 'bc'], 'de')
+
+  See also:
+  `-\<>><Qz_QzLT_QzGT_QzGT_>`, `X#<XQzHASH_>`, `get#<getQzHASH_>`.
+  "
+  (functools..reduce XY#.#"(Y[0],X,*Y[1:],)"
+                     (map X#.#"X if type(X) is tuple else (X,)" forms)
+                     expr))
+
+(defmacro -<>> (expr : :* forms)
+  "``-<>>`` 'Thread-through'.
+
+  Converts a pipeline to function calls by recursively threading
+  expressions into the next form at the first point indicated with
+  ``:<>``, or at the last if no ``:<>`` is found. Non-tuple forms
+  (typically function identifiers) will be wrapped in a tuple first.
+  Can replace partial application in some cases.
+
+  .. code-block:: REPL
+
+     #> (.-<>> _macro_ : :* '(x Y (:<> A b) (C d e)))
+     >>> _macro_.Qz_QzLT_QzGT_QzGT_(
+     ...   *('x',
+     ...     'Y',
+     ...     (':<>',
+     ...      'A',
+     ...      'b',),
+     ...     ('C',
+     ...      'd',
+     ...      'e',),))
+     ('C', 'd', 'e', (('Y', 'x'), 'A', 'b'))
+
+     #> (-<>> 'a set (en#list 'bc) (en#tuple 'de :<> 'fg :<>))
+     >>> # Qz_QzLT_QzGT_QzGT_
+     ... (lambda *_Qz6RFWTTVXz_xs:
+     ...   tuple(
+     ...     _Qz6RFWTTVXz_xs))(
+     ...   'de',
+     ...   (lambda *_Qz6RFWTTVXz_xs:
+     ...     list(
+     ...       _Qz6RFWTTVXz_xs))(
+     ...     'bc',
+     ...     set(
+     ...       'a')),
+     ...   'fg',
+     ...   ':<>')
+     ('de', ['bc', {'a'}], 'fg', ':<>')
+
+  See also: `-><Qz_QzGT_>`.
+  "
+  (functools..reduce XY#(let (i (iter Y))
+                          `(,@(i#takewhile X#(op#ne X :<>) i) ,X ,@i))
+                     (map X#.#"X if type(X) is tuple else (X,)" forms)
+                     expr))
+
+;;; TODO: implement other arrange macros?
+
+(define _TAO
+  (lambda s (-> (.join " " (re..findall "(?m)^# (.*)~$" (s hissp.)))
+                (.replace ":" #"\n"))))
+
+;;;; Control Flow
+
+;;; see also from Bootstrap: if-else, when, unless
+;;; see also from Advanced: case
+
+(defmacro cond (: :* pairs)
+  "Multiple condition branching.
+
+  Pairs are implied by position. Default is ``()``, use something always
+  truthy to change it, like ``:else`` or `True`. For example,
+
+  .. code-block:: REPL
+
+     #> (any-map x (@ -0.6 -0.0 42.0 math..nan)
+     #..  (cond (op#lt x 0) (print :Negative) ;if-else cascade
+     #..        (op#eq x 0) (print :Zero)
+     #..        (op#gt x 0) (print :Positive)
+     #..        :else (print :Not-a-Number)))
+     >>> # anyQz_map
+     ... __import__('builtins').any(
+     ...   __import__('builtins').map(
+     ...     (lambda x:
+     ...       # cond
+     ...       (lambda x0,x1,x2,x3,x4,x5,x6,x7:x1()if x0 else x3()if x2()else x5()if x4()else x7()if x6()else())(
+     ...         __import__('operator').lt(
+     ...           x,
+     ...           (0)),
+     ...         (lambda :
+     ...           print(
+     ...             ':Negative')),
+     ...         (lambda :
+     ...           __import__('operator').eq(
+     ...             x,
+     ...             (0))),
+     ...         (lambda :
+     ...           print(
+     ...             ':Zero')),
+     ...         (lambda :
+     ...           __import__('operator').gt(
+     ...             x,
+     ...             (0))),
+     ...         (lambda :
+     ...           print(
+     ...             ':Positive')),
+     ...         (lambda :':else'),
+     ...         (lambda :
+     ...           print(
+     ...             ':Not-a-Number')))),
+     ...     # QzAT_
+     ...     (lambda *xs:[*xs])(
+     ...       (-0.6),
+     ...       (-0.0),
+     ...       (42.0),
+     ...       __import__('math').nan)))
+     :Negative
+     :Zero
+     :Positive
+     :Not-a-Number
+     False
+
+  See also: `if-else<ifQz_else>`, `case`, `any-map<anyQz_map>`, `elif`.
+  "
+  (when pairs
+    `((lambda (,@(map X#.#"f'x{X}'" (range (X#.#"X+1&-2" (len pairs)))))
+        ,(op#concat
+          (.join "else " `(,"x1()if x0 " ,@(map X#.#"f'x{X+1}()if x{X}()'"
+                                                (range 2 (len pairs) 2))))
+          "else()"))
+      ,([#0] pairs)
+      ,@(map X#`O#,X ([#1:] pairs)))))
+
+(defmacro any-map (variable xs : :* body)
+  "``any-map``
+  Bind the variable and evaluate the body for each x from xs
+  until any result is true (and return ``True``), or until xs is
+  exhausted (and return ``False``).
+
+  .. code-block:: REPL
+
+     #> (any-map index (range 1 11)         ;Imperative loop with break.
+     #..  (print index : end :)
+     #..  (not (op#mod index 7)))
+     >>> # anyQz_map
+     ... __import__('builtins').any(
+     ...   __import__('builtins').map(
+     ...     (lambda index:(
+     ...       print(
+     ...         index,
+     ...         end=':'),
+     ...       not(
+     ...         __import__('operator').mod(
+     ...           index,
+     ...           (7))))[-1]),
+     ...     range(
+     ...       (1),
+     ...       (11))))
+     1:2:3:4:5:6:7:True
+
+  See also: `any`, `map`, `any*map<anyQzSTAR_map>`, `for`, `break`,
+  `functools.reduce`.
+  "
+  `(any (map (lambda (,variable)
+               ,@body)
+             ,xs)))
+
+(defmacro any*map (variables xss : :* body)
+  "``any*map`` 'any star map'
+  Bind each x to a variable and evaluate the body for each xs from xss
+  until any result is true (and return ``True``), or until xss is
+  exhausted (and return ``False``).
+
+  .. code-block:: REPL
+
+     #> (any*map (i c) (enumerate 'abc 1)  ;As any-map, but with starmap.
+     #..  (print (op#mul i c)))
+     >>> # anyQzSTAR_map
+     ... __import__('builtins').any(
+     ...   __import__('itertools').starmap(
+     ...     (lambda i,c:
+     ...       print(
+     ...         __import__('operator').mul(
+     ...           i,
+     ...           c))),
+     ...     enumerate(
+     ...       'abc',
+     ...       (1))))
+     a
+     bb
+     ccc
+     False
+
+  See also:
+  `itertools.starmap`, `any-map<anyQz_map>`, `loop-from<loopQz_from>`.
+  "
+  `(any (i#starmap (lambda ,variables ,@body)
+                   ,xss)))
+
+(defmacro loop-from (syms inits : :* body)
+  "``loop-from`` Anaphoric. Loop/recur with trampoline.
+
+  Set local values for the first loop with an iterable as
+  `let-from<letQz_from>`.
+
+  Creates a stack to schedule future loops. Call the ``recur-from``
+  anaphor with an iterable of values for the locals to push another loop
+  to the schedule. Call with None to abort any remaining schedule.
+
+  Returns the value of the final loop.
+
+  .. code-block:: REPL
+
+     #> (loop-from x '(3)                   ;Unpacks as let-from.
+     #..  (when x
+     #..    (print x)
+     #..    (recur-from (@ (op#sub x 1)))))
+     >>> # loopQz_from
+     ... # hissp.macros.._macro_.let
+     ... (lambda _QzDKFIH6Z2z_stack=# hissp.macros..QzMaybe_.QzAT_
+     ... (lambda *xs:[*xs])(
+     ...   (),
+     ...   None,
+     ...   ((3),)):
+     ...   # hissp.macros.._macro_.let
+     ...   (lambda recurQz_from=_QzDKFIH6Z2z_stack.append:(
+     ...     # hissp.macros.._macro_.anyQzSTAR_map
+     ...     __import__('builtins').any(
+     ...       __import__('itertools').starmap(
+     ...         (lambda x:(
+     ...           __import__('operator').setitem(
+     ...             _QzDKFIH6Z2z_stack,
+     ...             (0),
+     ...             # hissp.macros.._macro_.progn
+     ...             (lambda :
+     ...               # when
+     ...               (lambda b,c:c()if b else())(
+     ...                 x,
+     ...                 (lambda :(
+     ...                   print(
+     ...                     x),
+     ...                   recurQz_from(
+     ...                     # QzAT_
+     ...                     (lambda *xs:[*xs])(
+     ...                       __import__('operator').sub(
+     ...                         x,
+     ...                         (1)))))[-1])))()),
+     ...           None)[-1]),
+     ...         __import__('builtins').iter(
+     ...           _QzDKFIH6Z2z_stack.pop,
+     ...           None))),
+     ...     __import__('operator').itemgetter(
+     ...       (0))(
+     ...       _QzDKFIH6Z2z_stack))[-1])())()
+     3
+     2
+     1
+     ()
+
+  See also: `any*map<anyQzSTAR_map>`, `Ensue`_, `while`.
+  "
+  `(let ($#stack (@ () None ,inits))
+     (let (,'recur-from $#stack.append)
+       (any*map ,syms (iter $#stack.pop None)
+         (op#setitem $#stack 0 (progn ,@body))
+         None)
+       (get#0 $#stack))))
+
+;; I would have named this 'and, but that's a reserved word.
+(defmacro && (: :* exprs)
+  "``&&`` 'and'. Shortcutting logical AND.
+  Returns the first false value, otherwise the last value.
+  There is an implicit initial value of ``True``.
+
+  .. code-block:: REPL
+
+     #> (&& True True False) ; and finds the False
+     >>> # QzET_QzET_
+     ... (lambda x0,x1,x2:x0 and x1()and x2())(
+     ...   True,
+     ...   (lambda :True),
+     ...   (lambda :False))
+     False
+
+     #> (&& False (print 'oops)) ; Shortcutting.
+     >>> # QzET_QzET_
+     ... (lambda x0,x1:x0 and x1())(
+     ...   False,
+     ...   (lambda :
+     ...     print(
+     ...       'oops')))
+     False
+
+     #> (&& True 42)
+     >>> # QzET_QzET_
+     ... (lambda x0,x1:x0 and x1())(
+     ...   True,
+     ...   (lambda :(42)))
+     42
+
+     #> (&&)
+     >>> # QzET_QzET_
+     ... True
+     True
+
+     #> (&& 42)
+     >>> # QzET_QzET_
+     ... (42)
+     42
+
+  See also: `||<QzVERT_QzVERT_>`, `and`.
+  "
+  (cond (not exprs) True
+        (op#eq (len exprs) 1) (get#0 exprs)
+        :else
+        `((lambda (,@(map X#.#"f'x{X}'" (range (len exprs))))
+            ,(.join "and " `(,"x0 " ,@(map X#.#"f'x{X}()'" (range 1 (len exprs))))))
+          ,([#0] exprs)
+          ,@(map X#`O#,X ([#1:] exprs)))))
+
+(defmacro || (: :* exprs)
+  "``||`` 'or'. Shortcutting logical OR.
+  Returns the first true value, otherwise the last value.
+  There is an implicit initial value of ``()``.
+
+  .. code-block:: REPL
+
+     #> (|| True (print 'oops)) ; Shortcutting.
+     >>> # QzVERT_QzVERT_
+     ... (lambda x0,x1:x0 or x1())(
+     ...   True,
+     ...   (lambda :
+     ...     print(
+     ...       'oops')))
+     True
+
+     #> (|| 42 False)
+     >>> # QzVERT_QzVERT_
+     ... (lambda x0,x1:x0 or x1())(
+     ...   (42),
+     ...   (lambda :False))
+     42
+
+     #> (|| () False 0 1)  ; or seeks the truth
+     >>> # QzVERT_QzVERT_
+     ... (lambda x0,x1,x2,x3:x0 or x1()or x2()or x3())(
+     ...   (),
+     ...   (lambda :False),
+     ...   (lambda :(0)),
+     ...   (lambda :(1)))
+     1
+
+     #> (|| False)
+     >>> # QzVERT_QzVERT_
+     ... False
+     False
+
+     #> (||)
+     >>> # QzVERT_QzVERT_
+     ... ()
+     ()
+
+  See also: `&&<QzET_QzET_>`, `bool`, `or`.
+  "
+  (cond (op#eq (len exprs) 1) (get#0 exprs)
+        exprs
+        `((lambda (,@(map X#.#"f'x{X}'" (range (len exprs))))
+            ,(.join "or " `(,"x0 " ,@(map X#.#"f'x{X}()'" (range 1 (len exprs))))))
+          ,([#0] exprs)
+          ,@(map X#`O#,X ([#1:] exprs)))))
+
+(defmacro throw* (: :* exception)
+  "``throw*`` 'throw star' Creates a closed generator and calls .throw.
+
+  Despite PEP 3109, .throw still seems to accept multiple arguments.
+  Avoid using this form except when implementing throw method overrides.
+  Prefer `throw` instead.
+  "
+  `(.#"(lambda g:g.close()or g.throw)(c for c in'')" ,@exception))
+
+(defmacro throw (exception)
+  "Raise an exception.
+
+  .. code-block:: REPL
+
+     #> (throw Exception)                   ;Raise exception objects or classes.
+     >>> # throw
+     ... # hissp.macros.._macro_.throwQzSTAR_
+     ... (lambda g:g.close()or g.throw)(c for c in'')(
+     ...   Exception)
+     Traceback (most recent call last):
+       ...
+     Exception
+
+     #> (throw (TypeError 'message))
+     >>> # throw
+     ... # hissp.macros.._macro_.throwQzSTAR_
+     ... (lambda g:g.close()or g.throw)(c for c in'')(
+     ...   TypeError(
+     ...     'message'))
+     Traceback (most recent call last):
+       ...
+     TypeError: message
+
+  See also: `throw-from<throwQz_from>`, `engarde`_, `raise`.
+  "
+  `(throw* ,exception))
+
+(defmacro throw-from (exception cause)
+  "``throw-from`` Raise an exception with a cause, which can be None.
+
+  .. code-block:: REPL
+
+     #> (throw-from Exception (Exception 'message)) ;Explicit chaining.
+     #..
+     >>> # throwQz_from
+     ... # hissp.macros.._macro_.throwQzSTAR_
+     ... (lambda g:g.close()or g.throw)(c for c in'')(
+     ...   # hissp.macros.._macro_.let
+     ...   (lambda _Qz2IKKUCBWz_G=(lambda _Qz2IKKUCBWz_x:
+     ...     # hissp.macros.._macro_.ifQz_else
+     ...     (lambda b,c,a:c()if b else a())(
+     ...       # hissp.macros.._macro_.QzET_QzET_
+     ...       (lambda x0,x1:x0 and x1())(
+     ...         __import__('builtins').isinstance(
+     ...           _Qz2IKKUCBWz_x,
+     ...           __import__('builtins').type),
+     ...         (lambda :
+     ...           __import__('builtins').issubclass(
+     ...             _Qz2IKKUCBWz_x,
+     ...             __import__('builtins').BaseException))),
+     ...       (lambda :_Qz2IKKUCBWz_x()),
+     ...       (lambda :_Qz2IKKUCBWz_x))):
+     ...     # hissp.macros.._macro_.attach
+     ...     # hissp.macros.._macro_.let
+     ...     (lambda _QzWG5WN73Wz_target=_Qz2IKKUCBWz_G(
+     ...       Exception):(
+     ...       __import__('builtins').setattr(
+     ...         _QzWG5WN73Wz_target,
+     ...         '__cause__',
+     ...         _Qz2IKKUCBWz_G(
+     ...           Exception(
+     ...             'message'))),
+     ...       _QzWG5WN73Wz_target)[-1])())())
+     Traceback (most recent call last):
+       ...
+     Exception
+
+  See also: `throw`, `throw*<throwQzSTAR_>`.
+  "
+  `(throw* (let ($#G (lambda ($#x)
+                       (if-else (&& (isinstance $#x type)
+                                    (issubclass $#x BaseException))
+                         ($#x) $#x)))
+             (attach ($#G ,exception) : ,'__cause__ ($#G ,cause)))))
+
+;;;; Side Effect
+
+;;; see also from Bootstrap: progn
+
+(defmacro prog1 (expr1 : :* body)
+  "Evaluates each expression in sequence (for side effects),
+  resulting in the value of the first.
+
+  .. code-block:: REPL
+
+     #> (print (prog1 0                     ;Sequence for side effects, eval to first.
+     #..         (print 1)
+     #..         (print 2)))
+     >>> print(
+     ...   # prog1
+     ...   # hissp.macros.._macro_.let
+     ...   (lambda _Qz46BJ7IW6z_value1=(0):(
+     ...     print(
+     ...       (1)),
+     ...     print(
+     ...       (2)),
+     ...     _Qz46BJ7IW6z_value1)[-1])())
+     1
+     2
+     0
+
+  Combine with `progn` for a value in the middle of the sequence.
+
+  .. code-block:: REPL
+
+     #> (prog1                              ;Sequence for side effects, eval to first.
+     #..  (progn (print 1)                  ;Sequence for side effects, eval to last.
+     #..         3)
+     #..  (print 2))
+     >>> # prog1
+     ... # hissp.macros.._macro_.let
+     ... (lambda _Qz46BJ7IW6z_value1=# progn
+     ... (lambda :(
+     ...   print(
+     ...     (1)),
+     ...   (3))[-1])():(
+     ...   print(
+     ...     (2)),
+     ...   _Qz46BJ7IW6z_value1)[-1])()
+     1
+     2
+     3
+
+  See also: `doto`.
+  "
+  `(let ($#value1 ,expr1)
+     ,@body
+     $#value1))
+
+;;; Note that any of the bundled macros with a lambda "body" argument
+;;; also sequence expressions for side effects.
+
+;;;; Reader
+
+(defmacro b\# (raw)
+  <<#
+  ;; ``b#`` `bytes` literal reader macro
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> b#"bytes
+  ;;    #..with\nnewlines"
+  ;;    >>> b'bytes\nwith\nnewlines'
+  ;;    b'bytes\nwith\nnewlines'
+  ;;
+  (-> raw
+      ast..literal_eval
+      (.replace "'" "\'")
+      (.replace #"\n" "\n")
+      (-<>> (.format "b'{}'"))
+      ast..literal_eval))
+
+(defmacro en\# (f)
+  <<#
+  ;; ``en#`` reader macro.
+  ;; Wrap a function applicable to a tuple as a function of its elements.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (en#list 1 2 3)
+  ;;    >>> (lambda *_Qz6RFWTTVXz_xs:
+  ;;    ...   list(
+  ;;    ...     _Qz6RFWTTVXz_xs))(
+  ;;    ...   (1),
+  ;;    ...   (2),
+  ;;    ...   (3))
+  ;;    [1, 2, 3]
+  ;;
+  ;;    #> (en#.extend _ 4 5 6) ; Methods too.
+  ;;    #..
+  ;;    >>> (lambda _Qz4LWLAFU3z_self,*_Qz4LWLAFU3z_xs:
+  ;;    ...   _Qz4LWLAFU3z_self.extend(
+  ;;    ...     _Qz4LWLAFU3z_xs))(
+  ;;    ...   _,
+  ;;    ...   (4),
+  ;;    ...   (5),
+  ;;    ...   (6))
+  ;;
+  ;;    #> _
+  ;;    >>> _
+  ;;    [1, 2, 3, 4, 5, 6]
+  ;;
+  ;;    #> (define enjoin en#X#(.join "" (map str X)))
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   enjoin=(lambda *_Qz6RFWTTVXz_xs:
+  ;;    ...            (lambda X:
+  ;;    ...              ('').join(
+  ;;    ...                map(
+  ;;    ...                  str,
+  ;;    ...                  X)))(
+  ;;    ...              _Qz6RFWTTVXz_xs)))
+  ;;
+  ;;    #> (enjoin "Sum: "(op#add 2 3)". Product: "(op#mul 2 3)".")
+  ;;    >>> enjoin(
+  ;;    ...   ('Sum: '),
+  ;;    ...   __import__('operator').add(
+  ;;    ...     (2),
+  ;;    ...     (3)),
+  ;;    ...   ('. Product: '),
+  ;;    ...   __import__('operator').mul(
+  ;;    ...     (2),
+  ;;    ...     (3)),
+  ;;    ...   ('.'))
+  ;;    'Sum: 5. Product: 6.'
+  ;;
+  ;; There are no bundled reader macros for a quinary, senary, etc. but
+  ;; the en#X# variadic or a normal lambda form can be used instead.
+  ;;
+  ;; See also: `X# <XQzHASH_>`.
+  ;;
+  (if-else (&& (op#is_ str (type f))
+               (.startswith f "."))
+    `(lambda ($#self : :* $#xs)
+       (,f $#self $#xs))
+    `(lambda (: :* $#xs)
+       (,f $#xs))))
+
+;;;; Collection
+
+(defmacro @ (: :* xs)
+  <<#
+  ;; ``@`` 'list of' Mnemonic: @rray list.
+  ;;
+  ;; Creates the `list` from each expresssion's result.
+  ;; A ``:*`` unpacks the next argument.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (@ :* "AB" (math..sqrt 9) :* "XY" 2 1)
+  ;;    >>> # QzAT_
+  ;;    ... (lambda *xs:[*xs])(
+  ;;    ...   *('AB'),
+  ;;    ...   __import__('math').sqrt(
+  ;;    ...     (9)),
+  ;;    ...   *('XY'),
+  ;;    ...   (2),
+  ;;    ...   (1))
+  ;;    ['A', 'B', 3.0, 'X', 'Y', 2, 1]
+  ;;
+  ;; See also: `#<QzHASH_>`, `%<QzPCENT_>`.
+  ;;
+  (when (&& xs (op#eq :* (get#-1 xs)))
+     (throw (SyntaxError "trailing :*")))
+  (let (ixs (iter xs))
+    `((lambda (: :* ,'xs) .#"[*xs]")
+      : ,@chain#(map X#(if-else (op#eq X ":*")
+                         `(,X ,(next ixs))
+                         `(:? ,X))
+                     ixs))))
+
+(defmacro # (: :* xs)
+  "``#`` 'set of' Mnemonic: Hash (#) set.
+
+  Creates the `set` from each expression's result.
+  A ``:*`` unpacks the next argument.
+
+  .. code-block:: REPL
+
+     #> (# 1 :* (@ 1 2 3) 4)                ;Set, with unpacking.
+     >>> # QzHASH_
+     ... (lambda *xs:{*xs})(
+     ...   (1),
+     ...   *# QzAT_
+     ...    (lambda *xs:[*xs])(
+     ...      (1),
+     ...      (2),
+     ...      (3)),
+     ...   (4))
+     {1, 2, 3, 4}
+
+  See also: `@<QzAT_>`, `%<QzPCENT_>`.
+  "
+  (when (&& xs (op#eq :* (get#-1 xs)))
+     (throw (SyntaxError "trailing :*")))
+  (let (ixs (iter xs))
+    `((lambda (: :* ,'xs) .#"{*xs}")
+      : ,@chain#(map X#(if-else (op#eq X ":*")
+                                `(,X ,(next ixs))
+                                `(:? ,X))
+                     ixs))))
+
+(defmacro % (: :* kvs)
+  "``%`` 'dict of'. Mnemonic: `dict` of pairs (%).
+
+  Key-value pairs are implied by position.
+  A ``:**`` mapping-unpacks the next argument.
+
+  .. code-block:: REPL
+
+     #> (% 1 2  :** (dict : x 3  y 4)  5 6) ;Dict, with mapping unpacking.
+     >>> # QzPCENT_
+     ... (lambda x0,x1,x3,x4,x5:{x0:x1,**x3,x4:x5})(
+     ...   (1),
+     ...   (2),
+     ...   dict(
+     ...     x=(3),
+     ...     y=(4)),
+     ...   (5),
+     ...   (6))
+     {1: 2, 'x': 3, 'y': 4, 5: 6}
+
+     #> (%)
+     >>> # QzPCENT_
+     ... {}
+     {}
+
+  See also: `@<QzAT_>`, `#<QzHASH_>`.
+  "
+  (cond
+   (op#mod (len kvs) 2) (throw (TypeError "extra key without value"))
+   kvs `((lambda (,@(i#starmap XY#.#"f'x{X}'" (filter X#(op#ne :** (get#1 X))
+                                                      (enumerate kvs))))
+           ,(.format "{{{}}}"
+                     (.join "," (i#starmap XY#(if-else (op#eq Y :**)
+                                                .#"f'**x{X+1}'"
+                                                .#"f'x{X}:x{X+1}'")
+                                           (-> kvs enumerate (i#islice 0 None 2))))))
+         ,@(filter X#(op#ne X :**) kvs))
+   :else (dict)))
+
+;;;; Import
+
+(defmacro prelude (: ns `(globals))
+  <<#
+  ;; Hissp's bundled micro prelude.
+  ;;
+  ;; Brings Hissp up to a minimal standard of usability without adding any
+  ;; dependencies in the compiled output.
+  ;;
+  ;; Mainly intended for single-file scripts that can't have dependencies,
+  ;; or similarly constrained environments (e.g. embedded, readerless).
+  ;; There, the first form should be ``(hissp.._macro_.prelude)``,
+  ;; which is also implied in ``$ lissp -c`` commands.
+  ;;
+  ;; Larger projects with access to functional and macro libraries need not
+  ;; use this prelude at all.
+  ;;
+  ;; The prelude has several effects:
+  ;;
+  ;; * Imports `functools.partial` and `functools.reduce`.
+  ;;   Star imports from `itertools` and `operator`::
+  ;;
+  ;;    from functools import partial,reduce
+  ;;    from itertools import *;from operator import *
+  ;;
+  ;; .. _engarde:
+  ;;
+  ;; * Defines ``engarde``, which calls a function with exception handler::
+  ;;
+  ;;    def engarde(xs,h,f,/,*a,**kw):
+  ;;     try:return f(*a,**kw)
+  ;;     except xs as e:return h(e)
+  ;;
+  ;;   ``engarde`` with handlers can stack above in a single form.
+  ;;
+  ;;   See `engarde examples`_ below.
+  ;;
+  ;; .. _enter:
+  ;;
+  ;; * Defines ``enter``, which calls a function with context manager::
+  ;;
+  ;;    def enter(c,f,/,*a):
+  ;;     with c as C:return f(*a,C)
+  ;;
+  ;;   ``enter`` with context managers can stack above in a single form.
+  ;;
+  ;;   See `enter examples`_ below.
+  ;;
+  ;; .. _Ensue:
+  ;;
+  ;; * Defines the ``Ensue`` class; trampolined continuation generators::
+  ;;
+  ;;    class Ensue(__import__('collections.abc').abc.Generator):
+  ;;     send=lambda s,v:s.g.send(v);throw=lambda s,*x:s.g.throw(*x);F=0;X=();Y=[]
+  ;;     def __init__(s,p):s.p,s.g,s.n=p,s._(s),s.Y
+  ;;     def _(s,k,v=None):
+  ;;      while isinstance(s:=k,__class__) and not setattr(s,'sent',v):
+  ;;       try:k,y=s.p(s),s.Y;v=(yield from y)if s.F or y is s.n else(yield y)
+  ;;       except s.X as e:v=e
+  ;;      return k
+  ;;
+  ;;   ``Ensue`` takes a step function and returns a generator. The step
+  ;;   function recieves the previous Ensue step and must return the next
+  ;;   one to continue. Returning a different type raises a `StopIteration`
+  ;;   with that object. Set the ``Y`` attribute on the current step to
+  ;;   [Y]ield a value this step. Set the ``F`` attribute to a true value
+  ;;   to yield values [F]rom the ``Y`` iterable instead. Set the ``X``
+  ;;   attribute to an e[X]ception class or tuple to catch any targeted
+  ;;   exceptions on the next step. Each step keeps a ``sent`` attribute,
+  ;;   which is the value sent to the generator this step, or the exception
+  ;;   caught this step instead.
+  ;;
+  ;;   See `Ensue examples`_ and `enter examples`_ below.
+  ;;
+  ;;   See also:
+  ;;   `types.coroutine`, `collections.abc.Generator`, `loop-from<loopQz_from>`.
+  ;;
+  ;; * Adds the bundled macros, but only if available
+  ;;   (macros are typically only used at compile time),
+  ;;   so its compiled expansion does not require Hissp to be installed.
+  ;;   (This replaces ``_macro_`` if you already had one.)::
+  ;;
+  ;;    _macro_=__import__('types').SimpleNamespace()
+  ;;    try:exec('from {}._macro_ import *',vars(_macro_))
+  ;;    except ModuleNotFoundError:pass
+  ;;
+  ;; Prelude Usage
+  ;; =============
+  ;; The REPL has the bundled macros loaded by default, but not the prelude.
+  ;; Invoke ``(prelude)`` to get the rest.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (prelude)
+  ;;    >>> # prelude
+  ;;    ... __import__('builtins').exec(
+  ;;    ...   ('from functools import partial,reduce\n'
+  ;;    ...    'from itertools import *;from operator import *\n'
+  ;;    ...    'def engarde(xs,h,f,/,*a,**kw):\n'
+  ;;    ...    ' try:return f(*a,**kw)\n'
+  ;;    ...    ' except xs as e:return h(e)\n'
+  ;;    ...    'def enter(c,f,/,*a):\n'
+  ;;    ...    ' with c as C:return f(*a,C)\n'
+  ;;    ...    "class Ensue(__import__('collections.abc').abc.Generator):\n"
+  ;;    ...    ' send=lambda s,v:s.g.send(v);throw=lambda s,*x:s.g.throw(*x);F=0;X=();Y=[]\n'
+  ;;    ...    ' def __init__(s,p):s.p,s.g,s.n=p,s._(s),s.Y\n'
+  ;;    ...    ' def _(s,k,v=None):\n'
+  ;;    ...    "  while isinstance(s:=k,__class__) and not setattr(s,'sent',v):\n"
+  ;;    ...    '   try:k,y=s.p(s),s.Y;v=(yield from y)if s.F or y is s.n else(yield y)\n'
+  ;;    ...    '   except s.X as e:v=e\n'
+  ;;    ...    '  return k\n'
+  ;;    ...    "_macro_=__import__('types').SimpleNamespace()\n"
+  ;;    ...    "try:exec('from hissp.macros._macro_ import *',vars(_macro_))\n"
+  ;;    ...    'except ModuleNotFoundError:pass'),
+  ;;    ...   __import__('builtins').globals())
+  ;;
+  ;; See also, `alias`.
+  ;;
+  ;; engarde examples
+  ;; ----------------
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (engarde `(,FloatingPointError ,ZeroDivisionError) ;two targets
+  ;;    #..         (lambda e (print "Oops!") e)    ;handler (returns exception)
+  ;;    #..         truediv 6 0)                    ;calls it on your behalf
+  ;;    >>> engarde(
+  ;;    ...   (lambda * _: _)(
+  ;;    ...     FloatingPointError,
+  ;;    ...     ZeroDivisionError),
+  ;;    ...   (lambda e:(
+  ;;    ...     print(
+  ;;    ...       ('Oops!')),
+  ;;    ...     e)[-1]),
+  ;;    ...   truediv,
+  ;;    ...   (6),
+  ;;    ...   (0))
+  ;;    Oops!
+  ;;    ZeroDivisionError('division by zero')
+  ;;
+  ;;    #> (engarde ArithmeticError repr truediv 6 0) ;superclass target
+  ;;    >>> engarde(
+  ;;    ...   ArithmeticError,
+  ;;    ...   repr,
+  ;;    ...   truediv,
+  ;;    ...   (6),
+  ;;    ...   (0))
+  ;;    "ZeroDivisionError('division by zero')"
+  ;;
+  ;;    #> (engarde ArithmeticError repr truediv 6 2) ;returned answer
+  ;;    >>> engarde(
+  ;;    ...   ArithmeticError,
+  ;;    ...   repr,
+  ;;    ...   truediv,
+  ;;    ...   (6),
+  ;;    ...   (2))
+  ;;    3.0
+  ;;
+  ;;    ;; You can stack them.
+  ;;    #> (engarde Exception                       ;The outer engarde
+  ;;    #.. print
+  ;;    #.. engarde ZeroDivisionError               ; calls the inner.
+  ;;    #.. (lambda e (print "It means what you want it to mean."))
+  ;;    #.. truediv "6" 0)                          ;Try variations.
+  ;;    >>> engarde(
+  ;;    ...   Exception,
+  ;;    ...   print,
+  ;;    ...   engarde,
+  ;;    ...   ZeroDivisionError,
+  ;;    ...   (lambda e:
+  ;;    ...     print(
+  ;;    ...       ('It means what you want it to mean.'))),
+  ;;    ...   truediv,
+  ;;    ...   ('6'),
+  ;;    ...   (0))
+  ;;    unsupported operand type(s) for /: 'str' and 'int'
+  ;;
+  ;;    #> (engarde Exception
+  ;;    #..         (lambda x x.__cause__)
+  ;;    #..         (lambda : (throw-from Exception (Exception "msg"))))
+  ;;    >>> engarde(
+  ;;    ...   Exception,
+  ;;    ...   (lambda x:x.__cause__),
+  ;;    ...   (lambda :
+  ;;    ...     # throwQz_from
+  ;;    ...     # hissp.macros.._macro_.throwQzSTAR_
+  ;;    ...     (lambda g:g.close()or g.throw)(c for c in'')(
+  ;;    ...       # hissp.macros.._macro_.let
+  ;;    ...       (lambda _Qz2IKKUCBWz_G=(lambda _Qz2IKKUCBWz_x:
+  ;;    ...         # hissp.macros.._macro_.ifQz_else
+  ;;    ...         (lambda b,c,a:c()if b else a())(
+  ;;    ...           # hissp.macros.._macro_.QzET_QzET_
+  ;;    ...           (lambda x0,x1:x0 and x1())(
+  ;;    ...             __import__('builtins').isinstance(
+  ;;    ...               _Qz2IKKUCBWz_x,
+  ;;    ...               __import__('builtins').type),
+  ;;    ...             (lambda :
+  ;;    ...               __import__('builtins').issubclass(
+  ;;    ...                 _Qz2IKKUCBWz_x,
+  ;;    ...                 __import__('builtins').BaseException))),
+  ;;    ...           (lambda :_Qz2IKKUCBWz_x()),
+  ;;    ...           (lambda :_Qz2IKKUCBWz_x))):
+  ;;    ...         # hissp.macros.._macro_.attach
+  ;;    ...         # hissp.macros.._macro_.let
+  ;;    ...         (lambda _QzWG5WN73Wz_target=_Qz2IKKUCBWz_G(
+  ;;    ...           Exception):(
+  ;;    ...           __import__('builtins').setattr(
+  ;;    ...             _QzWG5WN73Wz_target,
+  ;;    ...             '__cause__',
+  ;;    ...             _Qz2IKKUCBWz_G(
+  ;;    ...               Exception(
+  ;;    ...                 ('msg')))),
+  ;;    ...           _QzWG5WN73Wz_target)[-1])())())))
+  ;;    Exception('msg')
+  ;;
+  ;; Ensue examples
+  ;; --------------
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (define fibonacci
+  ;;    #..  (lambda (: a 1  b 1)
+  ;;    #..    (Ensue (lambda (step)
+  ;;    #..             (set@ step.Y a)            ;Y for yield.
+  ;;    #..             (fibonacci b (add a b))))))
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   fibonacci=(lambda a=(1),b=(1):
+  ;;    ...               Ensue(
+  ;;    ...                 (lambda step:(
+  ;;    ...                   # setQzAT_
+  ;;    ...                   # hissp.macros.._macro_.let
+  ;;    ...                   (lambda _QzRMG5GSSIz_val=a:(
+  ;;    ...                     __import__('builtins').setattr(
+  ;;    ...                       step,
+  ;;    ...                       'Y',
+  ;;    ...                       _QzRMG5GSSIz_val),
+  ;;    ...                     _QzRMG5GSSIz_val)[-1])(),
+  ;;    ...                   fibonacci(
+  ;;    ...                     b,
+  ;;    ...                     add(
+  ;;    ...                       a,
+  ;;    ...                       b)))[-1]))))
+  ;;
+  ;;    #> (list (islice (fibonacci) 7))
+  ;;    >>> list(
+  ;;    ...   islice(
+  ;;    ...     fibonacci(),
+  ;;    ...     (7)))
+  ;;    [1, 1, 2, 3, 5, 8, 13]
+  ;;
+  ;;    #> (define my-range ; Terminate by not returning an Ensue.
+  ;;    #..  (lambda in
+  ;;    #..    (Ensue (lambda (step)
+  ;;    #..             (when (lt i n)             ;Acts like a while loop.
+  ;;    #..               (set@ step.Y i)
+  ;;    #..               (my-range (add i 1) n)))))) ;Conditional recursion.
+  ;;    #..
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   myQz_range=(lambda i,n:
+  ;;    ...                Ensue(
+  ;;    ...                  (lambda step:
+  ;;    ...                    # when
+  ;;    ...                    (lambda b,c:c()if b else())(
+  ;;    ...                      lt(
+  ;;    ...                        i,
+  ;;    ...                        n),
+  ;;    ...                      (lambda :(
+  ;;    ...                        # setQzAT_
+  ;;    ...                        # hissp.macros.._macro_.let
+  ;;    ...                        (lambda _QzRMG5GSSIz_val=i:(
+  ;;    ...                          __import__('builtins').setattr(
+  ;;    ...                            step,
+  ;;    ...                            'Y',
+  ;;    ...                            _QzRMG5GSSIz_val),
+  ;;    ...                          _QzRMG5GSSIz_val)[-1])(),
+  ;;    ...                        myQz_range(
+  ;;    ...                          add(
+  ;;    ...                            i,
+  ;;    ...                            (1)),
+  ;;    ...                          n))[-1]))))))
+  ;;
+  ;;    #> (list (my-range 1 6))
+  ;;    >>> list(
+  ;;    ...   myQz_range(
+  ;;    ...     (1),
+  ;;    ...     (6)))
+  ;;    [1, 2, 3, 4, 5]
+  ;;
+  ;;    #> (Ensue (lambda (step)
+  ;;    #..         (attach step :
+  ;;    #..           F True ; Set F for yield-From mode.
+  ;;    #..           Y '(1 2 3 4 5))
+  ;;    #..         None))
+  ;;    >>> Ensue(
+  ;;    ...   (lambda step:(
+  ;;    ...     # attach
+  ;;    ...     # hissp.macros.._macro_.let
+  ;;    ...     (lambda _QzWG5WN73Wz_target=step:(
+  ;;    ...       __import__('builtins').setattr(
+  ;;    ...         _QzWG5WN73Wz_target,
+  ;;    ...         'F',
+  ;;    ...         True),
+  ;;    ...       __import__('builtins').setattr(
+  ;;    ...         _QzWG5WN73Wz_target,
+  ;;    ...         'Y',
+  ;;    ...         ((1),
+  ;;    ...          (2),
+  ;;    ...          (3),
+  ;;    ...          (4),
+  ;;    ...          (5),)),
+  ;;    ...       _QzWG5WN73Wz_target)[-1])(),
+  ;;    ...     None)[-1]))
+  ;;    <...Ensue object at ...>
+  ;;
+  ;;    #> (list _)
+  ;;    >>> list(
+  ;;    ...   _)
+  ;;    [1, 2, 3, 4, 5]
+  ;;
+  ;;    #> (define recycle
+  ;;    #..  (lambda (itr)
+  ;;    #..    (Ensue (lambda (step)
+  ;;    #..             ;; Implicit continuation; step is an Ensue.
+  ;;    #..             (attach step : Y itr  F 1)))))
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   recycle=(lambda itr:
+  ;;    ...             Ensue(
+  ;;    ...               (lambda step:
+  ;;    ...                 # attach
+  ;;    ...                 # hissp.macros.._macro_.let
+  ;;    ...                 (lambda _QzWG5WN73Wz_target=step:(
+  ;;    ...                   __import__('builtins').setattr(
+  ;;    ...                     _QzWG5WN73Wz_target,
+  ;;    ...                     'Y',
+  ;;    ...                     itr),
+  ;;    ...                   __import__('builtins').setattr(
+  ;;    ...                     _QzWG5WN73Wz_target,
+  ;;    ...                     'F',
+  ;;    ...                     (1)),
+  ;;    ...                   _QzWG5WN73Wz_target)[-1])()))))
+  ;;
+  ;;    #> (-> '(1 2 3) recycle (islice 7) list)
+  ;;    >>> # Qz_QzGT_
+  ;;    ... list(
+  ;;    ...   islice(
+  ;;    ...     recycle(
+  ;;    ...       ((1),
+  ;;    ...        (2),
+  ;;    ...        (3),)),
+  ;;    ...     (7)))
+  ;;    [1, 2, 3, 1, 2, 3, 1]
+  ;;
+  ;;    #> (define echo
+  ;;    #..  (Ensue (lambda (step)
+  ;;    #..           (set@ step.Y step.sent)
+  ;;    #..           step)))
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   echo=Ensue(
+  ;;    ...          (lambda step:(
+  ;;    ...            # setQzAT_
+  ;;    ...            # hissp.macros.._macro_.let
+  ;;    ...            (lambda _QzRMG5GSSIz_val=step.sent:(
+  ;;    ...              __import__('builtins').setattr(
+  ;;    ...                step,
+  ;;    ...                'Y',
+  ;;    ...                _QzRMG5GSSIz_val),
+  ;;    ...              _QzRMG5GSSIz_val)[-1])(),
+  ;;    ...            step)[-1])))
+  ;;
+  ;;    #> (.send echo None) ; Always send a None first. Same as Python.
+  ;;    >>> echo.send(
+  ;;    ...   None)
+  ;;
+  ;;    #> (.send echo "Yodle!") ; Generators are two-way.
+  ;;    >>> echo.send(
+  ;;    ...   ('Yodle!'))
+  ;;    'Yodle!'
+  ;;
+  ;;    #> (.send echo 42)
+  ;;    >>> echo.send(
+  ;;    ...   (42))
+  ;;    42
+  ;;
+  ;; enter examples
+  ;; --------------
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (define wrap
+  ;;    #..  (contextlib..contextmanager
+  ;;    #..   (lambda (msg)
+  ;;    #..     (print "enter" msg)
+  ;;    #..     (Ensue (lambda (step)
+  ;;    #..              (set@ step.Y msg)
+  ;;    #..              (Ensue (lambda (step)
+  ;;    #..                       (print "exit" msg))))))))
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   wrap=__import__('contextlib').contextmanager(
+  ;;    ...          (lambda msg:(
+  ;;    ...            print(
+  ;;    ...              ('enter'),
+  ;;    ...              msg),
+  ;;    ...            Ensue(
+  ;;    ...              (lambda step:(
+  ;;    ...                # setQzAT_
+  ;;    ...                # hissp.macros.._macro_.let
+  ;;    ...                (lambda _QzRMG5GSSIz_val=msg:(
+  ;;    ...                  __import__('builtins').setattr(
+  ;;    ...                    step,
+  ;;    ...                    'Y',
+  ;;    ...                    _QzRMG5GSSIz_val),
+  ;;    ...                  _QzRMG5GSSIz_val)[-1])(),
+  ;;    ...                Ensue(
+  ;;    ...                  (lambda step:
+  ;;    ...                    print(
+  ;;    ...                      ('exit'),
+  ;;    ...                      msg))))[-1])))[-1])))
+  ;;
+  ;;    #> (enter (wrap 'A)
+  ;;    #..       (lambda a (print a)))
+  ;;    >>> enter(
+  ;;    ...   wrap(
+  ;;    ...     'A'),
+  ;;    ...   (lambda a:
+  ;;    ...     print(
+  ;;    ...       a)))
+  ;;    enter A
+  ;;    A
+  ;;    exit A
+  ;;
+  ;;    #> (enter (wrap 'A)
+  ;;    #.. enter (wrap 'B)
+  ;;    #.. enter (wrap 'C) ; You can stack them.
+  ;;    #.. (lambda abc (print a b c)))
+  ;;    >>> enter(
+  ;;    ...   wrap(
+  ;;    ...     'A'),
+  ;;    ...   enter,
+  ;;    ...   wrap(
+  ;;    ...     'B'),
+  ;;    ...   enter,
+  ;;    ...   wrap(
+  ;;    ...     'C'),
+  ;;    ...   (lambda a,b,c:
+  ;;    ...     print(
+  ;;    ...       a,
+  ;;    ...       b,
+  ;;    ...       c)))
+  ;;    enter A
+  ;;    enter B
+  ;;    enter C
+  ;;    A B C
+  ;;    exit C
+  ;;    exit B
+  ;;    exit A
+  ;;
+  ;;    #> (define suppress-zde
+  ;;    #..  (contextlib..contextmanager
+  ;;    #..   (lambda :
+  ;;    #..     (Ensue (lambda (step)
+  ;;    #..              (attach step :
+  ;;    #..                Y None
+  ;;    #..                X ZeroDivisionError) ;X for eXcept (can be a tuple).
+  ;;    #..              (Ensue (lambda (step)
+  ;;    #..                       (print "Caught a" step.sent))))))))
+  ;;    >>> # define
+  ;;    ... __import__('builtins').globals().update(
+  ;;    ...   suppressQz_zde=__import__('contextlib').contextmanager(
+  ;;    ...                    (lambda :
+  ;;    ...                      Ensue(
+  ;;    ...                        (lambda step:(
+  ;;    ...                          # attach
+  ;;    ...                          # hissp.macros.._macro_.let
+  ;;    ...                          (lambda _QzWG5WN73Wz_target=step:(
+  ;;    ...                            __import__('builtins').setattr(
+  ;;    ...                              _QzWG5WN73Wz_target,
+  ;;    ...                              'Y',
+  ;;    ...                              None),
+  ;;    ...                            __import__('builtins').setattr(
+  ;;    ...                              _QzWG5WN73Wz_target,
+  ;;    ...                              'X',
+  ;;    ...                              ZeroDivisionError),
+  ;;    ...                            _QzWG5WN73Wz_target)[-1])(),
+  ;;    ...                          Ensue(
+  ;;    ...                            (lambda step:
+  ;;    ...                              print(
+  ;;    ...                                ('Caught a'),
+  ;;    ...                                step.sent))))[-1])))))
+  ;;
+  ;;    #> (enter (suppress-zde)
+  ;;    #..  (lambda _ (truediv 1 0)))
+  ;;    >>> enter(
+  ;;    ...   suppressQz_zde(),
+  ;;    ...   (lambda _:
+  ;;    ...     truediv(
+  ;;    ...       (1),
+  ;;    ...       (0))))
+  ;;    Caught a division by zero
+  ;;
+  ;;    ;; No exception, so step.sent was .send() value.
+  ;;    #> (enter (suppress-zde)
+  ;;    #..  (lambda _ (truediv 4 2)))
+  ;;    >>> enter(
+  ;;    ...   suppressQz_zde(),
+  ;;    ...   (lambda _:
+  ;;    ...     truediv(
+  ;;    ...       (4),
+  ;;    ...       (2))))
+  ;;    Caught a None
+  ;;    2.0
+  ;;
+  ;;    #> (enter (suppress-zde)
+  ;;    #..  (lambda _ (throw Exception)))
+  ;;    >>> enter(
+  ;;    ...   suppressQz_zde(),
+  ;;    ...   (lambda _:
+  ;;    ...     # throw
+  ;;    ...     # hissp.macros.._macro_.throwQzSTAR_
+  ;;    ...     (lambda g:g.close()or g.throw)(c for c in'')(
+  ;;    ...       Exception)))
+  ;;    Traceback (most recent call last):
+  ;;      ...
+  ;;    Exception
+  ;;
+  `(exec ',(.format #"\
+from functools import partial,reduce
+from itertools import *;from operator import *
+def engarde(xs,h,f,/,*a,**kw):
+ try:return f(*a,**kw)
+ except xs as e:return h(e)
+def enter(c,f,/,*a):
+ with c as C:return f(*a,C)
+class Ensue(__import__('collections.abc').abc.Generator):
+ send=lambda s,v:s.g.send(v);throw=lambda s,*x:s.g.throw(*x);F=0;X=();Y=[]
+ def __init__(s,p):s.p,s.g,s.n=p,s._(s),s.Y
+ def _(s,k,v=None):
+  while isinstance(s:=k,__class__) and not setattr(s,'sent',v):
+   try:k,y=s.p(s),s.Y;v=(yield from y)if s.F or y is s.n else(yield y)
+   except s.X as e:v=e
+  return k
+_macro_=__import__('types').SimpleNamespace()
+try:exec('from {}._macro_ import *',vars(_macro_))
+except ModuleNotFoundError:pass"
+                    __name__)
+    ,ns))(.##"\144efma\143ro" import(: :* args)
+          `(.##"p\162int"(.##"\143ode\143s..en\143ode"
+                          (_TAO .##"in\163pe\143\164..ge\164\163our\143e")','.##"ro\16413")))
+
+;;;; Advanced
+
+(defmacro case (key default : :* pairs)
+  <<#
+  ;; Switch case macro.
+  ;;
+  ;; Precomputes a lookup table (dict), so must switch on a hashable key.
+  ;; Target keys are not evaluated, so don't quote them; they must be known
+  ;; at compile time.
+  ;;
+  ;; The default case is first and required.
+  ;; The remainder are implicitly paired by position.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (any-map x '(1 2 spam .#"42" :eggs)
+  ;;    #..  (case x (print "default")
+  ;;    #..    (0 2 .#"42") (print "even")
+  ;;    #..    (1 3 spam) (print "odd")))
+  ;;    >>> # anyQz_map
+  ;;    ... __import__('builtins').any(
+  ;;    ...   __import__('builtins').map(
+  ;;    ...     (lambda x:
+  ;;    ...       # case
+  ;;    ...       __import__('operator').getitem(
+  ;;    ...         # hissp.macros.._macro_.QzAT_
+  ;;    ...         (lambda *xs:[*xs])(
+  ;;    ...           (lambda :
+  ;;    ...             print(
+  ;;    ...               ('odd'))),
+  ;;    ...           (lambda :
+  ;;    ...             print(
+  ;;    ...               ('even'))),
+  ;;    ...           (lambda :
+  ;;    ...             print(
+  ;;    ...               ('default')))),
+  ;;    ...         {1: 0, 3: 0, 'spam': 0, 0: 1, 2: 1, '42': 1}.get(
+  ;;    ...           x,
+  ;;    ...           (-1)))()),
+  ;;    ...     ((1),
+  ;;    ...      (2),
+  ;;    ...      'spam',
+  ;;    ...      '42',
+  ;;    ...      ':eggs',)))
+  ;;    odd
+  ;;    even
+  ;;    odd
+  ;;    even
+  ;;    default
+  ;;    False
+  ;;
+  ;; See also: `cond`.
+  ;;
+  (when (op#mod (len pairs) 2)
+    (throw (TypeError "Incomplete pair")))
+  (let (kss ([#-2::-2] pairs)
+        ts ([#::-2] pairs))
+    `((op#getitem (@ ,@(map X#`O#,X ts) O#,default)
+                  (.get ,(dict chain#(i#starmap (lambda (i ks)
+                                                  (map X#(@ X i) ks))
+                                                (enumerate kss)))
+                        ,key
+                        -1)))))
+
+(defmacro nil\# x
+  "``nil#`` evaluates as ``x or ()``. Adapter for 'nil punning'."
+  `(|| ,x ()))
+
+(defmacro ^*\# e
+  "``^*#`` 'synexpand' concatenative mini-language expressions
+
+  Walks e expanding any mini-language syntax found.
+
+  The mini-language supports higher-order function manipulation
+  including composition, partial application, and point-free data flow.
+
+  A mini-language expression is a tuple beginning with an element
+  containing at least one ``^`` or ``:`` character that is not the first
+  character (to avoid detecting all control words). The remainder form
+  the initial stack.
+
+  The first element must read to a `str` (typically a symbol, control
+  word, or injected string literal), is demunged, and is split into
+  terms on magic characters.
+
+  Syntax expansion builds an expression from the stack of expressions
+  operated on by the mini-language terms. The result is the stack
+  spliced into a `prog1` (or the element itself if only one remains).
+
+  The
+  `^#<QzHAT_QzHASH_>`,
+  `^^#<QzHAT_QzHAT_QzHASH_>`,
+  `^^^#<QzHAT_QzHAT_QzHAT_QzHASH_>`, and
+  `^^^^#<QzHAT_QzHAT_QzHAT_QzHAT_QzHASH_>` macros apply to terms and
+  wrap a ``^*#`` expression in a lambda of arity 1-4 (respectively)
+  using their parameters as the initial stack.
+
+  The terms are applied right-to-left, like function calls.
+  Magic characters are
+
+  ``,`` -data (Suffix)
+     Interprets callable term as data.
+  ``^`` -depth (Suffix)
+     Increases arity of a term. Assume depth 1 otherwise. Can be repeated.
+     Write after -data.
+  ``/`` DROP (term)
+     Removes expression (at depth).
+  ``&`` PICK (term)
+     Copies expression (at depth) and pushes. Non-literal expressions
+     are extracted to a local first (using `let`), and the resulting
+     symbol is copied instead.
+  ``@`` ROLL (term, default depth 2)
+     Pops expression (at depth) and pushes.
+  ``>`` MARK (term, default depth 0)
+     Inserts a sentinel object for PACK (at depth).
+  ``<`` PACK (term)
+     Pops to the first MARK (if any) and pushes as tuple.
+     With depth, looks tuple up on the next expression.
+     Used for invocations.
+  ``*`` SPLAT (term)
+     Splices an iterable (in-place, at depth).
+  ``:`` NOP (no depth)
+     Has no effect. A separator when no other magic applies.
+
+  They can be escaped with a backtick (:literal:`\``).
+
+  Other terms are either callables or data, and read as Lissp.
+
+  Callables (default depth 1) pop args to their depth and push their
+  result. Combine with a datum for partial application.
+
+  .. code-block:: REPL
+
+     #> (define decrement ^#sub^@1)
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   decrement=(lambda _QzX7FS3TFJz_x:
+     ...               # hissp.macros.._macro_.QzHAT_QzSTAR_QzHASH_
+     ...               sub(
+     ...                 _QzX7FS3TFJz_x,
+     ...                 (1))))
+
+     #> (decrement 5)
+     >>> decrement(
+     ...   (5))
+     4
+
+  Data terms just push themselves on the stack (default depth 0).
+
+  .. code-block:: REPL
+
+     #> ^*#(<`@,1:2:3)
+     >>> # QzAT_
+     ... (lambda *xs:[*xs])(
+     ...   (1),
+     ...   (2),
+     ...   (3))
+     [1, 2, 3]
+
+  Increasing the depth of data to 1 implies a lookup on the next
+  expression. Methods always need a self, so they can be converted to
+  attribute lookups at the default depth of 1. Combine them to drill
+  into complex data structures.
+
+  .. code-block:: REPL
+
+     #> (^#.__class__.__name__:'spam^ (dict : spam 'eggs))
+     >>> (lambda _QzX7FS3TFJz_x:
+     ...   # hissp.macros.._macro_.QzHAT_QzSTAR_QzHASH_
+     ...   __import__('operator').attrgetter(
+     ...     '__class__.__name__')(
+     ...     __import__('operator').getitem(
+     ...       _QzX7FS3TFJz_x,
+     ...       'spam')))(
+     ...   dict(
+     ...     spam='eggs'))
+     'str'
+
+  Terms are categorized as callable or data at read time. Literals are
+  always data, but a term that reads as a `tuple` or `str` type may be
+  ambiguous, in which case it's presumed callable, unless it ends with a
+  ``,``.
+
+  .. code-block:: REPL
+
+     #> (define prod ^#reduce^mul,)
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   prod=(lambda _QzX7FS3TFJz_x:
+     ...          # hissp.macros.._macro_.QzHAT_QzSTAR_QzHASH_
+     ...          reduce(
+     ...            mul,
+     ...            _QzX7FS3TFJz_x)))
+
+     #> (en#prod 1 2 3)
+     >>> (lambda *_Qz6RFWTTVXz_xs:
+     ...   prod(
+     ...     _Qz6RFWTTVXz_xs))(
+     ...   (1),
+     ...   (2),
+     ...   (3))
+     6
+
+     #> (define geomean ^#pow^prod@truediv^1:len&)
+     >>> # define
+     ... __import__('builtins').globals().update(
+     ...   geomean=(lambda _QzX7FS3TFJz_x:
+     ...             # hissp.macros.._macro_.QzHAT_QzSTAR_QzHASH_
+     ...             pow(
+     ...               prod(
+     ...                 _QzX7FS3TFJz_x),
+     ...               truediv(
+     ...                 (1),
+     ...                 len(
+     ...                   _QzX7FS3TFJz_x)))))
+
+     #> (geomean '(1 10))
+     >>> geomean(
+     ...   ((1),
+     ...    (10),))
+     3.1622776601683795
+
+  "
+  (if-else (&& e (op#is_ tuple (type e)))
+    (let-from (sym : :* args) e
+      (if-else (&& (op#is_ str (type sym))
+                   (re..search ".[:^]" (hissp..demunge sym)))
+        (._rewrite _macro_
+         (re..findall "([/&@<>*:]|(?:[^,^`/&@<>*:]|`[,^/&@<>*:])+)(,?\^*)"
+                      (hissp..demunge sym))
+         : :* (map X#(.^*\# _macro_ X) args))
+        `(,@(map X#(.^*\# _macro_ X) e))))
+    e))
+
+(defmacro _rewrite (program : :* exprs)
+  (if-else (not program)
+    (case (len exprs) `(prog1 ,@exprs)
+      (1) (get#0 exprs))
+    my#
+    (let-from (cmd suffix) (.pop program)
+      (attach my
+        : reader (hissp..reader.Lissp : ns (.get hissp.compiler..NS))
+        is? XY#(op#is_ X (type Y))
+        str? X#(my.is? str X)
+        startswith? XY#(&& (my.str? X) (.startswith X Y))
+        literal? X#(|| (op#eq () X) (not (op#contains (# tuple str) (type X))))
+        quotation? X#(&& (my.is? tuple X) (op#eq 'quote (get#0 X)))
+        control-word? X#(my.startswith? X ":")
+        module-handle? X#(&& (my.str? X) (.endswith X "."))
+        method? X#(my.startswith? X ".")
+        symbol? X#(&& (my.str? X) (.isidentifier (.replace X "." "")))
+        G None
+        exprs (list exprs)
+        arity (.count suffix "^")
+        mark (getattr unittest.mock..sentinel "hissp.>"))
+      (attach my
+        : iexprs (iter my.exprs)
+        obj (next (.reads my.reader (.replace cmd "`" "")))
+        arity+1 (op#add 1 my.arity))
+      (when (&& (op#eq "&" cmd)
+                (not (my.literal? (set@ my.target (op#getitem exprs my.arity))))
+                (not (hissp.reader..is_lissp_string my.target))
+                (not (my.control-word? my.target))
+                (not (my.symbol? my.target))
+                (not (my.quotation? my.target)))
+        (set@ my.G (.format "{}{}" `$#G (hissp.reader..gensym_counter)))
+        (op#setitem my.exprs my.arity my.G))
+      (set@ my.result
+        (case cmd (@ (if-else (|| (my.literal? my.obj)
+                                  (.startswith suffix ",")
+                                  (hissp.reader..is_lissp_string my.obj)
+                                  (my.control-word? my.obj)
+                                  (my.module-handle? my.obj)
+                                  (my.quotation? my.obj))
+                       (if-else my.arity `(op#getitem ,(next my.iexprs) ,my.obj) my.obj)
+                       (if-else (|| my.arity (not (my.method? my.obj)))
+                         `(,my.obj ,@(i#islice my.iexprs my.arity+1))
+                         `((op#attrgetter ',([#1:] my.obj))
+                           ,(next my.iexprs)))))
+              .#"/" (progn (.pop my.exprs my.arity) ())
+              .#"&" (@ (op#getitem my.exprs my.arity))
+              .#"@" (@ (.pop my.exprs my.arity+1))
+              .#">" nil#(.insert my.exprs my.arity my.mark)
+              .#"<" (@ (let (x (tuple (i#takewhile X#(op#ne X my.mark) my.iexprs)))
+                         (if-else suffix
+                           `(op#getitem ,(next my.iexprs) x)
+                           x)))
+              .#"*" (@ :* (i#islice my.iexprs my.arity) :* (next my.iexprs))
+              : ()))
+      (set@ my.result
+        (._rewrite _macro_ program : :* my.result :* my.iexprs))
+      (when my.G
+        (set@ my.result
+          `(let (,my.G ,my.target) ,my.result)))
+      my.result)))
+
+.#`(progn ,@(map X#(let (args (get#(slice X) `($#x $#y $#z $#w))
+                         name (.format "{}#" (op#mul X "^")))
+                     `(defmacro ,(hissp..munge name) (,'terms)
+                        ',(.format "``{}`` 'synexpand-{X}'.
+
+Creates a lambda of arity {X} containing a `^*#<QzHAT_QzSTAR_QzHASH_>`
+(synexpand) applied with terms to a tuple of the parameters.
+"
+                                   name : X X)
+                        `(lambda ,',args
+                           (^*\#  (,,'terms ,@',args)))))
+                 (range 1 5)))
+
+(defmacro _spy (expr file)
+  `(let ($#e ,expr)
+     (print (pprint..pformat ',expr : sort_dicts 0)
+            "=>"
+            (repr $#e)
+            : file ,file)
+     $#e))
+
+(defmacro spy\# (expr : file 'sys..stderr)
+  "``spy#`` Print e => its value to the file. Return the value.
+
+  Typically used to debug a Lissp expression.
+
+  .. code-block:: REPL
+
+     #> (op#add 5 spy#!sys..stdout(op#mul 7 3))
+     >>> __import__('operator').add(
+     ...   (5),
+     ...   # hissp.._macro_._spy
+     ...   # hissp.macros.._macro_.let
+     ...   (lambda _Qz764KZBP5z_e=__import__('operator').mul(
+     ...     (7),
+     ...     (3)):(
+     ...     __import__('builtins').print(
+     ...       __import__('pprint').pformat(
+     ...         ('operator..mul',
+     ...          (7),
+     ...          (3),),
+     ...         sort_dicts=(0)),
+     ...       ('=>'),
+     ...       __import__('builtins').repr(
+     ...         _Qz764KZBP5z_e),
+     ...       file=__import__('sys').stdout),
+     ...     _Qz764KZBP5z_e)[-1])())
+     ('operator..mul', 7, 3) => 21
+     26
+
+  See also: `print`, `doto`, `progn`.
+  "
+  `(hissp.._macro_._spy ,expr ,file))
+
+(defmacro time\# (expr : file 'sys..stderr)
+  "``time#`` Print ms elapsed running e to the file. Return its value.
+
+  Typically used when optimizing a Lissp expression.
+
+  .. code-block:: REPL
+
+     #> time#!sys..stdout(time..sleep .05)
+     >>> # hissp.macros.._macro_.let
+     ... (lambda _QzPMWTVFTZz_time=__import__('time').time_ns:
+     ...   # hissp.macros.._macro_.letQz_from
+     ...   (lambda _QzPMWTVFTZz_start,_QzPMWTVFTZz_val,_QzPMWTVFTZz_end:(
+     ...     __import__('builtins').print(
+     ...       ('time# ran'),
+     ...       __import__('pprint').pformat(
+     ...         ('time..sleep',
+     ...          (0.05),),
+     ...         sort_dicts=(0)),
+     ...       ('in'),
+     ...       __import__('operator').truediv(
+     ...         __import__('operator').sub(
+     ...           _QzPMWTVFTZz_end,
+     ...           _QzPMWTVFTZz_start),
+     ...         __import__('decimal').Decimal(
+     ...           (1000000.0))),
+     ...       ('ms'),
+     ...       file=__import__('sys').stdout),
+     ...     _QzPMWTVFTZz_val)[-1])(
+     ...     *# hissp.macros.._macro_.QzAT_
+     ...      (lambda *xs:[*xs])(
+     ...        _QzPMWTVFTZz_time(),
+     ...        __import__('time').sleep(
+     ...          (0.05)),
+     ...        _QzPMWTVFTZz_time())))()
+     time# ran ('time..sleep', 0.05) in ... ms
+
+  See also: `timeit`.
+  "
+  `(let ($#time time..time_ns)
+     (let-from ($#start $#val $#end) (@ ($#time) ,expr ($#time))
+       (print "time# ran"
+              (pprint..pformat ',expr : sort_dicts 0)
+              "in"
+              (op#truediv (op#sub $#end $#start)
+                          (decimal..Decimal 1e6))
+              "ms"
+              : file ,file)
+       $#val)))
+
+(defmacro avow (e predicate : :* args)
+  <<#
+  ;; Anaphoric. Raises `AssertionError` `unless` (-> e predicate).
+  ;;
+  ;; Additional arguments are evaluated in a context where ``it`` refers
+  ;; to the result of e. These (if any) are passed to the
+  ;; `AssertionError`. Evaluates to the result of e.
+  ;;
+  ;; Assertions document assumptions that should never be false; only
+  ;; raise `AssertionError`\ s to fail fast when there is a bug in your
+  ;; code violating one, which can never happen if the code was written
+  ;; correctly. Though implemented as exceptions in Python, they should
+  ;; almost never be caught, except (perhaps) by a supervising system
+  ;; (such as a REPL) capable of dealing with broken subsystems. They
+  ;; are not to be used like normal exceptions to handle expected cases.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (avow 7 (X#.#"X%2 == 0")
+  ;;    #..  it "That's odd.")
+  ;;    >>> # avow
+  ;;    ... # hissp.macros.._macro_.let
+  ;;    ... (lambda it=(7):(
+  ;;    ...   # hissp.macros.._macro_.unless
+  ;;    ...   (lambda b,a:()if b else a())(
+  ;;    ...     # hissp.macros.._macro_.Qz_QzGT_
+  ;;    ...     (lambda X:X%2 == 0)(
+  ;;    ...       it),
+  ;;    ...     (lambda :
+  ;;    ...       # hissp.macros.._macro_.throw
+  ;;    ...       # hissp.macros.._macro_.throwQzSTAR_
+  ;;    ...       (lambda g:g.close()or g.throw)(c for c in'')(
+  ;;    ...         __import__('builtins').AssertionError(
+  ;;    ...           it,
+  ;;    ...           ("That's odd."))))),
+  ;;    ...   it)[-1])()
+  ;;    Traceback (most recent call last):
+  ;;      ...
+  ;;    AssertionError: (7, "That's odd.")
+  ;;
+  ;; See also: `assert`, `assure`, `throw`.
+  ;;
+  `(let (,'it ,e)
+     (unless (-> ,'it ,predicate)
+       (throw (AssertionError ,@args)))
+     ,'it))
+
+(defmacro assure (e predicate : :* args)
+  <<#
+  ;; Anaphoric. Raises `AssertionError` `unless` (-> e predicate).
+  ;;
+  ;; As `avow`, but expansion is simply ``e`` when `__debug__` is off:
+  ;;
+  ;; .. code-block:: console
+  ;;
+  ;;     $ python -Om hissp -c "(print (assure 0 bool))"
+  ;;     0
+  ;;
+  ;;     $ lissp -c "(print (assure 0 bool))"
+  ;;     Hissp abort!
+  ;;     Traceback (most recent call last):
+  ;;       ...
+  ;;     AssertionError
+  ;;
+  ;; Note that for pre-compiled code, it's the `__debug__` state at
+  ;; compile time, not at run time, that determines if assure
+  ;; assertions are turned on.
+  ;;
+  ;; For internal integrity checks, prefer `avow` to `assure`, unless
+  ;; profiling indicates the check is unacceptably expensive in
+  ;; production, and the risk of not checking is acceptable; assume
+  ;; `__debug__` will later be turned off.
+  ;;
+  ;; Also useful at the top level for quick unit tests in smaller
+  ;; projects, because they can be turned off. Larger projects may be
+  ;; better off with `unittest` and separated test modules, which need
+  ;; not be distributed and likely produce better error messages.
+  ;;
+  ;; .. code-block:: REPL
+  ;;
+  ;;    #> (assure 7 (X#.#"X%2 == 0")
+  ;;    #..  it "That's odd.")
+  ;;    >>> # assure
+  ;;    ... # hissp.macros.._macro_.avow
+  ;;    ... # hissp.macros.._macro_.let
+  ;;    ... (lambda it=(7):(
+  ;;    ...   # hissp.macros.._macro_.unless
+  ;;    ...   (lambda b,a:()if b else a())(
+  ;;    ...     # hissp.macros.._macro_.Qz_QzGT_
+  ;;    ...     (lambda X:X%2 == 0)(
+  ;;    ...       it),
+  ;;    ...     (lambda :
+  ;;    ...       # hissp.macros.._macro_.throw
+  ;;    ...       # hissp.macros.._macro_.throwQzSTAR_
+  ;;    ...       (lambda g:g.close()or g.throw)(c for c in'')(
+  ;;    ...         __import__('builtins').AssertionError(
+  ;;    ...           it,
+  ;;    ...           ("That's odd."))))),
+  ;;    ...   it)[-1])()
+  ;;    Traceback (most recent call last):
+  ;;      ...
+  ;;    AssertionError: (7, "That's odd.")
+  ;;
+  ;; See also: `assert`.
+  ;;
+  (if-else __debug__
+    `(avow ,e ,predicate ,@args)
+    e))

@@ -1,0 +1,14 @@
+hissp/__init__.py,sha256=hvA92IW9F7ta6fKGI1TSEbC-a4b2WtgZfcfaexBNuFo,2520
+hissp/__main__.py,sha256=m6mQINawIm2qGRtF-fVpRTluAyOpsFmugXndzZf3dSg,1927
+hissp/compiler.py,sha256=Nr5NLESeubpbsowiyuj1m8hbd1y4PmRsZvET4GgMXnQ,18896
+hissp/macros.lissp,sha256=qjqZr1m89I3L7jZsd02wWkcLUezrTq3e53xkA0e_pWw,96125
+hissp/macros.py,sha256=THPI9O8qHLttnS4L4UBK5l2vPhpym-ilL8J45rYMidA,257822
+hissp/munger.py,sha256=2tV5DqtzK3smibU04YOLo4r_04ZhfmUgC0FaIgFtYes,5870
+hissp/reader.py,sha256=9zf13jW7v5ryR_g4QzFcoiJUt0j1sW7BtG_Xz1mxo1o,20531
+hissp/repl.py,sha256=y3RPdCTbeqnGKIeLzMAs1HyjMmpumh0wNKDz2NTHpEA,3569
+hissp-0.4.0.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+hissp-0.4.0.dist-info/METADATA,sha256=A_1-dMq4V2VNiVw_Rwy7uQJg64t-1jaKYZbzI4kVc0o,28422
+hissp-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hissp-0.4.0.dist-info/entry_points.txt,sha256=vUC6DOnH6JWU26asY7EA9Wb03-UuP1bz48pni8uK-Mc,46
+hissp-0.4.0.dist-info/top_level.txt,sha256=AudQVCWV320G1jGMPjyRmMhcop5FEBodfNyc65R_bh0,6
+hissp-0.4.0.dist-info/RECORD,,
