@@ -1,0 +1,178 @@
+ENV:
+  testing113:
+    uri: http://200.200.101.113/api
+    user: CRC78
+    password: Admin@123
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+    company: ''
+    sponsor: '20210729'
+    study: S001
+    life_cycle: dev
+    db:
+      host: 200.200.101.113
+      user: root
+      pwd: Admin123
+      database: eclinical_design_dev_159
+      port: 3306
+  publish_rule:
+    uri: http://200.200.101.97/api
+    user: CPC01
+    password: Admin@123
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+    company: ''
+    sponsor: chenpengcheng22
+    study: G-798
+    life_cycle: dev
+    db:
+      host: 127.0.0.1
+      user: root
+      pwd: '123456'
+      database: prod
+      port: 3306
+  us_prod:
+    uri: https://ec.eclinical.edetekapps.com/api
+    user: CPC01
+    password: Admin@123
+    company: Melen
+    sponsor: '20210729'
+    study: S-159
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  "\u773C\u5185\u665A\u671F\u89C6\u7F51\u819C\u6BCD\u7EC6\u80DE\u7624\u52A8\u9759\u8109\u8054\u5408\u5316\u7597\u7684RCT\u7814\u7A76":
+    uri: https://crip-ec.shdc.org.cn/api
+    user: data_import
+    password: Admin@12345
+    company: ''
+    sponsor: "\u4E0A\u6D77\u4EA4\u901A\u5927\u5B66\u533B\u5B66\u9662\u9644\u5C5E\u7B2C\
+      \u4E5D\u4EBA\u6C11\u533B\u9662"
+    study: "\u773C\u5185\u665A\u671F\u89C6\u7F51\u819C\u6BCD\u7EC6\u80DE\u7624\u52A8\
+      \u9759\u8109\u8054\u5408\u5316\u7597\u7684RCT\u7814\u7A76"
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  US_DEV_PORTAL_ADMIN:
+    uri: https://ec.eclinical-dev.edetekapps.com/api
+    user: chengdu-dev
+    password: Admin123edc40@uat
+    company: Melen
+    sponsor: '20210729'
+    study: S-159
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  US_DEMO_PORTAL_ADMIN:
+    uri: https://ec4.ec4demo.edetekapps.com/api
+    user: chengdu-dev
+    password: Admin123edc40@uat
+    company: Melen
+    sponsor: '20210729'
+    study: S-159
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  US_DEMO_CTMS:
+    uri: https://ec4.ec4demo.edetekapps.com/api
+    user: YHL
+    password: Admin@123
+    company: ''
+    sponsor: Summit
+    study: ''
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  US_DEMO_CTMS_EDETEK:
+    uri: https://ec4.ec4demo.edetekapps.com/api
+    user: chenpengcheng
+    password: Admin@1234
+    company: ''
+    sponsor: Edetek
+    study: ''
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  US_DEMO_DESIGN_EDETEK:
+    uri: https://ec4.ec4demo.edetekapps.com/api
+    user: chenpengcheng
+    password: Admin@1234
+    company: ''
+    sponsor: Edetek
+    study: Demo_oncology
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  NT-125-101:
+    uri: https://ec.eclinical.edetekapps.com/api
+    user: liaoqi
+    password: 12345678@Edetek
+    company: Neogene Therapeutics
+    sponsor: Neogene Therapeutics
+    study: NT-125-101
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  SHJD:
+    uri: http://eclinical.shsmu.edu.cn/api
+    user: test1
+    password: Admin@123
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+    company:
+    sponsor: "临床研究中心"
+    study: ''
+    life_cycle: dev
+  US_DEMO_EDETEK_PORTAL:
+    uri: https://ec4.ec4demo.edetekapps.com/api
+    user: chenpengcheng
+    password: Admin@1234
+    company: ''
+    sponsor: Edetek
+    study: Demo_oncology
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  AWS_Test:
+    uri: http://dev-03-app-01.chengdudev.edetekapps.cn/api
+    user: CPC11
+    password: Admin@123
+    company: ''
+    sponsor: eDiary0311
+    study: Demo_oncology
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  AWS_Test2:
+    uri: http://dev-03-app-01.chengdudev.edetekapps.cn/api
+    user: CpcComapny
+    password: Admin@123
+    company:
+    sponsor:
+    study:
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  DEV_01:
+    uri: http://dev-01-app-01.chengdudev.edetekapps.cn/api
+    user: CPC14
+    password: Admin@123
+    company:
+    sponsor: chenpengcheng07
+    study:
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  DEV_03:
+    uri: http://dev-03-app-01.chengdudev.edetekapps.cn/api
+    user: CPC01
+    password: Admin@123
+    company: "Edetek"
+    sponsor: chenpengcheng
+    study: T[836]
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+
+  DEV_03_SUPER:
+    uri: http://dev-03-app-01.chengdudev.edetekapps.cn/api
+    user: chenpengcheng
+    password: admin123
+    company:
+    sponsor:
+    study:
+    life_cycle:
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
+  US_DEV:
+    uri: https://ec.eclinical-dev.edetekapps.com/api
+    user: chenpengcheng
+    password: Admin@1234
+    company: EDETEK
+    sponsor: EDETEK-2
+    study: DEMO-TSM
+    life_cycle: dev
+    public_key: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCTYnHdPs3A6JDZanoNumpZqoTam3B4yMiRblbaSmxGs8tW5AUEGfdevRZJn3zg/g0KETIptFXJ7oFbhYdmeo5Q8XEQnrXU1Q9GKyVZBpfJujGD7y3MaMYw29TwUdAuWDm0aWAqiwlqR2B9IWPkVBysIp2BypwfMrpe5IutObo3jQIDAQAB
