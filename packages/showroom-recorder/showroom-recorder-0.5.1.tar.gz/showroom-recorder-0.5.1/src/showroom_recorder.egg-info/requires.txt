@@ -1,0 +1,5 @@
+emoji
+ffmpeg-python
+pytz
+requests
+websocket_client
