@@ -1,0 +1,12 @@
+element_animal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+element_animal/genotyping.py,sha256=dqgMCItRVT7zPVUBESSbaqF3mdQOO3ioibE8QMgRvQs,6893
+element_animal/subject.py,sha256=i7riXMIT6i0ky4y8eOqUz9wdKLHZnbxWr9AUq7z20RU,8223
+element_animal/surgery.py,sha256=hJvMfe5MbVV6ahJqij59oXqdFdjk2q8WxoZHR242HLY,5413
+element_animal/version.py,sha256=GC54tKgW6X3_4BCSYyFDHjJKwaXVTw13QD-S49XscDA,46
+element_animal/export/__init__.py,sha256=Q_N0rNRsFhM9BVx1taB5xJwx1JJcV1pZ1a8FW_vr5zg,62
+element_animal/export/nwb.py,sha256=VarXGQDWBnlMjju6cXkIxm3CcbSsP4yKxyF0n84NVEQ,1194
+element_animal-0.1.8.dist-info/LICENSE,sha256=ro6gxRbJJ9U6YPqlJexU1Bs8PWXjhist0gHXStaevi8,1066
+element_animal-0.1.8.dist-info/METADATA,sha256=CqLzEwekLsCPrawLYkJPJ073KIzI6nYNLYmw0IRa4O4,1426
+element_animal-0.1.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+element_animal-0.1.8.dist-info/top_level.txt,sha256=by5zqm8sar_lSkn32PZ64GoKRIawGdZamq7TJ_BUvMo,15
+element_animal-0.1.8.dist-info/RECORD,,
