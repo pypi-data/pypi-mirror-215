@@ -1,0 +1,8 @@
+setup.py
+ensemble_core/__init__.py
+ensemble_core/login.py
+ensemble_core.egg-info/PKG-INFO
+ensemble_core.egg-info/SOURCES.txt
+ensemble_core.egg-info/dependency_links.txt
+ensemble_core.egg-info/requires.txt
+ensemble_core.egg-info/top_level.txt
