@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+dlroWolleH/__init__.py
+dlroWolleH/dlroWolleH.py
+dlroWolleH.egg-info/PKG-INFO
+dlroWolleH.egg-info/SOURCES.txt
+dlroWolleH.egg-info/dependency_links.txt
+dlroWolleH.egg-info/top_level.txt
