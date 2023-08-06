@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/powerbeatsvr/__init__.py
+src/powerbeatsvr/__main__.py
+src/powerbeatsvr/bs_lib.py
+src/powerbeatsvr/reader.py
+src/powerbeatsvr/writer.py
+src/powerbeatsvr.egg-info/PKG-INFO
+src/powerbeatsvr.egg-info/SOURCES.txt
+src/powerbeatsvr.egg-info/dependency_links.txt
+src/powerbeatsvr.egg-info/entry_points.txt
+src/powerbeatsvr.egg-info/requires.txt
+src/powerbeatsvr.egg-info/top_level.txt
