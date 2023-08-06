@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: color-pprint
+Version: 0.0.2
+Summary: A simple package to pretty-print lists dicts, tuples, etc. with color and highlight. (documentation SOON)
+Home-page: https://github.com/mccoderpy/color-pprint
+Author: mccoder.py
+Author-email: mccuber04@outlook.de
+License: MIT
+Project-URL: Source, https://github.com/mccoderpy/color-pprint/
+Project-URL: Support, https://discord.gg/sb69muSqsg
+Project-URL: Issue Tracker, https://github.com/mccoderpy/color-pprint/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Printing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama (>=0.3.7)
+Requires-Dist: multidict (>=5.1.0)
+
+# color-pprint
+
+A simple package to pretty-print [lists](https://docs.python.org/3/library/stdtypes.html#list), [dicts](https://docs.python.org/3/library/stdtypes.html#dict), [tuples](https://docs.python.org/3/library/stdtypes.html#tuple), etc. with color and highlight.
+
+Documentation SOON 	&#8482;
+
+### You need help? Or have ideas/feedback?
+___________________________________________
+
+Open an [Issue](https://github.com/mccoderpy/color-pprint/issues)/[Pull request](https://github.com/mccoderpy/color-pprint/pulls) on GitHub, join the [support-server](https://discord.gg/sb69muSqsg) or send me a direct-message on [Discord](https://discord.com/channels/@me): ``mccuber04#2960``
+
+### Installing
+_______________
+
+To install it from [PyPI](https://pypi.org/project/color-pprint) use:
+```sh
+# Linux/macOS
+python3 -m pip install -U color-pprint
+
+# Windows
+py -3 -m pip install -U color-pprint
+```
+
+To install it from [GitHub](https://github.com/mccoderpy/color-pprint) use:
+```sh
+# Linux/macOS
+python3 -m pip install -U git+https://github.com/mccoderpy/color-pprint.git
+
+# Windows
+py -m pip install -U git+https://github.com/mccoderpy/color-pprint.git
+```
+
+______________________________________
+
+**You want to support me by sponsoring my projects? -> [GitHub sponsors](https://github.com/sponsors/mccoderpy)**
