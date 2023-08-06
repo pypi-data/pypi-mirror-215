@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/pyhackrf/__init__.py
+src/pyhackrf/cinterface.py
+src/pyhackrf/libhackrf.py
+src/pyhackrf2.egg-info/PKG-INFO
+src/pyhackrf2.egg-info/SOURCES.txt
+src/pyhackrf2.egg-info/dependency_links.txt
+src/pyhackrf2.egg-info/top_level.txt
