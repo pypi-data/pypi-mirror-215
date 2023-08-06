@@ -1,0 +1,3 @@
+[console_scripts]
+asole=asole.__main__:main
+
