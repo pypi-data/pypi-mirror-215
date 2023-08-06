@@ -1,0 +1,8 @@
+capstone
+unicorn
+keystone-engine
+PyQt6
+Pygments
+lief
+loguru
+prompt_toolkit
