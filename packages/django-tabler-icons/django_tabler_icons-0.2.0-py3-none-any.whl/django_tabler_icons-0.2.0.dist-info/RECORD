@@ -1,0 +1,11 @@
+tabler_icons/__init__.py,sha256=vc5mKFFnmebEqCPDZL_f1DqBdDVctuqSJt9raSL2yKY,282
+tabler_icons/utils.py,sha256=nMPdEA0sNWdMxPPJI9nik_WtMeETJrSg3N50Mk6Mq14,426
+tabler_icons/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabler_icons/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabler_icons/management/commands/download_icons.py,sha256=tJxYmke4CISPDA2esWtKazP7_uXdS02iPoX_RkGoTts,1234
+tabler_icons/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabler_icons/templatetags/tabler_icons.py,sha256=-7YQq1XkqwMK0jAnGBLPuDOVGtSUNunXukQvcydXo6s,1066
+django_tabler_icons-0.2.0.dist-info/METADATA,sha256=UHiKIHVbeT8m_T-thjIU6d9NFy-RooSwSv699MAl8sY,1773
+django_tabler_icons-0.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_tabler_icons-0.2.0.dist-info/top_level.txt,sha256=imC9wpOFSVeM23AE3-WUBgssrjHWECQRVuzrx9oN-VE,13
+django_tabler_icons-0.2.0.dist-info/RECORD,,
