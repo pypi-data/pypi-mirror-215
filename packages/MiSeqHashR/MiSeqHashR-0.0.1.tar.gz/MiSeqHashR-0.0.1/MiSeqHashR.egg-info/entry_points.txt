@@ -1,0 +1,3 @@
+[console_scripts]
+MiSeqHashR = hashr.miseq_hashr:cli
+
