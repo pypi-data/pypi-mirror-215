@@ -1,0 +1,11 @@
+appose/__init__.py,sha256=IwFrDvIa6QOgV_RVgbIUfwyzswWB4RckLrzA9cts6IE,5340
+appose/environment.py,sha256=m1a7166dJq69XPWX53d63KoITqmH4fKMNPKbEGSxeC0,7524
+appose/paths.py,sha256=qBEWWf0LB0Cpk-l7u5uoPx9DTley6HltMTg0vJ2iFEQ,2156
+appose/python_worker.py,sha256=ZR6AtWXXk_Xcp0nSoWehbl7LYc6z18ZTTvo4QjO_MwU,6474
+appose/service.py,sha256=LqchMIxQXV6YF_l8sAGEyJapc2lSL6KBttcbLzdABFw,11966
+appose/types.py,sha256=uuVNLt21eT3JEPtRQCMQ_IcFnp2yLgrJTSxzAnxkKFY,1618
+appose-0.1.0.dist-info/LICENSE.txt,sha256=BOQExkI6YKvnUVMUqDbPuSxsY7XXL1XRUTTbnfEWII0,1306
+appose-0.1.0.dist-info/METADATA,sha256=6ohYqhKiVnCvof0UX4HAnMmarKKIyi7hRScNtEO1T9E,5477
+appose-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+appose-0.1.0.dist-info/top_level.txt,sha256=oqHhw2QGlaFfH3jMR9H5Cd6XYHdEv5DvK1am0iEFPW0,7
+appose-0.1.0.dist-info/RECORD,,
