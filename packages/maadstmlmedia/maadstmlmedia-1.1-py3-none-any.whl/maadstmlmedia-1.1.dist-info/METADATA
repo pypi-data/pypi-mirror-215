@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: maadstmlmedia
+Version: 1.1
+Summary: Multi-Agent Accelerator for Data Science (MAADS): Transactional Machine Learning
+Home-page: https://github.com/smaurice101/transactionalmachinelearning
+Author: Sebastian Maurice
+Author-email: sebastian.maurice@otics.ca
+License: MIT License
+Keywords: multi-agent, transactional machine learning, audio, video, images, data streams, data science, optimization, prescriptive analytics, machine learning, automl,auto-ml,artificial intelligence,predictive analytics,advanced analytics
+Description-Content-Type: text/markdown
+License-File: license.txt
+Requires-Dist: aiohttp (>=3.6.2)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: validators (>=0.14.2)
+Requires-Dist: wheel (>=0.33.6)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=0.25.3)
+Requires-Dist: numpy-indexed (>=0.3.5)
+Requires-Dist: pdfminer
+Requires-Dist: scikit-learn
+Requires-Dist: bs4
+Requires-Dist: rake-nltk
+Requires-Dist: textblob
+Requires-Dist: langchain
+Requires-Dist: xmltodict
+Requires-Dist: pdfquery
+
+**Multi-Agent Accelerator for Data Science Using Transactional Machine Learning (MAADSTMLMEDIA)**
+
+*Revolutionizing Data Stream Science with Transactional Machine Learning*
+
+**Overview**
+
+*MAADSTMLMEDIA allows users to extract text from images, audio and video.*  
+
+**Compatibility**
+    - Python 3.7 or greater
+    - Minimal Python skills needed
+
+**Copyright**
+   - Author: Sebastian Maurice, PhD
+   
+**Installation**
+   - At the command prompt write:
+     **pip install maadstmlmedia**
+     - This assumes you have [Downloaded Python](https://www.python.org/downloads/) and installed it on your computer.  
+
+
+- **viperimagetotext**
+  - Extracts text from images like PNG, JPG, etc., which can then be streamed to kafka.
+
+- **viperaudiototext**
+  - Extracts text from audio files like WAV, etc., which can then be streamed to kafka.
+
+- **vipervideototext**
+  - Extracts text from video files like MP4, etc., which can then be streamed to kafka.
+
+
+**First import the Python library.**
+
+**import maadstmlmedia**
+
+
+**1. maadstmlmedia.viperimagetotext(imagefilename)**
+
+**Parameters:**	Extract text from images.
+
+*imagefilename* : string, required
+
+- Image filename like PNG, JPG etc.
+
+RETURNS: Text in image.
+
+**2. maadstmlmedia.vipervideototext(videofilename)**
+
+**Parameters:**	Extract text from video.
+
+*videofilename* : string, required
+
+- Video filename like MP4 etc.
+
+RETURNS: Text in video.
+
+**3. maadstmlmedia.viperaudiototext(audiofilename)**
+
+**Parameters:**	Extract text from audio
+
+*audiofilename* : string, required
+
+- Audio filename like WAV etc.
+
+RETURNS: Text in audio.
