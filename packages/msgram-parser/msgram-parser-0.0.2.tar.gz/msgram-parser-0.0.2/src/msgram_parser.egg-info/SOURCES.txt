@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/main.py
+src/msgram_parser.egg-info/PKG-INFO
+src/msgram_parser.egg-info/SOURCES.txt
+src/msgram_parser.egg-info/dependency_links.txt
+src/msgram_parser.egg-info/requires.txt
+src/msgram_parser.egg-info/top_level.txt
+src/plugins/__init__.py
+src/plugins/dinamic/__init__.py
+src/plugins/domain/generic_class.py
+src/plugins/statics/__init__.py
+src/plugins/statics/sonarqube.py
+src/services/__init__.py
+tests/tests_main_file.py
