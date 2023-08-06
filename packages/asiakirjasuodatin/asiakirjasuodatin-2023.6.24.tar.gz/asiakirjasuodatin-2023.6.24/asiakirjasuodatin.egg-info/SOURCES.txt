@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+asiakirjasuodatin/__init__.py
+asiakirjasuodatin/__main__.py
+asiakirjasuodatin/api.py
+asiakirjasuodatin/cli.py
+asiakirjasuodatin.egg-info/PKG-INFO
+asiakirjasuodatin.egg-info/SOURCES.txt
+asiakirjasuodatin.egg-info/dependency_links.txt
+asiakirjasuodatin.egg-info/entry_points.txt
+asiakirjasuodatin.egg-info/requires.txt
+asiakirjasuodatin.egg-info/top_level.txt
+test/test_api.py
+test/test_cli.py

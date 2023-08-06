@@ -1,0 +1,12 @@
+msgspec>=0.16.0
+pandocfilters>=1.5.0
+
+[dev]
+black
+coverage
+hypothesis
+mypy
+pytest
+pytest-cov
+pytest-flake8
+ruff
