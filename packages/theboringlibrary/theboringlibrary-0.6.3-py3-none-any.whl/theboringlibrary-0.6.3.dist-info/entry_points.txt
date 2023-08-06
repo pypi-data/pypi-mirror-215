@@ -1,0 +1,3 @@
+[console_scripts]
+theboringlibrary=theboringlibrary.core:print_nothing
+
