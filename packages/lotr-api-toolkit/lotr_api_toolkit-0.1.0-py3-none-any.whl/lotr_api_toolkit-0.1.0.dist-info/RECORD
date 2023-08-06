@@ -1,0 +1,7 @@
+api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api/movie_api.py,sha256=k_m0PD-V3CJFpWIm7TuGffCkWxEKQfsQ5Rqaa44YuwU,513
+api/quote_api.py,sha256=YLxbexKZSZAwAkym1MaKQ_o8afy_dlk1vrVBAOQpoec,720
+lotr_api_toolkit-0.1.0.dist-info/METADATA,sha256=EPwcPRybTuxw0lhFya1ry0VkUyBv7sF7Z7oPB8pdvRk,204
+lotr_api_toolkit-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lotr_api_toolkit-0.1.0.dist-info/top_level.txt,sha256=0XF5TFwfelCuuPcFarhKT7zW-9WUsZmb3a790D78BZE,4
+lotr_api_toolkit-0.1.0.dist-info/RECORD,,
