@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>json/static.zig - source view</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPNJREFUeNpi/P//PwMlgOXHUjly9E0G4hwgZmQiQZMqEK8H4v9QzUEgQSaoADK+zhH9iAGL+C0gDoAaNg9mGLoLfgA1awK9hS9gzgJxA9RQBmQDrgMxJzRMGKE4HYj/Ial5A8QmQLwCJoBsgBYW2+TR1ChDaWt4LOBxKsi/VUh8XiD+gq4IVyzwQAMJBoKwacZlAB8Qf0bi96IZhtOAe1D6LpqaEiz6rmEzQAeIzwGxCJpieFqApo/vQKyJboAaEBsAsSEupwI1MwKjGBTVHOhegMX5UajYRqiBjMgYmj400cVh0XgTiKdC0zhJgJHS7AwQYABm9EAdCKrEfAAAAABJRU5ErkJggg=="/>
+    <style>
+      body{
+        font-family: system-ui, -apple-system, Roboto, "Segoe UI", sans-serif;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      pre > code {
+        display: block;
+        overflow: auto;
+        line-height: normal;
+        margin: 0em;
+      }
+      .tok-kw {
+          color: #333;
+          font-weight: bold;
+      }
+      .tok-str {
+          color: #d14;
+      }
+      .tok-builtin {
+          color: #005C7A;
+      }
+      .tok-comment {
+          color: #545454;
+          font-style: italic;
+      }
+      .tok-fn {
+          color: #900;
+          font-weight: bold;
+      }
+      .tok-null {
+          color: #005C5C;
+      }
+      .tok-number {
+          color: #005C5C;
+      }
+      .tok-type {
+          color: #458;
+          font-weight: bold;
+      }
+      pre {
+        counter-reset: line;
+      }
+      pre .line:before {
+        counter-increment: line;
+        content: counter(line);
+        display: inline-block;
+        padding-right: 1em;
+        width: 2em;
+        text-align: right;
+        color: #999;
+      }
+      
+      .line {
+        width: 100%;
+        display: inline-block;
+      }
+      .line:target {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body{
+            background:#222;
+            color: #ccc;
+        }
+        pre > code {
+            color: #ccc;
+            background: #222;
+            border: unset;
+        }
+        .line:target {
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+            background: #333;
+        }
+        .tok-kw {
+            color: #eee;
+        }
+        .tok-str {
+            color: #2e5;
+        }
+        .tok-builtin {
+            color: #ff894c;
+        }
+        .tok-comment {
+            color: #aa7;
+        }
+        .tok-fn {
+            color: #B1A0F8;
+        }
+        .tok-null {
+            color: #ff8080;
+        }
+        .tok-number {
+            color: #ff8080;
+        }
+        .tok-type {
+            color: #68f;
+        }
+      }
+    </style>
+</head>
+<body>
+<pre><code><span class="line" id="L1"><span class="tok-kw">const</span> std = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;std&quot;</span>);</span>
+<span class="line" id="L2"><span class="tok-kw">const</span> assert = std.debug.assert;</span>
+<span class="line" id="L3"><span class="tok-kw">const</span> Allocator = std.mem.Allocator;</span>
+<span class="line" id="L4"><span class="tok-kw">const</span> ArenaAllocator = std.heap.ArenaAllocator;</span>
+<span class="line" id="L5"><span class="tok-kw">const</span> ArrayList = std.ArrayList;</span>
+<span class="line" id="L6"></span>
+<span class="line" id="L7"><span class="tok-kw">const</span> Scanner = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;./scanner.zig&quot;</span>).Scanner;</span>
+<span class="line" id="L8"><span class="tok-kw">const</span> Token = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;./scanner.zig&quot;</span>).Token;</span>
+<span class="line" id="L9"><span class="tok-kw">const</span> AllocWhen = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;./scanner.zig&quot;</span>).AllocWhen;</span>
+<span class="line" id="L10"><span class="tok-kw">const</span> default_max_value_len = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;./scanner.zig&quot;</span>).default_max_value_len;</span>
+<span class="line" id="L11"><span class="tok-kw">const</span> isNumberFormattedLikeAnInteger = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;./scanner.zig&quot;</span>).isNumberFormattedLikeAnInteger;</span>
+<span class="line" id="L12"></span>
+<span class="line" id="L13"><span class="tok-kw">pub</span> <span class="tok-kw">const</span> ParseOptions = <span class="tok-kw">struct</span> {</span>
+<span class="line" id="L14">    <span class="tok-comment">/// Behaviour when a duplicate field is encountered.</span></span>
+<span class="line" id="L15">    duplicate_field_behavior: <span class="tok-kw">enum</span> {</span>
+<span class="line" id="L16">        use_first,</span>
+<span class="line" id="L17">        @&quot;error&quot;,</span>
+<span class="line" id="L18">        use_last,</span>
+<span class="line" id="L19">    } = .@&quot;error&quot;,</span>
+<span class="line" id="L20"></span>
+<span class="line" id="L21">    <span class="tok-comment">/// If false, finding an unknown field returns an error.</span></span>
+<span class="line" id="L22">    ignore_unknown_fields: <span class="tok-type">bool</span> = <span class="tok-null">false</span>,</span>
+<span class="line" id="L23"></span>
+<span class="line" id="L24">    <span class="tok-comment">/// Passed to json.Scanner.nextAllocMax() or json.Reader.nextAllocMax().</span></span>
+<span class="line" id="L25">    <span class="tok-comment">/// The default for parseFromSlice() or parseFromTokenSource() with a *json.Scanner input</span></span>
+<span class="line" id="L26">    <span class="tok-comment">/// is the length of the input slice, which means error.ValueTooLong will never be returned.</span></span>
+<span class="line" id="L27">    <span class="tok-comment">/// The default for parseFromTokenSource() with a *json.Reader is default_max_value_len.</span></span>
+<span class="line" id="L28">    max_value_len: ?<span class="tok-type">usize</span> = <span class="tok-null">null</span>,</span>
+<span class="line" id="L29">};</span>
+<span class="line" id="L30"></span>
+<span class="line" id="L31"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">Parsed</span>(<span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>) <span class="tok-type">type</span> {</span>
+<span class="line" id="L32">    <span class="tok-kw">return</span> <span class="tok-kw">struct</span> {</span>
+<span class="line" id="L33">        arena: *ArenaAllocator,</span>
+<span class="line" id="L34">        value: T,</span>
+<span class="line" id="L35"></span>
+<span class="line" id="L36">        <span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">deinit</span>(self: <span class="tok-builtin">@This</span>()) <span class="tok-type">void</span> {</span>
+<span class="line" id="L37">            <span class="tok-kw">const</span> allocator = self.arena.child_allocator;</span>
+<span class="line" id="L38">            self.arena.deinit();</span>
+<span class="line" id="L39">            allocator.destroy(self.arena);</span>
+<span class="line" id="L40">        }</span>
+<span class="line" id="L41">    };</span>
+<span class="line" id="L42">}</span>
+<span class="line" id="L43"></span>
+<span class="line" id="L44"><span class="tok-comment">/// Parses the json document from `s` and returns the result packaged in a `std.json.Parsed`.</span></span>
+<span class="line" id="L45"><span class="tok-comment">/// You must call `deinit()` of the returned object to clean up allocated resources.</span></span>
+<span class="line" id="L46"><span class="tok-comment">/// Note that `error.BufferUnderrun` is not actually possible to return from this function.</span></span>
+<span class="line" id="L47"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">parseFromSlice</span>(</span>
+<span class="line" id="L48">    <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>,</span>
+<span class="line" id="L49">    allocator: Allocator,</span>
+<span class="line" id="L50">    s: []<span class="tok-kw">const</span> <span class="tok-type">u8</span>,</span>
+<span class="line" id="L51">    options: ParseOptions,</span>
+<span class="line" id="L52">) ParseError(Scanner)!Parsed(T) {</span>
+<span class="line" id="L53">    <span class="tok-kw">var</span> scanner = Scanner.initCompleteInput(allocator, s);</span>
+<span class="line" id="L54">    <span class="tok-kw">defer</span> scanner.deinit();</span>
+<span class="line" id="L55"></span>
+<span class="line" id="L56">    <span class="tok-kw">return</span> parseFromTokenSource(T, allocator, &amp;scanner, options);</span>
+<span class="line" id="L57">}</span>
+<span class="line" id="L58"></span>
+<span class="line" id="L59"><span class="tok-comment">/// Parses the json document from `s` and returns the result.</span></span>
+<span class="line" id="L60"><span class="tok-comment">/// Allocations made during this operation are not carefully tracked and may not be possible to individually clean up.</span></span>
+<span class="line" id="L61"><span class="tok-comment">/// It is recommended to use a `std.heap.ArenaAllocator` or similar.</span></span>
+<span class="line" id="L62"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">parseFromSliceLeaky</span>(</span>
+<span class="line" id="L63">    <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>,</span>
+<span class="line" id="L64">    allocator: Allocator,</span>
+<span class="line" id="L65">    s: []<span class="tok-kw">const</span> <span class="tok-type">u8</span>,</span>
+<span class="line" id="L66">    options: ParseOptions,</span>
+<span class="line" id="L67">) ParseError(Scanner)!T {</span>
+<span class="line" id="L68">    <span class="tok-kw">var</span> scanner = Scanner.initCompleteInput(allocator, s);</span>
+<span class="line" id="L69">    <span class="tok-kw">defer</span> scanner.deinit();</span>
+<span class="line" id="L70"></span>
+<span class="line" id="L71">    <span class="tok-kw">return</span> parseFromTokenSourceLeaky(T, allocator, &amp;scanner, options);</span>
+<span class="line" id="L72">}</span>
+<span class="line" id="L73"></span>
+<span class="line" id="L74"><span class="tok-comment">/// `scanner_or_reader` must be either a `*std.json.Scanner` with complete input or a `*std.json.Reader`.</span></span>
+<span class="line" id="L75"><span class="tok-comment">/// Note that `error.BufferUnderrun` is not actually possible to return from this function.</span></span>
+<span class="line" id="L76"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">parseFromTokenSource</span>(</span>
+<span class="line" id="L77">    <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>,</span>
+<span class="line" id="L78">    allocator: Allocator,</span>
+<span class="line" id="L79">    scanner_or_reader: <span class="tok-kw">anytype</span>,</span>
+<span class="line" id="L80">    options: ParseOptions,</span>
+<span class="line" id="L81">) ParseError(<span class="tok-builtin">@TypeOf</span>(scanner_or_reader.*))!Parsed(T) {</span>
+<span class="line" id="L82">    <span class="tok-kw">var</span> parsed = Parsed(T){</span>
+<span class="line" id="L83">        .arena = <span class="tok-kw">try</span> allocator.create(ArenaAllocator),</span>
+<span class="line" id="L84">        .value = <span class="tok-null">undefined</span>,</span>
+<span class="line" id="L85">    };</span>
+<span class="line" id="L86">    <span class="tok-kw">errdefer</span> allocator.destroy(parsed.arena);</span>
+<span class="line" id="L87">    parsed.arena.* = ArenaAllocator.init(allocator);</span>
+<span class="line" id="L88">    <span class="tok-kw">errdefer</span> parsed.arena.deinit();</span>
+<span class="line" id="L89"></span>
+<span class="line" id="L90">    parsed.value = <span class="tok-kw">try</span> parseFromTokenSourceLeaky(T, parsed.arena.allocator(), scanner_or_reader, options);</span>
+<span class="line" id="L91"></span>
+<span class="line" id="L92">    <span class="tok-kw">return</span> parsed;</span>
+<span class="line" id="L93">}</span>
+<span class="line" id="L94"></span>
+<span class="line" id="L95"><span class="tok-comment">/// `scanner_or_reader` must be either a `*std.json.Scanner` with complete input or a `*std.json.Reader`.</span></span>
+<span class="line" id="L96"><span class="tok-comment">/// Allocations made during this operation are not carefully tracked and may not be possible to individually clean up.</span></span>
+<span class="line" id="L97"><span class="tok-comment">/// It is recommended to use a `std.heap.ArenaAllocator` or similar.</span></span>
+<span class="line" id="L98"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">parseFromTokenSourceLeaky</span>(</span>
+<span class="line" id="L99">    <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>,</span>
+<span class="line" id="L100">    allocator: Allocator,</span>
+<span class="line" id="L101">    scanner_or_reader: <span class="tok-kw">anytype</span>,</span>
+<span class="line" id="L102">    options: ParseOptions,</span>
+<span class="line" id="L103">) ParseError(<span class="tok-builtin">@TypeOf</span>(scanner_or_reader.*))!T {</span>
+<span class="line" id="L104">    <span class="tok-kw">if</span> (<span class="tok-builtin">@TypeOf</span>(scanner_or_reader.*) == Scanner) {</span>
+<span class="line" id="L105">        assert(scanner_or_reader.is_end_of_input);</span>
+<span class="line" id="L106">    }</span>
+<span class="line" id="L107"></span>
+<span class="line" id="L108">    <span class="tok-kw">var</span> resolved_options = options;</span>
+<span class="line" id="L109">    <span class="tok-kw">if</span> (resolved_options.max_value_len == <span class="tok-null">null</span>) {</span>
+<span class="line" id="L110">        <span class="tok-kw">if</span> (<span class="tok-builtin">@TypeOf</span>(scanner_or_reader.*) == Scanner) {</span>
+<span class="line" id="L111">            resolved_options.max_value_len = scanner_or_reader.input.len;</span>
+<span class="line" id="L112">        } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L113">            resolved_options.max_value_len = default_max_value_len;</span>
+<span class="line" id="L114">        }</span>
+<span class="line" id="L115">    }</span>
+<span class="line" id="L116"></span>
+<span class="line" id="L117">    <span class="tok-kw">const</span> value = <span class="tok-kw">try</span> parseInternal(T, allocator, scanner_or_reader, resolved_options);</span>
+<span class="line" id="L118"></span>
+<span class="line" id="L119">    assert(.end_of_document == <span class="tok-kw">try</span> scanner_or_reader.next());</span>
+<span class="line" id="L120"></span>
+<span class="line" id="L121">    <span class="tok-kw">return</span> value;</span>
+<span class="line" id="L122">}</span>
+<span class="line" id="L123"></span>
+<span class="line" id="L124"><span class="tok-comment">/// The error set that will be returned when parsing from `*Source`.</span></span>
+<span class="line" id="L125"><span class="tok-comment">/// Note that this may contain `error.BufferUnderrun`, but that error will never actually be returned.</span></span>
+<span class="line" id="L126"><span class="tok-kw">pub</span> <span class="tok-kw">fn</span> <span class="tok-fn">ParseError</span>(<span class="tok-kw">comptime</span> Source: <span class="tok-type">type</span>) <span class="tok-type">type</span> {</span>
+<span class="line" id="L127">    <span class="tok-comment">// A few of these will either always be present or present enough of the time that</span>
+</span>
+<span class="line" id="L128">    <span class="tok-comment">// omitting them is more confusing than always including them.</span>
+</span>
+<span class="line" id="L129">    <span class="tok-kw">return</span> <span class="tok-kw">error</span>{</span>
+<span class="line" id="L130">        UnexpectedToken,</span>
+<span class="line" id="L131">        InvalidNumber,</span>
+<span class="line" id="L132">        Overflow,</span>
+<span class="line" id="L133">        InvalidEnumTag,</span>
+<span class="line" id="L134">        DuplicateField,</span>
+<span class="line" id="L135">        UnknownField,</span>
+<span class="line" id="L136">        MissingField,</span>
+<span class="line" id="L137">        LengthMismatch,</span>
+<span class="line" id="L138">    } ||</span>
+<span class="line" id="L139">        std.fmt.ParseIntError || std.fmt.ParseFloatError ||</span>
+<span class="line" id="L140">        Source.NextError || Source.PeekError || Source.AllocError;</span>
+<span class="line" id="L141">}</span>
+<span class="line" id="L142"></span>
+<span class="line" id="L143"><span class="tok-kw">fn</span> <span class="tok-fn">parseInternal</span>(</span>
+<span class="line" id="L144">    <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>,</span>
+<span class="line" id="L145">    allocator: Allocator,</span>
+<span class="line" id="L146">    source: <span class="tok-kw">anytype</span>,</span>
+<span class="line" id="L147">    options: ParseOptions,</span>
+<span class="line" id="L148">) ParseError(<span class="tok-builtin">@TypeOf</span>(source.*))!T {</span>
+<span class="line" id="L149">    <span class="tok-kw">switch</span> (<span class="tok-builtin">@typeInfo</span>(T)) {</span>
+<span class="line" id="L150">        .Bool =&gt; {</span>
+<span class="line" id="L151">            <span class="tok-kw">return</span> <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.next()) {</span>
+<span class="line" id="L152">                .<span class="tok-null">true</span> =&gt; <span class="tok-null">true</span>,</span>
+<span class="line" id="L153">                .<span class="tok-null">false</span> =&gt; <span class="tok-null">false</span>,</span>
+<span class="line" id="L154">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L155">            };</span>
+<span class="line" id="L156">        },</span>
+<span class="line" id="L157">        .Float, .ComptimeFloat =&gt; {</span>
+<span class="line" id="L158">            <span class="tok-kw">const</span> token = <span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_if_needed, options.max_value_len.?);</span>
+<span class="line" id="L159">            <span class="tok-kw">defer</span> freeAllocated(allocator, token);</span>
+<span class="line" id="L160">            <span class="tok-kw">const</span> slice = <span class="tok-kw">switch</span> (token) {</span>
+<span class="line" id="L161">                <span class="tok-kw">inline</span> .number, .allocated_number, .string, .allocated_string =&gt; |slice| slice,</span>
+<span class="line" id="L162">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L163">            };</span>
+<span class="line" id="L164">            <span class="tok-kw">return</span> <span class="tok-kw">try</span> std.fmt.parseFloat(T, slice);</span>
+<span class="line" id="L165">        },</span>
+<span class="line" id="L166">        .Int, .ComptimeInt =&gt; {</span>
+<span class="line" id="L167">            <span class="tok-kw">const</span> token = <span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_if_needed, options.max_value_len.?);</span>
+<span class="line" id="L168">            <span class="tok-kw">defer</span> freeAllocated(allocator, token);</span>
+<span class="line" id="L169">            <span class="tok-kw">const</span> slice = <span class="tok-kw">switch</span> (token) {</span>
+<span class="line" id="L170">                <span class="tok-kw">inline</span> .number, .allocated_number, .string, .allocated_string =&gt; |slice| slice,</span>
+<span class="line" id="L171">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L172">            };</span>
+<span class="line" id="L173">            <span class="tok-kw">if</span> (isNumberFormattedLikeAnInteger(slice))</span>
+<span class="line" id="L174">                <span class="tok-kw">return</span> std.fmt.parseInt(T, slice, <span class="tok-number">10</span>);</span>
+<span class="line" id="L175">            <span class="tok-comment">// Try to coerce a float to an integer.</span>
+</span>
+<span class="line" id="L176">            <span class="tok-kw">const</span> float = <span class="tok-kw">try</span> std.fmt.parseFloat(<span class="tok-type">f128</span>, slice);</span>
+<span class="line" id="L177">            <span class="tok-kw">if</span> (<span class="tok-builtin">@round</span>(float) != float) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.InvalidNumber;</span>
+<span class="line" id="L178">            <span class="tok-kw">if</span> (float &gt; std.math.maxInt(T) <span class="tok-kw">or</span> float &lt; std.math.minInt(T)) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.Overflow;</span>
+<span class="line" id="L179">            <span class="tok-kw">return</span> <span class="tok-builtin">@intFromFloat</span>(T, float);</span>
+<span class="line" id="L180">        },</span>
+<span class="line" id="L181">        .Optional =&gt; |optionalInfo| {</span>
+<span class="line" id="L182">            <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.peekNextTokenType()) {</span>
+<span class="line" id="L183">                .<span class="tok-null">null</span> =&gt; {</span>
+<span class="line" id="L184">                    _ = <span class="tok-kw">try</span> source.next();</span>
+<span class="line" id="L185">                    <span class="tok-kw">return</span> <span class="tok-null">null</span>;</span>
+<span class="line" id="L186">                },</span>
+<span class="line" id="L187">                <span class="tok-kw">else</span> =&gt; {</span>
+<span class="line" id="L188">                    <span class="tok-kw">return</span> <span class="tok-kw">try</span> parseInternal(optionalInfo.child, allocator, source, options);</span>
+<span class="line" id="L189">                },</span>
+<span class="line" id="L190">            }</span>
+<span class="line" id="L191">        },</span>
+<span class="line" id="L192">        .Enum =&gt; |enumInfo| {</span>
+<span class="line" id="L193">            <span class="tok-kw">if</span> (<span class="tok-kw">comptime</span> std.meta.trait.hasFn(<span class="tok-str">&quot;jsonParse&quot;</span>)(T)) {</span>
+<span class="line" id="L194">                <span class="tok-kw">return</span> T.jsonParse(allocator, source, options);</span>
+<span class="line" id="L195">            }</span>
+<span class="line" id="L196"></span>
+<span class="line" id="L197">            <span class="tok-kw">const</span> token = <span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_if_needed, options.max_value_len.?);</span>
+<span class="line" id="L198">            <span class="tok-kw">defer</span> freeAllocated(allocator, token);</span>
+<span class="line" id="L199">            <span class="tok-kw">const</span> slice = <span class="tok-kw">switch</span> (token) {</span>
+<span class="line" id="L200">                <span class="tok-kw">inline</span> .number, .allocated_number, .string, .allocated_string =&gt; |slice| slice,</span>
+<span class="line" id="L201">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L202">            };</span>
+<span class="line" id="L203">            <span class="tok-comment">// Check for a named value.</span>
+</span>
+<span class="line" id="L204">            <span class="tok-kw">if</span> (std.meta.stringToEnum(T, slice)) |value| <span class="tok-kw">return</span> value;</span>
+<span class="line" id="L205">            <span class="tok-comment">// Check for a numeric value.</span>
+</span>
+<span class="line" id="L206">            <span class="tok-kw">if</span> (!isNumberFormattedLikeAnInteger(slice)) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.InvalidEnumTag;</span>
+<span class="line" id="L207">            <span class="tok-kw">const</span> n = std.fmt.parseInt(enumInfo.tag_type, slice, <span class="tok-number">10</span>) <span class="tok-kw">catch</span> <span class="tok-kw">return</span> <span class="tok-kw">error</span>.InvalidEnumTag;</span>
+<span class="line" id="L208">            <span class="tok-kw">return</span> <span class="tok-kw">try</span> std.meta.intToEnum(T, n);</span>
+<span class="line" id="L209">        },</span>
+<span class="line" id="L210">        .Union =&gt; |unionInfo| {</span>
+<span class="line" id="L211">            <span class="tok-kw">if</span> (<span class="tok-kw">comptime</span> std.meta.trait.hasFn(<span class="tok-str">&quot;jsonParse&quot;</span>)(T)) {</span>
+<span class="line" id="L212">                <span class="tok-kw">return</span> T.jsonParse(allocator, source, options);</span>
+<span class="line" id="L213">            }</span>
+<span class="line" id="L214"></span>
+<span class="line" id="L215">            <span class="tok-kw">if</span> (unionInfo.tag_type == <span class="tok-null">null</span>) <span class="tok-builtin">@compileError</span>(<span class="tok-str">&quot;Unable to parse into untagged union '&quot;</span> ++ <span class="tok-builtin">@typeName</span>(T) ++ <span class="tok-str">&quot;'&quot;</span>);</span>
+<span class="line" id="L216"></span>
+<span class="line" id="L217">            <span class="tok-kw">if</span> (.object_begin != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L218"></span>
+<span class="line" id="L219">            <span class="tok-kw">var</span> result: ?T = <span class="tok-null">null</span>;</span>
+<span class="line" id="L220">            <span class="tok-kw">var</span> name_token: ?Token = <span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_if_needed, options.max_value_len.?);</span>
+<span class="line" id="L221">            <span class="tok-kw">const</span> field_name = <span class="tok-kw">switch</span> (name_token.?) {</span>
+<span class="line" id="L222">                <span class="tok-kw">inline</span> .string, .allocated_string =&gt; |slice| slice,</span>
+<span class="line" id="L223">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L224">            };</span>
+<span class="line" id="L225"></span>
+<span class="line" id="L226">            <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (unionInfo.fields) |u_field| {</span>
+<span class="line" id="L227">                <span class="tok-kw">if</span> (std.mem.eql(<span class="tok-type">u8</span>, u_field.name, field_name)) {</span>
+<span class="line" id="L228">                    <span class="tok-comment">// Free the name token now in case we're using an allocator that optimizes freeing the last allocated object.</span>
+</span>
+<span class="line" id="L229">                    <span class="tok-comment">// (Recursing into parseInternal() might trigger more allocations.)</span>
+</span>
+<span class="line" id="L230">                    freeAllocated(allocator, name_token.?);</span>
+<span class="line" id="L231">                    name_token = <span class="tok-null">null</span>;</span>
+<span class="line" id="L232"></span>
+<span class="line" id="L233">                    <span class="tok-kw">if</span> (u_field.<span class="tok-type">type</span> == <span class="tok-type">void</span>) {</span>
+<span class="line" id="L234">                        <span class="tok-comment">// void isn't really a json type, but we can support void payload union tags with {} as a value.</span>
+</span>
+<span class="line" id="L235">                        <span class="tok-kw">if</span> (.object_begin != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L236">                        <span class="tok-kw">if</span> (.object_end != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L237">                        result = <span class="tok-builtin">@unionInit</span>(T, u_field.name, {});</span>
+<span class="line" id="L238">                    } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L239">                        <span class="tok-comment">// Recurse.</span>
+</span>
+<span class="line" id="L240">                        result = <span class="tok-builtin">@unionInit</span>(T, u_field.name, <span class="tok-kw">try</span> parseInternal(u_field.<span class="tok-type">type</span>, allocator, source, options));</span>
+<span class="line" id="L241">                    }</span>
+<span class="line" id="L242">                    <span class="tok-kw">break</span>;</span>
+<span class="line" id="L243">                }</span>
+<span class="line" id="L244">            } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L245">                <span class="tok-comment">// Didn't match anything.</span>
+</span>
+<span class="line" id="L246">                <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnknownField;</span>
+<span class="line" id="L247">            }</span>
+<span class="line" id="L248"></span>
+<span class="line" id="L249">            <span class="tok-kw">if</span> (.object_end != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L250"></span>
+<span class="line" id="L251">            <span class="tok-kw">return</span> result.?;</span>
+<span class="line" id="L252">        },</span>
+<span class="line" id="L253"></span>
+<span class="line" id="L254">        .Struct =&gt; |structInfo| {</span>
+<span class="line" id="L255">            <span class="tok-kw">if</span> (structInfo.is_tuple) {</span>
+<span class="line" id="L256">                <span class="tok-kw">if</span> (.array_begin != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L257"></span>
+<span class="line" id="L258">                <span class="tok-kw">var</span> r: T = <span class="tok-null">undefined</span>;</span>
+<span class="line" id="L259">                <span class="tok-kw">var</span> fields_seen: <span class="tok-type">usize</span> = <span class="tok-number">0</span>;</span>
+<span class="line" id="L260">                <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (<span class="tok-number">0</span>..structInfo.fields.len) |i| {</span>
+<span class="line" id="L261">                    r[i] = <span class="tok-kw">try</span> parseInternal(structInfo.fields[i].<span class="tok-type">type</span>, allocator, source, options);</span>
+<span class="line" id="L262">                    fields_seen = i + <span class="tok-number">1</span>;</span>
+<span class="line" id="L263">                }</span>
+<span class="line" id="L264"></span>
+<span class="line" id="L265">                <span class="tok-kw">if</span> (.array_end != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L266"></span>
+<span class="line" id="L267">                <span class="tok-kw">return</span> r;</span>
+<span class="line" id="L268">            }</span>
+<span class="line" id="L269"></span>
+<span class="line" id="L270">            <span class="tok-kw">if</span> (<span class="tok-kw">comptime</span> std.meta.trait.hasFn(<span class="tok-str">&quot;jsonParse&quot;</span>)(T)) {</span>
+<span class="line" id="L271">                <span class="tok-kw">return</span> T.jsonParse(allocator, source, options);</span>
+<span class="line" id="L272">            }</span>
+<span class="line" id="L273"></span>
+<span class="line" id="L274">            <span class="tok-kw">if</span> (.object_begin != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L275"></span>
+<span class="line" id="L276">            <span class="tok-kw">var</span> r: T = <span class="tok-null">undefined</span>;</span>
+<span class="line" id="L277">            <span class="tok-kw">var</span> fields_seen = [_]<span class="tok-type">bool</span>{<span class="tok-null">false</span>} ** structInfo.fields.len;</span>
+<span class="line" id="L278"></span>
+<span class="line" id="L279">            <span class="tok-kw">while</span> (<span class="tok-null">true</span>) {</span>
+<span class="line" id="L280">                <span class="tok-kw">var</span> name_token: ?Token = <span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_if_needed, options.max_value_len.?);</span>
+<span class="line" id="L281">                <span class="tok-kw">const</span> field_name = <span class="tok-kw">switch</span> (name_token.?) {</span>
+<span class="line" id="L282">                    .object_end =&gt; <span class="tok-kw">break</span>, <span class="tok-comment">// No more fields.</span>
+</span>
+<span class="line" id="L283">                    <span class="tok-kw">inline</span> .string, .allocated_string =&gt; |slice| slice,</span>
+<span class="line" id="L284">                    <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L285">                };</span>
+<span class="line" id="L286"></span>
+<span class="line" id="L287">                <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (structInfo.fields, <span class="tok-number">0</span>..) |field, i| {</span>
+<span class="line" id="L288">                    <span class="tok-kw">if</span> (field.is_comptime) <span class="tok-builtin">@compileError</span>(<span class="tok-str">&quot;comptime fields are not supported: &quot;</span> ++ <span class="tok-builtin">@typeName</span>(T) ++ <span class="tok-str">&quot;.&quot;</span> ++ field.name);</span>
+<span class="line" id="L289">                    <span class="tok-kw">if</span> (std.mem.eql(<span class="tok-type">u8</span>, field.name, field_name)) {</span>
+<span class="line" id="L290">                        <span class="tok-comment">// Free the name token now in case we're using an allocator that optimizes freeing the last allocated object.</span>
+</span>
+<span class="line" id="L291">                        <span class="tok-comment">// (Recursing into parseInternal() might trigger more allocations.)</span>
+</span>
+<span class="line" id="L292">                        freeAllocated(allocator, name_token.?);</span>
+<span class="line" id="L293">                        name_token = <span class="tok-null">null</span>;</span>
+<span class="line" id="L294"></span>
+<span class="line" id="L295">                        <span class="tok-kw">if</span> (fields_seen[i]) {</span>
+<span class="line" id="L296">                            <span class="tok-kw">switch</span> (options.duplicate_field_behavior) {</span>
+<span class="line" id="L297">                                .use_first =&gt; {</span>
+<span class="line" id="L298">                                    <span class="tok-comment">// Parse and ignore the redundant value.</span>
+</span>
+<span class="line" id="L299">                                    <span class="tok-comment">// We don't want to skip the value, because we want type checking.</span>
+</span>
+<span class="line" id="L300">                                    _ = <span class="tok-kw">try</span> parseInternal(field.<span class="tok-type">type</span>, allocator, source, options);</span>
+<span class="line" id="L301">                                    <span class="tok-kw">break</span>;</span>
+<span class="line" id="L302">                                },</span>
+<span class="line" id="L303">                                .@&quot;error&quot; =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.DuplicateField,</span>
+<span class="line" id="L304">                                .use_last =&gt; {},</span>
+<span class="line" id="L305">                            }</span>
+<span class="line" id="L306">                        }</span>
+<span class="line" id="L307">                        <span class="tok-builtin">@field</span>(r, field.name) = <span class="tok-kw">try</span> parseInternal(field.<span class="tok-type">type</span>, allocator, source, options);</span>
+<span class="line" id="L308">                        fields_seen[i] = <span class="tok-null">true</span>;</span>
+<span class="line" id="L309">                        <span class="tok-kw">break</span>;</span>
+<span class="line" id="L310">                    }</span>
+<span class="line" id="L311">                } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L312">                    <span class="tok-comment">// Didn't match anything.</span>
+</span>
+<span class="line" id="L313">                    freeAllocated(allocator, name_token.?);</span>
+<span class="line" id="L314">                    <span class="tok-kw">if</span> (options.ignore_unknown_fields) {</span>
+<span class="line" id="L315">                        <span class="tok-kw">try</span> source.skipValue();</span>
+<span class="line" id="L316">                    } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L317">                        <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnknownField;</span>
+<span class="line" id="L318">                    }</span>
+<span class="line" id="L319">                }</span>
+<span class="line" id="L320">            }</span>
+<span class="line" id="L321">            <span class="tok-kw">inline</span> <span class="tok-kw">for</span> (structInfo.fields, <span class="tok-number">0</span>..) |field, i| {</span>
+<span class="line" id="L322">                <span class="tok-kw">if</span> (!fields_seen[i]) {</span>
+<span class="line" id="L323">                    <span class="tok-kw">if</span> (field.default_value) |default_ptr| {</span>
+<span class="line" id="L324">                        <span class="tok-kw">const</span> default = <span class="tok-builtin">@ptrCast</span>(*<span class="tok-kw">align</span>(<span class="tok-number">1</span>) <span class="tok-kw">const</span> field.<span class="tok-type">type</span>, default_ptr).*;</span>
+<span class="line" id="L325">                        <span class="tok-builtin">@field</span>(r, field.name) = default;</span>
+<span class="line" id="L326">                    } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L327">                        <span class="tok-kw">return</span> <span class="tok-kw">error</span>.MissingField;</span>
+<span class="line" id="L328">                    }</span>
+<span class="line" id="L329">                }</span>
+<span class="line" id="L330">            }</span>
+<span class="line" id="L331">            <span class="tok-kw">return</span> r;</span>
+<span class="line" id="L332">        },</span>
+<span class="line" id="L333"></span>
+<span class="line" id="L334">        .Array =&gt; |arrayInfo| {</span>
+<span class="line" id="L335">            <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.peekNextTokenType()) {</span>
+<span class="line" id="L336">                .array_begin =&gt; {</span>
+<span class="line" id="L337">                    <span class="tok-comment">// Typical array.</span>
+</span>
+<span class="line" id="L338">                    <span class="tok-kw">return</span> parseInternalArray(T, arrayInfo.child, arrayInfo.len, allocator, source, options);</span>
+<span class="line" id="L339">                },</span>
+<span class="line" id="L340">                .string =&gt; {</span>
+<span class="line" id="L341">                    <span class="tok-kw">if</span> (arrayInfo.child != <span class="tok-type">u8</span>) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L342">                    <span class="tok-comment">// Fixed-length string.</span>
+</span>
+<span class="line" id="L343"></span>
+<span class="line" id="L344">                    <span class="tok-kw">var</span> r: T = <span class="tok-null">undefined</span>;</span>
+<span class="line" id="L345">                    <span class="tok-kw">var</span> i: <span class="tok-type">usize</span> = <span class="tok-number">0</span>;</span>
+<span class="line" id="L346">                    <span class="tok-kw">while</span> (<span class="tok-null">true</span>) {</span>
+<span class="line" id="L347">                        <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.next()) {</span>
+<span class="line" id="L348">                            .string =&gt; |slice| {</span>
+<span class="line" id="L349">                                <span class="tok-kw">if</span> (i + slice.len != r.len) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.LengthMismatch;</span>
+<span class="line" id="L350">                                <span class="tok-builtin">@memcpy</span>(r[i..][<span class="tok-number">0</span>..slice.len], slice);</span>
+<span class="line" id="L351">                                <span class="tok-kw">break</span>;</span>
+<span class="line" id="L352">                            },</span>
+<span class="line" id="L353">                            .partial_string =&gt; |slice| {</span>
+<span class="line" id="L354">                                <span class="tok-kw">if</span> (i + slice.len &gt; r.len) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.LengthMismatch;</span>
+<span class="line" id="L355">                                <span class="tok-builtin">@memcpy</span>(r[i..][<span class="tok-number">0</span>..slice.len], slice);</span>
+<span class="line" id="L356">                                i += slice.len;</span>
+<span class="line" id="L357">                            },</span>
+<span class="line" id="L358">                            .partial_string_escaped_1 =&gt; |arr| {</span>
+<span class="line" id="L359">                                <span class="tok-kw">if</span> (i + arr.len &gt; r.len) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.LengthMismatch;</span>
+<span class="line" id="L360">                                <span class="tok-builtin">@memcpy</span>(r[i..][<span class="tok-number">0</span>..arr.len], arr[<span class="tok-number">0</span>..]);</span>
+<span class="line" id="L361">                                i += arr.len;</span>
+<span class="line" id="L362">                            },</span>
+<span class="line" id="L363">                            .partial_string_escaped_2 =&gt; |arr| {</span>
+<span class="line" id="L364">                                <span class="tok-kw">if</span> (i + arr.len &gt; r.len) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.LengthMismatch;</span>
+<span class="line" id="L365">                                <span class="tok-builtin">@memcpy</span>(r[i..][<span class="tok-number">0</span>..arr.len], arr[<span class="tok-number">0</span>..]);</span>
+<span class="line" id="L366">                                i += arr.len;</span>
+<span class="line" id="L367">                            },</span>
+<span class="line" id="L368">                            .partial_string_escaped_3 =&gt; |arr| {</span>
+<span class="line" id="L369">                                <span class="tok-kw">if</span> (i + arr.len &gt; r.len) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.LengthMismatch;</span>
+<span class="line" id="L370">                                <span class="tok-builtin">@memcpy</span>(r[i..][<span class="tok-number">0</span>..arr.len], arr[<span class="tok-number">0</span>..]);</span>
+<span class="line" id="L371">                                i += arr.len;</span>
+<span class="line" id="L372">                            },</span>
+<span class="line" id="L373">                            .partial_string_escaped_4 =&gt; |arr| {</span>
+<span class="line" id="L374">                                <span class="tok-kw">if</span> (i + arr.len &gt; r.len) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.LengthMismatch;</span>
+<span class="line" id="L375">                                <span class="tok-builtin">@memcpy</span>(r[i..][<span class="tok-number">0</span>..arr.len], arr[<span class="tok-number">0</span>..]);</span>
+<span class="line" id="L376">                                i += arr.len;</span>
+<span class="line" id="L377">                            },</span>
+<span class="line" id="L378">                            <span class="tok-kw">else</span> =&gt; <span class="tok-kw">unreachable</span>,</span>
+<span class="line" id="L379">                        }</span>
+<span class="line" id="L380">                    }</span>
+<span class="line" id="L381"></span>
+<span class="line" id="L382">                    <span class="tok-kw">return</span> r;</span>
+<span class="line" id="L383">                },</span>
+<span class="line" id="L384"></span>
+<span class="line" id="L385">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L386">            }</span>
+<span class="line" id="L387">        },</span>
+<span class="line" id="L388"></span>
+<span class="line" id="L389">        .Vector =&gt; |vecInfo| {</span>
+<span class="line" id="L390">            <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.peekNextTokenType()) {</span>
+<span class="line" id="L391">                .array_begin =&gt; {</span>
+<span class="line" id="L392">                    <span class="tok-kw">return</span> parseInternalArray(T, vecInfo.child, vecInfo.len, allocator, source, options);</span>
+<span class="line" id="L393">                },</span>
+<span class="line" id="L394">                <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L395">            }</span>
+<span class="line" id="L396">        },</span>
+<span class="line" id="L397"></span>
+<span class="line" id="L398">        .Pointer =&gt; |ptrInfo| {</span>
+<span class="line" id="L399">            <span class="tok-kw">switch</span> (ptrInfo.size) {</span>
+<span class="line" id="L400">                .One =&gt; {</span>
+<span class="line" id="L401">                    <span class="tok-kw">const</span> r: *ptrInfo.child = <span class="tok-kw">try</span> allocator.create(ptrInfo.child);</span>
+<span class="line" id="L402">                    r.* = <span class="tok-kw">try</span> parseInternal(ptrInfo.child, allocator, source, options);</span>
+<span class="line" id="L403">                    <span class="tok-kw">return</span> r;</span>
+<span class="line" id="L404">                },</span>
+<span class="line" id="L405">                .Slice =&gt; {</span>
+<span class="line" id="L406">                    <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.peekNextTokenType()) {</span>
+<span class="line" id="L407">                        .array_begin =&gt; {</span>
+<span class="line" id="L408">                            _ = <span class="tok-kw">try</span> source.next();</span>
+<span class="line" id="L409"></span>
+<span class="line" id="L410">                            <span class="tok-comment">// Typical array.</span>
+</span>
+<span class="line" id="L411">                            <span class="tok-kw">var</span> arraylist = ArrayList(ptrInfo.child).init(allocator);</span>
+<span class="line" id="L412">                            <span class="tok-kw">while</span> (<span class="tok-null">true</span>) {</span>
+<span class="line" id="L413">                                <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.peekNextTokenType()) {</span>
+<span class="line" id="L414">                                    .array_end =&gt; {</span>
+<span class="line" id="L415">                                        _ = <span class="tok-kw">try</span> source.next();</span>
+<span class="line" id="L416">                                        <span class="tok-kw">break</span>;</span>
+<span class="line" id="L417">                                    },</span>
+<span class="line" id="L418">                                    <span class="tok-kw">else</span> =&gt; {},</span>
+<span class="line" id="L419">                                }</span>
+<span class="line" id="L420"></span>
+<span class="line" id="L421">                                <span class="tok-kw">try</span> arraylist.ensureUnusedCapacity(<span class="tok-number">1</span>);</span>
+<span class="line" id="L422">                                arraylist.appendAssumeCapacity(<span class="tok-kw">try</span> parseInternal(ptrInfo.child, allocator, source, options));</span>
+<span class="line" id="L423">                            }</span>
+<span class="line" id="L424"></span>
+<span class="line" id="L425">                            <span class="tok-kw">if</span> (ptrInfo.sentinel) |some| {</span>
+<span class="line" id="L426">                                <span class="tok-kw">const</span> sentinel_value = <span class="tok-builtin">@ptrCast</span>(*<span class="tok-kw">align</span>(<span class="tok-number">1</span>) <span class="tok-kw">const</span> ptrInfo.child, some).*;</span>
+<span class="line" id="L427">                                <span class="tok-kw">return</span> <span class="tok-kw">try</span> arraylist.toOwnedSliceSentinel(sentinel_value);</span>
+<span class="line" id="L428">                            }</span>
+<span class="line" id="L429"></span>
+<span class="line" id="L430">                            <span class="tok-kw">return</span> <span class="tok-kw">try</span> arraylist.toOwnedSlice();</span>
+<span class="line" id="L431">                        },</span>
+<span class="line" id="L432">                        .string =&gt; {</span>
+<span class="line" id="L433">                            <span class="tok-kw">if</span> (ptrInfo.child != <span class="tok-type">u8</span>) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L434"></span>
+<span class="line" id="L435">                            <span class="tok-comment">// Dynamic length string.</span>
+</span>
+<span class="line" id="L436">                            <span class="tok-kw">if</span> (ptrInfo.sentinel) |sentinel_ptr| {</span>
+<span class="line" id="L437">                                <span class="tok-comment">// Use our own array list so we can append the sentinel.</span>
+</span>
+<span class="line" id="L438">                                <span class="tok-kw">var</span> value_list = ArrayList(<span class="tok-type">u8</span>).init(allocator);</span>
+<span class="line" id="L439">                                _ = <span class="tok-kw">try</span> source.allocNextIntoArrayList(&amp;value_list, .alloc_always);</span>
+<span class="line" id="L440">                                <span class="tok-kw">return</span> <span class="tok-kw">try</span> value_list.toOwnedSliceSentinel(<span class="tok-builtin">@ptrCast</span>(*<span class="tok-kw">const</span> <span class="tok-type">u8</span>, sentinel_ptr).*);</span>
+<span class="line" id="L441">                            }</span>
+<span class="line" id="L442">                            <span class="tok-kw">if</span> (ptrInfo.is_const) {</span>
+<span class="line" id="L443">                                <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_if_needed, options.max_value_len.?)) {</span>
+<span class="line" id="L444">                                    <span class="tok-kw">inline</span> .string, .allocated_string =&gt; |slice| <span class="tok-kw">return</span> slice,</span>
+<span class="line" id="L445">                                    <span class="tok-kw">else</span> =&gt; <span class="tok-kw">unreachable</span>,</span>
+<span class="line" id="L446">                                }</span>
+<span class="line" id="L447">                            } <span class="tok-kw">else</span> {</span>
+<span class="line" id="L448">                                <span class="tok-comment">// Have to allocate to get a mutable copy.</span>
+</span>
+<span class="line" id="L449">                                <span class="tok-kw">switch</span> (<span class="tok-kw">try</span> source.nextAllocMax(allocator, .alloc_always, options.max_value_len.?)) {</span>
+<span class="line" id="L450">                                    .allocated_string =&gt; |slice| <span class="tok-kw">return</span> slice,</span>
+<span class="line" id="L451">                                    <span class="tok-kw">else</span> =&gt; <span class="tok-kw">unreachable</span>,</span>
+<span class="line" id="L452">                                }</span>
+<span class="line" id="L453">                            }</span>
+<span class="line" id="L454">                        },</span>
+<span class="line" id="L455">                        <span class="tok-kw">else</span> =&gt; <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken,</span>
+<span class="line" id="L456">                    }</span>
+<span class="line" id="L457">                },</span>
+<span class="line" id="L458">                <span class="tok-kw">else</span> =&gt; <span class="tok-builtin">@compileError</span>(<span class="tok-str">&quot;Unable to parse into type '&quot;</span> ++ <span class="tok-builtin">@typeName</span>(T) ++ <span class="tok-str">&quot;'&quot;</span>),</span>
+<span class="line" id="L459">            }</span>
+<span class="line" id="L460">        },</span>
+<span class="line" id="L461">        <span class="tok-kw">else</span> =&gt; <span class="tok-builtin">@compileError</span>(<span class="tok-str">&quot;Unable to parse into type '&quot;</span> ++ <span class="tok-builtin">@typeName</span>(T) ++ <span class="tok-str">&quot;'&quot;</span>),</span>
+<span class="line" id="L462">    }</span>
+<span class="line" id="L463">    <span class="tok-kw">unreachable</span>;</span>
+<span class="line" id="L464">}</span>
+<span class="line" id="L465"></span>
+<span class="line" id="L466"><span class="tok-kw">fn</span> <span class="tok-fn">parseInternalArray</span>(</span>
+<span class="line" id="L467">    <span class="tok-kw">comptime</span> T: <span class="tok-type">type</span>,</span>
+<span class="line" id="L468">    <span class="tok-kw">comptime</span> Child: <span class="tok-type">type</span>,</span>
+<span class="line" id="L469">    <span class="tok-kw">comptime</span> len: <span class="tok-type">comptime_int</span>,</span>
+<span class="line" id="L470">    allocator: Allocator,</span>
+<span class="line" id="L471">    source: <span class="tok-kw">anytype</span>,</span>
+<span class="line" id="L472">    options: ParseOptions,</span>
+<span class="line" id="L473">) !T {</span>
+<span class="line" id="L474">    assert(.array_begin == <span class="tok-kw">try</span> source.next());</span>
+<span class="line" id="L475"></span>
+<span class="line" id="L476">    <span class="tok-kw">var</span> r: T = <span class="tok-null">undefined</span>;</span>
+<span class="line" id="L477">    <span class="tok-kw">var</span> i: <span class="tok-type">usize</span> = <span class="tok-number">0</span>;</span>
+<span class="line" id="L478">    <span class="tok-kw">while</span> (i &lt; len) : (i += <span class="tok-number">1</span>) {</span>
+<span class="line" id="L479">        r[i] = <span class="tok-kw">try</span> parseInternal(Child, allocator, source, options);</span>
+<span class="line" id="L480">    }</span>
+<span class="line" id="L481"></span>
+<span class="line" id="L482">    <span class="tok-kw">if</span> (.array_end != <span class="tok-kw">try</span> source.next()) <span class="tok-kw">return</span> <span class="tok-kw">error</span>.UnexpectedToken;</span>
+<span class="line" id="L483"></span>
+<span class="line" id="L484">    <span class="tok-kw">return</span> r;</span>
+<span class="line" id="L485">}</span>
+<span class="line" id="L486"></span>
+<span class="line" id="L487"><span class="tok-kw">fn</span> <span class="tok-fn">freeAllocated</span>(allocator: Allocator, token: Token) <span class="tok-type">void</span> {</span>
+<span class="line" id="L488">    <span class="tok-kw">switch</span> (token) {</span>
+<span class="line" id="L489">        .allocated_number, .allocated_string =&gt; |slice| {</span>
+<span class="line" id="L490">            allocator.free(slice);</span>
+<span class="line" id="L491">        },</span>
+<span class="line" id="L492">        <span class="tok-kw">else</span> =&gt; {},</span>
+<span class="line" id="L493">    }</span>
+<span class="line" id="L494">}</span>
+<span class="line" id="L495"></span>
+<span class="line" id="L496"><span class="tok-kw">test</span> {</span>
+<span class="line" id="L497">    _ = <span class="tok-builtin">@import</span>(<span class="tok-str">&quot;./static_test.zig&quot;</span>);</span>
+<span class="line" id="L498">}</span>
+<span class="line" id="L499"></span>
+</code></pre></body>
+</html>
