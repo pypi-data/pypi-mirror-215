@@ -1,0 +1,8 @@
+water_drop_detection
+water_drop_detection/NN
+water_drop_detection/NN/data
+water_drop_detection/NN/model
+water_drop_detection/NN/test
+water_drop_detection/ui
+water_drop_detection/ui/logo
+water_drop_detection/ui/ui
