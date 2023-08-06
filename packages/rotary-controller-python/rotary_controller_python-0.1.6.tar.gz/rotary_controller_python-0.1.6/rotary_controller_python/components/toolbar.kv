@@ -1,0 +1,62 @@
+#: import Factory kivy.factory.Factory
+#: import Keypad components.keypad
+#: import AppSettings components.appsettings
+#: import LedButton components.ledbutton
+
+<ToolbarButton>:
+  size_hint_y: None
+  height: self.width
+  font_size: 16
+  font_name: "fonts/Manrope-Bold.ttf"
+
+<Toolbar>:
+  current_units: app.current_units
+
+  size_hint_x: None
+  size_hint_y: 1
+  width: 80
+  orientation: "vertical"
+
+  LedButton:
+    # Alarm
+    font_name: "fonts/Font Awesome 6 Free-Solid-900.otf"
+    font_size: 32
+    height: self.width
+    size_hint_y: None
+    label: "\uf071"
+    checkbox_value: (app.mode >= 100 and app.blink)
+#    on_release: Factory.AppSettings().open()
+
+  LedButton:
+    # Ready
+    font_name: "fonts/Font Awesome 6 Free-Solid-900.otf"
+    font_size: 32
+    color_on: "#62ff4ccc"
+    height: self.width
+    size_hint_y: None
+    label: "\uf058"
+    checkbox_value: app.mode < 100
+
+  ToolbarButton:
+    # TOOL
+    font_size: 32
+    text: "T{:d}".format(int(app.tool))
+    on_release: Factory.Keypad().show(app, 'tool')
+
+  ToolbarButton:
+    # IN/MM
+    font_size: 32
+    text: app.current_units
+    on_release: app.current_units = "mm" if app.current_units == "in" else "in"
+
+  ToolbarButton:
+    font_size: 32
+    text: app.abs_inc
+    on_release: app.abs_inc = "ABS" if app.abs_inc == "INC" else "INC"
+
+  ToolbarButton:
+    font_name: "fonts/Font Awesome 6 Free-Solid-900.otf"
+    font_size: 32
+    text: "\uf085"
+
+    on_release: app.open_custom_settings()

@@ -1,0 +1,152 @@
+#: import Factory kivy.factory.Factory
+#: import Keypad components.keypad
+#: import appsettings components
+
+<ServoBar>:
+  orientation: "horizontal"
+  height: 128
+  size_hint_y: None
+  Label:
+    text: app.servo.name
+    width: 80
+    size_hint_x: None
+    font_size: 64
+    font_style: "bold"
+  BoxLayout:
+    orientation: "vertical"
+    size_hint_x: 0.2
+    Label:
+      text: "Current"
+      text_size: self.size
+      size_hint_y: 0.15
+      font_size: 16
+      color: app.display_color
+      halign: 'center'
+      valign: 'top'
+    Button:
+      size_hint_y: 0.35
+      font_name: "fonts/iosevka-regular.ttf"
+      font_size: 32
+      font_style: "bold"
+      background_color: [0.2, 0.2, 0.2, 1]
+      color: app.display_color
+      text: str(app.servo.current_position)
+      text_size: self.size
+      halign: 'center'
+      valign: 'middle'
+#      on_release: Factory.Keypad().show(root.data, 'sync_num')
+    Label:
+      text: "Desired"
+      text_size: self.size
+      size_hint_y: 0.15
+      font_size: 16
+      color: app.display_color
+      halign: 'center'
+      valign: 'top'
+    Button:
+      size_hint_y: 0.35
+      font_name: "fonts/iosevka-regular.ttf"
+      font_size: 32
+      font_style: "bold"
+      background_color: [0.2, 0.2, 0.2, 1]
+      color: app.display_color
+      text: str(app.servo.desired_position)
+      text_size: self.size
+      halign: 'center'
+      valign: 'middle'
+      on_release: Factory.Keypad().show(app.servo, 'desired_position')
+
+  BoxLayout:
+    orientation: "vertical"
+    size_hint_x: 0.2
+    Label:
+      text: "Offset"
+      text_size: self.size
+      size_hint_y: 0.15
+      font_size: 16
+      color: app.display_color
+      halign: 'center'
+      valign: 'top'
+    Button:
+      size_hint_y: 0.35
+      font_name: "fonts/iosevka-regular.ttf"
+      font_size: 32
+      font_style: "bold"
+      background_color: [0.2, 0.2, 0.2, 1]
+      color: app.display_color
+      text: str(app.servo.offset)
+      text_size: self.size
+      halign: 'center'
+      valign: 'middle'
+      on_release: Factory.Keypad().show(app.servo, 'offset')
+    Label:
+      text: "Divisions"
+      text_size: self.size
+      size_hint_y: 0.15
+      font_size: 16
+      color: app.display_color
+      halign: 'center'
+      valign: 'top'
+    Button:
+      size_hint_y: 0.35
+      font_name: "fonts/iosevka-regular.ttf"
+      font_size: 32
+      font_style: "bold"
+      background_color: [0.2, 0.2, 0.2, 1]
+      color: app.display_color
+      text: str(app.servo.divisions)
+      text_size: self.size
+      halign: 'center'
+      valign: 'middle'
+      on_release: Factory.Keypad().show(app.servo, 'divisions')
+  BoxLayout:
+    size_hint_x: 0.2
+    orientation: "vertical"
+    BoxLayout:
+      orientation: "horizontal"
+      Button:
+        font_size: 24
+        font_style: "bold"
+        text: "<"
+        on_release: app.servo.index = (app.servo.index - 1) % app.servo.divisions
+      Button:
+        font_size: 24
+        font_style: "bold"
+        text: ">"
+        on_release: app.servo.index = (app.servo.index + 1) % app.servo.divisions
+    BoxLayout:
+      orientation: "vertical"
+      Label:
+        text: "Index"
+        text_size: self.size
+        size_hint_y: 0.15
+        font_size: 16
+        color: app.display_color
+        halign: 'center'
+        valign: 'top'
+      Button:
+        size_hint_y: 0.35
+        font_name: "fonts/iosevka-regular.ttf"
+        font_size: 32
+        font_style: "bold"
+        background_color: [0.2, 0.2, 0.2, 1]
+        color: app.display_color
+        text: str(app.servo.index)
+        text_size: self.size
+        halign: 'center'
+        valign: 'middle'
+        on_release: Factory.Keypad().show(app.servo, 'index')
+
+  BoxLayout:
+    size_hint_x: None
+    orientation: "vertical"
+
+  Button:
+    size_hint_y: 1
+    size_hint_x: None
+    width: root.height
+    font_size: 24
+    font_style: "bold"
+    background_color: [0.2, 1, 0.2, 1] if app.servo.enable else [1, 0.2, 0.2, 1]
+    text: "ON" if app.servo.enable else "OFF"
+    on_release: app.servo.enable = False if app.servo.enable else True
