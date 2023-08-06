@@ -1,0 +1,712 @@
+{
+    "characters": [
+        {
+            "index": "airi",
+            "illustrations": {
+                "all": 387,
+                "r18": 36
+            }
+        },
+        {
+            "index": "akane",
+            "illustrations": {
+                "all": 1406,
+                "r18": 353
+            }
+        },
+        {
+            "index": "akari",
+            "illustrations": {
+                "all": 388,
+                "r18": 68
+            }
+        },
+        {
+            "index": "aru",
+            "illustrations": {
+                "all": 6098,
+                "r18": 1092
+            }
+        },
+        {
+            "index": "asuna",
+            "illustrations": {
+                "all": 13217,
+                "r18": 4858
+            }
+        },
+        {
+            "index": "ayane",
+            "illustrations": {
+                "all": 723,
+                "r18": 126
+            }
+        },
+        {
+            "index": "chinatsu",
+            "illustrations": {
+                "all": 629,
+                "r18": 216
+            }
+        },
+        {
+            "index": "chise",
+            "illustrations": {
+                "all": 965,
+                "r18": 155
+            }
+        },
+        {
+            "index": "eimi",
+            "illustrations": {
+                "all": 863,
+                "r18": 269
+            }
+        },
+        {
+            "index": "fuuka",
+            "illustrations": {
+                "all": 1142,
+                "r18": 163
+            }
+        },
+        {
+            "index": "hanae",
+            "illustrations": {
+                "all": 616,
+                "r18": 189
+            }
+        },
+        {
+            "index": "hare",
+            "illustrations": {
+                "all": 725,
+                "r18": 90
+            }
+        },
+        {
+            "index": "haruka",
+            "illustrations": {
+                "all": 1862,
+                "r18": 256
+            }
+        },
+        {
+            "index": "haruna",
+            "illustrations": {
+                "all": 1307,
+                "r18": 145
+            }
+        },
+        {
+            "index": "hasumi",
+            "illustrations": {
+                "all": 3942,
+                "r18": 1536
+            }
+        },
+        {
+            "index": "hibiki",
+            "illustrations": {
+                "all": 2666,
+                "r18": 524
+            }
+        },
+        {
+            "index": "hifumi",
+            "illustrations": {
+                "all": 3999,
+                "r18": 666
+            }
+        },
+        {
+            "index": "hina",
+            "illustrations": {
+                "all": 6666,
+                "r18": 1509
+            }
+        },
+        {
+            "index": "hoshino",
+            "illustrations": {
+                "all": 6919,
+                "r18": 1266
+            }
+        },
+        {
+            "index": "iori",
+            "illustrations": {
+                "all": 2649,
+                "r18": 658
+            }
+        },
+        {
+            "index": "izumi",
+            "illustrations": {
+                "all": 613,
+                "r18": 113
+            }
+        },
+        {
+            "index": "junko",
+            "illustrations": {
+                "all": 1118,
+                "r18": 126
+            }
+        },
+        {
+            "index": "juri",
+            "illustrations": {
+                "all": 192,
+                "r18": 21
+            }
+        },
+        {
+            "index": "karin",
+            "illustrations": {
+                "all": 6160,
+                "r18": 2073
+            }
+        },
+        {
+            "index": "kayoko",
+            "illustrations": {
+                "all": 3825,
+                "r18": 507
+            }
+        },
+        {
+            "index": "kotama",
+            "illustrations": {
+                "all": 268,
+                "r18": 26
+            }
+        },
+        {
+            "index": "kotori",
+            "illustrations": {
+                "all": 365,
+                "r18": 80
+            }
+        },
+        {
+            "index": "maki",
+            "illustrations": {
+                "all": 517,
+                "r18": 60
+            }
+        },
+        {
+            "index": "mutsuki",
+            "illustrations": {
+                "all": 3905,
+                "r18": 1184
+            }
+        },
+        {
+            "index": "neru",
+            "illustrations": {
+                "all": 3192,
+                "r18": 730
+            }
+        },
+        {
+            "index": "nonomi",
+            "illustrations": {
+                "all": 2828,
+                "r18": 826
+            }
+        },
+        {
+            "index": "pina",
+            "illustrations": {
+                "all": 80,
+                "r18": 6
+            }
+        },
+        {
+            "index": "saya",
+            "illustrations": {
+                "all": 292,
+                "r18": 74
+            }
+        },
+        {
+            "index": "serika",
+            "illustrations": {
+                "all": 1758,
+                "r18": 288
+            }
+        },
+        {
+            "index": "serina",
+            "illustrations": {
+                "all": 1061,
+                "r18": 188
+            }
+        },
+        {
+            "index": "shimiko",
+            "illustrations": {
+                "all": 67,
+                "r18": 8
+            }
+        },
+        {
+            "index": "shiroko",
+            "illustrations": {
+                "all": 8933,
+                "r18": 1869
+            }
+        },
+        {
+            "index": "shun",
+            "illustrations": {
+                "all": 2149,
+                "r18": 856
+            }
+        },
+        {
+            "index": "sumire",
+            "illustrations": {
+                "all": 223,
+                "r18": 51
+            }
+        },
+        {
+            "index": "suzumi",
+            "illustrations": {
+                "all": 212,
+                "r18": 17
+            }
+        },
+        {
+            "index": "tsubaki",
+            "illustrations": {
+                "all": 1687,
+                "r18": 635
+            }
+        },
+        {
+            "index": "tsurugi",
+            "illustrations": {
+                "all": 1145,
+                "r18": 165
+            }
+        },
+        {
+            "index": "utaha",
+            "illustrations": {
+                "all": 278,
+                "r18": 32
+            }
+        },
+        {
+            "index": "yoshimi",
+            "illustrations": {
+                "all": 815,
+                "r18": 124
+            }
+        },
+        {
+            "index": "yuuka",
+            "illustrations": {
+                "all": 10404,
+                "r18": 2631
+            }
+        },
+        {
+            "index": "mashiro",
+            "illustrations": {
+                "all": 817,
+                "r18": 166
+            }
+        },
+        {
+            "index": "izuna",
+            "illustrations": {
+                "all": 3018,
+                "r18": 576
+            }
+        },
+        {
+            "index": "shizuko",
+            "illustrations": {
+                "all": 441,
+                "r18": 121
+            }
+        },
+        {
+            "index": "arisu",
+            "illustrations": {
+                "all": 7992,
+                "r18": 1446
+            }
+        },
+        {
+            "index": "midori",
+            "illustrations": {
+                "all": 3209,
+                "r18": 647
+            }
+        },
+        {
+            "index": "momoi",
+            "illustrations": {
+                "all": 3251,
+                "r18": 608
+            }
+        },
+        {
+            "index": "cherino",
+            "illustrations": {
+                "all": 542,
+                "r18": 79
+            }
+        },
+        {
+            "index": "nodoka",
+            "illustrations": {
+                "all": 352,
+                "r18": 53
+            }
+        },
+        {
+            "index": "yuzu",
+            "illustrations": {
+                "all": 2400,
+                "r18": 486
+            }
+        },
+        {
+            "index": "azusa",
+            "illustrations": {
+                "all": 2977,
+                "r18": 400
+            }
+        },
+        {
+            "index": "hanako",
+            "illustrations": {
+                "all": 1889,
+                "r18": 685
+            }
+        },
+        {
+            "index": "koharu",
+            "illustrations": {
+                "all": 5098,
+                "r18": 1330
+            }
+        },
+        {
+            "index": "kirino",
+            "illustrations": {
+                "all": 287,
+                "r18": 34
+            }
+        },
+        {
+            "index": "mari",
+            "illustrations": {
+                "all": 4424,
+                "r18": 1325
+            }
+        },
+        {
+            "index": "natsu",
+            "illustrations": {
+                "all": 1706,
+                "r18": 317
+            }
+        },
+        {
+            "index": "hatsune_miku",
+            "illustrations": {
+                "all": 239,
+                "r18": 29
+            }
+        },
+        {
+            "index": "ako",
+            "illustrations": {
+                "all": 3255,
+                "r18": 1331
+            }
+        },
+        {
+            "index": "tomoe",
+            "illustrations": {
+                "all": 79,
+                "r18": 14
+            }
+        },
+        {
+            "index": "fubuki",
+            "illustrations": {
+                "all": 668,
+                "r18": 149
+            }
+        },
+        {
+            "index": "wakamo",
+            "illustrations": {
+                "all": 1461,
+                "r18": 248
+            }
+        },
+        {
+            "index": "chihiro",
+            "illustrations": {
+                "all": 677,
+                "r18": 161
+            }
+        },
+        {
+            "index": "sena",
+            "illustrations": {
+                "all": 365,
+                "r18": 95
+            }
+        },
+        {
+            "index": "mimori",
+            "illustrations": {
+                "all": 262,
+                "r18": 53
+            }
+        },
+        {
+            "index": "hinata",
+            "illustrations": {
+                "all": 589,
+                "r18": 172
+            }
+        },
+        {
+            "index": "ui",
+            "illustrations": {
+                "all": 2562,
+                "r18": 597
+            }
+        },
+        {
+            "index": "marina",
+            "illustrations": {
+                "all": 391,
+                "r18": 129
+            }
+        },
+        {
+            "index": "miyako",
+            "illustrations": {
+                "all": 1058,
+                "r18": 143
+            }
+        },
+        {
+            "index": "saki",
+            "illustrations": {
+                "all": 873,
+                "r18": 195
+            }
+        },
+        {
+            "index": "miyu",
+            "illustrations": {
+                "all": 2999,
+                "r18": 707
+            }
+        },
+        {
+            "index": "iroha",
+            "illustrations": {
+                "all": 2375,
+                "r18": 530
+            }
+        },
+        {
+            "index": "kaede",
+            "illustrations": {
+                "all": 539,
+                "r18": 276
+            }
+        },
+        {
+            "index": "michiru",
+            "illustrations": {
+                "all": 548,
+                "r18": 72
+            }
+        },
+        {
+            "index": "tsukuyo",
+            "illustrations": {
+                "all": 514,
+                "r18": 131
+            }
+        },
+        {
+            "index": "hiyori",
+            "illustrations": {
+                "all": 644,
+                "r18": 111
+            }
+        },
+        {
+            "index": "misaki",
+            "illustrations": {
+                "all": 535,
+                "r18": 41
+            }
+        },
+        {
+            "index": "atsuko",
+            "illustrations": {
+                "all": 1099,
+                "r18": 114
+            }
+        },
+        {
+            "index": "saori",
+            "illustrations": {
+                "all": 2423,
+                "r18": 466
+            }
+        },
+        {
+            "index": "kazusa",
+            "illustrations": {
+                "all": 2655,
+                "r18": 488
+            }
+        },
+        {
+            "index": "moe",
+            "illustrations": {
+                "all": 751,
+                "r18": 317
+            }
+        },
+        {
+            "index": "kokona",
+            "illustrations": {
+                "all": 1763,
+                "r18": 603
+            }
+        },
+        {
+            "index": "noa",
+            "illustrations": {
+                "all": 2569,
+                "r18": 611
+            }
+        },
+        {
+            "index": "himari",
+            "illustrations": {
+                "all": 999,
+                "r18": 198
+            }
+        },
+        {
+            "index": "shigure",
+            "illustrations": {
+                "all": 499,
+                "r18": 78
+            }
+        },
+        {
+            "index": "mine",
+            "illustrations": {
+                "all": 267,
+                "r18": 51
+            }
+        },
+        {
+            "index": "mika",
+            "illustrations": {
+                "all": 6202,
+                "r18": 872
+            }
+        },
+        {
+            "index": "kanna",
+            "illustrations": {
+                "all": 1324,
+                "r18": 273
+            }
+        },
+        {
+            "index": "megu",
+            "illustrations": {
+                "all": 385,
+                "r18": 111
+            }
+        },
+        {
+            "index": "sakurako",
+            "illustrations": {
+                "all": 929,
+                "r18": 241
+            }
+        },
+        {
+            "index": "nagisa",
+            "illustrations": {
+                "all": 956,
+                "r18": 94
+            }
+        },
+        {
+            "index": "toki",
+            "illustrations": {
+                "all": 7498,
+                "r18": 1721
+            }
+        },
+        {
+            "index": "koyuki",
+            "illustrations": {
+                "all": 940,
+                "r18": 136
+            }
+        },
+        {
+            "index": "kaho",
+            "illustrations": {
+                "all": 941,
+                "r18": 290
+            }
+        },
+        {
+            "index": "reisa",
+            "illustrations": {
+                "all": 1300,
+                "r18": 154
+            }
+        },
+        {
+            "index": "mina",
+            "illustrations": {
+                "all": 267,
+                "r18": 44
+            }
+        },
+        {
+            "index": "rumi",
+            "illustrations": {
+                "all": 365,
+                "r18": 106
+            }
+        },
+        {
+            "index": "minori",
+            "illustrations": {
+                "all": 142,
+                "r18": 7
+            }
+        }
+    ],
+    "last_updated": 1687111676.6989145
+}
