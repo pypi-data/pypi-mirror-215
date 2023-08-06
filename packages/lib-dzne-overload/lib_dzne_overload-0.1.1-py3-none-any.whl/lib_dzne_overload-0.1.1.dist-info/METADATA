@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lib-dzne-overload
+Version: 0.1.1
+Summary: Libary for handling data. 
+Author-email: Johannes Horler <johannes.horler@dzne.de>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# lib-dzne-overloading
