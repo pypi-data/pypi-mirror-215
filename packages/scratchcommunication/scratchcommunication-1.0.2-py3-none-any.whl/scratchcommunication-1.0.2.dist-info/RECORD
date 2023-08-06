@@ -1,0 +1,9 @@
+scratchcommunication/__init__.py,sha256=u0o8KBv4jmtJZcDjMF9fs-EX7MEwyhGvECPCdOAGW4s,44
+scratchcommunication/cloud.py,sha256=cJUTHwHExO9ZX-vzF6YV7FUiyrRZK4r7yxrM0dMw0Fk,9534
+scratchcommunication/exceptions.py,sha256=wkUOT-lTd6MlefFPg9GqS97U0M_JoCiNe-asmd3mHe0,102
+scratchcommunication/headers.py,sha256=_O-loaU84-WcV18rHUbv8D6v0Z13bdnElmsX4Igkoas,263
+scratchcommunication/session.py,sha256=vz-ihCObAfUEhGMIXk27sU9cipoHrgG4KaqCID7J6OQ,2255
+scratchcommunication-1.0.2.dist-info/METADATA,sha256=Xai1sziXWqgHvwqyfiQSo5mY0se3JwQGolpFEU2ZqD4,780
+scratchcommunication-1.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+scratchcommunication-1.0.2.dist-info/top_level.txt,sha256=QlslCF1RdVTB9c1d2aPBZn3kLtyGJpsrcAoYAYwj6iE,21
+scratchcommunication-1.0.2.dist-info/RECORD,,
