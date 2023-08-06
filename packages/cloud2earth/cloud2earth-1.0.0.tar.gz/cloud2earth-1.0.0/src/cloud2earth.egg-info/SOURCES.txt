@@ -1,0 +1,15 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/cli/__init__.py
+src/cli/cli.py
+src/cloud2earth/__init__.py
+src/cloud2earth/core.py
+src/cloud2earth/helpers.py
+src/cloud2earth.egg-info/PKG-INFO
+src/cloud2earth.egg-info/SOURCES.txt
+src/cloud2earth.egg-info/dependency_links.txt
+src/cloud2earth.egg-info/entry_points.txt
+src/cloud2earth.egg-info/requires.txt
+src/cloud2earth.egg-info/top_level.txt
+test/test_cloud2Earth.py

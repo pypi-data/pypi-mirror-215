@@ -1,0 +1,2 @@
+[console_scripts]
+cloud2earth = cli.cli:main
