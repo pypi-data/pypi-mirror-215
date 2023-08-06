@@ -1,0 +1,4 @@
+oic==1.6.0
+Flask
+requests
+importlib_resources
