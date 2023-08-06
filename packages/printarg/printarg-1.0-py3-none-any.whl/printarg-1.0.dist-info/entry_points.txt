@@ -1,0 +1,2 @@
+[console_scripts]
+printarg = print_arg:main
