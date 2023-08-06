@@ -1,0 +1,10 @@
+aimet/__init__.py,sha256=KlpSc-GFyT6bC2Iw5vXGqlAFdV6_vCmC0p-zZSg_1xE,33
+aimet/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aimet/src/describe.py,sha256=6SD175AhM9p2rvFtgjRvY25CINwWRRCo1idFvPTwM64,60
+aimet/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aimet/test/test_aimet.py,sha256=K7_enXcRPGSbzxcoxgdJyfJRstPejk6PI39viMsqTbA,173
+aimet-0.0.1.dist-info/LICENSE,sha256=KwF6q4vbd9feMPwRqsuaKHPgQMBhb7QzUfLDD9snKQ8,1067
+aimet-0.0.1.dist-info/METADATA,sha256=x5I6ernaxTUJdfYkQFx1jbXzIc73kESHeBEUbGHB8hU,781
+aimet-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aimet-0.0.1.dist-info/top_level.txt,sha256=d-p-2HcA58eah8TY2g2kmkIr7FFvSNz5VlOlN4cZSN0,6
+aimet-0.0.1.dist-info/RECORD,,
