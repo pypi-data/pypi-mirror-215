@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+atlaspy/__init__.py
+atlaspy/core.py
+atlaspy.egg-info/PKG-INFO
+atlaspy.egg-info/SOURCES.txt
+atlaspy.egg-info/dependency_links.txt
+atlaspy.egg-info/requires.txt
+atlaspy.egg-info/top_level.txt
