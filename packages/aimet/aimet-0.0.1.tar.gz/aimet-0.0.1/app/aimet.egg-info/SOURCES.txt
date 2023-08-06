@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+app/aimet/__init__.py
+app/aimet.egg-info/PKG-INFO
+app/aimet.egg-info/SOURCES.txt
+app/aimet.egg-info/dependency_links.txt
+app/aimet.egg-info/requires.txt
+app/aimet.egg-info/top_level.txt
+app/aimet/src/__init__.py
+app/aimet/src/describe.py
+app/aimet/test/__init__.py
+app/aimet/test/test_aimet.py

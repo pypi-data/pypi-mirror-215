@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aimet
+Version: 0.0.1
+Summary: AIMet: A Python Artificial Intelligence Package for Meteorology (under development)
+Home-page: https://github.com/dyazgi/aimet
+Author: Daniel Yazgi
+Author-email: danielyazgi@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# AIMet (Artificial Intelligence for Meteorology)
+Python Artificial Intelligence Package for Meteorology (under development)
