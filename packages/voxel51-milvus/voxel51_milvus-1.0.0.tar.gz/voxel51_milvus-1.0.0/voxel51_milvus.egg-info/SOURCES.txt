@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+voxel51_milvus.egg-info/PKG-INFO
+voxel51_milvus.egg-info/SOURCES.txt
+voxel51_milvus.egg-info/dependency_links.txt
+voxel51_milvus.egg-info/requires.txt
+voxel51_milvus.egg-info/top_level.txt
