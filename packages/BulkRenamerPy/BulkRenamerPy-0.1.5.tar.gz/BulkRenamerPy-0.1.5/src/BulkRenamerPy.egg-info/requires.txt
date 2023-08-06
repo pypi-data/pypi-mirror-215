@@ -1,0 +1,10 @@
+click
+markdown
+mdurl
+packaging
+Pygments
+rich
+rich-click
+
+[test]
+pytest
