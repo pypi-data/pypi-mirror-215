@@ -1,0 +1,9 @@
+aissist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aissist/aissistant.py,sha256=3Dpv_F3_LoatfCgXrTi0BUBf68v8DbUiOpSsKcRrFy0,3391
+aissist/spinner.py,sha256=aD8TO_lCXl0MmNpCZLBvvo7L5Itj3K1XXu8MsSMMCHE,740
+aissist/version.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+aissist-0.0.6.dist-info/entry_points.txt,sha256=n7LX4R7YHDu_QXPRdM3rwaalqgOLWnYw38HwVAWRwU0,46
+aissist-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aissist-0.0.6.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+aissist-0.0.6.dist-info/METADATA,sha256=wMBtbh3gwDaTAk4QKKiz5CxpglNrWw-pquGgChCdLIw,2100
+aissist-0.0.6.dist-info/RECORD,,
