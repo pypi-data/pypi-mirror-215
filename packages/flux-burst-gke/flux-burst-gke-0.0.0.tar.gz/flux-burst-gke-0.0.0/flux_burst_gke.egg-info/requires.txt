@@ -1,0 +1,11 @@
+flux-burst
+requests
+kubescaler
+fluxoperator
+
+[all]
+flux-burst
+requests
+kubescaler
+fluxoperator
+pytest>=4.6.2

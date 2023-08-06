@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: flux-burst-gke
+Version: 0.0.0
+Summary: A bursting plugin for Flux and GKE
+Home-page: https://github.com/converged-computing/flux-burst-gke
+Author: Vanessa Sochat
+Author-email: vsoch@users.noreply.github.com
+Maintainer: Vanessa Sochat
+License: LICENSE
+Keywords: flux,flux-framework,workflow,example,plugin
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+License-File: LICENSE
+License-File: NOTICE
+
+# Flux Burst Plugin for GKE
+
+This is an example implementation for an external bursting plugin for Flux.
+For instructions, see the [main flux-burst repository](https://github.com/converged-computing/flux-burst).
+
+**under development**
+
+## License
+
+HPCIC DevTools is distributed under the terms of the MIT license.
+All new contributions must be made under this license.
+
+See [LICENSE](https://github.com/converged-computing/flux-burst/blob/main/LICENSE),
+[COPYRIGHT](https://github.com/converged-computing/flux-burst/blob/main/COPYRIGHT), and
+[NOTICE](https://github.com/converged-computing/flux-burst/blob/main/NOTICE) for details.
+
+SPDX-License-Identifier: (MIT)
+
+LLNL-CODE- 842614
+
+
