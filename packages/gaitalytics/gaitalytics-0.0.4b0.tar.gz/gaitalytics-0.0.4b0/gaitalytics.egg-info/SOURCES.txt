@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gaitalytics.egg-info/PKG-INFO
+gaitalytics.egg-info/SOURCES.txt
+gaitalytics.egg-info/dependency_links.txt
+gaitalytics.egg-info/requires.txt
+gaitalytics.egg-info/top_level.txt
