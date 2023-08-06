@@ -1,0 +1,10 @@
+README.md
+setup.py
+GPTConnect.egg-info/PKG-INFO
+GPTConnect.egg-info/SOURCES.txt
+GPTConnect.egg-info/dependency_links.txt
+GPTConnect.egg-info/requires.txt
+GPTConnect.egg-info/top_level.txt
+gptconnect/__init__.py
+gptconnect/gptconnect.py
+gptconnect/gptfunction.py
