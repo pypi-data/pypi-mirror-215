@@ -1,0 +1,4 @@
+[console_scripts]
+jsonl2x = jsonl2x.main:main
+jx = jsonl2x.main:main
+

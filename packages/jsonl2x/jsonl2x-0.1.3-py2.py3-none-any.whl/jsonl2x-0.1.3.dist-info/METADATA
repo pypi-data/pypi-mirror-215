@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jsonl2x
+Version: 0.1.3
+Summary: 用来找含有大文件目录的工具
+Home-page: https://gitee.com/WenHao0804/jsonl2x
+Author: WenHao
+Author-email: wh.wenhao@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+
+将jsonl转化为.csv或.xlsx文件
+
