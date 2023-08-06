@@ -1,0 +1,5 @@
+setup.py
+src/biblioteca2080.egg-info/PKG-INFO
+src/biblioteca2080.egg-info/SOURCES.txt
+src/biblioteca2080.egg-info/dependency_links.txt
+src/biblioteca2080.egg-info/top_level.txt
