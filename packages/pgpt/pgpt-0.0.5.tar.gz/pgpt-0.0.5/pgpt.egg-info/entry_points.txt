@@ -1,0 +1,2 @@
+[console_scripts]
+pgpt = programengineergpt.main:run
