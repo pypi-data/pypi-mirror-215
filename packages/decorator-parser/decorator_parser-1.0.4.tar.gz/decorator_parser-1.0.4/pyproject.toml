@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decorator_parser"
+version = "1.0.4"
+authors = [
+  { name="Michal Kostyk", email="m.kostyk22@gmail.com" },
+]
+description = "Parser for text files with decorators into Python dictionaries"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mkostyk/decorators-parser"
+"Bug Tracker" = "https://github.com/mkostyk/decorators-parser/issues"

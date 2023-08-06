@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/decorator_parser/__init__.py
+src/decorator_parser/errors.py
+src/decorator_parser/parse.py
+src/decorator_parser/parse_task.py
+src/decorator_parser/test.py
+src/decorator_parser/utils.py
+src/decorator_parser.egg-info/PKG-INFO
+src/decorator_parser.egg-info/SOURCES.txt
+src/decorator_parser.egg-info/dependency_links.txt
+src/decorator_parser.egg-info/top_level.txt
