@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ltsf
+Version: 0.1
+Summary: Long-term time-series forecasting package
+Home-page: https://github.com/Hank0626/ltsf
+Author: Peiyuan Liu
+Author-email: hank010626@163.com
+Requires-Python: >=3.8.0
+License-File: LICENSE
