@@ -1,0 +1,7 @@
+pyhackrf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyhackrf/cinterface.py,sha256=xRMWPKG7nC0q1L4AHjEm--nuJFTcesOgMQK3BIS2J4o,5017
+pyhackrf/libhackrf.py,sha256=NrlNZsHwvfqgp5IVey98UNmrTtIpEzIg23-itjsDtBw,18071
+pyhackrf2-1.0.0.dist-info/METADATA,sha256=RBE8kvgZ4sXFPwpnloB-NwKS9ioTwHZ7pyQ3qrT4gfs,4130
+pyhackrf2-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyhackrf2-1.0.0.dist-info/top_level.txt,sha256=5DCkbRMcjlxM1qM2pFz0r1OMM55Pl94VH31AvFVVvOA,9
+pyhackrf2-1.0.0.dist-info/RECORD,,
