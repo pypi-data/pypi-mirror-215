@@ -1,0 +1,9 @@
+README.md
+setup.py
+ProjectREMLA23Team09Lib.egg-info/PKG-INFO
+ProjectREMLA23Team09Lib.egg-info/SOURCES.txt
+ProjectREMLA23Team09Lib.egg-info/dependency_links.txt
+ProjectREMLA23Team09Lib.egg-info/requires.txt
+ProjectREMLA23Team09Lib.egg-info/top_level.txt
+src/VersionUtil.py
+src/__init__.py
