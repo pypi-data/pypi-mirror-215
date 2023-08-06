@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rewrite-for-file"
+version = "0.1.0"
+description = ""
+authors = ["Urmasa <n.goltsev@g.nsu.ru>"]
+readme = "README.md"
+packages = [{include = "rewrite_for_file"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+PyQt5 = "^5.15.9"
+numpy = "^1.25.0"
+plotly = "^5.15.0"
+opencv-python-headless = "^4.7.0.72"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
