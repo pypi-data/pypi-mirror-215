@@ -1,0 +1,13 @@
+histcite/__init__.py,sha256=G3p10uWMvNQiA3ZdxMz0QlmyKECmnauS0Ym9wMP2tEI,21
+histcite/cli.py,sha256=PRYuPq65Y4K7JIobcLgJkCo94bDIvwr6-ZMbuOFHiJY,1848
+histcite/compute_metrics.py,sha256=QM6tZt9ZFosiBGc_4IKafmewQqzYvAEwnePmgC91rA4,6077
+histcite/network_graph.py,sha256=UMZxN87ncpoOkFqD9hbYUYSaancTtlhsvKrS29Ya624,4885
+histcite/parse_reference.py,sha256=eWtXkoZClKbOqQVCC24g6P-4s5vTXxf8OKVaOLcnWQU,4465
+histcite/process_file.py,sha256=c1BWI18-btsRWHrVNmUkmB2mD-ijYVvvvbXieFUV_3M,10644
+histcite/recognize_reference.py,sha256=nNxmB_HPbcK6zaIfJgbNE65AWb7vbtqycBsspy1-v48,4697
+histcite_python-0.3.3.dist-info/LICENSE,sha256=ckrCglW00Do6DGhIcOCaetBgAuN6tkhOQTRC3e3minM,1064
+histcite_python-0.3.3.dist-info/METADATA,sha256=V2fnIKCC-c5ZB7m5NMJi2LIu5qrV23e2XhJfCM3gw-8,9197
+histcite_python-0.3.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+histcite_python-0.3.3.dist-info/entry_points.txt,sha256=Alc1xzVLTyJPUZ_SRh28lbgHoj3HwKiDz8yUsdpKKBg,47
+histcite_python-0.3.3.dist-info/top_level.txt,sha256=mH-Iio-TftetmMCYLWI5bCuZ1vntkqrHB23Xr9tzjys,9
+histcite_python-0.3.3.dist-info/RECORD,,
