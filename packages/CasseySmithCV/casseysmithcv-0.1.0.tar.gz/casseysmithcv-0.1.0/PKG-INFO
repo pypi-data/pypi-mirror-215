@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: CasseySmithCV
+Version: 0.1.0
+Summary: Produces critical values using the methods described in Cassey Smith (2014).  Code is modernized from version published with paper to take advantage of advances in computing.
+Project-URL: Homepage, https://github.com/tazzben/CasseySmithCV
+Project-URL: Bug Tracker, https://github.com/tazzben/CasseySmithCV/issues
+Author-email: Ben Smith <bosmith@unomaha.edu>
+Maintainer-email: Ben Smith <bosmith@unomaha.edu>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: EG Statistic,Monte Carlo,Statistics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: pandas>=1.3.0
+Requires-Dist: tqdm>=4.26.0
+Description-Content-Type: text/markdown
+
+# CasseySmithCV
+ 
+Simulation software to generate critical values for the Ellison-Glaeser index (1997).  This is updated software from Cassey and Smith (2014); it modernizes the codebase and increases the performance of the simulations.
+
+## Examples
+
+Run a simulation of industries with 20 plants and sigma value of 1. 
+
+```python
+from CasseySmithCV import runSimulation, SimulationTable, SaveSimulationTable
+resultDictionary = runSimulation(20,1)
+```
+
+Run all combinations of [20, 30] plants and [0.5, 1] sigma values:
+
+```python
+from CasseySmithCV import runSimulation, SimulationTable, SaveSimulationTable
+resultDataFrame = SimulationTable([20, 30],[0.5, 1])
+```
+
+Run all combinations of [20, 30] plants and [0.5, 1] sigma values and save the results to a file:
+
+```python
+from CasseySmithCV import runSimulation, SimulationTable, SaveSimulationTable
+SaveSimulationTable('filename.csv', [20, 30],[0.5, 1])
+```
+
+## Installation 
+
+This package can be installed by using either the pip or conda command:
+
+### Installing by pip
+
+```
+pip install CasseySmithCV
+```
+
+### Installing by conda
+
+```
+conda install -c tazzben casseysmithcv
+```

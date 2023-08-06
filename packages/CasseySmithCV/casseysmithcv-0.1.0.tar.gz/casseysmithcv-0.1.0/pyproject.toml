@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CasseySmithCV"
+version = "0.1.0"
+description = "Produces critical values using the methods described in Cassey Smith (2014).  Code is modernized from version published with paper to take advantage of advances in computing."
+license = "MIT"
+authors = [
+  { name="Ben Smith", email="bosmith@unomaha.edu" },
+]
+maintainers = [
+  { name="Ben Smith", email="bosmith@unomaha.edu" },
+]
+readme = "README.md"
+homepage = "https://github.com/tazzben/CasseySmithCV"
+repository = "https://github.com/tazzben/CasseySmithCV"
+keywords = ["Monte Carlo", "EG Statistic", "Statistics"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21.0",
+    "pandas>=1.3.0",
+    "tqdm>=4.26.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tazzben/CasseySmithCV"
+"Bug Tracker" = "https://github.com/tazzben/CasseySmithCV/issues"
