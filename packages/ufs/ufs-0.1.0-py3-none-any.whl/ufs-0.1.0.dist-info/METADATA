@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ufs
+Version: 0.1.0
+Summary: Unified File System - Object Oriented way to work seamlessly between Posix and S3 filesystems
+Home-page: https://github.com/spsoni/ufs
+License: MIT
+Keywords: FileSystem,Posix,AWS,S3
+Author: Sury Soni
+Author-email: github@suryasoni.info
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/spsoni/ufs
+Description-Content-Type: text/markdown
+
+# Unified File System
+
+Developers face common problem in writing code in local filesystem first and then make the code to work with S3.
+This creates a painful situation if not too much of code duplication.
+
+Unified File System (`ufs`) package solves that problem where it exposes generic `File` and `Directory` classes.
+
+Unified File System is an Object-Oriented way to work seamlessly between Posix and S3 filesystems
+
+## Description
+
+Usually we pass two different kinds of path parameter (Posix vs S3). And, we have to handle them differently either
+using `os` or `boto3` python library.
+
+With `ufs`, we have a wrapper classes like `PosixFile` / `S3File` (inherits from `File`)
+and `PosixDirector` / `S3Directory` (inherits from `Directory`).
+
+This makes writing functions and classes with a clear expectation to run with both Posix and S3 paths seamlessly.
+
+## Installation
+
+Install with pip:
+
+``` bash
+pip install ufs
+
+```
+
