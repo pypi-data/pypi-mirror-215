@@ -1,0 +1,502 @@
+{
+    "BTC": {
+        "id": "BTC",
+        "name": "Bitcoin",
+        "price_usd": 30156.09
+    },
+    "ETH": {
+        "id": "ETH",
+        "name": "Ethereum",
+        "price_usd": 1888.39
+    },
+    "USDT": {
+        "id": "USDT",
+        "name": "Tether",
+        "price_usd": 1.0
+    },
+    "BNB": {
+        "id": "BNB",
+        "name": "BNB",
+        "price_usd": 243.93
+    },
+    "USDC": {
+        "id": "USDC",
+        "name": "USD Coin",
+        "price_usd": 0.9999
+    },
+    "XRP": {
+        "id": "XRP",
+        "name": "XRP",
+        "price_usd": 0.4983
+    },
+    "ADA": {
+        "id": "ADA",
+        "name": "Cardano",
+        "price_usd": 0.2944
+    },
+    "DOGE": {
+        "id": "DOGE",
+        "name": "Dogecoin",
+        "price_usd": 0.06626
+    },
+    "SOL": {
+        "id": "SOL",
+        "name": "Solana",
+        "price_usd": 16.89
+    },
+    "TRX": {
+        "id": "TRX",
+        "name": "TRON",
+        "price_usd": 0.07192
+    },
+    "LTC": {
+        "id": "LTC",
+        "name": "Litecoin",
+        "price_usd": 86.08
+    },
+    "MATIC": {
+        "id": "MATIC",
+        "name": "Polygon",
+        "price_usd": 0.67
+    },
+    "DOT": {
+        "id": "DOT",
+        "name": "Polkadot",
+        "price_usd": 4.86
+    },
+    "TON": {
+        "id": "TON",
+        "name": "Toncoin",
+        "price_usd": 1.38
+    },
+    "WBTC": {
+        "id": "WBTC",
+        "name": "Wrapped Bitcoin",
+        "price_usd": 30115.24
+    },
+    "DAI": {
+        "id": "DAI",
+        "name": "Dai",
+        "price_usd": 1.0
+    },
+    "SHIB": {
+        "id": "SHIB",
+        "name": "Shiba Inu",
+        "price_usd": 0.0
+    },
+    "AVAX": {
+        "id": "AVAX",
+        "name": "Avalanche",
+        "price_usd": 12.81
+    },
+    " USDBUSD": {
+        "id": " USDBUSD",
+        "name": "Binance",
+        "price_usd": 1.0
+    },
+    "UNUS SED LEOLEO": {
+        "id": "UNUS SED LEOLEO",
+        "name": "UNUS SED LEOLEO",
+        "price_usd": 3.73
+    },
+    "ATOM": {
+        "id": "ATOM",
+        "name": "Cosmos",
+        "price_usd": 9.15
+    },
+    "USDTUSD": {
+        "id": "USDTUSD",
+        "name": "True",
+        "price_usd": 1.0
+    },
+    "LINK": {
+        "id": "LINK",
+        "name": "Chainlink",
+        "price_usd": 5.61
+    },
+    "XMR": {
+        "id": "XMR",
+        "name": "Monero",
+        "price_usd": 151.77
+    },
+    "UNI": {
+        "id": "UNI",
+        "name": "Uniswap",
+        "price_usd": 4.77
+    },
+    "OKBOKB": {
+        "id": "OKBOKB",
+        "name": "OKBOKB",
+        "price_usd": 44.51
+    },
+    "BCH": {
+        "id": "BCH",
+        "name": "Bitcoin Cash",
+        "price_usd": 134.82
+    },
+    "ETC": {
+        "id": "ETC",
+        "name": "Ethereum Classic",
+        "price_usd": 16.83
+    },
+    "XLM": {
+        "id": "XLM",
+        "name": "Stellar",
+        "price_usd": 0.09
+    },
+    "ICP": {
+        "id": "ICP",
+        "name": "Internet Computer",
+        "price_usd": 4.17
+    },
+    "FIL": {
+        "id": "FIL",
+        "name": "Filecoin",
+        "price_usd": 3.95
+    },
+    " DAOLDO": {
+        "id": " DAOLDO",
+        "name": "Lido",
+        "price_usd": 1.92
+    },
+    "HBAR": {
+        "id": "HBAR",
+        "name": "Hedera",
+        "price_usd": 0.05
+    },
+    "APT": {
+        "id": "APT",
+        "name": "Aptos",
+        "price_usd": 7.5
+    },
+    "CRO": {
+        "id": "CRO",
+        "name": "Cronos",
+        "price_usd": 0.06
+    },
+    "ARB": {
+        "id": "ARB",
+        "name": "Arbitrum",
+        "price_usd": 1.11
+    },
+    "NEAR": {
+        "id": "NEAR",
+        "name": "NEAR Protocol",
+        "price_usd": 1.35
+    },
+    "QNT": {
+        "id": "QNT",
+        "name": "Quant",
+        "price_usd": 102.55
+    },
+    "VET": {
+        "id": "VET",
+        "name": "VeChain",
+        "price_usd": 0.02
+    },
+    "STX": {
+        "id": "STX",
+        "name": "Stacks",
+        "price_usd": 0.78
+    },
+    "USDP": {
+        "id": "USDP",
+        "name": "Pax Dollar",
+        "price_usd": 1.0
+    },
+    "GRT": {
+        "id": "GRT",
+        "name": "The Graph",
+        "price_usd": 0.11
+    },
+    "ALGO": {
+        "id": "ALGO",
+        "name": "Algorand",
+        "price_usd": 0.13
+    },
+    "OP": {
+        "id": "OP",
+        "name": "Optimism",
+        "price_usd": 1.39
+    },
+    "APE": {
+        "id": "APE",
+        "name": "ApeCoin",
+        "price_usd": 2.26
+    },
+    "XEGLD": {
+        "id": "XEGLD",
+        "name": "Multivers",
+        "price_usd": 32.51
+    },
+    "FTM": {
+        "id": "FTM",
+        "name": "Fantom",
+        "price_usd": 0.29
+    },
+    "RNDR": {
+        "id": "RNDR",
+        "name": "Render Token",
+        "price_usd": 2.2
+    },
+    "AAVE": {
+        "id": "AAVE",
+        "name": "Aave",
+        "price_usd": 56.03
+    },
+    "RPL": {
+        "id": "RPL",
+        "name": "Rocket Pool",
+        "price_usd": 41.43
+    },
+    "DAOBIT": {
+        "id": "DAOBIT",
+        "name": "Bit",
+        "price_usd": 0.43
+    },
+    "SAND": {
+        "id": "SAND",
+        "name": "The Sandbox",
+        "price_usd": 0.42
+    },
+    "CFX": {
+        "id": "CFX",
+        "name": "Conflux",
+        "price_usd": 0.26
+    },
+    "EOSEOS": {
+        "id": "EOSEOS",
+        "name": "EOSEOS",
+        "price_usd": 0.68
+    },
+    "USDDUSDD": {
+        "id": "USDDUSDD",
+        "name": "USDDUSDD",
+        "price_usd": 1.0
+    },
+    "IMX": {
+        "id": "IMX",
+        "name": "Immutable",
+        "price_usd": 0.71
+    },
+    "MKR": {
+        "id": "MKR",
+        "name": "Maker",
+        "price_usd": 743.06
+    },
+    "XTZ": {
+        "id": "XTZ",
+        "name": "Tezos",
+        "price_usd": 0.77
+    },
+    "THETA": {
+        "id": "THETA",
+        "name": "Theta Network",
+        "price_usd": 0.72
+    },
+    "MANA": {
+        "id": "MANA",
+        "name": "Decentraland",
+        "price_usd": 0.37
+    },
+    "KCS": {
+        "id": "KCS",
+        "name": "KuCoin Token",
+        "price_usd": 6.73
+    },
+    "AXS": {
+        "id": "AXS",
+        "name": "Axie Infinity",
+        "price_usd": 5.43
+    },
+    "PEPE": {
+        "id": "PEPE",
+        "name": "Pepe",
+        "price_usd": 0.0
+    },
+    "NEO": {
+        "id": "NEO",
+        "name": "Neo",
+        "price_usd": 8.66
+    },
+    "CRV": {
+        "id": "CRV",
+        "name": "Curve DAO Token",
+        "price_usd": 0.67
+    },
+    "INJ": {
+        "id": "INJ",
+        "name": "Injective",
+        "price_usd": 7.09
+    },
+    "GUSD": {
+        "id": "GUSD",
+        "name": "Gemini Dollar",
+        "price_usd": 1.0
+    },
+    "FLOW": {
+        "id": "FLOW",
+        "name": "Flow",
+        "price_usd": 0.53
+    },
+    "GALA": {
+        "id": "GALA",
+        "name": "Gala",
+        "price_usd": 0.03
+    },
+    "LUNC": {
+        "id": "LUNC",
+        "name": "Terra Classic",
+        "price_usd": 0.0
+    },
+    " SVBSV": {
+        "id": " SVBSV",
+        "name": "Bitcoin",
+        "price_usd": 27.61
+    },
+    "KAVA": {
+        "id": "KAVA",
+        "name": "Kava",
+        "price_usd": 0.9
+    },
+    "KLAY": {
+        "id": "KLAY",
+        "name": "Klaytn",
+        "price_usd": 0.17
+    },
+    "CHZ": {
+        "id": "CHZ",
+        "name": "Chiliz",
+        "price_usd": 0.07
+    },
+    "SNX": {
+        "id": "SNX",
+        "name": "Synthetix",
+        "price_usd": 1.93
+    },
+    "SUI": {
+        "id": "SUI",
+        "name": "Sui",
+        "price_usd": 0.82
+    },
+    "PAXG": {
+        "id": "PAXG",
+        "name": "PAX Gold",
+        "price_usd": 1908.43
+    },
+    "GMXGMX": {
+        "id": "GMXGMX",
+        "name": "GMXGMX",
+        "price_usd": 54.22
+    },
+    "IOTAMIOTA": {
+        "id": "IOTAMIOTA",
+        "name": "IOTAMIOTA",
+        "price_usd": 0.17
+    },
+    "XAUT": {
+        "id": "XAUT",
+        "name": "Tether Gold",
+        "price_usd": 1919.57
+    },
+    "XDC": {
+        "id": "XDC",
+        "name": "XDC Network",
+        "price_usd": 0.03
+    },
+    "CSPR": {
+        "id": "CSPR",
+        "name": "Casper",
+        "price_usd": 0.04
+    },
+    ")BTT": {
+        "id": ")BTT",
+        "name": "BitTorrent(New",
+        "price_usd": 0.0
+    },
+    "MINA": {
+        "id": "MINA",
+        "name": "Mina",
+        "price_usd": 0.49
+    },
+    "ZEC": {
+        "id": "ZEC",
+        "name": "Zcash",
+        "price_usd": 26.6
+    },
+    "FXS": {
+        "id": "FXS",
+        "name": "Frax Share",
+        "price_usd": 5.98
+    },
+    "HT": {
+        "id": "HT",
+        "name": "Huobi Token",
+        "price_usd": 2.66
+    },
+    "XEC": {
+        "id": "XEC",
+        "name": "eCash",
+        "price_usd": 0.0
+    },
+    "GT": {
+        "id": "GT",
+        "name": "GateToken",
+        "price_usd": 4.18
+    },
+    "TWT": {
+        "id": "TWT",
+        "name": "Trust Wallet Token",
+        "price_usd": 0.94
+    },
+    "DASH": {
+        "id": "DASH",
+        "name": "Dash",
+        "price_usd": 33.27
+    },
+    "NEXO": {
+        "id": "NEXO",
+        "name": "Nexo",
+        "price_usd": 0.64
+    },
+    "WOO": {
+        "id": "WOO",
+        "name": "WOO Network",
+        "price_usd": 0.21
+    },
+    "RUNE": {
+        "id": "RUNE",
+        "name": "THORChain",
+        "price_usd": 0.94
+    },
+    "MASK": {
+        "id": "MASK",
+        "name": "Mask Network",
+        "price_usd": 3.78
+    },
+    "NETAGIX": {
+        "id": "NETAGIX",
+        "name": "Singularity",
+        "price_usd": 0.25
+    },
+    "ZIL": {
+        "id": "ZIL",
+        "name": "Zilliqa",
+        "price_usd": 0.02
+    },
+    "LRC": {
+        "id": "LRC",
+        "name": "Loopring",
+        "price_usd": 0.22
+    },
+    "GNO": {
+        "id": "GNO",
+        "name": "Gnosis",
+        "price_usd": 115.15
+    },
+    "CVX": {
+        "id": "CVX",
+        "name": "Convex Finance",
+        "price_usd": 3.81
+    }
+}
