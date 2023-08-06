@@ -1,0 +1,5 @@
+torch
+onnx
+onnx-tool
+thop
+netron
