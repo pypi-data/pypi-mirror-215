@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: kerasfuse
+Version: 0.1a0
+Summary: KerasFuse is a Python library that combines the power of TensorFlow and Keras with various computer vision techniques for medical image analysis tasks.
+Home-page: https://github.com/ayyucedemirbas/KerasFuse
+Keywords: Tensorflow,Keras,KerasFuse
+Author: Ayyuce Demirbas
+Author-email: a.ayyuced@gmail.com
+Maintainer: Ayyuce Demirbas
+Maintainer-email: a.ayyuced@gmail.com
+Requires-Python: >=3.8.1,<3.12.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: keras (>=2.12.0,<3.0.0)
+Requires-Dist: opencv-python (>=4.7.0.72,<5.0.0.0)
+Requires-Dist: scikit-learn (>=1.2.2,<2.0.0)
+Requires-Dist: tensorflow (>=2.12.0) ; sys_platform != "darwin"
+Requires-Dist: tensorflow-macos (>=2.12.0) ; sys_platform == "darwin"
+Project-URL: Documentation, https://github.com/ayyucedemirbas/KerasFuse/blob/main/README.md
+Project-URL: Repository, https://github.com/ayyucedemirbas/KerasFuse
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://github.com/ayyucedemirbas/KerasFuse"><img src="https://github.com/ayyucedemirbas/KerasFuse/assets/8023150/41d8880d-8117-448b-a725-2b72d2d08beb" alt="KerasFuse"></a>
+</p>
+
+<h1 align="center">KerasFuse</h1>
+
+<p>
+  <img alt="GitHub" src="https://img.shields.io/github/license/ayyucedemirbas/Kerasfuse">
+  <img alt="Python3" src="https://img.shields.io/badge/Python-3.8.1 | 3.9 | 3.10 | 3.11-3776AB.svg?logo=Python&logoColor=white"/>
+  <img alt="Tensorflow" src="https://img.shields.io/badge/Tensorflow-v2.12.0-%23FF6F00.svg?logo=Tensorflow&logoColor=white"/>
+  <img alt="Keras" src="https://img.shields.io/badge/Keras-v2.12.0-%23D00000.svg?logo=Keras&logoColor=white"/>
+  <img alt="Black" src="https://img.shields.io/badge/code%20style-black-black"/>
+  <img alt="isort" src="https://img.shields.io/badge/isort-checked-yellow"/>
+</p>
+
+<h4 align="center">🚧 Warning this project is under heavy development and not ready for production. ABI changes can happen frequently until reach stable version 🚧 </h4>
+
+
+KerasFuse is a Python library that combines the power of TensorFlow and Keras with various computer vision techniques for medical image analysis tasks. It provides a collection of modules and functions to facilitate the development of deep learning models in TensorFlow Keras for tasks such as image segmentation, classification, and more.
+
+
+
+## Getting Started
+
+### Installation
+
+#### Poetry Installation
+
+```bash
+poetry install
+poetry shell
+```
+
+#### Tip
+
+If you have multiple Python versions on your system, you can set your Python version by using `poetry env` . Here's an example of how to use it:
+
+```bash
+poetry env use python3.10
+```
+
+More details at
+[poetry-switching-between-environments](https://python-poetry.org/docs/managing-environments/#switching-between-environments)
+
+#### Pip Installations
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+## License
+
+This project is licensed under the terms of the GPL-3.0 license.
+
