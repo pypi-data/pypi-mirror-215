@@ -1,0 +1,9 @@
+axsqlalchemy/__init__.py,sha256=Bowt5Ztv8LOo9Gx-0SSE08HEKDeETXlPZDtg3MF_22E,232
+axsqlalchemy/model.py,sha256=-PVdICE2KGy3PZywFkML2eFLg3Xnll25SiS-Kbc-SyA,1375
+axsqlalchemy/repository.py,sha256=EiGvo6jsY2iaJT8SXt01g2bAPinSGuKSTs-OGN0t8G8,3511
+axsqlalchemy/settings.py,sha256=VkdxkOjz_SX8GuROdLW03CTPskVJDSpV4FYcx60eQ8M,578
+axsqlalchemy/uow.py,sha256=4ToVPp2UQ9Zc1A1Yez55RzRrPYykmwP0UeIbPOYh3wg,1709
+axsqlalchemy-0.0.1.dist-info/METADATA,sha256=UCnUQoBbLsI8MK5ykvdPmavP_XRLgAVqCHPFEee-nSc,241
+axsqlalchemy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+axsqlalchemy-0.0.1.dist-info/top_level.txt,sha256=DQHGT32p1VVG5ESQeTnOIaAcakqvKO0eiUkRjUNzrVU,13
+axsqlalchemy-0.0.1.dist-info/RECORD,,
