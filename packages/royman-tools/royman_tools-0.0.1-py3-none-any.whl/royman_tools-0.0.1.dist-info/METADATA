@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: royman-tools
+Version: 0.0.1
+Summary: A collection of tools
+Home-page: https://github.com/roymanigley/royman-tools
+Author: Roy Manigley
+Author-email: roy.manigley@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (>=8.1.3)
+
+# royman-tools
+> collection of tools
+
+## Installation
+```
+pip install royman-tools
+```
+or from Github:
+```
+git clone https://github.com/roymanigley/royman-tools.git
+cd royman-tools
+python setup.py install
+```
+
+## Usage
+```
+royman-tools:create-project --help
+
+royman-tools:create-project --project_name my-project-name
+```
+
+
