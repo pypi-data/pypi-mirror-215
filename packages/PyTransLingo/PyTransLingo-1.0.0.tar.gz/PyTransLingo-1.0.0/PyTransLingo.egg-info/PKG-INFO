@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyTransLingo
+Version: 1.0.0
+Summary: PyTransLingo is a command-line tool that provides translation and text-to-speech functionalities. It allows users to translate text between different languages using the Google Translate API. PyTransLingo also provides the ability to fetch the meaning of translated text using the PyDictionary library. Additionally, users can perform Google searches directly from the command line and listen to the search results using text-to-speech. Explore the world of languages with PyTransLingo!
+Author: Hari Prasath .S
+Author-email: harishreehp80@gmail.com
+License: MIT
+License-File: LICENCE.txt
