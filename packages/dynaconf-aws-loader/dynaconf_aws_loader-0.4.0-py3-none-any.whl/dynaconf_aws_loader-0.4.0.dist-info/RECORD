@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=nwr6rOYc2AvvtiiRlS-Hmud-ucWkFmDmra9Y6ZMe89k,965
+LICENSE,sha256=TwGcbcBMa6Lsc-FCv2R8yHRBlPGIIOjfrvA6WK-vO10,1072
+dynaconf_aws_loader/__init__.py,sha256=ihHGQrsRLoyOkxchMLnqQFlKuWrYwgVTVBsd6OTaoPA,369
+dynaconf_aws_loader/loader.py,sha256=qkpKM3rEp1KBz2cT2SDX-cP4ndWcOjwyd0kaGy_dv7w,8797
+dynaconf_aws_loader/util.py,sha256=JnqO9jeSjLG2m3Ei1Ev0RTXeOBbgR6WkKcf8cT6u8AM,1752
+dynaconf_aws_loader-0.4.0.dist-info/LICENSE,sha256=TwGcbcBMa6Lsc-FCv2R8yHRBlPGIIOjfrvA6WK-vO10,1072
+dynaconf_aws_loader-0.4.0.dist-info/METADATA,sha256=3itsTjUUvzITyQtkpkX1YuCYTGkqxY8LuT-WKnwez2c,9054
+dynaconf_aws_loader-0.4.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+dynaconf_aws_loader-0.4.0.dist-info/RECORD,,
