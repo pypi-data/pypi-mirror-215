@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: unrollcuda
+Version: 0.0.4
+Summary: Loop unrolling and batching for CUDA
+Project-URL: Homepage, https://github.com/format37/unrollcuda
+Project-URL: Bug Tracker, https://github.com/format37/unrollcuda/issues
+Author-email: Aleksei Iurasov <format37@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pycuda
+Description-Content-Type: text/markdown
+
+# unrollcuda
+Loop unrolling and batching for CUDA  
+The core idea of this solution is to give a way to solve the following tasks:  
+1. Use Loop unrolling to compute in CUDA any size and any count of dimensions array  
+2. Use Batching to compute any size array, even if it s big that can't be fitted in GPU memory  
+## Requirements:
+[CUDA](https://developer.nvidia.com/cuda-downloads)  
+[Python](https://www.python.org/downloads/)
+## Getting Started
+### Installation
+```
+pip install unrollcuda
+```
+### Usage
+#### Invert values in a multi-dimensional boolean array
+invert.cu
+```
+__global__ void unroll(
+    bool *arr,
+    unsigned int *shape,
+    unsigned long long gpu_arr_size,
+    unsigned long long shape_total,
+    unsigned long long dimensions_count,
+    unsigned long long step,
+    unsigned char order,
+    unsigned long long batch_start
+)
+{
+    unsigned long long idx = threadIdx.x + blockIdx.x * blockDim.x;
+    unsigned long long idx_full;
+    unsigned int i = 0;
+    unsigned int *indices = new unsigned int[dimensions_count]; // array to hold the computed indices
+    unsigned long long tmp;
+    
+    idx_full = i * step + idx;
+
+    while (idx_full < shape_total && idx_full < gpu_arr_size)
+    {
+        tmp = idx_full + batch_start; // add batch_start to account for the offset
+        // Compute the indices
+        for (unsigned int j = 0; j < dimensions_count; ++j)
+        {
+            unsigned int dimension = (order == 0) ? dimensions_count - j - 1 : j;
+            // Modulo by the dimension size
+            indices[dimension] = tmp % shape[dimension];
+            // Divide by the dimension size
+            tmp /= shape[dimension];
+        }
+        //printf("idx_full: %llu, idx: %llu, batch_start: %llu\n", idx_full, idx, batch_start);
+        
+        for (unsigned int j = 0; j < dimensions_count; ++j)
+        {
+            // j is the dimension
+            
+            // Your code ++
+            // Invert the value in arr
+            arr[idx_full] = !arr[idx_full];
+            // Your code --
+            
+            break;
+        }
+        i += 1;
+        idx_full = i * step + idx;
+    }
+    // Free the memory
+    delete[] indices;
+}
+
+```
+invert.py
+```
+import numpy as np
+from unrollcuda import unrollcuda
+
+
+def main():
+
+    dimensions = [3, 4]
+    shape = [int(size) for size in dimensions]
+    # random boolean values
+    arr = np.random.choice(
+        a=[False, True],
+        size=shape,
+        p=[0.5, 0.5],
+        )
+
+    with open('invert.cu', 'r') as f:
+        kernel_code = f.read()
+
+    uc = unrollcuda(kernel_code)
+    arr_new = uc.inference(arr)
+
+    # Prepare the test array
+    arr_test = arr.copy()
+    print('\nOriginal array:\n', arr_test)
+    # Convert all False values to True and vice versa
+    arr_test = np.logical_not(arr_test)
+    print('\nTest array:\n', arr_test)
+
+    # Check the result
+    result_check = np.array_equal(arr_new, arr_test)
+    print('\nResult check: ', result_check)
+
+
+if __name__ == '__main__':
+    main()
+```
