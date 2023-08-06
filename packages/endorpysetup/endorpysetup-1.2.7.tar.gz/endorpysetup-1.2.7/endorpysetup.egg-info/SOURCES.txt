@@ -1,0 +1,7 @@
+README.md
+setup.py
+endorpysetup.egg-info/PKG-INFO
+endorpysetup.egg-info/SOURCES.txt
+endorpysetup.egg-info/dependency_links.txt
+endorpysetup.egg-info/requires.txt
+endorpysetup.egg-info/top_level.txt
