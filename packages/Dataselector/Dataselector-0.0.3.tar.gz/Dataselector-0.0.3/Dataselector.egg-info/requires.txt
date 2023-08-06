@@ -1,0 +1,7 @@
+pandas
+pathlib
+ipydatagrid
+IPython.display
+requests
+termcolor
+ipyfilechooser
