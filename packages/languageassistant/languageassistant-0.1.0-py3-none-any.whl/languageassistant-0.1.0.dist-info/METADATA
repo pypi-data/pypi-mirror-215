@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: languageassistant
+Version: 0.1.0
+Summary: An LLM-powered language learning assistant
+Home-page: https://dagleaves.github.io/languageassistant
+License: MIT
+Author: Daniel Gleaves
+Author-email: daniel@dagleaves.com
+Requires-Python: >=3.9,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: faiss-cpu (>=1.7.4,<2.0.0)
+Requires-Dist: google-cloud-texttospeech (>=2.14.1,<3.0.0)
+Requires-Dist: langchain (>=0.0.162,<0.0.163)
+Requires-Dist: lark (>=1.1.5,<2.0.0)
+Requires-Dist: openai (>=0.27.6,<0.28.0)
+Requires-Dist: pyaudio (>=0.2.13,<0.3.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: speechrecognition (>=3.10.0,<4.0.0)
+Requires-Dist: tiktoken (>=0.4.0,<0.5.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Documentation, https://dagleaves.github.io/languageassistant
+Project-URL: Repository, https://github.com/dagleaves/languageassistant
+Description-Content-Type: text/markdown
+
+# LanguageAssistant
+
+[![PyPI](https://img.shields.io/pypi/v/languageassistant?style=flat-square)](https://pypi.python.org/pypi/languageassistant/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/languageassistant?style=flat-square)](https://pypi.python.org/pypi/languageassistant/)
+[![PyPI - License](https://img.shields.io/pypi/l/languageassistant?style=flat-square)](https://pypi.python.org/pypi/languageassistant/)
+
+---
+
+**Documentation**: [https://dagleaves.github.io/languageassistant](https://dagleaves.github.io/languageassistant)
+
+**Source Code**: [https://github.com/dagleaves/languageassistant](https://github.com/dagleaves/languageassistant)
+
+**PyPI**: [https://pypi.org/project/languageassistant/](https://pypi.org/project/languageassistant/)
+
+---
+
+LanguageAssistant is a large language model (LLM) powered foreign language learning assistant. This harnesses the
+language capabilities of LLMs to provide verbal communication capabilities focused on learning foreign languages.
+
+This project is largely a proof of concept, but has been setup to be extensible so that it could be used as a
+backend for a full-fledged application utilizing a better UI, microphone recording, transcription, LLM prompts,
+and/or multi-lingual text-to-speech.
+
+Features of LanguageAssistant:
+- [x] Full real-time vocal multilingual conversations
+  - [x] Real-time voice transcription
+  - [x] LLM text responses
+  - [x] Multilingual text-to-speech
+- [x] LLM agent for lesson planning
+
+## Installation
+
+```sh
+pip install languageassistant
+```
+
+---
+
