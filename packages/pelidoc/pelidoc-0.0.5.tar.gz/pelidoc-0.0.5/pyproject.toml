@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pelidoc"
+authors = [
+    {name = "Steampunk Wizard", email = "pelidoc@steampunkwizard.ca"}
+]
+description = "Static site generator for project documentation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "Markdown==3.4.3",
+    "pelican[markdown] ==4.8.0"
+]
+dynamic = ["version"]
+
+[tool.setuptools.package-dir]
+pelidoc = "pelidoc"
+
+[tool.setuptools.package-data]
+pelidoc = ["theme/**/*"]
+
+[project.scripts]
+pelican = "pelican.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {file = [".version"]}

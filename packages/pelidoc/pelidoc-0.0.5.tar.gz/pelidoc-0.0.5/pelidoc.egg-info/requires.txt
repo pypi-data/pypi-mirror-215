@@ -1,0 +1,2 @@
+Markdown==3.4.3
+pelican[markdown]==4.8.0
