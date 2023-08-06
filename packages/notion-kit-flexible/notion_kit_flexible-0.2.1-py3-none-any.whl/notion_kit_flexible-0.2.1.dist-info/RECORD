@@ -1,0 +1,11 @@
+notion_kit/CONTENTS.py,sha256=NVzxhgopu3g1qhhcQ2GbKLSVVjLAzHOg012bGyivAz8,6060
+notion_kit/__init__.py,sha256=0e6zciJ1CQYsNtBcK-Cef3ztV-K9c06f9meCXyh5m4M,1377
+notion_kit/api.py,sha256=3M4gX1ssbqC7ID0oYQ4XRbr_mQ2oKD4JXZO5V5Lw3HA,14731
+notion_kit/dict_gadget.py,sha256=8hJcrAhKE5v-XGhfO4PC2tRVUcVs4vWxR6Rhz_4TxL8,76230
+notion_kit/gadget.py,sha256=A0sjwxwi3FL1zXlfBY_rNZFavALvlHf51YSmBvI2BDE,28244
+notion_kit/object.py,sha256=1SluMgh83gvJoE6mQUF1gVbTtKsfZ3PrabtBgcWczqM,51090
+notion_kit/tool.py,sha256=m1T3YfYzBm3uGyikxLB9XYrHtE9HPMuL_B6IT7hN8D4,2441
+notion_kit_flexible-0.2.1.dist-info/LICENSE,sha256=XWhgTni9-0VqWHoM5Db4C6BQuhqUz2kU2vSFvAFY0do,1067
+notion_kit_flexible-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+notion_kit_flexible-0.2.1.dist-info/METADATA,sha256=OaANmaPrDD5oVgnsLNICU8TfeblFCYfA-28P2bxM8ck,4215
+notion_kit_flexible-0.2.1.dist-info/RECORD,,
