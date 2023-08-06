@@ -1,0 +1,4 @@
+gymnasium
+mysql-connector-python
+scikit-learn
+pandas

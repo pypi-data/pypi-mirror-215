@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: intercode-bench
+Version: 0.1.1
+Summary: The official InterCode benchmark package - a framework for interactive code tasks
+Home-page: http://github.com/intercode-benchmark/intercode-benchmark
+Author: John Yang
+Author-email: byjohnyang@gmail.com
+Project-URL: Documentation, https://github.com/intercode-benchmark/intercode-benchmark
+Project-URL: Bug Reports, https://github.com/intercode-benchmark/intercode-benchmark/issues
+Project-URL: Source Code, https://github.com/intercode-benchmark/intercode-benchmark
+Project-URL: Website, https://intercode-benchmark.github.io/
+Keywords: nlp,benchmark,interaction,code,rl,decision making
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 🤖💻 Intercode
+Build interactive code environments for training, testing, and augmenting code and decision making agents
+
+<p>
+    <a href="https://www.python.org/">
+        <img alt="Build" src="https://img.shields.io/badge/Python-3.8+-1f425f.svg?color=purple">
+    </a>
+    <a href="https://copyright.princeton.edu/policy">
+        <img alt="License" src="https://img.shields.io/badge/License-MIT-blue">
+    </a>
+</p>
+
+## 👋 Overview
+Intercode is a **lightweight, flexible, and easy-to-use framework** for designing interactive code environments.
+Intercode makes it easy to quickly define a code environment and deploy an agent to operate in code within the context of the environment.
+
+```
+pip install intercode-bench
+```
+
+## 🪪 License
+Check `LICENSE.md`
