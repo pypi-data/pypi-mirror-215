@@ -1,0 +1,10 @@
+numpy
+scipy
+opencv-python-headless
+scikit-image
+matplotlib
+pandas
+tifffile
+pynwb
+scipy
+matlab
