@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "sshgen"
+version = "0.1.1"
+description = "SSH config generator based on Ansible hosts yaml file"
+license = "Unlicense"
+repository = "https://github.com/pythoninja/sshgen"
+authors = ["pythoninja <pythoninja@users.noreply.github.com>"]
+readme = "README.md"
+keywords = ["ssh", "config", "ansible", "cli", "generator"]
+
+[tool.poetry.urls]
+"Changelog" = "https://github.com/pythoninja/sshgen/blob/master/CHANGELOG.md"
+
+[tool.poetry.scripts]
+sshgen = "sshgen.cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ruamel-yaml = "^0.17.31"
+typer = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.tbump]
+github_url = "https://github.com/pythoninja/sshgen"
+
+[tool.tbump.version]
+current = "0.1.1"
+regex = '''
+  (?P<major>\d+)
+  \.
+  (?P<minor>\d+)
+  \.
+  (?P<patch>\d+)
+  '''
+
+[tool.tbump.git]
+message_template = "chore(release): v{new_version}"
+tag_template = "v{new_version}"
+
+[[tool.tbump.file]]
+src = "README.md"
+search = "Current version: v{current_version}"
+
+[[tool.tbump.file]]
+src = "README.md"
+search = "sshgen@v"
+
+[[tool.tbump.file]]
+src = "sshgen/__init__.py"
+search = "__version__ = '{current_version}'"
+
+[[tool.tbump.before_commit]]
+name = "Bump poetry"
+cmd = "poetry version {new_version}"
+
+[[tool.tbump.before_commit]]
+name = "Generate Changelog"
+cmd = "git cliff --tag {new_version} --output CHANGELOG.md"
+
+[tool.ruff]
+exclude = []
+select = ["B", "C9", "E", "F", "G", "I", "ISC", "PIE", "PL", "TID", "W", "YTT"]
+ignore = []
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.pylint]
+max-args = 5
