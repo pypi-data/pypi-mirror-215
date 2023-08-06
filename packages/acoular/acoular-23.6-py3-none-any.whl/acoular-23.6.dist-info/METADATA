@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: acoular
+Version: 23.6
+Summary: Python library for acoustic beamforming
+Project-URL: homepage, https://acoular.org
+Project-URL: documentation, https://acoular.org
+Project-URL: repository, https://github.com/acoular/acoular
+Author-email: Acoular Development Team <info@acoular.org>
+Maintainer-email: Adam Kujawski <adam.kujawski@tu-berlin.de>, Art Pelling <a.pelling@tu-berlin.de>, Ennes Sarradj <ennes.sarradj@tu-berlin.de>, Gert Herlod <gert.herold@tu-berlin.de>, Mikolaj Czuchaj <mikolaj.czuchaj@tu-berlin.de>, Simon Jekosch <s.jekosch@tu-berlin.de>
+License: Copyright (c) 2006-2021 The acoular developers.
+        All rights reserved.
+        
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+          a. Redistributions of source code must retain the above copyright notice,
+             this list of conditions and the following disclaimer.
+          b. Redistributions in binary form must reproduce the above copyright
+             notice, this list of conditions and the following disclaimer in the
+             documentation and/or other materials provided with the distribution.
+          c. Neither the name of the acoular developers nor the names of
+             its contributors may be used to endorse or promote products
+             derived from this software without specific prior written
+             permission. 
+        
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+        ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+        LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+        OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+        DAMAGE.
+License-File: AUTHORS.rst
+License-File: LICENSE
+Keywords: acoustics,beamforming,microphone array
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: <=11,>=3.7
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: scikit-learn<=1.1.3
+Requires-Dist: scipy>=1.1.0
+Requires-Dist: tables>=3.4.4
+Requires-Dist: traits>=6.0
+Provides-Extra: dev
+Requires-Dist: nox; extra == 'dev'
+Provides-Extra: full
+Requires-Dist: matplotlib; extra == 'full'
+Requires-Dist: pylops; extra == 'full'
+Description-Content-Type: text/markdown
+
+# Acoular
+Acoular is a Python module for acoustic beamforming that is distributed under the new BSD license. 
+
+It is aimed at applications in acoustic testing. Multichannel data recorded by a microphone array can be processed and analyzed in order to generate mappings of sound source distributions. The maps (acoustic photographs) can then be used to locate sources of interest and to characterize them using their spectra. 
+
+# Features
+- covers several beamforming algorithms 
+- different advanced deconvolution algorithms
+- both time-domain and frequency-domain operation included
+- 3D mapping possible
+- application for stationary and for moving targets
+- supports both scripting and graphical user interface
+- efficient: intelligent caching, parallel computing with Numba
+- easily extendible and well documented
+
+# Dependencies
+Acoular runs under Linux, Windows and MacOS, a Python 3.9, 3.8, 3.7 or 3.6 installation is needed with the Numpy, Scipy, Traits, scikit-learn, pytables, numba packages available. Matplotlib is recommended, but not necessary.
