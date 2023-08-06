@@ -1,0 +1,12 @@
+rewrite_for_file/AnalyzingDataSliceWin.py,sha256=flY-A7bCqtCyPY6_XW3RGmeH1fh61J5zgk4LEYqbTHE,14469
+rewrite_for_file/SaveResultsWin.py,sha256=57i6eUpDrh-faorDn0z0ZRBbPSQYOuzp3UQjcaBoCr4,9863
+rewrite_for_file/SettingsWin.py,sha256=5IcGa9BsoOiE_8zBwBuWE4y_z0eD5IhcTLqOz2NNijs,3242
+rewrite_for_file/analyzing_data_slice_win_design.py,sha256=dT1gJt_8pLkNG8q4leCu8UYx7_paRViDosQb3ktVpN0,7547
+rewrite_for_file/global_data.py,sha256=RwsXwVvppB_JbGXPawNQO1ZEuUGtfwuT1aybLQl8GAE,369
+rewrite_for_file/main.py,sha256=B7f7rjmPEq-FTz65-87v_Ktk3KtdC1GEh-7G80UY-bg,2246
+rewrite_for_file/save_results_win_design.py,sha256=WvqOq926s0u-VgDaTzPIozgcbE9Yns1POxMJxZ-38Ho,5906
+rewrite_for_file/settings_win_design.py,sha256=xQ8cB1otoIi_OUSNg_uIuljsMCQ2kdKmUYLFcKmFO7E,9151
+rewrite_for_file/test.vlt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rewrite_for_file-0.1.0.dist-info/METADATA,sha256=Oz_CiM61OXsDVJ0QX_IaibWbgXBV0pvsQPnNRFZVQoE,3111
+rewrite_for_file-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+rewrite_for_file-0.1.0.dist-info/RECORD,,
