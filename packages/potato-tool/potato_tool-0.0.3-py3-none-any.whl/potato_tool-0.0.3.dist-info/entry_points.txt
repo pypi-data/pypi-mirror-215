@@ -1,0 +1,34 @@
+[console_scripts]
+Detected = potato_tool:Detected
+DetectedP = potato_tool:DetectedP
+Error = potato_tool:Error
+ErrorP = potato_tool:ErrorP
+Information = potato_tool:Information
+InformationP = potato_tool:InformationP
+Input = potato_tool:Input
+InputP = potato_tool:InputP
+Input_lines = potato_tool:Input_lines
+Processing = potato_tool:Processing
+ProcessingP = potato_tool:ProcessingP
+Result = potato_tool:Result
+ResultP = potato_tool:ResultP
+blue = potato_tool:blue
+blueP = potato_tool:blueP
+bold = potato_tool:bold
+boldP = potato_tool:boldP
+cyan = potato_tool:cyan
+cyanP = potato_tool:cyanP
+green = potato_tool:green
+greenP = potato_tool:greenP
+listPT = potato_tool:listPT
+magenta = potato_tool:magenta
+magentaP = potato_tool:magentaP
+p=potato_tool:pred = potato_tool:red
+pF = potato_tool:pF
+pT = potato_tool:pT
+printF = potato_tool:printF
+printT = potato_tool:printT
+redP = potato_tool:redP
+yellow = potato_tool:yellow
+yellowP = potato_tool:yellowP
+
