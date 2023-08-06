@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "ping_stat"
+version = "1.0"
+description = "A Python-based networking tool for ping operations."
+authors = ["Taylor B. <tayjaybabee@gmail.com>"]
+readme = 'README.md'
+homepage = 'https://github.com/tayjaybabee/PingStat'
+repository = 'https://github.com/tayjaybabee/PingStat'
+keywords = [
+    'ping', 'ping-stat', 'windows',
+    'networking', 'ipv4', 'continuous ping',
+    'latency', 'console', 'threaded'
+]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Console',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3.9',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: System',
+    'Topic :: System :: Networking :: Monitoring'
+]
+
+[tool.poetry.scripts]
+ping-stat = 'ping_stat.main:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ping3 = "^4.0.4"
+inspy-logger = "^2.2"
+pypattyrn = "^1.2"
+rich = "^13.3.5"
+bokeh = "^3.1.1"
+flask = "^2.3.2"
+pynput = "^1.7.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+ptipython = "^1.0.1"
+faker = "^18.11.1"
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

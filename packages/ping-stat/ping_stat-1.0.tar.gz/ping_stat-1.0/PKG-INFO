@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: ping-stat
+Version: 1.0
+Summary: A Python-based networking tool for ping operations.
+Home-page: https://github.com/tayjaybabee/PingStat
+Keywords: ping,ping-stat,windows,networking,ipv4,continuous ping,latency,console,threaded
+Author: Taylor B.
+Author-email: tayjaybabee@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Dist: bokeh (>=3.1.1,<4.0.0)
+Requires-Dist: flask (>=2.3.2,<3.0.0)
+Requires-Dist: inspy-logger (>=2.2,<3.0)
+Requires-Dist: ping3 (>=4.0.4,<5.0.0)
+Requires-Dist: pynput (>=1.7.6,<2.0.0)
+Requires-Dist: pypattyrn (>=1.2,<2.0)
+Requires-Dist: rich (>=13.3.5,<14.0.0)
+Project-URL: Repository, https://github.com/tayjaybabee/PingStat
+Description-Content-Type: text/markdown
+
+# PingPing
+
+#### _An internet ping-time monitor_
+
+----
+
+### Project Goals
+
+Create a real-time ping-time monitor with several in-depth features:
+
+  - [x] Keep track of ping times to a particular destination, as well as
+  - [ ] Track ping-time averages over a specified time-period
+  - [ ] Log every ping time to local storage
+  - [ ] Send OS notifications on several trigger events:
+    - [ ] Average ping time exceeds setting
+    - [ ] More than _n_ failed pings in a row
+
+----
+
+
+### Advanced Usage
+
+*__Coming soon!__*
+
