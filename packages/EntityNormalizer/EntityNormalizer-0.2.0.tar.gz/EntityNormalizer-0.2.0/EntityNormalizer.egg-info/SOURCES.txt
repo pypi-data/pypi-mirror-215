@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+EntityNormalizer/Dictionaries.py
+EntityNormalizer/__init__.py
+EntityNormalizer.egg-info/PKG-INFO
+EntityNormalizer.egg-info/SOURCES.txt
+EntityNormalizer.egg-info/dependency_links.txt
+EntityNormalizer.egg-info/requires.txt
+EntityNormalizer.egg-info/top_level.txt
+EntityNormalizer/resources/MedDic-CANCER-ADE-JA_202306.csv
+EntityNormalizer/resources/MedDic-CANCER-DRUG-JA_202306.csv
