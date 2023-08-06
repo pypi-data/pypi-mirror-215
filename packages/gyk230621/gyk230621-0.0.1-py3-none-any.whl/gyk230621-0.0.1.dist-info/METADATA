@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gyk230621
+Version: 0.0.1
+Summary: oss-ML
+Home-page: https://github.com/Geunyeong-Kwon/PYPI
+Download-URL: https://github.com/Geunyeong-Kwon/PYPI/archive/refs/tags/v0.01.zip
+Author: gy0
+Author-email: geuny1472@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ML - math, numpy, pandas using
