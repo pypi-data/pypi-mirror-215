@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MiSeqHashR.egg-info/PKG-INFO
+MiSeqHashR.egg-info/SOURCES.txt
+MiSeqHashR.egg-info/dependency_links.txt
+MiSeqHashR.egg-info/entry_points.txt
+MiSeqHashR.egg-info/top_level.txt
+hashr/__init__.py
+hashr/miseq_hashr.py
+hashr/version.py
