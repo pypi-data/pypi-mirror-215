@@ -1,0 +1,32 @@
+[package]
+name = "chiral-common"
+version = "0.1.4"
+edition = "2021"
+authors = ["Qin Wan <rogerwq@gmail.com>"]
+license = "MIT"
+description = "Common Stuff of Chiral: An All-in-One Data Processing Tool"
+repository = "https://github.com/chiral-data/chiral"
+homepage = "https://www.chiral.one"
+keywords = ["hpc", "cheminformatics", "bioinformatics", "data", "AI"]
+categories = ["science"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+strum = { version = "0.24", features = ["derive"] }
+strum_macros = "0.24"
+home = "0.5.4"
+nanoid = "0.4.0"
+chrono = { version = "0.4.26", features = ["serde"] }
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+thiserror = "1.0"
+rand = "0.8"
+flate2 = "1.0"
+indicatif = "0.17"
+permutation = "0.4"
+pyo3 = { version = "0.18", optional = true }
+chiral-derive = { path = "../chiral-derive" }
+
+[features]
+python = ["pyo3"]
