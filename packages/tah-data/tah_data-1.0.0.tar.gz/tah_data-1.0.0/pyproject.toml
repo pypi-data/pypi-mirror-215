@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tah-data"
+version = "1.0.0"
+description = ""
+authors = ["Ahmed Sherif"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+pre-commit = "^3.3.2"
+dvc = "^3.1.0"
+boto3 = "^1.26.158"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
