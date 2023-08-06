@@ -1,0 +1,11 @@
+ml_crafter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_crafter/model_monitoring/__init__.py,sha256=jgPTx9wkI3QJ4QD4dEGay4dI-FmToOHaCytpQRUMvtw,39
+ml_crafter/model_monitoring/_population_drift.py,sha256=fo8pcuqNvxONA8WvssUh4FmZJNAKr-ot_DkcVmUgsMY,7081
+ml_crafter/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_crafter/utils/compare_dataframes.py,sha256=SS11nC-4_v9CDNkoJ9O2v65XwkGXijzWLVk5ulvDHxY,13911
+ml_crafter/utils/compare_dataframes.py.py,sha256=7p4z6f_4MDByBsiUh4rjKQbMTNlG7832VHrkXrF5LOQ,14804
+ml_crafter-0.1.0.dist-info/LICENSE,sha256=dHj12EWXPJC9vdoby-swjDqg6X5d39WRZhK0xueNFfg,1091
+ml_crafter-0.1.0.dist-info/METADATA,sha256=VxJs1SLA1tivA4ASu1d3K_RdUb4g3L6iIW41LSVx3G8,177
+ml_crafter-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ml_crafter-0.1.0.dist-info/top_level.txt,sha256=ZWOBxRgBXXEUyJSTondOfPC27Jha76LSx4-y7NhkvL0,11
+ml_crafter-0.1.0.dist-info/RECORD,,
