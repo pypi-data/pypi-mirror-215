@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: apache-airflow-providers-kettle
+Version: 1.0.3
+Summary: A simple Apache Airflow Kettle Operator that can invoke jobs and transformations for Linux based systems.
+Home-page: 
+Author: Robert Bryśkiewicz
+Author-email: bryskiewiczr@pm.me
+License: Apache License 2.0
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
