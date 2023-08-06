@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hardened-steel
+Version: 0.0.6.dev0
+Summary: Framework for helping to test projects with the generation of random data during TDD
+Author-email: IO Jægers <support@cloud.iojaegers.com>, Kent Madsen <kent.vejrup.madsen@outlook.com>
+Project-URL: Homepage, https://github.com/IO-Jaegers/Steel
+Project-URL: Issues, https://github.com/IO-Jaegers/Steel/issues
+Project-URL: Wiki, https://github.com/IO-Jaegers/Steel/wiki
+Project-URL: Releases, https://pypi.org/manage/project/hardened-steel/releases/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
