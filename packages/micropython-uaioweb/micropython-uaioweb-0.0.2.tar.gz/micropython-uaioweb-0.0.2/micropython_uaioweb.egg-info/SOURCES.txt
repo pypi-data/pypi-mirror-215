@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+micropython_uaioweb.egg-info/PKG-INFO
+micropython_uaioweb.egg-info/SOURCES.txt
+micropython_uaioweb.egg-info/dependency_links.txt
+micropython_uaioweb.egg-info/not-zip-safe
+micropython_uaioweb.egg-info/top_level.txt
+uaioweb/__init__.py
