@@ -1,0 +1,15 @@
+mypiprandomdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypiprandomdata/cli.py,sha256=WliBUAXS39rCFxfi2SMQmCtazh3i3EfaoVvdBfUMjEg,2658
+mypiprandomdata/data/Cities.txt,sha256=1JWiY7RT6j2cuuxVE06C-G8w_iU5fHm7AYEgBS6hxF0,3817
+mypiprandomdata/data/FirstName.txt,sha256=XARMWiEBBN7dzNVO4SXWafa8Womy_tNueWHyV4LOrSg,10204
+mypiprandomdata/data/LastName.txt,sha256=K-q5nHt4SgKtIwfnOCqE9ewD3wIjojHNmgifL21hMn0,12825
+mypiprandomdata/data/Real_Address.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypiprandomdata/data/States.txt,sha256=WnkHZCLCkERahMw3GJnDA3C4Tdngkb5u39_E8kqEc0Q,839
+mypiprandomdata/data/UserAgent.txt,sha256=bSnLb0bj3xE2lU1hD599JG9OanqTCPxUt8f5rvhHS74,11708
+mypiprandomdata/data/ZipCode.txt,sha256=8lTfxXguAeFieSDPHdtIyAY2RhOM9x-E5KGidVCyPvI,8764
+mypiprandomdata/data/data.json,sha256=Y173ljRTSvTpSWkV6kk2kTcysgyPl890LMAeqBWBc8Q,488475
+mypiprandomdata-0.7.0.dist-info/METADATA,sha256=CehBDMb8euOej_Rf1PhyL6zSI2A_hPEfOjz0QHZCMJc,252
+mypiprandomdata-0.7.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mypiprandomdata-0.7.0.dist-info/entry_points.txt,sha256=CamoUQRf1me7b3FeEJ-GVfCVbFDy4tqKXg1IqhVBpws,61
+mypiprandomdata-0.7.0.dist-info/top_level.txt,sha256=XuxSFu8iK2ctU8oEa3uK_AZSG6AqR1AcjuVNW2RQa0c,16
+mypiprandomdata-0.7.0.dist-info/RECORD,,
