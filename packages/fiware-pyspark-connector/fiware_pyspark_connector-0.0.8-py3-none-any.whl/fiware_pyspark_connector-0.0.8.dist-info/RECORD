@@ -1,0 +1,9 @@
+FPC/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FPC/connector.py,sha256=WOS02l5zdfNjfUbR85J2-bELMFcniA0Am_2D6hLKPWk,15652
+FPC/connectorconf.py,sha256=rVwAov5mQRIhy4DpAvowfJjSPG3jcW5Xd6Utk3skmTg,2858
+FPC/subscribing_tool.py,sha256=6JfPpBTOiGP3-rLYMZDB_dkjsw69sUN7en_O3Dnx_qo,7653
+fiware_pyspark_connector-0.0.8.dist-info/LICENSE.txt,sha256=YMZtFw1tnvZVwfBy9c1oHJ2PXOy8oSV70UX5XJdAlWU,34500
+fiware_pyspark_connector-0.0.8.dist-info/METADATA,sha256=l9-lvz1ONnhxsZHTIhd4_zrF2NWux6vsaIZAL8y9opY,6893
+fiware_pyspark_connector-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fiware_pyspark_connector-0.0.8.dist-info/top_level.txt,sha256=Y1pPpAfCn8TAOqJws-O1tZzy6_VsxCI_1Jr5hheoY1Y,4
+fiware_pyspark_connector-0.0.8.dist-info/RECORD,,
