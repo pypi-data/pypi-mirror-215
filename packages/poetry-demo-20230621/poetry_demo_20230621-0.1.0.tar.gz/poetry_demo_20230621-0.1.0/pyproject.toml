@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-demo-20230621"
+version = "0.1.0"
+description = ""
+authors = ["Fateme Tardasti <fateme.tardasti@alexanderthamm.com>"]
+readme = "README.md"
+packages = [{include = "poetry_demo_20230621"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.25.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
