@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: translocation
+Version: 0.2
+Summary: Correction of translocation defects in crystals
+Home-page: https://github.com/kolenpe1/translocation
+Author: Petr Kolenko
+Author-email: kolenpe1@cvut.cz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+License-File: LICENSE
+
+Correction of multi-lattice translocation defects
+
+
