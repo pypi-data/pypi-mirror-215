@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "wcd"
+version = "0.1.0"
+description = "'Wallpaper changing daemon' is exactly what its name suggests. It tries to be the 'mpd' of wallpapers."
+authors = ["Bruno Fauth <149593@upf.br>"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["wallpaper"]
+repository = "https://github.com/brunofauth/wcd"
+include = ["*.yml"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/brunofauth/wcd/issues"
+"Homepage" = "https://github.com/brunofauth/wcd"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+coloredlogs = "^15.0"
+humanfriendly = "^10.0"
+PyYAML = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wcd = 'wcd.wcd:main'
+wcc = 'wcd.wcc:main'
+
