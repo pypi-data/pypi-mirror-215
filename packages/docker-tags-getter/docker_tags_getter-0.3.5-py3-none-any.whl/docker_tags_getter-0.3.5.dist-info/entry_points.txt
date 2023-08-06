@@ -1,0 +1,5 @@
+[console_scripts]
+docker-tags-getter=docker_tags_getter.main:main
+docker_tags_getter=docker_tags_getter.main:main
+dtg=docker_tags_getter.main:main
+
