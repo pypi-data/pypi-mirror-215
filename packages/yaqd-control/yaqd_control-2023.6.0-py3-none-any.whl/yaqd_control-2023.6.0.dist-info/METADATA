@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: yaqd-control
+Version: 2023.6.0
+Project-URL: Home page, https://yaq.fyi
+Project-URL: Source, https://github.com/yaq-project/yaqd-control
+Project-URL: Documentation, https://control.yaq.fyi
+Project-URL: Issues, https://github.com/yaq-project/yaqd-control/issues
+Author: yaq developers
+License-Expression: LGPL-3.0-only
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: platformdirs
+Requires-Dist: prettytable!=1.0.0
+Requires-Dist: rich
+Requires-Dist: toml>=0.10.2
+Requires-Dist: yaqc>=2023.6.0
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-subprocess; extra == 'tests'
+Requires-Dist: types-click; extra == 'tests'
+Requires-Dist: types-toml; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# yaqd-control
+
+[![PyPI](https://img.shields.io/pypi/v/yaqd-control)](https://pypi.org/project/yaqd-control)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/yaqd-control)](https://anaconda.org/conda-forge/yaqd-control)
+[![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
+[![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
+[![ver](https://img.shields.io/badge/calver-YYYY.0M.MICRO-blue)](https://calver.org/)
+[![log](https://img.shields.io/badge/change-log-informational)](https://github.com/yaq-project/yaqd-control/blob/main/CHANGELOG.md#changelog)
+
+Command line tools for inspecting and controlling yaq daemons.
+https://control.yaq.fyi/
+
+## package maintainers
+
+- [Blaise Thompson](https://github.com/untzag)
+- [Kyle Sunden](https://github.com/ksunden)
