@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/thzsts.egg-info/PKG-INFO
+src/thzsts.egg-info/SOURCES.txt
+src/thzsts.egg-info/dependency_links.txt
+src/thzsts.egg-info/requires.txt
+src/thzsts.egg-info/top_level.txt
