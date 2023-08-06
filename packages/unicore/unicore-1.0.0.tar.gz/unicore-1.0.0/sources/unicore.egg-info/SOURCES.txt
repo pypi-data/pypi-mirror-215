@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+sources/unicore/__init__.py
+sources/unicore.egg-info/PKG-INFO
+sources/unicore.egg-info/SOURCES.txt
+sources/unicore.egg-info/dependency_links.txt
+sources/unicore.egg-info/entry_points.txt
+sources/unicore.egg-info/requires.txt
+sources/unicore.egg-info/top_level.txt
+sources/unicore/data/file_io.py
+sources/unicore/data/pipes.py
+sources/unicore/utils/dataclass.py
