@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/nepalitokenizers/__init__.py
+src/nepalitokenizers/tokenizers.py
+src/nepalitokenizers.egg-info/PKG-INFO
+src/nepalitokenizers.egg-info/SOURCES.txt
+src/nepalitokenizers.egg-info/dependency_links.txt
+src/nepalitokenizers.egg-info/requires.txt
+src/nepalitokenizers.egg-info/top_level.txt
+tests/test_tokenizers.py
