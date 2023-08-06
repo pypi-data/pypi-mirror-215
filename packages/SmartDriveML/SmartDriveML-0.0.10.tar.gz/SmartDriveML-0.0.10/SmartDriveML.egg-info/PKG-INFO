@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SmartDriveML
+Version: 0.0.10
+Summary: SmartDriveML: Driving Industrial Projects with Affordable ML Solutions, Frameworks and Cloud Choices
+Home-page: UNKNOWN
+Author: Hrishikesh Thakurdesai
+Author-email: hrishikesh.thakurdesai.92@gmail.com
+License: UNKNOWN
+Keywords: python,machine learning,pyspark,cloud
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning 
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+
+With SmartDriveML, industries can drive their projects with confidence, leveraging affordable ML solutions, making informed cloud service choices, and selecting optimal frameworks. This powerful Python library empowers users to harness the potential of machine learning while ensuring cost-effectiveness, enabling industrial projects to thrive in the era of data-driven decision-making. Key Features of SmartDriveML: 1. Affordable ML Solutions: Access a comprehensive set of functions and algorithms for cost-effective machine learning project execution. 2. Cloud Service Cost Comparison: Evaluate and compare pricing options among various cloud service providers to optimize cost-efficiency. 3. Framework Suitability Assessment: Analyze and select the most suitable ML frameworks based on project requirements and constraints. 4. Cutting-Edge Machine Learning Techniques: Leverage advanced ML techniques and algorithms to drive industrial projects with confidence. 5. Python Library: SmartDriveML is a versatile and user-friendly Python library, providing seamless integration and ease of use.
+
