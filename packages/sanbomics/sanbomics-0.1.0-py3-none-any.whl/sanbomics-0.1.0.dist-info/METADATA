@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sanbomics
+Version: 0.1.0
+Summary: bioinformatics plots and tools for python
+Author-email: Mark Sanborn <mark.email24@gmail.com>
+Project-URL: Homepage, https://github.com/mousepixels/sanbomic
+Project-URL: Bug Tracker, https://github.com/mousepixels/sanbomic
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: matplotlib (>=3.4)
+Requires-Dist: seaborn
+Requires-Dist: adjustText (>=0.7.3)
+Requires-Dist: scipy (>=1.9.1)
+
+plots:
+	volcano: easily plot volcano plot
+		from sanbomics.plots import volcano
+tools:
+	id_map: map ensembl, entrez, and symbols between eachother
+		from sanbomics.tools import id_map
