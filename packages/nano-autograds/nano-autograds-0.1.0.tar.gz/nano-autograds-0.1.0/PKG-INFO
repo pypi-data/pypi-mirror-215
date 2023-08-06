@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nano-autograds
+Version: 0.1.0
+Summary: A tinyTroch scalar-Engine Nano-autograd a Micro-Framework with a small PyTorch-like neural network library on top.
+Home-page: https://github.com/deep-matter/Nano-AutoGrad/autograd
+Author: Youness EL BRAG
+Author-email: younsselbrag@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## Nano-AutoGrad
+
+
+
+
