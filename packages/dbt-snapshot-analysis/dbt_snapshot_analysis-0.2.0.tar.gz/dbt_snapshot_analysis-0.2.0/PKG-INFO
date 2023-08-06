@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dbt_snapshot_analysis
+Version: 0.2.0
+Summary: A package for analyzing snapshots
+Home-page: https://github.com/data-drift/dbt-snapshot-analytics
+Author: Sammy Teillet
+Author-email: sammy.teillet@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
