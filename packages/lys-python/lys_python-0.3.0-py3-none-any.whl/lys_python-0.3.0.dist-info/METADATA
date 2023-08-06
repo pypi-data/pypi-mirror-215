@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: lys-python
+Version: 0.3.0
+Summary: Interactive multi-dimensional data analysis and visualization
+Home-page: https://github.com/lys-devel/lys
+Author: Asuka Nakamura
+Author-email: lys.devel@gmail.com
+License: GNU GPLv3
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: scipy (>=1.5.4)
+Requires-Dist: opencv-python-headless (>=4.5.5.64)
+Requires-Dist: PyQt5 (>=5.15.6)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: pyqtgraph (>=0.11.1)
+Requires-Dist: dask (>=2021.3.0)
+Requires-Dist: distributed (>=2021.3.0)
+Requires-Dist: dask-image (>=2021.12.0)
+Requires-Dist: autopep8 (>=1.6.0)
+Requires-Dist: QtPy (>=2.0.1)
+
+UNKNOWN
+
+
