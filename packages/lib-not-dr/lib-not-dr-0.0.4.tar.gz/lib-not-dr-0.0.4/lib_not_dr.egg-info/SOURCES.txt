@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+lib_not_dr/__init__.py
+lib_not_dr.egg-info/PKG-INFO
+lib_not_dr.egg-info/SOURCES.txt
+lib_not_dr.egg-info/dependency_links.txt
+lib_not_dr.egg-info/top_level.txt
+lib_not_dr/nuitka/compile.py
+lib_not_dr/types/__init__.py
+lib_not_dr/types/options.py
+lib_not_dr/types/version.py
