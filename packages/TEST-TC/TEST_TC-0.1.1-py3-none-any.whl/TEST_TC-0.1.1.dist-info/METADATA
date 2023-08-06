@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: TEST-TC
+Version: 0.1.1
+Summary: <small description>
+Author-email: Flavio <f.ischiboni@skienda.it>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: geopandas (==0.13.0)
+Requires-Dist: holidays (==0.24)
+Requires-Dist: numpy (==1.25.0)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: prophet (==1.1.1)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: setuptools (==58.1.0)
+Requires-Dist: tabulate (==0.9.0)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: typing-extensions (==4.6.3)
+
