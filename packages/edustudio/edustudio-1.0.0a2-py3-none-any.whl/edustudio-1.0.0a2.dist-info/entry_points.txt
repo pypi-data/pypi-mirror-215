@@ -1,0 +1,2 @@
+[console_scripts]
+edustudio = EduStudio.quickstart.atom_cmds:entrypoint
