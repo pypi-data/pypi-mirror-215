@@ -1,0 +1,3 @@
+wq.build>=2.0.0a1
+xlsconv<2.1.0,>=2.0.0a1
+psycopg2-binary
