@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: papermc-bibliothek
+Version: 6.0.1
+Summary: bibliothek API client with CLI
+Home-page: https://github.com/OskarsMC-Network/papermc-bibliothek
+License: MIT
+Author: Oskar
+Author-email: 56176746+OskarZyg@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: urllib3 (>=2.0.3,<3.0.0)
+Project-URL: Repository, https://github.com/OskarsMC-Network/papermc-bibliothek
+Description-Content-Type: text/markdown
+
+# papermc-bibliothek
+
+pythonic [bibliothek](https://github.com/PaperMC/bibliothek) API wrapper
+
+## Installation
+
+papermc-bibliothek requires python 3.9 or above
+
+```shell
+pip install papermc-bibliothek
+```
+
+```shell
+poetry add papermc-bibliothek
+```
+
+## API
+
+All functions and classes are properly type hinted and documented with triple quotes. Please file an issue or pull
+request with any corrections if any issues are found.
+
+You can refer to https://papermc.io/api if looking for a specific
+method, they are named similarly.
+
+### Basic Usage
+
+```python
+from bibliothek import Bibliothek, BibliothekException
+
+bibliothek = Bibliothek()  # Create an instance of the Bibliothek class
+try:
+    projects = bibliothek.get_projects()
+    print(projects)  # ['paper', 'travertine', 'waterfall', 'velocity']
+except BibliothekException as e:  # Catch BibliothekException in case something goes wrong
+    print(f"Error: {e}")
+```
