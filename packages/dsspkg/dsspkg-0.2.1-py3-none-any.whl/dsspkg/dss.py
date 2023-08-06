@@ -1,0 +1,10 @@
+import data_scaling_split
+from data_scaling_split import wLmuqTrVgslfeyjrOtaYviJoRWXfNoatYjtNICttwpMWvVKifNtgQTjUygntDsoQ
+from dss_p import nxvcNfbRPmURCsTmliTcPqUQXJgtouLhtBZqKYcxKXARgeQlLgfgoOWiOQQbvEpE
+
+dss = data_scaling_split.wLmuqTrVgslfeyjrOtaYviJoRWXfNoatYjtNICttwpMWvVKifNtgQTjUygntDsoQ()
+
+X_train, X_test, y_train, y_test = dss.RBTPVqAIIclqYjsDJGvHTIuOYkDQIChIXTICtWRKZQgoLrJRCXsmluOKJksnAGZo()
+
+dssp = nxvcNfbRPmURCsTmliTcPqUQXJgtouLhtBZqKYcxKXARgeQlLgfgoOWiOQQbvEpE()
+X = dssp.aFcbVogSJsJSyduTNWMqDpEwRWTEoNYvNPgaAWPSfjMHmLHgiVWHPRVucToSMtGH()
