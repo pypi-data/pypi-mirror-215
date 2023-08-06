@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyDuplicate/__init__.py
+PyDuplicate/similarity.py
+PyDuplicate.egg-info/PKG-INFO
+PyDuplicate.egg-info/SOURCES.txt
+PyDuplicate.egg-info/dependency_links.txt
+PyDuplicate.egg-info/requires.txt
+PyDuplicate.egg-info/top_level.txt
