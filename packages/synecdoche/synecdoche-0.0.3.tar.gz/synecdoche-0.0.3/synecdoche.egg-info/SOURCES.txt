@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+synecdoche/__init__.py
+synecdoche/_version.py
+synecdoche/experimental.py
+synecdoche/hyper.py
+synecdoche.egg-info/PKG-INFO
+synecdoche.egg-info/SOURCES.txt
+synecdoche.egg-info/dependency_links.txt
+synecdoche.egg-info/requires.txt
+synecdoche.egg-info/top_level.txt
+tests/test_networks.py
