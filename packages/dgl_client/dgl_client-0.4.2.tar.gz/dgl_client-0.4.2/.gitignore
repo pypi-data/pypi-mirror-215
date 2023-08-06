@@ -1,0 +1,7 @@
+logs/
+dist/
+.DS_Store
+*/__pycache__/
+test_decode.py
+*.pyc
+*.sh
