@@ -1,0 +1,10 @@
+unicore/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+unicore/data/file_io.py,sha256=Z9jGFMx3YBwYhHU63lgw7WrBxulOrTRVcuk1QcvpraI,1759
+unicore/data/pipes.py,sha256=AZqDbWyYxliv5GGN0nGweRwLIkABtu3ySn3kLbRXEr0,1250
+unicore/utils/dataclass.py,sha256=4470-NiDWX7c8V0nTuy1LAu7WxFyJxVMojv6DOqEWrc,6381
+unicore-1.0.0.dist-info/LICENSE,sha256=8qFcbk64vRt4HM55zCYzVGbLynm2TEN1V3Vzb3IhOqI,1094
+unicore-1.0.0.dist-info/METADATA,sha256=w8rcmGoImcXyA-V-Lpgu82xNcC5Zo9l4wiy8DfNFqHM,2042
+unicore-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+unicore-1.0.0.dist-info/entry_points.txt,sha256=7JquQtv6e-NG0wtsRZ9ATW-t_-MKZPJeMeFcALLFTfo,48
+unicore-1.0.0.dist-info/top_level.txt,sha256=XrQVw1VGu44QrsslykKiDCO6B3iIaX-1dg_RWPwAgXA,8
+unicore-1.0.0.dist-info/RECORD,,
