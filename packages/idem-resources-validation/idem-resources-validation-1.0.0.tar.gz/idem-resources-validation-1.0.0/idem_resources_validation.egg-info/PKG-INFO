@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: idem-resources-validation
+Version: 1.0.0
+Summary: Validation tools and tests for IDEM resources
+Home-page: https://docs.idemproject.io
+Author: VMware, Inc.
+Author-email: idemproject@vmware.com
+License: Apache Software License 2.0
+Project-URL: Code, https://gitlab.com/vmware/idem/idem-resources-validation
+Project-URL: Issue tracker, https://gitlab.com/vmware/idem/idem-resources-validation/issues
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+=========================
+idem-resources-validation
+=========================
+
+.. image:: https://img.shields.io/badge/made%20with-pop-teal
+   :alt: Made with pop, a Python implementation of Plugin Oriented Programming
+   :target: https://pop.readthedocs.io/
+
+.. image:: https://img.shields.io/badge/made%20with-idem-teal
+   :alt: Made with idem, a Python implementation of Plugin Oriented Programming
+   :target: https://www.idemproject.io/
+
+.. image:: https://img.shields.io/badge/docs%20on-docs.idemproject.io-blue
+   :alt: Documentation is published with Sphinx on docs.idemproject.io
+   :target: https://docs.idemproject.io/idem-gcp/en/latest/index.html
+
+.. image:: https://img.shields.io/badge/made%20with-python-yellow
+   :alt: Made with Python
+   :target: https://www.python.org/
+
+Resources schemas validation plugin tool.
+
+About
+=====
+
+``idem-resources-validation`` performs different validations on the IDEM plugins' schemas using ``idem``.
+
+* `idem-resources-validation source code: <https://gitlab.com/vmware/idem/idem-resources-validation>`__
+
+What is POP?
+------------
+
+This project is built with `pop <https://pop.readthedocs.io/>`__, a Python-based
+implementation of *Plugin Oriented Programming (POP)*. POP seeks to bring
+together concepts and wisdom from the history of computing in new ways to solve
+modern computing problems.
+
+For more information:
+
+* `Intro to Plugin Oriented Programming (POP) <https://pop-book.readthedocs.io/en/latest/>`__
+* `pop-awesome <https://gitlab.com/saltstack/pop/pop-awesome>`__
+* `pop-create <https://gitlab.com/saltstack/pop/pop-create/>`__
+
+What is Idem?
+-------------
+
+This project is built with `idem <https://www.idemproject.io/>`__, an idempotent,
+imperatively executed, declarative programming language written in Python. This project extends
+idem!
+
+For more information:
+
+* `Idem Project Website <https://www.idemproject.io/>`__
+* `Idem Project docs portal <https://docs.idemproject.io/>`__
+
+Getting Started
+===============
+
+Prerequisites
+-------------
+
+* Python 3.7+
+* git *(if installing from source, or contributing to the project)*
+
+Installation
+------------
+
+.. note::
+
+   If wanting to contribute to the project, and setup your local development
+   environment, see the ``CONTRIBUTING.rst`` document in the source repository
+   for this project.
+
+If wanting to use ``idem-resources-validation``, you can do so by either
+installing from PyPI or from source.
+
+Install from PyPI
++++++++++++++++++
+
+.. code-block:: bash
+
+  pip install idem-resources-validation
+
+Install from source
++++++++++++++++++++
+
+Clone the `idem-resources-validation` repository.
+
+.. code:: bash
+
+    git clone git@gitlab.com:vmware/idem/idem-resources-validation.git
+    cd idem-resources-validation
+
+Create a virtual environment, and then activate it:
+
+.. code:: bash
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+Install idem-resources-validation and other base requirements:
+
+.. code:: bash
+
+    pip3 install -e .
+    pip3 install -r requirements/base.txt
+
+
+Install the following packages in order to run the tests:
+
+.. code:: bash
+
+    pip3 install -r requirements/py3.10/tests.txt
+
+**NOTE:**  Change py3.10 if needed with your  Python version. There is support for py3.8, py3.9, py3.10 and py3.11.
+
+Setup
+=====
+
+After installation the validations execution module will be accessible to the pop `hub`.
+You can provide your custom config file with the specific plugin properties.
+Plugin config properties file can be found in the idem-resources-validation repo under tests/plugins dir.
+
+.. code:: bash
+
+    export PLUGIN_CONFIG_FILE=./tests/plugins/idem-aws-example.json
+    idem exec resources_validator.schema.checkers.validate_schema
+
+
