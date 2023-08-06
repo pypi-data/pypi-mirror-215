@@ -1,0 +1,12 @@
+README.md
+setup.py
+CodeDict.egg-info/PKG-INFO
+CodeDict.egg-info/SOURCES.txt
+CodeDict.egg-info/dependency_links.txt
+CodeDict.egg-info/requires.txt
+CodeDict.egg-info/top_level.txt
+codedict/__init__.py
+codedict/__version__.py
+codedict/tmp.zip
+codedict/slices/slice.aa
+test/test.py
