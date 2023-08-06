@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hrsii
+Version: 0.0.1
+Summary: High-resolution-Satellite-Image-Indexes
+Home-page: https://github.com/khlaifiabilel/High-resolution-Satellite-Image-Indexes
+Author: KhlaifiaBilel
+Author-email: khlaifiabilel@icloud.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# High-resolution-Satellite-Image-Indexes
+Enhancing Satellite Imagery indexes (Agriculture, Continuous monitoring ... ) Readability using Deep learning techniques
