@@ -1,0 +1,12 @@
+murkrow/__init__.py,sha256=9TVfl8OUXA71qRBW2UcNslsihcM7DBURJIJMOhvlVF4,1709
+murkrow/_version.py,sha256=8jbyfDafOI8eZRtXgKR6mD8oxCBRAURo9UJ6grdsnZU,23
+murkrow/builtins.py,sha256=NRipGLhD-APolM89m8nESORazcWPYFO1qtAXBYHlOuI,742
+murkrow/conversation.py,sha256=q3zHLOG2LkV4HNgk_4O8jQLU46zEVe_sdRstarSYVyc,9355
+murkrow/display.py,sha256=RiTlkOadklaA13bA6zxXpyKVSlYX0P3t_5GIs9AYqLg,7004
+murkrow/markdown.py,sha256=j282bfpF3lPTyvkIaphrNl-4-8ZVJJd3ScN-5YhW85g,3346
+murkrow/messaging.py,sha256=QbvXPcsJBIIaIqOOOb0LmQCRKicbWpkyME2BwGv99b4,2136
+murkrow/registry.py,sha256=iAQyI8rlJZnh3tt1Lj0ITkVP1F6KKJGmcSEFm4F4oA8,6846
+murkrow-0.13.0.dist-info/LICENSE,sha256=AjTO_LLrf8MSvwSPH6roR5Fs0W8L80vo63_svfIgmqo,1504
+murkrow-0.13.0.dist-info/METADATA,sha256=Ki2GqKtQot_M0rQBJkws2s28IgSm2Z6ylj5E49kA1Uw,6892
+murkrow-0.13.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+murkrow-0.13.0.dist-info/RECORD,,
