@@ -1,0 +1,15 @@
+researchgpt/__init__.py,sha256=aoNyWpiGH4YhGp4Z3aJX8uhouKQqXs1KPM81aOKJKfE,21
+researchgpt/cli.py,sha256=pBP2BzBPVp_rT81UBUZ2QZzb5Ne34Cw_e3psfsZbnU4,1513
+researchgpt/config.py,sha256=ZF33UHgDANPE8r0Aiv0VjrtF2cpHPqmcke0lhN0VCeE,624
+researchgpt/main.py,sha256=on821kRtYuTNxGzwvlr9p6mbZq1Aa4J1r1OWAG4TQdY,3052
+researchgpt/modes.py,sha256=YVKQg7cH5M_IMkRgeD-7hPP78G4Ebd6W3eRwBfrsJ-E,676
+researchgpt/utils.py,sha256=qKQ9rg-MXLrdbPUnx35ZLW-kNLjKN2ip3lH0_j2XdD8,2391
+researchgpt/writers/__init__.py,sha256=ZNX2jWiKIaMl2-xrjQ1n9NBbLCewlBF55B9yQ1I2iZc,111
+researchgpt/writers/base.py,sha256=N_EmlYu0dF2u55J5x9qj1viTYp6eVxuU80KLzcLQbzY,700
+researchgpt/writers/latex.py,sha256=8_j0OwXiAYLb6KF0N7zGVhLY8Jswb5rNqwMvjLKE8OQ,2341
+researchgpt/writers/text.py,sha256=oC1F1wnen3uXWbBB2lLL8qxHk3-HqNSHnCTbHlLT5Ps,2049
+researchgpt-0.0.1.dist-info/METADATA,sha256=B-f8LFNbebBGx6el3wXcWWLmySvSKIHqVVQzhRSFcTI,121
+researchgpt-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+researchgpt-0.0.1.dist-info/entry_points.txt,sha256=B8VMpsKpIij5fsnBzIbEU_H9iu9U0aAiUfPaQdM1DGE,51
+researchgpt-0.0.1.dist-info/top_level.txt,sha256=lpYJPOlU0NX2az9XxOWpQtI0od_urdYk8AkrtXwRM4I,12
+researchgpt-0.0.1.dist-info/RECORD,,
