@@ -1,0 +1,9 @@
+kevbits/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kevbits/capture_stdout.py,sha256=93aFsMmPmi3tRO_zKywoeTC8f3JDsExhVjVWTjsDiz4,618
+kevbits/logconfig.py,sha256=Quf5-OYEtMPRGwbib8lekRIy9P1a4Sd_v1KJd7OQbFM,2559
+kevbits/math.py,sha256=f-V2DM9FVoMTmklYiHZG_E_yBwvIoEatfrTcExtD4EA,631
+kevbits/misc.py,sha256=DxKdNxZ1dO6hCkLqag7PMNishVTYqN9XNEhpxdwkGUs,2738
+kevbits/sgconv.py,sha256=EXzO7JdTVEvfew7qYp1JIX77OSDq9HFwYFhHwDoKuvc,5900
+kevbits-0.9.0.dist-info/METADATA,sha256=6wEmjl0loDp1nTFVwTF_PZtuJ7B4N5X5ksvvVp1Q54w,688
+kevbits-0.9.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+kevbits-0.9.0.dist-info/RECORD,,
