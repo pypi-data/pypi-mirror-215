@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pytest-porringer
+Version: 0.1.1.dev2
+License: MIT
+Author-email: Synodic Software <contact@synodic.software>
+Requires-Python: >=3.11
+Requires-Dist: porringer-core>=0.0.0
+Requires-Dist: pydantic>=2.0b3
+Requires-Dist: pytest-mock>=3.10.0
+Requires-Dist: pytest>=7.1.2
+Project-URL: homepage, https://github.com/Synodic-Software/Pytest-Porringer
+Project-URL: repository, https://github.com/Synodic-Software/Pytest-Porringer
+Description-Content-Type: text/markdown
+
+# pytest-porringer
