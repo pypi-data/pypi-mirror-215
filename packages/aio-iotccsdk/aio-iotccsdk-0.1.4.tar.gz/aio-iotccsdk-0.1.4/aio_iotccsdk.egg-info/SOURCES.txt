@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aio_iotccsdk/__init__.py
+aio_iotccsdk/camera.py
+aio_iotccsdk/frame_iterators.py
+aio_iotccsdk/ipcprovider.py
+aio_iotccsdk.egg-info/PKG-INFO
+aio_iotccsdk.egg-info/SOURCES.txt
+aio_iotccsdk.egg-info/dependency_links.txt
+aio_iotccsdk.egg-info/not-zip-safe
+aio_iotccsdk.egg-info/requires.txt
+aio_iotccsdk.egg-info/top_level.txt
