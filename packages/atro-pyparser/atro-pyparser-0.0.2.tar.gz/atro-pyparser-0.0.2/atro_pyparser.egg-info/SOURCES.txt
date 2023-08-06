@@ -1,0 +1,8 @@
+README.md
+setup.py
+atro_pyparser.egg-info/PKG-INFO
+atro_pyparser.egg-info/SOURCES.txt
+atro_pyparser.egg-info/dependency_links.txt
+atro_pyparser.egg-info/requires.txt
+atro_pyparser.egg-info/top_level.txt
+pyparser/__init__.py
