@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: generalized-model-trainer
+Version: 0.0.2
+Summary: A package to train AI models with no code.
+Author: Ojasva Chaarag
+Author-email: <ojasva@chaarag.com>
+Keywords: python,ai,ml,artificial intelligence,machine learning,ai model,ml model,no code,create model,create ai,create ml,create ai model,create ml model
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+This uses some amount of user intervention to to output AI models requiring no code from the side of the user.
