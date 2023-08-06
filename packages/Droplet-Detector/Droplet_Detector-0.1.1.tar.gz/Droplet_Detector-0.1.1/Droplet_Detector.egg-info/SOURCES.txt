@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+Droplet_Detector/Bot.py
+Droplet_Detector/__init__.py
+Droplet_Detector/calculate.py
+Droplet_Detector/do_xslx.py
+Droplet_Detector/draw.py
+Droplet_Detector/get_contours.py
+Droplet_Detector.egg-info/PKG-INFO
+Droplet_Detector.egg-info/SOURCES.txt
+Droplet_Detector.egg-info/dependency_links.txt
+Droplet_Detector.egg-info/requires.txt
+Droplet_Detector.egg-info/top_level.txt
