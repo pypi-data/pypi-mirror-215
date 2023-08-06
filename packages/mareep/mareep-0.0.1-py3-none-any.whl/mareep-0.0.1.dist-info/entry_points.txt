@@ -1,0 +1,2 @@
+[console_scripts]
+mareep = mareep.__main__:main
