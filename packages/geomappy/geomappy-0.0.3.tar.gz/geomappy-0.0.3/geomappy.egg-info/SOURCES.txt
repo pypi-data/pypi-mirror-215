@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+geomappy/__init__.py
+geomappy/basemap.py
+geomappy/bounds.py
+geomappy/colors.py
+geomappy/geodataframe.py
+geomappy/plotting.py
+geomappy/utils.py
+geomappy/xarray.py
+geomappy.egg-info/PKG-INFO
+geomappy.egg-info/SOURCES.txt
+geomappy.egg-info/dependency_links.txt
+geomappy.egg-info/requires.txt
+geomappy.egg-info/top_level.txt
+tests/test_plotting.py
