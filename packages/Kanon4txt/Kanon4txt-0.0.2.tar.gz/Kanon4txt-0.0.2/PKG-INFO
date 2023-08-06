@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Kanon4txt
+Version: 0.0.2
+Summary: K Anonymity for Text first Try
+Home-page: https://github.com/LiorTrieman/Kanon4txt/tree/maine
+Author: Lior Trieman
+Author-email: <liortr30@gmail.com>
+License: MIT
+Download-URL: https://github.com/LiorTrieman/Kanon4txt/archive/refs/tags/0.0.2.tar.gz
+Keywords: python,corpus,stopwords,DBSCAN,generalization,reduction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that takes a dataframe with a corpus and return an anonymized corpus
+
