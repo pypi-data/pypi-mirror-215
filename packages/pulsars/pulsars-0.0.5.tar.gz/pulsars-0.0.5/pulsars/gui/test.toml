@@ -1,0 +1,23 @@
+title = "SPS-template"
+
+[problem]
+type = "nabla"
+[plan]
+plan = "assets/sps-geo.png" # geometry problem
+[geopars]
+#geo parameters
+Hst1 = 5
+Hst2 = 5
+Hst3 = 5
+Hp1 = 5
+Hpo = 5
+rst1 = 5
+rst2 = 5
+r1 = 5
+rm = 5
+Hm = 5
+Hsb3 = 5
+Hsb2 = 5
+Hsb1 = 2225
+delta = 5
+
