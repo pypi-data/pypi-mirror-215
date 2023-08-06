@@ -1,0 +1,8 @@
+kathara (__VERSION__-__DEBIAN_PACKAGE_VERSION____UBUNTU_VERSION__) __UBUNTU_VERSION__; urgency=low
+
+    * Fix FilesystemMixin APIs for file modifications
+    * Add a warning if a meta is repeated on the same device
+    * Add support for Docker Images tags in "kathara settings"
+    * Minor fixes
+
+ -- Tommaso Caiazzi <tommasocaiazzi@gmail.com>  __DATE__

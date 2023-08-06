@@ -1,0 +1,7 @@
+__DATE__ Kathara Team <******@kathara.org>
+
+* Release v__VERSION__
+    * Fix FilesystemMixin APIs for file modifications
+    * Add a warning if a meta is repeated on the same device
+    * Add support for Docker Images tags in "kathara settings"
+    * Minor fixes
