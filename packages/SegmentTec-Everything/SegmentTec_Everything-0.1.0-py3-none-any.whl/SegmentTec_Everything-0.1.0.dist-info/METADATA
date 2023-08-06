@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: SegmentTec-Everything
+Version: 0.1.0
+Summary: A package for everything related to segmentation
+Home-page: https://github.com/Mubin-Hardy/segmentTc-Everything-package
+Author: Vishnu
+Author-email: mubin@codewave.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: pycocotools ; extra == 'all'
+Requires-Dist: opencv-python ; extra == 'all'
+Requires-Dist: onnx ; extra == 'all'
+Requires-Dist: onnxruntime ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
