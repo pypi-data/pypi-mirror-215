@@ -1,0 +1,9 @@
+clouds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clouds/aws.py,sha256=_QvxoIhmGNY4KrSt9RsB4-S3Y-WBG8ORWIYfHfR_144,2115
+clouds/gcp.py,sha256=FpspXv8XwzO2kKYhgJhuQvewNEu_jAc-6pTV53Wje8Y,1832
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/core.py,sha256=79SkkEiFQCsdJMOhAZMc2lCE82WyLLDsiQz50EqZ46E,3586
+pipebuilder-0.1.4.dist-info/METADATA,sha256=jBwnPNDUnGTARtpWfSuifJSjVdQwLmek0dlX-zBnvL8,1167
+pipebuilder-0.1.4.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+pipebuilder-0.1.4.dist-info/licenses/LICENSE,sha256=AL4my1w1BNkaMZL8umtJwAURg2d9adhRYeY7h1RyFBw,1073
+pipebuilder-0.1.4.dist-info/RECORD,,
