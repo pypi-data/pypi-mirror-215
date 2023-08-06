@@ -1,0 +1,7 @@
+dataclass_binder/__init__.py,sha256=GVEt14u2L9uX4yrvsrLqBU0uyv00UQvrgs_kXUG-Lew,172
+dataclass_binder/_impl.py,sha256=7d81lLi9v52956Kd1TMkYAYaXrMIkPGaRqsFGcjapGk,28033
+dataclass_binder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataclass_binder-0.2.0.dist-info/LICENSE,sha256=vY8e-m5PObG2p7ANWQVLBOGjaJKvh5uBYeH3QMHS1j0,1068
+dataclass_binder-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dataclass_binder-0.2.0.dist-info/METADATA,sha256=526g1oIEMI5ELQJg-HCMMbNPorQToWyOpZx3awR3SYQ,16797
+dataclass_binder-0.2.0.dist-info/RECORD,,
