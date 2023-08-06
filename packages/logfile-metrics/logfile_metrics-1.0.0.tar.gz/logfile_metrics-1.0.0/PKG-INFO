@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: logfile-metrics
+Version: 1.0.0
+Summary: Parse the logfile(s) and output the results in metrics file format for Prometheus.
+Author: Evgeny Klunko
+Author-email: eklunko@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: kevbits (>=0.8.0,<0.9.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# logfile_metrics - Сканирование лог-файлов с целью формирования метрик для Prometheus.
+
+## Steps to release a new package version
+* Run tests, linter, formatter, ...: `poetry run pytest (pylint, black, ...)`
+* Bump project's version: `poetry version ...`
+* Build: `poetry build`
+* Publish: `poetry publish`
+
