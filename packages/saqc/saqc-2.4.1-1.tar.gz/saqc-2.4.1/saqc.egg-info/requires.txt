@@ -1,0 +1,13 @@
+Click
+dtw
+docstring_parser
+fancy-collections
+matplotlib>=3.4
+numba
+numpy
+outlier-utils
+pyarrow
+pandas>=2.0.0
+scikit-learn
+scipy
+typing_extensions
