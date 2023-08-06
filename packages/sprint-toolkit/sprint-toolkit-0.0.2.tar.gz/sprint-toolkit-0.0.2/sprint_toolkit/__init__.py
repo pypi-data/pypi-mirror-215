@@ -1,0 +1,1 @@
+from .inference import aio as sprint.inference.aio
