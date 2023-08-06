@@ -1,0 +1,17 @@
+delfino_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delfino_core/backports.py,sha256=Brv7wx7KwYMHSPeRwBpp_YUEMXUswXaX7HNrra0Hljo,293
+delfino_core/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+delfino_core/commands/dependencies_update.py,sha256=tZfADW_lQpQOgNYn6DV6va_JkCt4UtorHzSuRm6QE6k,9055
+delfino_core/commands/format.py,sha256=Wtwo6dLQSWvGQ67m93z2qgJaGvIw03X7MGaWR-JeSKA,4253
+delfino_core/commands/lint.py,sha256=8h2vRyDsayBFNogobWqWEtxe8BCPMJruFDEWC0Kt7NI,6681
+delfino_core/commands/switch_python_version.py,sha256=MNU0SNELeMF68uVJkM8Ylk-C-_2SPcWbMXKBN0-ylHE,3471
+delfino_core/commands/test.py,sha256=I5LSFxoqc7mcfafHJic9JHnZSoPLmzpiN2ps9WxdkRY,7883
+delfino_core/commands/typecheck.py,sha256=slTp-j5gUZGBv2xrqDr8vuAEin42EESbmi1ideTP0Iw,3392
+delfino_core/commands/verify_all.py,sha256=SEpLmBN8UYnOpSBbJL6S75C-NNP-dgJDQW7HKxOW9ro,748
+delfino_core/config.py,sha256=wjGgOzdSPXBG1ExLjC9b40_KjA-CXlBgSoMlAFCvXlE,904
+delfino_core/utils.py,sha256=HtcRI-cpQ7QiyBvizN8dD3M6EDH07NhSW4xHBb5f2TQ,1720
+delfino_core-5.1.0.dist-info/LICENSE.md,sha256=hmcNCgaABlLZxaQKrzU71JJUF6D6mWJ0WX0_hfac2g4,1078
+delfino_core-5.1.0.dist-info/METADATA,sha256=9ue1kBAZt8t7faqt19ro6-3PMr6ZriZz0QAU93_4xY4,7551
+delfino_core-5.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+delfino_core-5.1.0.dist-info/entry_points.txt,sha256=xhR7V03ICRs2n6K6Ewu3e9NVmu3aHtnTo3p73sar7eg,53
+delfino_core-5.1.0.dist-info/RECORD,,
