@@ -1,0 +1,11 @@
+data/gdim.columns.json,sha256=xATY5M4W2XCmlT_5DBA7nPfQOfEYaLf4ebjGRCWeyHM,1735
+data/isocodes.csv,sha256=uu5iM3eRiFsc5Ue858pGHIqlyYAjeN79b3mo8olsChA,851
+openborders/__init__.py,sha256=hYJiTMeUnf2o9GjRNYuUWuugzF23o8VPJZvNo_W8NoI,202
+openborders/cli.py,sha256=0ahgpvAoJSvCDSMDptuaN9zDyHJqquPUMvocVtYngCw,5511
+openborders/data.py,sha256=3QZqyj3coIpH49jHGXoDck7r1FFJIE2WvHkqlxPdiII,12956
+openborders/indices.py,sha256=EzegH24QTtZyKM1Yz1F3bojPNbelhTSGVdUMrpw2XzE,10585
+openborders/utils.py,sha256=Pqj_azeFmd6HLqpOMYRawnr3oeK_W4IKvWMf2MJGaZc,499
+openborders-0.1.1.post3.dist-info/entry_points.txt,sha256=TdYb3mV2xyYeoGU7GByYT4YROJDBqLskNusNUJi8YXk,76
+openborders-0.1.1.post3.dist-info/METADATA,sha256=-kUcwxKx6DsWW_35EuqWYHkfew30dP0JXYQnnUR1fXA,1817
+openborders-0.1.1.post3.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+openborders-0.1.1.post3.dist-info/RECORD,,
