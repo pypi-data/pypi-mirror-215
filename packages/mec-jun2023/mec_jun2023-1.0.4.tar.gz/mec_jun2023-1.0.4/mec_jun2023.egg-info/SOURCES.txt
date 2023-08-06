@@ -1,0 +1,7 @@
+LICENSE
+pymec_lp.py
+setup.py
+mec_jun2023.egg-info/PKG-INFO
+mec_jun2023.egg-info/SOURCES.txt
+mec_jun2023.egg-info/dependency_links.txt
+mec_jun2023.egg-info/top_level.txt
