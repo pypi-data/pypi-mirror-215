@@ -1,0 +1,53 @@
+{
+    "ISCED" : {
+        "0": "less than primary",
+        "1": "primary",
+        "2": "lower secondary",
+        "3": "upper secondary",
+        "4": "postsecondary non-tertiary",
+        "5": "postsecondary (+1y)",
+        "6": "postsecondary (+2y)",
+        "7": "postsecondary (+4y)",
+        "8": "postsecondary (+6y)",
+        "3-4": ["upper secondary", "postsecondary non-tertiary"],
+        "5-8": "postsecondary (years +1 to +6)"
+    },
+    "tm" : {
+        "tmXY": "probability of going from ISCED X to ISCED Y",
+        "columns": [66, 99],
+        "index" : {
+            "1": "0",
+            "2": "1",
+            "3": "2",
+            "4": "3-4",
+            "5": "5-8"
+        }
+    },
+    "mobility" : {
+        "category" : [
+            {
+                "name": "CAT",
+                "description": "probability child surpasses parent's educational category (conditional on parent not having tertiary)"
+            }
+        ],
+        "years_of_schooling" : [
+            {
+                "name": "YOS",
+                "description": "probability child surpasses parent's years of schooling"
+            },
+            {
+                "name": "DIF",
+                "description": "mean change in years of schooling conditional on parent not having tertiary"
+            },
+            {
+                "name": "COR",
+                "description": "correlation coefficient between children's and parents' years of schooling"
+            }
+        ],
+        "rank" : {
+            "name": "MU050_randomtiebreak",
+            "description" : "Expected child educational rank from a person born in bottom half (breaking ties at random)"
+        }
+    }
+
+}
