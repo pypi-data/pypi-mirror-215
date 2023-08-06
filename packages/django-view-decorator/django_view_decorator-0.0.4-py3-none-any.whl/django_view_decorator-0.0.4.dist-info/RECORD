@@ -1,0 +1,13 @@
+django_view_decorator/__about__.py,sha256=dt55hEO4GYpHjZNVo7qfK7q4uh8NII9VuUsM2_sP_cE,140
+django_view_decorator/__init__.py,sha256=P3afTwh2_RZgGi3tYj1DbnEuFtFQeMEm_v7wRTYjMLs,263
+django_view_decorator/app_config.py,sha256=bu_uQiwMWdK-fUH-yiNUwyPRe5nW8JzlSqCGT0_rOEU,563
+django_view_decorator/apps.py,sha256=AZ5I85Yl3PiSR_xywbGaNnopOb6URMUM2x1a1YSx_aE,2428
+django_view_decorator/conf.py,sha256=d6UxYxl0ZD0chTDD9k96DKxT3QDsFjxrrTlK5Cbz9jc,394
+django_view_decorator/decorators.py,sha256=kEqVKcw8ds-HKMPs0GFEsyaQ6-Py1v4XFXvOBXgULAI,3171
+django_view_decorator/urls.py,sha256=JqBurkwEx3l_12DfNeRwB-Bt9LaJ_CYWUE4xYG-04eo,94
+django_view_decorator/urls_utils.py,sha256=9w6SiuIj7RsSqmgFQOcMS3f_c7JKy-E3RMMlGYyOKSo,798
+django_view_decorator/management/commands/list_views.py,sha256=M2vO12KQQxm6C7NOGaYncvk0Qh0h6lHBf75rrFR8Gxg,810
+django_view_decorator-0.0.4.dist-info/METADATA,sha256=QR-Zk5dX2cbzkoJFlegBeM9hvgyekfvLYbyPCQP6Vgc,2323
+django_view_decorator-0.0.4.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+django_view_decorator-0.0.4.dist-info/licenses/LICENSE.txt,sha256=RIKrabjPAf9PaD3INmSk6SGUJRipnysyGLC8N9KgM4Y,1110
+django_view_decorator-0.0.4.dist-info/RECORD,,
