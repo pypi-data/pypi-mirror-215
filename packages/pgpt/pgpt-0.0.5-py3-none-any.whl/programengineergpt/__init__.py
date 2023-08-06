@@ -1,0 +1,5 @@
+"""Top-level package for ProgramEngineerGPT."""
+__app_name__ = "programengineergpt"
+__author__ = """Brette Geary"""
+__email__ = "hackedbg@outlook.com"
+__version__ = "0.6.9"
