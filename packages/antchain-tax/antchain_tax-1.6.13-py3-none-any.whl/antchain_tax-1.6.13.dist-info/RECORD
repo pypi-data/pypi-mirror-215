@@ -1,0 +1,8 @@
+antchain_sdk_tax/__init__.py,sha256=BP9IuBxLVFWt7RIH7E_ajTJG4JbFAXGG28tf1mW6Nkk,22
+antchain_sdk_tax/client.py,sha256=B1l7pfiM4qDGsoo3hplAB0YFrbc0TaRfuRzNvVGCcEs,58384
+antchain_sdk_tax/models.py,sha256=MjSqnrNHdC5nGx-OEemGrn39UzvCVdfst4Lt__1UiRY,160605
+antchain_tax-1.6.13.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+antchain_tax-1.6.13.dist-info/METADATA,sha256=FAX5Nr2CJ_0j6hKxH9zKoraEdiKRc5QqquxJEDikSts,1993
+antchain_tax-1.6.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+antchain_tax-1.6.13.dist-info/top_level.txt,sha256=rMNgQeQY3ocwXs6B6W5HAkmxb2ZukQC4ToT6y3p5eww,17
+antchain_tax-1.6.13.dist-info/RECORD,,
