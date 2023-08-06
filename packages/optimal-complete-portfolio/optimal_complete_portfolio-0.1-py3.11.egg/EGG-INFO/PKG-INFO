@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: optimal-complete-portfolio
+Version: 0.1
+Summary: This is a Python project on portfolio optimization.
+Home-page: https://github.com/TheMetaSetter/optimal-complete-portfolio-python-project
+Author: TheMetaSetter
+Author-email: nguyenanhkhoi0608@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
