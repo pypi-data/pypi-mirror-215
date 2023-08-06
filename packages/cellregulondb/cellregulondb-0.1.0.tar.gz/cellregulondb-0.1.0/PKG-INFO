@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cellregulondb
+Version: 0.1.0
+Summary: CellRegulon Database
+Author-email: Jan Patrick Prett <jp30@sanger.ac.uk>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: networkx
+Project-URL: Home, https://github.com/Teichlab/cellregulondb
+Project-URL: Source, https://github.com/Teichlab/cellregulondb
+
+# cellregulondb
+CellRegulon database code
+
