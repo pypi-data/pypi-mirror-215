@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "selenium"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ibott_browser_manager"
+version = "1.0.5"
+authors = [
+    { name="OnameDohe", email="enrique.crespo.debenito@gmail.com" },
+]
+description = "This packages crates a simple way to work with, Chrome and Firefox Browsers. More info in https://ibott.io/academy/"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ecrespo66/browser_manager"
+"Bug Tracker" = "https://github.com/ecrespo66/browser_manager/issues"
