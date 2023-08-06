@@ -1,0 +1,13 @@
+sigdf/Eula.txt,sha256=gym8utx_gVOaSWnKE_C-W463ZSuRIyShkm_Jv7bsAFo,7490
+sigdf/README.MD,sha256=Y9UAw9SMWqawqwR1DpaJBQAG9FV63eiC_wKQkA9eRVI,10211
+sigdf/__init__.py,sha256=2PhwPGph3EzKerRS33L3EAr9IGdBo3pWpN2wJXiJBcw,12408
+sigdf/requirements.txt,sha256=1tVRPKR_hpUCoYa2MicEZk3cjCRiQKZN8VmVPWfTCek,128
+sigdf/sigcheck.exe,sha256=T-mivUsWClNSMz0A0LDBDxNoWves20jp6dDDh3oZ7tQ,445856
+sigdf/sigcheck64.exe,sha256=XZ4GumW7TTZemPu0aPRPqJJvBZhL8ad-x7HfGcQ9xe8,541088
+sigdf/sigcheck64a.exe,sha256=ZktB8e4-draOCIezON2PVuIieAsSqvl7v_3bqtzhGa4,519576
+sigdf/thirdparty.json,sha256=P14klT85T6UvOnLyTBc5W4l63CI_nY434GonAe0kuVY,6808
+sigdf-0.10.dist-info/LICENSE.rst,sha256=57krgYrI6h5a_2WXQgGcjWo8PExV4ONSi1SPUj9Jk1g,1148
+sigdf-0.10.dist-info/METADATA,sha256=blY3KLMn6CJf0jTfpKYWY8hv7sNhNX3ks4_SN9VxXv0,11127
+sigdf-0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+sigdf-0.10.dist-info/top_level.txt,sha256=OIeVnXRQ6nERQmMhquE6JBv76toXI4RLuZxcopNFcxU,6
+sigdf-0.10.dist-info/RECORD,,
