@@ -1,0 +1,15 @@
+ruamel.yaml
+jsonschema
+rich
+oras
+requests
+pick
+
+[all]
+ruamel.yaml
+jsonschema
+rich
+oras
+requests
+pick
+pytest>=4.6.2
