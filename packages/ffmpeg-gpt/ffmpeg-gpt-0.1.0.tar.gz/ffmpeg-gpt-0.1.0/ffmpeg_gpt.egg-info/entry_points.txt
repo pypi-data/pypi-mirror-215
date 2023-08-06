@@ -1,0 +1,3 @@
+[console_scripts]
+ffmpeg-gpt = ffmpeg_gpt:main
+
