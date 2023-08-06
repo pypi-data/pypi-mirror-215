@@ -1,0 +1,13 @@
+transformersplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformersplus/__version__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+transformersplus/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformersplus/models/bright_albert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformersplus/models/bright_albert/convert_bright_albert_origin_tf_checkpoint_to_pytorch.py,sha256=fUoRMmlvXAnz8zdJV-jD-lhXF9wXQx6TKvV_eg0L618,1993
+transformersplus/models/bright_albert/modeling_bright_albert.py,sha256=uDgd8QjNMqF5PDaL1mkOmvMcuWbatHPfeAqAyENxWyo,61119
+transformersplus/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformersplus/utils/triton.py,sha256=KVePuQ006keZvXJ15v3W6vZA9fADo_yJ4vFDEZogyhg,4803
+transformersplus-0.1.1.dist-info/LICENSE,sha256=k_vkgig5vbYsW4rDOeyye6LcAuEYF0rt9pbgN9PATuc,10978
+transformersplus-0.1.1.dist-info/METADATA,sha256=pHKePd5s33SnElsojH3MJ9dchume3vIaezVuURpMEaY,2288
+transformersplus-0.1.1.dist-info/WHEEL,sha256=4rECLnnOeq0mIHlzFnWX9jIavAmzcvVMFOLjxxsRMt8,151
+transformersplus-0.1.1.dist-info/top_level.txt,sha256=QcYAi5hLFCkDAlTxmGKc7Ak0Gh34Byl5SIYUIG6jR5I,17
+transformersplus-0.1.1.dist-info/RECORD,,
