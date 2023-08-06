@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: gymnasium-quadruped
+Version: 0.0.1
+Summary: Gymnasium environment for training quadruped legged robots
+Home-page: https://github.com/dtch1997/gymnasium-quadruped
+Author: Daniel CH Tan
+Author-email: fdtch1997@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gymnasium[mujoco] (>=0.28.1,<0.29.0)
+Requires-Dist: numpy (>=1.24.3,<2.0.0)
+Project-URL: Documentation, https://dtch1997.github.io/gymnasium-quadruped/
+Project-URL: Repository, https://github.com/dtch1997/gymnasium-quadruped
+Description-Content-Type: text/markdown
+
+# gymnasium-quadruped
+
+[![Release](https://img.shields.io/github/v/release/dtch1997/gymnasium-quadruped)](https://img.shields.io/github/v/release/dtch1997/gymnasium-quadruped)
+[![Build status](https://img.shields.io/github/actions/workflow/status/dtch1997/gymnasium-quadruped/main.yml?branch=main)](https://github.com/dtch1997/gymnasium-quadruped/actions/workflows/main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/dtch1997/gymnasium-quadruped/branch/main/graph/badge.svg)](https://codecov.io/gh/dtch1997/gymnasium-quadruped)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/dtch1997/gymnasium-quadruped)](https://img.shields.io/github/commit-activity/m/dtch1997/gymnasium-quadruped)
+[![License](https://img.shields.io/github/license/dtch1997/gymnasium-quadruped)](https://img.shields.io/github/license/dtch1997/gymnasium-quadruped)
+
+Gymnasium environment for training quadruped legged robots
+
+- **Github repository**: <https://github.com/dtch1997/gymnasium-quadruped/>
+- **Documentation** <https://dtch1997.github.io/gymnasium-quadruped/>
+
+## Getting started
+
+Install the environment and the pre-commit hooks with 
+
+```bash
+make install
+```
+
+## Learning
+
+This repository contains a simple PPO implementation in `learning/ppo.py`, adapted from [CleanRL](https://github.com/vwxyzjn/cleanrl). This serves to benchmark the environment. 
+
+See [learning/README.md](learning/README.md) for details. 
+
+## Contributing 
+
+We welcome contributions; please refer to the [guidelines](CONTRIBUTING.rst)
+
+---
+
+Repository initiated with [fpgmaas/cookiecutter-poetry](https://github.com/fpgmaas/cookiecutter-poetry).
