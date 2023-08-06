@@ -1,0 +1,14 @@
+pywa/__init__.py,sha256=Fr6IdoF7QKBhoumRqAUgkI-5iHb5-dIWbjJSBWOm2-w,143
+pywa/api.py,sha256=jnP9iAxnW86f1VTndPsvR8aaFglswnrRhXCFbLOvhxg,14911
+pywa/client.py,sha256=YcqpjdvynYlBQDbFbXcbwStk3NXagemyZjy4U-3HA5k,26284
+pywa/errors.py,sha256=Vs5SJehEt5PhUrJBbia710gpusoxmTPQmlgDBBnYpWM,989
+pywa/filters.py,sha256=uDkVr9cyJRmEMF9GSoKhUdQZm4I4h3-Q2r4kdJ0dJyU,11021
+pywa/handlers.py,sha256=Z4j2jiEwQ0_mzlcybHFDmRg7OR8agakXXkzU85eQyGk,1464
+pywa/types.py,sha256=rz7rPpk31e0zKAGy_qj8Sp04JAvWyWJNcqhjSH3dj4w,32258
+pywa/utils.py,sha256=GRTfSvmsuOBd1_Yw2c90XoALqVPuy6HzyvJuqg3xjtI,991
+pywa/webhook.py,sha256=NCJpIrUssm5XXKeRpgupG2GSx38NoTzObKojN-3yMvQ,4161
+pywa-0.0.1rc8.dist-info/LICENSE,sha256=RwljuP8WgWttLkSivccHoHEFSDhOY8aLM_vg6Ix48yQ,1066
+pywa-0.0.1rc8.dist-info/METADATA,sha256=eu_RgdgeWpfODIZwGj8kJU2lYRywjta-yT_iK90TXoI,4489
+pywa-0.0.1rc8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pywa-0.0.1rc8.dist-info/top_level.txt,sha256=Cl24ggXVvxvOUnQfKRASer1LzHxpYCPZd5ZcVyS98Oo,5
+pywa-0.0.1rc8.dist-info/RECORD,,
