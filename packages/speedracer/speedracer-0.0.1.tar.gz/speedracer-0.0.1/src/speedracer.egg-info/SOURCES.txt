@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/speedracer/__init__.py
+src/speedracer.egg-info/PKG-INFO
+src/speedracer.egg-info/SOURCES.txt
+src/speedracer.egg-info/dependency_links.txt
+src/speedracer.egg-info/requires.txt
+src/speedracer.egg-info/top_level.txt

@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: speedracer
+Version: 0.0.1
+Summary: Conveniently access data
+Author: RRC
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: aiohttp~=3.8.4
+Requires-Dist: nats-py[nkeys]~=2.3.1
+Requires-Dist: pyjwt~=2.7.0
+Requires-Dist: requests~=2.31.0
+Description-Content-Type: text/markdown
+
+# What is speedracer?
+
+speedracer provides convenience classes for
+
+- Subscribing to the Mission Data Broker (MDB)
+- Authenticating to Autobahn APIs
+
+# Quickstart
+
+## Subscribing to the MDB
+
+To subscribe to a dataset on the MDB
+  1. Provide the base URL of the MDB Account Server (MAS) when creating a Connection
+  2. Provide the dataset to the subscribe method
+
+```python
+conn = Connection('https://mdb-account-server.com')
+sub = await conn.subscribe('mydataset')
+async for msg in sub:
+    print(msg.data.decode())
+```
+
+## Authenticating to Autobahn APIs
+
+To authenticate to Autobahn's REST APIs
+  1. Create a `JWTManager` with the API Gateway's URL
+  2. Call the `get_headers` method to get an Authorization HTTP header
+
+```python
+manager = JWTManager('https://api-gateway.com/getjwt')
+headers = manager.get_headers()
+```
+
+If already subscribed to MDB, you can reuse your `Connection`'s `JWTManager`
+
+```python
+conn.jwt_manager.get_headers()
+```
+
+# Advanced Usage
+
+## MDB
+
+### Callback
+
+Instead of iterating over a `Subscription`, you can provide a callback that takes a message as an argument.
+
+```python
+def cb(msg):
+    print(msg.data.decode())
+
+conn = Connection('https://mdb-account-server.com')
+sub = await conn.subscribe('mydataset', callback=cb)
+
+# Since subscribe does not block, call sub.wait to block
+await sub.wait(messages=15)
+await sub.wait(timeout=5)
+```
+
+### Seek
+
+To move the cursor of your `Subscription`, use `seek`.
+
+```python
+# seek to message sequence 1
+await sub.seek(start_sequence=1)
+
+# seek to 5 minutes ago
+await sub.seek(start_datetime=datetime.datetime.utcnow() - datetime.timedelta(minutes=5)
+```
+
+### Offset
+
+By default, `subscribe` starts with the oldest message. To start at the current time, specify offset.
+
+```python
+sub = await conn.subscribe('mydataset', offset=Offset.NOW)
+```
+
+### Low Latency
+
+By default, `Subscription`s fetch messages in batches of 10. If the server has less than 10 messages to send, it will wait a bit for new messages before returning the messages it does have. If that waiting is a problem, you may want to set `batch_size` to 1.
+
+```python
+sub = await conn.subscribe('mydataset', batch_size=1)
+```
+
+# Frequently Asked Questions
+
+## TLS Errors
+
+TLS errors occur for 2 reasons
+  1. Not specifying client certificates
+  2. Not specifying a Certificate Authority
+
+### Client certificates
+
+By default, speedracer looks for certificates in the user's home directory named `cert.crt` and `cert.key`. To specify a different path, pass `cert=('./mycert.crt', './mycert.key')`.
+
+```python
+conn = Connection('https://mdb-account-server.com', cert=('./mycert.crt', './mycert.key'))
+
+manager = JWTManager('https://api-gateway.com/getjwt', cert=('./mycert.crt', './mycert.key'))
+```
+
+### Certificate Authority
+
+To specify a Certificate Authorty
+
+```
+conn = Connection('https://mdb-account-server.com', ca_bundle='ca.pem')
+
+manager = JWTManager('https://api-gateway.com/getjwt', verify='./ca.pem')
+```
+
+`JWTManager` also supports verify=False, but `Connection` does not offer an insecure option.
+
+## Subscription not starting at specified offset
+
+The MDB remembers your subscription's place. If your program restarts, the subscription will pick up where it left off. If that is not the behavior you want, then use the Subscription's seek method.

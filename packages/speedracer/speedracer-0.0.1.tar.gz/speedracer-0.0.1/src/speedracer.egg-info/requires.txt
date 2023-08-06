@@ -1,0 +1,4 @@
+requests~=2.31.0
+pyjwt~=2.7.0
+aiohttp~=3.8.4
+nats-py[nkeys]~=2.3.1
