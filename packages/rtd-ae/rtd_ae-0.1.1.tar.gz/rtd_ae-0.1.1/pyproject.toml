@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "rtd-ae"
+version = "0.1.1"
+description = ""
+authors = ["Daniil Cherniavskii <danchern97@mail.ru>", "AndreyBychkov <abychkov_edu@proton.me>"]
+readme = "README.md"
+packages = [{include = "rtd_ae"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+tqdm = "^4.65.0"
+torch = "^2.0.1"
+scikit-learn = "^1.2.2"
+POT = "^0.9.0"
+matplotlib = "^3.7.1"
+gudhi = "^3.8.0"
+pytorch-lightning = "^2.0.4"
+pandas = "^2.0.2"
+numpy = "^1.25.0"
+notebook = "^6.5.4"
+scipy = "^1.10.1"
+Pillow = "^9.5.0"
+giotto-ph = "^0.2.2"
+#ripserplusplus = {git = "https://github.com/ArGintum/RipserZeros.git", platform = "linux"}
+ipywidgets = "^8.0.6"
+iprogress = "^0.4"
+tensorboardx = "^2.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
