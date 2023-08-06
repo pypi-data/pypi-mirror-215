@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ai_embedder
+Version: 1.0
+Summary: This script takes .ai files and save them with linked files embedded.
+Author: mdobosz
+Author-email: doboszsite@gmail.com
+License-File: LICENSE
+
+This script takes .ai files and save them with linked files embedded.
