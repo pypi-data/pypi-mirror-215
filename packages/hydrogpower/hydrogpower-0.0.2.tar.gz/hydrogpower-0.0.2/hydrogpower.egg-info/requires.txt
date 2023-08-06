@@ -1,0 +1,6 @@
+numpy
+pandas
+openpyxl
+tensorflow
+tensorflow-probability
+gpflow~=2.8.0
