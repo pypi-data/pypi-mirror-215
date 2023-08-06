@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/images_compare/__init__.py
+src/images_compare/verify.py
+src/images_compare.egg-info/PKG-INFO
+src/images_compare.egg-info/SOURCES.txt
+src/images_compare.egg-info/dependency_links.txt
+src/images_compare.egg-info/requires.txt
+src/images_compare.egg-info/top_level.txt
