@@ -1,0 +1,6 @@
+hdx-python-api>=6.0.2
+gspread
+regex
+
+[pandas]
+pandas>=2.0.2
