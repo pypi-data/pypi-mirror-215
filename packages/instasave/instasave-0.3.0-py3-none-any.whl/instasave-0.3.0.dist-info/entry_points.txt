@@ -1,0 +1,3 @@
+[console_scripts]
+instasave=instasave.__main__:app
+
