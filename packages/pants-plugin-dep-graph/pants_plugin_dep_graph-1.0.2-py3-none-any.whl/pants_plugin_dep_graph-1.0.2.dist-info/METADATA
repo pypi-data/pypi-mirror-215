@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pants-plugin-dep-graph
+Version: 1.0.2
+Summary: Pants plugin to export repository dependency graph.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pantsbuild.pants (<2.17,>=2.16.0a0)
+
+# pants-dep-graph
+
+Pants plugin to query and export repository dependency graph. 
+
+## Examples
+
+### Export dependencies 
+
+```
+# only for Python sources
+pants dep-graph --filter-target-type=python_sources --deps src::
+
+# for every target
+pants dep-graph --deps src::
+
+# for every target of source code nature
+pants dep-graph --deps --sources-only src::
+```
+
+### Export reverse dependencies (dependents)
+
+```
+# for every target
+pants dep-graph --rdeps src::
+
+# include in the list of dependents only targets of source code nature
+pants dep-graph --deps --sources-only src::
+```
+
+## Debugging
+
+```
+pants --print-stacktrace --no-local-cache --no-pantsd dep-graph --deps src::
+pants --print-stacktrace --no-local-cache --no-pantsd dep-graph --rdeps src::
+```
