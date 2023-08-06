@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+scriptpak/__main__.py
+scriptpak.egg-info/PKG-INFO
+scriptpak.egg-info/SOURCES.txt
+scriptpak.egg-info/dependency_links.txt
+scriptpak.egg-info/requires.txt
+scriptpak.egg-info/top_level.txt
