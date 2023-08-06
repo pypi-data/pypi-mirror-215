@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: telcell
+Version: 0.0.1
+Summary: Calculating LRs for Collocated Tracks
+Author: Netherlands Forensics Institute
+Description-Content-Type: text/markdown
+
+# Telcell
+
+## Dependencies
+
+- Python 3.10
