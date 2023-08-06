@@ -1,0 +1,8 @@
+LICENSE
+README.md
+logix.py
+setup.py
+logix.egg-info/PKG-INFO
+logix.egg-info/SOURCES.txt
+logix.egg-info/dependency_links.txt
+logix.egg-info/top_level.txt
