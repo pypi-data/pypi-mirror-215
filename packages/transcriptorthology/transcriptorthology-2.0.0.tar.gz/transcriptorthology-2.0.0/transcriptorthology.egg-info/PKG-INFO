@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: transcriptorthology
+Version: 2.0.0
+Summary: A transcript orthologies inferring package
+Home-page: https://github.com/UdeS-CoBIUS/TranscriptOrthology
+Author: Wend Yam Donald Davy Ouedraogo
+Author-email: wend.yam.donald.davy.ouedraogo@usherbrooke.ca
+License: MIT
+Description: A package that using Gene-level homology relationships to define different types of homology relationships between homologous transcripts
+Keywords: clustering,alternative-splicing,orthoogy-inference,isoorthology,algorithm,evolution,computational-biology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
