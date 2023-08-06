@@ -1,0 +1,16 @@
+napari_labelprop/__init__.py,sha256=Ph7SsSX2ZDN2d27BmeFAKdB9baN6JuqXE3DUza21PFo,266
+napari_labelprop/_label_prop_widget.py,sha256=xvoE8TdMuUYOj77KLRI1nEY-VZ9ZShn0IQT8n6ZTszA,19191
+napari_labelprop/_reader.py,sha256=cn2uoPzvPoaGg5lxzooKSHD2jBpx4CcGB8woINQuxsA,3256
+napari_labelprop/_sample_data.py,sha256=qVKNZRFC85hvzQBrvJfWur76foW3STIJoCga6g3OOyw,380
+napari_labelprop/_widget.py,sha256=Im_xtcbh9_7iR12vxlBJheQqSNTepgY7X--k1UZZ8mk,1707
+napari_labelprop/_writer.py,sha256=XYNheFO36MINOpLsiJHE4YuS0vjPuMAfXJreKilMSVw,841
+napari_labelprop/napari.yaml,sha256=47NNj31pNBftddAqwtaywleq0lYtxxSmJwLfx2LguFo,3632
+napari_labelprop/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_labelprop/_tests/test_sample_data.py,sha256=nJ0H8XXoNgSgTedPYYWhuACECstDsUzI7RHETtAV3VU,107
+napari_labelprop/_tests/test_widget.py,sha256=TGlv7bIaEYzTG0ipUlojEaJ1U0ucNDy3wZNJrfq9MZI,756
+napari_labelprop-1.0.0.dist-info/LICENSE,sha256=YOvQ4O7gil-nvnd2Zup6VNi1gOZK20knhC_K1kw2hb0,1487
+napari_labelprop-1.0.0.dist-info/METADATA,sha256=6cjl3FNVfWtq9g9xakDwXb7aliQsAxG4ETomGEv4tOQ,6852
+napari_labelprop-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_labelprop-1.0.0.dist-info/entry_points.txt,sha256=4-jZ9pTXWcjT1ArK-Zi_0oEUbSIf_MF2FaQcBBgPZyE,66
+napari_labelprop-1.0.0.dist-info/top_level.txt,sha256=7XeEFDkgEDdzflWTauVCqIMKit3MY7DaLs6jpafx4Ac,17
+napari_labelprop-1.0.0.dist-info/RECORD,,
