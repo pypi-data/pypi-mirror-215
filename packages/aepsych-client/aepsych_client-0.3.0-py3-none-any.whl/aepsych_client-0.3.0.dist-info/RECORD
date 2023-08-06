@@ -1,0 +1,8 @@
+aepsych_client/__init__.py,sha256=bzHkeJjAFmxm2_jBVn7PGfOhzJUr9bpFTIlJxkDKJRs,264
+aepsych_client/client.py,sha256=4PCxzEDN4NwfDD93ZIF9cVZLulxRxGC9TC8KC_1GlOs,8707
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=9TTiNGMyBY7e0dG8RDqf_fbQ6hR4v8jIffms_v-FNdc,4160
+aepsych_client-0.3.0.dist-info/METADATA,sha256=5607tPUd3zLfsz_hkPLLCfFqmzFC0G_mDykKOsKc23k,2116
+aepsych_client-0.3.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aepsych_client-0.3.0.dist-info/top_level.txt,sha256=WSOjcRhfuFJmeW7csCZ0J1739FUXsyGbNniQ8zAw5nc,21
+aepsych_client-0.3.0.dist-info/RECORD,,
