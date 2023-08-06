@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: ArtByCode
+Version: 0.0.1
+Summary: ArtByCode
+Author: Coder Artist
+Author-email: abc4artbycode@gmail.com
+Keywords: python,sketch,drawing,animation,code hub,pencil sketch,painting
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Welcome to ArtByCode Family
+
+## Description
+
+This is the beginning level python project to do some awesome drawing animation using the `turtle` module, hope it grows in the future
+
+### Usage
+
+- Just install the package `pip install ArtByCode`
+- Import it to you project `import ArtByCode` 
+- Now you are good to enjoy our arts in our gallery
+
+### Built with
+
+- Turtle 
+
+
+### Example
+
+```
+    from ArtByCode import draw
+    
+    name = 'lord_ganesh'
+
+    abc(name).draw()
+```
+
+### OUTPUT
+<div align = "center">
+   <img src = "https://github.com/Art-by-Code/Coordinates/assets/114793988/2addc356-8db9-4404-b0ad-2ce0755c3511">
+</div>
+
+
+
+### Troubleshooting
+
+- If you find any problem, you can contact me on either [insta](https://www.instagram.com/art_by_code?r=nametag)
+- You can also find more of my artworks on my youtube channel(https://www.youtube.com/@artbycode)
+
+
+### Acknowledgements
+
+Thanks to all my followers & friends.❤
+
+### See also
+
+- [Youtube Videos](https://www.youtube.com/@artbycode)
+- [My insta ID](https://www.instagram.com/art_by_code?r=nametag)
+
+### Consider supporting me
+
+- Just a simple like, follow & subscribe to our YouTube channel (https://www.youtube.com/@artbycode) and Instagram (https://www.instagram.com/art_by_code?r=nametag) fills our hearts with you warm welcome
+- Thanks ❤
