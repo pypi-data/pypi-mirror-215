@@ -1,0 +1,9 @@
+cc2dataset/__init__.py,sha256=XD70ZT1GtUZY1Cr6L8yKuLQPr0oVS2VRWtMN_0RNEGs,70
+cc2dataset/main.py,sha256=ByuNpG7_zPTB40V50CJSpzsLQgQjgPk7-jXEYdEv0JI,13307
+cc2dataset/spark_session_builder.py,sha256=Mn9DYNVZE06MmHZ00I-Y08b1pbFst3MEd02fLVx12yQ,3595
+cc2dataset-1.5.0.data/data/README.md,sha256=o7S7WTrU90TnYYjonOtjNl3yDJfKqNuMEb-OtmVok14,4968
+cc2dataset-1.5.0.dist-info/LICENSE,sha256=kQ7Sg07ctsEZeQxAgGGT8tsbjz8G5o_kY8ToEkxWfjE,1072
+cc2dataset-1.5.0.dist-info/METADATA,sha256=f3FG8L2y5wUzxuTPkhPSIl9MqZkSpGTgnzmmX7Vop5Q,5789
+cc2dataset-1.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cc2dataset-1.5.0.dist-info/top_level.txt,sha256=sx3Zm58ophtFrhQbkH98g_KPtQrzbGjGjVSB6fkwDLg,11
+cc2dataset-1.5.0.dist-info/RECORD,,
