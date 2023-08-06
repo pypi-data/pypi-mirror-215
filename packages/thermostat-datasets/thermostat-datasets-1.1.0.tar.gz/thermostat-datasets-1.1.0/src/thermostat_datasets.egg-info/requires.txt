@@ -1,0 +1,15 @@
+captum>=0.3
+datasets>=1.5
+jsonnet
+numpy>=1.22
+overrides
+pandas
+protobuf
+pytorch-ignite
+scipy
+sentencepiece
+scikit-learn
+spacy>=3.0
+torch
+tqdm>=4.49
+transformers>=4.5

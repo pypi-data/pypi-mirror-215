@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: thermostat-datasets
+Version: 1.1.0
+Summary: Collection of NLP model explanations and accompanying analysis tools
+Home-page: https://github.com/DFKI-NLP/thermostat
+Download-URL: https://github.com/DFKI-NLP/thermostat/tags
+Author: DFKI-NLP
+Author-email: nils.feldhus@dfki.de
+License: Apache 2.0
+Keywords: explainability heatmaps feature-attribution natural-language-processing
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+
+Thermostat is a large collection of NLP model explanations and accompanying analysis tools. Combines explainability methods from the captum library with Hugging Face's datasets and transformers. Mitigates repetitive execution of common experiments in Explainable NLP and thus reduces the environmental impact and financial roadblocks. Increases comparability and replicability of research. Reduces the implementational burden.
