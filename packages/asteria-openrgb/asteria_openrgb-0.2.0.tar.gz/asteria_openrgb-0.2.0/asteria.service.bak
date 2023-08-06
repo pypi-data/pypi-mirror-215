@@ -1,0 +1,10 @@
+[Unit]
+Description=Framework to automatically control LEDs via OpenRGB
+Requires=openrgb.service
+After=openrgb.service
+
+[Service]
+ExecStart=/home/josh/environments/asteria/bin/asteria /home/josh/.config/asteria 
+
+[Install]
+WantedBy=multi-user.target

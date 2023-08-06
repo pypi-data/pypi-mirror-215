@@ -1,0 +1,49 @@
+# An Asteria config is a TOML array of tables. It defines a mapping like this:
+#
+# {OpenRGB device: {OpenRGB zone: [Asteria instrument(s), ...]}}
+#
+# where each Asteria instrument can optionally have a metric, and that metric
+# can optionally have a scale.
+#
+# Said in words: you have one or more OpenRGB devices (if not, Asteria won't do
+# much...). Each device has one or more OpenRGB zones. Zero or more Asteria
+# instruments can be displayed in each zone.
+
+# We begin by starting our array of tables. Under this header, we'll be adding
+# Asteria instruments to be displayed on device "MSI PRO B550M", in zone
+# "JRAINBOW1".
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+
+# Here's our first instrument...
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "LinearHueRange"
+# That's hue as in "HSV hue"
+args = { lower_hue = 180, upper_hue = 360 }
+
+# ...which needs a metric...
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".metric]
+type = "get_sensor"
+# Path to my CPU temperature--see metrics.get_sensor for details
+args = { keys = ["k10temp-pci-00c3", "Tctl", "temp1_input"] }
+
+# ...and also a scale.
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".scale]
+type = "linear"
+# i.e., map a value <= 40 to 0, >= 100 to 1, and use
+# linear interpolation between the two endpoints
+args = { lower = 40, upper = 100 }
+
+
+# We add another instrument by adding another entry to the array.
+# Asteria will divide the LEDs between your effects as evenly as possible.
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+
+# Here's an instrument that doesn't use a metric or a scale; it just displays a
+# static colour.
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "StaticColour"
+args = { hex_colour = "#FF00FF" }
+
+
+# So, overall: with this config, Asteria will set the top half of the LEDs to
+# match my CPU temperature, and the bottom half will stay a solid hot pink.

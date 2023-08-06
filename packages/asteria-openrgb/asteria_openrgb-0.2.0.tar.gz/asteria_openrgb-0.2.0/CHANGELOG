@@ -1,0 +1,5 @@
+# Changelog
+
+## 2023-06-13
+- Fixed a bug that occasionally led to unclean shutdowns (LEDs "stuck" even after Asteria exited)
+- Added a new instrument to display messages in Morse code

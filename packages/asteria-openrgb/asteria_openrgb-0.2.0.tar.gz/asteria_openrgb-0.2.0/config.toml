@@ -1,0 +1,46 @@
+# GPU temperature
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "LinearHueRange"
+args = { lower_hue = 230, upper_hue = 360 }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".metric]
+type = "get_sensor"
+args = { keys = ["amdgpu-pci-2d00", "junction", "temp2_input"] }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".scale]
+type = "linear"
+args = { lower = 40, upper = 100 }
+
+
+# CPU temperature
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "LinearHueRange"
+args = { lower_hue = 230, upper_hue = 360 }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".metric]
+type = "get_sensor"
+args = { keys = ["k10temp-pci-00c3", "Tctl", "temp1_input"] }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".scale]
+type = "linear"
+args = { lower = 40, upper = 70 }
+
+
+# Memory usage
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "PercentageBar"
+#args = { hex_colour = "#ffffff", bottom_up = false }
+args = { hex_colour = "#ffffff" }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".metric]
+type = "used_memory_percent"
+
+
+## static test
+#[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+#["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+#type = "StaticColour"
+#args = { hex_colour = "#ff00ff" }

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -o pipefail
+
+black --check asteria >/dev/null 2>&1
+
+if [[ $? -ne 0 ]]; then
+    echo "formatter is not pleased with you ಠ_ಠ"
+    exit 1
+fi
+
+pytest >/dev/null 2>&1
+
+if [[ $? -ne 0 ]]; then
+    echo "tests failed ಠ_ಠ"
+    exit 1
+fi

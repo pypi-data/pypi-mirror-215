@@ -1,0 +1,14 @@
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+name = "cpu_temp"
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "LinearHueRange"
+args = { lower_hue = 180, upper_hue = 360 }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".metric]
+type = "get_sensor"
+args = { keys = ["k10temp-pci-00c3", "Tctl", "temp1_input"] }
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".scale]
+type = "linear"
+args = { lower = 40, upper = 65 }

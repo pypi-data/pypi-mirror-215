@@ -1,0 +1,6 @@
+[["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1"]]
+
+["MSI PRO B550M-VC WIFI (MS-7C95)"."JRAINBOW1".instrument]
+type = "MorseCode"
+args = { message = "love you", hex_colour = "#00FF00" }
+

@@ -1,0 +1,33 @@
+[project]
+name = "asteria-openrgb"
+version = "0.2.0"
+authors = [
+    { name = "Joshua Simpson", email = "josh@simpsonian.ca" }
+]
+description = "A framework to automatically control LEDs via OpenRGB"
+readme = "README.md"
+requires-python = ">=3"
+license = { file = "LICENSE" }
+dependencies = [
+    "tomli > 2",
+    "openrgb-python > 0.2"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+]
+
+[project.scripts]
+asteria = "asteria.__main__:main"
+
+[project.urls]
+"Homepage" = "https://gitlab.com/JoshWVS/asteria"
+
+[project.optional-dependencies]
+test = [
+    "pytest > 7"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
