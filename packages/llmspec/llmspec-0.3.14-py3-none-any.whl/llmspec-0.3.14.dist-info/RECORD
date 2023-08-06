@@ -1,0 +1,8 @@
+llmspec-0.3.14.dist-info/METADATA,sha256=SBcej27fmryzInVdquvpnJi305BY5ZUS6RmpY2R6V6M,458
+llmspec-0.3.14.dist-info/WHEEL,sha256=2pzpU5yX8ZDRkL1JJPwjqHXoJgM2dqtofaxvD6IHFj4,90
+llmspec-0.3.14.dist-info/licenses/LICENSE,sha256=rEEdKAjoBfOpJXwGB8OtkABGYGhEK-jDFASVO_dDegE,11098
+llmspec/__init__.py,sha256=1xDGYotDpw-IQ6FkQPvn_6xfvQTl1OteLAJch7T9yGM,659
+llmspec/llmspec.py,sha256=Er9f-e_5yn3t9ufr5dbpKrPdx4d_OK4sr1rt02OpTnU,5610
+llmspec/mixins.py,sha256=4WnB6vNcDqDbddRZsotQHw1DUpOvyWpThUYtJ4Blvfg,215
+llmspec/model_info.py,sha256=WpWfFiv7Vw4MfdnL7AhsUJPfA3vCrKrnbkK6zeYLVkA,4744
+llmspec-0.3.14.dist-info/RECORD,,
