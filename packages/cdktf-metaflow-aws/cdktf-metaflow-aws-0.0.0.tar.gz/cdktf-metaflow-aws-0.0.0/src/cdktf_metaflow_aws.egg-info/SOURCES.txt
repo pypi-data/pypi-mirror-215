@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdktf_metaflow_aws/__init__.py
+src/cdktf_metaflow_aws/py.typed
+src/cdktf_metaflow_aws.egg-info/PKG-INFO
+src/cdktf_metaflow_aws.egg-info/SOURCES.txt
+src/cdktf_metaflow_aws.egg-info/dependency_links.txt
+src/cdktf_metaflow_aws.egg-info/requires.txt
+src/cdktf_metaflow_aws.egg-info/top_level.txt
+src/cdktf_metaflow_aws/_jsii/__init__.py
+src/cdktf_metaflow_aws/_jsii/cdktf-metaflow-aws@0.0.0.jsii.tgz
