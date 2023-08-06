@@ -1,0 +1,2 @@
+[console_scripts]
+skillshare-dl = skillshare_dl.cli:main

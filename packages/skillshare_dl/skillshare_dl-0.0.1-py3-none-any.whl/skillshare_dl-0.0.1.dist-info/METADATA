@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: skillshare_dl
+Version: 0.0.1
+Summary: A cli tool for downloading Skillshare lesson videos
+Project-URL: Homepage, https://github.com/waydegg/skillshare-dl
+Project-URL: Source, https://github.com/waydegg/skillshare-dl
+Author-email: Wayde Gilliam <waydegilliam@gmail.com>
+License: MIT
+License-File: LICENSE
+Keywords: python,skillshare
+Requires-Python: >=3.10
+Requires-Dist: beautifulsoup4
+Requires-Dist: httpx
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: isort; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# skillshare-dl
+
+A cli tool for downloading Skillshare lesson videos.
+
+## Install
+
+Install with [pipx](https://pypa.github.io/pipx/).
+
+```bash
+pipx install skillshare-dl
+```
+
+## To-Do
+
+- Create CLI
+- Publish to PyPI
+- Create proper README
