@@ -1,0 +1,10 @@
+testless_autocomplete/__init__.py,sha256=cFuPf31V8drFFLtGwd90tXtKAdps_-KKndKe9h0XwGM,195
+testless_autocomplete/src/AutoCompleteAPI.py,sha256=ZmD30AujvocB-gBvRSEJ8QYcjPkmVfBH95QS6KR4wzQ,542
+testless_autocomplete/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+testless_autocomplete/src/model.py,sha256=wlo7-wgAgQH2lZerA4Rp8KgD08cIAAbHpycET4JeFlM,1262
+testless_autocomplete/src/ngram.csv,sha256=EFFwu7Q-ewXhJqm9gHspZJwxNW6-UDDnwMz5GD-yexE,12483
+testless_autocomplete/src/preprocessing.py,sha256=ORrviZX3onGCQwoImnw713V4-EQThYiP_yXw2ptylAM,756
+testless_autocomplete-0.0.108.dist-info/METADATA,sha256=tlrGYuwXQiJtpzGFGmcWjkOVY-N0adFCkQ7bZ_1GDCM,621
+testless_autocomplete-0.0.108.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+testless_autocomplete-0.0.108.dist-info/top_level.txt,sha256=TGcXWKSKUtYQr7MYcjctarcraxAqmjF18fM2x2IfBRE,22
+testless_autocomplete-0.0.108.dist-info/RECORD,,
