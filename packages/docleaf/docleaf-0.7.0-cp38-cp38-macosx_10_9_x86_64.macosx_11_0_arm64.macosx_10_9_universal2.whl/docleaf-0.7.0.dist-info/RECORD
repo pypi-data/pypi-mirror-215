@@ -1,0 +1,10 @@
+docleaf-0.7.0.dist-info/METADATA,sha256=0CME0cDWxCZMefIyWr0EJmGl1cqVmmm_obUJyI1hbFg,6638
+docleaf-0.7.0.dist-info/WHEEL,sha256=2vNn8nsaJEoZHNBXM1r9A7yORyEtFtvBAqQEyHIxGag,146
+docleaf-0.7.0.dist-info/license_files/LICENSE.md,sha256=20NXnKx0h0eVlML_pg1pYvMUOGbuZsAwACSzigFYQx0,3502
+docleaf/domains.py,sha256=7nyiEjCC8D5UtcABelKd54RHG41s39nldS1sp7RgO7A,3592
+docleaf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docleaf/doxygen.py,sha256=UJT2jniIrRRAJQEA36XLbBakfkxbMTRsfJxkgot0egs,17204
+docleaf/copied.py,sha256=gz7zTuk4UzjlGHOqR94m7xM2qOLds-ijBWz75hRrEdQ,5318
+docleaf/errors.py,sha256=FjwCrBWj0_XRF_63IkYnz8_24FpTHlKE3bek1Iajp9Y,93
+docleaf/backend.cpython-38-darwin.so,sha256=mCG5r_gCRrFg3iQ4aKF8FS-N86pGnOyz-Zn9BJLsnCw,7522329
+docleaf-0.7.0.dist-info/RECORD,,
