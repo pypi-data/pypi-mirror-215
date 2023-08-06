@@ -1,0 +1,7 @@
+README.md
+setup.py
+Dakada.egg-info/PKG-INFO
+Dakada.egg-info/SOURCES.txt
+Dakada.egg-info/dependency_links.txt
+Dakada.egg-info/requires.txt
+Dakada.egg-info/top_level.txt
