@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+FLUID_project_upprpo.egg-info/PKG-INFO
+FLUID_project_upprpo.egg-info/SOURCES.txt
+FLUID_project_upprpo.egg-info/dependency_links.txt
+FLUID_project_upprpo.egg-info/requires.txt
+FLUID_project_upprpo.egg-info/top_level.txt
