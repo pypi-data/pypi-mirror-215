@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=57.4.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonl2json"
+version = "1.0.0"
+authors = [
+  { name="Ismail Ibrahim", email="ismailsoftdev@gmail.com" },
+]
+description = "A Python library for converting data in the JSON Lines (.jsonl) format to the standard JSON (.json) format"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ismailsoftdev/jsonl2json"
+"Bug Tracker" = "https://github.com/ismailsoftdev/jsonl2json/issues"
+

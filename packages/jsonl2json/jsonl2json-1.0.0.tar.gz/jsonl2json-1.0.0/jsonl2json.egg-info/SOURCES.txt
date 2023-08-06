@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+jsonl2json/__init__.py
+jsonl2json/jsonl_to_json.py
+jsonl2json/utils.py
+jsonl2json.egg-info/PKG-INFO
+jsonl2json.egg-info/SOURCES.txt
+jsonl2json.egg-info/dependency_links.txt
+jsonl2json.egg-info/top_level.txt
