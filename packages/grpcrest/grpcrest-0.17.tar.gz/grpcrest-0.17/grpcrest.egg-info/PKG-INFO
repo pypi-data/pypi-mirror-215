@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: grpcrest
+Version: 0.17
+Summary: REST Wrapper for GRPC
+Home-page: http://github.com/storborg/notfound
+Author: Dinesh RVL
+Author-email: dineshlakshmanan1990@gmail.com
+License: MIT
+Description: grpcrest - A Rest Wrapper for Grpc APIs
+        ---------------------------------------
+        
+        To use , simply do::
+        
+            pip install grpcrest
+            start-grpc-rest <port-number> (Default Port number is 5000)
+        
+        The above commands will start a simple flask based webserver in the localhost. To verify the server is up and running , hit the below url in browser
+        
+        
+        
+        
+Platform: UNKNOWN
