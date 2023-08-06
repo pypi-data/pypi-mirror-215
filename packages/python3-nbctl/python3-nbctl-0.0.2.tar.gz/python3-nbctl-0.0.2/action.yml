@@ -1,0 +1,14 @@
+name: 'nbctl'
+description: 'convert jupyter *.ipynb file to hugo markdown'
+author: 'xiexianbin <me@xiexianbin>'
+inputs:
+  LOG_LEVEL:
+    description: 'logger level, value [DEBUG|INFO|WARN|ERROR|FATAL]'
+    default: 'DEBUG'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  color: 'blue'
+  icon: 'chevrons-right'
