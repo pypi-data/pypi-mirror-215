@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+cert.pem
+index.html
+key.pem
+setup.py
+pychame.egg-info/PKG-INFO
+pychame.egg-info/SOURCES.txt
+pychame.egg-info/dependency_links.txt
+pychame.egg-info/requires.txt
+pychame.egg-info/top_level.txt

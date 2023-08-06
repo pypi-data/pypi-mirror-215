@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pychame
+Version: 0.0.1
+Summary: A simple way to use the ChromeBook integred camera to OpenCV
+Home-page: UNKNOWN
+Author: Lucas Barros
+Author-email: lucas.barros1804@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
