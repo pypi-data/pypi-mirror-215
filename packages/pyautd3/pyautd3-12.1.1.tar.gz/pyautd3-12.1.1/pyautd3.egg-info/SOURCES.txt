@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyautd3.egg-info/PKG-INFO
+pyautd3.egg-info/SOURCES.txt
+pyautd3.egg-info/dependency_links.txt
+pyautd3.egg-info/top_level.txt
