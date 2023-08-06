@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>css styles</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/epub.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="css-styles">
+<h1>css styles</h1>
+<p>The styling for the <cite>temlates/maillib/home.html</cite> template can ebe found in the <cite>static/css/styles.css</cite>.
+Here is how it look:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="nt">url</span><span class="o">(</span><span class="s2">&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap&quot;</span><span class="o">)</span><span class="p">;</span>
+<span class="linenos">  2</span>
+<span class="linenos">  3</span>
+<span class="linenos">  4</span><span class="p">.</span><span class="nc">formcarry-container</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">  5</span><span class="w">  </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span>
+<span class="linenos">  6</span><span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Inter&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="linenos">  7</span>
+<span class="linenos">  8</span><span class="w">  </span><span class="c">/* colors */</span>
+<span class="linenos">  9</span><span class="w">  </span><span class="nv">--color-blue</span><span class="p">:</span><span class="w"> </span><span class="mh">#2552d0</span><span class="p">;</span>
+<span class="linenos"> 10</span><span class="w">  </span><span class="nv">--color-light-blue</span><span class="p">:</span><span class="w"> </span><span class="mh">#3266e3</span><span class="p">;</span>
+<span class="linenos"> 11</span><span class="w">  </span><span class="nv">--color-gray</span><span class="p">:</span><span class="w"> </span><span class="mh">#e5e7eb</span><span class="p">;</span>
+<span class="linenos"> 12</span><span class="w">  </span><span class="nv">--color-dark-gray</span><span class="p">:</span><span class="w"> </span><span class="mh">#9da3ae</span><span class="p">;</span>
+<span class="linenos"> 13</span><span class="w">  </span><span class="nv">--color-pink</span><span class="p">:</span><span class="w"> </span><span class="mh">#edadd2</span><span class="p">;</span>
+<span class="linenos"> 14</span><span class="p">}</span>
+<span class="linenos"> 15</span>
+<span class="linenos"> 16</span><span class="p">.</span><span class="nc">formcarry-container</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 17</span><span class="w">  </span><span class="c">/* container */</span>
+<span class="linenos"> 18</span><span class="w">  </span><span class="nv">--c-width</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+<span class="linenos"> 19</span><span class="w">  </span><span class="nv">--c-max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">500</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 20</span>
+<span class="linenos"> 21</span><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--c-width</span><span class="p">);</span>
+<span class="linenos"> 22</span><span class="w">  </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--c-max-width</span><span class="p">);</span>
+<span class="linenos"> 23</span><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="linenos"> 24</span><span class="w">  </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">vh</span><span class="w"> </span><span class="kc">auto</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span>
+<span class="linenos"> 25</span><span class="p">}</span>
+<span class="linenos"> 26</span>
+<span class="linenos"> 27</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">label</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 28</span><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="linenos"> 29</span><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos"> 30</span><span class="w">  </span><span class="k">letter-spacing</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.2</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 31</span><span class="w">  </span><span class="k">cursor</span><span class="p">:</span><span class="w"> </span><span class="kc">pointer</span><span class="p">;</span>
+<span class="linenos"> 32</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 33</span><span class="w">  </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">;</span>
+<span class="linenos"> 34</span><span class="p">}</span>
+<span class="linenos"> 35</span>
+<span class="linenos"> 36</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">input</span><span class="o">,</span>
+<span class="linenos"> 37</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">textarea</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 38</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 39</span><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="linenos"> 40</span><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="linenos"> 41</span><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 42</span><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-gray</span><span class="p">);</span>
+<span class="linenos"> 43</span><span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="linenos"> 44</span><span class="w">  </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-gray</span><span class="p">);</span>
+<span class="linenos"> 45</span><span class="w">  </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="linenos"> 46</span><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 47</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-dark-gray</span><span class="p">);</span>
+<span class="linenos"> 48</span><span class="p">}</span>
+<span class="linenos"> 49</span>
+<span class="linenos"> 50</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">input</span><span class="p">:</span><span class="nd">focus</span><span class="o">,</span>
+<span class="linenos"> 51</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">textarea</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 52</span><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
+<span class="linenos"> 53</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-dark-gray</span><span class="p">);</span>
+<span class="linenos"> 54</span><span class="p">}</span>
+<span class="linenos"> 55</span>
+<span class="linenos"> 56</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">input</span><span class="p">:</span><span class="nd">focus</span><span class="p">:</span><span class="nd">required</span><span class="p">:</span><span class="nd">invalid</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 57</span><span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-pink</span><span class="p">);</span>
+<span class="linenos"> 58</span><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
+<span class="linenos"> 59</span><span class="p">}</span>
+<span class="linenos"> 60</span>
+<span class="linenos"> 61</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">button</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 62</span><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="linenos"> 63</span><span class="w">  </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 64</span><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="linenos"> 65</span><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 66</span><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 67</span><span class="w">  </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="kc">transparent</span><span class="p">;</span>
+<span class="linenos"> 68</span><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-blue</span><span class="p">);</span>
+<span class="linenos"> 69</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
+<span class="linenos"> 70</span><span class="w">  </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">700</span><span class="p">;</span>
+<span class="linenos"> 71</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 72</span>
+<span class="linenos"> 73</span><span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">ms</span><span class="w"> </span><span class="kc">all</span><span class="p">;</span>
+<span class="linenos"> 74</span><span class="p">}</span>
+<span class="linenos"> 75</span>
+<span class="linenos"> 76</span><span class="p">.</span><span class="nc">formcarry-form</span><span class="w"> </span><span class="nt">button</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 77</span><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--color-light-blue</span><span class="p">);</span>
+<span class="linenos"> 78</span><span class="p">}</span>
+<span class="linenos"> 79</span>
+<span class="linenos"> 80</span><span class="p">.</span><span class="nc">formcarry-alert</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 81</span><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 82</span><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 83</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
+<span class="linenos"> 84</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">14</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 85</span><span class="w">  </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">;</span>
+<span class="linenos"> 86</span><span class="w">  </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos"> 87</span><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="linenos"> 88</span><span class="p">}</span>
+<span class="linenos"> 89</span>
+<span class="linenos"> 90</span><span class="p">.</span><span class="nc">formcarry-alert</span><span class="p">.</span><span class="nc">visible</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 91</span><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="linenos"> 92</span><span class="p">}</span>
+<span class="linenos"> 93</span>
+<span class="linenos"> 94</span><span class="p">.</span><span class="nc">formcarry-alert</span><span class="p">.</span><span class="nc">success</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 95</span><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#69cf9d</span><span class="p">;</span>
+<span class="linenos"> 96</span><span class="p">}</span>
+<span class="linenos"> 97</span>
+<span class="linenos"> 98</span><span class="p">.</span><span class="nc">formcarry-alert</span><span class="p">.</span><span class="nc">error</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 99</span><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#de524c</span><span class="p">;</span>
+<span class="linenos">100</span><span class="p">}</span>
+<span class="linenos">101</span>
+<span class="linenos">102</span><span class="p">.</span><span class="nc">alert</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">103</span><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">104</span><span class="w">  </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#36f46c</span><span class="p">;</span>
+<span class="linenos">105</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="linenos">106</span><span class="w">  </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">107</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>

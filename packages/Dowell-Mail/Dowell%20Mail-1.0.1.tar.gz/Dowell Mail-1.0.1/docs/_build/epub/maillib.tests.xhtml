@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>maillib.tests package</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/epub.css" /> 
+  </head><body>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <section id="maillib-tests-package">
+<h1>maillib.tests package</h1>
+<section id="submodules">
+<h2>Submodules</h2>
+</section>
+<section id="module-maillib.tests.test_urls">
+<span id="maillib-tests-test-urls-module"></span><h2>maillib.tests.test_urls module</h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="maillib.tests.test_urls.TestUrls">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">maillib.tests.test_urls.</span></span><span class="sig-name descname"><span class="pre">TestUrls</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Test cases for the maillib urls in the maillib Django app’s urls.py.</p>
+<p>Methods:
+- test_home_url_resolved: Tests that the call to the <cite>home</cite> url name resolves successfully</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="maillib.tests.test_urls.TestUrls.test_home_url_resolved">
+<span class="sig-name descname"><span class="pre">test_home_url_resolved</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Tests that the call to the <cite>home</cite> url name resolves successfully</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-maillib.tests.test_views">
+<span id="maillib-tests-test-views-module"></span><h2>maillib.tests.test_views module</h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="maillib.tests.test_views.TestViews">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">maillib.tests.test_views.</span></span><span class="sig-name descname"><span class="pre">TestViews</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<p>Test cases for the maillib view in the maillib Django app.</p>
+<p>Methods:
+- setUp: Initializes the client object to simulate a web browser and the reverse function</p>
+<blockquote>
+<div><p>stored in home_url, used to get the home view.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>test_should_show_home_page: Tests that the home view successfully loads the home.html template.</p></li>
+<li><dl class="simple">
+<dt>test_email_validate: tests that the validate url call returns a 200 status code and that the </dt><dd><p>template used is home.html</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>test_valid_email: Tests that the API call to the validate email endpoint returns success=True if the email</dt><dd><p>provided is valid</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>test_send_email: Tests that the API call to the send email endpoint sends an email successfully and returns</dt><dd><p>success=True</p>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="maillib.tests.test_views.TestViews.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Initializes the client object to simulate a web browser and the reverse function stored in home_url, used to get the home view.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="maillib.tests.test_views.TestViews.test_email_validate">
+<span class="sig-name descname"><span class="pre">test_email_validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>tests that the validate url call returns a 200 status code and that the 
+template used is home.html</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="maillib.tests.test_views.TestViews.test_send_email">
+<span class="sig-name descname"><span class="pre">test_send_email</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Tests that the API call to the send email endpoint sends an email successfully and returns
+success=True</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="maillib.tests.test_views.TestViews.test_should_show_home_page">
+<span class="sig-name descname"><span class="pre">test_should_show_home_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Tests that the home view successfully loads the home.html template.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="maillib.tests.test_views.TestViews.test_valid_email">
+<span class="sig-name descname"><span class="pre">test_valid_email</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<dd><p>Tests that the API call to the validate email endpoint returns success=True if the email
+provided is valid</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-maillib.tests">
+<span id="module-contents"></span><h2>Module contents</h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  </body>
+</html>
