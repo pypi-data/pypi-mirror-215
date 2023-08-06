@@ -1,0 +1,17 @@
+cycler
+et-xmlfile
+fonttools
+gekko
+kiwisolver
+matplotlib
+networkx
+numpy
+openpyxl
+packaging
+pandas
+Pillow
+pyparsing
+python-dateutil
+pytz
+scipy
+six

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: optigasflow
+Version: 0.0.3
+Summary: A small example package
+Author-email: cblancom <cristian.blanco@utp.edu.com>
+Project-URL: Homepage, https://github.com/cblancom/natural_gas_project
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python script for compute natural gas flow
