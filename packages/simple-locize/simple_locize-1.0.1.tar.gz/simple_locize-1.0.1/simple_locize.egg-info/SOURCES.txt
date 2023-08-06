@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_locize/init.py
+simple_locize/simple_locize.py
+simple_locize.egg-info/PKG-INFO
+simple_locize.egg-info/SOURCES.txt
+simple_locize.egg-info/dependency_links.txt
+simple_locize.egg-info/top_level.txt
+tests/test_simple_locize.py
