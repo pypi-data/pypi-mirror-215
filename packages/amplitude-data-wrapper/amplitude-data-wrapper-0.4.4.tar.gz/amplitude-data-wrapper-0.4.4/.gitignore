@@ -1,0 +1,11 @@
+__pycache__/
+amplitude_data_wrapper.egg-info/
+venv*
+testing/
+dist/
+.DS_Store
+.env
+data/
+dist/
+requirements.txt
+config.txt
