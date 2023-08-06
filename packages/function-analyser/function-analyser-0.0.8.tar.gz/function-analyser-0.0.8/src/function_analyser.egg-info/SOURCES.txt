@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/function_analyser/__main__.py
+src/function_analyser/main.py
+src/function_analyser/missing_docstring.py
+src/function_analyser/parse_function.py
+src/function_analyser/statistics.py
+src/function_analyser.egg-info/PKG-INFO
+src/function_analyser.egg-info/SOURCES.txt
+src/function_analyser.egg-info/dependency_links.txt
+src/function_analyser.egg-info/requires.txt
+src/function_analyser.egg-info/top_level.txt
+tests/test_main.py
+tests/test_missing_docstring.py
+tests/test_parse_function.py
+tests/test_statistics.py
