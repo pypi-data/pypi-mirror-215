@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mess-sever
+Version: 0.1.1
+Summary: mess_client
+Author: Artem Gladkov
+Author-email: 2020artem@mail.ru
+Requires-Dist: PyQt5
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodomex
+
