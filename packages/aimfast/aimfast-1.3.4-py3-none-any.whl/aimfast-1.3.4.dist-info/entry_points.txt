@@ -1,0 +1,3 @@
+[console_scripts]
+aimfast=aimfast.main:driver
+
