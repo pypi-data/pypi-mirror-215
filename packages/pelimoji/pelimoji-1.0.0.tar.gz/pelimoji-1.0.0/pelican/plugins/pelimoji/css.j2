@@ -1,0 +1,14 @@
+i.cemoji {
+    background-image: url('{{ output }}');
+    background-size: {{ grid.width / images[0].width }}em;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    object-fit: contain ! important;
+    vertical-align: middle ! important;
+}
+{% for image in images %}
+.{{ prefix }}{{ image.stem }} {
+    background-position: -{{ image.position['x'] / image.width }}em {{ image.position['y'] / image.height }}em;
+}
+{% endfor %}
