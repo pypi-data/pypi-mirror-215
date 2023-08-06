@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: yb-hello
+Version: 1.0.0
+Summary: Your package description
+Home-page: UNKNOWN
+Author: Your Name
+Author-email: your.email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: urllib3 (==1.25.11)
+
+UNKNOWN
+
