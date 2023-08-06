@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pyenvtools
+Version: 0.1.0
+Summary: 
+Author: Respirens
+Author-email: thesergiyprotsanin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=13.4.2,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# pyenvtools
+
+> Simple tool for environment variables
+
+### Features
+
+- Dumping environments
+- Joining .env files to one string
+- Generating environment activation scripts from .env files
+
+### Installation
+
+```bash
+pip install pyenvtools
+```
+
+### Usage
+
+```bash
+# Dump environment
+python -m pyenvtools dump
+
+# Dump environment to file
+python -m pyenvtools dump .env
+
+# Join .env file
+python -m pyenvtools join .env
+
+# Generate script
+python -m pyenvtools script .env
+```
