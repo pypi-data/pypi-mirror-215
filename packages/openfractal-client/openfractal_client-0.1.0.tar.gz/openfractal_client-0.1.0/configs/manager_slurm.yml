@@ -1,0 +1,47 @@
+# The base folder to use as the default for some options (logs, etc).
+base_folder: /tmp/qcf_compute
+
+# Name of this scheduler to present to the Fractal Server. Descriptive names help
+# the server identify the manager resource and assists with debugging.
+cluster: manager_demo_slurm_1
+
+loglevel: INFO
+logfile: null
+
+# Time between heartbeats/update checks between this Manager and the Fractal Server.
+update_frequency: 30
+
+# Settings to connect to the Fractal Server.
+server:
+  fractal_uri: https://openfractal-test-pgzbs3yryq-uc.a.run.app
+  username: YOUR_USERNAME
+  password: YOUR_PASSWORD
+  verify: false
+
+# How and where to detect the QM softwares.
+environments:
+  use_manager_environment: true
+  conda: []
+  apptainer: []
+
+executors:
+  slurm:
+    type: slurm
+
+    # Common to all executors.
+    queue_tags: ["demo_slurm"]
+    worker_init: []
+    scratch_directory: null
+    bind_address: 127.0.0.1
+    cores_per_worker: 16
+    memory_per_worker: 16 # GB
+    extra_executor_options: {}
+
+    # Specific options for the local executor.
+    walltime: "1:00:00"
+    exclusive: false
+    partition: null
+    account: null
+    workers_per_node: 7
+    max_nodes: 1
+    scheduler_options: []
