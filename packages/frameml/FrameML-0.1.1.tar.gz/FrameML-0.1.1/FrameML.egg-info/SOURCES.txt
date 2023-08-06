@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+FrameML.egg-info/PKG-INFO
+FrameML.egg-info/SOURCES.txt
+FrameML.egg-info/dependency_links.txt
+FrameML.egg-info/top_level.txt
