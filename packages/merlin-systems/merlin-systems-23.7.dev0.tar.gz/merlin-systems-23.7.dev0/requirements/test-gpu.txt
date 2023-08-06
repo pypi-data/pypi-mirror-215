@@ -1,0 +1,3 @@
+-r test.txt
+
+faiss-gpu==1.7.2
