@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pydraulics/pydraulics.egg-info/PKG-INFO
+pydraulics/pydraulics.egg-info/SOURCES.txt
+pydraulics/pydraulics.egg-info/dependency_links.txt
+pydraulics/pydraulics.egg-info/not-zip-safe
+pydraulics/pydraulics.egg-info/top_level.txt
