@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/django_khronos.egg-info/PKG-INFO
+src/django_khronos.egg-info/SOURCES.txt
+src/django_khronos.egg-info/dependency_links.txt
+src/django_khronos.egg-info/not-zip-safe
+src/django_khronos.egg-info/requires.txt
+src/django_khronos.egg-info/top_level.txt
+src/khronos/__init__.py
+src/khronos/constants.py
+src/khronos/custom_test_runner.py
+src/khronos/service.py
