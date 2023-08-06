@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+chomp64/__init__.py
+chomp64/v2BasicChomper.py
+chomp64.egg-info/PKG-INFO
+chomp64.egg-info/SOURCES.txt
+chomp64.egg-info/dependency_links.txt
+chomp64.egg-info/top_level.txt
