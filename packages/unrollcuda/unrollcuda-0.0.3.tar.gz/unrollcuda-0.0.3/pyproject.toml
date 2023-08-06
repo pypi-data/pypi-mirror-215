@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling","numpy","pycuda"]
+build-backend = "hatchling.build"
+
+[project]
+name = "unrollcuda"
+version = "0.0.3"
+authors = [
+  { name="Aleksei Iurasov", email="format37@gmail.com" },
+]
+description = "Loop unrolling and batching for CUDA"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy","pycuda"]
+
+[project.urls]
+"Homepage" = "https://github.com/format37/unrollcuda"
+"Bug Tracker" = "https://github.com/format37/unrollcuda/issues"
