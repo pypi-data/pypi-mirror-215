@@ -1,0 +1,14 @@
+impoasdiff/__init__.py,sha256=4eTnSZDENta6MCd914Tt7xuzCb_NqLWPUuMp4p5MTEo,489
+impoasdiff/_version.py,sha256=gJ5Lnuag4DEkUcewnE65qRcxxexiXPUddcDIP6Fh89Q,253
+impoasdiff/args_manager.py,sha256=yrkHzgII7WeZOaiDAgSlx_Iu_LPHbKQly_fBoKHwUDU,522
+impoasdiff/diff_handler.py,sha256=VSuzrNQFCUCAppGS0tg3BmKdmjDk_1KxZf4uGqjNVBY,17977
+impoasdiff/file_handler.py,sha256=dO0M34rXXUdjq54UlRvN7Tyx7CRLi20eyMm_X0qNX0M,1218
+impoasdiff/generate_diff.py,sha256=K7AxZ1idYuHb2TPAknn9IpoQ_enM_i4pDrUfsvHEzvg,4777
+impoasdiff/utils.py,sha256=wn48Ne7WT4pmg1wigA7ts0ptbSNl9nYJqNZvw7WcymI,1231
+impoasdiff/templates/report_v3.html,sha256=gecN2pUIZGT975WRFsw4zz6IEtCwAjNnUMfDTXeNpyU,10919
+impoasdiff-0.0.3.data/data/report_v3.html,sha256=gecN2pUIZGT975WRFsw4zz6IEtCwAjNnUMfDTXeNpyU,10919
+impoasdiff-0.0.3.dist-info/METADATA,sha256=pVdKWlDP-yE4EKKvuhrbTc2sifFRGCziuS4RxI9RgIM,923
+impoasdiff-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+impoasdiff-0.0.3.dist-info/entry_points.txt,sha256=A3gPpGgoXaxY2LP1URV1qkF4T61CegNi7Kb7y1VG1Hc,61
+impoasdiff-0.0.3.dist-info/top_level.txt,sha256=wzYIH1xJMSoJyuvpe1D0eWkh3dapQjeMHIbN-G9dR8Y,70
+impoasdiff-0.0.3.dist-info/RECORD,,
