@@ -1,0 +1,11 @@
+README.md
+setup.py
+summdata/SummaryContinuous.py
+summdata/SummaryStatistics.py
+summdata/__init__.py
+summdata/example.py
+summdata.egg-info/PKG-INFO
+summdata.egg-info/SOURCES.txt
+summdata.egg-info/dependency_links.txt
+summdata.egg-info/not-zip-safe
+summdata.egg-info/top_level.txt
