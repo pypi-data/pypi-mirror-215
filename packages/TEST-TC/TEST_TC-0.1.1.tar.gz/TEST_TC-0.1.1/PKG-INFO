@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: TEST_TC
+Version: 0.1.1
+Summary: <small description>
+Author-email: Flavio <f.ischiboni@skienda.it>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
