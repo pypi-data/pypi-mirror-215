@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          sh-mongodb=dz_mongodb:main
+      

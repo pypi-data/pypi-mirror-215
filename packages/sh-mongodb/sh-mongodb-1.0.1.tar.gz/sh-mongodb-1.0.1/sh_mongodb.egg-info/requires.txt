@@ -1,0 +1,13 @@
+pipelinewise-singer-python==2.0.1
+pymongo==4.4.0
+tzlocal==4.0.1
+terminaltables==3.1.10
+dnspython==2.3.0
+
+[dev]
+pylint==2.12
+ipdb==0.13.*
+
+[test]
+pytest==6.2.5
+pytest-cov==3.0.0
