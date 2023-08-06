@@ -1,0 +1,39 @@
+[project]
+name = "hotjar-data-wrapper"
+version = "0.1.5"
+description = "a wrapper for using Hotjar APIs"
+authors = [
+    {name = "Tobias McVey", email = "tobias.mcvey@nav.no"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["hotjar"]
+license = {file = "LICENSE"}
+
+dependencies = [
+    "requests",
+    "tqdm"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel",
+    "python-dotenv",
+    "black",
+    "twine",
+    "keyring",
+    "pip-tools"
+]
+[project.urls]
+"Homepage" = "https://github.com/navikt/hotjar-data-wrapper"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests", "testing"]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"

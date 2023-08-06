@@ -1,0 +1,8 @@
+dist/
+data/
+venv*
+experiments/
+__pycache__/
+hotjar_data_wrapper.egg-info/
+.env
+poetry.lock

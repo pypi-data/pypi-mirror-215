@@ -1,0 +1,16 @@
+.gitignore
+CODEOWNERS
+LICENSE
+Makefile
+README.md
+example.py
+pyproject.toml
+requirements/dev.txt
+requirements/main.txt
+src/hotjar_data_wrapper/__init__.py
+src/hotjar_data_wrapper/hotjar_api.py
+src/hotjar_data_wrapper.egg-info/PKG-INFO
+src/hotjar_data_wrapper.egg-info/SOURCES.txt
+src/hotjar_data_wrapper.egg-info/dependency_links.txt
+src/hotjar_data_wrapper.egg-info/requires.txt
+src/hotjar_data_wrapper.egg-info/top_level.txt
