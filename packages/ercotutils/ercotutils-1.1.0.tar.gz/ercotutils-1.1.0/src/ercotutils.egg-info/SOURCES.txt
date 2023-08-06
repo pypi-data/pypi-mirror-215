@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ercotutils/__init__.py
+src/ercotutils/misutil.py
+src/ercotutils.egg-info/PKG-INFO
+src/ercotutils.egg-info/SOURCES.txt
+src/ercotutils.egg-info/dependency_links.txt
+src/ercotutils.egg-info/requires.txt
+src/ercotutils.egg-info/top_level.txt
