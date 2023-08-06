@@ -1,0 +1,179 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snok"
+description = "🚀 A simple, modern, full-stack toolkit for Python 🐍"
+readme = "README.md"
+dynamic = [
+    "version",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=21.10",
+    "coverage>=6.1.1",
+    "fastapi>=0.97.0",
+    "gunicorn>=20.1.0",
+    "invoke>=2.0.0",
+    "jinja2>=3.1.2",
+    "mypy>=0.910",
+    "packaging>=21.0",
+    "pre-commit>=2.17.0",
+    "pydantic>=1.8.2",
+    "pytest-cov>=3.0.0",
+    "pytest-xdist>=3.3.1",
+    "pytest>=6.2.5",
+    "rich>=10.12.0",
+    "ruff>=0.0.98",
+    "setuptools>=67.8.0",
+    "toml>=0.10.2",
+    "typer>=0.7.0",
+    "types-toml>=0.1.0",
+    "uvicorn>=0.15.0",
+    "wheel>=0.36",
+]
+[[project.authors]]
+name = "Anthony Corletti"
+email = "anthcor+snok@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "mdx-include>=1.4.2",
+    "mkdocs>=1.4.2",
+    "mkdocs-material>=9.1.5",
+]
+
+[project.urls]
+Home = "https://github.com/anthonycorletti/snok"
+Documentation = "https://snok.corletti.xyz"
+
+[project.scripts]
+snok = "snok.cli:app"
+
+[tool.setuptools.package-data]
+snok = ["py.typed", "templates/**/*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "snok.__version__"}
+
+[tool.setuptools.packages.find]
+exclude = ["tests"]
+
+[tool.ruff]
+line-length = 88
+ignore = [
+    "D10",
+]
+include = [
+    "*.py",
+]
+exclude = [
+    "dist",
+    "build",
+    ".venv",
+    "snok/templates/*",
+]
+select = [
+    "E",
+    "F",
+    "I",
+]
+target-version = "py311"
+extend-ignore = [
+    "D203",
+    "D204",
+    "D213",
+    "D215",
+    "D400",
+    "D404",
+    "D406",
+    "D407",
+    "D408",
+    "D409",
+    "D413",
+    "D415",
+]
+
+[tool.black]
+target-version = [
+    "py311",
+]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.*_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+  | __pycache__
+  | snok/templates/*
+)/
+'''
+force-exclude = '''
+/(
+    snok/templates/*
+)/
+'''
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+mypy_path = [
+    "snok",
+    "tests",
+]
+exclude = [
+    "dist",
+    "build",
+    ".venv",
+    "snok/templates/*",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.pytest.ini_options]
+addopts = [
+    "-n",
+    "auto",
+    "-o",
+    "console_output_style=progress",
+    "--ignore=snok/templates",
+    "--disable-warnings",
+    "--showlocals",
+    "--cov=snok",
+    "--cov=tests",
+    "--cov-report=term-missing",
+    "--cov-report=xml",
+    "--cov-report=html",
+    "--cov-fail-under=100",
+]
+
+[tool.coverage.run]
+omit = [
+    "*__init__.py",
+    "snok/templates/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.coverage.xml]
+output = "coverage.xml"
