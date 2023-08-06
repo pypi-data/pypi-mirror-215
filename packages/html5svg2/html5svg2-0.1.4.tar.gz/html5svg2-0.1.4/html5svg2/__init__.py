@@ -1,0 +1,19 @@
+from html5svg2.prg import (
+	dEtq,
+	dTag,
+	dCmt,
+	texto,
+	linea,
+	circulo,
+	elipse,
+	rectangulo,
+	polilinea,
+	poligono,
+	trayectoria,
+	arco_circular,
+	arco_eliptico,
+	poligono_regular,
+	HTML5,
+	SVG2,
+	GRF
+)
