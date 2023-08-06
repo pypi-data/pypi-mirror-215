@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: aibench
+Version: 0.0.3
+Home-page: https://github.com/BasedLabs/aibenchmark/
+Author: Based Labs
+Author-email: 
+License: MIT
+Keywords: ai benchmark metrics
+Description-Content-Type: text/markdown
+
+Benchmark your AI model against popular benchmarks
