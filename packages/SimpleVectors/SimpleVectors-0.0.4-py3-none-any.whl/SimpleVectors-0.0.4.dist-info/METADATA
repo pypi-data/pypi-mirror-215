@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SimpleVectors
+Version: 0.0.4
+Summary: Python Package for playing with Simple Vectors passing through a point
+Home-page: UNKNOWN
+Author: Jonathan Ghodke
+Author-email: Jonathanghodke@gmail.com
+License: UNKNOWN
+Keywords: python,Vectors,vectors,simple vectors
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+Very easy to use module which provides to play with vectors using their magnitude and direction (angle) w.r.t x-axis, also all the vectors which will be added are assumed to be passing through the same line
+
+
