@@ -1,0 +1,16 @@
+README.md
+setup.py
+draggan/__init__.py
+draggan/draggan.py
+draggan/utils.py
+draggan/web.py
+draggan.egg-info/PKG-INFO
+draggan.egg-info/SOURCES.txt
+draggan.egg-info/dependency_links.txt
+draggan.egg-info/requires.txt
+draggan.egg-info/top_level.txt
+draggan/deprecated/stylegan2/op/fused_bias_act.cpp
+draggan/deprecated/stylegan2/op/fused_bias_act_kernel.cu
+draggan/deprecated/stylegan2/op/upfirdn2d.cpp
+draggan/deprecated/stylegan2/op/upfirdn2d_kernel.cu
+draggan/stylegan2/__init__.py
