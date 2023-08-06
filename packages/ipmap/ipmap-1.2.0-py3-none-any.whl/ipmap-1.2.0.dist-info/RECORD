@@ -1,0 +1,12 @@
+ipmap/__init__.py,sha256=wDTUEyGdJijEuwJSFMAe5ukQ-_7CZP3vjDjGIkQ-R5c,1508
+ipmap/config.py,sha256=Rt5hdWl1jt9ybs5VffEuiZ6HPTJeW5pSNFgSsyuk6f8,3880
+ipmap/data/settings.json,sha256=xwOc_tygMVnx638VQqaxvMwVqWFGdQuqU78bdx9XsW8,506
+ipmap/data/templates/map.html,sha256=F2-BaZm9T_-Q8FSfN-6CfYYymqFrG6wpLcMOeyYT-iM,2215
+ipmap/ipmap.py,sha256=igjGTCHAAyBy2vEW5ATxVEvyjqASlaF9hvg7X_AAv2E,4670
+ipmap/main.py,sha256=EIAxHw3wohFtYtwSpH0tvcO2wtNHzhdtVUkEhRNz-P8,986
+ipmap/utils.py,sha256=YZXOwLNIZ0YXhDd0bYq7-jsTtqFMBtS_f-o19-X436E,2426
+ipmap-1.2.0.dist-info/LICENSE,sha256=LlmfokbPQQM5Pi5VU47beKlHWN_XL5q-ZBlZpxZWr0c,1500
+ipmap-1.2.0.dist-info/METADATA,sha256=pDWV63ED_hAgfigxgykiqc_7AcS20WMQlDTPLyLD2ZU,7072
+ipmap-1.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ipmap-1.2.0.dist-info/entry_points.txt,sha256=geuEt9iqIQqgzmpXSKKtAMGPhFuQWAieG_IxSGZLb6c,40
+ipmap-1.2.0.dist-info/RECORD,,
