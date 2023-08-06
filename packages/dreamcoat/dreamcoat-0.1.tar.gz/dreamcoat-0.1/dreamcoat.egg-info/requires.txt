@@ -1,0 +1,16 @@
+calkulate
+cartopy
+fsspec
+great_circle_calculator
+gsw
+keyring
+koolstof
+matplotlib
+motuclient
+napari
+netcdf4
+numpy
+scipy
+xarray
+yagmail
+zarr
