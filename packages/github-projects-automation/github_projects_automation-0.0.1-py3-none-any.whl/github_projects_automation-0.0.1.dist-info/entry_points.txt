@@ -1,0 +1,3 @@
+[console_scripts]
+github-projects-automation=github_projects_automation.__main__:main
+
