@@ -1,0 +1,11 @@
+pyvipe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvipe/__main__.py,sha256=02hcrESd_WOibaYfK0awPteDP4-GbXJfeYLZqzvhFY8,137
+pyvipe/pyvipe.py,sha256=B3VYWujQC6_qVwfT3VE0FHEBIZJP2DBdyATqcol2X6g,2556
+pyvipe-0.1.2.data/data/share/bash-completion/completions/pyvipe,sha256=r0RlN_nglFy8MOkGRQJII2nJ88qRbpSMJ1Ou2YiDQTk,243
+pyvipe-0.1.2.data/data/share/zsh/site-functions/_pyvipe,sha256=1PtZE-uESlJZ7_xKklBne0vyDLcryi2v6cKS0FqCMqY,311
+pyvipe-0.1.2.dist-info/LICENSE,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+pyvipe-0.1.2.dist-info/METADATA,sha256=zmmhWEtlp8XOjnPNQP3uG67yO5Dvi9Zl5n0L7ztJ6wQ,22745
+pyvipe-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyvipe-0.1.2.dist-info/entry_points.txt,sha256=2LVxP5-bTMNIvA4ey6y6CxjyPQfGDqn-UOlQuCPop4w,46
+pyvipe-0.1.2.dist-info/top_level.txt,sha256=3icBwXA25rkixxLYDx8m1x2_5YbB9Ap0u_AJEedh8I8,7
+pyvipe-0.1.2.dist-info/RECORD,,
