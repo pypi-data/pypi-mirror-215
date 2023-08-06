@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "primarymath"
+version = "0.1.2"
+authors = [
+    { name="Adjamilton Junior", email="jr@ieee.org" },
+]
+description = "A library for elementary math stuff based on the book Everything You Need to Ace Math."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Intended Audience :: Other Audience",
+    "Natural Language :: English",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ajunior/primarymath"
+"GitHub Repository" = "https://github.com/ajunior/primarymath"
+"Bug Tracker" = "https://github.com/ajunior/primarymath/issues"
