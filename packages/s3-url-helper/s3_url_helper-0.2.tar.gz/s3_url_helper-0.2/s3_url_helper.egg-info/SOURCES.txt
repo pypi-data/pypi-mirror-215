@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+s3_url/__init__.py
+s3_url/s3_url.py
+s3_url_helper.egg-info/PKG-INFO
+s3_url_helper.egg-info/SOURCES.txt
+s3_url_helper.egg-info/dependency_links.txt
+s3_url_helper.egg-info/requires.txt
+s3_url_helper.egg-info/top_level.txt
+tests/test_s3_url.py

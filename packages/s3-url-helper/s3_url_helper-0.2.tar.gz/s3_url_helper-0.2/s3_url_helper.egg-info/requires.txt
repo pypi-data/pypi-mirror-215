@@ -1,0 +1,12 @@
+boto3
+
+[dev]
+pytest
+pytest-cov
+moto
+mock
+pathlib
+pylint
+assertpy
+twine
+build
