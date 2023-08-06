@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+erroraffirmations/__init__.py
+erroraffirmations/_version.py
+erroraffirmations/affirmations.py
+erroraffirmations.egg-info/PKG-INFO
+erroraffirmations.egg-info/SOURCES.txt
+erroraffirmations.egg-info/dependency_links.txt
+erroraffirmations.egg-info/requires.txt
+erroraffirmations.egg-info/top_level.txt
+erroraffirmations.egg-info/zip-safe
+erroraffirmations/data/affirmations.txt
+tests/test_examples.py
+tests/test_functionality.py
+tests/test_interface.py
