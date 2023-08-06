@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: synodic_client
+Version: 0.1.1.dev2
+License: MIT
+Author-email: Synodic Software <contact@synodic.software>
+Requires-Python: >=3.11,<3.12
+Project-URL: homepage, https://github.com/Synodic-Software/Synodic-Client
+Project-URL: repository, https://github.com/Synodic-Software/Synodic-Client
+Description-Content-Type: text/markdown
+
+# Synodic-Client
