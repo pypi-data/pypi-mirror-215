@@ -1,0 +1,15 @@
+colorama
+colorlog
+datasets
+jieba
+pypinyin
+pytorch_lightning==2.0.3
+scikit_learn
+scipy
+seaborn
+sentencepiece
+setuptools
+spacy
+gradio
+torchmetrics==0.11.4
+transformers>=4.30.2
