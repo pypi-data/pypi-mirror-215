@@ -1,0 +1,72 @@
+# Project Title
+
+Machine Learning Models Made Simple
+
+## Guide
+
+### Classfication model
+
+    Classifier->(X,Y,test_size=0.2,random_state=20,scaler=None)[class]
+                [function]
+                model_training
+                model_accuracy(y_test_f,y_pred_f,model_name,model_obj)
+
+                logistic_regression
+                kneighbors_classifier
+                gaussian_nb
+                bagging_classifier
+                extra_trees_classifier
+                ridge_classifier
+                sgd_classifier
+                random_forest_classifier
+                xgb_classifier
+                ada_boost_classifier
+                bernoulli_nb
+                gradient_boosting_classifier
+                decision_tree_classifier
+                svc
+
+                [Hyperparameter tuning]
+
+                hyperparameter_tuning
+
+                logistic_hyperparameter
+                knn_hyperparameter
+                gaussian_nb_hyperparameter
+                bernoulli_nb_hyperparameter
+                ridge_hyperparameter
+                adaboost_hyperparameter
+                gradient_boosting_hyperparameter
+                svc_hyperparameter
+                decision_tree_hyperparameter
+
+### Regression model
+
+    Regressor->(X,Y,test_size=0.2,random_state=20,scaler=None)[class]
+                [function]
+                model_training
+                model_accuracy(y_test_f,y_pred_f,model_name,model_obj)
+
+                linear_regression
+                ridge_regression
+                lasso_regression
+                elastic_net_regression
+                sgd_regression
+                random_forest_regression
+                kneighbors_regression
+                decision_tree_regression
+                ada_boost_regression
+                xgboost_regression
+                gradient_boosting_regression
+                theilsen_regression
+                ransac_regression
+                lasso_lars_regression
+                lars_regression
+                orthogonal_regression
+                huber_regression
+                svr
+                passive_aggressive_regression
+                ard_regression
+                bayesian_ridge_regression
+                bagging_regression
+                extra_trees_regression
