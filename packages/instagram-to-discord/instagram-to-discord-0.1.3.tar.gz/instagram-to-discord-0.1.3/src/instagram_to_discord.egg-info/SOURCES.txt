@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/instagram_to_discord/__init__.py
+src/instagram_to_discord.egg-info/PKG-INFO
+src/instagram_to_discord.egg-info/SOURCES.txt
+src/instagram_to_discord.egg-info/dependency_links.txt
+src/instagram_to_discord.egg-info/top_level.txt
