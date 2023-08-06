@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: csv2sqltable
+Version: 0.0.1
+Summary: This package converts csv to sql table.
+Home-page: https://github.com/imvickykumar999
+Author: Vicky Kumar
+License: MIT
+Keywords: csv to sql,table,database,magic sql,google colab
+License-File: License.txt
+
+'This package converts csv to sql table.'
