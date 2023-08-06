@@ -1,0 +1,12 @@
+LICENSE
+README.md
+flake8_isolated_packages.py
+pyproject.toml
+setup.cfg
+setup.py
+flake8_isolated_packages.egg-info/PKG-INFO
+flake8_isolated_packages.egg-info/SOURCES.txt
+flake8_isolated_packages.egg-info/dependency_links.txt
+flake8_isolated_packages.egg-info/entry_points.txt
+flake8_isolated_packages.egg-info/requires.txt
+flake8_isolated_packages.egg-info/top_level.txt
