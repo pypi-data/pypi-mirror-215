@@ -1,0 +1,2 @@
+[console_scripts]
+curtxt = curtxt.__main__:main
