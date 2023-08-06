@@ -1,0 +1,5 @@
+ariadne==0.19.1
+uvicorn
+starlette
+httpx
+aiocache[memcached]
