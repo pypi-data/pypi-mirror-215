@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sparrow-cvat
+Version: 0.4.0.dev1687457857
+Author: Sparrow Computing
+Author-email: ben@sparrow.dev
+Provides-Extra: full
+Provides-Extra: dev
+License-File: LICENSE
