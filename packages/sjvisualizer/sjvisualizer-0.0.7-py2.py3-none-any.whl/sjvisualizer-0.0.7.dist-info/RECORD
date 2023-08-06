@@ -1,0 +1,14 @@
+sjvisualizer/BarRace.py,sha256=yCImPGh2bOKyz2TU8RtTOfJWS8CmOu7bbh2BugPMn1o,26664
+sjvisualizer/Canvas.py,sha256=yCNDv2_Pm4S3hdCv6Uy3_3F2rQ9x9q40_8zCbdIulp8,13063
+sjvisualizer/DataHandler.py,sha256=RVmrznYl-BjiJWJ1StDqwicgVAiM05l_SvYTRPvGSj0,5719
+sjvisualizer/Date.py,sha256=37Rf46d6ODLBmV0l-PUMVjg0kyaGbnKcPTBey2xkW9E,4531
+sjvisualizer/PieRace.py,sha256=Lvij_L_KU-xxK-iIUSv1VIyBZ8yo_D7iWXe9--xcuKc,20653
+sjvisualizer/StackedBarChart.py,sha256=5C7D0URuKIPGccxuxcv15vGeXBhC_Kw5I0O5wBFG8vg,15424
+sjvisualizer/StaticImage.py,sha256=CL3FfxB9jFodUlR4US9wiy8YYnHuOTiJwdmXHIvTJGs,3094
+sjvisualizer/StaticText.py,sha256=b1W6m8VqYEyX2ivPIDSVPZxIIXacIIltHAJOs5xIFKA,4558
+sjvisualizer/__init__.py,sha256=QGKLwwGqXdZZI3ryrz6E0Yni13CRsob6O56jDDxRTJ0,209
+sjvisualizer-0.0.7.dist-info/LICENSE,sha256=KAfD2XNwf2yYdRBt6P8rEXgUhPkgFpmUo8E6-iPvpg8,1090
+sjvisualizer-0.0.7.dist-info/METADATA,sha256=Q0LDxrSKIZ8f3iB0HXXaSGzvaZ9LI4QoX1HvKv3SGMQ,2847
+sjvisualizer-0.0.7.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+sjvisualizer-0.0.7.dist-info/top_level.txt,sha256=j1koak1fnQdqGUuXIniC64CXQt1TdR01rWTuJVaGz5I,13
+sjvisualizer-0.0.7.dist-info/RECORD,,
