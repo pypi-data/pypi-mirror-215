@@ -1,0 +1,539 @@
+Metadata-Version: 2.1
+Name: sap-ai-core-llm
+Version: 1.0.18
+Summary: content package for large language models for SAP AI Core
+Home-page: https://www.sap.com/
+Author: SAP SE
+License: SAP DEVELOPER LICENSE AGREEMENT
+Download-URL: https://pypi.python.org/pypi/sap-ai-core-llm
+Keywords: SAP AI Core,Large Language Models,LLM
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Legal Industry
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Content Package for Large Language Models for SAP AI Core
+
+## Objective
+
+A content package to deploy LLM workflows in AI Core.
+
+## User Guide
+
+### 1. Deploying a Proxy to Your Deployment in Azure OpenAI
+
+*Pre-requisites*
+
+1. Complete [AI Core Onboarding](https://help.sap.com/viewer/2d6c5984063c40a59eda62f4a9135bee/LATEST/en-US/8ce24833036d481cb3113a95e3a39a07.html)
+2. Access to the Git repository, Docker repository and S3 bucket onboarded to AI Core
+3. You have an Azure OpenAI account, created an API key to access this account and created a model deployment.
+
+*Steps*
+
+_Note: Do not work in a directory path with a dot. For example, do not create a virtual environment with `.venv`, use `venv` instead. Otherwise, this leads to issues in the metaflow template generation._
+
+1. Install AI Core SDK
+
+```
+pip install 'ai-core-sdk[aicore_content]'
+```
+
+2. Install this content package
+
+```
+pip install sap-ai-core-llm
+```
+
+or build it from source for latest state
+```
+pip install -e .
+```
+
+3. Create a config file with the name proxy_serving_config.yaml with the following content.
+
+```
+.contentPackage: sap-ai-core-llm
+.dockerType: default
+.workflow: azure-openai-proxy
+annotations:
+  executables.ai.sap.com/description: <YOUR EXECUTABLE DESCRIPTION>
+  executables.ai.sap.com/name: <YOUR EXECUTABLE NAME>
+  scenarios.ai.sap.com/description: <YOUR SCENARIO DESCRIPTION>
+  scenarios.ai.sap.com/name: <YOUR SCENARIO NAME>
+image: <YOUR DOCKER IMAGE TAG>
+imagePullSecret: <YOUR DOCKER IMAGE PULL SECRET NAME>
+labels:
+  ai.sap.com/version: <YOUR SCENARIO VERSION>
+  scenarios.ai.sap.com/id: <YOUR SCENARIO ID>
+name: <YOUR SERVING TEMPLATE NAME>
+```
+
+4. Fill in the desired values in the config file. An example config file is shown below.
+
+```
+.contentPackage: sap-ai-core-llm
+.dockerType: default
+.workflow: azure-openai-proxy
+annotations:
+  executables.ai.sap.com/description: My Azure OpenAI Proxy
+  executables.ai.sap.com/name: my-azure-openai-proxy
+  scenarios.ai.sap.com/description: My Azure OpenAI Proxy Scenario
+  scenarios.ai.sap.com/name: my-azure-openai-scenario
+image: docker.io/YOUR_USER_NAME/my-proxy-image:1.0
+imagePullSecret: my-docker-secret
+labels:
+  ai.sap.com/version: '1.0'
+  scenarios.ai.sap.com/id: my-azure-openai-scenario
+name: my-azure-openai-proxy
+```
+
+5. Generate a docker image
+
+```
+aicore-content create-image -p sap-ai-core-llm -w azure-openai-proxy proxy_serving_config.yaml
+```
+
+6. Generate a serving template
+
+```
+aicore-content create-template -p sap-ai-core-llm -w azure-openai-proxy proxy_serving_config.yaml -o './proxy-serving-template.yaml'
+```
+
+7. Push the docker image to your docker repository
+
+```
+docker push docker.io/YOUR_USER_NAME/my-proxy-image:1.0
+```
+
+8. Push the serving template to your git repository
+
+```
+cd <repo_path>
+git add <path_within_repo>/proxy-serving-template.yaml
+git commit -m 'updated template proxy-serving-template.yaml'
+git push
+```
+
+9. Obtain a client credentials token to AI Core
+
+```
+curl --location '<YOUR AUTH ENDPOINT URL>/oauth/token?grant_type=client_credentials' --header 'Authorization: Basic <YOUR AI CORE CREDENTIALS>'
+```
+
+10. Create a secret for your Azure OpenAI API key
+
+```
+curl --location '<YOUR AI CORE URL>/v2/admin/secrets' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+  "name": "azure-openai-key",
+  "data": {
+    "azureapikey": "<YOUR AZURE OPENAI KEY ENCODED IN BASE64>"
+  }
+}'
+```
+
+11. Create a configuration and save the configuration id from the response.
+    Note that `azureDeploymentURL` should be the full URL consisting of the API host, model and api version, i.e. `https://{{apihost}}/openai/deployments/{deployment_name}/chat/completions?api-version={api_version}`
+
+```
+curl --location '<YOUR AI CORE URL>/v2/lm/configurations' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "name": "<CONFIGURATION NAME>",
+    "executableId": "<YOUR EXECUTABLE ID>",
+    "scenarioId": "<YOUR SCENARIO ID>",
+    "versionId": "<YOUR SCENARIO VERSION>",
+    "parameterBindings": [
+        {
+            "key": "azureDeploymentURL",
+            "value": "<YOUR FULL AZURE OPENAI DEPLOYMENT URL>, should be of format <https://{{api_url}}/openai/deployments/{deployment_name}/chat/completions?api-version={api_version}>"
+        }
+    ]
+}'
+```
+
+12. Create a deployment and note down the deployment id from the response
+
+```
+curl --location --globoff --request POST '<YOUR AI CORE URL>/v2/lm/configurations/<YOUR CONFIGURATION ID>/deployments' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>'
+```
+
+13. Check the status of the deployment. Note down the deployment URL after the status changes to RUNNING.
+
+```
+curl --location --globoff '<YOUR AI CORE URL>/v2/lm/deployments/<YOUR DEPLOYMENT ID>' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>'
+```
+
+14. Use your deployment. The example shown below is for a davinci-003 text completions model
+
+```
+curl --location '<YOUR DEPLOYMENT URL>/v1/predict' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "prompt": "Who are you?",
+    "max_tokens": 100
+}'
+```
+
+### 2. Question Answering With Embeddings
+
+*Pre-requisites*
+
+1. Previous section completed
+2. Following Python packages installed for template generation:
+
+```
+pip install langchain==0.0.177 openai==0.27.6 huggingface_hub==0.14.1 sentence_transformers==2.2.2 transformers==4.29.2 'sap-ai-core-metaflow[kubernetes]'==1.1.12
+```
+
+3. Install the [aws cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+4. Create an object store secret in AI Core with the name `default`. See [documentation](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/register-your-object-store-secret) for details.
+5. Configure aws credentials and metaflow as follows:
+
+Using the object store credentials, configure your aws cli via `aws configure` as described [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
+
+When templates are created metaflow pushes tarballs to the S3 bucket. Those tarballs are loaded during pipeline execution. For this to work metaflow needs writing permissions to the S3 bucket onboarded to AI Core and `metaflow` has to be configured to use this bucket as its data store. In order to enable `metaflow` to copy the tarballs into the bucket, the `awscli` must not ask for a password when starting a copy process. To achieve this either give the `default` profile the permissions to access the bucket or run **`export AWS_PROFILE=default`** before creating templates.
+
+Full documentation on how to configure `metaflow` can be found in the [metaflow documentation](https://admin-docs.metaflow.org/overview/configuring-metaflow). We only need to configure the S3 as the storage backend and **do not need** the configuration for AWS Batch. A mininmal configuration file (`~/.metaflowconfig/config.json`) looks like this:
+
+```
+{
+    "METAFLOW_DATASTORE_SYSROOT_S3": "<path-in-bucket>",
+    "METAFLOW_DATATOOLS_SYSROOT_S3": "<path-in-bucket>/data",
+    "METAFLOW_DEFAULT_DATASTORE": "s3"
+}
+```
+
+6. Redis vector database available and vector index schema created:
+
+```
+FT.CREATE "langchain"
+    ON HASH
+        PREFIX 1 "doc:"
+    SCHEMA
+        "metadata" TEXT
+        "content" TEXT
+        "content_vector"  VECTOR FLAT
+            10
+            "TYPE" "FLOAT32"
+            "DIM" 384  // embedding size
+
+            "DISTANCE_METRIC" "COSINE"
+            "INITIAL_CAP" 5
+            "BLOCK_SIZE" 5
+```
+
+*Steps*
+
+1. Create a config file with the name qa_indexing_config.yaml and fill it for example as follows:
+
+```
+.contentPackage: sap-ai-core-llm
+.workflow: qa-indexing
+.dockerType: default
+name: qa-retrieval-indexing
+labels:
+  scenarios.ai.sap.com/id: qa-retrieval
+  ai.sap.com/version: 1.0.0
+annotations:
+  scenarios.ai.sap.com/name: qa-retrieval
+  scenarios.ai.sap.com/description: Questions Answering with document retrieval
+  executables.ai.sap.com/name: qa-retrieval-indexing
+  executables.ai.sap.com/description: Embed documents
+image: <YOUR DOCKER IMAGE TAG>
+```
+
+2. Similarly, create a config file named qa_serving_config.yaml:
+
+```
+.contentPackage: sap-ai-core-llm
+.workflow: qa-serving
+.dockerType: default
+name: qa-retrieval-serving
+labels:
+    scenarios.ai.sap.com/id: qa-retrieval
+    ai.sap.com/version: 1.0.0
+annotations:
+    scenarios.ai.sap.com/name: qa-retrieval
+    scenarios.ai.sap.com/description: Questions Answering with document retrieval
+    executables.ai.sap.com/name: qa-retrieval-serving
+    executables.ai.sap.com/description: Serve queries
+image: <YOUR DOCKER IMAGE TAG>
+imagePullSecret: <YOUR DOCKER IMAGE PULL SECRET NAME>
+```
+
+3. Run the following command to build the docker image. The image will be tagged with the provided tag. Both indexing and serving components use the same docker image. You only have to built it once.
+
+If not building from source, use the following statements:
+```bash
+tag=<TAG>
+package_path=$(pip show sap-ai-core-llm | grep -E "Location:" | awk '{print $2}')
+cd $package_path
+docker build --tag=$tag --build-arg pkg_version=1.1.0 -f sap_aicore_llm/pipelines/qa/Dockerfile .
+```
+
+Otherwise make sure you are in the project root. Then start the build via:
+```bash
+docker build --tag=$tag --build-arg pkg_version=1.1.0 -f pipelines/qa/Dockerfile .
+```
+
+On Mac M1/M2 use the `docker buildx build` command instead.
+```
+aicore-content create-template -p sap-ai-core-llm -w qa-indexing qa_indexing_config.yaml -o './qa_indexing_template.json'
+```
+
+Set the environment variables under `env` in the generated `qa-indexing-template.json` of the container called **`start`**. Add the environment variables with secret key reference:
+
+```json
+{
+    "name": "VECTOR_STORE",
+    "value": "redis"
+},
+{
+    "name": "VECTOR_STORE_URL",
+    "value": "redis://<host>:<port, e.g. 6379>"
+},
+{
+    "name": "EMBEDDING_MODEL",
+    "value": "<either local model e.g. sentence-transformers/all-MiniLM-L6-v2 or proxied. For local the following variables are not needed.>"
+},
+{
+    "name": "EMBEDDING_MODEL_API_BASE",
+    "value": "<proxy deployment inference url>"
+},
+{
+    "name": "AICORE_AUTH_URL",
+    "valueFrom": {
+        "secretKeyRef": {
+        "name": "aicore-creds",
+        "key": "authurl"
+        }
+    }
+},
+{
+    "name": "AICORE_CLIENT_ID",
+    "valueFrom": {
+        "secretKeyRef": {
+        "name": "aicore-creds",
+        "key": "clientid"
+        }
+    }
+},
+{
+    "name": "AICORE_CLIENT_SECRET",
+    "valueFrom": {
+        "secretKeyRef": {
+        "name": "aicore-creds",
+        "key": "clientsecret"
+        }
+    }
+}
+```
+
+Also add the following outside of `env`:
+
+```json
+"envFrom": [
+                {
+                    "secretRef": {
+                        "name": "default-object-store-secret"
+                    }
+                }
+            ],
+```
+
+**Replace `mkdir metaflow` with `mkdir -p metaflow` in the generated template json file.**
+
+5. Generate a serving template
+
+```
+aicore-content create-template -p sap-ai-core-llm -w qa-serving qa_serving_config.yaml -o './qa_serving_template.yaml'
+```
+
+6. Push the docker image to your docker repository
+
+```
+docker push <TAG>
+```
+
+7. Push the serving template to your git repository
+
+```
+cd <repo_path>
+git add <path_within_repo>/qa-indexing-template.yaml
+git add <path_within_repo>/qa-serving-template.yaml
+git commit -m 'updated templates'
+git push
+```
+
+8. Obtain a client credentials token to AI Core
+
+```
+curl --location '<YOUR AUTH ENDPOINT URL>/oauth/token?grant_type=client_credentials' --header 'Authorization: Basic <YOUR AI CORE CREDENTIALS>'
+```
+
+9. Create a secret for your AI Core credentials to allow for authentication and encrypted communication between the components.
+
+```
+curl --location '<YOUR AI CORE URL>/v2/admin/secrets' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "name": "aicore-creds",
+    "data": {
+        "authurl": "<base64_encoded_auth_url>",
+        "clientid": "<base64_encoded_client_id>",
+        "clientsecret": "<base64_encoded_client_secret>"
+    }
+}'
+```
+
+10. Register your data as an artifact and note down the artifact id
+
+```
+curl --location '<YOUR AI CORE URL>/v2/lm/artifacts' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "name": "<YOUR DATASET NAME>",
+    "url": "ai://default/<FOLDER>"
+    "type": "dataset",
+    "description": "<YOUR DATASET DESCRIPTION>",
+    "scenarioId": "<YOUR SCENARIO ID>"
+}'
+```
+
+11. Create an indexing configuration
+
+```
+curl --location '<YOUR AI CORE URL>/v2/lm/configurations' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "name": "<CONFIGURATION NAME>",
+    "executableId": "<YOUR EXECUTABLE ID>",
+    "scenarioId": "<YOUR SCENARIO ID>",
+    "versionId": "<YOUR SCENARIO VERSION>",
+    "inputArtifactBindings": [
+        {
+            "key": "data",
+            "artifactId": "<YOUR DATASETS ARTIFACT ID>"
+        }
+    ]
+}'
+```
+
+12. Create a serving configuration.
+
+```
+curl --location '<YOUR AI CORE URL>/v2/lm/configurations' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "name": "<CONFIGURATION NAME>",
+    "executableId": "<YOUR EXECUTABLE ID>",
+    "scenarioId": "<YOUR SCENARIO ID>",
+    "versionId": "<YOUR SCENARIO VERSION>",
+    "parameterBindings": [
+        {
+            "key": "proxyCompletionModelUrl",
+            "value": "<PROXY URL FOR THE COMPLETION MODEL>"
+        },
+        {
+            "key": "vectorStoreUrl",
+            "value": "redis://<host>:<port>"
+        },
+        {
+            "key": "vectorStore",
+            "value": "redis"
+        }
+    ]
+}'
+```
+
+13. Create an execution and note down the exeuction id from the response
+
+```
+curl --location --globoff --request POST '<YOUR AI CORE URL>/v2/lm/configurations/<YOUR CONFIGURATION ID>/executions' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>'
+```
+
+In case of errors see troubleshooting section below.
+
+14. Check the status of the execution. Wait until it is COMPLETED.
+
+```
+curl --location --globoff '<YOUR AI CORE URL>/v2/lm/executions/<YOUR EXECUTION ID>' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>'
+```
+
+15. Create a deployment and note down the deployment id from the response
+
+```
+curl --location --globoff --request POST '<YOUR AI CORE URL>/v2/lm/configurations/<YOUR CONFIGURATION ID>/deployments' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>'
+```
+
+16. Check the status of the deployment. Note down the deployment URL after the status changes to RUNNING.
+
+```
+curl --location --globoff '<YOUR AI CORE URL>/v2/lm/deployments/<YOUR DEPLOYMENT ID>' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>'
+```
+
+17. Use your deployment. The following example is based on the indexed SAP AI Core documentation from the help portal.
+
+```
+curl --location '<YOUR DEPLOYMENT URL>/v1/query' \
+--header 'AI-Resource-Group: <YOUR RESOURCE GROUP NAME>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <CLIENT CREDENTAILS TOKEN>' \
+--data '{
+    "query": "How do I register an object store secret in AI Core via the API?",
+}'
+```
+
+*Troubleshooting*
+- Execution fails with `Unable to locate credentials` in the logs: Verify that you have created an object store secret by the name `default` in the same resource group as the execution (by default the resource group is `default`). Note, that when consuming object store secrets in workflows (e.g. via envFrom) the secret name must be `{name}-object-store-secret`. So by standard: `default-object-store-secret`.
+- Tarball does not contain index.py. Make sure that your path does not contain a dot (.) in the name. This is a known issue. For example do not create a virtual environment called `.venv` but use `venv` instead.
+
+## Security Guide
+
+See [Security in SAP AI Core](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/security?locale=en-US) for general information about how SAP AI Core handles security.
+
+

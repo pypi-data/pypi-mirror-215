@@ -1,0 +1,21 @@
+azure-openai-proxy:
+    type: DeploymentYaml
+    dockerfile: azure_openai/proxy/Dockerfile
+    yaml: azure_openai/proxy/serving_template.yaml
+    description: >
+        Proxy requests to an Azure OpenAI deployment with SAP AI Core.
+
+qa-indexing:
+    type: ExecutionMetaflow
+    dockerfile: qa/Dockerfile
+    description: >
+        Reads documents from S3, embeds them and stores the result in a vector database.
+    py: qa/src/index.py
+    className: IndexUpsert
+
+qa-serving:
+    type: DeploymentYaml
+    dockerfile: qa/Dockerfile
+    yaml: qa/serving_template.yaml
+    description: >
+        Serve queries with context enrichment from a vector database.

@@ -1,0 +1,11 @@
+protobuf==3.20.2
+requests==2.31.0
+Flask==2.2.5
+gunicorn[gevent]==20.1.0
+sap-ai-core-metaflow[kubernetes]==1.1.12
+redis==4.5.4
+langchain==0.0.177
+openai==0.27.6
+huggingface_hub==0.14.1
+sentence_transformers==2.2.2
+transformers==4.29.2

@@ -1,0 +1,70 @@
+apiVersion: ai.sap.com/v1alpha1
+kind: ServingTemplate
+metadata:
+  annotations:
+    scenarios.ai.sap.com/name: "<SCENARIO-NAME>"
+    scenarios.ai.sap.com/description: "<SCENARIO-DESCRIPTION>"
+    executables.ai.sap.com/name: "<EXECUTABLE-NAME>"
+    executables.ai.sap.com/description: "<EXECUTABLE-DESCRIPTION>"
+  labels:
+    ai.sap.com/version: "<SCENARIO-VERSION>"
+    scenarios.ai.sap.com/id: "<SCENARIO-ID>"
+  name: <SERVING-EXECUTABLE-ID>
+spec:
+  inputs:
+    parameters:
+      - name: vectorStore  # e.g. redis
+        type: string
+      - name: vectorStoreUrl   # e.g. redis://<ip>:<port>
+        type: string
+      - name: proxyCompletionModelUrl  # deployment url of proxy service
+        type: string
+  template:
+    apiVersion: "serving.kserve.io/v1beta1"
+    metadata:
+      annotations: |
+        autoscaling.knative.dev/metric: concurrency   # condition when to scale
+        autoscaling.knative.dev/target: 1
+        autoscaling.knative.dev/targetBurstCapacity: 0
+      labels: |
+        ai.sap.com/resourcePlan: starter # computing power
+    spec: |
+      predictor:
+        minReplicas: 1
+        maxReplicas: 2    # how much to scale
+        imagePullSecrets:
+          - name: $imagePullSecret
+        containers:
+        - name: kserve-container
+          image: $image
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9001    # customizable port
+              protocol: TCP
+          command: ["/bin/sh", "-c"]
+          args:
+            - >
+              set -e && echo "Starting" && gunicorn --workers 4 --worker-class gevent --chdir /app/src query:app -b 0.0.0.0:9001
+          env:
+            - name: AICORE_AUTH_URL
+              valueFrom:
+                secretKeyRef:
+                  name: aicore-creds
+                  key: authurl
+            - name: AICORE_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: aicore-creds
+                  key: clientid
+            - name: AICORE_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: aicore-creds
+                  key: clientsecret
+            - name: VECTOR_STORE
+              value: "{{inputs.parameters.vectorStore}}"
+            - name: VECTOR_STORE_URL
+              value: "{{inputs.parameters.vectorStoreUrl}}"
+            - name: COMPLETION_MODEL_API_BASE
+              value: "{{inputs.parameters.proxyCompletionModelUrl}}"
+        timeout: 30
