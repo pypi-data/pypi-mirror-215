@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "cnapps"
+version = "0.0.1"
+description = "predict CN cross-coupling reaction yield"
+
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"

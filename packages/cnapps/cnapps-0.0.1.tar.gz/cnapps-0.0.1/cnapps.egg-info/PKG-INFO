@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cnapps
+Version: 0.0.1
+Summary: Predict CN cross-coupling reaction yield
+Home-page: https://github.com/ZWR0/Apps.git
+Author: zhaoweiren
+Author-email: 1013036362@qq.com
+Requires-Python: >=3.9
+License-File: LICENSE.txt
