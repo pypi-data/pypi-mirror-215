@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: qashared
+Version: 0.0.1
+Summary: Shared QA resources
+Author-email: RR <richard.rawson@divido.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: deepdiff
+Requires-Dist: playwright
+Requires-Dist: pytest
+
