@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+st110913package/__init__.py
+st110913package/file.py
+st110913package.egg-info/PKG-INFO
+st110913package.egg-info/SOURCES.txt
+st110913package.egg-info/dependency_links.txt
+st110913package.egg-info/top_level.txt
