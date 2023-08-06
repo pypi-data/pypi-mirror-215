@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: messenger-business-api
+Version: 1.0.0
+Summary: This repository is a wrapper for Meta messenger api for Messenger and Instagram
+Author: Yuri Ramos Lima
+Author-email: yurilima93@hotmail.com
+License: MIT License
+Keywords: python,Meta,Facebook,Instagram,message,chat-bot
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: requests
+
