@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+readme.md
+setup.py
+npex/alignment.py
+npex/blob.py
+npex/datachunk.py
+npex/gui.py
+npex/npex.py
+npex/peaks.py
+npex/tiffreader.py
+npex.egg-info/PKG-INFO
+npex.egg-info/SOURCES.txt
+npex.egg-info/dependency_links.txt
+npex.egg-info/requires.txt
+npex.egg-info/top_level.txt

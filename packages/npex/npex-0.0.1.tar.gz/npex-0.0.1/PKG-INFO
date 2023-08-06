@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: npex
+Version: 0.0.1
+Summary: NeuroPAL extractor
+Author: Greg Bubnis
+Author-email: gregory.bubnis@ucsf.edu
+Requires-Python: >=3.8
+Description-Content-Type: ## NPEX the NeuroPal EXtractor
+
+Extract nuclear positions, intensities and ID from NeuroPAL image volumes.
+
+
+License-File: LICENSE
