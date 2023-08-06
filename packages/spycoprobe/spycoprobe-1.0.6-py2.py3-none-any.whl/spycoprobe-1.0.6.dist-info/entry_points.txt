@@ -1,0 +1,3 @@
+[console_scripts]
+spycoprobe=spycoprobe.cli:cli
+
