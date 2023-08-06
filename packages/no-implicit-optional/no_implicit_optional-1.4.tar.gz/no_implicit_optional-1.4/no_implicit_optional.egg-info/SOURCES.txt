@@ -1,0 +1,13 @@
+.gitignore
+CHANGELOG.md
+LICENSE
+README.md
+mypy.ini
+no_implicit_optional.py
+setup.py
+no_implicit_optional.egg-info/PKG-INFO
+no_implicit_optional.egg-info/SOURCES.txt
+no_implicit_optional.egg-info/dependency_links.txt
+no_implicit_optional.egg-info/entry_points.txt
+no_implicit_optional.egg-info/requires.txt
+no_implicit_optional.egg-info/top_level.txt

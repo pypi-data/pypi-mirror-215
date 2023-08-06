@@ -1,0 +1,2 @@
+[console_scripts]
+no_implicit_optional = no_implicit_optional:main
