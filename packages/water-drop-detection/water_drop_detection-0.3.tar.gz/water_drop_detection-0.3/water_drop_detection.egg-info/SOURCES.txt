@@ -1,0 +1,9 @@
+README.md
+setup.py
+water_drop_detection/__init__.py
+water_drop_detection/main.py
+water_drop_detection.egg-info/PKG-INFO
+water_drop_detection.egg-info/SOURCES.txt
+water_drop_detection.egg-info/dependency_links.txt
+water_drop_detection.egg-info/requires.txt
+water_drop_detection.egg-info/top_level.txt
