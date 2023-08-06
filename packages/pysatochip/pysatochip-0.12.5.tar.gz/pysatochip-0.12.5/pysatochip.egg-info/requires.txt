@@ -1,0 +1,4 @@
+certifi
+cryptography>=3.3.2
+ecdsa>=0.15
+pyscard>=1.9.9
