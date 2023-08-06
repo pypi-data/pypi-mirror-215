@@ -1,0 +1,11 @@
+h3result/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h3result/cffi.cpython-311-darwin.so,sha256=tH8frIxdHnEMTPCH6dzXb8fwT5rmrGDSk7qmb9oIvZ4,57703
+h3result/error.py,sha256=GR8VbTd44Ofhzd49LUkUp7c9-8-Yw8U97jgpWYJwFfQ,242
+h3result/h3result.py,sha256=e94st8e7quFiappkDuurmjMgLmsSCA3EHrv-prRo-sg,1520
+h3result/interface.h,sha256=1e6o-XG2_XCWdMmExwn6Za0JvxoPyOjEpZmceuITCfM,970
+h3result/lib/libh3result.0.dylib,sha256=mRZpLP5FPtW3V6JKMKAT2eSrq08oRaNuV31NBUyXvBA,54920
+h3result/lib/liblip.0.dylib,sha256=t9HrwpIVf1c3sx2HfPqG_asYAh0P1DShJqJiD4uws5Q,80128
+h3result/path_like.py,sha256=uPpdpxkB6XPCRIeXRmTUv9aNfEpIO4zyl-7CzaZPdNI,72
+h3result-0.2.0.dist-info/METADATA,sha256=NHGNH61Ygi9X6HNg7x7_qY2x8N4oGtZprWip7z4a-hk,548
+h3result-0.2.0.dist-info/WHEEL,sha256=Gxf4V-qJpGmk19UrlUmSNlgHM5l_g_enCnp8sJZS-w0,106
+h3result-0.2.0.dist-info/RECORD,,
