@@ -1,0 +1,6 @@
+[console_scripts]
+gui=scripts:ex_gui
+obs=scripts:ex_obs
+observer=scripts:ex_observer
+test=scripts:test
+
