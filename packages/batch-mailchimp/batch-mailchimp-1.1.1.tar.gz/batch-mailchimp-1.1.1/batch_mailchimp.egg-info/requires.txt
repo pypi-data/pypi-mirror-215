@@ -1,0 +1,1 @@
+mailchimp-marketing>=3.0.80
