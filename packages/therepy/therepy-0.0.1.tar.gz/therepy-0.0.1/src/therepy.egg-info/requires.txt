@@ -1,0 +1,7 @@
+
+[dev]
+twine~=4.0.2
+build~=0.10.0
+
+[test]
+pytest~=7.3

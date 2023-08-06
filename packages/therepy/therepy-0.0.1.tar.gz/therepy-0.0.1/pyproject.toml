@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "therepy"
+version = "00.00.01"
+authors = [
+  { name="Hans Elliott", email="hanselliott61@gmail.com" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+description = "Therapeutic filepath management for python data projects."
+keywords = ["here", "paths"]
+requires-python = ">= 3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "twine ~= 4.0.2",
+    "build ~= 0.10.0"
+]
+test = [
+    "pytest ~= 7.3"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hans-elliott99/therepy"
+"Bug Tracker" = "https://github.com/hans-elliott99/therepy/issues"
