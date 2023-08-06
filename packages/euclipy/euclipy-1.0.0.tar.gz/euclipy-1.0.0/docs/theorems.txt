@@ -1,0 +1,12 @@
+Contents:
+1.x.x - triangles
+2.x.x - lines
+
+x.0.x - angles
+x.1.x - line segments
+-------------------
+Number - Name - Description
+-------------------
+1.0.1 - Triangle Sum Theorem - All angles in a triangle add up to 180 degrees
+2.0.1 - Straight Angle Theorem - Any components of a straight angle are supplementary
+2.1.1 - Subsegment Sum Theorem - All parts of a line segment sum to the whole segment
