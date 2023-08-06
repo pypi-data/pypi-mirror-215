@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: en_nligraphspacy
+Version: 0.0.1
+Summary: Knowledge graph in Spacy
+Home-page: https://github.com/Vishnunkumar/nligraphspacy
+Author: Vishnu
+Author-email: vishnunkumar25@gmail.com
+
+Knowledge graph in Spacy
+
+| Feature | Description |
+| --- | --- |
+| **Name** | `en_nligraphspacy` |
+| **Version** | `0.0.1` |
+| **spaCy** | `>=3.5.2,<3.6.0` |
+| **Default Pipeline** | `tok2vec`, `ner` |
+| **Components** | `tok2vec`, `ner` |
+| **Vectors** | 514157 keys, 20000 unique vectors (300 dimensions) |
+| **Sources** | n/a |
+| **License** | n/a |
+| **Author** | [Vishnu](https://github.com/Vishnunkumar/nligraphspacy) |
+
+### Label Scheme
+
+<details>
+
+<summary>View label scheme (3 labels for 1 components)</summary>
+
+| Component | Labels |
+| --- | --- |
+| **`ner`** | `EDGE`, `SOURCE-NODE`, `TARGET-NODE` |
+
+</details>
+
+### Accuracy
+
+| Type | Score |
+| --- | --- |
+| `ENTS_F` | 98.39 |
+| `ENTS_P` | 98.34 |
+| `ENTS_R` | 98.45 |
+| `TOK2VEC_LOSS` | 72299.90 |
+| `NER_LOSS` | 154859.70 |

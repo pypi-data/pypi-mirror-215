@@ -1,0 +1,66 @@
+{
+  "lang":"en",
+  "name":"nligraphspacy",
+  "version":"0.0.1",
+  "description":"Knowledge graph in Spacy",
+  "author":"Vishnu",
+  "email":"vishnunkumar25@gmail.com",
+  "url":"https://github.com/Vishnunkumar/nligraphspacy",
+  "license":"",
+  "spacy_version":">=3.5.2,<3.6.0",
+  "spacy_git_version":"Unknown",
+  "vectors":{
+    "width":300,
+    "vectors":20000,
+    "keys":514157,
+    "name":"en_vectors"
+  },
+  "labels":{
+    "tok2vec":[
+
+    ],
+    "ner":[
+      "EDGE",
+      "SOURCE-NODE",
+      "TARGET-NODE"
+    ]
+  },
+  "pipeline":[
+    "tok2vec",
+    "ner"
+  ],
+  "components":[
+    "tok2vec",
+    "ner"
+  ],
+  "disabled":[
+
+  ],
+  "performance":{
+    "ents_f":0.9839305204,
+    "ents_p":0.9833596361,
+    "ents_r":0.9845020679,
+    "ents_per_type":{
+      "SOURCE-NODE":{
+        "p":0.9869353718,
+        "r":0.9897553837,
+        "f":0.9883433662
+      },
+      "TARGET-NODE":{
+        "p":0.97072697,
+        "r":0.9720755765,
+        "f":0.9714008052
+      },
+      "EDGE":{
+        "p":0.9925080521,
+        "r":0.9917442105,
+        "f":0.9921259843
+      }
+    },
+    "tok2vec_loss":722.9989757637,
+    "ner_loss":1548.5970345965
+  },
+  "requirements":[
+
+  ]
+}
