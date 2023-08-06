@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pelidoc
+Version: 0.0.5
+Summary: Static site generator for project documentation
+Author-email: Steampunk Wizard <pelidoc@steampunkwizard.ca>
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: Markdown (==3.4.3)
+Requires-Dist: pelican[markdown] (==4.8.0)
+
+# PeliDoc
+
+Pelidoc provides an easy method for generating a simple documentation site for any kind of project.
+
+[Full documentation](https://pelidoc.steampunkwizard.ca)
