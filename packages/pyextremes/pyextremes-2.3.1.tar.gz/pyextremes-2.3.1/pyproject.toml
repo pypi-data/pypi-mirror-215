@@ -1,0 +1,126 @@
+[tool.poetry]
+name = "pyextremes"
+version = "2.3.1"
+description = "Extreme Value Analysis (EVA) in Python"
+license = "MIT"
+authors = ["George Bocharov <bocharovgeorgii@gmail.com>"]
+readme = "README.md"
+homepage = "https://georgebv.github.io/pyextremes"
+repository = "https://github.com/georgebv/pyextremes"
+keywords=[
+    "statistics",
+    "extreme",
+    "extreme value analysis",
+    "eva",
+    "coastal",
+    "ocean",
+    "marine",
+    "environmental",
+    "engineering",
+]
+classifiers=[
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Hydrology",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+packages = [
+    { include = "pyextremes", from = "src" }
+]
+include = [
+    "LICENSE",
+    "README.md",
+    "src/pyextremes/py.typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.19.0"
+scipy = "^1.5.0"
+pandas = ">=1.0.0,<3.0.0"
+emcee = "^3.0.3"
+matplotlib = "^3.3.0"
+tqdm = { version = "^4.0.0", optional = true }
+
+[tool.poetry.extras]
+full = ["tqdm"]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.2"
+
+[tool.poetry.group.lint.dependencies]
+black = "^23.0.0"
+pylint = "^2.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.0.0"
+isort = "^5.0.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.6"
+mkdocs-material-extensions = "^1.1.1"
+mkdocstrings = { version = "^0.20.0", extras = ["python"]}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Development tool configuration
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+lines_between_types = 1
+
+[tool.pylint.'MASTER']
+fail-under = 8.0
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = [
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "too-few-public-methods",
+    "useless-super-delegation",
+]
+
+[tool.pylint.'FORMAT']
+max-line-length = 88
+
+[tool.pytest.ini_options]
+addopts = "-v --cov=pyextremes --cov-report=term --cov-report=xml --cov-report=html"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.run]
+omit = [
+    "./src/pyextremes/plotting/*",
+    "./src/pyextremes/tuning/*",
+    "./src/pyextremes/tests/test_base.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    'pragma: no cover',
+    'raise AssertionError',
+    'raise NotImplementedError',
+    'if __name__ == .__main__.:',
+    'def __repr__',
+    '    ...',
+]
+fail_under = 90
+precision = 1
+skip_empty = true
+sort = "-Cover"
