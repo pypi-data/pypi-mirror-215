@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+VERSION
+pyproject.toml
+requirements.txt
+src/openssm.egg-info/.DS_Store
+src/openssm.egg-info/PKG-INFO
+src/openssm.egg-info/SOURCES.txt
+src/openssm.egg-info/dependency_links.txt
+src/openssm.egg-info/requires.txt
+src/openssm.egg-info/top_level.txt
+src/openssm.egg-info/zip-safe
+src/ssm/__init__.py
