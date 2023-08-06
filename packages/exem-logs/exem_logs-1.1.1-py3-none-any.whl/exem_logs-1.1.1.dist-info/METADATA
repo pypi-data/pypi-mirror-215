@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: exem-logs
+Version: 1.1.1
+Summary: Powerfull but simplest way to log your python application
+Home-page: https://gitlab.com/exem2/libraries/logs
+Author: Félix BOULE--REIFF
+Author-email: boulereiff@exem.fr
+License: BSD 2-clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: google-cloud
+Requires-Dist: google-cloud-logging
+Requires-Dist: google-cloud-error-reporting
+
