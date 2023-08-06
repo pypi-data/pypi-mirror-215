@@ -1,0 +1,5 @@
+pyelftools
+zstandard
+unix_ar
+wget
+requests
