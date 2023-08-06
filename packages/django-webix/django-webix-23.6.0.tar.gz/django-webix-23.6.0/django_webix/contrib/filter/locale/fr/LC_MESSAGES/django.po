@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 15:44+0100\n"
+"PO-Revision-Date: 2022-03-21 12:39+0050\n"
+"Last-Translator: Traduzioni CBC <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: contrib/filter/apps.py:11
+#, fuzzy
+#| msgid "Django webix site admin"
+msgid "Django Webix Filter"
+msgstr "Admin site webix Django"
+
+#: contrib/filter/models.py:16
+msgid "Insert date"
+msgstr ""
+
+#: contrib/filter/models.py:17
+#, fuzzy
+#| msgid "Private data"
+msgid "Update date"
+msgstr "Données privées"
+
+#: contrib/filter/models.py:18 contrib/filter/views.py:342
+msgid "Title"
+msgstr ""
+
+#: contrib/filter/models.py:19 contrib/filter/views.py:353
+msgid "Description"
+msgstr "Description"
+
+#: contrib/filter/models.py:20 contrib/filter/views.py:364
+msgid "Model"
+msgstr "Modèle"
+
+#: contrib/filter/models.py:21
+msgid "Filter"
+msgstr "Filtrer"
+
+#: contrib/filter/models.py:23
+#, fuzzy
+#| msgid "Manage users"
+msgid "Insert user"
+msgstr "Gérer les utilisateurs"
+
+#: contrib/filter/models.py:25
+msgid "Visiblity"
+msgstr ""
+
+#: contrib/filter/models.py:26
+msgid "Public"
+msgstr ""
+
+#: contrib/filter/models.py:27
+#, fuzzy
+#| msgid "Private data"
+msgid "Private"
+msgstr "Données privées"
+
+#: contrib/filter/models.py:28
+msgid "Restricted"
+msgstr ""
+
+#: contrib/filter/models.py:30
+#, fuzzy
+#| msgid "Enabled groups"
+msgid "Assignees groups"
+msgstr "Groupes autorisés"
+
+#: contrib/filter/models.py:31
+msgid "Shared edit group"
+msgstr ""
+
+#: contrib/filter/models.py:36
+#, fuzzy
+#| msgid "Filter"
+msgid "Webix Filter"
+msgstr "Filtrer"
+
+#: contrib/filter/models.py:37
+#, fuzzy
+#| msgid "Filter"
+msgid "Webix Filters"
+msgstr "Filtrer"
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:31
+#, fuzzy
+#| msgid "Server error"
+msgid "Filter error"
+msgstr "Erreur du serveur"
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:32
+msgid ""
+"There is a filter error, caused by a garment or model that is now non-"
+"existent or not correctly configured."
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:33
+msgid "Unable to load filter, contact administrators to correct it"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:106
+#: contrib/filter/templates/django_webix/filter/create_update.js:122
+#: contrib/filter/templates/django_webix/filter/create_update.js:138
+#: contrib/filter/templates/django_webix/filter/create_update.js:207
+msgid "You need to insert a filter before saving"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:150
+msgid "Apply temporary filter"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:33
+msgid "No"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:34
+msgid "Yes"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:38
+msgid "Show active only"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:46
+#, fuzzy
+#| msgid "Advanced filter"
+msgid "Advanced filters"
+msgstr "Filtre avancé"
+
+#: contrib/filter/templates/django_webix/filter/list.js:63
+msgid "Close"
+msgstr "Fermer"
+
+#: contrib/filter/templates/django_webix/filter/list.js:100
+#, fuzzy
+#| msgid "Advanced filter"
+msgid "Create new filter"
+msgstr "Filtre avancé"
+
+#: contrib/filter/templates/django_webix/filter/list.js:169
+msgid "Configuration error"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:170
+msgid ""
+"ATTENTION: there is a filter application configuration error. Contact "
+"administrators."
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:193
+#: contrib/filter/templates/django_webix/filter/list.js:236
+msgid "Change temporary filter"
+msgstr ""
+
+#: contrib/filter/templates/django_webix/filter/list.js:205
+#: contrib/filter/templates/django_webix/filter/list.js:249
+#, fuzzy
+#| msgid "Invalid email"
+msgid "Invalid filter"
+msgstr "Email invalide"
+
+#: contrib/filter/templates/django_webix/filter/list.js:214
+#: contrib/filter/templates/django_webix/filter/list.js:258
+msgid "Disable temporary filter"
+msgstr ""
+
+#: contrib/filter/utils/operators.py:202
+msgid "Overlap"
+msgstr ""
+
+#: contrib/filter/utils/operators.py:204
+msgid "Contained by"
+msgstr ""
+
+#: contrib/filter/views.py:375
+msgid "Visibility"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Applica i filtri impostati"
+#~ msgid "Applica filtro temporaneo"
+#~ msgstr "Appliquer les filtres définis"

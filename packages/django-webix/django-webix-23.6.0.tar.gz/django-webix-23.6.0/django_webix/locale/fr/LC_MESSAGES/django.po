@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-31 22:12+0200\n"
+"PO-Revision-Date: 2022-03-21 12:39+0050\n"
+"Last-Translator: Traduzioni CBC <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: forms/forms.py:408
+msgid "Upload new image"
+msgstr "Charger une nouvelle image"
+
+#: forms/forms.py:484 forms/forms.py:604
+msgid "Deleted"
+msgstr "Effacé"
+
+#: forms/forms.py:515
+msgid "Upload file"
+msgstr "Charger un fichier"
+
+#: forms/forms.py:529
+msgid "Upload folder"
+msgstr "Charger un dossier"
+
+#: forms/forms.py:534
+msgid "Upload files"
+msgstr "Charger des fichiers"
+
+#: forms/forms.py:630
+msgid "MultipleChoiceField is available only with PRO webix license"
+msgstr "Le champs ChoixMultiple n'est disponible qu'avec la licence Webix PRO"
+
+#: forms/forms.py:662 forms/forms.py:689 forms/forms.py:743 forms/forms.py:777
+#: forms/forms.py:787 forms/forms.py:801 forms/forms.py:851
+msgid "Click to select"
+msgstr "Cliquer pour sélectionner"
+
+#: forms/forms.py:890
+msgid "Initial value {} for geo field {} is not supported"
+msgstr "La valeur initiale {} pour le champ geo {} n'est pas valide"
+
+#: forms/forms.py:939
+msgid "Edit"
+msgstr "Modifier"
+
+#: forms/forms.py:1090
+msgid "Type of field {} not supported"
+msgstr "Type de champ {} non supporté"
+
+#: forms/formsets.py:88
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr "La donnée ManagementForm est manquante ou a été altérée par"
+
+#: templates/django_webix/generic/delete.js:32
+#: templates/django_webix/include/action_deleterelatedobjects.js:8
+msgid "The following objects will be deleted"
+msgstr "Les éléments suivants seront supprimés"
+
+#: templates/django_webix/generic/delete.js:56
+#: templates/django_webix/include/action_deleterelatedobjects.js:23
+#, fuzzy
+#| msgid "Detail"
+msgid "Details"
+msgstr "Détail"
+
+#: templates/django_webix/generic/delete.js:86
+msgid "Confirm cancellation"
+msgstr "Confirmer la suppression"
+
+#: templates/django_webix/generic/delete.js:92
+msgid "Delete confirmation"
+msgstr "Supprimer la confirmation"
+
+#: templates/django_webix/generic/delete.js:93
+msgid "Warning! All linked objects will also be deleted."
+msgstr "Attention ! Tous les éléments liés seront également effacés."
+
+#: templates/django_webix/generic/form.js:26
+msgid "Send"
+msgstr "Envoyer"
+
+#: templates/django_webix/generic/list.js:45
+msgid "Extra filters removal"
+msgstr "Élimination des filtres supplémentaires"
+
+#: templates/django_webix/generic/list.js:62
+msgid "Geographic filter removal"
+msgstr "Élimination des filtres géographiques"
+
+#: templates/django_webix/generic/list.js:80
+msgid "Advanced filter"
+msgstr "Filtre avancé"
+
+#: templates/django_webix/generic/list.js:159
+#: templates/django_webix/generic/list.js:250
+#: templates/django_webix/include/actions_list.js:8
+#: templates/django_webix/include/toolbar_navigation.js:47
+msgid "Go to map"
+msgstr "Aller sur la carte"
+
+#: templates/django_webix/generic/list.js:161
+#: templates/django_webix/include/toolbar_navigation.js:43
+msgid "Geometry does not exist"
+msgstr ""
+
+#: templates/django_webix/generic/list.js:263
+msgid "Remove filters"
+msgstr "Supprimer les filtres"
+
+#: templates/django_webix/generic/list.js:264
+msgid "Apply filters"
+msgstr "Appliquer des filtres"
+
+#: templates/django_webix/generic/list.js:264
+msgid "Filter"
+msgstr "Filtrer"
+
+#: templates/django_webix/generic/list.js:494
+msgid "Double click to edit the element"
+msgstr "Double cliquer pour modifier l'élément"
+
+#: templates/django_webix/include/action_dynamic.js:19
+#: templates/django_webix/include/actions_list.js:65
+#: templates/django_webix/include/form_errors_popup.js:16
+#: templates/django_webix/include/utils.js:275
+msgid "Close"
+msgstr "Fermer"
+
+#: templates/django_webix/include/actions_list.js:9
+#, fuzzy
+#| msgid "Filter"
+msgid "Filter in map"
+msgstr "Filtrer"
+
+#: templates/django_webix/include/actions_list.js:36
+#: templates/django_webix/include/actions_list.js:209
+#: templates/django_webix/include/actions_utils.js:67
+#: templates/django_webix/include/actions_utils.js:72
+msgid "Action is not executable"
+msgstr "Cette action ne peut pas être exécutée"
+
+#: templates/django_webix/include/actions_utils.js:40
+#: templates/django_webix/include/toolbar_list.js:23
+#: templates/django_webix/include/toolbar_list.js:40
+msgid "elements"
+msgstr "éléments"
+
+#: templates/django_webix/include/actions_utils.js:40
+msgid "selected"
+msgstr "sélectionnés"
+
+#: templates/django_webix/include/actions_utils.js:66
+#: templates/django_webix/include/actions_utils.js:97
+#: templates/django_webix/include/form_errors_message.js:13
+#: templates/django_webix/include/form_errors_popup.js:13
+#, fuzzy
+#| msgid "Something gone wrong"
+msgid "Oops! Something went wrong..."
+msgstr "Erreur"
+
+#: templates/django_webix/include/actions_utils.js:96
+msgid "Action successful"
+msgstr "Action réussie"
+
+#: templates/django_webix/include/edit_inline/stacked.js:19
+#: templates/django_webix/include/edit_inline/stacked.js:30
+msgid "New Item"
+msgstr "Nouvel élément"
+
+#: templates/django_webix/include/edit_inline/stacked.js:51
+#: templates/django_webix/include/edit_inline/tabular.js:50
+#: templates/django_webix/include/toolbar_navigation.js:35
+msgid "Add"
+msgstr "Ajouter"
+
+#: templates/django_webix/include/form_errors_message.js:15
+#, fuzzy
+#| msgid "Error in the following fields"
+msgid "Error in the following fields:"
+msgstr "Il y a une erreur dans les champ suivants"
+
+#: templates/django_webix/include/form_monotabs.js:66
+#: templates/django_webix/include/form_standard.js:61
+#: templates/django_webix/include/form_tabs.js:70
+msgid "Empty or incorrect value"
+msgstr ""
+
+#: templates/django_webix/include/form_validation.js:15
+msgid "Required field"
+msgstr "Champ requis"
+
+#: templates/django_webix/include/form_validation.js:31
+msgid "Invalid email"
+msgstr "Email invalide"
+
+#: templates/django_webix/include/form_validation.js:72
+msgid "Not integer field"
+msgstr "Champ de type nombre entier"
+
+#: templates/django_webix/include/form_validation.js:76
+#: templates/django_webix/include/form_validation.js:117
+msgid "Value less than "
+msgstr "Valeur inférieure à"
+
+#: templates/django_webix/include/form_validation.js:80
+#: templates/django_webix/include/form_validation.js:121
+msgid "Value greater than "
+msgstr "Valeur supérieure à"
+
+#: templates/django_webix/include/form_validation.js:113
+msgid "Not decimal field"
+msgstr "Champ de type nombre entier"
+
+#: templates/django_webix/include/form_validation.js:142
+msgid "String shorter than "
+msgstr "Texte plus court que"
+
+#: templates/django_webix/include/form_validation.js:146
+msgid "String longer than "
+msgstr "Texte plus longue que"
+
+#: templates/django_webix/include/list_failure_blocking_objects.js:6
+msgid "Missing data to add item"
+msgstr "Données manquantes pour ajouter l'élément"
+
+#: templates/django_webix/include/list_failure_related_objects.js:6
+msgid "These objects do not allow the requested operation"
+msgstr "Ces objets n'autorisent pas l'opération demandée"
+
+#: templates/django_webix/include/list_failure_related_objects.js:23
+msgid "Data type"
+msgstr "Type de donnée"
+
+#: templates/django_webix/include/list_failure_related_objects.js:24
+msgid "Description"
+msgstr "Description"
+
+#: templates/django_webix/include/toolbar_form.js:17
+#: views/generic/actions.py:45
+msgid "Delete"
+msgstr "Effacer"
+
+#: templates/django_webix/include/toolbar_form.js:42
+msgid "Save and continue"
+msgstr "Sauvegarder et continuer"
+
+#: templates/django_webix/include/toolbar_form.js:66
+msgid "Save and add another"
+msgstr "Sauvegarder et ajouter un autre"
+
+#: templates/django_webix/include/toolbar_form.js:92
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: templates/django_webix/include/toolbar_list.js:23
+msgid "of"
+msgstr "de"
+
+#: templates/django_webix/include/toolbar_list.js:27
+msgid "Select all"
+msgstr "Tout sélectionner"
+
+#: templates/django_webix/include/toolbar_list.js:29
+#: templates/django_webix/include/toolbar_list.js:35
+#: templates/django_webix/include/utils.js:576
+msgid "All"
+msgstr "Tous"
+
+#: templates/django_webix/include/toolbar_list.js:29
+#: templates/django_webix/include/toolbar_list.js:35
+msgid "elements selected"
+msgstr "éléments sélectionnés"
+
+#: templates/django_webix/include/toolbar_list.js:30
+msgid "Cancel selection"
+msgstr "Effacer la sélection"
+
+#: templates/django_webix/include/toolbar_list.js:106
+msgid "No row has been selected"
+msgstr "Aucune ligne sélectionnée"
+
+#: templates/django_webix/include/toolbar_list.js:150
+msgid "Add new"
+msgstr "Ajouter un nouveau"
+
+#: templates/django_webix/include/toolbar_list_actions_select.js:14
+msgid "Select an action"
+msgstr "Sélectionner une action"
+
+#: templates/django_webix/include/toolbar_list_actions_select.js:20
+#: views/generic/decorators.py:25 views/generic/list.py:81
+msgid "Go"
+msgstr "Entrer"
+
+#: templates/django_webix/include/toolbar_navigation.js:13
+msgid "Back"
+msgstr "Retour"
+
+#: templates/django_webix/include/toolbar_navigation.js:24
+msgid "Back to list"
+msgstr "Retour à la liste"
+
+#: templates/django_webix/include/utils.js:209
+#: templates/django_webix/include/utils.js:216
+msgid "Yes"
+msgstr "Oui"
+
+#: templates/django_webix/include/utils.js:211
+#: templates/django_webix/include/utils.js:218
+msgid "No"
+msgstr "Non"
+
+#: templates/django_webix/include/utils.js:230
+msgid "Default"
+msgstr "Défaut"
+
+#: templates/django_webix/include/utils.js:237
+msgid "Show on map"
+msgstr "Montrer sur la carte"
+
+#: templates/django_webix/include/utils.js:243
+msgid "Duplicate element"
+msgstr "Copier l'élément"
+
+#: templates/django_webix/include/utils.js:247
+msgid "Remove element"
+msgstr "Supprimer l'élément"
+
+#: templates/django_webix/include/utils.js:251
+msgid "Detail"
+msgstr "Détail"
+
+#: templates/django_webix/include/utils.js:272
+msgid "Image"
+msgstr "Image"
+
+#: templates/django_webix/include/utils.js:352
+#: templates/django_webix/include/utils.js:410
+msgid "Server error"
+msgstr "Erreur du serveur"
+
+#: templates/django_webix/include/utils.js:610
+msgid "Click and change"
+msgstr "Cliquer et changer"
+
+#: templates/django_webix/include/utils.js:612
+msgid "Locked data"
+msgstr "Données protégées"
+
+#: templates/django_webix/redirect_to_login.js:2
+msgid "User is not authenticated"
+msgstr "L'utilisateur ne s'est pas authentifié "
+
+#: templates/django_webix/redirect_to_login.js:5
+msgid "You are no longer authenticated, please login again."
+msgstr "Vous n'êtes plus authentifié, veuillez vous connecter à nouveau."
+
+#: templates/django_webix/user_agent_limit.html:88
+msgid "Attention!"
+msgstr ""
+
+#: templates/django_webix/user_agent_limit.html:89
+msgid "Your browser is outdated and no longer supported."
+msgstr ""
+
+#: templates/django_webix/user_agent_limit.html:90
+msgid "There are valid and free alternatives."
+msgstr ""
+
+#: templates/django_webix/user_agent_limit.html:91
+msgid "You can use for example"
+msgstr ""
+
+#: views/generic/actions.py:54
+#, python-brace-format
+msgid "{count_delete_instances} elements have been deleted"
+msgstr "{count_delete_instances} éléments ont été supprimés"
+
+#: views/generic/actions.py:62
+msgid "Download all attachments"
+msgstr "Télécharger les pièces jointes"
+
+#: views/generic/base.py:172
+msgid "You haven't add permission"
+msgstr "Vous n'avez pas ajouté l'autorisation"
+
+#: views/generic/base.py:177
+msgid "You haven't change permission"
+msgstr "Vous n'avez pas changé l'autorisation"
+
+#: views/generic/base.py:182
+msgid "You haven't delete permission"
+msgstr "Vous n'avez pas supprimé la licence"
+
+#: views/generic/base.py:187
+msgid "You haven't view permission"
+msgstr "Vous n'avez pas l'autorisation de visualisation"
+
+#: views/generic/create_update.py:79
+msgid ""
+"Template style is improperly configured only options are 'standard' or "
+"'tabs' (standard by default)."
+msgstr ""
+"Le style du modèle n'est pas configuré correctement. Les seules options sont "
+"'standard' ou 'tabs' (standard par défaut)."
+
+#: views/generic/create_update.py:335 views/generic/create_update.py:422
+#: views/generic/delete.py:43 views/generic/detail.py:20
+#: views/generic/list.py:619
+msgid "View permission is not allowed"
+msgstr "La visualisation de la licence n'est pas autorisée"
+
+#: views/generic/create_update.py:338
+msgid "Add permission is not allowed"
+msgstr "Ajouter une licence n'est pas autorisé"
+
+#: views/generic/create_update.py:425
+msgid "Change permission is not allowed"
+msgstr "La modification de licence n'est pas autorisée"
+
+#: views/generic/create_update.py:488
+#, python-format
+msgid "Changed %s."
+msgstr "%s modifié."
+
+#: views/generic/create_update.py:488
+msgid "and"
+msgstr "et"
+
+#: views/generic/decorators.py:23 views/generic/list.py:79
+msgid "Fill in the form"
+msgstr "Remplir le formulaire"
+
+#: views/generic/decorators.py:24 views/generic/list.py:80
+msgid "Are you sure you want to proceed with this action?"
+msgstr "Etes-vous sûr de vouloir continuer avec cette action ?"
+
+#: views/generic/decorators.py:26 views/generic/list.py:82
+msgid "Proceed"
+msgstr "Continuer"
+
+#: views/generic/decorators.py:27 views/generic/list.py:83
+msgid "Undo"
+msgstr "Annuler"
+
+#: views/generic/decorators.py:94
+msgid "You can perform this action on a maximum of {} raws"
+msgstr ""
+
+#: views/generic/decorators.py:161
+#, fuzzy
+#| msgid "Action successful"
+msgid "Action success: {} data:{}"
+msgstr "Action réussie"
+
+#: views/generic/decorators.py:187
+#, fuzzy
+#| msgid "Action successful"
+msgid "Action success: {}"
+msgstr "Action réussie"
+
+#: views/generic/delete.py:46
+msgid "Delete permission is not allowed"
+msgstr "La suppression de la licence n'est pas autorisée"
+
+#: views/generic/delete.py:77
+msgid ""
+"No URL to redirect to.  Either provide a url or define a get_absolute_url "
+"method on the Model."
+msgstr ""
+"Pas de URL sur laquelle se rediriger. Fournir une URL ou définir une méthode "
+"get_absolute_url sur le modèle"
+
+#: views/generic/delete.py:88
+msgid ""
+"No URL to failure redirect to.  Either provide a url or define a "
+"get_absolute_url method on the Model."
+msgstr ""
+"En cas d'échec de redirection, adresse URL inexistante. Soit vous fournissez "
+"une adresse URL, soit vous définissez  une méthode get_absolute_url sur le "
+"Model"
+
+#: views/generic/list.py:366
+msgid "Paginate count is not integer"
+msgstr "Le nombre de page n'est pas un nombre entier"
+
+#: views/generic/list.py:375
+msgid "Paginate start is not integer"
+msgstr "La 1ère page  n'est pas une nombre entier"
+
+#: views/generic/list.py:467
+msgid ""
+"Actions style is improperly configured only options are 'buttons' or "
+"'select' (select by default)."
+msgstr ""
+"Le style des actions n'est pas configuré correctement. Les seules options "
+"valides sont 'Boutons' ou 'Sélectionner' (selectionner par défaut)."
+
+#: views/generic/list.py:580
+msgid ""
+"Json response is available only if get_queryset() return a queryset and not "
+"a list"
+msgstr ""
+"La réponse Json est valide seulement si get_queryset() retourne une requête "
+"et non une liste. "
+
+#: views/generic/list.py:599
+msgid "This action is not registered"
+msgstr "Cette action n'est pas enregistrée"
+
+#: views/generic/list.py:605
+msgid "Permission denied: {}"
+msgstr "Autorisation refusée : {}"
+
+#: views/generic/list.py:607
+msgid "This permission is not registered on this class"
+msgstr "Cette autorisation n'est pas enregistrée dans cette catégorie"
+
+#: views/generic/list.py:682
+msgid "Generic TemplateListView needs to define data for datatable"
+msgstr ""
+"Generic TemplateListView doit définir des valeurs pour la base de données"
+
+#~ msgid "Something gone wrong"
+#~ msgstr "Erreur"

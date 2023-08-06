@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 15:44+0100\n"
+"PO-Revision-Date: 2023-03-24 15:45+0100\n"
+"Last-Translator: Stefano Menegon <menegon@mpasol.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: contrib/filter/apps.py:11
+msgid "Django Webix Filter"
+msgstr "Filtri"
+
+#: contrib/filter/models.py:16
+msgid "Insert date"
+msgstr "Data inserimento"
+
+#: contrib/filter/models.py:17
+msgid "Update date"
+msgstr "Data aggiornamento"
+
+#: contrib/filter/models.py:18 contrib/filter/views.py:342
+msgid "Title"
+msgstr "Titolo"
+
+#: contrib/filter/models.py:19 contrib/filter/views.py:353
+msgid "Description"
+msgstr "Descrizione"
+
+#: contrib/filter/models.py:20 contrib/filter/views.py:364
+msgid "Model"
+msgstr "Modello"
+
+#: contrib/filter/models.py:21
+msgid "Filter"
+msgstr "Filtra"
+
+#: contrib/filter/models.py:23
+msgid "Insert user"
+msgstr "Utente inserimento"
+
+#: contrib/filter/models.py:25
+msgid "Visiblity"
+msgstr "Visibilità"
+
+#: contrib/filter/models.py:26
+msgid "Public"
+msgstr "Pubblico"
+
+#: contrib/filter/models.py:27
+msgid "Private"
+msgstr "Privato"
+
+#: contrib/filter/models.py:28
+msgid "Restricted"
+msgstr "Limitato"
+
+#: contrib/filter/models.py:30
+msgid "Assignees groups"
+msgstr "Gruppi assegnati"
+
+#: contrib/filter/models.py:31
+msgid "Shared edit group"
+msgstr "Gruppo di modifica condiviso"
+
+#: contrib/filter/models.py:36
+msgid "Webix Filter"
+msgstr "Filtro"
+
+#: contrib/filter/models.py:37
+msgid "Webix Filters"
+msgstr "Filtri"
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:31
+msgid "Filter error"
+msgstr "Errore nel filtro"
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:32
+msgid ""
+"There is a filter error, caused by a garment or model that is now non-"
+"existent or not correctly configured."
+msgstr ""
+"C'è un errore del filtro, causato da un modello ormai inesistente o non "
+"configurato correttamente."
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:33
+msgid "Unable to load filter, contact administrators to correct it"
+msgstr ""
+"Impossibile caricare il filtro, contattare gli amministratori per "
+"correggerlo"
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:106
+#: contrib/filter/templates/django_webix/filter/create_update.js:122
+#: contrib/filter/templates/django_webix/filter/create_update.js:138
+#: contrib/filter/templates/django_webix/filter/create_update.js:207
+msgid "You need to insert a filter before saving"
+msgstr "Devi inserire un filtro prima di salvare"
+
+#: contrib/filter/templates/django_webix/filter/create_update.js:150
+msgid "Apply temporary filter"
+msgstr "Applica filtro temporaneo"
+
+#: contrib/filter/templates/django_webix/filter/list.js:33
+msgid "No"
+msgstr "No"
+
+#: contrib/filter/templates/django_webix/filter/list.js:34
+msgid "Yes"
+msgstr "Si"
+
+#: contrib/filter/templates/django_webix/filter/list.js:38
+msgid "Show active only"
+msgstr "Mostra solo attivo"
+
+#: contrib/filter/templates/django_webix/filter/list.js:46
+msgid "Advanced filters"
+msgstr "Filtri avanzati"
+
+#: contrib/filter/templates/django_webix/filter/list.js:63
+msgid "Close"
+msgstr "Chiudi"
+
+#: contrib/filter/templates/django_webix/filter/list.js:100
+msgid "Create new filter"
+msgstr "Crea nuovo filtro"
+
+#: contrib/filter/templates/django_webix/filter/list.js:169
+msgid "Configuration error"
+msgstr "Errore di configurazione"
+
+#: contrib/filter/templates/django_webix/filter/list.js:170
+msgid ""
+"ATTENTION: there is a filter application configuration error. Contact "
+"administrators."
+msgstr ""
+"ATTENZIONE: è presente un errore di configurazione nella applicazione del "
+"filtro. Contatta gli amministratori."
+
+#: contrib/filter/templates/django_webix/filter/list.js:193
+#: contrib/filter/templates/django_webix/filter/list.js:236
+msgid "Change temporary filter"
+msgstr "Cambia filtro temporaneo"
+
+#: contrib/filter/templates/django_webix/filter/list.js:205
+#: contrib/filter/templates/django_webix/filter/list.js:249
+msgid "Invalid filter"
+msgstr "Filtro invalido"
+
+#: contrib/filter/templates/django_webix/filter/list.js:214
+#: contrib/filter/templates/django_webix/filter/list.js:258
+msgid "Disable temporary filter"
+msgstr "Disabilita il filtro temporaneo"
+
+#: contrib/filter/utils/operators.py:202
+msgid "Overlap"
+msgstr "Sovrapposizione"
+
+#: contrib/filter/utils/operators.py:204
+msgid "Contained by"
+msgstr "Contenuto in"
+
+#: contrib/filter/views.py:375
+msgid "Visibility"
+msgstr "Visibilità"

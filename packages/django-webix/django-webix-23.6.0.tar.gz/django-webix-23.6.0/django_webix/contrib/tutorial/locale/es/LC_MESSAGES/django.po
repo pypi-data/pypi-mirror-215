@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-27 08:25+0100\n"
+"PO-Revision-Date: 2022-09-01 11:37+0050\n"
+"Last-Translator: Sambado Paolo CBC Spagna <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: contrib/tutorial/apps.py:8
+msgid "Django Webix Tutorial"
+msgstr ""
+
+#: contrib/tutorial/models.py:12 contrib/tutorial/models.py:24
+#: contrib/tutorial/views.py:45
+msgid "Name"
+msgstr ""
+
+#: contrib/tutorial/models.py:15
+msgid "Tutorial area"
+msgstr ""
+
+#: contrib/tutorial/models.py:16
+msgid "Tutorial areas"
+msgstr ""
+
+#: contrib/tutorial/models.py:25 contrib/tutorial/views.py:55
+#, fuzzy
+#| msgid "Descrizione"
+msgid "Description"
+msgstr "Descripción"
+
+#: contrib/tutorial/models.py:27
+msgid "Tutorial type"
+msgstr ""
+
+#: contrib/tutorial/models.py:28
+msgid "PDF"
+msgstr "PDF"
+
+#: contrib/tutorial/models.py:29
+msgid "Video"
+msgstr "Vídeo"
+
+#: contrib/tutorial/models.py:31
+msgid "Type of opening file"
+msgstr ""
+
+#: contrib/tutorial/models.py:32
+#, fuzzy
+#| msgid "Modale con iframe"
+msgid "Modal with iframe"
+msgstr "Modo con marco"
+
+#: contrib/tutorial/models.py:33
+msgid "Same window"
+msgstr ""
+
+#: contrib/tutorial/models.py:34
+#, fuzzy
+#| msgid "Nuovo tab"
+msgid "New tab"
+msgstr "Nueva pestaña"
+
+#: contrib/tutorial/models.py:36
+msgid "Area"
+msgstr "Área"
+
+#: contrib/tutorial/models.py:39
+#, fuzzy
+#| msgid "Visibile dal"
+msgid "Visible from"
+msgstr "Visible desde"
+
+#: contrib/tutorial/models.py:40
+#, fuzzy
+#| msgid "Visibile dal"
+msgid "Visible to"
+msgstr "Visible desde"
+
+#: contrib/tutorial/models.py:43
+msgid "Tutorial item"
+msgstr ""
+
+#: contrib/tutorial/models.py:44
+msgid "Tutorial items"
+msgstr ""
+
+#: contrib/tutorial/templates/django_webix/tutorial/list.js:25
+#, fuzzy
+#| msgid "Area tutorial"
+msgid "Video tutorial"
+msgstr "Área tutorial"
+
+#: contrib/tutorial/templates/django_webix/tutorial/list.js:53
+#, fuzzy
+#| msgid "Area tutorial"
+msgid "PDF tutorial"
+msgstr "Área tutorial"
+
+#: contrib/tutorial/views.py:14
+msgid "Video instructions and manuals"
+msgstr ""
+
+#~ msgid "Nome"
+#~ msgstr "Nombre"
+
+#~ msgid "Aree tutorial"
+#~ msgstr "Áreas tutorial"
+
+#~ msgid "Tipologia tutorial"
+#~ msgstr "Tipo de tutorial"
+
+#~ msgid "Tipologia di apertura del file"
+#~ msgstr "Método de apertura del fichero"
+
+#~ msgid "Stessa finestra"
+#~ msgstr "Esta ventana"
+
+#~ msgid "Elemento tutorial"
+#~ msgstr "Elemento del tutorial"
+
+#~ msgid "Elementi tutorial"
+#~ msgstr "Elementos del tutorial"

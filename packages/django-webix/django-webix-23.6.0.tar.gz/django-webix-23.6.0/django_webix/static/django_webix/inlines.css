@@ -1,0 +1,8 @@
+.empty-form {
+    display: none;
+}
+
+.deleted-inline {
+    background: #d8b91b !important;
+    opacity: .5;
+}

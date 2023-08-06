@@ -1,0 +1,374 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-24 17:39+0100\n"
+"PO-Revision-Date: 2023-05-25 10:53+0200\n"
+"Last-Translator: Stefano Menegon <menegon@mpasol.it>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: contrib/admin/apps.py:27
+msgid "Administration"
+msgstr "Amministrazione"
+
+#: contrib/admin/django_admin_utils.py:43 contrib/admin/forms.py:160
+msgid "Groups"
+msgstr "Gruppi"
+
+#: contrib/admin/dwadmin.py:52
+#: contrib/admin/templates/django_webix/admin/include/menu.js:36
+msgid "User"
+msgstr "Utente"
+
+#: contrib/admin/dwadmin.py:63
+msgid "Email"
+msgstr "Email"
+
+#: contrib/admin/dwadmin.py:74
+msgid "Name"
+msgstr "Nome"
+
+#: contrib/admin/dwadmin.py:85
+msgid "Surname"
+msgstr "Cognome"
+
+#: contrib/admin/dwadmin.py:98
+msgid "Staff"
+msgstr "Staff"
+
+#: contrib/admin/dwadmin.py:111
+msgid "Superuser"
+msgstr "Superuser"
+
+#: contrib/admin/dwadmin.py:124
+msgid "Active"
+msgstr "Attivo"
+
+#: contrib/admin/dwadmin.py:135
+msgid "Group"
+msgstr "Gruppo"
+
+#: contrib/admin/forms.py:24 contrib/admin/forms.py:129
+#: contrib/admin/forms.py:136
+msgid "Available permissions"
+msgstr "Permessi disponibili"
+
+#: contrib/admin/forms.py:25 contrib/admin/forms.py:130
+#: contrib/admin/forms.py:137
+msgid "Selected"
+msgstr "Elementi selezionati"
+
+#: contrib/admin/forms.py:53 contrib/admin/forms.py:233
+msgid "The two password fields didn’t match."
+msgstr "Le due password non coincidono"
+
+#: contrib/admin/forms.py:56 contrib/admin/forms.py:237
+#: contrib/admin/templates/django_webix/admin/login.html:47
+msgid "Password"
+msgstr "Password"
+
+#: contrib/admin/forms.py:62
+msgid "Password confirmation"
+msgstr "Conferma password"
+
+#: contrib/admin/forms.py:65 contrib/admin/forms.py:246
+msgid "Enter the same password as before, for verification."
+msgstr "Inserisci nuovamente la password"
+
+#: contrib/admin/forms.py:157
+msgid "Private data"
+msgstr "Dati privati"
+
+#: contrib/admin/forms.py:158
+msgid "Private informations"
+msgstr "Informazioni personali"
+
+#: contrib/admin/forms.py:159
+msgid "Permissions"
+msgstr "Permessi"
+
+#: contrib/admin/forms.py:179
+msgid "Change password"
+msgstr "Cambia password"
+
+#: contrib/admin/forms.py:243
+msgid "Password (again)"
+msgstr "Password (conferma)"
+
+#: contrib/admin/models.py:14
+msgid "Node name"
+msgstr "Nome del nodo"
+
+#: contrib/admin/models.py:15
+msgid "Icon"
+msgstr "Icona"
+
+#: contrib/admin/models.py:16
+msgid "Web link"
+msgstr "Link"
+
+#: contrib/admin/models.py:17
+msgid "Enabled"
+msgstr "Abilitato"
+
+#: contrib/admin/models.py:18
+msgid "Active for all"
+msgstr "Attivo per tutti"
+
+#: contrib/admin/models.py:19
+msgid "Model"
+msgstr "Modello"
+
+#: contrib/admin/models.py:20
+msgid "Enabled groups"
+msgstr "Gruppi abilitati"
+
+#: contrib/admin/models.py:21
+msgid "Prefix"
+msgstr "Prefisso"
+
+#: contrib/admin/models.py:23
+msgid "Parent"
+msgstr "Padre"
+
+#: contrib/admin/models.py:30 contrib/admin/models.py:31
+msgid "Webix Admin Menu"
+msgstr "Menu"
+
+#: contrib/admin/options.py:253
+msgid "Yes"
+msgstr "Sì"
+
+#: contrib/admin/options.py:253
+msgid "No"
+msgstr "No"
+
+#: contrib/admin/sites.py:36
+msgid "Django webix site admin"
+msgstr "Area amministrazione"
+
+#: contrib/admin/sites.py:39
+msgid "Django webix administration"
+msgstr "Amministrazione"
+
+#: contrib/admin/sites.py:42
+msgid "Site administration"
+msgstr "Amministrazione sito"
+
+#: contrib/admin/sites.py:654
+#, python-format
+msgid ""
+"Please enter the correct %(username)s and password for a staff account. Note"
+" that both fields may be case-sensitive."
+msgstr ""
+"Per favore inserisci il corretto %(username)s e password di un account staff.\n"
+"Attenzione alle lettere maiuscole e minuscole."
+
+#: contrib/admin/sites.py:671
+msgid "Log in"
+msgstr "Entra"
+
+#: contrib/admin/templates/django_webix/admin/account/password_change.js:15
+msgid "Cambio password utente"
+msgstr "Cambio password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_change.js:43
+#: contrib/admin/templates/django_webix/admin/account/password_reset.html:31
+#: contrib/admin/templates/django_webix/admin/password_change.html:29
+msgid "Current password"
+msgstr "Password attuale"
+
+#: contrib/admin/templates/django_webix/admin/account/password_change.js:52
+#: contrib/admin/templates/django_webix/admin/account/password_reset.html:40
+#: contrib/admin/templates/django_webix/admin/password_change.html:38
+msgid "New password"
+msgstr "Nuova password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_change.js:61
+#: contrib/admin/templates/django_webix/admin/account/password_reset.html:49
+#: contrib/admin/templates/django_webix/admin/password_change.html:47
+msgid "Password confirm"
+msgstr "Conferma password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_change.js:70
+#: contrib/admin/templates/django_webix/admin/account/password_reset.html:56
+#: contrib/admin/templates/django_webix/admin/account/password_reset_confirm.html:35
+#: contrib/admin/templates/django_webix/admin/account/password_reset_form.html:34
+#: contrib/admin/templates/django_webix/admin/account/password_reset_form.js:45
+#: contrib/admin/templates/django_webix/admin/password_change.html:54
+msgid "Confirm"
+msgstr "Conferma"
+
+#: contrib/admin/templates/django_webix/admin/account/password_change_done.js:15
+msgid "Password cambiata correttamente"
+msgstr "Password cambiata correttamente"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset.html:13
+#: contrib/admin/templates/django_webix/admin/password_change.html:13
+msgid "User password change"
+msgstr "Cambia password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_complete.html:11
+msgid "password reset complete"
+msgstr "Reset password completato"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_complete.html:17
+msgid "Your password has been set. You can log-in"
+msgstr "La tua password è stata impostata. Ora puoi effettuare il login"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_complete.html:32
+#: contrib/admin/templates/django_webix/admin/login.html:54
+msgid "Login"
+msgstr "Login"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_complete.html:42
+msgid "Back"
+msgstr "Indietro"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_confirm.html:11
+msgid "Insert new password"
+msgstr "Inserisci nuova password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_confirm.html:16
+msgid ""
+"Enter the new password twice, to verify that you have written it correctly"
+msgstr ""
+"Immettere due volte la nuova password, per verificare di averla scritta "
+"correttamente"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_done.html:10
+msgid "password reset sent"
+msgstr "Reset password inviato"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_done.html:15
+#: contrib/admin/templates/django_webix/admin/account/password_reset_done.js:33
+msgid ""
+"We have sent instructions for setting the password to the email address you "
+"provided. You should receive them shortly as long as the address you entered"
+" is valid."
+msgstr ""
+"Abbiamo inviato le istruzioni per impostare la password all'indirizzo email "
+"che hai fornito. Dovresti riceverle a breve, purché l'indirizzo che hai "
+"inserito sia valido."
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_done.html:23
+#: contrib/admin/templates/django_webix/admin/account/password_reset_done.js:40
+msgid ""
+"If you do not receive an email, make sure you have entered the address you "
+"registered with, and check your spam folder"
+msgstr ""
+"Se non ricevi l'email, assicurati di aver inserito l'indirizzo con cui ti "
+"sei registrato e controlla la tua cartella spam"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_done.js:20
+msgid "Reset password"
+msgstr "Reset password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Hai ricevuto questa email perché è stato richiesto un ripristino della "
+"password per l'utente sul sito %(site_name)s."
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Perfavore segui il link e scegli una nuova password:"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_email.html:8
+msgid "Your username, in case you’ve forgotten:"
+msgstr "Nome utente, in caso di dimenticanza"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr "Grazie per l'uso del nostro sito"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "Il team del sito %(site_name)s"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_form.html:11
+msgid "reset password"
+msgstr "Reset password"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_form.html:16
+#: contrib/admin/templates/django_webix/admin/account/password_reset_form.js:26
+msgid ""
+"Forgot password? Enter your email address below, and we will send you "
+"instructions to set up a new one"
+msgstr ""
+"Ha dimenticato la password? Inserisci il tuo indirizzo email qui sotto e ti "
+"invieremo le istruzioni per impostarne uno nuovo"
+
+#: contrib/admin/templates/django_webix/admin/account/password_reset_form.js:12
+#: contrib/admin/templates/django_webix/admin/include/menu.js:55
+msgid "Password reset"
+msgstr "Reset password"
+
+#: contrib/admin/templates/django_webix/admin/account/two_factor.js:12
+msgid "Account security"
+msgstr "Sicurezza account"
+
+#: contrib/admin/templates/django_webix/admin/account/two_factor.js:26
+msgid "Under construction"
+msgstr "In costruzione"
+
+#: contrib/admin/templates/django_webix/admin/base_site.html:97
+msgid "DATA"
+msgstr "DATI"
+
+#: contrib/admin/templates/django_webix/admin/base_site.html:98
+msgid "WEBGIS"
+msgstr "WEBGIS"
+
+#: contrib/admin/templates/django_webix/admin/include/menu.js:41
+msgid "Profile"
+msgstr "Profilo"
+
+#: contrib/admin/templates/django_webix/admin/include/menu.js:48
+msgid "Password change"
+msgstr "Cambia password"
+
+#: contrib/admin/templates/django_webix/admin/include/menu.js:63
+msgid "2 factor authentication"
+msgstr "Autenticazione a 2 fattori"
+
+#: contrib/admin/templates/django_webix/admin/include/menu.js:79
+msgid "Manage users"
+msgstr "Gestione utenti"
+
+#: contrib/admin/templates/django_webix/admin/include/menu.js:84
+msgid "Users"
+msgstr "Utenti"
+
+#: contrib/admin/templates/django_webix/admin/logged_out.html:58
+msgid "Log in again"
+msgstr "Entra di nuovo"
+
+#: contrib/admin/templates/django_webix/admin/login.html:38
+msgid "Username"
+msgstr "Nome utente"
+
+#: contrib/admin/templates/django_webix/admin/login.html:71
+msgid "Password recovery"
+msgstr "Recupera password"
+
+#: contrib/admin/views.py:33
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Nessun elemento %(verbose_name)s trovato"
