@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: greeting-green
+Version: 0.0.3
+Summary: 挨拶アプリ
+Project-URL: Documentation, https://github.com/unknown/greeting-green#readme
+Project-URL: Issues, https://github.com/unknown/greeting-green/issues
+Project-URL: Source, https://github.com/unknown/greeting-green
+Author-email: Kenno-Warise <wariken0523@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# django-hatch
+
+[![PyPI - Version](https://img.shields.io/pypi/v/django-hatch.svg)](https://pypi.org/project/django-hatch)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-hatch.svg)](https://pypi.org/project/django-hatch)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install django-hatch
+```
+
+1. Add "polls" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...,
+        "polls",
+    ]
+
+
+## License
+
+`django-hatch` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
