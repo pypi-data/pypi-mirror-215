@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayketinymce-django"
+version = "0.0.1"
+authors = [
+  { name="轻编程", email="1158920674@qq.com" },
+]
+keywords = ["django", "tinymce", "baykeshop"]
+description = "一个简单的tinymce富文本编辑器的django第三方包！"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "http://www.bayke.shop"
+"Bug Tracker" = "http://www.bayke.shop"

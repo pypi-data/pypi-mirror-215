@@ -1,0 +1,7 @@
+{% include 'django/forms/widgets/textarea.html' %}
+<div id="tinymceConfig{{widget.attrs.id}}" style="display: none;">
+    {{ widget.tinymce_config }}
+</div>
+<script>
+    tinymce.init(JSON.parse(document.getElementById('tinymceConfig{{ widget.attrs.id }}').textContent))
+</script>
