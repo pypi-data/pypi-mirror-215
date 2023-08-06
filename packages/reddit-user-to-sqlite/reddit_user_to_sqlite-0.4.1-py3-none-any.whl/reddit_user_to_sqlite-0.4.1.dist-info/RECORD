@@ -1,0 +1,11 @@
+reddit_user_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reddit_user_to_sqlite/cli.py,sha256=0ylZMF2V7crSZcmi4YiQZK80cVVPiBCiMDGu-qabWCk,5914
+reddit_user_to_sqlite/csv_helpers.py,sha256=3W6nh3Pmx5OcpXa5uwJ0u2mXOqbZVBLu2s3YsVYk-zE,1759
+reddit_user_to_sqlite/helpers.py,sha256=DIftQn17LvYN3vRWhfw7Sr90mPwZahwUvFBK03Tc-M4,1110
+reddit_user_to_sqlite/reddit_api.py,sha256=9fpfJER20ZtfVHnZ8qsXZ7qa7J_J_h6Oh4jEXSQ4unI,4760
+reddit_user_to_sqlite/sqlite_helpers.py,sha256=Q737dmhpj0zJ3_rNOXKzivIIlnnLqwokpKepZqlMiAo,6222
+reddit_user_to_sqlite-0.4.1.dist-info/entry_points.txt,sha256=h8e3p4IZsmlUX37pRomSuy-bE97p8Q1OfKwGB1L1FKc,71
+reddit_user_to_sqlite-0.4.1.dist-info/LICENSE,sha256=10FRsk_qmNTwhak5ISdxJg3kQPgIk7PlVLUBvJbQOvE,1071
+reddit_user_to_sqlite-0.4.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+reddit_user_to_sqlite-0.4.1.dist-info/METADATA,sha256=qpqcwh9SNs2yvUdqUVrB2B_mEd1X3us_0lDnO50w_P0,8587
+reddit_user_to_sqlite-0.4.1.dist-info/RECORD,,
