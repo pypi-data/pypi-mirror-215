@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aibench
+Version: 0.0.3
+Home-page: https://github.com/BasedLabs/aibenchmark/
+Author: Based Labs
+Author-email: 
+License: MIT
+Keywords: ai benchmark metrics
+Description-Content-Type: text/markdown
+Requires-Dist: datasets (==2.13.0)
+Requires-Dist: gdown (==4.7.1)
+Requires-Dist: lxml (==4.9.2)
+Requires-Dist: numpy (==1.25.0)
+Requires-Dist: pandas (==2.0.2)
+Requires-Dist: py7zr (==0.20.5)
+Requires-Dist: pytest (==7.3.2)
+Requires-Dist: Requests (==2.31.0)
+Requires-Dist: scikit-learn (==1.2.2)
+Requires-Dist: setuptools (==68.0.0)
+Requires-Dist: torch (==2.0.1)
+
+Benchmark your AI model against popular benchmarks
