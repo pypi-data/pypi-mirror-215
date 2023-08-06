@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+src/__init__.py
+src/minilab.egg-info/PKG-INFO
+src/minilab.egg-info/SOURCES.txt
+src/minilab.egg-info/dependency_links.txt
+src/minilab.egg-info/top_level.txt
