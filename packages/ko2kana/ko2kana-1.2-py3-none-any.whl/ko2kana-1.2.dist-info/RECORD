@@ -1,0 +1,9 @@
+ko2kana/__init__.py,sha256=h4YSuYa45gGR3IrgNojvsrc1x3CUMYV5p-oF_wdVWcE,36
+ko2kana/japanese.py,sha256=OSMbWAktd3niQNWmj2a2-fWTHcppXe3mjTlO-qxprTc,2675
+ko2kana/ko2kana.py,sha256=sZC9M1oMVPPvJe7XaH1BZs_q2TGr3QZQk703Oay00l8,2212
+ko2kana/korean.py,sha256=kjbkUB6XzJuVApzJwHH6-50nlOIwLyfv-KOJpNjIxI4,14528
+ko2kana-1.2.dist-info/LICENSE,sha256=c8VsLJOLyL-En13Y_YEewq1TxJSE6ezWfOReJ64u180,1090
+ko2kana-1.2.dist-info/METADATA,sha256=rYlQJC3PHlU8Dpjh4ee94pPeVFbiuBQd1Wx--914pXc,1790
+ko2kana-1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ko2kana-1.2.dist-info/top_level.txt,sha256=fD419NrZIEB5ctYxQDhiPH2FRpAD23YzDmTxBzCAWuw,8
+ko2kana-1.2.dist-info/RECORD,,
