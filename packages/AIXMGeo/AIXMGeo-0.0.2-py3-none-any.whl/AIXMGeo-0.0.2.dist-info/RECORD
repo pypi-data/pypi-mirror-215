@@ -1,0 +1,16 @@
+aixm_geo/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aixm_geo/aixm_features.py,sha256=AJOZCYwuAvSXA7q1kut4m1IS6NWFRR2rJda6BDUAWpo,5852
+aixm_geo/aixm_geo.py,sha256=Mem_oaCEwEu9_6bZhjMVxIuJJwOfkR9dXvrGomq3nSc,3466
+aixm_geo/base.py,sha256=vQoWmyScleh8Z4-4QoSkwvmAbN78gNO95LZf2Z7nX9M,12781
+aixm_geo/factory.py,sha256=Z76a8p3KWIEougk53MwAGXqCwPsJRtuLjAVLCp98sCU,1928
+aixm_geo/interfaces.py,sha256=NVHuMOLKM0DmaYB304-7LaZfpa9ixUJB0s--GE-DGn0,326
+aixm_geo/settings.py,sha256=ZAoDJiJE4gc-mHoPbYmSbfc5ztld7RoeUrAaUDL6OlM,366
+aixm_geo/util.py,sha256=xsoOBkuV6Gk6e-lLBg_jalthcBqWbHr063sVKEXH-Hg,3289
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_aixm_features.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tests/test_base.py,sha256=trtaR6lXQyHwFpfC5mhxZxA24_tHgRyHmV_Ruz6WgBA,2027
+AIXMGeo-0.0.2.dist-info/LICENCE.txt,sha256=v7YoHHmOGYqHt5y_OimHyy36kJWTWfxp2zVfXU_t5YQ,131
+AIXMGeo-0.0.2.dist-info/METADATA,sha256=Z8Olh_MmKGokGopNnGCTfgh-6nN7kbae8GDDzFpZOe0,1195
+AIXMGeo-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+AIXMGeo-0.0.2.dist-info/top_level.txt,sha256=SpU36yWmz9V5iGOHFieq1rPKanbadvXIVFVElxt-pBY,15
+AIXMGeo-0.0.2.dist-info/RECORD,,
