@@ -1,0 +1,21 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='vxnc-finder',
+    version='1.0.0',
+    description='Basit bir finder.',
+    author='Vxnich',
+    url='https://vxnich.fun',
+    author_email='vxnich@email.com',
+    packages=find_packages(),
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+    ],
+)

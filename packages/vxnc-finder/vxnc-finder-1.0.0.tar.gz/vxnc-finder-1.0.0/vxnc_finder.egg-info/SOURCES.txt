@@ -1,0 +1,5 @@
+setup.py
+vxnc_finder.egg-info/PKG-INFO
+vxnc_finder.egg-info/SOURCES.txt
+vxnc_finder.egg-info/dependency_links.txt
+vxnc_finder.egg-info/top_level.txt
