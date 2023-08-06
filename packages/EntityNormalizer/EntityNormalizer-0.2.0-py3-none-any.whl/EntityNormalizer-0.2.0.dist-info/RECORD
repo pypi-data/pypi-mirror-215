@@ -1,0 +1,9 @@
+EntityNormalizer/Dictionaries.py,sha256=6RwivLyXPfqs3NPC1YWrDqmIEPSvsDCDqxb3CRdNXH0,840
+EntityNormalizer/__init__.py,sha256=cQLK2Xgc18165Vg_plR5LGqoesaorXH429BL58fApIQ,2388
+EntityNormalizer/resources/MedDic-CANCER-ADE-JA_202306.csv,sha256=S6Gb7VTfqs9nkiWFusnT4umFrZTJdLZxEAiNFXbNZy0,200050
+EntityNormalizer/resources/MedDic-CANCER-DRUG-JA_202306.csv,sha256=MCe8oWRNihR0PdVMG3gVyMlk6tt47LX2EtIu6Na7Oy4,52151
+EntityNormalizer-0.2.0.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+EntityNormalizer-0.2.0.dist-info/METADATA,sha256=ADcmT2vv-_eurAA92UDB-YFNyzrdaAeRy9AID1Cjd8g,4102
+EntityNormalizer-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+EntityNormalizer-0.2.0.dist-info/top_level.txt,sha256=AwTTCGUm0COyRQpGtc5C17S84EApSbqPAzE2YfKH_MA,17
+EntityNormalizer-0.2.0.dist-info/RECORD,,
