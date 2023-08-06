@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple_webbrowser
+Version: 0.0.2
+Summary: A simple Python module that allows for a more simple webbrowser and script connection, based on standard webbrowser module.
+Project-URL: Homepage, https://github.com/MF366-Coding/simple_webbrowser
+Project-URL: Bug Tracker, https://github.com/MF366-Coding/simple_webbrowser/issues
+Author-email: MF366 <real_mf366@yahoo.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# simple_webbrowser
+`simple_webbrowser` is a module that makes `webbrowser` module way more simple to work with.
+
+# License
+This module is licensed under the MIT License.
