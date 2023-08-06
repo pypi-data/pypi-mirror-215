@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyweb-db
+Version: 1.0.5
+Summary: This is a simple JSON-based database library
+Author: PyWebSol
+Author-email: pywebsol@gmail.com
+Keywords: database python json pywebsol
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles
+
+It is a simple JSON-based database library. It can be used both synchronously and asynchronously.
+
+Docs: https://teletype.in/@pywebsol/db-lib
