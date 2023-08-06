@@ -1,0 +1,10 @@
+hmmer_tables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hmmer_tables/csv_iter.py,sha256=HbqJOBirDS0TJAV4DEJN807aIPb5UZzaGKmY7h3Br1U,367
+hmmer_tables/domtbl.py,sha256=3c4m2eFcy3PDDR31LFCZfEs-1KKM3Ynbly_3LZY9B84,3152
+hmmer_tables/interval.py,sha256=RvEN1IP1rkmIWmFoLwqEuuEWzHqVE4yMpIZGrut09Hg,1885
+hmmer_tables/path_like.py,sha256=uPpdpxkB6XPCRIeXRmTUv9aNfEpIO4zyl-7CzaZPdNI,72
+hmmer_tables/tbl.py,sha256=ZVdlqEMoJbyKFNQDsgv2szHKdRO6hFeNYk6roT93hJU,1880
+hmmer_tables-0.2.0.dist-info/LICENSE,sha256=VeypA5u6oDDoZK7tEa4h2TeJ9GrHzr2Tss6RyDIcRVk,1063
+hmmer_tables-0.2.0.dist-info/METADATA,sha256=3IqX0QVcnahXOaflioA-rpTyYp8-IJnLzUWeYuKZy8w,540
+hmmer_tables-0.2.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+hmmer_tables-0.2.0.dist-info/RECORD,,
