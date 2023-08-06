@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+free_pygpt/__init__.py
+free_pygpt/free_pygpt.py
+free_pygpt.egg-info/PKG-INFO
+free_pygpt.egg-info/SOURCES.txt
+free_pygpt.egg-info/dependency_links.txt
+free_pygpt.egg-info/requires.txt
+free_pygpt.egg-info/top_level.txt
