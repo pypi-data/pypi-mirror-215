@@ -1,0 +1,42 @@
+bob==12.0.0
+bob.io.base==5.1.0
+bob.measure==6.1.0
+bob.bio.base==8.0.0
+bob.pipelines==4.0.0
+clapper==1.0.1
+imageio-ffmpeg==0.4.8
+matplotlib==3.6.2
+opencv-python
+pytorch-lightning==1.8.1
+scikit-image==0.19.3
+scikit-learn==1.1.2
+torch==1.13.0
+torchvision==0.14.0
+aiohttp
+
+[doc]
+sphinx==5.3.0
+sphinx-rtd-theme==1.1.1
+sphinx-autodoc-typehints==1.21.8
+auto-intersphinx==1.0.2
+sphinxcontrib-programoutput==0.17
+matplotlib==3.6.2
+dask-ml==2022.5.27
+
+[doc:sys_platform != "darwin"]
+tensorflow==2.11.0
+
+[qa]
+pre-commit
+
+[test]
+pytest==7.2.1
+pytest-cov==4.0.0
+coverage==7.0.5
+dask==2023.1.0
+
+[test:sys_platform != "darwin"]
+tensorflow==2.11.0
+
+[test:sys_platform == "darwin"]
+tensorflow-macos==2.11.0
