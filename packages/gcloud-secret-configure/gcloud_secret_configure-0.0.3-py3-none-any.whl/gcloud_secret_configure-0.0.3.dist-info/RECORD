@@ -1,0 +1,14 @@
+gcloud_secret_configure/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud_secret_configure/config.py,sha256=kDn_xRx6LGRIk_YXKB5MdGbasCRKYgf3TfTfwflXAA0,2767
+gcloud_secret_configure/secret.py,sha256=0f7TkRAnBIJISPAynJ0Iuxf2Ima0TeGK77hcw3wH1VE,1283
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_config_get.py,sha256=fNeEtGfpZyaoOXOY-Ek456vsSqQr-gF1MYeBilfR8K0,2426
+tests/test_config_integration.py,sha256=cJkJ6uoMpms9diuB-4PewQ29G1dAcpY4SGR5EHXybns,1244
+tests/test_config_parse.py,sha256=GKKdQzIZQM4FqtXXEoxJnOFNp_XNbtiOEo0mu_gBAqw,1926
+tests/test_config_repository.py,sha256=fnWkOXRxNqPAwk57ogokep1uAxRRRn8-BeS8Fv_RrTU,1721
+tests/test_secret.py,sha256=IY3BYTflpj987tdS23nefJd1Oi6xWGmFquIW2rc68JY,965
+gcloud_secret_configure-0.0.3.dist-info/LICENSE,sha256=yXBKBdNS8lqS3qPK9EObxToBzv8rH8WtYCaCBO8RF9g,1069
+gcloud_secret_configure-0.0.3.dist-info/METADATA,sha256=inT9G0Up7OHIqR7czbHWfIm7D9mGcQu33twNh7WXldg,521
+gcloud_secret_configure-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gcloud_secret_configure-0.0.3.dist-info/top_level.txt,sha256=oCKRXYzJiyOEzf4zkCzpYyT2M_dy27y3tlxtVEDLSQ4,30
+gcloud_secret_configure-0.0.3.dist-info/RECORD,,
