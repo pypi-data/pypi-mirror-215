@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+fastexception.egg-info/PKG-INFO
+fastexception.egg-info/SOURCES.txt
+fastexception.egg-info/dependency_links.txt
+fastexception.egg-info/requires.txt
+fastexception.egg-info/top_level.txt

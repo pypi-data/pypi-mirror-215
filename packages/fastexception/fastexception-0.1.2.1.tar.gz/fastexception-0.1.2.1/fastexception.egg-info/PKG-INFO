@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fastexception
+Version: 0.1.2.1
+Home-page: https://github.com/mojtabapaso/fastexception
+Author: Mojtaba
+Author-email: mojtabapaso@gamil.com
+License: MIT
+Keywords: FastAPI Tools Fast Exception
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+README.md
