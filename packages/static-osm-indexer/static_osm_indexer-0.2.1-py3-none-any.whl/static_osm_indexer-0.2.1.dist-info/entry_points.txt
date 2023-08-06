@@ -1,0 +1,7 @@
+[console_scripts]
+soi_extract_road_network = static_osm_indexer.soi_extract_road_network:main
+soi_generate_full_map = static_osm_indexer.generate_full_map:main
+soi_generate_mbtiles = static_osm_indexer.generate_mbtiles:main
+soi_index_location_names = static_osm_indexer.index_locations_names:main
+soi_list_named_locations = static_osm_indexer.list_named_locations:main
+soi_road_network_to_geojson = static_osm_indexer.soi_road_network_to_geojson:main
