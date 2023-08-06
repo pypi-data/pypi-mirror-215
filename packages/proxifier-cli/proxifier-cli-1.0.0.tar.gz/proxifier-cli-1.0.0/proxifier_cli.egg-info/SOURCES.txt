@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+proxifier_cli/__init__.py
+proxifier_cli/process.py
+proxifier_cli/profile.ppx
+proxifier_cli/profiles.py
+proxifier_cli.egg-info/PKG-INFO
+proxifier_cli.egg-info/SOURCES.txt
+proxifier_cli.egg-info/dependency_links.txt
+proxifier_cli.egg-info/top_level.txt
