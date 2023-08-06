@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: jsonrequest_JustinRWong
+Version: 0.1.3
+Summary: Lightweight wrapper to make http(s) requests. POST, PATCH, and DELETE requests only support json content.
+Author: Justin Wong
+Author-email: Justin Wong <justinryanwong@berkeley.edu>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/JustinRWong/JSONRequest
+Project-URL: Bug Tracker, https://github.com/JustinRWong/JSONRequest/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+
+# [JSONRequest](https://pypi.org/project/jsonrequest/)
+Lightweight wrapper for requests library that only supports Content-Type: application/json.
+
+This only supports `GET`, `POST`, `PATCH`, and `DELETE` http(s) request methods.
+
+## How to Use
+
+First, install the package
+```bash
+pip install jsonrequest
+```
+
+Then, you can use the package.
+```python
+>>> from jsonrequest.jsonrequest import RequestModel, make_request
+>>> r = make_request(RequestModel(endpoint="", method='GET', url='https://google.com'))
+>>> r
+<Response [200]>
+>>> 
+```
+
+## Note:
+This data passed also only applies to `application/json` content.
+
+
+Across multiple times over the past many years in my python projects, I found this codeblock repeated whenever I tried to make various http(s) requests using the requests library and thought it'd be much simpler to pass the method as a parameter instead of changing the function. I created this package as a result. Hope this helps and Happy coding :)
+
+- by Justin

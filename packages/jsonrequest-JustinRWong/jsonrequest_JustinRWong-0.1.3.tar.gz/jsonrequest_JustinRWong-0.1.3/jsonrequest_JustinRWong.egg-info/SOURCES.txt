@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+jsonrequest_JustinRWong.egg-info/PKG-INFO
+jsonrequest_JustinRWong.egg-info/SOURCES.txt
+jsonrequest_JustinRWong.egg-info/dependency_links.txt
+jsonrequest_JustinRWong.egg-info/requires.txt
+jsonrequest_JustinRWong.egg-info/top_level.txt
