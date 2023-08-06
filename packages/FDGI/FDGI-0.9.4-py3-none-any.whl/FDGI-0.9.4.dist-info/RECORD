@@ -1,0 +1,12 @@
+spook/__init__.py,sha256=rhW6Or5Oicys5o07roiQ3PdTG7Bh96y2fHHHbFVR59I,252
+spook/base.py,sha256=eL-GaiRX6thX9H9oD1-Zc_YnfH_YWbOnzjBB00PdD3M,13488
+spook/contraction_utils.py,sha256=HJ9ihClpT1LvDxBRGfrtRkB4-I1-Gl1WQetuK0X7Nvg,6219
+spook/lin_solve.py,sha256=gO451UWzq3nIb42v68kzI6Tp0U-JuD1oOA42akzpwJ0,4164
+spook/quad_program.py,sha256=ppjqfrXlkVFGYiSPcAq02D74Opohn4lcbzxg2o7ATic,10867
+spook/utils.py,sha256=qfW9FRDjbSTEz7MLmoo2K9RsfgJF02OeiykkThoPjcY,8324
+spook/vmi_special.py,sha256=O4j5WPVJm0AElf09m4Ip3NAo2FWu1ETeZfNBBYKW-dw,4947
+FDGI-0.9.4.dist-info/LICENSE,sha256=guenuH9u8NR7nUsD_HTEgd7OmRhRX09WqU7HFYaWcIA,1065
+FDGI-0.9.4.dist-info/METADATA,sha256=lpF7RM_u3KXD_QGeuKf8KZ-EauD9WinwAR7HsVUi2tw,9837
+FDGI-0.9.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+FDGI-0.9.4.dist-info/top_level.txt,sha256=2wYWme5BM0ksdxwUfuPIXv2854yKVMBIGagGoP6jtZg,6
+FDGI-0.9.4.dist-info/RECORD,,
