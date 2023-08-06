@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+patchelfy/__init__.py
+patchelfy/patchelfy.py
+patchelfy/patchelfy_dev.py
+patchelfy.egg-info/PKG-INFO
+patchelfy.egg-info/SOURCES.txt
+patchelfy.egg-info/dependency_links.txt
+patchelfy.egg-info/requires.txt
+patchelfy.egg-info/top_level.txt
+test/test.py
