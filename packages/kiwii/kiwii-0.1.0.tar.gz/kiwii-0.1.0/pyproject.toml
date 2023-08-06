@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kiwii"
+version = "0.1.0"
+description = "Home IOT ecosystem made easy."
+license = "Unlicense"
+authors = ["Vlad Poberezhny <vlad.pbr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+kiwii = "kiwii:cli"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
