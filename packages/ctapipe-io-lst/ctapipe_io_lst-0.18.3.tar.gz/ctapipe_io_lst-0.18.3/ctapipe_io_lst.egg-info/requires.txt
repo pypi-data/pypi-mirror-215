@@ -1,0 +1,5 @@
+astropy~=4.2
+ctapipe~=0.12
+protozfits~=2.0
+setuptools_scm
+numpy<1.23,>=1.20
