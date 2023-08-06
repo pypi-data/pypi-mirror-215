@@ -1,0 +1,4 @@
+# Exclusions
+exclusions:
+  - venv
+percentile: 99
