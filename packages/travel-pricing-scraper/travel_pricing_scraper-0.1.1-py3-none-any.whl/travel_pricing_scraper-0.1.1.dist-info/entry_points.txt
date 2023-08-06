@@ -1,0 +1,3 @@
+[console_scripts]
+travels=travel_pricing_scraper.cli:app
+
