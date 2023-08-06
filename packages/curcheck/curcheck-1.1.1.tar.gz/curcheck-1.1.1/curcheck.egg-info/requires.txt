@@ -1,0 +1,4 @@
+pyppeteer
+pydantic
+aiohttp
+lxml
