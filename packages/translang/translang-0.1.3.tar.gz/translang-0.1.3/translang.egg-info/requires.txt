@@ -1,0 +1,5 @@
+requests
+deepl
+deep_translator
+bardapi
+openai
