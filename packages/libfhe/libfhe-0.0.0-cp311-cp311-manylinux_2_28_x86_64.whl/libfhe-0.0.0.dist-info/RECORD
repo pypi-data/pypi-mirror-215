@@ -1,0 +1,10 @@
+bgv.cpython-311-x86_64-linux-gnu.so,sha256=S6lqPgPGZUp2N-L-CsJHJyp3Uf2fbEh22SbTN0-bOuY,613193
+libfhe.libs/libgmp-452f15e0.so.10.3.2,sha256=kHA0du_vPKRKVapg5JkvgYJRF9ZP6QuttSZDFlE38a8,1570473
+libfhe.libs/libgomp-22744126.so.1.0.0,sha256=zSj1U_NYGEr1Y_FmSehqqWLn0gRmszKYrGjuUi2qVK4,253289
+libfhe.libs/libfhe-e820c986.so.0.0.0,sha256=LgiP4RQFYtzOqND_LlWo-CSKV8KWRuoym24IwAQu-Wg,37737
+python/bgv.c,sha256=kT00uXTObaKKGcroYHET6s6ypVk4ckbzpeZR44lHNho,434841
+libfhe-0.0.0.dist-info/top_level.txt,sha256=c4FmLOrfoBUd497HR_KBOuQcBACIS18lxDH1gTS6FT4,4
+libfhe-0.0.0.dist-info/LICENSE,sha256=u-Mc8zCecwyo4YoP8UulmzCiZZ_MmCLROd_NBtOcRj0,35148
+libfhe-0.0.0.dist-info/RECORD,,
+libfhe-0.0.0.dist-info/METADATA,sha256=CynphtGFcFo7uhCRm7h99-mITBKGLn25G1pczIH2PKQ,665
+libfhe-0.0.0.dist-info/WHEEL,sha256=Sz6TSs5Plt3BGCNrmuWcVriyt20GNlfrR6mFcILDolA,114
