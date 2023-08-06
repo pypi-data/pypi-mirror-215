@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PyPDFMerge.egg-info/PKG-INFO
+PyPDFMerge.egg-info/SOURCES.txt
+PyPDFMerge.egg-info/dependency_links.txt
+PyPDFMerge.egg-info/entry_points.txt
+PyPDFMerge.egg-info/requires.txt
+PyPDFMerge.egg-info/top_level.txt
+pdfmerger/__init__.py
+pdfmerger/main.py
