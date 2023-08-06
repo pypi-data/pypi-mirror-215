@@ -1,0 +1,15 @@
+LICENSE
+setup.py
+gcloud_secret_configure/__init__.py
+gcloud_secret_configure/config.py
+gcloud_secret_configure/secret.py
+gcloud_secret_configure.egg-info/PKG-INFO
+gcloud_secret_configure.egg-info/SOURCES.txt
+gcloud_secret_configure.egg-info/dependency_links.txt
+gcloud_secret_configure.egg-info/top_level.txt
+tests/__init__.py
+tests/test_config_get.py
+tests/test_config_integration.py
+tests/test_config_parse.py
+tests/test_config_repository.py
+tests/test_secret.py
