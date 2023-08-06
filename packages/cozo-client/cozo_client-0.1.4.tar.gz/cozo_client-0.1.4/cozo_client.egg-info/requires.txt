@@ -1,0 +1,4 @@
+cozo-embedded
+httpx
+pydantic
+openpyxl
