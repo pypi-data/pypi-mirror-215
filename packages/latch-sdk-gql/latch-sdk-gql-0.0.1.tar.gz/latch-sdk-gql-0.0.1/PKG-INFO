@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: latch-sdk-gql
+Version: 0.0.1
+Summary: Internal Latch GQL package
+Author-email: ayush@latch.bio
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8,<3.11
+License-File: LICENSE
