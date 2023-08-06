@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mltype
+Version: 0.3
+Summary: Command line tool for improving typing skills
+Home-page: https://github.com/jankrepl/mltype
+Author: Jan Krepl
+Author-email: kjan.official@gmail.com
+License: MIT
+Provides-Extra: dev
+Provides-Extra: mlflow
+License-File: LICENSE
+
+Command line tool for improving typing skills
