@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: flask-log-sku1
+Version: 1.1.1
+Summary: Flask log output
+Home-page: https://github.com/Skulldorom/flask_log_sku1
+Author: Skulldorom
+Author-email: Skulldorom@gmail.com
+Project-URL: Bug Tracker, https://github.com/Skulldorom/flask_log_sku1
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# flask_log_sku1
+
+Simple print formatter
+
+## Installation
+
+```
+pip install flask-log-sku1
+```
+
+example:
+
+```
+from flask_log_sku1 import log
+
+log("Hello world").success()
+log("INFO").info()
+log("WARNING").warning()
+log("ERROR").error()
+```
+
+options for log() are:
+success()
+info()
+warning()
+error()
+
+## Settings
+
+use the following environment variables to change the following settings:
+
+```
+FLASK_LOG_COLOR="True" # default
+FLASK_LOG_DATE_FORMAT="%d/%b/%Y %H:%M:%S" # default
+```
