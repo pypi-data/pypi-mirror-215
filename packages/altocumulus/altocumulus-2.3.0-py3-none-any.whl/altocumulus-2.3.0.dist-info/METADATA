@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: altocumulus
+Version: 2.3.0
+Summary: Command line utilities for workflows on Terra or Cromwell
+Author: Bo Li, Joshua Gould, Yiming Yang
+Author-email: cumulus-support@googlegroups.com
+License: BSD 3-Clause License
+        
+        Copyright (c) 2019, klarman-cell-observatory
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Repository, https://github.com/lilab-bcb/altocumulus
+Project-URL: Documentation, https://altocumulus.readthedocs.io
+Keywords: Terra,Cromwell
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: firecloud
+Requires-Dist: fsspec
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: six
+Requires-Dist: stratocumulus (>=0.2.0)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+==============
+Altocumulus
+==============
+
+|PyPI| |Python| |License| |Docs|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/altocumulus.svg
+   :target: https://pypi.org/project/altocumulus
+.. |Python| image:: https://img.shields.io/pypi/pyversions/altocumulus
+   :target: https://pypi.org/project/altocumulus
+.. |License| image:: https://img.shields.io/github/license/lilab-bcb/altocumulus
+   :target: https://github.com/lilab-bcb/altocumulus/blob/master/LICENSE
+.. |Docs| image:: https://readthedocs.org/projects/altocumulus/badge/?version=latest
+   :target: https://altocumulus.readthedocs.io
+
+Command line utilities for running workflows on `Terra <https://app.terra.bio>`_ or `Cromwell <https://cromwell.readthedocs.io>`_ including:
+
+- Run a Terra method, and bulk add/delete methods on Terra.
+- Submit WDL workflow jobs to a sever running Cromwell, as well as check jobs' status, abort jobs, and get logs.
+- Replace local file paths with remote Cloud (Google Cloud or Amazon AWS) bucket URIs, and automatically upload referenced files to Cloud buckets.
+- Parse monitoring log files to determine optimal instance type and disk space.
+
+Important tools used by Altocumulus:
+
+- `FireCloud Swagger <https://api.firecloud.org/>`_
+- `Dockstore Swagger <https://dockstore.org/api/static/swagger-ui/index.html>`_
+- `FireCloud Service Selector <https://github.com/broadinstitute/fiss>`_ (FISS). In particular, `fiss/firecloud/api.py <https://github.com/broadinstitute/fiss/blob/master/firecloud/api.py>`_.
