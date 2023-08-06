@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: http-servers
+Version: 0.0.2
+Summary: http-servers is a simple, no-dependencies command-line static HTTP server.
+Description-Content-Type: text/markdown
+
+# http-servers: static HTTP server CLI
+
+http-servers is a simple, no-dependencies command-line static HTTP server.
+
+## Purposes
+
+* Similar to node.js http-server, but without the need to install node
+* This package doesn't bring additional dependencies
+
+## Installation
+
+```python
+pip install http-servers
+```
+
+## Documentation - RTF(riendly)M
+
+```
+$ http-server --help
+usage: http-server [--cors] [-h HOST] [-p PORT] [-d SOURCE_DIR] [--cache] [--help]
+
+Run HTTP server in given folder
+
+optional arguments:
+  --cors                Pass this flag to enable cors
+  -h HOST, --host HOST  Address on which server will listen
+  -p PORT, --port PORT  Port on which server will listen
+  -d SOURCE_DIR, --source-dir SOURCE_DIR
+  --cache               Watch changes in directory and invalidate cache on change.
+  --help                Show this help
+```
