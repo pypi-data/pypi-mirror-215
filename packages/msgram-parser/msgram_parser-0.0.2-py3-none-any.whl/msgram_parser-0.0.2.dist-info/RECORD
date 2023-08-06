@@ -1,0 +1,12 @@
+main.py,sha256=RiiycT9sUHtEOyn1OWlssAetOEap4ZES-vD0IEAgMuY,1978
+plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plugins/dinamic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plugins/domain/generic_class.py,sha256=PMaCCJG7fWjWsPh_sQia-yvCd2TqMDUcWKhC3yk0NLA,1378
+plugins/statics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plugins/statics/sonarqube.py,sha256=sS-HVM4mc5ijHPz-kupzxXdpjACqN9RrCGK47NChvCQ,934
+services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msgram_parser-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+msgram_parser-0.0.2.dist-info/METADATA,sha256=Ws6kkuAAlAlHz_ZnLBnsUwcd1LubEioihduEOEkopZ8,45022
+msgram_parser-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+msgram_parser-0.0.2.dist-info/top_level.txt,sha256=gAg802xkvFa22TGIjPpwfZBAgKlQMKEGqcaGDLYO-_8,22
+msgram_parser-0.0.2.dist-info/RECORD,,
