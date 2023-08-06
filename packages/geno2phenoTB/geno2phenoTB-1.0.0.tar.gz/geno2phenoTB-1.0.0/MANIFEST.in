@@ -1,0 +1,4 @@
+graft src/geno2phenotb
+exclude src/geno2phenotb/static/test_files/ERR551304/ERR551304_X_R1.fastq.gz
+exclude src/geno2phenotb/static/test_files/ERR551304/ERR551304_X_R2.fastq.gz
+global-exclude */__pycache__/*

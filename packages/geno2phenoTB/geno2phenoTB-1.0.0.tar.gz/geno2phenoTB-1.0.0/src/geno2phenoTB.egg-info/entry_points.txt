@@ -1,0 +1,2 @@
+[console_scripts]
+geno2phenotb = geno2phenotb.geno2phenotb:run

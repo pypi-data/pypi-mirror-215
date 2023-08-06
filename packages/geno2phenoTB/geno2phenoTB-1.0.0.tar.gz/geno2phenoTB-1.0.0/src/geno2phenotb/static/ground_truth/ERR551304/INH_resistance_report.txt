@@ -1,0 +1,14 @@
+Resistance report for sample ERR551304
+
+Considered drug: INH
+
+Resistance prediction based on FZB resistance catalog: 1.0 (resistant)
+
+Resistance prediction based on Machine Learning: 1.0 (resistant)
+
+Probability for resistance (estimated by Machine Learning): 1.000E+00
+
+Resistance variants from the FZB catalog found among the called variants:
+Rv1908c:Ser315Thr
+
+

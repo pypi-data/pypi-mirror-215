@@ -1,0 +1,11 @@
+Resistance report for sample ERR553187
+
+Considered drug: RIF
+
+Resistance prediction based on FZB resistance catalog: 0.0 (susceptible)
+
+Resistance prediction based on Machine Learning: 0.0 (susceptible)
+
+Rule learned by the Rule-Based Classifier:
+-:2715344G>A||Rv0635:His116His||Rv0667:761101_761109_del||Rv0667:761102_ins_TTC||Rv0667:761105_761110_del||Rv0667:761109_761111_del||Rv0667:761115_761117_del||Rv0667:Asp435Gly||Rv0667:Asp435Tyr||Rv0667:Asp435Val||Rv0667:Gln432Leu||Rv0667:Gln432Lys||Rv0667:Gln432Pro||Rv0667:His445Arg||Rv0667:His445Asp||Rv0667:His445Gln||Rv0667:His445Leu||Rv0667:His445Pro||Rv0667:His445Tyr||Rv0667:Ile491Thr||Rv0667:Leu452Pro||Rv0667:Met434Ile||Rv0667:Phe424Leu||Rv0667:Ser431Gly||Rv0667:Ser441Leu||Rv0667:Ser441_||Rv0667:Ser450Leu||Rv0667:Ser450Trp||Rv0667:Ser450_||Rv0667:Val170Ala||Rv0667:Val170Phe||Rv0668:Gly332Ser||Rv0668:His748Pro||Rv0668:Val483Gly||Rv1782:Glu367Gly||Rv1854c:Lys78Asn||Rv2043c:Gly132Ala||Rv2043c:Val125Gly||Rv2043c:Val139Ala||Rv2043c:Val7Gly||Rv2783c:Ala4Val||Rv2783c:Gly349Ser||Rv3083:Val7Phe||Rv3792:Gln253Gln||Rv3806c:Pro171Ser||Rv3919c:Arg96Cys||Rv3919c:Glu60_||Rvnr01:1472753A>C||Rvnr02:1474111T>C
+

@@ -1,0 +1,13 @@
+importlib-metadata
+
+[dev]
+setuptools
+sphinx>=5.0
+sphinx-autodoc-annotation
+sphinx-autodoc-typehints>=1.10.3
+sphinx-copybutton
+sphinx_last_updated_by_git
+sphinx_rtd_theme
+sphinxcontrib-spelling==8.0
+mypy==1.2
+pre-commit
