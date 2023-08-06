@@ -1,0 +1,12 @@
+scrapy_manipulate_request/__init__.py,sha256=-L53BY9g8RwDX65Ekc-ClAs6jTAIIVEhkQc3VmJfels,72
+scrapy_manipulate_request/__version__.py,sha256=54LTmNeUdvvdFNgIADXR3H8mHciaUYMFaRiTxtnGYMA,411
+scrapy_manipulate_request/downloadermiddlewares.py,sha256=11hDZtthMpkvYU8FILLJVG67Vm6cv2a8Wp4TESeEnoM,5205
+scrapy_manipulate_request/exception.py,sha256=Aq3323Z72hl1hYeIv9zVCsAapxHvDSK6NOWX4malRIo,39
+scrapy_manipulate_request/settings.py,sha256=5sdnqqu2eO1NP7T1yRk8Vav5c59kEJVwXpTxmPCAEPk,8
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=msshzHw-uh9SaLrB99R71vliNVotiMCck6HcVAf_4vU,384
+scrapy_manipulate_request-0.0.1.dist-info/LICENSE,sha256=0DsMLEWGGelWp0K62mL6iJD2qrfBZ0e8S-tlDunZYiU,1089
+scrapy_manipulate_request-0.0.1.dist-info/METADATA,sha256=_-pIb5dpobji1-qUGM94Etr7KFfKYoIfoZB8MAWji-E,6597
+scrapy_manipulate_request-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scrapy_manipulate_request-0.0.1.dist-info/top_level.txt,sha256=vD7KZfb2S3Er26ZcfpZJKO7zNMOsJjUrsVVyIL3iUEA,32
+scrapy_manipulate_request-0.0.1.dist-info/RECORD,,
