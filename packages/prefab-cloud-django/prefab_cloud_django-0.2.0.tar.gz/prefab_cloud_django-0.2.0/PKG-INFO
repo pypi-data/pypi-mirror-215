@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: prefab-cloud-django
+Version: 0.2.0
+Summary: Custom template tags for using prefab-cloud-python in Django applications
+Author: Michael Berkowitz
+Author-email: michael.berkowitz@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=4.2,<5.0)
+Requires-Dist: prefab-cloud-python (>=0.3.3)
+Description-Content-Type: text/markdown
+
+# prefab-cloud-django
+
+This project provides custom template tags for using [`prefab-cloud-python`][prefabpython] in Django applications
+
+## Usage
+
+1. Add this project to your Django application's dependencies
+2. Add `prefab_cloud_django` to the list of `INSTALLED_APPS` in your app's `settings.py`
+3. Configure your Prefab client in `settings.py`
+
+```python
+options = prefab.Options(
+    api_key="...",
+    ...
+    log_boundary=BASE_DIR,
+)
+
+PREFAB = prefab.Client(options)
+LOGGER = PREFAB.logger
+```
+
+3. In your templates, add `{% load prefab_tags %}`
+
+4. Use these tags
+
+```python
+{% prefab_get "name-of-config" %}
+{% prefab_enabled "name-of-flag" %}
+
+# with default
+
+{% prefab_get "name-of-config" default="default" %}
+
+# with context
+
+{% prefab_get "name-of-config" context=context %}
+```
+
+[prefabpython]: https://pypi.org/project/prefab-cloud-python/
+

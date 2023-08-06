@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "prefab-cloud-django"
+version = "0.2.0"
+description = "Custom template tags for using prefab-cloud-python in Django applications"
+authors = ["Michael Berkowitz <michael.berkowitz@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prefab_cloud_django"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2"
+prefab-cloud-python = ">= 0.3.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
