@@ -1,0 +1,12 @@
+Pillow
+protobuf==3.20.0
+sentencepiece
+tiktoken
+torch
+transformers
+beautifulsoup4
+bs4
+pandas
+requests
+scikit-learn
+accelerate
