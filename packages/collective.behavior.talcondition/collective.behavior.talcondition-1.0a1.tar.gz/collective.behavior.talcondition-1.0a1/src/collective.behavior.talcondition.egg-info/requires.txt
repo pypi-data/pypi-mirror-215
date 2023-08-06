@@ -1,0 +1,7 @@
+plone.api
+plone.app.dexterity
+setuptools
+
+[test]
+plone.app.robotframework
+plone.app.testing
