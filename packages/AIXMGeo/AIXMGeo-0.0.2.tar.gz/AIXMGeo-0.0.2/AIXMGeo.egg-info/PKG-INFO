@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: AIXMGeo
+Version: 0.0.2
+Summary: A Python module which wraps KMLPlus to produce kml files from AIXM 5.1 geographical data.
+Home-page: https://github.com/MHenderson1988/aixm_geo
+Author: Mark Henderson
+Author-email: mark.henderson1988@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+Project status - Current work in progress at Alpha stage.
+
+# AIXMGeo
+
+AIXMGeo is an AIXM wrapper for [KMLPlus](https://github.com/MHenderson1988/kmlplus) which supports the creation of a
+curved and 'floating' objects in KML.
+
+AIXMGeo parses a valid, well-formed, AIXM file and outputs geographic information to a .KML file. The .KML file can be
+opened in Google Earth or other mapping software.
+
+AIXMGeo is currently only tested with AIXM 5.1 however it should also work with AIXM 5.1.1.
+
+## Supported AIXM features
+
+* Airspace
+* NavaidComponent
+* RouteSegment
+* AirportHeliport (ARP)
+* DesignatedPoint
+
+## Use
+
+```
+AixmGeo(aixm_file_path, kml_output_path, kml_file_name).build_kml()
+```
+
