@@ -1,0 +1,8 @@
+genopyc/__init__.py,sha256=njXl6cbbGkaY8POLyttPL5C6oBSA9LENNwW1zhzKHvE,978
+genopyc/genopyc.py,sha256=xl-V8kwxQhVruqhoc25gpbuG5NFieNT2xcUBdC3BJCA,42535
+genopyc/data/hippie_interactome.sif,sha256=iqdnCWTnTXIs43-jMLNijQ2PJWd7CRSVMHnh8miE1vs,1302100
+genopyc-1.1.4.dist-info/LICENSE.txt,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+genopyc-1.1.4.dist-info/METADATA,sha256=urmBb1062jrGqW7jCy5VEUzivRGqQ1xWwQzhr23GfUs,596
+genopyc-1.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+genopyc-1.1.4.dist-info/top_level.txt,sha256=Wo4uco8QIcmZcoQJmxDYvrDatX_GrmASBAr5wSeBevA,8
+genopyc-1.1.4.dist-info/RECORD,,
