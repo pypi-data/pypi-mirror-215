@@ -1,0 +1,3 @@
+[console_scripts]
+finditcli=finditcli.cli:cli
+
