@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: primarymath
+Version: 0.1.2
+Summary: A library for elementary math stuff based on the book Everything You Need to Ace Math.
+Project-URL: Homepage, https://github.com/ajunior/primarymath
+Project-URL: GitHub Repository, https://github.com/ajunior/primarymath
+Project-URL: Bug Tracker, https://github.com/ajunior/primarymath/issues
+Author-email: Adjamilton Junior <jr@ieee.org>
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# primary math
+It's a Python's [library](https://pypi.org/project/primary-math/) for elementary math stuff, based on the book 
+[Everything You Need to Ace Math](https://www.amazon.com/Everything-You-Need-Math-Notebook/dp/0761160965).
+
+## Installation
+
+```shell
+$ python3 -m pip install primary-math
+```
+
+### Requirements
+
+The only requirement is Python 3.11.
+
+> It should work fine with Python 3.10, but I didn't test it. 
+
+## Usage
+
+```python
+import primarymath as pmath
+
+number = pmath.Number(4)
+
+print(number.value())         # 4
+print(number.is_even())       # True
+print(number.is_positive())   # True
+print(number.previous())      # 3
+print(number.next())          # 5
+```
+
+## License
+This repository is available under the [MIT License](LICENSE).
