@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msm-has-base"
+version = "0.1.16"
+description = "Hardware Access Services Base Foundation"
+authors = [
+	{name = "袁首京", email = "yuanshoujing@gmail.com"}
+]
+readme = "README.md"
+
+requires-python = ">=3.7"
+dependencies = [ "loguru", "pyserial", "requests" ]
+
+[project.optional-dependencies]
+dev = ["pytest", "build", "twine", "black"]

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: msm-has-base
+Version: 0.1.16
+Summary: Hardware Access Services Base Foundation
+Author-email: 袁首京 <yuanshoujing@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev

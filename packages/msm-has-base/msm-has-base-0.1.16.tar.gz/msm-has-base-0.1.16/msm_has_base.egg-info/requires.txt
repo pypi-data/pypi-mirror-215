@@ -1,0 +1,9 @@
+loguru
+pyserial
+requests
+
+[dev]
+pytest
+build
+twine
+black
