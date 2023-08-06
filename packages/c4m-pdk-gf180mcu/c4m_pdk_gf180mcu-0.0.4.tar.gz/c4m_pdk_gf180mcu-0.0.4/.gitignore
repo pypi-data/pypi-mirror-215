@@ -1,0 +1,15 @@
+/MANIFEST.in
+/c4m/pdk/gf180mcu/models/*spice
+/open_pdk
+/drc
+/lvs
+/tmp
+
+/tarballs
+
+__pycache__
+/build
+/dist
+c4m_pdk_gf180mcu.egg-info
+
+.doit.db*

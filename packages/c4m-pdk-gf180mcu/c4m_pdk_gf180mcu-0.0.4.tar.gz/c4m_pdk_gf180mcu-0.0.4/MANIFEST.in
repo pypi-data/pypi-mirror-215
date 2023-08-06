@@ -1,0 +1,3 @@
+include c4m/pdk/gf180mcu/models/design.ngspice
+include c4m/pdk/gf180mcu/models/sm141064.ngspice
+include c4m/pdk/gf180mcu/models/all.spice
