@@ -1,0 +1,4 @@
+include Cargo.toml
+include LICENSE
+include README.md
+recursive-include src *

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: llm-rs-cuda
+Version: 0.0.1
+Summary: Unofficial python bindings for llm-rs.
+Author: Lukas Kreussel
+Project-URL: repository, https://github.com/LLukas22/llm-rs-python
+Project-URL: documentation, https://llukas22.github.io/llm-rs-python/
+Keywords: LLM,Transformers
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Provides-Extra: convert
+Provides-Extra: langchain
+License-File: LICENSE
