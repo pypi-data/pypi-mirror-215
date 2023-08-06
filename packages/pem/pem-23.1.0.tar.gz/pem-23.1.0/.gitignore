@@ -1,0 +1,17 @@
+*.pyc
+.DS_Store
+.mypy_cache/
+.cache
+.coverage
+.coverage.*
+.direnv
+.envrc
+.pytest_cache/
+.tox
+.vscode
+_build
+build
+dist
+tests/certs
+tmp
+Justfile
