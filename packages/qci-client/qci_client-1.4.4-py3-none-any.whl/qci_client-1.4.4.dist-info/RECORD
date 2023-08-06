@@ -1,0 +1,10 @@
+qci_client/__init__.py,sha256=Nk5w2s9WswRbhkXWkNeYjKCl_W2y0csYdIicGlzigjo,136
+qci_client/base.py,sha256=hXZa-TPd9R3hotNHEBx9f33CCOAbCS18wPIB2F_n6vA,5920
+qci_client/data_converter.py,sha256=7xVAfFkatzJRFV2PLHNYP78bx07P31r3g8iB4DUiNPo,16078
+qci_client/qci_client.py,sha256=-kDfaefQsvvQkRdzxPtO8cDIu1mqlz82i_ey-aZ-hqI,32310
+qci_client/utils.py,sha256=WKTPn5hHJyAbzo5bxuKQD0u--cFHB1mB6AY3DpMdEJQ,3543
+qci_client-1.4.4.dist-info/LICENSE,sha256=8eh0oqsNNVR1Jk-13gkqRRSo2axtUU5kp2KzH4f9u3U,11354
+qci_client-1.4.4.dist-info/METADATA,sha256=lEP8hnqgKAUv9BW9hotQdnXwsoWT8gun0slcRqfFNVI,1545
+qci_client-1.4.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qci_client-1.4.4.dist-info/top_level.txt,sha256=fRPJMhrhOjEvsdyrf9E3QGbPGhqzcQpTqPc7_ra8cJk,11
+qci_client-1.4.4.dist-info/RECORD,,
