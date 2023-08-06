@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+cetto/__init__.py
+cetto/__main__.py
+cetto/cetto.py
+cetto.egg-info/PKG-INFO
+cetto.egg-info/SOURCES.txt
+cetto.egg-info/dependency_links.txt
+cetto.egg-info/entry_points.txt
+cetto.egg-info/requires.txt
+cetto.egg-info/top_level.txt
