@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Resource_Locator_Program.egg-info/PKG-INFO
+Resource_Locator_Program.egg-info/SOURCES.txt
+Resource_Locator_Program.egg-info/dependency_links.txt
+Resource_Locator_Program.egg-info/entry_points.txt
+Resource_Locator_Program.egg-info/requires.txt
+Resource_Locator_Program.egg-info/top_level.txt
+resource_locator_program/app.py
+resource_locator_program/path_teacher.py
+resource_locator_program/resource_locator.py
+resource_locator_program/setup_screen.py
+resource_locator_program/shared_widgets.py
