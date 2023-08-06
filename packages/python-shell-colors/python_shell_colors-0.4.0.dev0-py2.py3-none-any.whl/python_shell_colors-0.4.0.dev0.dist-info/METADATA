@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-shell-colors
+Version: 0.4.0.dev0
+Summary: Python Shell Colors
+Home-page: https://github.com/volodymyrss/python-shell-colors
+Author: Volodymyr Savchenko
+Author-email: contact@volodymyrsavchenko.com
+License: MIT license
+Keywords: python_shell_colors
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+License-File: COPYING
+
