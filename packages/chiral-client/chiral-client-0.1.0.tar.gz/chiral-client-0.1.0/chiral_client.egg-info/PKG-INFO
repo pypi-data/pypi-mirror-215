@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chiral-client
+Version: 0.1.0
+Summary: Chiral gRPC Client in Python
+Home-page: https://github.com/chiral-data
+Author: Qin Wan
+Author-email: rogerwq@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Chiral Python Client
+
+## Development Setup
+- install grpc from conda
+    - `conda install -c conda-forge grpcio maturin`
+    - `conda install protobuf`
+
+## Requirement
+- python: >= 3.11
