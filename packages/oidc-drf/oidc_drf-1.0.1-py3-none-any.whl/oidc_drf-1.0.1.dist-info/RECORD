@@ -1,0 +1,12 @@
+oidc_drf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oidc_drf/admin.py,sha256=izXQpgstNxKzfgfu4-B-lguOve2EC4bnrxA3Cdi8QLg,578
+oidc_drf/backends.py,sha256=RXrHThnwDEyOvROHZb26Hs0PORkaI4CwZhNc1Ez7xLE,15520
+oidc_drf/drf.py,sha256=58s804g7aHGzZGpKkyOQ7vN_TNMFhbYSRiVh-Q76D9Y,4589
+oidc_drf/models.py,sha256=f3hdrnnlR-cARjlLGcEWNyYcte1A8Pmb99tWr4OX3yo,278
+oidc_drf/utils.py,sha256=Gka5uH53xzpRibnBwlAHkhXKn_jh9Ae2qCqfQmm4WqU,2081
+oidc_drf/views.py,sha256=H8O4a46_qJ7dP_qIOUDmZJ-3ZTSu2_Su2frZ6CZiV8w,8207
+oidc_drf/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oidc_drf-1.0.1.dist-info/METADATA,sha256=Wpx-edLeYC22hJp58ZTnHHRR_imDhdO42hVc2F3QyIw,825
+oidc_drf-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oidc_drf-1.0.1.dist-info/top_level.txt,sha256=JPt4X27bH2ilPG4fR3q1IIa4zyadfLNWnrrK1LE66xI,9
+oidc_drf-1.0.1.dist-info/RECORD,,
