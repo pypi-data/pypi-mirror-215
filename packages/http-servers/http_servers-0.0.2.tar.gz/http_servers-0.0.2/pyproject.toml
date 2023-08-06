@@ -1,0 +1,9 @@
+[project]
+name = "http_servers"
+version = "0.0.2"
+readme = "README.md"
+description = "http-servers is a simple, no-dependencies command-line static HTTP server."
+dependencies = []
+
+[project.scripts]
+http-server = "http_server.commands:run_server"
