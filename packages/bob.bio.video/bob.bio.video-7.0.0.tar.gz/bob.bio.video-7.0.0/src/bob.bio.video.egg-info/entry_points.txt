@@ -1,0 +1,7 @@
+[bob.bio.config]
+video-wrapper = bob.bio.video.config.video_wrapper
+youtube = bob.bio.video.config.database.youtube
+
+[bob.bio.database]
+dummy-video = tests.dummy.database:database
+youtube = bob.bio.video.config.database.youtube:database
