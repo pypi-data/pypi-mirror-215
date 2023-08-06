@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flowlang
+Version: 0.0.1
+Summary: An easy way to create and automate natural language processes and tasks.
+Project-URL: Homepage, https://github.com/ESheremetov/PersonAI
+Project-URL: Bug Tracker, https://github.com/ESheremetov/PersonAI/issues
+Author-email: Egor Sheremetov <egorsheremetov3.0@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# PersonAI
+
+An easy way to create and automate natural language processes and tasks.
