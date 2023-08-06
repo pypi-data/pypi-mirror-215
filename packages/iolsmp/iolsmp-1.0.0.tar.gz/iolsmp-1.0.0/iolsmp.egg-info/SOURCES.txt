@@ -1,0 +1,6 @@
+setup.py
+iolsmp.egg-info/PKG-INFO
+iolsmp.egg-info/SOURCES.txt
+iolsmp.egg-info/dependency_links.txt
+iolsmp.egg-info/requires.txt
+iolsmp.egg-info/top_level.txt
