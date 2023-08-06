@@ -1,0 +1,7 @@
+[fips_sect]
+activate = 1
+conditional-errors = 1
+security-checks = 1
+ems_check = 0
+drgb_no_trunc_dgst = 0
+module-mac = 43:90:55:2A:DD:FF:1A:CC:65:D2:07:3D:D5:6B:8B:F9:13:EF:E5:EF:D6:53:3C:53:C2:D1:B8:3F:C4:24:2A:94
