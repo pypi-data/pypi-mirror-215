@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "pybind11>=2.10.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codecontest" # pypi_name
+version = "1.1.0"
+readme = "README.md"
+authors = [{ name = "dy", email = "jealousing@alumni.sjtu.edu.cn" }]
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy",
+    "pybind11",
+    "pandas",
+    "bs4",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["pytest", "pip-tools", "pybind11", "build", "twine"]
+
+[project.scripts]
+pyinstall = "codecontest.pyinstall:main"
+cfparse = "codecontest.cfparser:main"
+cppinline = "codecontest.cppinline:main"
+cpprun = "codecontest.cpprun:main"
+cppcmp = "codecontest.cppcompare:cpp_compare"
+cppast = "codecontest.cppast:main"
+ccclean = "codecontest.ccclean:ccclean"

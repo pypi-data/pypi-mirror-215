@@ -1,0 +1,11 @@
+numpy
+pybind11
+pandas
+bs4
+
+[dev]
+pytest
+pip-tools
+pybind11
+build
+twine
