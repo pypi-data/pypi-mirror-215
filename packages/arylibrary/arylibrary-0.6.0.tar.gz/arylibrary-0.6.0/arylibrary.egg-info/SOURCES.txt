@@ -1,0 +1,9 @@
+README.md
+setup.py
+arylibrary/SamMultiply.py
+arylibrary/__init__.py
+arylibrary.egg-info/PKG-INFO
+arylibrary.egg-info/SOURCES.txt
+arylibrary.egg-info/dependency_links.txt
+arylibrary.egg-info/requires.txt
+arylibrary.egg-info/top_level.txt

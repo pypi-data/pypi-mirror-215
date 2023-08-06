@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: arylibrary
+Version: 0.6.0
+Summary: Sample library for demo
+Home-page: https://arylibrary.readthedocs.io/
+Author: Ary Pratap Singh
+Author-email: ary@exampleemail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Sample Library (arylibrary)
+A small demo library 
+
+### Installation
+```
+pip install arylibrary
+```
+
+### Get started
+How to multiply one number by another with this lib:
+
+```Python
+from arylibrary import Multiplication
+
+# Instantiate a Multiplication object
+multiplication = Multiplication(2)
+
+# Call the multiply method
+result = multiplication.multiply(5)
+
+
+# Call the addition method
+adder = Addition(10)
+
+result = adder.add(10)
+
+```
+
