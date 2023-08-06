@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+django_google_fonts/__init__.py
+django_google_fonts/apps.py
+django_google_fonts/tests.py
+django_google_fonts.egg-info/PKG-INFO
+django_google_fonts.egg-info/SOURCES.txt
+django_google_fonts.egg-info/dependency_links.txt
+django_google_fonts.egg-info/requires.txt
+django_google_fonts.egg-info/top_level.txt
+django_google_fonts/templatetags/__init__.py
+django_google_fonts/templatetags/google_fonts.py
