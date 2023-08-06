@@ -1,0 +1,10 @@
+README.md
+setup.py
+apache_airflow_providers_prophecy.egg-info/PKG-INFO
+apache_airflow_providers_prophecy.egg-info/SOURCES.txt
+apache_airflow_providers_prophecy.egg-info/dependency_links.txt
+apache_airflow_providers_prophecy.egg-info/entry_points.txt
+apache_airflow_providers_prophecy.egg-info/requires.txt
+apache_airflow_providers_prophecy.egg-info/top_level.txt
+prophecy_provider/__init__.py
+prophecy_provider/emailer.py

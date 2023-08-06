@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: apache-airflow-providers-prophecy
+Version: 1.0.1
+Summary: Your provider package for Apache Airflow
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
