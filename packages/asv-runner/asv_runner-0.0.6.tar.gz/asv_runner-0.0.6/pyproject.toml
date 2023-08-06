@@ -1,0 +1,82 @@
+[tool.pdm.dev-dependencies]
+lint = [
+    "ruff",
+    "black",
+]
+docs = [
+    "furo",
+    "sphinx",
+    "sphinx-contributors",
+    "sphinx-copybutton",
+    "sphinx-design",
+    "sphinx-autobuild",
+    "sphinxcontrib-spelling",
+    "myst-parser>=2",
+    "sphinx-autodoc2>=0.4.2",
+]
+
+[tool.pdm.scripts.lint]
+composite = [
+    "ruff --fix asv_runner/",
+    "black asv_runner/",
+]
+
+[tool.pdm.scripts.mkdoc]
+composite = [
+    "sphinx-build -b html docs/source docs/build/html",
+]
+
+[tool.ruff]
+line-length = 88
+extend-ignore = [
+    "E741",
+]
+select = [
+    "E",
+    "F",
+    "UP",
+    "I001",
+]
+
+[tool.black]
+line-length = 88
+target-version = [
+    "py37",
+]
+
+[tool.setuptools_scm]
+write_to = "asv_runner/_version.py"
+
+[project]
+name = "asv_runner"
+description = "Core Python benchmark code for ASV"
+authors = [
+    { name = "Rohit Goswami", email = "rog32@hi.is" },
+]
+maintainers = [
+    { name = "Rohit Goswami", email = "rog32@hi.is" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: System :: Benchmark",
+]
+version = "0.0.6"
+dependencies = []
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://haozeke.github.io/asv_runner/"
+repository = "https://github.com/HaoZeke/asv_runner"
+documentation = "https://haozeke.github.io/asv_runner/"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
