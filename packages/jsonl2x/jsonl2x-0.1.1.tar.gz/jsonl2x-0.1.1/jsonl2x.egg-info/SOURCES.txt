@@ -1,0 +1,10 @@
+README.md
+setup.py
+jsonl2x/__init__.py
+jsonl2x/main.py
+jsonl2x.egg-info/PKG-INFO
+jsonl2x.egg-info/SOURCES.txt
+jsonl2x.egg-info/dependency_links.txt
+jsonl2x.egg-info/entry_points.txt
+jsonl2x.egg-info/requires.txt
+jsonl2x.egg-info/top_level.txt
