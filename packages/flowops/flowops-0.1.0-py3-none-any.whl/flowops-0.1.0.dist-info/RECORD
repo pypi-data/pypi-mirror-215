@@ -1,0 +1,15 @@
+flowops/__init__.py,sha256=fuZ3LxT3IJkc_2OEeYcZTzmmTc_2Cvf_aDxnO8CGfbw,152
+flowops/__main__.py,sha256=KvrdGIEGlXpUV1yE2_fhXOpi6ue5rb0oI1S1HE3hClA,61
+flowops/flow.py,sha256=CBaxmvGsvhkwuEnjM5C90IDMEj5_zEuwx771McX8Zj8,7577
+flowops/warp.py,sha256=HJ-NSkmtmZxGwIJp_VePacWvkrqOqoG3mKaZ3xEKHpI,1833
+flowops/io/__init__.py,sha256=fljT0HLysBe5SKlHeLNBwAxu7DDNeQIbsMoTxeqhT1w,92
+flowops/io/format.py,sha256=SVuPnadWImVdiR8nHZaC5m7C3_PN9XctEUshJ5YXrsw,456
+flowops/io/read_write.py,sha256=YHoHPSO62cKJy3AlFHi0YVG7aUrO1dVFXDIgURA_cvA,7919
+flowops/io/typings.py,sha256=K5OYMlvAS9_zbnOVC12-xiLBUe3VRgnG6pCWic_28Fs,112
+flowops/io/utils.py,sha256=VizaYOvs5C7e1d4eiNvB9mJSoDzB36rVTlVb0QAxi5U,357
+flowops-0.1.0.dist-info/LICENSE,sha256=8qFcbk64vRt4HM55zCYzVGbLynm2TEN1V3Vzb3IhOqI,1094
+flowops-0.1.0.dist-info/METADATA,sha256=g4WSMXGjZ6Oh7BLE1Mc-2JswekYrVOg6wjztuPfKAxU,1792
+flowops-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+flowops-0.1.0.dist-info/entry_points.txt,sha256=Vtcx9_qT84CX6LM06VCw0_tgKlEjtEdj4BE1dbsDeH0,45
+flowops-0.1.0.dist-info/top_level.txt,sha256=ceBj_UAB66zqDRdXwGhZT4fFu3MMCML2h4I2lMwlPIE,8
+flowops-0.1.0.dist-info/RECORD,,
