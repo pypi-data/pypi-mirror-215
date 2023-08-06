@@ -1,0 +1,16 @@
+0.1.2
+    docs improvements
+    raise a new `FallbackError_FilepathRequired` exception when missing a
+        required fallback filepath
+
+0.1.1
+    minor formatting
+    Conditional Imports
+        imports are tried "one at a time"; not "all or nothing".
+        functions that use imports should test for all necessary options
+    new extended tests for lacking specific libraries
+    tests now monitor logs to ensure fallback behavior is triggered correctly
+
+0.1.0
+    initial release
+    forked from peter_sslers
