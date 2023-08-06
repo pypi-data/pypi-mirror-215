@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+STitch3D/__init__.py
+STitch3D/align_tools.py
+STitch3D/model.py
+STitch3D/networks.py
+STitch3D/utils.py
+stitch3d.egg-info/PKG-INFO
+stitch3d.egg-info/SOURCES.txt
+stitch3d.egg-info/dependency_links.txt
+stitch3d.egg-info/not-zip-safe
+stitch3d.egg-info/requires.txt
+stitch3d.egg-info/top_level.txt
