@@ -1,0 +1,15 @@
+plone.releaser-2.0.1-py3.11-nspkg.pth,sha256=A-p3CbMuHePaPWt53bhXUnHzJhSeZf4O2eZeA-vKGms,534
+plone/releaser/__init__.py,sha256=QfYxOyRV_mEaEHcmlMPPNZciN_32K4KB0zkmkelpO80,940
+plone/releaser/buildout.py,sha256=SU7tyKjqrY9pb_PBCDUN9ByPvkeqnaQfKZKlu_ESzfg,7359
+plone/releaser/changelog.py,sha256=e7d1wGbT4qjuZZxWmSVwR4gvl-ZYA7gfWntNJfhuPYQ,8635
+plone/releaser/db.py,sha256=7cglAhve3G18QrIfO_qi5GdRjnHZhsneZZach4MamEQ,772
+plone/releaser/manage.py,sha256=kG7X9Q1kRw61UcK6yNWp1NkOJhUIi6DvlgTUQcCSr0M,4618
+plone/releaser/package.py,sha256=UPGIkuwxuqy2WUg0Z_UqW4zizcj4EEkbpjzr3blNnqI,10900
+plone/releaser/pypi.py,sha256=ldP2UlXyQzMq2uldrP3EqtMt9ZVr4KmCqJkE1qEAXk8,701
+plone/releaser/release.py,sha256=jvA3vvQhCLImAtCieC4rCFvflu1paU2LGi7l0DS787o,9378
+plone.releaser-2.0.1.dist-info/METADATA,sha256=VtGqe6WVQPnksEcm1GWiG7DnAc3QVLQe59zAACaT5gs,8520
+plone.releaser-2.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+plone.releaser-2.0.1.dist-info/entry_points.txt,sha256=pdX8wti8eG1Y-RwXxMefVS05yLJBWCcN1sQxXCmKeSU,706
+plone.releaser-2.0.1.dist-info/namespace_packages.txt,sha256=56bqrkG-vurYD0l15D71FPiDL7L3QqkfRWkYkdyS7WM,6
+plone.releaser-2.0.1.dist-info/top_level.txt,sha256=56bqrkG-vurYD0l15D71FPiDL7L3QqkfRWkYkdyS7WM,6
+plone.releaser-2.0.1.dist-info/RECORD,,
