@@ -1,0 +1,17 @@
+tomli-w
+tomli
+ruamel.yaml
+fastjsonschema
+cerberus
+
+[test]
+pylint
+flake8
+black
+ruff
+mypy
+isort
+yamllint
+pytest-asyncio
+setuptools-wrapper
+types-setuptools
