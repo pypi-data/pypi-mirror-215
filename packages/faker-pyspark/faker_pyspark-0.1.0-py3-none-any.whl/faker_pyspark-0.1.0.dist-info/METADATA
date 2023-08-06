@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: faker-pyspark
+Version: 0.1.0
+Summary: faker_pyspark is a PySpark provider for the Faker python package
+License: MIT
+Author: Sury Soni
+Author-email: github@suryasoni.info
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Faker (>=18.11.1,<19.0.0)
+Requires-Dist: pyspark (>=3.4.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+
+# PySpark provider for Faker
+
+`faker_pyspark` is a provider for the `Faker` Python package.
+
+
+## Description
+
+`faker_pyspark` provides PySpark based fake data for testing purposes.  The definition of "fake" in this context really means "random," as the data may look real.  However, I make no claims about accuracy, so do not use this as real data!
+
+
+## Installation
+
+Install with pip:
+
+``` bash
+pip install faker_pyspark
+
+```
+
+Add as a provider to your Faker instance:
+
+``` python
+
+from faker import Faker
+from faker_pyspark import PySparkProvider
+fake.add_provider(PySparkProvider)
+
+```
+
+If you already use faker, you probably know the conventional use is:
+
+```python
+from faker import Faker
+fake = Faker()
+```
+
+
+### PySpark DataFrame and Schema (StructType)
+
+``` python
+>>> df = fake.pyspark_dataframe()
+
+>>> schema = fake.pyspark_schema()
+
+```
+
