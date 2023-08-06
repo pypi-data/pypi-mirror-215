@@ -1,0 +1,12 @@
+geniusdotpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geniusdotpy/album.py,sha256=Tb5SCNkalf3vWS6TGWihRDNhB25B-rbd9fVZMl0xbJk,740
+geniusdotpy/artist.py,sha256=xZEC-6O2msVik5XlcWaDf6x6X6XgaoGVwWgL1z7dVqs,876
+geniusdotpy/genius_builder.py,sha256=-528kaUZuTgH0v9qkbq9WbVjaTiVxu42wUCs7du0ew4,2561
+geniusdotpy/track.py,sha256=QgAKvDMjh3ps9JFtBwXlZkbO5HKKO64uair_xj-wPpo,2104
+geniusdotpy/typing.py,sha256=HkvA28QIKMPiGIOySW3ipWUgCeb5kd_ERB2W40Ww2KI,61
+geniusdotpy/utils.py,sha256=l09sdvEZhbXTtzxpkoClqiGibeOspqSDM6skhbg_ALE,638
+geniusdotpy-1.0.0.dist-info/LICENSE,sha256=o1wyf8smbuBwrbYD6Ye6cjstet-6fkTYZrKW8qEUjSo,1061
+geniusdotpy-1.0.0.dist-info/METADATA,sha256=odT8-9bI30yx1h9GmzjEE0B0E9B5Yj__Bhk-dYhZ_ig,1979
+geniusdotpy-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+geniusdotpy-1.0.0.dist-info/top_level.txt,sha256=veyklUg6mxbtNC-jP71Kmnf1nCZU9DgzJcvextkNnHg,12
+geniusdotpy-1.0.0.dist-info/RECORD,,
