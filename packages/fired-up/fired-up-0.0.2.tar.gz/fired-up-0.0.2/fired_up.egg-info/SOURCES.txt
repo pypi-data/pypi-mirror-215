@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+setup.py
+.github/README.md
+fired_up/__init__.py
+fired_up.egg-info/PKG-INFO
+fired_up.egg-info/SOURCES.txt
+fired_up.egg-info/dependency_links.txt
+fired_up.egg-info/requires.txt
+fired_up.egg-info/top_level.txt
