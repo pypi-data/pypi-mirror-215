@@ -1,0 +1,16 @@
+splam_clean.cpython-38-darwin.so,sha256=iqf8mJ9O77cHgt0SDWQxt0cPDV4P1EpUZNFwQQwn3gM,1111536
+splam_extract.cpython-38-darwin.so,sha256=IsDqKDh6Gehadm8Fi9XMuiQn9I6V-r6d3mpL0rKZ2Lo,955232
+splam/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+splam/chr_size.py,sha256=_w0jxznifLctzSl8WQcG1TNIlIwxgfhUGbNPpqY4ACA,21476
+splam/config.py,sha256=0QZm3NoWQU6o_9fa8YBxRWCojYVi8z2FRf7bZ_WFUQQ,100
+splam/helper.py,sha256=gYXMoIFNwJcFzrU63uae4xczndbfPx28OIH7cgMpiQI,951
+splam/parse.py,sha256=Ophw9VSWypwVphuMCkg90zWIBmqMmELz1zfs_AaPzA8,7428
+splam/prediction.py,sha256=eRuDo5gqucuHUPynRqhzoYvsVHwrdtooYFGdKzUViGQ,8394
+splam/splam.py,sha256=ejnQDWkkbLikWz9826a9OlB8PwM_5RsSTDSVGSenjCU,6829
+splam/test.py,sha256=knzKmfgc7_j-2F6QsaGph3tQbj2f8mUGIAxcUzFzydo,171
+splam-0.2.0.dist-info/LICENSE,sha256=K51CzdO754dWluVo5wREaLwOMAzwR_Z33KTe3dgeHoo,1062
+splam-0.2.0.dist-info/METADATA,sha256=EWXxQtWCfAkR7JkIBt6IjX70eChCwEaoLfIufUoqK-A,366
+splam-0.2.0.dist-info/WHEEL,sha256=x3LbgofFHbN59sNo3bQZjIBT_uYo77l5Un8Ug259JOE,108
+splam-0.2.0.dist-info/entry_points.txt,sha256=jZUEPiwKDfExKmT96VjP7juxxDS3WdiPASfUX8bWWEY,43
+splam-0.2.0.dist-info/top_level.txt,sha256=A1a7MkRneslXFEEzpJpnANpyqb1hHNeViIZmr7jCwTc,32
+splam-0.2.0.dist-info/RECORD,,
