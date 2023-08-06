@@ -1,0 +1,16 @@
+gpt_term/__init__.py,sha256=ESLE9rArWua84yHFD-I5Nm5RQC3HXmbs_TfVz6M0wRk,104
+gpt_term/__main__.py,sha256=Vdhw8YA1K3wPMlbJQYL5WqvRzAKVeZ16mZQFO9VRmCo,62
+gpt_term/_version.py,sha256=CilGHycSRzmSEnCMQvTRJ5J_LWxMs---UqkVbOmQ2rA,160
+gpt_term/config.ini,sha256=gOLtOhwemk9IUGIeU-yEodSLfQKUhfRlr8LHJ2syW_U,1091
+gpt_term/locale.py,sha256=DGfdmRSiNr7rgbzMkMohTN6JpiyOkg5pWysEsMp6ZVw,509
+gpt_term/main.py,sha256=ggH3fVnGO91BEEOYF2i4k9kzXquSDnSZRlbrxTjkvgs,49394
+gpt_term/locale/gpt_term.de.yml,sha256=rJ_7GTrwtUz1gkkGrQ95EGAdBTkCRez8BiQpehYfAVs,10920
+gpt_term/locale/gpt_term.en.yml,sha256=ZlLttA0A8MOmDLbvwAu6KpzDlIQPyqOzq5P2_WqAm00,9571
+gpt_term/locale/gpt_term.jp.yml,sha256=4jvOcSSje265u22KfxpZx9gNz4q71jNjbl6rb0O52Rk,12770
+gpt_term/locale/gpt_term.zh_CN.yml,sha256=P0WUu5Wgd7brIxt8-_c_nOY16gfVUvxiz06t2wbXpOM,9415
+gpt_term-1.2.0.dist-info/LICENSE,sha256=22_iujo2kTXmaa8IXYUPvCBMrABHd_DdY7G1O4xQ6LQ,1066
+gpt_term-1.2.0.dist-info/METADATA,sha256=Isu9oCuZw0zgf7_5cNnubpMNuX6i0qsrYsPo5tS4Svc,17158
+gpt_term-1.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gpt_term-1.2.0.dist-info/entry_points.txt,sha256=lK-pcsVHDEtBOGsz3Ef3XgOG_LZXDcmagGeMlfyXRbA,48
+gpt_term-1.2.0.dist-info/top_level.txt,sha256=jlvHAP04ApZAY73XQFEsSnNwlFFkElqr-f-s2YlV9HU,9
+gpt_term-1.2.0.dist-info/RECORD,,
