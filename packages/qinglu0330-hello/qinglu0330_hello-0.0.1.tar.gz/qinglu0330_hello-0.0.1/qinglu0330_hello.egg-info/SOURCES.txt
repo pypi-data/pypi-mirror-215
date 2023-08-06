@@ -1,0 +1,6 @@
+hello.py
+setup.py
+qinglu0330_hello.egg-info/PKG-INFO
+qinglu0330_hello.egg-info/SOURCES.txt
+qinglu0330_hello.egg-info/dependency_links.txt
+qinglu0330_hello.egg-info/top_level.txt
