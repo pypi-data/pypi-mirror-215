@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: theboringlibrary
+Version: 0.2.1
+Summary: It does nothing!
+Author: Stefano Frassetto
+Author-email: frassetto.stefano@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+Requires-Dist: mkdocs (>=1.4.3,<2.0.0) ; extra == "dev"
+Requires-Dist: pytest (>=7.3.2,<8.0.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# theboringlibrary
+It does nothing.
+
