@@ -1,0 +1,9 @@
+README.md
+setup.py
+PLZREMLA23Team09LibProject.egg-info/PKG-INFO
+PLZREMLA23Team09LibProject.egg-info/SOURCES.txt
+PLZREMLA23Team09LibProject.egg-info/dependency_links.txt
+PLZREMLA23Team09LibProject.egg-info/requires.txt
+PLZREMLA23Team09LibProject.egg-info/top_level.txt
+src/VersionUtil.py
+src/__init__.py
