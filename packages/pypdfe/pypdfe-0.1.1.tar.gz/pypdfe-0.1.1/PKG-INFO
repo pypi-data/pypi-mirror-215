@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pypdfe
+Version: 0.1.1
+Summary: A python package for Dr. Jennifer Farmer's PDF-Estimator
+Home-page: https://github.com/your_username/your_package_name
+Author: Your Name
+Author-email: your_email@example.com
+Keywords: your,keywords,here
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+
+A longer description
