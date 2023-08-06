@@ -1,0 +1,11 @@
+numpy>=1.19.0
+scipy<=1.10.0
+pyscf>=2.0.0
+h5py>=3.0.0
+
+[dev]
+black>=22.6.0
+isort>=5.10.1
+coverage[toml]
+pytest
+pytest-cov
