@@ -1,0 +1,9 @@
+khronos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+khronos/constants.py,sha256=dZW9LAUajLgKg68gKs5sRsZ_imDgC0YzWjwZ0U2Wb5w,13
+khronos/custom_test_runner.py,sha256=fdVop_DdApRyo2FRjLvFTqVQffIBf031pMoh5VzS9hY,3650
+khronos/service.py,sha256=-6iSjFCG3LlmfwoYUYh-MD1bQxdVaDPOE-rnXn51VX4,3805
+django_khronos-0.1.1.dist-info/LICENSE,sha256=r-DszQTd1_z2wPQ35vRIeYwWD0JeFzCJ4Ao9MLnt4zM,1071
+django_khronos-0.1.1.dist-info/METADATA,sha256=g4Q-rfTDPUgfUACVV8EjJcyD1JzPs0-oTX10iVsgs8U,2430
+django_khronos-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+django_khronos-0.1.1.dist-info/top_level.txt,sha256=vgR6GKrqTpvo1Bc1jDHzwSYonV9q0OuGFZn4zu3q5kU,8
+django_khronos-0.1.1.dist-info/RECORD,,
