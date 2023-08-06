@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/CHECKER-LIBRARY/__init__.py
+src/CHECKER-LIBRARY/checkerUS.py
+src/CHECKER_LIBRARY.egg-info/PKG-INFO
+src/CHECKER_LIBRARY.egg-info/SOURCES.txt
+src/CHECKER_LIBRARY.egg-info/dependency_links.txt
+src/CHECKER_LIBRARY.egg-info/top_level.txt
