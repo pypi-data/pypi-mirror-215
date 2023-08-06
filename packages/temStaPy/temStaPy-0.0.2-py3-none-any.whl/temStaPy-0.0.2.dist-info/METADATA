@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: temStaPy
+Version: 0.0.2
+Summary: python version of the temStaR library in R
+Home-page: https://github.com/jay-gne/temStaPy/tree/main
+Author: wooky, aron
+Author-email: wook@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: rpy2
+Requires-Dist: functools
+Requires-Dist: joblib
+
