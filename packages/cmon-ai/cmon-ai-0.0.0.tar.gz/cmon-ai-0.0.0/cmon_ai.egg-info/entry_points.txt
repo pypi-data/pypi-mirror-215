@@ -1,0 +1,2 @@
+[console_scripts]
+cmon = cmon_cli:main
