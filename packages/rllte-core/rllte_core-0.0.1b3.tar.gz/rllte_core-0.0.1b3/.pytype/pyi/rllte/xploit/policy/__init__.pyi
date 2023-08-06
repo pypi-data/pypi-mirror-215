@@ -1,0 +1,14 @@
+# (generated with --quick)
+
+import rllte.xploit.policy.distributed_actor_learner
+import rllte.xploit.policy.off_policy_deterministic_actor_double_critic
+import rllte.xploit.policy.off_policy_stochastic_actor_double_critic
+import rllte.xploit.policy.on_policy_decoupled_actor_critic
+import rllte.xploit.policy.on_policy_shared_actor_critic
+from typing import Type
+
+DistributedActorLearner: Type[rllte.xploit.policy.distributed_actor_learner.DistributedActorLearner]
+OffPolicyDeterministicActorDoubleCritic: Type[rllte.xploit.policy.off_policy_deterministic_actor_double_critic.OffPolicyDeterministicActorDoubleCritic]
+OffPolicyStochasticActorDoubleCritic: Type[rllte.xploit.policy.off_policy_stochastic_actor_double_critic.OffPolicyStochasticActorDoubleCritic]
+OnPolicyDecoupledActorCritic: Type[rllte.xploit.policy.on_policy_decoupled_actor_critic.OnPolicyDecoupledActorCritic]
+OnPolicySharedActorCritic: Type[rllte.xploit.policy.on_policy_shared_actor_critic.OnPolicySharedActorCritic]
