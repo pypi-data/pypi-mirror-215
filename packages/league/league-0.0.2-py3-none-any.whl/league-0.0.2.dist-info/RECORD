@@ -1,0 +1,15 @@
+league/__init__.py,sha256=c9hdafgRZAICi10hsPl_i1K4oFdJSsN72E04Tj9ooto,194
+league/client.py,sha256=Vo7cS9Ah26xJ2FiahKzaHJ-FHROfwF4x_BSQ0O-FV8Q,3757
+league/handler.py,sha256=xNkEA1BA8HYE6Ue6k1qm6i0LY5sGJ2oEipaAEHD0jUo,1679
+league/lexicon.py,sha256=tkPO02RFC3i0xBHGKuBmxwJ77c_6d5x5eVmK2opSxOo,2783
+league/objects/__init__.py,sha256=JlFGLeFve2etp_48Wqe0hVHIO6TF1IcN6pXMqLfUN3s,202
+league/objects/account.py,sha256=GQJq0L1G5KMR6oaCzwLpuKbL0jAdOC9CTWAlVahxV-A,75
+league/objects/cache.py,sha256=y5fyx4oxB129Ib7GCRs78-0vyYIGUGf6Gflb6mkCOJI,386
+league/objects/character.py,sha256=VmLKJu8PmWpqVoexCn1LUd_EYnJIyyoDRJQ8dN0qUGI,180
+league/objects/item.py,sha256=IhP3jz16KLYuDUoevbFPNTk2-dB4IZPh_2M4yTrNHpo,191
+league/objects/spell.py,sha256=E8p-i5LS6W-a7L87qvnPekwhE_Z77LZaljzY4HpXH4I,175
+league-0.0.2.dist-info/LICENSE,sha256=tHRdvW4YyEVGjlbzi1E347SI_mjPwoTWfBQ7FSbRyHg,1081
+league-0.0.2.dist-info/METADATA,sha256=1JlV7RYhSvXM_70MFYxCqoHCmFsU9Nssuw223GdqRgA,894
+league-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+league-0.0.2.dist-info/top_level.txt,sha256=jPlRBmbYNwOqJPwB2sLPw20FZNwdXhbtLwfejsQMM28,7
+league-0.0.2.dist-info/RECORD,,
