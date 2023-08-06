@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "supergraph"
+version = "0.0.1"
+license = "Apache2.0"
+description = "Supergraph compiler."
+authors = ["Bas van der Heijden <d.s.vanderheijden@tudelft.nl>"]
+homepage = "https://github.com/bheijden/supergraph"
+repository = "https://github.com/bheijden/supergraph"
+documentation = "https://github.com/bheijden/supergraph"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+networkx = "^2.8.8"
+numpy = "^1.24.3"
+tqdm = "^4.65.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+pytest = "^7.0"
+pytest-cov = "^3.0.0"
+flake8 = ">=3"
+flake8-bugbear = "^22.3.23"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "supergraph/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "master"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
