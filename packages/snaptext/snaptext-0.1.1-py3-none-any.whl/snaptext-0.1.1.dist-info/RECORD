@@ -1,0 +1,9 @@
+snaptext/__init__.py,sha256=8YQAMg-qIXvRhvbTYQ0BCdlPUxOWtxZqIclwsPbuFbA,63
+snaptext/core.py,sha256=Rf7xU6X5CVkp_9XuY1kRsHeVmD9U9mqae1iCak-_8pc,7595
+snaptext/json.py,sha256=fOSIzv79ZCTns6pIYPwsuGhKGyAYSQ3I21BvWkHdT6E,3520
+snaptext/string.py,sha256=6NV5TLBn6jLGUUDbpETQQkWXicR1AqeqY3S7DxTWh7E,6737
+snaptext/value.py,sha256=mc_s0Kb6ed0iAE9AuVlXq1UZ08UP6GC9gmAT6sDWSfU,854
+snaptext-0.1.1.dist-info/METADATA,sha256=aPxitmnTtftsTuMoMVMS0J5Jx0lBQ5yFqPioJYDcPZQ,1611
+snaptext-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+snaptext-0.1.1.dist-info/top_level.txt,sha256=QMdPppmWwy9h-09JzaAR1QX3YGO-9BglDdcc8SjwLZ0,9
+snaptext-0.1.1.dist-info/RECORD,,
