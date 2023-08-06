@@ -1,0 +1,8 @@
+setup.py
+generalized-model-trainer/__init__.py
+generalized-model-trainer/main.py
+generalized_model_trainer.egg-info/PKG-INFO
+generalized_model_trainer.egg-info/SOURCES.txt
+generalized_model_trainer.egg-info/dependency_links.txt
+generalized_model_trainer.egg-info/requires.txt
+generalized_model_trainer.egg-info/top_level.txt
