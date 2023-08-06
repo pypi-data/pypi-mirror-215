@@ -1,0 +1,5 @@
+setup.py
+vxfinder.egg-info/PKG-INFO
+vxfinder.egg-info/SOURCES.txt
+vxfinder.egg-info/dependency_links.txt
+vxfinder.egg-info/top_level.txt
